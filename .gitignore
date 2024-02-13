@@ -1,3 +1,8 @@
+.ssh/
+.sudo_as_admin_successful
+.lesshst
+.gitconfig
+
 # Streamlit
 Streamlit/.streamlit/secrets.toml
 scratch.ipynb
