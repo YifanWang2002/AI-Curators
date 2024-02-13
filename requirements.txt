@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+
+streamlit
+st_clickable_images
+streamlit_cropper
+pandas
+torch
+transformers
+faiss-cpu
