@@ -9,6 +9,8 @@ scratch.ipynb
 scratch.py
 Streamlit/data/art_images
 
+FastAPI/app/embedding_model/pytorch_model.bin
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
