@@ -17,6 +17,8 @@ DataPreprocessing/sel.py
 DataPreprocessing/artwork_data.csv
 
 
+FastAPI/app/embedding_model/pytorch_model.bin
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
