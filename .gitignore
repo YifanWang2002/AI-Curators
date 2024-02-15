@@ -9,6 +9,14 @@ scratch.ipynb
 scratch.py
 Streamlit/data/art_images
 
+# Webscraping scratches
+DataPreprocessing/nga_images
+DataPreprocessing/chromedriver.exe
+DataPreprocessing/LICENSE.chromedriver
+DataPreprocessing/sel.py
+DataPreprocessing/artwork_data.csv
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
