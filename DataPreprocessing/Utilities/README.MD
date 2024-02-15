@@ -1,78 +1,55 @@
-from selenium import webdriver
-from bs4 import BeautifulSoup
-from rich.progress import Progress, MofNCompleteColumn, TimeElapsedColumn, TimeRemainingColumn
-import pandas as pd
-import time
-import requests
-import os
+# Get Started
+1. Go to https://www.notion.so/aicurator/Available-Datasets-18010685b6c84df6a7a604e36b1c69c0, and identify available sources of CC0 images for download.
 
-total_pages = 1923
-artworks_per_page = 30
+2. Pull this Utilities folder, and put it somewhere you have large storage for upcoming images.
 
-def download_image(image_url, filename, folder='nga_images'):
-    if not os.path.exists(folder):
-        os.makedirs(folder)
-    path = os.path.join(folder, filename)
-    try:
-        response = requests.get(image_url)
-        if response.status_code == 200:
-            with open(path, 'wb') as file:
-                file.write(response.content)
-            return path
-    except Exception as e:
-        print(f"Error downloading image {filename}: {e}")
-    return None
+3. Download the requirements using:
+    ```
+    pip install -r requirements.txt
+    ```
 
-def get_text_safe(element, default='Unknown'):
-    return element.get_text(strip=True) if element else default
+4. Download the chromewebdriver based on your operating system and chip here:
+https://googlechromelabs.github.io/chrome-for-testing/ 
 
-def scrape_artwork_data(page_source, progress, artwork_task):
-    soup = BeautifulSoup(page_source, 'html.parser')
-    artworks = soup.find_all('li', {'class': 'art'})
+    Unzip the file downloaded in the same folder where the python web scraper locates
 
-    for artwork in artworks:
-        try:
-            title = get_text_safe(artwork.find('dt', {'class': 'title'}))
-            author = get_text_safe(artwork.find('dt', {'class': 'artist'}))
-            year = get_text_safe(artwork.find('dd', {'class': 'created'}))
-            medium = get_text_safe(artwork.find('dd', {'class': 'medium'}))
-            description = artwork.find('img', {'class': 'thumbnail'})['alt'].strip() if artwork.find('img', {'class': 'thumbnail'}) else 'No description'
-            image_element = artwork.find('li', {'class': 'tool-download'}).find('a')
-            image_url = image_element['href'] if image_element else 'No URL'
+# Modify the code
+## Prepartion
+    
+1. Open the website you want to scrape in chrome
 
-            image_path = download_image(image_url, f"{title.replace(' ', '_')}.jpg") if image_url != 'No URL' else 'No image'
+2. Inspect the website and its elements 
 
-            # Writing to CSV here
-            header = not os.path.exists('artwork_data.csv')
-            df = pd.DataFrame([[title, author, year, medium, description, image_path]], columns=['Title', 'Author', 'Year', 'Medium', 'Description', 'Image_Path'])
-            df['Image_Path'] = df['Image_Path'].apply(lambda x: os.path.basename(x) if x else x)  # Store only filename
-            df.to_csv('artwork_data.csv', mode='a', header=header)
+3. Find corresponding tags of image and metadata you wish to fetch.
 
-            progress.update(artwork_task, advance=1)
-        except Exception as e:
-            print(f"Error processing artwork: {e}")
 
-# Selenium setup
-driver = webdriver.Chrome()
+## Modification
+You may need to modify a lot of parts in my starter code, but they will be easy once you located all the fields.
 
-progress_columns = [
-    *Progress.get_default_columns(),
-    MofNCompleteColumn(),
-    TimeElapsedColumn(),
-    TimeRemainingColumn()
-]
+1. Modify the function `def scrape_artwork_data(page_source, progress, artwork_task)` to read all the fields you need.
 
-with Progress(*progress_columns) as progress:
-    page_task = progress.add_task("[cyan]Going Through Pages ...", total=total_pages)
-    artwork_task = progress.add_task("[green]Going Through Arts ...", total=artworks_per_page)
+2. Modify the way you access the search results url, and how you reach subsequent pages in `driver.get(f"url")`
 
-    for page_number in range(1, total_pages + 1):
-        driver.get(f"https://www.nga.gov/collection-search-result.html?sortOrder=DEFAULT&artobj_downloadable=Image_download_available&pageNumber={page_number}&lastFacet=artobj_downloadable")
-        time.sleep(10)  # Wait for dynamic content to load
-        page_source = driver.page_source
+3. Tune `time.sleep()` so that you wait for everything to load and leave some redundancies, but don't wait too long. 
 
-        progress.reset(artwork_task)  # Reset artwork progress for the new page
-        scrape_artwork_data(page_source, progress, artwork_task)
-        progress.advance(page_task)
+4. Miscellaneous: Modify the progress bar `total pages`, `images per page`, `folder name`, etc
 
-driver.quit()
+
+
+# Start Download
+Before you start the entire job, you should:
+
+1. Running one page 
+
+2. Proceed to next page
+
+3. Verify the downloaded contents and csv file correctness
+
+**Important:** Run this code in vscode console, don't attempt to run any part in Jupyter notebook, it will cause failure.
+
+After you succeeded, you should be seeing a console output like this, demonstrating your progress through the pages and progress on an individual page:
+
+![Rich Progress Bar](progressBar.png "Example Console Output")
+
+
+**Good Luck!**
