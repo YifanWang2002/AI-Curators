@@ -18,7 +18,7 @@ I put the artwork embeddings into the index, so the indexing process takes about
 
 Searching
 ```shell
-export GEMINI_API_KEY="AIzaSyDmkAKSOdjV98XT_jEGChFu4yUHOoGLMps" # better replace the value with your own api key
+export GEMINI_API_KEY=... # Your Gemini api key
 java -jar target/search-1.0-SNAPSHOT.jar --search
 ```
 
