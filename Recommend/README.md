@@ -1,3 +1,12 @@
+## How to Use
+
+Put your user history in read_user_log() function in main.py, and run main.py.
+
+- The images of the user history is saved to output/user_log.jpg.
+- Five pages of recommendations will be generated and saved as output/Page (page number).jpg.
+    - (It assumes that the user does not click on any artworks in each recommendation page.)
+    - You can change the number of pages generated and indicate whether user has clicked on any recommended artwork by modifying line 189 of main.py (`for page_idx, if_new_click in enumerate([True, False, False, False, False]):`)
+
 ## Recommendation Channels
 
 Four channels have been implemented
