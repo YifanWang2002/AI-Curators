@@ -19,10 +19,10 @@ We champion innovation, inclusivity, and the transformative impact of AI in arts
 Here’s how our project is organized:
 
 - **01_data_collection**: Contains scripts and utilities for web scraping and data gathering.
-- **02_data_cleaning**: Includes tools and documentation for preparing data for analysis.
-- **03_image_processing**: Scripts for image analysis and processing are found here.
-- **04_gpt_analysis**: Houses our GPT models and analysis scripts.
-- **99_legacy_code**: Legacy code for previous versions of our tools and applications.
+- **02_data_cleaning**: Includes tools and documentation for cleaning and preparing data for analysis.
+- **03_image_processing**: Scripts for image resizing and processing are found here.
+- **04_gpt_analysis**: Produce batch jsonl file for GPT processing.
+- **99_legacy_code**: Legacy code for previous versions of our tools and web demos.
 - **README.md**: Overview and general information about the project.
 
 To begin navigating our codebase, refer to the directory-specific README files for detailed information on the scripts and their purposes.
