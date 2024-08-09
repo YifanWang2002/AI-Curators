@@ -5,6 +5,6 @@ I have already put the raw data in the "data" folder, which were downloaded from
 ## Commands to Process Data
 
 ```shell
-python get_painting_csv.py
-python get_images.py
+python NGA_get_csv.py
+python NGA_get_images.py
 ```
