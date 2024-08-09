@@ -1,0 +1,25 @@
+{
+    "schema": [
+        {
+            "table_name": "users",
+            "fields": [
+                {"name": "id", "type": "VARCHAR(255) PRIMARY KEY"},
+                {"name": "createdAt", "type": "BIGINT"},
+                {"name": "updatedAt", "type": "BIGINT"},
+                {"name": "imageUrl", "type": "VARCHAR(500)"},
+                {"name": "primaryEmailAddressId", "type": "VARCHAR(255)"},
+                {"name": "primaryPhoneNumberId", "type": "VARCHAR(255)"},
+                {"name": "username", "type": "VARCHAR(255)"},
+                {"name": "firstName", "type": "VARCHAR(255)"},
+                {"name": "lastName", "type": "VARCHAR(255)"},
+                {"name": "stripe_customer_id", "type": "VARCHAR(255) NOT NULL"},
+                {"name": "stripe_subscription_id", "type": "VARCHAR(255)"},
+                {"name": "subscription_status", "type": "ENUM('active', 'inactive', 'past_due', 'canceled', 'unpaid') DEFAULT 'inactive'"},
+                {"name": "subscription_start_date", "type": "DATETIME"},
+                {"name": "subscription_end_date", "type": "DATETIME"},
+                {"name": "exhibition_generation_tokens", "type": "INT"},
+                {"name": "ai_tour_guide_tokens", "type": "INT"}
+            ]
+        }
+    ]
+}

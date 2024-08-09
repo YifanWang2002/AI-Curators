@@ -1,0 +1,67 @@
+{
+    "mongo": [
+        {
+            "alias": "userDB",
+            "host": "localhost",
+            "port": 27017,
+            "database": "users",
+            "collections": [
+                {
+                    "name": "Favorites",
+                    "indexes": ["user_id"],
+                    "schema": "Favorites"
+                },
+                {
+                    "name": "ViewHistory",
+                    "indexes": ["user_id"],
+                    "schema": "ViewHistory"
+                },
+                {
+                    "name": "SearchHistory",
+                    "indexes": ["user_id"],
+                    "schema": "SearchHistory"
+                }
+            ]
+        },
+        {
+            "alias": "artDB",
+            "host": "localhost",
+            "port": 27017,
+            "database": "artworks",
+            "collections": [
+                {
+                    "name": "artworks",
+                    "indexes": ["artist_id", "title", "views", "likes"]
+                },
+                {
+                    "name": "exhibitions",
+                    "indexes": ["exhibition_id", "title", "views", "likes"]
+                },
+                {
+                    "name": "artists",
+                    "indexes": ["full_name", "artist_id"]
+                },
+                {
+                    "name": "genres",
+                    "indexes": ["genre_id", "genre_name"]
+                },
+                {
+                    "name": "colors",
+                    "indexes": ["color_id", "name"]
+                },
+                {
+                    "name": "locations",
+                    "indexes": ["location_id", "name"]
+                },
+                {
+                    "name": "themes",
+                    "indexes": ["theme_id", "theme_name"]
+                },
+                {
+                    "name": "styles",
+                    "indexes": ["style_id", "style_name"]
+                }
+            ]
+        }
+    ]
+}

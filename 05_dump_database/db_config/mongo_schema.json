@@ -1,0 +1,300 @@
+{
+    "userDB": {
+        "Favorites": {
+            "bsonType": "object",
+            "required": ["user_id"],
+            "properties": {
+                "user_id": {
+                    "bsonType": "string",
+                    "description": "must be a string and is required"
+                },
+                "artworks": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "required": ["artwork_id", "timestamp"],
+                        "properties": {
+                            "artwork_id": {
+                                "bsonType": "string"
+                            },
+                            "timestamp": {
+                                "bsonType": "date"
+                            }
+                        }
+                    }
+                },
+                "artists": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "required": ["artist_id", "timestamp"],
+                        "properties": {
+                            "artist_id": {
+                                "bsonType": "string"
+                            },
+                            "timestamp": {
+                                "bsonType": "date"
+                            }
+                        }
+                    }
+                },
+                "exhibitions": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "required": ["exhibition_id", "timestamp"],
+                        "properties": {
+                            "exhibition_id": {
+                                "bsonType": "string"
+                            },
+                            "timestamp": {
+                                "bsonType": "date"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "ViewHistory": {
+            "bsonType": "object",
+            "required": ["user_id"],
+            "properties": {
+                "user_id": {
+                    "bsonType": "string",
+                    "description": "must be a string and is required"
+                },
+                "views": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "required": ["item_id", "item_type", "timestamp"],
+                        "properties": {
+                            "item_id": {
+                                "bsonType": "string"
+                            },
+                            "item_type": {
+                                "bsonType": "string"
+                            },
+                            "timestamp": {
+                                "bsonType": "date"
+                            },
+                            "chatlog": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "messages": {
+                                        "bsonType": "array",
+                                        "items": {
+                                            "bsonType": "object",
+                                            "required": ["text", "timestamp"],
+                                            "properties": {
+                                                "text": {
+                                                    "bsonType": "string"
+                                                },
+                                                "timestamp": {
+                                                    "bsonType": "date"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "SearchHistory": {
+            "bsonType": "object",
+            "required": ["user_id"],
+            "properties": {
+                "user_id": {
+                    "bsonType": "string",
+                    "description": "must be a string and is required"
+                },
+                "searches": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "required": ["search_query", "timestamp"],
+                        "properties": {
+                            "search_query": {
+                                "bsonType": "string"
+                            },
+                            "timestamp": {
+                                "bsonType": "date"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "artDB": {
+        "artworks": {
+            "bsonType": "object",
+            "required": ["artist_id", "artwork_id", "title", "genre", "location", "description", "creation_year", "dimension", "full_image_url", "thumbnail_image_url"],
+            "properties": {
+                "artist_id": {"bsonType": "string"},
+                "artwork_id": {"bsonType": "string"},
+                "creation_year_start": {"bsonType": "string"},
+                "creation_year_end": {"bsonType": "string"},
+                "description": {"bsonType": "string"},
+                "dimension": {"bsonType": "string"},
+                "full_image_url": {"bsonType": "string"},
+                "genre": {"bsonType": "string"},
+                "location": {"bsonType": "string"},
+                "thumbnail_image_url": {"bsonType": "string"},
+                "title": {"bsonType": "string"},
+                "views": {"bsonType": "int"},
+                "likes": {"bsonType": "int"},
+                "intro": {
+                    "bsonType": "string",
+                    "description": "an elegant description of the artwork"
+                },
+                "overview": {
+                    "bsonType": "string",
+                    "description": "depicts what is shown in the artwork"
+                },
+                "style": {
+                    "bsonType": "string",
+                    "description": "the style of the artwork"
+                },
+                "style_tags": {
+                    "bsonType": "string",
+                    "description": "style tags of the artwork"
+                },
+                "theme": {
+                    "bsonType": "array",
+                    "items": {"bsonType": "string"}
+                },
+                "theme_tags": {
+                    "bsonType": "array",
+                    "items": {"bsonType": "string"}
+                },
+                "main_objects": {
+                    "bsonType": "object",
+                    "additionalProperties": {
+                        "bsonType": "string",
+                        "description": "description of main objects within the artwork"
+                    }
+                },
+                "other_objects": {
+                    "bsonType": "array",
+                    "items": {"bsonType": "string"}
+                },
+                "movement": {
+                    "bsonType": "array",
+                    "items": {"bsonType": "string"}
+                },
+                "object_tags": {
+                    "bsonType": "array",
+                    "items": {"bsonType": "string"}
+                },
+                "tags": {
+                    "bsonType": "array",
+                    "items": {"bsonType": "string"}
+                },
+                "nudity": {
+                    "bsonType": "string",
+                    "enum": ["full", "half", "no"],
+                    "description": "indicates the level of nudity depicted in the artwork"
+                },
+                "religious": {
+                    "bsonType": "bool"
+                }
+            }
+        },
+        "exhibitions": {
+            "bsonType": "object",
+            "required": ["exhibition_id", "title", "description", "curator_id", "pieces_count", "art_pieces"],
+            "properties": {
+                "art_pieces": {
+                    "bsonType": "array",
+                    "items": {"bsonType": "string", "description": "artwork_id"}
+                },
+                "description": {"bsonType": "string"},
+                "exhibition_id": {"bsonType": "string"},
+                "curator_id": {"bsonType": "string"},
+                "pieces_count": {"bsonType": "int"},
+                "title": {"bsonType": "string"},
+                "views": {"bsonType": "int"},
+                "likes": {"bsonType": "int"}
+            }
+        },
+        "artists": {
+            "bsonType": "object",
+            "required": ["artist_id", "full_name", "biography", "birth_year", "death_year", "first_name", "last_name", "nationality", "thumbnail_image_url"],
+            "properties": {
+                "artist_id": {"bsonType": "string"},
+                "biography": {"bsonType": "string"},
+                "birth_year": {"bsonType": "string"},
+                "death_year": {"bsonType": "string"},
+                "display_name": {"bsonType": "string"},
+                "first_name": {"bsonType": "string"},
+                "full_name": {"bsonType": "string"},
+                "last_name": {"bsonType": "string"},
+                "middle_name": {"bsonType": "string"},
+                "nationality": {"bsonType": "string"},
+                "thumbnail_image_url": {"bsonType": "string"},
+                "views": {"bsonType": "int"},
+                "likes": {"bsonType": "int"}
+            }
+        },
+        "genres": {
+            "bsonType": "object",
+            "required": ["description", "end_year", "genre_id", "genre_name", "start_year", "thumbnail_image_url"],
+            "properties": {
+                "description": {"bsonType": "string"},
+                "end_year": {"bsonType": "string"},
+                "genre_id": {"bsonType": "string"},
+                "genre_name": {"bsonType": "string"},
+                "start_year": {"bsonType": "string"},
+                "thumbnail_image_url": {"bsonType": "string"},
+                "views": {"bsonType": "int"}
+            }
+        },
+        "colors": {
+            "bsonType": "object",
+            "required": ["color_id", "description", "family", "hex_code", "name", "thumbnail_image_url"],
+            "properties": {
+                "color_id": {"bsonType": "string"},
+                "description": {"bsonType": "string"},
+                "family": {"bsonType": "string"},
+                "hex_code": {"bsonType": "string"},
+                "name": {"bsonType": "string"},
+                "thumbnail_image_url": {"bsonType": "string"},
+                "views": {"bsonType": "int"}
+            }
+        },
+        "locations": {
+            "bsonType": "object",
+            "required": ["continent", "description", "location_id", "name", "thumbnail_image_url"],
+            "properties": {
+                "continent": {"bsonType": "string"},
+                "description": {"bsonType": "string"},
+                "location_id": {"bsonType": "string"},
+                "name": {"bsonType": "string"},
+                "thumbnail_image_url": {"bsonType": "string"},
+                "views": {"bsonType": "int"}
+            }
+        },
+        "themes": {
+            "bsonType": "object",
+            "required": ["theme_id", "theme_name", "thumbnail_image_url"],
+            "properties": {
+                "theme_id": {"bsonType": "string"},
+                "theme_name": {"bsonType": "string"},
+                "thumbnail_image_url": {"bsonType": "string"}
+            }
+        },
+        "styles": {
+            "bsonType": "object",
+            "required": ["style_id", "style_name", "thumbnail_image_url"],
+            "properties": {
+                "style_id": {"bsonType": "string"},
+                "style_name": {"bsonType": "string"},
+                "thumbnail_image_url": {"bsonType": "string"}
+            }
+        }
+    }
+}
