@@ -51,5 +51,4 @@ class ImageSimChannel:
         ]
 
         image_names = [f"Image: {x}" for x in self.image_list]
-        print(image_names)
         return final_recs_list, image_names

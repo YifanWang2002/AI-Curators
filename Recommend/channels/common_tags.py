@@ -93,5 +93,5 @@ class CommonTagsChannel:
         ]
 
         tag_names = [f"Tag: {x}" for x in self.tag_list]
-        print(tag_names)
+        # print(tag_names)
         return tag_recs_list, tag_names

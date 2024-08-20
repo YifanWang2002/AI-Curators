@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 
-IMAGE_DIR = "../Embedding/images"
+IMAGE_DIR = "../GPT/images"
 
 
 def save_images(filepath, image_ids, nrow=5):
@@ -36,4 +36,4 @@ def save_images(filepath, image_ids, nrow=5):
         y_offset += max_heights[row]
 
     grid_image.save(filepath)
-    print(f"Image saved as {filepath}")
+    # print(f"Image saved as {filepath}")

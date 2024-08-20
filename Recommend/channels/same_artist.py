@@ -30,5 +30,4 @@ class SameArtistChannel:
         ]
 
         artist_names = [f"Artist: {x}" for x in self.artist_list]
-        print(artist_names)
         return artist_recs_list, artist_names
