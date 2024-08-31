@@ -13,8 +13,8 @@ from channels.same_artist import SameArtistChannel
 from channels.random_rec import RandomRecChannel
 from utils.debug import save_images
 
-DATA_DIR = "data"
-IMAGE_DIR = "../Embedding/images"
+DATA_DIR = "../data"
+IMAGE_DIR = "../images"
 OUTPUT_DIR = "output"
 
 random.seed(0)

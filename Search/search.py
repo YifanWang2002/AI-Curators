@@ -11,16 +11,8 @@ from sentence_transformers import SentenceTransformer
 from PIL import Image
 
 
-DATA_DIR = "data"
+DATA_DIR = "../data"
 OUTPUT_DIR = "output_minmax"
-
-
-def create_faiss_index(embeddings, index_path):
-    index = faiss.IndexFlatIP(embeddings.shape[1])
-    index.add(embeddings)
-    faiss.write_index(index, index_path)
-
-    return index
 
 
 def e5_search(query, model, index, k):

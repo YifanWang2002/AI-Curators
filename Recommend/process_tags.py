@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 
 pd.set_option("display.width", None)
 
-DATA_DIR = "data"
+DATA_DIR = "../data"
 
 
 def create_faiss_index(embeddings, index_path):
