@@ -3,7 +3,7 @@ import numpy as np
 
 from sentence_transformers import SentenceTransformer
 
-df = pd.read_csv("data/search_e5.csv")
+df = pd.read_csv("../data/search_e5.csv")
 
 model = SentenceTransformer("intfloat/e5-large-v2")
 
@@ -16,4 +16,4 @@ for start_index in range(0, len(df), batch_size):
     all_embeddings.extend(batch_embeddings)
 
 embeds = np.stack(all_embeddings)
-np.save("data/search_embeds.npy", embeds)
+np.save("../data/search_embeds.npy", embeds)

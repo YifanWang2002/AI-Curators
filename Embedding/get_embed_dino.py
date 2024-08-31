@@ -6,7 +6,7 @@ from transformers import AutoProcessor, CLIPModel, AutoImageProcessor, AutoModel
 from tqdm import tqdm  # Import tqdm for the progress bar
 
 # Load data
-df = pd.read_csv("data/paintings_v2.csv")
+df = pd.read_csv("../data/paintings_v2.csv")
 
 # Load the DINO model and its pre-trained image processor
 model_name = "facebook/dinov2-base"
@@ -41,4 +41,4 @@ image_embeddings = np.concatenate(image_embeddings)
 image_embeddings /= np.linalg.norm(image_embeddings, axis=1, keepdims=True)
 
 # Save embeddings
-np.save("data/embeds_dino.npy", image_embeddings)
+np.save("../data/embeds_dino.npy", image_embeddings)

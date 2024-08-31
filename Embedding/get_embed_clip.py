@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image
 
 
-df = pd.read_csv("data/paintings_v1.csv")
+df = pd.read_csv("../data/paintings_v1.csv")
 
 model, _, preprocess = open_clip.create_model_and_transforms(
     "ViT-SO400M-14-SigLIP-384", pretrained="webli"
@@ -28,4 +28,4 @@ with torch.no_grad(), torch.cuda.amp.autocast():
 
 image_embeddings = np.concatenate(image_embeddings)
 image_embeddings /= np.linalg.norm(image_embeddings, axis=1, keepdims=True)
-np.save("data/search_embeds_clip.npy", image_embeddings)
+np.save("../data/search_embeds_clip.npy", image_embeddings)
