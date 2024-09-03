@@ -32,6 +32,7 @@ if __name__ == "__main__":
         usecols=[
             "objectid",
             "title",
+            "displaydate",
             "beginyear",
             "endyear",
             "medium",
@@ -94,15 +95,18 @@ if __name__ == "__main__":
         objects_constituents["roletype"] == "artist"
     ]
 
-    artists = pd.merge(objects_constituents, constituents, on="constituentid")
+    artists = pd.merge(objects_constituents, constituents, on="constituentid").rename(
+        columns={
+            "displaydate": "artist_displaydate",
+            "beginyear": "artist_beginyear",
+            "endyear": "artist_endyear",
+        }
+    )
     artists["artist_display"] = artists.apply(
         lambda row: display_artist(
-            row["forwarddisplayname"], row["role"], row["displaydate"]
+            row["forwarddisplayname"], row["role"], row["artist_displaydate"]
         ),
         axis=1,
-    )
-    artists = artists.rename(
-        columns={"beginyear": "artist_beginyear", "endyear": "artist_endyear"}
     )
 
     # Merge all dataframes to include all required fields
@@ -119,6 +123,7 @@ if __name__ == "__main__":
         df[
             [
                 "title",
+                "displaydate",
                 "beginyear",
                 "endyear",
                 "medium",
@@ -132,6 +137,7 @@ if __name__ == "__main__":
         ]
         .rename(
             columns={
+                "displaydate": "date_display",
                 "beginyear": "creation_year_start",
                 "endyear": "creation_year_end",
                 "dimensions": "dimension",
