@@ -1,805 +1,787 @@
 artist_id,birth_year,death_year,forward_display_name,preferred_display_name
-46418.0,1606.0,1669.0,Follower of Rembrandt van Rijn,Follower of Rembrandt van Rijn
-40482.0,1839.0,1906.0,Paul Cezanne,"Cezanne, Paul"
-34853.0,1877.0,1943.0,Marsden Hartley,"Hartley, Marsden"
-46234.0,,,,
-35188.0,1866.0,1944.0,Vasily Kandinsky,"Kandinsky, Vasily"
-12211.0,1632.0,1717.0,Wang Hui,Wang Hui
-35837.0,1712.0,1772.0,Furuyama Moromasa,Furuyama Moromasa
-52958.0,1855.0,1929.0,George Cope,"Cope, George"
-42097.0,1654.0,1730.0,Johann Michael Rottmayr,"Rottmayr, Johann Michael"
-20709.0,1704.0,1761.0,Johann Georg Platzer,"Platzer, Johann Georg"
-35809.0,1840.0,1926.0,Claude Monet,"Monet, Claude"
-41673.0,1849.0,1916.0,William Merritt Chase,"Chase, William Merritt"
-25652.0,1617.0,1681.0,Gerard ter Borch,"ter Borch, Gerard"
-1245.0,1789.0,1850.0,Jules Robert Auguste,"Auguste, Jules Robert"
-4311.0,1483.0,1544.0,Chen Chun,Chen Chun
-41255.0,1562.0,1638.0,Cornelis Cornelisz.,"Cornelisz., Cornelis"
-114854.0,,,Artist unknown,Artist unknown
-23819.0,,,Mandara Shika,"Shika, Mandara"
-41188.0,1599.0,1660.0,Diego Velázquez,"Velázquez, Diego"
-3746.0,,,,
-4098.0,,,,
-40975.0,,,,
-35801.0,,,,
-40579.0,1516.0,1570.0,"Frans Floris, I","Floris, Frans, I"
-35577.0,1832.0,1883.0,Édouard Manet,"Manet, Édouard"
-29882.0,,,Islamic,Islamic
-1854.0,1841.0,1870.0,Frédéric Bazille,"Bazille, Frédéric"
-36153.0,1741.0,1827.0,Charles Willson Peale,"Peale, Charles Willson"
-37078.0,1604.0,1670.0,Andrea Vaccaro,"Vaccaro, Andrea"
-34324.0,1615.0,1675.0,Gaspard Dughet,"Dughet, Gaspard"
-112116.0,1801.0,1900.0,Yao Luan,Yao Luan
-23024.0,1761.0,1817.0,Edward Savage,"Savage, Edward"
-37466.0,1545.0,1608.0,Andrés López Polanco,"López Polanco, Andrés"
-36351.0,1841.0,1919.0,Pierre-Auguste Renoir,"Renoir, Pierre-Auguste"
-5612.0,1856.0,1910.0,Henri Edmond Cross,"Cross, Henri Edmond"
-35061.0,1825.0,1894.0,George Inness,"Inness, George"
-40867.0,1560.0,1635.0,Domenico Tintoretto,"Tintoretto, Domenico"
-36476.0,1812.0,1867.0,Théodore Rousseau,"Rousseau, Théodore"
-27929.0,1598.0,1667.0,Wang Jian,Wang Jian
-47696.0,1365.0,1428.0,Lorenzo Monaco,"Monaco, Lorenzo"
-34648.0,1823.0,1880.0,Sanford Robinson Gifford,"Gifford, Sanford Robinson"
-33939.0,1819.0,1856.0,Théodore Chassériau,"Chassériau, Théodore"
-33691.0,1801.0,1828.0,Richard Parkes Bonington,"Bonington, Richard Parkes"
-37378.0,1423.0,1495.0,Yao Shou,Yao Shou
-34147.0,1748.0,1825.0,Jacques Louis David,"David, Jacques Louis"
-37485.0,,,Pedro Girard,"Girard, Pedro"
-37416.0,1807.0,1891.0,Shibata Zeshin,Shibata Zeshin
-46333.0,1487.0,1541.0,Follower of Bernard van Orley,"Orley, Bernard van, Follower of"
-36802.0,1823.0,1906.0,Alfred Stevens,"Stevens, Alfred"
-14950.0,1688.0,1737.0,François Le Moyne,"Le Moyne, François"
-33890.0,1844.0,1926.0,Mary Cassatt,"Cassatt, Mary"
-61111.0,,,Zhou Zhimian,Zhou Zhimian
-6656.0,,,Giovanni di Paolo,Giovanni di Paolo
-58317.0,1413.0,1481.0,Oguri Sotan,Oguri Sotan
-41459.0,1556.0,1629.0,Otto van Veen,"Veen, Otto van"
-110543.0,1781.0,1853.0,Merry Joseph Blondel,"Blondel, Merry Joseph"
-4313.0,1601.0,1700.0,Qi Zhijia,Qi Zhijia
-43088.0,1793.0,1856.0,Thomas Doughty,"Doughty, Thomas"
-36707.0,1839.0,1899.0,Alfred Sisley,"Sisley, Alfred"
-92385.0,1634.0,1707.0,Katsuzan Dowa,Katsuzan Dowa
-7242.0,1725.0,1802.0,Joseph Siffred Duplessis,"Duplessis, Joseph Siffred"
-36540.0,1856.0,1925.0,John Singer Sargent,"Sargent, John Singer"
-12128.0,1682.0,1765.0,Hua Yan,Hua Yan
-52802.0,1847.0,1898.0,De Scott Evans,"Evans, De Scott"
-33567.0,1855.0,1942.0,Cecilia Beaux,"Beaux, Cecilia"
-40615.0,1746.0,1828.0,Francisco José de Goya y Lucientes,"Goya y Lucientes, Francisco José de"
-42477.0,1475.0,1548.0,Giovanni Girolamo Savoldo,"Savoldo, Giovanni Girolamo"
-34210.0,1803.0,1860.0,Alexandre Gabriel Decamps,"Decamps, Alexandre Gabriel"
-40639.0,1824.0,1911.0,Jozef Israëls,"Israëls, Jozef"
-92551.0,1829.0,1901.0,Hannah Brown Skeele,"Skeele, Hannah Brown"
-40454.0,1824.0,1898.0,Eugène Louis Boudin,"Boudin, Eugène Louis"
-28272.0,1470.0,1559.0,Wen Zhengming,Wen Zhengming
-37279.0,1834.0,1903.0,James McNeill Whistler,"Whistler, James McNeill"
-26682.0,1425.0,1495.0,Cosimo Tura,"Tura, Cosimo"
-52849.0,1475.0,1628.0,Hans Eworth,"Eworth, Hans"
-36432.0,1734.0,1802.0,George Romney,"Romney, George"
-14600.0,1854.0,1913.0,Gaston La Touche,"La Touche, Gaston"
-36681.0,1726.0,1792.0,Katsukawa Shunsho,Katsukawa Shunsho
-35813.0,1824.0,1886.0,Adolphe Joseph Thomas Monticelli,"Monticelli, Adolphe Joseph Thomas"
-40428.0,1505.0,1592.0,Jacopo Bassano,"Bassano, Jacopo"
-16652.0,1425.0,1495.0,Matteo di Giovanni,Matteo di Giovanni
-33370.0,1578.0,1660.0,Francesco Albani,"Albani, Francesco"
-17803.0,1791.0,1872.0,Samuel F. B. Morse,"Morse, Samuel F. B."
-36633.0,1427.0,1509.0,Shen Zhou,Shen Zhou
-36177.0,1445.0,1523.0,Perugino,Perugino
-103544.0,1855.0,1921.0,Kim Eung-won,Kim Eung-won
-37401.0,1839.0,1892.0,Tsukioka Yoshitoshi,Tsukioka Yoshitoshi
-69747.0,1847.0,1917.0,Noguchi Shohin,Noguchi Shohin
-34049.0,1819.0,1877.0,Gustave Courbet,"Courbet, Gustave"
-43630.0,1776.0,1842.0,Jacob Eichholtz,"Eichholtz, Jacob"
-61105.0,1445.0,1540.0,Zhou Chen,Zhou Chen
-476.0,1724.0,1772.0,Cosmo Alexander,"Alexander, Cosmo"
-104691.0,,,Mughal,Mughal
-41179.0,1530.0,1619.0,Denys Calvaert,"Calvaert, Denys"
-92375.0,1756.0,1829.0,Bernard d'Agescy,"Agescy, Bernard d'"
-14686.0,1578.0,1660.0,Lan Ying,Lan Ying
-112112.0,1680.0,1760.0,Cai Jai,Cai Jai
-37451.0,1888.0,1946.0,Horace Pippin,"Pippin, Horace"
-41039.0,1769.0,1830.0,Sir Thomas Lawrence,"Lawrence, Thomas, Sir"
-61888.0,,,Master of Saint Veronica,Master of Saint Veronica
-20528.0,1682.0,1754.0,Giovanni Battista Piazzetta,"Piazzetta, Giovanni Battista"
-26388.0,1617.0,1691.0,Tosa Mitsuoki,Tosa Mitsuoki
-42670.0,1595.0,1681.0,Gerard van Soest,"Soest, Gerard van"
-46450.0,1415.0,1465.0,Workshop of Apollonio di Giovanni,"Apollonio di Giovanni, Workshop of"
-36750.0,1863.0,1923.0,Joaquín Sorolla y Bastida,"Sorolla y Bastida, Joaquín"
-35156.0,,,Mihata Jôryû,Mihata Jôryû
-87575.0,1399.0,1464.0,Workshop of Rogier van der Weyden,"Weyden, Rogier van der, Workshop of"
-24418.0,1579.0,1657.0,Frans Snyders,"Snyders, Frans"
-40516.0,1817.0,1878.0,Charles François Daubigny,"Daubigny, Charles François"
-35622.0,1836.0,1897.0,Homer Dodge Martin,"Martin, Homer Dodge"
-35029.0,1824.0,1879.0,William Morris Hunt,"Hunt, William Morris"
-36972.0,1696.0,1770.0,Giambattista Tiepolo,"Tiepolo, Giambattista"
-46310.0,1420.0,1506.0,School of Sesshu,"Sesshu, School of"
-44128.0,,,Veneto-Lombardian School,Veneto-Lombardian School
-37028.0,1810.0,1865.0,Constant Troyon,"Troyon, Constant"
-44114.0,1755.0,1830.0,Nicolas Antoine Taunay,"Taunay, Nicolas Antoine"
-34035.0,1796.0,1875.0,Jean Baptiste Camille Corot,"Corot, Jean Baptiste Camille"
-20727.0,1840.0,1895.0,Ren Yi,Ren Yi
-34611.0,1848.0,1903.0,Paul Gauguin,"Gauguin, Paul"
-26678.0,1555.0,1636.0,Dong Qichang,Dong Qichang
-34566.0,1874.0,1939.0,Frederick Carl Frieseke,"Frieseke, Frederick Carl"
-46243.0,1528.0,1588.0,Follower of Paolo Veronese,"Veronese, Paolo, Follower of"
-36333.0,1838.0,1917.0,Carducius Plantagenet Ream,"Ream, Carducius Plantagenet"
-21570.0,1851.0,1909.0,Frederic Remington,"Remington, Frederic"
-44129.0,1410.0,1484.0,Antonio Vivarini,"Vivarini, Antonio"
-2298.0,1767.0,1842.0,Jean Victor Bertin,"Bertin, Jean Victor"
-29150.0,1836.0,1892.0,Alexander Helwig Wyant,"Wyant, Alexander Helwig"
-2256.0,1838.0,1910.0,Etienne Prosper Berne-Bellecour,"Berne-Bellecour, Etienne Prosper"
-37523.0,1401.0,1500.0,German School,German School
-42406.0,1598.0,1664.0,Francisco de Zurbarán,"Zurbarán, Francisco de"
-40563.0,1599.0,1641.0,Anthony van Dyck,"Dyck, Anthony van"
-29775.0,,,Northern Netherlandish School,Northern Netherlandish School
-36487.0,1577.0,1640.0,Peter Paul Rubens,"Rubens, Peter Paul"
-43052.0,,,Venetian School,Venetian School
-41483.0,1570.0,1630.0,Bartolomeo Manfredi,"Manfredi, Bartolomeo"
-42709.0,,,Francescuccio Ghissi,"Ghissi, Francescuccio"
-743.0,1387.0,1455.0,Fra Angelico,"Angelico, Fra"
-35834.0,1841.0,1895.0,Berthe Morisot,"Morisot, Berthe"
-7746.0,1468.0,1533.0,Cornelis Engelbrechtsz.,"Engelbrechtsz., Cornelis"
-118456.0,,,Monogrammist PG,Monogrammist PG
-17105.0,1728.0,1779.0,Anton Raffael Mengs,"Mengs, Anton Raffael"
-36407.0,1733.0,1808.0,Hubert Robert,"Robert, Hubert"
-41190.0,1610.0,1690.0,"David Teniers, the younger","Teniers, David, the younger"
-35142.0,1824.0,1906.0,Eastman Johnson,"Johnson, Eastman"
-5937.0,1853.0,1929.0,William Turner Dannat,"Dannat, William Turner"
-35761.0,1595.0,1628.0,Mi Wanzhong,Mi Wanzhong
-35562.0,1667.0,1749.0,Alessandro Magnasco,"Magnasco, Alessandro"
-36211.0,1830.0,1903.0,Camille Pissarro,"Pissarro, Camille"
-40517.0,1808.0,1879.0,Honoré-Victorin Daumier,"Daumier, Honoré-Victorin"
-13411.0,1775.0,1828.0,Kano Isen'in,Kano Isen'in
-35379.0,1690.0,1743.0,Nicolas Lancret,"Lancret, Nicolas"
-36862.0,1470.0,1523.0,Tang Yin,Tang Yin
-4124.0,1849.0,1906.0,Eugène Carrière,"Carrière, Eugène"
-35275.0,1664.0,1729.0,Torii Kiyonobu I,Torii Kiyonobu I
-12209.0,1835.0,1902.0,Victor Pierre Huguet,"Huguet, Victor Pierre"
-25021.0,1630.0,1715.0,Abraham Storck,"Storck, Abraham"
-13430.0,,,Gao Yang,Gao Yang
-47125.0,1697.0,1768.0,Follower of Canaletto,"Canaletto, Follower of"
-41423.0,1618.0,1682.0,Bartolomé Estéban Murillo,"Murillo, Bartolomé Estéban"
-60819.0,1864.0,1916.0,Vilhelm Hammershøi,"Hammershøi, Vilhelm"
-35230.0,1839.0,1911.0,William Keith,"Keith, William"
-35560.0,1632.0,1693.0,Nicolaes Maes,"Maes, Nicolaes"
-115913.0,1818.0,1880.0,Charles Spencer Humphreys,"Humphreys, Charles Spencer"
-35854.0,1807.0,1868.0,William Sidney Mount,"Mount, William Sidney"
-40560.0,1811.0,1889.0,Jules Dupré,"Dupré, Jules"
-34988.0,1836.0,1910.0,Winslow Homer,"Homer, Winslow"
-35730.0,1815.0,1891.0,Jean Louis Ernest Meissonier,"Meissonier, Jean Louis Ernest"
-36319.0,1858.0,1916.0,Henry Ward Ranger,"Ranger, Henry Ward"
-60808.0,1697.0,1737.0,Gawen Hamilton,"Hamilton, Gawen"
-20743.0,1797.0,,Pierre Achille Poirot,"Poirot, Pierre Achille"
-36155.0,1778.0,1860.0,Rembrandt Peale,"Peale, Rembrandt"
-49882.0,1699.0,1769.0,Dong Bangda,Dong Bangda
-10052.0,1473.0,1536.0,Jan Gossart,"Gossart, Jan"
-33896.0,1841.0,1901.0,Jean Charles Cazin,"Cazin, Jean Charles"
-15545.0,1733.0,1813.0,Alessandro Longhi,"Longhi, Alessandro"
-40545.0,1798.0,1863.0,Eugène Delacroix,"Delacroix, Eugène"
-40771.0,1723.0,1792.0,Sir Joshua Reynolds,"Reynolds, Joshua, Sir"
-34028.0,1738.0,1815.0,John Singleton Copley,"Copley, John Singleton"
-9964.0,1723.0,1793.0,"Antonio González Velásquez, I","González Velásquez, Antonio, I"
-4414.0,1564.0,1649.0,Zhang Ruitu,Zhang Ruitu
-2530.0,1600.0,1638.0,Jacques Blanchard,"Blanchard, Jacques"
-14404.0,1824.0,1896.0,Xugu,Xugu
-40869.0,1864.0,1901.0,Henri de Toulouse-Lautrec,"Toulouse-Lautrec, Henri de"
-72293.0,1697.0,1756.0,"John Theodore Heins, Sr.","Heins, John Theodore, Sr."
-102177.0,,,Shen Yongling,Shen Yongling
-2870.0,1804.0,1865.0,William Bonnell,"Bonnell, William"
-10425.0,1563.0,1639.0,Chen Guan,Chen Guan
-22822.0,1599.0,1633.0,Bartolomeo Salvestrini,"Salvestrini, Bartolomeo"
-30911.0,1807.0,1876.0,Narcisse Virgile Diaz de la Peña,"Diaz de la Peña, Narcisse Virgile"
-34054.0,1815.0,1879.0,Thomas Couture,"Couture, Thomas"
-34023.0,1776.0,1837.0,John Constable,"Constable, John"
-61317.0,1301.0,1374.0,Ni Zan,Ni Zan
-46468.0,1511.0,1581.0,School of Anthonis Mor,"Mor, Anthonis, School of"
-108195.0,,,Chen Wu,Chen Wu
-16053.0,1621.0,1706.0,Cornelis de Man,"Man, Cornelis de"
-42518.0,1853.0,1932.0,Will Hicock Low,"Low, Will Hicock"
-43802.0,,,Workshop of Jacob Cornelisz. van Oostsanen,"Cornelisz. van Oostsanen, Jacob, Workshop of"
-21839.0,,,Antonio Rimpatta,"Rimpatta, Antonio"
-33690.0,1822.0,1899.0,Rosa Bonheur,"Bonheur, Rosa"
-36376.0,1833.0,1905.0,William Trost Richards,"Richards, William Trost"
-51753.0,1624.0,1679.0,Jan van de Cappelle,"Cappelle, Jan van de"
-35623.0,1789.0,1854.0,John Martin,"Martin, John"
-24282.0,1688.0,1751.0,John Smibert,"Smibert, John"
-37003.0,1773.0,1828.0,Utagawa Toyohiro,Utagawa Toyohiro
-35366.0,1835.0,1910.0,John La Farge,"La Farge, John"
-35460.0,1794.0,1859.0,Charles Robert Leslie,"Leslie, Charles Robert"
-40606.0,1501.0,1556.0,Girolamo da Carpi,Girolamo da Carpi
-40762.0,1850.0,1924.0,Jean-François Rafaëlli,"Rafaëlli, Jean-François"
-34953.0,1850.0,1913.0,George Hitchcock,"Hitchcock, George"
-36822.0,1755.0,1828.0,Gilbert Stuart,"Stuart, Gilbert"
-21517.0,1754.0,1829.0,Jean Baptiste Regnault,"Regnault, Jean Baptiste"
-737.0,1821.0,1892.0,Pierre Andrieu,"Andrieu, Pierre"
-7353.0,1844.0,1916.0,Thomas Eakins,"Eakins, Thomas"
-29477.0,1623.0,1664.0,"Reinier Nooms, called Zeeman","Nooms, called Zeeman, Reinier"
-5709.0,1843.0,1909.0,J. Frank Currier,"Currier, J. Frank"
-34664.0,1634.0,1705.0,Luca Giordano,"Giordano, Luca"
-34505.0,1852.0,1931.0,Jean Louis Forain,"Forain, Jean Louis"
-35069.0,1803.0,1886.0,Eugène Isabey,"Isabey, Eugène"
-21235.0,1801.0,1881.0,John Quidor,"Quidor, John"
-46463.0,1512.0,1572.0,Imitator of François Clouet,"Clouet, Francois, imitator of"
-29512.0,1821.0,1911.0,Félix Ziem,"Ziem, Félix"
-40610.0,1853.0,1890.0,Vincent van Gogh,"Gogh, Vincent van"
-4832.0,1597.0,1660.0,Pieter Claesz,"Claesz, Pieter"
-110865.0,1806.0,1875.0,Frederick R. Spencer,"Spencer, Frederick R."
-42138.0,1510.0,1598.0,Jacopino del Conte,Jacopino del Conte
-36577.0,1828.0,1899.0,Adolphe Schreyer,"Schreyer, Adolphe"
-112569.0,1741.0,1812.0,Bernardino Nocchi,"Nocchi, Bernardino"
-2437.0,1779.0,1851.0,Thomas Birch,"Birch, Thomas"
-27368.0,,,Raphael Vergos,"Vergos, Raphael"
-40543.0,1834.0,1917.0,Hilaire Germain Edgar Degas,"Degas, Hilaire Germain Edgar"
-102596.0,1653.0,1718.0,Kano Tanshin Morimasa,Kano Tanshin Morimasa
-33679.0,1616.0,1680.0,Ferdinand Bol,"Bol, Ferdinand"
-17549.0,1872.0,1944.0,Piet Mondrian,"Mondrian, Piet"
-35218.0,1741.0,1807.0,Angelica Kauffmann,"Kauffmann, Angelica"
-34864.0,1859.0,1935.0,Childe Hassam,"Hassam, Childe"
-34071.0,1472.0,1553.0,"Lucas Cranach, the Elder","Cranach, Lucas, the Elder"
-118916.0,,,El Greco (Doménikos Theotokópoulos) and workshop,El Greco (Doménikos Theotokópoulos) and workshop
-36739.0,1657.0,1747.0,Francesco Solimena,"Solimena, Francesco"
-33876.0,1555.0,1619.0,Lodovico Carracci,"Carracci, Lodovico"
-12124.0,1487.0,1600.0,Xie Shichen,Xie Shichen
-63444.0,1815.0,1881.0,Jules Achille Noël,"Noël, Jules Achille"
-44584.0,1798.0,1840.0,Carl Blechen,"Blechen, Carl"
-102578.0,1805.0,1861.0,Albert Schindler,"Schindler, Albert"
-33627.0,1849.0,1934.0,Albert Besnard,"Besnard, Albert"
-40784.0,1615.0,1673.0,Salvator Rosa,"Rosa, Salvator"
-35839.0,1613.0,1694.0,Hishikawa Moronobu,Hishikawa Moronobu
-4307.0,1558.0,1639.0,Chen Jiru,Chen Jiru
-40485.0,1792.0,1845.0,Nicolas Toussaint Charlet,"Charlet, Nicolas Toussaint"
-49886.0,1636.0,1713.0,Kanô Tsunenobu,Kanô Tsunenobu
-46359.0,1528.0,1588.0,Workshop of Paolo Veronese,"Veronese, Paolo, Workshop of"
-40508.0,1665.0,1747.0,Giuseppe Maria Crespi,"Crespi, Giuseppe Maria"
-36514.0,1607.0,1681.0,Cornelis Saftleven,"Saftleven, Cornelis"
-41463.0,1612.0,1692.0,Emanuel de Witte,"Witte, Emanuel de"
-23102.0,1795.0,1858.0,Ary Scheffer,"Scheffer, Ary"
-833.0,1401.0,1500.0,Unknown artist,Unknown artist
-35252.0,1796.0,1858.0,Suzuki Kiitsu,"Kiitsu,  Suzuki"
-113508.0,,,Ansano Ciampanti,"Ciampanti, Ansano"
-115820.0,,,Marquis Filippo Petrone,"Petrone, Filippo, Marquis"
-48082.0,1761.0,1829.0,Zhang Yin,Zhang Yin
-22687.0,1864.0,1927.0,Paul Sérusier,"Sérusier, Paul"
-34341.0,1848.0,1919.0,Frank Duveneck,"Duveneck, Frank"
-36202.0,1856.0,1932.0,Evert Pieters,"Pieters, Evert"
-36695.0,1863.0,1935.0,Paul Signac,"Signac, Paul"
-37479.0,1817.0,1908.0,Antoine Auguste Ernest Hébert,"Hébert, Antoine Auguste Ernest"
-25002.0,1799.0,1871.0,Mathias Stoltenberg,"Stoltenberg, Mathias"
-34085.0,1823.0,1900.0,Jasper Francis Cropsey,"Cropsey, Jasper Francis"
-49439.0,1834.0,1913.0,Julie Hart Beers,"Beers, Julie Hart"
-36656.0,1838.0,1909.0,Walter Shirlaw,"Shirlaw, Walter"
-59954.0,1793.0,1865.0,Ferdinand Georg Waldmüller,"Waldmüller, Ferdinand Georg"
-7311.0,1846.0,1912.0,Charles Gifford Dyer,"Dyer, Charles Gifford"
-34248.0,1708.0,1787.0,Arthur Devis,"Devis, Arthur"
-5396.0,1863.0,1925.0,Charles Cottet,"Cottet, Charles"
-100581.0,,,Basawan,Basawan
-36362.0,1823.0,1891.0,Augustin Théodule Ribot,"Ribot, Augustin Théodule"
-47964.0,,,Unknown Italian,Unknown Italian
-41250.0,1616.0,1671.0,Sébastien Bourdon,"Bourdon, Sébastien"
-742.0,1704.0,1798.0,Giuseppe Angeli,"Angeli, Giuseppe"
-46422.0,1480.0,1551.0,Circle of Adriaen Isenbrant,"Isenbrant, Adriaen, Circle of"
-46225.0,1575.0,1666.0,Follower of Frans Hals,"Hals, Frans, Follower of"
-35787.0,1814.0,1875.0,Jean François Millet,"Millet, Jean François"
-33012.0,1852.0,1908.0,Pieter Verhaert,"Verhaert, Pieter"
-42706.0,,,Cecco del Caravaggio,"Caravaggio, Cecco del"
-35989.0,1639.0,1684.0,Caspar Netscher,"Netscher, Caspar"
-46237.0,,,Workshop of Paolo Veneziano,"Paolo Veneziano, Workshop of"
-37424.0,1860.0,1920.0,Anders Zorn,"Zorn, Anders"
-2763.0,1622.0,1679.0,Pieter Boel,"Boel, Pieter"
-33785.0,1493.0,1555.0,"Bartel Bruyn, the elder","Bruyn, Bartel, the elder"
-22018.0,1852.0,1896.0,Theodore Robinson,"Robinson, Theodore"
-41876.0,1838.0,1874.0,Mariano Fortuny y Marsal,"Fortuny y Marsal, Mariano"
-37363.0,1734.0,1797.0,Joseph Wright of Derby,"Wright of Derby, Joseph"
-22609.0,1847.0,1917.0,Albert Pinkham Ryder,"Ryder, Albert Pinkham"
-35575.0,1474.0,1535.0,Hans Maler,"Maler, Hans"
-112113.0,,,Li Zongmo,Li Zongmo
-9540.0,,,Niccolò di Pietro Gerini,"Gerini, Niccolò di Pietro"
-40500.0,1489.0,1534.0,Antonio da Correggio,"Correggio, Antonio da"
-35736.0,1430.0,1494.0,Hans Memling,"Memling, Hans"
-33693.0,1833.0,1922.0,Léon Joseph Florentin Bonnat,"Bonnat, Léon Joseph Florentin"
-62950.0,1844.0,1900.0,Mihály Munkácsy,"Munkácsy, Mihály"
-20094.0,1695.0,1736.0,Jean-Baptiste Pater,"Pater, Jean-Baptiste"
-117832.0,,,August (Ágost)  Canzi,"Canzi, August (Ágost)"
-27938.0,1642.0,1715.0,Wang Yuanqi,Wang Yuanqi
-40608.0,1870.0,1938.0,William James Glackens,"Glackens, William James"
-4644.0,1662.0,1722.0,Jiao Bingzhen,Jiao Bingzhen
-25497.0,1859.0,1937.0,Henry Ossawa Tanner,"Tanner, Henry Ossawa"
-9093.0,1741.0,1825.0,Henry Fuseli,"Fuseli, Henry"
-35827.0,1571.0,1638.0,Paulus Moreelse,"Moreelse, Paulus"
-37034.0,,,Kawamata Tsunemasa,Kawamata Tsunemasa
-34878.0,1813.0,1894.0,George Peter Alexander Healy,"Healy, George Peter Alexander"
-46558.0,1733.0,1808.0,Style of Hubert Robert,"Robert, Hubert, Style of"
-36449.0,1838.0,1917.0,Toby Edward Rosenthal,"Rosenthal, Toby Edward"
-75135.0,,,Su Liupeng,Su Liupeng
-15118.0,1669.0,1742.0,Leng Mei,Leng Mei
-40761.0,1756.0,1823.0,Sir Henry Raeburn,"Raeburn, Henry, Sir"
-37270.0,1738.0,1820.0,Benjamin West,"West, Benjamin"
-40755.0,1836.0,1919.0,Sir John Edward Poynter,"Poynter, John Edward, Sir"
-34506.0,1800.0,1870.0,James Forbes,"Forbes, James"
-24872.0,1717.0,1801.0,Veronica Stern,"Stern, Veronica"
-3476.0,1525.0,1610.0,"Bartholomaeus Bruyn, the younger","Bruyn, Bartholomaeus, the younger"
-5703.0,1861.0,1942.0,Charles Courtney Curran,"Curran, Charles Courtney"
-40769.0,1606.0,1669.0,Rembrandt van Rijn,"van Rijn, Rembrandt"
-36253.0,1625.0,1654.0,Paulus Potter,"Potter, Paulus"
-33591.0,1882.0,1925.0,George Wesley Bellows,"Bellows, George Wesley"
-9769.0,,,Bartolomeo di Giovanni,Bartolomeo di Giovanni
-35364.0,1835.0,1892.0,Stanislas Lépine,"Lépine, Stanislas"
-12122.0,1597.0,1658.0,Xiang Shengmo,Xiang Shengmo
-31827.0,1755.0,1820.0,Adriaan de Lelie,"Lelie, Adriaan de"
-107195.0,1782.0,1847.0,John Philip Simpson,"Simpson, John Philip"
-61118.0,1460.0,1526.0,Zhu Yunming,Zhu Yunming
-34832.0,1792.0,1866.0,Chester Harding,"Harding, Chester"
-3829.0,1848.0,1894.0,Gustave Caillebotte,"Caillebotte, Gustave"
-34901.0,1865.0,1929.0,Robert Henri,"Henri, Robert"
-46269.0,,,,
-11328.0,1495.0,1580.0,Jan Sanders van Hemessen,"Hemessen, Jan Sanders van"
-114699.0,,,Yao Kuang,"Kuang, Yao"
-1850.0,1734.0,1795.0,Don Francisco Bayeu y Subías,"Bayeu y Subías, Don Francisco"
-48153.0,1778.0,1856.0,Franz Ludwig Catel,"Catel, Franz Ludwig"
-40535.0,1503.0,1572.0,Agnolo Bronzino,"Bronzino, Agnolo"
-41746.0,1595.0,1647.0,Moses van Uyttenbroeck,"Uyttenbroeck, Moses van"
-40752.0,1494.0,1557.0,"Pontormo, (Jacopo Carrucci)","Pontormo, (Jacopo Carrucci)"
-20464.0,1788.0,1865.0,Ammi Phillips,"Phillips, Ammi"
-34465.0,1530.0,1572.0,Giovanni Antonio Fasolo,"Fasolo, Giovanni Antonio"
-37029.0,1756.0,1843.0,John Trumbull,"Trumbull, John"
-28215.0,1852.0,1919.0,Julian Alden Weir,"Weir, Julian Alden"
-41140.0,1810.0,1864.0,Alexandre Calame,"Calame, Alexandre"
-54785.0,,,Doshin,Doshin
-46332.0,1599.0,1660.0,Studio of Diego Rodriguez de Velázquez,"Velázquez, Diego Rodriguez de, Studio of"
-34761.0,1712.0,1793.0,Francesco Guardi,"Guardi, Francesco"
-15414.0,,1669.0,Dirck van der Lisse,"Lisse, Dirck van der"
-57671.0,1644.0,1732.0,Sekkei,Sekkei
-61760.0,1761.0,1816.0,Kitao Masanobu,Kitao Masanobu
-32992.0,1750.0,1819.0,Pierre Henri de Valenciennes,"Valenciennes, Pierre Henri de"
-15733.0,1857.0,1932.0,Fernand Lungren,"Lungren, Fernand"
-37488.0,,,Antwerp Mannerist,Antwerp Mannerist
-14195.0,1415.0,1490.0,Johann Koerbecke,"Koerbecke, Johann"
-54182.0,1810.0,1860.0,Alfred Dedreux,"Dedreux, Alfred"
-46530.0,1725.0,1805.0,Style of Jean Baptiste Greuze,"Greuze, Jean Baptiste, Style of"
-41524.0,1750.0,1812.0,Johann Friedrich August Tischbein,"Tischbein, Johann Friedrich August"
-40528.0,1805.0,1887.0,Eugène Blery,"Blery, Eugène"
-35821.0,1837.0,1926.0,Thomas Moran,"Moran, Thomas"
-28092.0,1817.0,1904.0,George Frederick Watts,"Watts, George Frederick"
-33731.0,1823.0,1892.0,William Bradford,"Bradford, William"
-46378.0,1599.0,1641.0,Follower of Anthonie van Dyck,"Dyck, Anthonie van, Follower of"
-36100.0,1686.0,1755.0,Jean-Baptiste Oudry,"Oudry, Jean-Baptiste"
-24535.0,1586.0,1648.0,Tawaraya Sôtatsu,"Sôtatsu, Tawaraya"
-9960.0,1849.0,1883.0,Eva Gonzalès,"Gonzalès, Eva"
-35766.0,1763.0,1843.0,Georges Michel,"Michel, Georges"
-61112.0,1626.0,1705.0,Zhu Da,Zhu Da
-42134.0,1541.0,1614.0,"Domenico Theotokópoulos, called El Greco",Greco El
-6606.0,1848.0,1912.0,Jean Baptiste Édouard Detaille,"Detaille, Jean Baptiste Édouard"
-27935.0,1592.0,1680.0,Wang Shimin,Wang Shimin
-56624.0,,,Rifû,Rifû
-31257.0,1600.0,1682.0,Claude Lorrain,"Lorrain, Claude"
-35818.0,1511.0,1576.0,Anthonis Mor,"Mor, Anthonis"
-6445.0,1828.0,1891.0,Jules-Élie Delaunay,"Delaunay, Jules-Élie"
-7130.0,1842.0,1910.0,Victor Dubreuil,"Dubreuil, Victor"
-28375.0,1399.0,1464.0,Rogier van der Weyden,"Weyden, Rogier van der"
-33986.0,1480.0,1541.0,Joos van Cleve,"Cleve, Joos van"
-41962.0,1656.0,1746.0,Nicolas de Largillière,"Largillière, Nicolas de"
-35327.0,1735.0,1790.0,Isoda Koryusai,Isoda Koryusai
-9264.0,1749.0,1838.0,Kishi Ganku,Kishi Ganku
-87215.0,1807.0,1876.0,Imitator of Narcisse Virgile Diaz de la Peña,"Diaz de la Peña, Narcisse Virgile, imitator of"
-35824.0,1826.0,1898.0,Gustave Moreau,"Moreau, Gustave"
-52988.0,1495.0,1575.0,Corneille de Lyon,Corneille de Lyon
-77459.0,,,Joshua Johnson,"Johnson, Joshua"
-34146.0,1450.0,1523.0,Gerard David,"David, Gerard"
-116468.0,4713.0,4713.0,Alexandre Desgoffe,"Desgoffe, Alexandre"
-37043.0,1775.0,1851.0,Joseph Mallord William Turner,"Turner, Joseph Mallord William"
-46397.0,1429.0,1507.0,Imitator of Gentile Bellini,"Bellini, Gentile, imitator of"
-36996.0,1675.0,1710.0,"Mitsusuke, Tosa","Mitsusuke, Tosa"
-40732.0,1691.0,1765.0,Giovanni Paolo Panini,"Panini, Giovanni Paolo"
-46522.0,1725.0,1805.0,Follower of Jean Baptiste Greuze,"Greuze, Jean Baptiste, Follower of"
-65373.0,1594.0,1682.0,Willem Claesz. Heda,"Heda, Willem Claesz."
-40810.0,1859.0,1891.0,Georges Seurat,"Seurat, Georges"
-31435.0,1819.0,1904.0,Martin Johnson Heade,"Heade, Martin Johnson"
-27936.0,1497.0,1576.0,Wang Wên,Wang Wên
-40642.0,1819.0,1891.0,Johan Barthold Jongkind,"Jongkind, Johan Barthold"
-42969.0,1600.0,1699.0,Spanish School,Spanish School
-35521.0,1496.0,1576.0,Lu Zhi,Lu Zhi
-8258.0,1692.0,1768.0,Giovanni Domenico Ferretti,"Ferretti, Giovanni Domenico"
-33747.0,1598.0,1657.0,Bartholomeus Breenbergh,"Breenbergh, Bartholomeus"
-31743.0,1549.0,1579.0,Marcellus Coffermans,"Coffermans, Marcellus"
-52271.0,1756.0,1829.0,Chôbunsai Eishi,Chôbunsai Eishi
-15343.0,,,Lin Xue,Lin Xue
-37133.0,1836.0,1923.0,Elihu Vedder,"Vedder, Elihu"
-31347.0,1834.0,1871.0,Paul Camille Guigou,"Guigou, Paul Camille"
-34198.0,1597.0,1639.0,Pieter De Neyn,"De Neyn, Pieter"
-1397.0,1561.0,1643.0,Giovanni Baglione,"Baglione, Giovanni"
-9306.0,1609.0,1675.0,Domenico Gargiuli (Micco Spadaro),"Gargiuli, Domenico (Micco Spadaro)"
-20236.0,,,Pei Zhi,Pei Zhi
-41040.0,1802.0,1873.0,Edwin Henry Landseer,"Landseer, Edwin Henry"
-36350.0,1575.0,1642.0,Guido Reni,"Reni, Guido"
-40513.0,1852.0,1929.0,Pascal-Adolphe-Jean Dagnan-Bouveret,"Dagnan-Bouveret, Pascal-Adolphe-Jean"
-5302.0,,,Augustus Cordus,"Cordus, Augustus"
-46239.0,,,Dutch School,Dutch School
-31651.0,,,Samuel Jones,"Jones, Samuel"
-105455.0,1687.0,1765.0,Li Shizhuo,"Shizhuo, Li"
-36748.0,1606.0,1670.0,Hendrik Martensz. Sorgh,"Sorgh, Hendrik Martensz."
-16591.0,1505.0,1540.0,Master of the Female Half-Lengths,Master of the Female Half-Lengths
-4324.0,,,Mei Chong,Mei Chong
-18790.0,1632.0,1701.0,"Pieter Mulier, (il Cavaliere Tempesta)","Mulier, Pieter, (il Cavaliere Tempesta)"
-41859.0,1584.0,1624.0,Domenico Fetti,"Fetti, Domenico"
-16333.0,1767.0,1835.0,Benjamin Marshall,"Marshall, Benjamin"
-34767.0,1841.0,1927.0,Jean Baptiste Armand Guillaumin,"Guillaumin, Jean Baptiste Armand"
-15511.0,1865.0,1935.0,Gustave Loiseau,"Loiseau, Gustave"
-47689.0,1465.0,1533.0,Jacob Cornelisz. van Oostsanen,"Cornelisz. van Oostsanen, Jacob"
-53345.0,1792.0,1863.0,Alvan Fisher,"Fisher, Alvan"
-35012.0,1701.0,1779.0,Thomas Hudson,"Hudson, Thomas"
-44999.0,1839.0,1924.0,Hans Thoma,"Thoma, Hans"
-23478.0,1712.0,1788.0,Toriyama Sekien,Toriyama Sekien
-43629.0,1857.0,1922.0,Arthur Wesley Dow,"Dow, Arthur Wesley"
-34426.0,1753.0,1825.0,Agustin Esteve y Marqués,"Esteve y Marqués, Agustin"
-16173.0,1735.0,1793.0,Marco Marcola,"Marcola, Marco"
-37339.0,,,John Wollaston,"Wollaston, John"
-85125.0,,,Hishikawa Morohira,Hishikawa Morohira
-31094.0,1836.0,1904.0,Henri Fantin-Latour,"Fantin-Latour, Henri"
-20424.0,1854.0,1907.0,John Frederick Peto,"Peto, John Frederick"
-40788.0,1844.0,1910.0,Henri Rousseau,"Rousseau, Henri"
-40414.0,1486.0,1530.0,Andrea del Sarto,Andrea del Sarto
-115136.0,1851.0,1920.0,Lu Hui,"Hui, Lu"
-40605.0,1767.0,1824.0,Anne-Louis Girodet de Roussy-Trioson,"Girodet de Roussy-Trioson, Anne-Louis"
-46346.0,1590.0,1649.0,Follower of Simon Vouet,"Vouet, Simon, Follower of"
-37048.0,1853.0,1902.0,John Henry Twachtman,"Twachtman, John Henry"
-27933.0,1501.0,1568.0,Wang Guxiang,Wang Guxiang
-10930.0,1848.0,1892.0,William Michael Harnett,"Harnett, William Michael"
-6575.0,1823.0,1902.0,Marcellin Gilbert Desboutin,"Desboutin, Marcellin Gilbert"
-40453.0,1703.0,1770.0,François Boucher,"Boucher, François"
-40446.0,1761.0,1845.0,Louis-Léopold Boilly,"Boilly, Louis-Léopold"
-16057.0,1852.0,1930.0,Antonio Mancini,"Mancini, Antonio"
-12786.0,1575.0,1632.0,Abraham Janssens,"Janssens, Abraham"
-41224.0,1627.0,1678.0,Samuel van Hoogstraten,"Hoogstraten, Samuel van"
-7400.0,1783.0,1853.0,Christoffer Wilhelm Eckersberg,"Eckersberg, Christoffer Wilhelm"
-40590.0,1820.0,1876.0,Eugène Fromentin,"Fromentin, Eugène"
-35806.0,1612.0,1666.0,Pier Francesco Mola,"Mola, Pier Francesco"
-35508.0,1702.0,1785.0,Pietro Longhi,"Longhi, Pietro"
-48068.0,,,Xia Kui,Xia Kui
-34042.0,1450.0,1540.0,Colyn de Coter,"Coter, Colyn de"
-41223.0,1645.0,1727.0,Aert de Gelder,"Gelder, Aert de"
-40757.0,1613.0,1699.0,Mattia Preti,"Preti, Mattia"
-1998.0,1533.0,1610.0,Sadiqi,Sadiqi
-44014.0,1863.0,1944.0,Edvard Munch,"Munch, Edvard"
-46277.0,,,Italian School,Italian School
-23566.0,1504.0,1594.0,Sesson Shukei,Sesson Shukei
-36292.0,1824.0,1898.0,Pierre Puvis de Chavannes,"Puvis de Chavannes, Pierre"
-35046.0,1648.0,1727.0,Cornelis Huysmans,"Huysmans, Cornelis"
-109629.0,,,Artist Unknown,Artist Unknown
-117170.0,,,Edwaert Collier,"Collier, Edwaert"
-20290.0,1777.0,1841.0,John Ritto Penniman,"Penniman, John Ritto"
-40557.0,1832.0,1883.0,Gustave Doré,"Doré, Gustave"
-47452.0,1861.0,1927.0,Jozseph Rippl-Rónaï,"Rippl-Rónaï, Jozseph"
-26807.0,,,Ugolino di Nerio,Ugolino di Nerio
-3909.0,,,Carlo da Camerino,Carlo da Camerino
-34641.0,1483.0,1561.0,Ridolfo Ghirlandaio,"Ghirlandaio, Ridolfo"
-52864.0,1495.0,1558.0,Conrad Faber,"Faber, Conrad"
-36780.0,1626.0,1679.0,Jan Steen,"Steen, Jan"
-16157.0,1880.0,1916.0,Franz Marc,"Marc, Franz"
-26631.0,,,Chai Zhenyi,Chai Zhenyi
-30553.0,1475.0,1539.0,Jean Bellegambe,"Bellegambe, Jean"
-33587.0,1428.0,1516.0,Giovanni Bellini,"Bellini, Giovanni"
-46432.0,,,Flemish School,Flemish School
-34118.0,,,Girolamo da Santacroce,Girolamo da Santacroce
-36336.0,1840.0,1916.0,Odilon Redon,"Redon, Odilon"
-34587.0,1824.0,1904.0,Jean Léon Gérôme,"Gérôme, Jean Léon"
-23714.0,1769.0,1850.0,Martin Archer Shee,"Shee, Martin Archer"
-35838.0,1520.0,1578.0,Giovanni Battista Moroni,"Moroni, Giovanni Battista"
-36286.0,1758.0,1823.0,Pierre Paul Prud'hon,"Prud'hon, Pierre Paul"
-9228.0,1865.0,1931.0,Axeli Gallen-Kallela,"Gallen-Kallela, Axeli"
-20228.0,1797.0,1868.0,Sheldon Peck,"Peck, Sheldon"
-61068.0,1899.0,1983.0,Zhang Daqian,Zhang Daqian
-10349.0,1771.0,1835.0,Baron Antoine Jean Gros,"Gros, Antoine Jean, Baron"
-32076.0,1804.0,1868.0,Shepard Alonzo Mount,"Mount, Shepard Alonzo"
-11466.0,1728.0,1778.0,John Hesselius,"Hesselius, John"
-37130.0,1511.0,1574.0,Giorgio Vasari,"Vasari, Giorgio"
-43854.0,1751.0,1829.0,Wilhelm Tischbein,"Tischbein, Wilhelm"
-43340.0,,,Unknown Central Italian,Unknown Central Italian
-61110.0,,,Zhou Wenju,Zhou Wenju
-105100.0,,,Ghasi,Ghasi
-35325.0,1658.0,1716.0,Ogata Korin,Ogata Korin
-37102.0,1634.0,1703.0,Eglon van der Neer,"Neer, Eglon van der"
-40643.0,1593.0,1678.0,Jacob Jordaens,"Jordaens, Jacob"
-35732.0,1860.0,1932.0,Julius Gari Melchers,"Melchers, Julius Gari"
-7875.0,1806.0,1857.0,Antonio Maria Esquivel,"Esquivel, Antonio Maria"
-41354.0,1623.0,1682.0,Jacob van Ruisdael,"Ruisdael, Jacob van"
-17539.0,,,Antonio Molleno,"Molleno, Antonio"
-99077.0,1805.0,1838.0,Ernest Christian Frederik Petzholdt,"Petzholdt, Ernest Christian Frederik"
-4310.0,,,Chen Ruyan,Chen Ruyan
-20382.0,1695.0,1736.0,Jean Baptiste Joseph Peter,"Peter, Jean Baptiste Joseph"
-40657.0,1739.0,1805.0,Pietro Labruzzi,"Labruzzi, Pietro"
-33901.0,1494.0,1557.0,Qiu Ying,Qiu Ying
-4672.0,1740.0,1795.0,Qian Feng,Qian Feng
-37445.0,1701.0,1800.0,British School,British School
-56986.0,1754.0,1799.0,Nagasawa Rosetsu,Nagasawa Rosetsu
-35361.0,1831.0,1889.0,Kawanabe Kyôsai,Kawanabe Kyôsai
-15443.0,1622.0,1706.0,Luo Mu,Luo Mu
-41304.0,1607.0,1674.0,Jan Lievens,"Lievens, Jan"
-42884.0,1531.0,1588.0,Alonso Sánchez Coello,"Sánchez Coello, Alonso"
-1793.0,1840.0,1921.0,David Bates,"Bates, David"
-36060.0,1316.0,1374.0,Allegretto Nuzi,"Nuzi, Allegretto"
-36834.0,1783.0,1872.0,Thomas Sully,"Sully, Thomas"
-34954.0,1638.0,1709.0,Meindert Hobbema,"Hobbema, Meindert"
-33968.0,1826.0,1900.0,Frederic Edwin Church,"Church, Frederic Edwin"
-33717.0,1825.0,1905.0,William Adolphe Bouguereau,"Bouguereau, William Adolphe"
-35659.0,,,Master of Apollo and Daphne,Master of Apollo and Daphne
-35828.0,,,Moretto da Brescia,Moretto da Brescia
-33846.0,1527.0,1585.0,Luca Cambiaso,"Cambiaso, Luca"
-28531.0,1806.0,1865.0,Antoine Wiertz,"Wiertz, Antoine"
-43420.0,,,Vincenzo Frediani,"Frediani, Vincenzo"
-30905.0,1847.0,1914.0,Cesare Agostino Detti,"Detti, Cesare Agostino"
-40868.0,1477.0,1576.0,Titian,Titian
-36259.0,1584.0,1665.0,Nicolas Poussin,"Poussin, Nicolas"
-41274.0,1819.0,1909.0,William Powell Frith,"Frith, William Powell"
-36658.0,1730.0,1781.0,Soga Shohaku,Soga Shohaku
-15442.0,1445.0,1528.0,"Spagna, Lo","Spagna, Lo"
-50071.0,1811.0,1879.0,George Caleb Bingham,"Bingham, George Caleb"
-48625.0,1861.0,1932.0,Louis Anquetin,"Anquetin, Louis"
-41137.0,1610.0,1685.0,Adriaen van Ostade,"Ostade, Adriaen van"
-48155.0,1759.0,1841.0,Johann Georg von Dillis,"Dillis, Johann Georg von"
-49859.0,1528.0,1574.0,Joachim Beuckelaer,"Beuckelaer, Joachim"
-11482.0,,,"Jean Hey, (the Master of Moulins)","Hey, Jean, (the Master of Moulins)"
-33711.0,1446.0,1497.0,Francesco Botticini,"Botticini, Francesco"
-56870.0,1630.0,1700.0,Pieter Gerritsz. van Roestraeten,"Roestraeten, Pieter Gerritsz. van"
-34926.0,1823.0,1890.0,Thomas Hicks,"Hicks, Thomas"
-22591.0,1595.0,1670.0,Salomon van Ruysdael,"Ruysdael, Salomon van"
-48999.0,1783.0,1856.0,Baiitsu Yamamoto,Baiitsu Yamamoto
-40616.0,1596.0,1656.0,Jan van Goyen,"Goyen, Jan van"
-33658.0,1847.0,1919.0,Ralph Albert Blakelock,"Blakelock, Ralph Albert"
-25092.0,1581.0,1644.0,Bernardo Strozzi,"Strozzi, Bernardo"
-41221.0,1613.0,1652.0,Jan Both,"Both, Jan"
-34310.0,1609.0,1683.0,Pieter Dubordieu,"Dubordieu, Pieter"
-16606.0,,,Master of the Visitation,Master of the Visitation
-115980.0,1834.0,1911.0,Pu Hua,Pu Hua
-72283.0,,,The Master of the Children's Caps,Master of the Children's Caps
-21777.0,1803.0,1884.0,Adrian Ludwig (Ludwig) Richter,"Richter, Adrian Ludwig (Ludwig)"
-72845.0,1852.0,1909.0,Juan Roig y Soler,"Roig y Soler, Juan"
-34961.0,1853.0,1918.0,Ferdinand Hodler,"Hodler, Ferdinand"
-51341.0,1588.0,1629.0,Hendrick Terbrugghen,"Brugghen, Hendrick ter"
-27571.0,1729.0,1802.0,Pierre-Jacques Volaire,"Volaire, Pierre-Jacques"
-40413.0,1535.0,1607.0,Alessandro Allori,"Allori, Alessandro"
-105308.0,,,Yu Zhiding,Yu Zhiding
-43370.0,1774.0,1825.0,Raphaelle Peale,"Peale, Raphaelle"
-36264.0,1699.0,1768.0,Stefano Pozzi,"Pozzi, Stefano"
-103489.0,,,Hua Ziyou,Hua Ziyou
-3040.0,,,,
-36284.0,1574.0,1625.0,Giulio Cesare Procaccini,"Procaccini, Giulio Cesare"
-115933.0,1805.0,1873.0,Jonas Welch Holman,"Holman, Jonas Welch"
-14909.0,,,Charles B. Lawrence,"Lawrence, Charles B."
-46360.0,1806.0,1873.0,School of William Matthew Prior,"Prior, William Matthew, School of"
-48131.0,1788.0,1825.0,Heinrich Reinhold,"Reinhold, Heinrich"
-26267.0,1518.0,1594.0,Tintoretto,Tintoretto
-112035.0,,,Qian Chaoding,"Qian, Chaoding"
-33548.0,1708.0,1787.0,Pompeo Girolamo Batoni,"Batoni, Pompeo Girolamo"
-15107.0,1865.0,1916.0,Georges Lemmen,"Lemmen, Georges"
-35229.0,1779.0,1843.0,Matsumura Keibun,Matsumura Keibun
-9766.0,1415.0,1465.0,Apollonio di Giovanni,Apollonio di Giovanni
-36139.0,1885.0,1930.0,Jules Pascin,"Pascin, Jules"
-35239.0,1816.0,1872.0,John Frederick Kensett,"Kensett, John Frederick"
-4401.0,1797.0,1883.0,Charles Emile Champmartin,"Champmartin, Charles Emile"
-12117.0,1388.0,1470.0,Xia Chang,Xia Chang
-2736.0,1815.0,1865.0,David Gilmour Blythe,"Blythe, David Gilmour"
-21516.0,1843.0,1871.0,Henri Regnault,"Regnault, Henri"
-13343.0,1533.0,1615.0,Kaiho Yûshô,"Yûshô, Kaiho"
-42705.0,1477.0,1525.0,Raffaello Botticini,"Botticini, Raffaello"
-3970.0,1876.0,1931.0,Ricardo Canals y Llambí,"Canals y Llambí, Ricardo"
-34997.0,1758.0,1810.0,John Hoppner,"Hoppner, John"
-40512.0,1620.0,1691.0,Aelbert Cuyp,"Cuyp, Aelbert"
-22567.0,1745.0,1806.0,John Russell,"Russell, John"
-40895.0,1566.0,1638.0,Joachim Antonisz. Wtewael,"Wtewael, Joachim Antonisz."
-37541.0,,,Ancient Egyptian,Ancient Egyptian
-35673.0,1861.0,1918.0,Maxime Maufra,"Maufra, Maxime"
-34347.0,1751.0,1801.0,Ralph Earl,"Earl, Ralph"
-25410.0,1362.0,1422.0,Taddeo di Bartolo,Taddeo di Bartolo
-46407.0,1780.0,1867.0,Follower of Jean Auguste Dominique Ingres,"Ingres, Jean Auguste Dominique, Follower of"
-113171.0,,,Tibeto-Chinese,Tibeto-Chinese
-29227.0,1644.0,1776.0,Yang Jin,Yang Jin
-43722.0,1620.0,1649.0,Juan de Zurbarán,"Zurbarán, Juan de"
-42695.0,1817.0,1887.0,François Bonvin,"Bonvin, François"
-15380.0,1792.0,1882.0,John Linnell,"Linnell, John"
-53530.0,1383.0,1462.0,Dai Jin,Dai Jin
-34554.0,1849.0,1908.0,Frederick Warren Freer,"Freer, Frederick Warren"
-91739.0,1840.0,1920.0,Theodor Esbern Philipsen,"Philipsen, Theodor Esbern"
-20074.0,1826.0,1899.0,Alberto Pasini,"Pasini, Alberto"
-40621.0,1591.0,1666.0,Guercino,Guercino
-35665.0,1686.0,1758.0,Agostino Masucci,"Masucci, Agostino"
-6807.0,1842.0,1920.0,Francisco Domingo y Marqués,"Domingo y Marqués, Francisco"
-31771.0,1796.0,1862.0,Leopold Kupelwieser,"Kupelwieser, Leopold"
-42664.0,1651.0,1717.0,Jean Baptiste Santerre,"Santerre, Jean Baptiste"
-31582.0,1778.0,1831.0,John Jackson,"Jackson, John"
-12780.0,1625.0,1667.0,Heinrich Jansen,"Jansen, Heinrich"
-16574.0,,,Master of the Historia Friderici et Maximiliani,Master of the Historia Friderici et Maximiliani
-32408.0,,,Master of Palanquinos,Master of Palanquinos
-8274.0,1603.0,1660.0,Felice Ficherelli,"Ficherelli, Felice"
-5004.0,1599.0,1678.0,Pieter Codde,"Codde, Pieter"
-34946.0,1797.0,1858.0,Utagawa Hiroshige,Utagawa Hiroshige
-101626.0,1808.0,1841.0,Sakai Oho,"Oho, Sakai"
-41371.0,1495.0,1562.0,Jan van Scorel,"Scorel, Jan van"
-2300.0,1668.0,1736.0,Nicolas Bertin,"Bertin, Nicolas"
-34336.0,1796.0,1886.0,Asher Brown Durand,"Durand, Asher Brown"
-33867.0,1853.0,1932.0,Emil Carlsen,"Carlsen, Emil"
-12241.0,1610.0,1664.0,Hongren,Hongren
-2229.0,,,Master of the Bigallo Crucifix,Master of the Bigallo Crucifix
-102397.0,1728.0,1804.0,Qian Daxin,Qian Daxin
-35602.0,1696.0,1743.0,Michele Giovanni Marieschi,"Marieschi, Michele Giovanni"
-3458.0,1730.0,1796.0,Agostino Brunias,"Brunias, Agostino"
-2014.0,1800.0,1866.0,Hippolyte Bellangé,"Bellangé, Hippolyte"
-113232.0,1722.0,1784.0,Ko Fuyo,Ko Fuyo
-37184.0,1858.0,1933.0,Robert William Vonnoh,"Vonnoh, Robert William"
-16607.0,,,Master of the Worcester Carrying of the Cross,Master of the Worcester Carrying of the Cross
-1705.0,1431.0,1503.0,"Bartolomé de Cárdenas, (called Bermejo)","Cárdenas, Bartolomé de, (called Bermejo)"
-37114.0,1827.0,1890.0,Emile van Marcke de Lummen,"Marcke de Lummen, Emile van"
-40998.0,1692.0,1768.0,Jean Restout,"Restout, Jean"
-16577.0,,,Master of the 1540s,Master of the 1540s
-58246.0,1869.0,1935.0,Harald Oscar Sohlberg,"Sohlberg, Harald Oscar"
-26998.0,1865.0,1925.0,Félix Edouard Vallotton,"Vallotton, Félix Edouard"
-31776.0,1836.0,1911.0,Jules Joseph Lefebvre,"Lefebvre, Jules Joseph"
-36950.0,,,,
-102190.0,,,Rushan,Rushan
-70975.0,1558.0,1637.0,Kôetsu,Kôetsu
-34762.0,1699.0,1760.0,Giovanni Antonio Guardi,"Guardi, Giovanni Antonio"
-53062.0,1802.0,1842.0,Thomas Fearnley,"Fearnley, Thomas"
-98435.0,,,Master of Riglos,Master of Riglos
-35658.0,1466.0,1530.0,Quentin Massys,"Massys, Quentin"
-36365.0,1659.0,1734.0,Sebastiano Ricci,"Ricci, Sebastiano"
-37074.0,1753.0,1806.0,Kitagawa Utamaro,Kitagawa Utamaro
-36973.0,1727.0,1804.0,Giovanni Domenico Tiepolo,"Tiepolo, Giovanni Domenico"
-36323.0,1745.0,1807.0,John Rathbone,"Rathbone, John"
-40654.0,1606.0,1656.0,Laurent de La Hyre,"La Hyre, Laurent de"
-41187.0,1581.0,1642.0,"Frans Francken, II","Francken, Frans, II"
-36254.0,1857.0,1927.0,Edward Henry Potthast,"Potthast, Edward Henry"
-44053.0,,,Lippi-Pesellino Imitator,Lippi-Pesellino Imitator
-41448.0,1632.0,1698.0,Johann Carl Loth,"Loth, Johann Carl"
-12183.0,1803.0,1869.0,Paul Huet,"Huet, Paul"
-40730.0,1548.0,1628.0,Jacopo Palma Il Giovane,"Giovane, Jacopo Palma Il"
-31492.0,1760.0,1849.0,Katsushika Hokusai,Katsushika Hokusai
-44823.0,1808.0,1886.0,John F. Francis,"Francis, John F."
-108377.0,,,Master Alejo (Alejo Andía?),Master Alejo (Alejo Andía?)
-18952.0,1776.0,1853.0,Nakabayashi Chikutô,Nakabayashi Chikutô
-115926.0,1823.0,1886.0,Hu Gongshou,"Gongshou, Hu"
-43048.0,1743.0,1812.0,Henry Benbridge,"Benbridge, Henry"
-36383.0,1833.0,1908.0,Martin Rico y Ortega,"Rico y Ortega, Martin"
-33833.0,1750.0,1799.0,Giuseppe Cades,"Cades, Giuseppe"
-61600.0,1520.0,1589.0,Pietro Marescalchi,"Marescalchi, Pietro"
-33637.0,1830.0,1902.0,Albert Bierstadt,"Bierstadt, Albert"
-34929.0,1692.0,1780.0,Joseph Highmore,"Highmore, Joseph"
-7131.0,1790.0,1864.0,Claude Marie Dubufe,"Dubufe, Claude Marie"
-112115.0,,,Wang Ning,Wang Ning
-40714.0,1696.0,1782.0,Francesco de Mura,"Mura, Francesco de"
-41499.0,1480.0,1547.0,Sebastiano del Piombo,Sebastiano del Piombo
-40426.0,1472.0,1517.0,Fra Bartolommeo,"Bartolommeo, Fra"
-64182.0,1848.0,1933.0,Lilla Cabot Perry,"Perry, Lilla Cabot"
-41306.0,1564.0,1635.0,"Joos de Momper, II","Momper, Joos de, II"
-5103.0,1832.0,1920.0,Samuel Colman,"Colman, Samuel"
-36044.0,1746.0,1831.0,James Northcote,"Northcote, James"
-8290.0,1805.0,1900.0,Erastus Salisbury Field,"Field, Erastus Salisbury"
-4329.0,1565.0,1643.0,Cheng Jiasui,Cheng Jiasui
-16579.0,1355.0,1413.0,Gherardo Starnina,"Starnina, Gherardo"
-79635.0,1293.0,1365.0,Zhu Yu,Zhu Yu
-40773.0,1591.0,1652.0,Jusepe de Ribera,"Ribera, Jusepe de"
-38970.0,,,Shen Quan,Shen Quan
-27814.0,1783.0,1861.0,Samuel Lovett Waldo,"Waldo, Samuel Lovett"
-41364.0,1636.0,1672.0,Adriaen van de Velde,"Velde, Adriaen van de"
-58342.0,,,Hasegawa Sôya,Hasegawa Sôya
-36154.0,1749.0,1831.0,James Peale,"Peale, James"
-55286.0,1617.0,1689.0,Gong Xian,Gong Xian
-77241.0,1768.0,1836.0,Ezra Ames,"Ames, Ezra"
-57839.0,,,Sheng Mao,Sheng Mao
-56869.0,1815.0,1872.0,Severin Roesen,"Roesen, Severin"
-21974.0,1451.0,1496.0,Ercole de'Roberti,"Roberti, Ercole de'"
-41840.0,1836.0,1904.0,Franz Seraph von Lenbach,"Lenbach, Franz Seraph von"
-46403.0,1577.0,1640.0,Follower of Peter Paul Rubens,"Rubens, Peter Paul, Follower of"
-37468.0,1503.0,1577.0,"Michele Tosini, called Michele di Ridolfo","Michele Tosini, called Michele di Ridolfo"
-41019.0,1765.0,1836.0,Richard Westall,"Westall, Richard"
-34811.0,1575.0,1666.0,Frans Hals,"Hals, Frans"
-16592.0,,,Master of the Freising Visitation,Master of the Freising Visitation
-26583.0,1656.0,1746.0,Francesco Trevisani,"Trevisani, Francesco"
-41186.0,1596.0,1675.0,Abraham Jansz. van Diepenbeeck,"Diepenbeeck, Abraham Jansz. van"
-26935.0,1592.0,1656.0,Gerrit van Honthorst,"Honthorst, Gerrit van"
-81339.0,1606.0,1669.0,Workshop of Rembrandt van Rijn,Workshop of Rembrandt van Rijn
-24789.0,1575.0,1654.0,"Hendrick van Steenwijck, the Younger","Steenwijck, Hendrick van, the Younger"
-103490.0,,,Jiang Hong,Jiang Hong
-16414.0,1395.0,1452.0,Bernat Martorell,"Martorell, Bernardo"
-115812.0,,,María Josefa Sánchez,"Sánchez, María Josefa"
-41492.0,1462.0,1521.0,Piero di Cosimo,Piero di Cosimo
-36749.0,,,Martin de Soria,"Soria, Martin de"
-33589.0,1721.0,1780.0,Bernardo Bellotto,"Bellotto, Bernardo"
-41125.0,1740.0,1812.0,"Philippe Jacques de Loutherbourg, II","Loutherbourg, Philippe Jacques de, II"
-4316.0,,,Qian Shumei,Qian Shumei
-27302.0,1605.0,1678.0,Pietro della Vecchia,"Vecchia, Pietro della"
-33320.0,1827.0,1901.0,Arnold Böcklin,"Böcklin, Arnold"
-15227.0,1840.0,1904.0,Henri Leopold Lévy,"Lévy, Henri Leopold"
-40672.0,1844.0,1925.0,Léon Augustin Lhermitte,"Lhermitte, Léon Augustin"
-27392.0,1714.0,1789.0,Claude Joseph Vernet,"Vernet, Claude Joseph"
-24621.0,1630.0,1673.0,Adriaen van der Spelt,"Spelt, Adriaen van der"
-37258.0,1621.0,1660.0,Jan Baptist Weenix,"Weenix, Jan Baptist"
-41725.0,1578.0,1649.0,Alessandro Turchi,"Turchi, Alessandro"
-111865.0,,,Shen Kai,Shen Kai
-58385.0,1822.0,1902.0,Lilly Martin Spencer,"Spencer, Lilly Martin"
-3281.0,1834.0,1923.0,Fidelia Bridges,"Bridges, Fidelia"
-40597.0,1791.0,1824.0,Jean Louis André Théodore Géricault,"Géricault, Jean Louis André Théodore"
-41875.0,1568.0,1625.0,"Jan Brueghel, the elder","Brueghel, Jan, the elder"
-35571.0,1840.0,1884.0,Hans Makart,"Makart, Hans"
-42360.0,1770.0,1837.0,baron François Pascal Simon Gérard,"Gérard, François Pascal Simon, baron"
-17526.0,1610.0,1696.0,Louise Moillon,"Moillon, Louise"
-35098.0,1716.0,1800.0,Ito Jakuchu,Ito Jakuchu
-33605.0,1620.0,1683.0,Nicolaes Berchem,"Berchem, Nicolaes"
-35059.0,1780.0,1867.0,Jean Auguste Dominique Ingres,"Ingres, Jean Auguste Dominique"
-41853.0,1729.0,1765.0,Jean Baptiste Henri Deshays,"Deshays, Jean Baptiste Henri"
-34777.0,1824.0,1910.0,Seymour Joseph Guy,"Guy, Seymour Joseph"
-15279.0,1686.0,1760.0,Li Shan,Li Shan
-57815.0,1776.0,1860.0,Joshua Shaw,"Shaw, Joshua"
-40583.0,1732.0,1806.0,Jean Honoré Fragonard,"Fragonard, Jean Honoré"
-13429.0,1248.0,1315.0,Gao Kekong,Gao Kekong
-22940.0,1406.0,1481.0,Sano di Pietro,Sano di Pietro
-10213.0,1846.0,1930.0,Walter Greaves,"Greaves, Walter"
-40774.0,1667.0,1745.0,"Jonathan Richardson, the elder","Richardson, Jonathan, the elder"
-41352.0,1621.0,1649.0,Isaac van Ostade,"Ostade, Isaac van"
-1573.0,1603.0,1649.0,Paolo Antonio Barbieri,"Barbieri, Paolo Antonio"
-34007.0,1801.0,1848.0,Thomas Cole,"Cole, Thomas"
-34593.0,1727.0,1788.0,Thomas Gainsborough,"Gainsborough, Thomas"
-63672.0,1630.0,1693.0,Maria van Oosterwijck,"Oosterwijck, Maria van"
-33753.0,1827.0,1906.0,Jules Breton,"Breton, Jules"
-28273.0,1502.0,1575.0,Wen Boren,Wen Boren
-56950.0,1803.0,1848.0,Martinus Rørbye,"Rørbye, Martinus"
-20726.0,1625.0,1672.0,Karel van der Pluym,"Pluym, Karel van der"
-36879.0,1823.0,1864.0,Tamechika Reizei,Tamechika Reizei
-40702.0,1689.0,1760.0,Philippe Mercier,"Mercier, Philippe"
-4309.0,1539.0,1625.0,Chen Jiayan,Chen Jiayan
-52371.0,1551.0,1640.0,Jacopo da Empoli,"Empoli, Jacopo da"
-15508.0,1845.0,1916.0,Luigi Loir,"Loir, Luigi"
-56367.0,1015.0,1100.0,Guo Xi,Guo Xi
-1540.0,1758.0,1832.0,Jean Baptiste François Désoria,"Désoria, Jean Baptiste François"
-37236.0,1684.0,1721.0,Jean Antoine Watteau,"Watteau, Jean Antoine"
-27657.0,1868.0,1940.0,Édouard Jean Vuillard,"Vuillard, Édouard Jean"
-35769.0,1851.0,1929.0,Francesco Paolo Michetti,"Michetti, Francesco Paolo"
-58779.0,1845.0,1920.0,Pál Szinyei Merse,"Szinyei Merse, Pál"
-30723.0,1699.0,1779.0,Jean Baptiste Siméon Chardin,"Chardin, Jean Baptiste Siméon"
-40664.0,1617.0,1655.0,Eustache Le Sueur,"Le Sueur, Eustache"
-36763.0,1341.0,1410.0,Spinello Aretino,Spinello Aretino
-27934.0,1300.0,1385.0,Wang Meng,Wang Meng
-36457.0,1828.0,1882.0,Dante Gabriel Rossetti,"Rossetti, Dante Gabriel"
-21156.0,1602.0,1648.0,Antonio Puga,"Puga, Antonio"
-17482.0,1683.0,1753.0,Miyagawa Chôshun,Miyagawa Chôshun
-114478.0,1828.0,1890.0,William A. Mitchell,"Mitchell, William A."
-17676.0,1826.0,1901.0,Domenico Morelli,"Morelli, Domenico"
-42415.0,1642.0,1679.0,"Jean François Millet, I","Millet, Jean François, I"
-60977.0,,,Yuan Jiang,Yuan Jiang
-35835.0,1763.0,1804.0,George Morland,"Morland, George"
-21838.0,1816.0,1879.0,William Rimmer,"Rimmer, William"
-23079.0,1477.0,1549.0,Martin Schaffner,"Schaffner, Martin"
-5355.0,1533.0,1578.0,Cornelis Cort,"Cort, Cornelis"
-44859.0,1829.0,1911.0,Constant Mayer,"Mayer, Constant"
-44956.0,1811.0,1902.0,Paul Flandrin,"Flandrin, Paul"
-99069.0,1743.0,,Wang Xu,Wang Xu
-19897.0,1724.0,1767.0,Franz Xavier Karl Palko,"Palko, Franz Xavier Karl"
-25212.0,1803.0,1855.0,Robert Matthew Sully,"Sully, Robert Matthew"
-29742.0,1567.0,1600.0,Unknown Venetian,Unknown Venetian
-33710.0,1444.0,1510.0,Sandro Botticelli,"Botticelli, Sandro"
-41514.0,1748.0,1832.0,Samuel De Wilde,"De Wilde, Samuel"
-36071.0,1634.0,1682.0,Jacob Ochtervelt,"Ochtervelt, Jacob"
-5383.0,1560.0,1627.0,Juan Sánchez Cotán,"Sánchez Cotán, Juan"
-41942.0,1569.0,1622.0,"Frans Pourbus, the Younger","Pourbus, Frans, the Younger"
-8097.0,1616.0,1692.0,Fan Qi,Fan Qi
-43090.0,1841.0,1919.0,Edward Lamson Henry,"Henry, Edward Lamson"
-33574.0,1753.0,1839.0,Sir William Beechey,"Beechey, William, Sir"
-55837.0,1842.0,1923.0,Jean Jules Antoine Lecomte du Noüy,"Lecomte du Noüy, Jean Jules Antoine"
-40931.0,1554.0,1626.0,Paul Bril,"Bril, Paul"
-110895.0,,,Kaigetsudo Doshu,Kaigetsudo Doshu
-42368.0,1762.0,1834.0,Jean Baptiste Joseph Wicar,"Wicar, Jean Baptiste Joseph"
-18903.0,1609.0,1670.0,Jan Mijtens,"Mijtens, Jan"
-19687.0,1848.0,1896.0,Marcel Ordinaire,"Ordinaire, Marcel"
-37519.0,1815.0,1892.0,Charles Louis-Lucien Muller,"Muller, Charles Louis-Lucien"
-17840.0,1476.0,1559.0,Kano Motonobu,Kano Motonobu
-41747.0,1578.0,1610.0,Adam Elsheimer,"Elsheimer, Adam"
-46337.0,1477.0,1576.0,Imitator of Titian,"Titian, imitator of"
-46302.0,,,Kano Yukenobu,Kano Yukenobu
-25722.0,1849.0,1921.0,Abbott Handerson Thayer,"Thayer, Abbott Handerson"
-35975.0,1838.0,1915.0,David Dalhoff Neal,"Neal, David Dalhoff"
-10543.0,1746.0,1799.0,Gyokushû,Gyokushû
-40871.0,1703.0,1739.0,Pierre Charles Trémolières,"Trémolières, Pierre Charles"
-37454.0,1430.0,1495.0,Carlo Crivelli,"Crivelli, Carlo"
-36670.0,,,Katsukawa Shunchô,Katsukawa Shunchô
-25418.0,1723.0,1776.0,Ike Taiga,Ike Taiga
-30511.0,,,Edouard Béliard,"Béliard, Edouard"
-17300.0,1662.0,1747.0,Willem van Mieris,"Mieris, Willem van"
-60679.0,,,Xu Ben,Xu Ben
-30593.0,,,Joseph Blackburn,"Blackburn, Joseph"
+ARTIC-46418,1606.0,1669.0,Follower of Rembrandt van Rijn,Follower of Rembrandt van Rijn
+ARTIC-40482,1839.0,1906.0,Paul Cezanne,"Cezanne, Paul"
+ARTIC-34853,1877.0,1943.0,Marsden Hartley,"Hartley, Marsden"
+ARTIC-46234,,,French School,French School
+ARTIC-35188,1866.0,1944.0,Vasily Kandinsky,"Kandinsky, Vasily"
+ARTIC-12211,1632.0,1717.0,Wang Hui,Wang Hui
+ARTIC-35837,1712.0,1772.0,Furuyama Moromasa,Furuyama Moromasa
+ARTIC-52958,1855.0,1929.0,George Cope,"Cope, George"
+ARTIC-42097,1654.0,1730.0,Johann Michael Rottmayr,"Rottmayr, Johann Michael"
+ARTIC-20709,1704.0,1761.0,Johann Georg Platzer,"Platzer, Johann Georg"
+ARTIC-35809,1840.0,1926.0,Claude Monet,"Monet, Claude"
+ARTIC-41673,1849.0,1916.0,William Merritt Chase,"Chase, William Merritt"
+ARTIC-25652,1617.0,1681.0,Gerard ter Borch,"ter Borch, Gerard"
+ARTIC-1245,1789.0,1850.0,Jules Robert Auguste,"Auguste, Jules Robert"
+ARTIC-4311,1483.0,1544.0,Chen Chun,Chen Chun
+ARTIC-41255,1562.0,1638.0,Cornelis Cornelisz.,"Cornelisz., Cornelis"
+ARTIC-114854,,,Artist unknown,Artist unknown
+ARTIC-23819,,,Mandara Shika,"Shika, Mandara"
+ARTIC-41188,1599.0,1660.0,Diego Velázquez,"Velázquez, Diego"
+ARTIC-3746,1484.0,1507.0,Bernardino Jacobi Butinone,"Butinone, Bernardino Jacobi"
+ARTIC-4098,1613.0,1678.0,Giulio Carpioni,"Carpioni, Giulio"
+ARTIC-40975,1827.0,1910.0,William Holman Hunt,"Hunt, William Holman"
+ARTIC-35801,1884.0,1920.0,Amedeo Modigliani,"Modigliani, Amedeo"
+ARTIC-40579,1516.0,1570.0,"Frans Floris, I","Floris, Frans, I"
+ARTIC-35577,1832.0,1883.0,Édouard Manet,"Manet, Édouard"
+ARTIC-29882,,,Islamic,Islamic
+ARTIC-1854,1841.0,1870.0,Frédéric Bazille,"Bazille, Frédéric"
+ARTIC-36153,1741.0,1827.0,Charles Willson Peale,"Peale, Charles Willson"
+ARTIC-37078,1604.0,1670.0,Andrea Vaccaro,"Vaccaro, Andrea"
+ARTIC-34324,1615.0,1675.0,Gaspard Dughet,"Dughet, Gaspard"
+ARTIC-112116,1801.0,1900.0,Yao Luan,Yao Luan
+ARTIC-23024,1761.0,1817.0,Edward Savage,"Savage, Edward"
+ARTIC-37466,1545.0,1608.0,Andrés López Polanco,"López Polanco, Andrés"
+ARTIC-36351,1841.0,1919.0,Pierre-Auguste Renoir,"Renoir, Pierre-Auguste"
+ARTIC-5612,1856.0,1910.0,Henri Edmond Cross,"Cross, Henri Edmond"
+ARTIC-35061,1825.0,1894.0,George Inness,"Inness, George"
+ARTIC-40867,1560.0,1635.0,Domenico Tintoretto,"Tintoretto, Domenico"
+ARTIC-36476,1812.0,1867.0,Théodore Rousseau,"Rousseau, Théodore"
+ARTIC-27929,1598.0,1667.0,Wang Jian,Wang Jian
+ARTIC-47696,1365.0,1428.0,Lorenzo Monaco,"Monaco, Lorenzo"
+ARTIC-34648,1823.0,1880.0,Sanford Robinson Gifford,"Gifford, Sanford Robinson"
+ARTIC-33939,1819.0,1856.0,Théodore Chassériau,"Chassériau, Théodore"
+ARTIC-33691,1801.0,1828.0,Richard Parkes Bonington,"Bonington, Richard Parkes"
+ARTIC-37378,1423.0,1495.0,Yao Shou,Yao Shou
+ARTIC-34147,1748.0,1825.0,Jacques Louis David,"David, Jacques Louis"
+ARTIC-37485,,,Pedro Girard,"Girard, Pedro"
+ARTIC-37416,1807.0,1891.0,Shibata Zeshin,Shibata Zeshin
+ARTIC-46333,1487.0,1541.0,Follower of Bernard van Orley,"Orley, Bernard van, Follower of"
+ARTIC-36802,1823.0,1906.0,Alfred Stevens,"Stevens, Alfred"
+ARTIC-14950,1688.0,1737.0,François Le Moyne,"Le Moyne, François"
+ARTIC-33890,1844.0,1926.0,Mary Cassatt,"Cassatt, Mary"
+ARTIC-61111,,,Zhou Zhimian,Zhou Zhimian
+ARTIC-6656,,,Giovanni di Paolo,Giovanni di Paolo
+ARTIC-58317,1413.0,1481.0,Oguri Sotan,Oguri Sotan
+ARTIC-41459,1556.0,1629.0,Otto van Veen,"Veen, Otto van"
+ARTIC-110543,1781.0,1853.0,Merry Joseph Blondel,"Blondel, Merry Joseph"
+ARTIC-4313,1601.0,1700.0,Qi Zhijia,Qi Zhijia
+ARTIC-43088,1793.0,1856.0,Thomas Doughty,"Doughty, Thomas"
+ARTIC-36707,1839.0,1899.0,Alfred Sisley,"Sisley, Alfred"
+ARTIC-7242,1725.0,1802.0,Joseph Siffred Duplessis,"Duplessis, Joseph Siffred"
+ARTIC-36540,1856.0,1925.0,John Singer Sargent,"Sargent, John Singer"
+ARTIC-12128,1682.0,1765.0,Hua Yan,Hua Yan
+ARTIC-52802,1847.0,1898.0,De Scott Evans,"Evans, De Scott"
+ARTIC-33567,1855.0,1942.0,Cecilia Beaux,"Beaux, Cecilia"
+ARTIC-40615,1746.0,1828.0,Francisco José de Goya y Lucientes,"Goya y Lucientes, Francisco José de"
+ARTIC-42477,1475.0,1548.0,Giovanni Girolamo Savoldo,"Savoldo, Giovanni Girolamo"
+ARTIC-34210,1803.0,1860.0,Alexandre Gabriel Decamps,"Decamps, Alexandre Gabriel"
+ARTIC-40639,1824.0,1911.0,Jozef Israëls,"Israëls, Jozef"
+ARTIC-92551,1829.0,1901.0,Hannah Brown Skeele,"Skeele, Hannah Brown"
+ARTIC-40454,1824.0,1898.0,Eugène Louis Boudin,"Boudin, Eugène Louis"
+ARTIC-28272,1470.0,1559.0,Wen Zhengming,Wen Zhengming
+ARTIC-37279,1834.0,1903.0,James McNeill Whistler,"Whistler, James McNeill"
+ARTIC-26682,1425.0,1495.0,Cosimo Tura,"Tura, Cosimo"
+ARTIC-52849,1475.0,1628.0,Hans Eworth,"Eworth, Hans"
+ARTIC-36432,1734.0,1802.0,George Romney,"Romney, George"
+ARTIC-14600,1854.0,1913.0,Gaston La Touche,"La Touche, Gaston"
+ARTIC-36681,1726.0,1792.0,Katsukawa Shunsho,Katsukawa Shunsho
+ARTIC-35813,1824.0,1886.0,Adolphe Joseph Thomas Monticelli,"Monticelli, Adolphe Joseph Thomas"
+ARTIC-40428,1505.0,1592.0,Jacopo Bassano,"Bassano, Jacopo"
+ARTIC-16652,1425.0,1495.0,Matteo di Giovanni,Matteo di Giovanni
+ARTIC-33370,1578.0,1660.0,Francesco Albani,"Albani, Francesco"
+ARTIC-36633,1427.0,1509.0,Shen Zhou,Shen Zhou
+ARTIC-36177,1445.0,1523.0,Perugino,Perugino
+ARTIC-103544,1855.0,1921.0,Kim Eung-won,Kim Eung-won
+ARTIC-37401,1839.0,1892.0,Tsukioka Yoshitoshi,Tsukioka Yoshitoshi
+ARTIC-69747,1847.0,1917.0,Noguchi Shohin,Noguchi Shohin
+ARTIC-34049,1819.0,1877.0,Gustave Courbet,"Courbet, Gustave"
+ARTIC-43630,1776.0,1842.0,Jacob Eichholtz,"Eichholtz, Jacob"
+ARTIC-61105,1445.0,1540.0,Zhou Chen,Zhou Chen
+ARTIC-476,1724.0,1772.0,Cosmo Alexander,"Alexander, Cosmo"
+ARTIC-104691,,,Mughal,Mughal
+ARTIC-41179,1530.0,1619.0,Denys Calvaert,"Calvaert, Denys"
+ARTIC-92375,1756.0,1829.0,Bernard d'Agescy,"Agescy, Bernard d'"
+ARTIC-14686,1578.0,1660.0,Lan Ying,Lan Ying
+ARTIC-37451,1888.0,1946.0,Horace Pippin,"Pippin, Horace"
+ARTIC-41039,1769.0,1830.0,Sir Thomas Lawrence,"Lawrence, Thomas, Sir"
+ARTIC-61888,,,Master of Saint Veronica,Master of Saint Veronica
+ARTIC-20528,1682.0,1754.0,Giovanni Battista Piazzetta,"Piazzetta, Giovanni Battista"
+ARTIC-26388,1617.0,1691.0,Tosa Mitsuoki,Tosa Mitsuoki
+ARTIC-42670,1595.0,1681.0,Gerard van Soest,"Soest, Gerard van"
+ARTIC-46450,1415.0,1465.0,Workshop of Apollonio di Giovanni,"Apollonio di Giovanni, Workshop of"
+ARTIC-36750,1863.0,1923.0,Joaquín Sorolla y Bastida,"Sorolla y Bastida, Joaquín"
+ARTIC-35156,,,Mihata Jôryû,Mihata Jôryû
+ARTIC-87575,1399.0,1464.0,Workshop of Rogier van der Weyden,"Weyden, Rogier van der, Workshop of"
+ARTIC-24418,1579.0,1657.0,Frans Snyders,"Snyders, Frans"
+ARTIC-40516,1817.0,1878.0,Charles François Daubigny,"Daubigny, Charles François"
+ARTIC-35622,1836.0,1897.0,Homer Dodge Martin,"Martin, Homer Dodge"
+ARTIC-35029,1824.0,1879.0,William Morris Hunt,"Hunt, William Morris"
+ARTIC-36972,1696.0,1770.0,Giambattista Tiepolo,"Tiepolo, Giambattista"
+ARTIC-46310,1420.0,1506.0,School of Sesshu,"Sesshu, School of"
+ARTIC-44128,,,Veneto-Lombardian School,Veneto-Lombardian School
+ARTIC-37028,1810.0,1865.0,Constant Troyon,"Troyon, Constant"
+ARTIC-44114,1755.0,1830.0,Nicolas Antoine Taunay,"Taunay, Nicolas Antoine"
+ARTIC-34035,1796.0,1875.0,Jean Baptiste Camille Corot,"Corot, Jean Baptiste Camille"
+ARTIC-20727,1840.0,1895.0,Ren Yi,Ren Yi
+ARTIC-34611,1848.0,1903.0,Paul Gauguin,"Gauguin, Paul"
+ARTIC-26678,1555.0,1636.0,Dong Qichang,Dong Qichang
+ARTIC-34566,1874.0,1939.0,Frederick Carl Frieseke,"Frieseke, Frederick Carl"
+ARTIC-46243,1528.0,1588.0,Follower of Paolo Veronese,"Veronese, Paolo, Follower of"
+ARTIC-36333,1838.0,1917.0,Carducius Plantagenet Ream,"Ream, Carducius Plantagenet"
+ARTIC-21570,1851.0,1909.0,Frederic Remington,"Remington, Frederic"
+ARTIC-44129,1410.0,1484.0,Antonio Vivarini,"Vivarini, Antonio"
+ARTIC-2298,1767.0,1842.0,Jean Victor Bertin,"Bertin, Jean Victor"
+ARTIC-2256,1838.0,1910.0,Etienne Prosper Berne-Bellecour,"Berne-Bellecour, Etienne Prosper"
+ARTIC-37523,1401.0,1500.0,German School,German School
+ARTIC-42406,1598.0,1664.0,Francisco de Zurbarán,"Zurbarán, Francisco de"
+ARTIC-40563,1599.0,1641.0,Anthony van Dyck,"Dyck, Anthony van"
+ARTIC-29775,,,Northern Netherlandish School,Northern Netherlandish School
+ARTIC-36487,1577.0,1640.0,Peter Paul Rubens,"Rubens, Peter Paul"
+ARTIC-43052,,,Venetian School,Venetian School
+ARTIC-41483,1570.0,1630.0,Bartolomeo Manfredi,"Manfredi, Bartolomeo"
+ARTIC-42709,,,Francescuccio Ghissi,"Ghissi, Francescuccio"
+ARTIC-743,1387.0,1455.0,Fra Angelico,"Angelico, Fra"
+ARTIC-35834,1841.0,1895.0,Berthe Morisot,"Morisot, Berthe"
+ARTIC-7746,1468.0,1533.0,Cornelis Engelbrechtsz.,"Engelbrechtsz., Cornelis"
+ARTIC-118456,,,Monogrammist PG,Monogrammist PG
+ARTIC-17105,1728.0,1779.0,Anton Raffael Mengs,"Mengs, Anton Raffael"
+ARTIC-36407,1733.0,1808.0,Hubert Robert,"Robert, Hubert"
+ARTIC-41190,1610.0,1690.0,"David Teniers, the younger","Teniers, David, the younger"
+ARTIC-35142,1824.0,1906.0,Eastman Johnson,"Johnson, Eastman"
+ARTIC-5937,1853.0,1929.0,William Turner Dannat,"Dannat, William Turner"
+ARTIC-35761,1595.0,1628.0,Mi Wanzhong,Mi Wanzhong
+ARTIC-35562,1667.0,1749.0,Alessandro Magnasco,"Magnasco, Alessandro"
+ARTIC-36211,1830.0,1903.0,Camille Pissarro,"Pissarro, Camille"
+ARTIC-40517,1808.0,1879.0,Honoré-Victorin Daumier,"Daumier, Honoré-Victorin"
+ARTIC-35379,1690.0,1743.0,Nicolas Lancret,"Lancret, Nicolas"
+ARTIC-36862,1470.0,1523.0,Tang Yin,Tang Yin
+ARTIC-4124,1849.0,1906.0,Eugène Carrière,"Carrière, Eugène"
+ARTIC-35275,1664.0,1729.0,Torii Kiyonobu I,Torii Kiyonobu I
+ARTIC-12209,1835.0,1902.0,Victor Pierre Huguet,"Huguet, Victor Pierre"
+ARTIC-25021,1630.0,1715.0,Abraham Storck,"Storck, Abraham"
+ARTIC-13430,,,Gao Yang,Gao Yang
+ARTIC-47125,1697.0,1768.0,Follower of Canaletto,"Canaletto, Follower of"
+ARTIC-41423,1618.0,1682.0,Bartolomé Estéban Murillo,"Murillo, Bartolomé Estéban"
+ARTIC-60819,1864.0,1916.0,Vilhelm Hammershøi,"Hammershøi, Vilhelm"
+ARTIC-35230,1839.0,1911.0,William Keith,"Keith, William"
+ARTIC-35560,1632.0,1693.0,Nicolaes Maes,"Maes, Nicolaes"
+ARTIC-115913,1818.0,1880.0,Charles Spencer Humphreys,"Humphreys, Charles Spencer"
+ARTIC-35854,1807.0,1868.0,William Sidney Mount,"Mount, William Sidney"
+ARTIC-40560,1811.0,1889.0,Jules Dupré,"Dupré, Jules"
+ARTIC-34988,1836.0,1910.0,Winslow Homer,"Homer, Winslow"
+ARTIC-35730,1815.0,1891.0,Jean Louis Ernest Meissonier,"Meissonier, Jean Louis Ernest"
+ARTIC-36319,1858.0,1916.0,Henry Ward Ranger,"Ranger, Henry Ward"
+ARTIC-60808,1697.0,1737.0,Gawen Hamilton,"Hamilton, Gawen"
+ARTIC-20743,1797.0,,Pierre Achille Poirot,"Poirot, Pierre Achille"
+ARTIC-36155,1778.0,1860.0,Rembrandt Peale,"Peale, Rembrandt"
+ARTIC-49882,1699.0,1769.0,Dong Bangda,Dong Bangda
+ARTIC-10052,1473.0,1536.0,Jan Gossart,"Gossart, Jan"
+ARTIC-33896,1841.0,1901.0,Jean Charles Cazin,"Cazin, Jean Charles"
+ARTIC-15545,1733.0,1813.0,Alessandro Longhi,"Longhi, Alessandro"
+ARTIC-40545,1798.0,1863.0,Eugène Delacroix,"Delacroix, Eugène"
+ARTIC-40771,1723.0,1792.0,Sir Joshua Reynolds,"Reynolds, Joshua, Sir"
+ARTIC-34028,1738.0,1815.0,John Singleton Copley,"Copley, John Singleton"
+ARTIC-9964,1723.0,1793.0,"Antonio González Velásquez, I","González Velásquez, Antonio, I"
+ARTIC-4414,1564.0,1649.0,Zhang Ruitu,Zhang Ruitu
+ARTIC-2530,1600.0,1638.0,Jacques Blanchard,"Blanchard, Jacques"
+ARTIC-14404,1824.0,1896.0,Xugu,Xugu
+ARTIC-40869,1864.0,1901.0,Henri de Toulouse-Lautrec,"Toulouse-Lautrec, Henri de"
+ARTIC-72293,1697.0,1756.0,"John Theodore Heins, Sr.","Heins, John Theodore, Sr."
+ARTIC-102177,,,Shen Yongling,Shen Yongling
+ARTIC-2870,1804.0,1865.0,William Bonnell,"Bonnell, William"
+ARTIC-10425,1563.0,1639.0,Chen Guan,Chen Guan
+ARTIC-22822,1599.0,1633.0,Bartolomeo Salvestrini,"Salvestrini, Bartolomeo"
+ARTIC-30911,1807.0,1876.0,Narcisse Virgile Diaz de la Peña,"Diaz de la Peña, Narcisse Virgile"
+ARTIC-34054,1815.0,1879.0,Thomas Couture,"Couture, Thomas"
+ARTIC-34023,1776.0,1837.0,John Constable,"Constable, John"
+ARTIC-61317,1301.0,1374.0,Ni Zan,Ni Zan
+ARTIC-46468,1511.0,1581.0,School of Anthonis Mor,"Mor, Anthonis, School of"
+ARTIC-16053,1621.0,1706.0,Cornelis de Man,"Man, Cornelis de"
+ARTIC-42518,1853.0,1932.0,Will Hicock Low,"Low, Will Hicock"
+ARTIC-43802,,,Workshop of Jacob Cornelisz. van Oostsanen,"Cornelisz. van Oostsanen, Jacob, Workshop of"
+ARTIC-21839,,,Antonio Rimpatta,"Rimpatta, Antonio"
+ARTIC-33690,1822.0,1899.0,Rosa Bonheur,"Bonheur, Rosa"
+ARTIC-36376,1833.0,1905.0,William Trost Richards,"Richards, William Trost"
+ARTIC-51753,1624.0,1679.0,Jan van de Cappelle,"Cappelle, Jan van de"
+ARTIC-35623,1789.0,1854.0,John Martin,"Martin, John"
+ARTIC-24282,1688.0,1751.0,John Smibert,"Smibert, John"
+ARTIC-37003,1773.0,1828.0,Utagawa Toyohiro,Utagawa Toyohiro
+ARTIC-35366,1835.0,1910.0,John La Farge,"La Farge, John"
+ARTIC-35460,1794.0,1859.0,Charles Robert Leslie,"Leslie, Charles Robert"
+ARTIC-40606,1501.0,1556.0,Girolamo da Carpi,Girolamo da Carpi
+ARTIC-40762,1850.0,1924.0,Jean-François Rafaëlli,"Rafaëlli, Jean-François"
+ARTIC-34953,1850.0,1913.0,George Hitchcock,"Hitchcock, George"
+ARTIC-36822,1755.0,1828.0,Gilbert Stuart,"Stuart, Gilbert"
+ARTIC-21517,1754.0,1829.0,Jean Baptiste Regnault,"Regnault, Jean Baptiste"
+ARTIC-737,1821.0,1892.0,Pierre Andrieu,"Andrieu, Pierre"
+ARTIC-7353,1844.0,1916.0,Thomas Eakins,"Eakins, Thomas"
+ARTIC-29477,1623.0,1664.0,"Reinier Nooms, called Zeeman","Nooms, called Zeeman, Reinier"
+ARTIC-34664,1634.0,1705.0,Luca Giordano,"Giordano, Luca"
+ARTIC-34505,1852.0,1931.0,Jean Louis Forain,"Forain, Jean Louis"
+ARTIC-35069,1803.0,1886.0,Eugène Isabey,"Isabey, Eugène"
+ARTIC-21235,1801.0,1881.0,John Quidor,"Quidor, John"
+ARTIC-46463,1512.0,1572.0,Imitator of François Clouet,"Clouet, Francois, imitator of"
+ARTIC-29512,1821.0,1911.0,Félix Ziem,"Ziem, Félix"
+ARTIC-40610,1853.0,1890.0,Vincent van Gogh,"Gogh, Vincent van"
+ARTIC-4832,1597.0,1660.0,Pieter Claesz,"Claesz, Pieter"
+ARTIC-110865,1806.0,1875.0,Frederick R. Spencer,"Spencer, Frederick R."
+ARTIC-42138,1510.0,1598.0,Jacopino del Conte,Jacopino del Conte
+ARTIC-36577,1828.0,1899.0,Adolphe Schreyer,"Schreyer, Adolphe"
+ARTIC-112569,1741.0,1812.0,Bernardino Nocchi,"Nocchi, Bernardino"
+ARTIC-2437,1779.0,1851.0,Thomas Birch,"Birch, Thomas"
+ARTIC-27368,,,Raphael Vergos,"Vergos, Raphael"
+ARTIC-40543,1834.0,1917.0,Hilaire Germain Edgar Degas,"Degas, Hilaire Germain Edgar"
+ARTIC-33679,1616.0,1680.0,Ferdinand Bol,"Bol, Ferdinand"
+ARTIC-17549,1872.0,1944.0,Piet Mondrian,"Mondrian, Piet"
+ARTIC-35218,1741.0,1807.0,Angelica Kauffmann,"Kauffmann, Angelica"
+ARTIC-34864,1859.0,1935.0,Childe Hassam,"Hassam, Childe"
+ARTIC-34071,1472.0,1553.0,"Lucas Cranach, the Elder","Cranach, Lucas, the Elder"
+ARTIC-118916,,,El Greco (Doménikos Theotokópoulos) and workshop,El Greco (Doménikos Theotokópoulos) and workshop
+ARTIC-36739,1657.0,1747.0,Francesco Solimena,"Solimena, Francesco"
+ARTIC-33876,1555.0,1619.0,Lodovico Carracci,"Carracci, Lodovico"
+ARTIC-12124,1487.0,1600.0,Xie Shichen,Xie Shichen
+ARTIC-63444,1815.0,1881.0,Jules Achille Noël,"Noël, Jules Achille"
+ARTIC-44584,1798.0,1840.0,Carl Blechen,"Blechen, Carl"
+ARTIC-102578,1805.0,1861.0,Albert Schindler,"Schindler, Albert"
+ARTIC-33627,1849.0,1934.0,Albert Besnard,"Besnard, Albert"
+ARTIC-40784,1615.0,1673.0,Salvator Rosa,"Rosa, Salvator"
+ARTIC-35839,1613.0,1694.0,Hishikawa Moronobu,Hishikawa Moronobu
+ARTIC-4307,1558.0,1639.0,Chen Jiru,Chen Jiru
+ARTIC-40485,1792.0,1845.0,Nicolas Toussaint Charlet,"Charlet, Nicolas Toussaint"
+ARTIC-49886,1636.0,1713.0,Kanô Tsunenobu,Kanô Tsunenobu
+ARTIC-46359,1528.0,1588.0,Workshop of Paolo Veronese,"Veronese, Paolo, Workshop of"
+ARTIC-40508,1665.0,1747.0,Giuseppe Maria Crespi,"Crespi, Giuseppe Maria"
+ARTIC-36514,1607.0,1681.0,Cornelis Saftleven,"Saftleven, Cornelis"
+ARTIC-41463,1612.0,1692.0,Emanuel de Witte,"Witte, Emanuel de"
+ARTIC-23102,1795.0,1858.0,Ary Scheffer,"Scheffer, Ary"
+ARTIC-833,1401.0,1500.0,Unknown artist,Unknown artist
+ARTIC-35252,1796.0,1858.0,Suzuki Kiitsu,"Kiitsu,  Suzuki"
+ARTIC-113508,,,Ansano Ciampanti,"Ciampanti, Ansano"
+ARTIC-115820,,,Marquis Filippo Petrone,"Petrone, Filippo, Marquis"
+ARTIC-48082,1761.0,1829.0,Zhang Yin,Zhang Yin
+ARTIC-22687,1864.0,1927.0,Paul Sérusier,"Sérusier, Paul"
+ARTIC-34341,1848.0,1919.0,Frank Duveneck,"Duveneck, Frank"
+ARTIC-36202,1856.0,1932.0,Evert Pieters,"Pieters, Evert"
+ARTIC-36695,1863.0,1935.0,Paul Signac,"Signac, Paul"
+ARTIC-37479,1817.0,1908.0,Antoine Auguste Ernest Hébert,"Hébert, Antoine Auguste Ernest"
+ARTIC-25002,1799.0,1871.0,Mathias Stoltenberg,"Stoltenberg, Mathias"
+ARTIC-34085,1823.0,1900.0,Jasper Francis Cropsey,"Cropsey, Jasper Francis"
+ARTIC-49439,1834.0,1913.0,Julie Hart Beers,"Beers, Julie Hart"
+ARTIC-36656,1838.0,1909.0,Walter Shirlaw,"Shirlaw, Walter"
+ARTIC-59954,1793.0,1865.0,Ferdinand Georg Waldmüller,"Waldmüller, Ferdinand Georg"
+ARTIC-7311,1846.0,1912.0,Charles Gifford Dyer,"Dyer, Charles Gifford"
+ARTIC-34248,1708.0,1787.0,Arthur Devis,"Devis, Arthur"
+ARTIC-5396,1863.0,1925.0,Charles Cottet,"Cottet, Charles"
+ARTIC-100581,,,Basawan,Basawan
+ARTIC-36362,1823.0,1891.0,Augustin Théodule Ribot,"Ribot, Augustin Théodule"
+ARTIC-47964,,,Unknown Italian,Unknown Italian
+ARTIC-41250,1616.0,1671.0,Sébastien Bourdon,"Bourdon, Sébastien"
+ARTIC-742,1704.0,1798.0,Giuseppe Angeli,"Angeli, Giuseppe"
+ARTIC-46422,1480.0,1551.0,Circle of Adriaen Isenbrant,"Isenbrant, Adriaen, Circle of"
+ARTIC-46225,1575.0,1666.0,Follower of Frans Hals,"Hals, Frans, Follower of"
+ARTIC-35787,1814.0,1875.0,Jean François Millet,"Millet, Jean François"
+ARTIC-33012,1852.0,1908.0,Pieter Verhaert,"Verhaert, Pieter"
+ARTIC-42706,,,Cecco del Caravaggio,"Caravaggio, Cecco del"
+ARTIC-35989,1639.0,1684.0,Caspar Netscher,"Netscher, Caspar"
+ARTIC-46237,,,Workshop of Paolo Veneziano,"Paolo Veneziano, Workshop of"
+ARTIC-37424,1860.0,1920.0,Anders Zorn,"Zorn, Anders"
+ARTIC-2763,1622.0,1679.0,Pieter Boel,"Boel, Pieter"
+ARTIC-33785,1493.0,1555.0,"Bartel Bruyn, the elder","Bruyn, Bartel, the elder"
+ARTIC-22018,1852.0,1896.0,Theodore Robinson,"Robinson, Theodore"
+ARTIC-41876,1838.0,1874.0,Mariano Fortuny y Marsal,"Fortuny y Marsal, Mariano"
+ARTIC-37363,1734.0,1797.0,Joseph Wright of Derby,"Wright of Derby, Joseph"
+ARTIC-22609,1847.0,1917.0,Albert Pinkham Ryder,"Ryder, Albert Pinkham"
+ARTIC-35575,1474.0,1535.0,Hans Maler,"Maler, Hans"
+ARTIC-112113,,,Li Zongmo,Li Zongmo
+ARTIC-9540,,,Niccolò di Pietro Gerini,"Gerini, Niccolò di Pietro"
+ARTIC-40500,1489.0,1534.0,Antonio da Correggio,"Correggio, Antonio da"
+ARTIC-35736,1430.0,1494.0,Hans Memling,"Memling, Hans"
+ARTIC-33693,1833.0,1922.0,Léon Joseph Florentin Bonnat,"Bonnat, Léon Joseph Florentin"
+ARTIC-62950,1844.0,1900.0,Mihály Munkácsy,"Munkácsy, Mihály"
+ARTIC-20094,1695.0,1736.0,Jean-Baptiste Pater,"Pater, Jean-Baptiste"
+ARTIC-117832,,,August (Ágost)  Canzi,"Canzi, August (Ágost)"
+ARTIC-27938,1642.0,1715.0,Wang Yuanqi,Wang Yuanqi
+ARTIC-40608,1870.0,1938.0,William James Glackens,"Glackens, William James"
+ARTIC-4644,1662.0,1722.0,Jiao Bingzhen,Jiao Bingzhen
+ARTIC-25497,1859.0,1937.0,Henry Ossawa Tanner,"Tanner, Henry Ossawa"
+ARTIC-9093,1741.0,1825.0,Henry Fuseli,"Fuseli, Henry"
+ARTIC-35827,1571.0,1638.0,Paulus Moreelse,"Moreelse, Paulus"
+ARTIC-37034,,,Kawamata Tsunemasa,Kawamata Tsunemasa
+ARTIC-34878,1813.0,1894.0,George Peter Alexander Healy,"Healy, George Peter Alexander"
+ARTIC-46558,1733.0,1808.0,Style of Hubert Robert,"Robert, Hubert, Style of"
+ARTIC-36449,1838.0,1917.0,Toby Edward Rosenthal,"Rosenthal, Toby Edward"
+ARTIC-75135,,,Su Liupeng,Su Liupeng
+ARTIC-15118,1669.0,1742.0,Leng Mei,Leng Mei
+ARTIC-40761,1756.0,1823.0,Sir Henry Raeburn,"Raeburn, Henry, Sir"
+ARTIC-37270,1738.0,1820.0,Benjamin West,"West, Benjamin"
+ARTIC-40755,1836.0,1919.0,Sir John Edward Poynter,"Poynter, John Edward, Sir"
+ARTIC-34506,1800.0,1870.0,James Forbes,"Forbes, James"
+ARTIC-24872,1717.0,1801.0,Veronica Stern,"Stern, Veronica"
+ARTIC-3476,1525.0,1610.0,"Bartholomaeus Bruyn, the younger","Bruyn, Bartholomaeus, the younger"
+ARTIC-5703,1861.0,1942.0,Charles Courtney Curran,"Curran, Charles Courtney"
+ARTIC-40769,1606.0,1669.0,Rembrandt van Rijn,"van Rijn, Rembrandt"
+ARTIC-36253,1625.0,1654.0,Paulus Potter,"Potter, Paulus"
+ARTIC-33591,1882.0,1925.0,George Wesley Bellows,"Bellows, George Wesley"
+ARTIC-9769,,,Bartolomeo di Giovanni,Bartolomeo di Giovanni
+ARTIC-35364,1835.0,1892.0,Stanislas Lépine,"Lépine, Stanislas"
+ARTIC-12122,1597.0,1658.0,Xiang Shengmo,Xiang Shengmo
+ARTIC-31827,1755.0,1820.0,Adriaan de Lelie,"Lelie, Adriaan de"
+ARTIC-107195,1782.0,1847.0,John Philip Simpson,"Simpson, John Philip"
+ARTIC-61118,1460.0,1526.0,Zhu Yunming,Zhu Yunming
+ARTIC-34832,1792.0,1866.0,Chester Harding,"Harding, Chester"
+ARTIC-3829,1848.0,1894.0,Gustave Caillebotte,"Caillebotte, Gustave"
+ARTIC-34901,1865.0,1929.0,Robert Henri,"Henri, Robert"
+ARTIC-46269,,,,
+ARTIC-11328,1495.0,1580.0,Jan Sanders van Hemessen,"Hemessen, Jan Sanders van"
+ARTIC-114699,,,Yao Kuang,"Kuang, Yao"
+ARTIC-1850,1734.0,1795.0,Don Francisco Bayeu y Subías,"Bayeu y Subías, Don Francisco"
+ARTIC-48153,1778.0,1856.0,Franz Ludwig Catel,"Catel, Franz Ludwig"
+ARTIC-40535,1503.0,1572.0,Agnolo Bronzino,"Bronzino, Agnolo"
+ARTIC-41746,1595.0,1647.0,Moses van Uyttenbroeck,"Uyttenbroeck, Moses van"
+ARTIC-40752,1494.0,1557.0,"Pontormo, (Jacopo Carrucci)","Pontormo, (Jacopo Carrucci)"
+ARTIC-20464,1788.0,1865.0,Ammi Phillips,"Phillips, Ammi"
+ARTIC-34465,1530.0,1572.0,Giovanni Antonio Fasolo,"Fasolo, Giovanni Antonio"
+ARTIC-37029,1756.0,1843.0,John Trumbull,"Trumbull, John"
+ARTIC-28215,1852.0,1919.0,Julian Alden Weir,"Weir, Julian Alden"
+ARTIC-41140,1810.0,1864.0,Alexandre Calame,"Calame, Alexandre"
+ARTIC-46332,1599.0,1660.0,Studio of Diego Rodriguez de Velázquez,"Velázquez, Diego Rodriguez de, Studio of"
+ARTIC-34761,1712.0,1793.0,Francesco Guardi,"Guardi, Francesco"
+ARTIC-15414,,1669.0,Dirck van der Lisse,"Lisse, Dirck van der"
+ARTIC-57671,1644.0,1732.0,Sekkei,Sekkei
+ARTIC-61760,1761.0,1816.0,Kitao Masanobu,Kitao Masanobu
+ARTIC-32992,1750.0,1819.0,Pierre Henri de Valenciennes,"Valenciennes, Pierre Henri de"
+ARTIC-15733,1857.0,1932.0,Fernand Lungren,"Lungren, Fernand"
+ARTIC-37488,,,Antwerp Mannerist,Antwerp Mannerist
+ARTIC-14195,1415.0,1490.0,Johann Koerbecke,"Koerbecke, Johann"
+ARTIC-54182,1810.0,1860.0,Alfred Dedreux,"Dedreux, Alfred"
+ARTIC-46530,1725.0,1805.0,Style of Jean Baptiste Greuze,"Greuze, Jean Baptiste, Style of"
+ARTIC-41524,1750.0,1812.0,Johann Friedrich August Tischbein,"Tischbein, Johann Friedrich August"
+ARTIC-40528,1805.0,1887.0,Eugène Blery,"Blery, Eugène"
+ARTIC-28092,1817.0,1904.0,George Frederick Watts,"Watts, George Frederick"
+ARTIC-33731,1823.0,1892.0,William Bradford,"Bradford, William"
+ARTIC-46378,1599.0,1641.0,Follower of Anthonie van Dyck,"Dyck, Anthonie van, Follower of"
+ARTIC-36100,1686.0,1755.0,Jean-Baptiste Oudry,"Oudry, Jean-Baptiste"
+ARTIC-24535,1586.0,1648.0,Tawaraya Sôtatsu,"Sôtatsu, Tawaraya"
+ARTIC-9960,1849.0,1883.0,Eva Gonzalès,"Gonzalès, Eva"
+ARTIC-35766,1763.0,1843.0,Georges Michel,"Michel, Georges"
+ARTIC-61112,1626.0,1705.0,Zhu Da,Zhu Da
+ARTIC-42134,1541.0,1614.0,"Domenico Theotokópoulos, called El Greco",Greco El
+ARTIC-6606,1848.0,1912.0,Jean Baptiste Édouard Detaille,"Detaille, Jean Baptiste Édouard"
+ARTIC-27935,1592.0,1680.0,Wang Shimin,Wang Shimin
+ARTIC-56624,,,Rifû,Rifû
+ARTIC-31257,1600.0,1682.0,Claude Lorrain,"Lorrain, Claude"
+ARTIC-35818,1511.0,1576.0,Anthonis Mor,"Mor, Anthonis"
+ARTIC-6445,1828.0,1891.0,Jules-Élie Delaunay,"Delaunay, Jules-Élie"
+ARTIC-7130,1842.0,1910.0,Victor Dubreuil,"Dubreuil, Victor"
+ARTIC-28375,1399.0,1464.0,Rogier van der Weyden,"Weyden, Rogier van der"
+ARTIC-33986,1480.0,1541.0,Joos van Cleve,"Cleve, Joos van"
+ARTIC-41962,1656.0,1746.0,Nicolas de Largillière,"Largillière, Nicolas de"
+ARTIC-35327,1735.0,1790.0,Isoda Koryusai,Isoda Koryusai
+ARTIC-9264,1749.0,1838.0,Kishi Ganku,Kishi Ganku
+ARTIC-87215,1807.0,1876.0,Imitator of Narcisse Virgile Diaz de la Peña,"Diaz de la Peña, Narcisse Virgile, imitator of"
+ARTIC-35824,1826.0,1898.0,Gustave Moreau,"Moreau, Gustave"
+ARTIC-52988,1495.0,1575.0,Corneille de Lyon,Corneille de Lyon
+ARTIC-77459,,,Joshua Johnson,"Johnson, Joshua"
+ARTIC-34146,1450.0,1523.0,Gerard David,"David, Gerard"
+ARTIC-116468,4713.0,4713.0,Alexandre Desgoffe,"Desgoffe, Alexandre"
+ARTIC-37043,1775.0,1851.0,Joseph Mallord William Turner,"Turner, Joseph Mallord William"
+ARTIC-46397,1429.0,1507.0,Imitator of Gentile Bellini,"Bellini, Gentile, imitator of"
+ARTIC-36996,1675.0,1710.0,"Mitsusuke, Tosa","Mitsusuke, Tosa"
+ARTIC-40732,1691.0,1765.0,Giovanni Paolo Panini,"Panini, Giovanni Paolo"
+ARTIC-46522,1725.0,1805.0,Follower of Jean Baptiste Greuze,"Greuze, Jean Baptiste, Follower of"
+ARTIC-65373,1594.0,1682.0,Willem Claesz. Heda,"Heda, Willem Claesz."
+ARTIC-40810,1859.0,1891.0,Georges Seurat,"Seurat, Georges"
+ARTIC-31435,1819.0,1904.0,Martin Johnson Heade,"Heade, Martin Johnson"
+ARTIC-27936,1497.0,1576.0,Wang Wên,Wang Wên
+ARTIC-40642,1819.0,1891.0,Johan Barthold Jongkind,"Jongkind, Johan Barthold"
+ARTIC-42969,1600.0,1699.0,Spanish School,Spanish School
+ARTIC-35521,1496.0,1576.0,Lu Zhi,Lu Zhi
+ARTIC-8258,1692.0,1768.0,Giovanni Domenico Ferretti,"Ferretti, Giovanni Domenico"
+ARTIC-33747,1598.0,1657.0,Bartholomeus Breenbergh,"Breenbergh, Bartholomeus"
+ARTIC-31743,1549.0,1579.0,Marcellus Coffermans,"Coffermans, Marcellus"
+ARTIC-52271,1756.0,1829.0,Chôbunsai Eishi,Chôbunsai Eishi
+ARTIC-15343,,,Lin Xue,Lin Xue
+ARTIC-37133,1836.0,1923.0,Elihu Vedder,"Vedder, Elihu"
+ARTIC-31347,1834.0,1871.0,Paul Camille Guigou,"Guigou, Paul Camille"
+ARTIC-34198,1597.0,1639.0,Pieter De Neyn,"De Neyn, Pieter"
+ARTIC-1397,1561.0,1643.0,Giovanni Baglione,"Baglione, Giovanni"
+ARTIC-9306,1609.0,1675.0,Domenico Gargiuli (Micco Spadaro),"Gargiuli, Domenico (Micco Spadaro)"
+ARTIC-20236,,,Pei Zhi,Pei Zhi
+ARTIC-41040,1802.0,1873.0,Edwin Henry Landseer,"Landseer, Edwin Henry"
+ARTIC-36350,1575.0,1642.0,Guido Reni,"Reni, Guido"
+ARTIC-40513,1852.0,1929.0,Pascal-Adolphe-Jean Dagnan-Bouveret,"Dagnan-Bouveret, Pascal-Adolphe-Jean"
+ARTIC-5302,,,Augustus Cordus,"Cordus, Augustus"
+ARTIC-46239,,,Dutch School,Dutch School
+ARTIC-31651,,,Samuel Jones,"Jones, Samuel"
+ARTIC-105455,1687.0,1765.0,Li Shizhuo,"Shizhuo, Li"
+ARTIC-36748,1606.0,1670.0,Hendrik Martensz. Sorgh,"Sorgh, Hendrik Martensz."
+ARTIC-16591,1505.0,1540.0,Master of the Female Half-Lengths,Master of the Female Half-Lengths
+ARTIC-4324,,,Mei Chong,Mei Chong
+ARTIC-18790,1632.0,1701.0,"Pieter Mulier, (il Cavaliere Tempesta)","Mulier, Pieter, (il Cavaliere Tempesta)"
+ARTIC-41859,1584.0,1624.0,Domenico Fetti,"Fetti, Domenico"
+ARTIC-16333,1767.0,1835.0,Benjamin Marshall,"Marshall, Benjamin"
+ARTIC-34767,1841.0,1927.0,Jean Baptiste Armand Guillaumin,"Guillaumin, Jean Baptiste Armand"
+ARTIC-15511,1865.0,1935.0,Gustave Loiseau,"Loiseau, Gustave"
+ARTIC-47689,1465.0,1533.0,Jacob Cornelisz. van Oostsanen,"Cornelisz. van Oostsanen, Jacob"
+ARTIC-53345,1792.0,1863.0,Alvan Fisher,"Fisher, Alvan"
+ARTIC-35012,1701.0,1779.0,Thomas Hudson,"Hudson, Thomas"
+ARTIC-44999,1839.0,1924.0,Hans Thoma,"Thoma, Hans"
+ARTIC-23478,1712.0,1788.0,Toriyama Sekien,Toriyama Sekien
+ARTIC-43629,1857.0,1922.0,Arthur Wesley Dow,"Dow, Arthur Wesley"
+ARTIC-34426,1753.0,1825.0,Agustin Esteve y Marqués,"Esteve y Marqués, Agustin"
+ARTIC-16173,1735.0,1793.0,Marco Marcola,"Marcola, Marco"
+ARTIC-37339,,,John Wollaston,"Wollaston, John"
+ARTIC-85125,,,Hishikawa Morohira,Hishikawa Morohira
+ARTIC-31094,1836.0,1904.0,Henri Fantin-Latour,"Fantin-Latour, Henri"
+ARTIC-20424,1854.0,1907.0,John Frederick Peto,"Peto, John Frederick"
+ARTIC-40788,1844.0,1910.0,Henri Rousseau,"Rousseau, Henri"
+ARTIC-40414,1486.0,1530.0,Andrea del Sarto,Andrea del Sarto
+ARTIC-115136,1851.0,1920.0,Lu Hui,"Hui, Lu"
+ARTIC-40605,1767.0,1824.0,Anne-Louis Girodet de Roussy-Trioson,"Girodet de Roussy-Trioson, Anne-Louis"
+ARTIC-46346,1590.0,1649.0,Follower of Simon Vouet,"Vouet, Simon, Follower of"
+ARTIC-37048,1853.0,1902.0,John Henry Twachtman,"Twachtman, John Henry"
+ARTIC-27933,1501.0,1568.0,Wang Guxiang,Wang Guxiang
+ARTIC-10930,1848.0,1892.0,William Michael Harnett,"Harnett, William Michael"
+ARTIC-6575,1823.0,1902.0,Marcellin Gilbert Desboutin,"Desboutin, Marcellin Gilbert"
+ARTIC-40453,1703.0,1770.0,François Boucher,"Boucher, François"
+ARTIC-40446,1761.0,1845.0,Louis-Léopold Boilly,"Boilly, Louis-Léopold"
+ARTIC-16057,1852.0,1930.0,Antonio Mancini,"Mancini, Antonio"
+ARTIC-12786,1575.0,1632.0,Abraham Janssens,"Janssens, Abraham"
+ARTIC-41224,1627.0,1678.0,Samuel van Hoogstraten,"Hoogstraten, Samuel van"
+ARTIC-7400,1783.0,1853.0,Christoffer Wilhelm Eckersberg,"Eckersberg, Christoffer Wilhelm"
+ARTIC-40590,1820.0,1876.0,Eugène Fromentin,"Fromentin, Eugène"
+ARTIC-35806,1612.0,1666.0,Pier Francesco Mola,"Mola, Pier Francesco"
+ARTIC-35508,1702.0,1785.0,Pietro Longhi,"Longhi, Pietro"
+ARTIC-48068,,,Xia Kui,Xia Kui
+ARTIC-34042,1450.0,1540.0,Colyn de Coter,"Coter, Colyn de"
+ARTIC-41223,1645.0,1727.0,Aert de Gelder,"Gelder, Aert de"
+ARTIC-40757,1613.0,1699.0,Mattia Preti,"Preti, Mattia"
+ARTIC-1998,1533.0,1610.0,Sadiqi,Sadiqi
+ARTIC-44014,1863.0,1944.0,Edvard Munch,"Munch, Edvard"
+ARTIC-46277,,,Italian School,Italian School
+ARTIC-23566,1504.0,1594.0,Sesson Shukei,Sesson Shukei
+ARTIC-36292,1824.0,1898.0,Pierre Puvis de Chavannes,"Puvis de Chavannes, Pierre"
+ARTIC-35046,1648.0,1727.0,Cornelis Huysmans,"Huysmans, Cornelis"
+ARTIC-109629,,,Artist Unknown,Artist Unknown
+ARTIC-117170,,,Edwaert Collier,"Collier, Edwaert"
+ARTIC-20290,1777.0,1841.0,John Ritto Penniman,"Penniman, John Ritto"
+ARTIC-40557,1832.0,1883.0,Gustave Doré,"Doré, Gustave"
+ARTIC-47452,1861.0,1927.0,Jozseph Rippl-Rónaï,"Rippl-Rónaï, Jozseph"
+ARTIC-26807,,,Ugolino di Nerio,Ugolino di Nerio
+ARTIC-3909,,,Carlo da Camerino,Carlo da Camerino
+ARTIC-34641,1483.0,1561.0,Ridolfo Ghirlandaio,"Ghirlandaio, Ridolfo"
+ARTIC-52864,1495.0,1558.0,Conrad Faber,"Faber, Conrad"
+ARTIC-36780,1626.0,1679.0,Jan Steen,"Steen, Jan"
+ARTIC-16157,1880.0,1916.0,Franz Marc,"Marc, Franz"
+ARTIC-26631,,,Chai Zhenyi,Chai Zhenyi
+ARTIC-30553,1475.0,1539.0,Jean Bellegambe,"Bellegambe, Jean"
+ARTIC-33587,1428.0,1516.0,Giovanni Bellini,"Bellini, Giovanni"
+ARTIC-46432,,,Flemish School,Flemish School
+ARTIC-34118,,,Girolamo da Santacroce,Girolamo da Santacroce
+ARTIC-36336,1840.0,1916.0,Odilon Redon,"Redon, Odilon"
+ARTIC-34587,1824.0,1904.0,Jean Léon Gérôme,"Gérôme, Jean Léon"
+ARTIC-23714,1769.0,1850.0,Martin Archer Shee,"Shee, Martin Archer"
+ARTIC-35838,1520.0,1578.0,Giovanni Battista Moroni,"Moroni, Giovanni Battista"
+ARTIC-36286,1758.0,1823.0,Pierre Paul Prud'hon,"Prud'hon, Pierre Paul"
+ARTIC-9228,1865.0,1931.0,Axeli Gallen-Kallela,"Gallen-Kallela, Axeli"
+ARTIC-20228,1797.0,1868.0,Sheldon Peck,"Peck, Sheldon"
+ARTIC-10349,1771.0,1835.0,Baron Antoine Jean Gros,"Gros, Antoine Jean, Baron"
+ARTIC-32076,1804.0,1868.0,Shepard Alonzo Mount,"Mount, Shepard Alonzo"
+ARTIC-11466,1728.0,1778.0,John Hesselius,"Hesselius, John"
+ARTIC-37130,1511.0,1574.0,Giorgio Vasari,"Vasari, Giorgio"
+ARTIC-43854,1751.0,1829.0,Wilhelm Tischbein,"Tischbein, Wilhelm"
+ARTIC-43340,,,Unknown Central Italian,Unknown Central Italian
+ARTIC-61110,,,Zhou Wenju,Zhou Wenju
+ARTIC-105100,,,Ghasi,Ghasi
+ARTIC-37102,1634.0,1703.0,Eglon van der Neer,"Neer, Eglon van der"
+ARTIC-40643,1593.0,1678.0,Jacob Jordaens,"Jordaens, Jacob"
+ARTIC-35732,1860.0,1932.0,Julius Gari Melchers,"Melchers, Julius Gari"
+ARTIC-7875,1806.0,1857.0,Antonio Maria Esquivel,"Esquivel, Antonio Maria"
+ARTIC-41354,1623.0,1682.0,Jacob van Ruisdael,"Ruisdael, Jacob van"
+ARTIC-17539,,,Antonio Molleno,"Molleno, Antonio"
+ARTIC-99077,1805.0,1838.0,Ernest Christian Frederik Petzholdt,"Petzholdt, Ernest Christian Frederik"
+ARTIC-4310,,,Chen Ruyan,Chen Ruyan
+ARTIC-20382,1695.0,1736.0,Jean Baptiste Joseph Peter,"Peter, Jean Baptiste Joseph"
+ARTIC-40657,1739.0,1805.0,Pietro Labruzzi,"Labruzzi, Pietro"
+ARTIC-33901,1494.0,1557.0,Qiu Ying,Qiu Ying
+ARTIC-4672,1740.0,1795.0,Qian Feng,Qian Feng
+ARTIC-37445,1701.0,1800.0,British School,British School
+ARTIC-56986,1754.0,1799.0,Nagasawa Rosetsu,Nagasawa Rosetsu
+ARTIC-35361,1831.0,1889.0,Kawanabe Kyôsai,Kawanabe Kyôsai
+ARTIC-15443,1622.0,1706.0,Luo Mu,Luo Mu
+ARTIC-41304,1607.0,1674.0,Jan Lievens,"Lievens, Jan"
+ARTIC-42884,1531.0,1588.0,Alonso Sánchez Coello,"Sánchez Coello, Alonso"
+ARTIC-1793,1840.0,1921.0,David Bates,"Bates, David"
+ARTIC-36060,1316.0,1374.0,Allegretto Nuzi,"Nuzi, Allegretto"
+ARTIC-36834,1783.0,1872.0,Thomas Sully,"Sully, Thomas"
+ARTIC-34954,1638.0,1709.0,Meindert Hobbema,"Hobbema, Meindert"
+ARTIC-33968,1826.0,1900.0,Frederic Edwin Church,"Church, Frederic Edwin"
+ARTIC-33717,1825.0,1905.0,William Adolphe Bouguereau,"Bouguereau, William Adolphe"
+ARTIC-35659,,,Master of Apollo and Daphne,Master of Apollo and Daphne
+ARTIC-35828,,,Moretto da Brescia,Moretto da Brescia
+ARTIC-33846,1527.0,1585.0,Luca Cambiaso,"Cambiaso, Luca"
+ARTIC-28531,1806.0,1865.0,Antoine Wiertz,"Wiertz, Antoine"
+ARTIC-43420,,,Vincenzo Frediani,"Frediani, Vincenzo"
+ARTIC-30905,1847.0,1914.0,Cesare Agostino Detti,"Detti, Cesare Agostino"
+ARTIC-40868,1477.0,1576.0,Titian,Titian
+ARTIC-36259,1584.0,1665.0,Nicolas Poussin,"Poussin, Nicolas"
+ARTIC-41274,1819.0,1909.0,William Powell Frith,"Frith, William Powell"
+ARTIC-36658,1730.0,1781.0,Soga Shohaku,Soga Shohaku
+ARTIC-15442,1445.0,1528.0,"Spagna, Lo","Spagna, Lo"
+ARTIC-50071,1811.0,1879.0,George Caleb Bingham,"Bingham, George Caleb"
+ARTIC-48625,1861.0,1932.0,Louis Anquetin,"Anquetin, Louis"
+ARTIC-41137,1610.0,1685.0,Adriaen van Ostade,"Ostade, Adriaen van"
+ARTIC-48155,1759.0,1841.0,Johann Georg von Dillis,"Dillis, Johann Georg von"
+ARTIC-49859,1528.0,1574.0,Joachim Beuckelaer,"Beuckelaer, Joachim"
+ARTIC-11482,,,"Jean Hey, (the Master of Moulins)","Hey, Jean, (the Master of Moulins)"
+ARTIC-33711,1446.0,1497.0,Francesco Botticini,"Botticini, Francesco"
+ARTIC-56870,1630.0,1700.0,Pieter Gerritsz. van Roestraeten,"Roestraeten, Pieter Gerritsz. van"
+ARTIC-34926,1823.0,1890.0,Thomas Hicks,"Hicks, Thomas"
+ARTIC-22591,1595.0,1670.0,Salomon van Ruysdael,"Ruysdael, Salomon van"
+ARTIC-48999,1783.0,1856.0,Baiitsu Yamamoto,Baiitsu Yamamoto
+ARTIC-40616,1596.0,1656.0,Jan van Goyen,"Goyen, Jan van"
+ARTIC-33658,1847.0,1919.0,Ralph Albert Blakelock,"Blakelock, Ralph Albert"
+ARTIC-25092,1581.0,1644.0,Bernardo Strozzi,"Strozzi, Bernardo"
+ARTIC-41221,1613.0,1652.0,Jan Both,"Both, Jan"
+ARTIC-34310,1609.0,1683.0,Pieter Dubordieu,"Dubordieu, Pieter"
+ARTIC-16606,,,Master of the Visitation,Master of the Visitation
+ARTIC-72283,,,The Master of the Children's Caps,Master of the Children's Caps
+ARTIC-21777,1803.0,1884.0,Adrian Ludwig (Ludwig) Richter,"Richter, Adrian Ludwig (Ludwig)"
+ARTIC-72845,1852.0,1909.0,Juan Roig y Soler,"Roig y Soler, Juan"
+ARTIC-34961,1853.0,1918.0,Ferdinand Hodler,"Hodler, Ferdinand"
+ARTIC-51341,1588.0,1629.0,Hendrick Terbrugghen,"Brugghen, Hendrick ter"
+ARTIC-27571,1729.0,1802.0,Pierre-Jacques Volaire,"Volaire, Pierre-Jacques"
+ARTIC-40413,1535.0,1607.0,Alessandro Allori,"Allori, Alessandro"
+ARTIC-105308,,,Yu Zhiding,Yu Zhiding
+ARTIC-43370,1774.0,1825.0,Raphaelle Peale,"Peale, Raphaelle"
+ARTIC-36264,1699.0,1768.0,Stefano Pozzi,"Pozzi, Stefano"
+ARTIC-92385,1634.0,1707.0,Katsuzan Dowa,Katsuzan Dowa
+ARTIC-103489,,,Hua Ziyou,Hua Ziyou
+ARTIC-3040,,,,
+ARTIC-36284,1574.0,1625.0,Giulio Cesare Procaccini,"Procaccini, Giulio Cesare"
+ARTIC-115933,1805.0,1873.0,Jonas Welch Holman,"Holman, Jonas Welch"
+ARTIC-14909,,,Charles B. Lawrence,"Lawrence, Charles B."
+ARTIC-46360,1806.0,1873.0,School of William Matthew Prior,"Prior, William Matthew, School of"
+ARTIC-48131,1788.0,1825.0,Heinrich Reinhold,"Reinhold, Heinrich"
+ARTIC-26267,1518.0,1594.0,Tintoretto,Tintoretto
+ARTIC-112035,,,Qian Chaoding,"Qian, Chaoding"
+ARTIC-33548,1708.0,1787.0,Pompeo Girolamo Batoni,"Batoni, Pompeo Girolamo"
+ARTIC-15107,1865.0,1916.0,Georges Lemmen,"Lemmen, Georges"
+ARTIC-35229,1779.0,1843.0,Matsumura Keibun,Matsumura Keibun
+ARTIC-9766,1415.0,1465.0,Apollonio di Giovanni,Apollonio di Giovanni
+ARTIC-36139,1885.0,1930.0,Jules Pascin,"Pascin, Jules"
+ARTIC-35239,1816.0,1872.0,John Frederick Kensett,"Kensett, John Frederick"
+ARTIC-4401,1797.0,1883.0,Charles Emile Champmartin,"Champmartin, Charles Emile"
+ARTIC-12117,1388.0,1470.0,Xia Chang,Xia Chang
+ARTIC-2736,1815.0,1865.0,David Gilmour Blythe,"Blythe, David Gilmour"
+ARTIC-21516,1843.0,1871.0,Henri Regnault,"Regnault, Henri"
+ARTIC-13343,1533.0,1615.0,Kaiho Yûshô,"Yûshô, Kaiho"
+ARTIC-42705,1477.0,1525.0,Raffaello Botticini,"Botticini, Raffaello"
+ARTIC-3970,1876.0,1931.0,Ricardo Canals y Llambí,"Canals y Llambí, Ricardo"
+ARTIC-34997,1758.0,1810.0,John Hoppner,"Hoppner, John"
+ARTIC-40512,1620.0,1691.0,Aelbert Cuyp,"Cuyp, Aelbert"
+ARTIC-22567,1745.0,1806.0,John Russell,"Russell, John"
+ARTIC-40895,1566.0,1638.0,Joachim Antonisz. Wtewael,"Wtewael, Joachim Antonisz."
+ARTIC-37541,,,Ancient Egyptian,Ancient Egyptian
+ARTIC-35673,1861.0,1918.0,Maxime Maufra,"Maufra, Maxime"
+ARTIC-34347,1751.0,1801.0,Ralph Earl,"Earl, Ralph"
+ARTIC-25410,1362.0,1422.0,Taddeo di Bartolo,Taddeo di Bartolo
+ARTIC-46407,1780.0,1867.0,Follower of Jean Auguste Dominique Ingres,"Ingres, Jean Auguste Dominique, Follower of"
+ARTIC-113171,,,Tibeto-Chinese,Tibeto-Chinese
+ARTIC-29227,1644.0,1776.0,Yang Jin,Yang Jin
+ARTIC-43722,1620.0,1649.0,Juan de Zurbarán,"Zurbarán, Juan de"
+ARTIC-42695,1817.0,1887.0,François Bonvin,"Bonvin, François"
+ARTIC-15380,1792.0,1882.0,John Linnell,"Linnell, John"
+ARTIC-53530,1383.0,1462.0,Dai Jin,Dai Jin
+ARTIC-91739,1840.0,1920.0,Theodor Esbern Philipsen,"Philipsen, Theodor Esbern"
+ARTIC-20074,1826.0,1899.0,Alberto Pasini,"Pasini, Alberto"
+ARTIC-40621,1591.0,1666.0,Guercino,Guercino
+ARTIC-35665,1686.0,1758.0,Agostino Masucci,"Masucci, Agostino"
+ARTIC-6807,1842.0,1920.0,Francisco Domingo y Marqués,"Domingo y Marqués, Francisco"
+ARTIC-31771,1796.0,1862.0,Leopold Kupelwieser,"Kupelwieser, Leopold"
+ARTIC-42664,1651.0,1717.0,Jean Baptiste Santerre,"Santerre, Jean Baptiste"
+ARTIC-31582,1778.0,1831.0,John Jackson,"Jackson, John"
+ARTIC-12780,1625.0,1667.0,Heinrich Jansen,"Jansen, Heinrich"
+ARTIC-16574,,,Master of the Historia Friderici et Maximiliani,Master of the Historia Friderici et Maximiliani
+ARTIC-32408,,,Master of Palanquinos,Master of Palanquinos
+ARTIC-8274,1603.0,1660.0,Felice Ficherelli,"Ficherelli, Felice"
+ARTIC-5004,1599.0,1678.0,Pieter Codde,"Codde, Pieter"
+ARTIC-34946,1797.0,1858.0,Utagawa Hiroshige,Utagawa Hiroshige
+ARTIC-101626,1808.0,1841.0,Sakai Oho,"Oho, Sakai"
+ARTIC-41371,1495.0,1562.0,Jan van Scorel,"Scorel, Jan van"
+ARTIC-2300,1668.0,1736.0,Nicolas Bertin,"Bertin, Nicolas"
+ARTIC-34336,1796.0,1886.0,Asher Brown Durand,"Durand, Asher Brown"
+ARTIC-33867,1853.0,1932.0,Emil Carlsen,"Carlsen, Emil"
+ARTIC-2229,,,Master of the Bigallo Crucifix,Master of the Bigallo Crucifix
+ARTIC-102397,1728.0,1804.0,Qian Daxin,Qian Daxin
+ARTIC-35602,1696.0,1743.0,Michele Giovanni Marieschi,"Marieschi, Michele Giovanni"
+ARTIC-3458,1730.0,1796.0,Agostino Brunias,"Brunias, Agostino"
+ARTIC-2014,1800.0,1866.0,Hippolyte Bellangé,"Bellangé, Hippolyte"
+ARTIC-113232,1722.0,1784.0,Ko Fuyo,Ko Fuyo
+ARTIC-37184,1858.0,1933.0,Robert William Vonnoh,"Vonnoh, Robert William"
+ARTIC-16607,,,Master of the Worcester Carrying of the Cross,Master of the Worcester Carrying of the Cross
+ARTIC-1705,1431.0,1503.0,"Bartolomé de Cárdenas, (called Bermejo)","Cárdenas, Bartolomé de, (called Bermejo)"
+ARTIC-37114,1827.0,1890.0,Emile van Marcke de Lummen,"Marcke de Lummen, Emile van"
+ARTIC-40998,1692.0,1768.0,Jean Restout,"Restout, Jean"
+ARTIC-16577,,,Master of the 1540s,Master of the 1540s
+ARTIC-58246,1869.0,1935.0,Harald Oscar Sohlberg,"Sohlberg, Harald Oscar"
+ARTIC-26998,1865.0,1925.0,Félix Edouard Vallotton,"Vallotton, Félix Edouard"
+ARTIC-31776,1836.0,1911.0,Jules Joseph Lefebvre,"Lefebvre, Jules Joseph"
+ARTIC-36950,,,,
+ARTIC-102190,,,Rushan,Rushan
+ARTIC-70975,1558.0,1637.0,Kôetsu,Kôetsu
+ARTIC-34762,1699.0,1760.0,Giovanni Antonio Guardi,"Guardi, Giovanni Antonio"
+ARTIC-53062,1802.0,1842.0,Thomas Fearnley,"Fearnley, Thomas"
+ARTIC-98435,,,Master of Riglos,Master of Riglos
+ARTIC-35658,1466.0,1530.0,Quentin Massys,"Massys, Quentin"
+ARTIC-36365,1659.0,1734.0,Sebastiano Ricci,"Ricci, Sebastiano"
+ARTIC-37074,1753.0,1806.0,Kitagawa Utamaro,Kitagawa Utamaro
+ARTIC-36973,1727.0,1804.0,Giovanni Domenico Tiepolo,"Tiepolo, Giovanni Domenico"
+ARTIC-36323,1745.0,1807.0,John Rathbone,"Rathbone, John"
+ARTIC-40654,1606.0,1656.0,Laurent de La Hyre,"La Hyre, Laurent de"
+ARTIC-41187,1581.0,1642.0,"Frans Francken, II","Francken, Frans, II"
+ARTIC-36254,1857.0,1927.0,Edward Henry Potthast,"Potthast, Edward Henry"
+ARTIC-44053,,,Lippi-Pesellino Imitator,Lippi-Pesellino Imitator
+ARTIC-41448,1632.0,1698.0,Johann Carl Loth,"Loth, Johann Carl"
+ARTIC-12183,1803.0,1869.0,Paul Huet,"Huet, Paul"
+ARTIC-40730,1548.0,1628.0,Jacopo Palma Il Giovane,"Giovane, Jacopo Palma Il"
+ARTIC-31492,1760.0,1849.0,Katsushika Hokusai,Katsushika Hokusai
+ARTIC-44823,1808.0,1886.0,John F. Francis,"Francis, John F."
+ARTIC-108377,,,Master Alejo (Alejo Andía?),Master Alejo (Alejo Andía?)
+ARTIC-115926,1823.0,1886.0,Hu Gongshou,"Gongshou, Hu"
+ARTIC-43048,1743.0,1812.0,Henry Benbridge,"Benbridge, Henry"
+ARTIC-36383,1833.0,1908.0,Martin Rico y Ortega,"Rico y Ortega, Martin"
+ARTIC-33833,1750.0,1799.0,Giuseppe Cades,"Cades, Giuseppe"
+ARTIC-61600,1520.0,1589.0,Pietro Marescalchi,"Marescalchi, Pietro"
+ARTIC-33637,1830.0,1902.0,Albert Bierstadt,"Bierstadt, Albert"
+ARTIC-34929,1692.0,1780.0,Joseph Highmore,"Highmore, Joseph"
+ARTIC-7131,1790.0,1864.0,Claude Marie Dubufe,"Dubufe, Claude Marie"
+ARTIC-112115,,,Wang Ning,Wang Ning
+ARTIC-40714,1696.0,1782.0,Francesco de Mura,"Mura, Francesco de"
+ARTIC-41499,1480.0,1547.0,Sebastiano del Piombo,Sebastiano del Piombo
+ARTIC-40426,1472.0,1517.0,Fra Bartolommeo,"Bartolommeo, Fra"
+ARTIC-64182,1848.0,1933.0,Lilla Cabot Perry,"Perry, Lilla Cabot"
+ARTIC-41306,1564.0,1635.0,"Joos de Momper, II","Momper, Joos de, II"
+ARTIC-5103,1832.0,1920.0,Samuel Colman,"Colman, Samuel"
+ARTIC-36044,1746.0,1831.0,James Northcote,"Northcote, James"
+ARTIC-8290,1805.0,1900.0,Erastus Salisbury Field,"Field, Erastus Salisbury"
+ARTIC-4329,1565.0,1643.0,Cheng Jiasui,Cheng Jiasui
+ARTIC-16579,1355.0,1413.0,Gherardo Starnina,"Starnina, Gherardo"
+ARTIC-79635,1293.0,1365.0,Zhu Yu,Zhu Yu
+ARTIC-40773,1591.0,1652.0,Jusepe de Ribera,"Ribera, Jusepe de"
+ARTIC-38970,,,Shen Quan,Shen Quan
+ARTIC-27814,1783.0,1861.0,Samuel Lovett Waldo,"Waldo, Samuel Lovett"
+ARTIC-41364,1636.0,1672.0,Adriaen van de Velde,"Velde, Adriaen van de"
+ARTIC-58342,,,Hasegawa Sôya,Hasegawa Sôya
+ARTIC-36154,1749.0,1831.0,James Peale,"Peale, James"
+ARTIC-55286,1617.0,1689.0,Gong Xian,Gong Xian
+ARTIC-77241,1768.0,1836.0,Ezra Ames,"Ames, Ezra"
+ARTIC-57839,,,Sheng Mao,Sheng Mao
+ARTIC-56869,1815.0,1872.0,Severin Roesen,"Roesen, Severin"
+ARTIC-21974,1451.0,1496.0,Ercole de'Roberti,"Roberti, Ercole de'"
+ARTIC-41840,1836.0,1904.0,Franz Seraph von Lenbach,"Lenbach, Franz Seraph von"
+ARTIC-46403,1577.0,1640.0,Follower of Peter Paul Rubens,"Rubens, Peter Paul, Follower of"
+ARTIC-37468,1503.0,1577.0,"Michele Tosini, called Michele di Ridolfo","Michele Tosini, called Michele di Ridolfo"
+ARTIC-41019,1765.0,1836.0,Richard Westall,"Westall, Richard"
+ARTIC-34811,1575.0,1666.0,Frans Hals,"Hals, Frans"
+ARTIC-16592,,,Master of the Freising Visitation,Master of the Freising Visitation
+ARTIC-26583,1656.0,1746.0,Francesco Trevisani,"Trevisani, Francesco"
+ARTIC-41186,1596.0,1675.0,Abraham Jansz. van Diepenbeeck,"Diepenbeeck, Abraham Jansz. van"
+ARTIC-26935,1592.0,1656.0,Gerrit van Honthorst,"Honthorst, Gerrit van"
+ARTIC-81339,1606.0,1669.0,Workshop of Rembrandt van Rijn,Workshop of Rembrandt van Rijn
+ARTIC-24789,1575.0,1654.0,"Hendrick van Steenwijck, the Younger","Steenwijck, Hendrick van, the Younger"
+ARTIC-103490,,,Jiang Hong,Jiang Hong
+ARTIC-16414,1395.0,1452.0,Bernat Martorell,"Martorell, Bernardo"
+ARTIC-115812,,,María Josefa Sánchez,"Sánchez, María Josefa"
+ARTIC-41492,1462.0,1521.0,Piero di Cosimo,Piero di Cosimo
+ARTIC-36749,,,Martin de Soria,"Soria, Martin de"
+ARTIC-33589,1721.0,1780.0,Bernardo Bellotto,"Bellotto, Bernardo"
+ARTIC-41125,1740.0,1812.0,"Philippe Jacques de Loutherbourg, II","Loutherbourg, Philippe Jacques de, II"
+ARTIC-4316,,,Qian Shumei,Qian Shumei
+ARTIC-27302,1605.0,1678.0,Pietro della Vecchia,"Vecchia, Pietro della"
+ARTIC-33320,1827.0,1901.0,Arnold Böcklin,"Böcklin, Arnold"
+ARTIC-15227,1840.0,1904.0,Henri Leopold Lévy,"Lévy, Henri Leopold"
+ARTIC-40672,1844.0,1925.0,Léon Augustin Lhermitte,"Lhermitte, Léon Augustin"
+ARTIC-27392,1714.0,1789.0,Claude Joseph Vernet,"Vernet, Claude Joseph"
+ARTIC-24621,1630.0,1673.0,Adriaen van der Spelt,"Spelt, Adriaen van der"
+ARTIC-37258,1621.0,1660.0,Jan Baptist Weenix,"Weenix, Jan Baptist"
+ARTIC-41725,1578.0,1649.0,Alessandro Turchi,"Turchi, Alessandro"
+ARTIC-111865,,,Shen Kai,Shen Kai
+ARTIC-58385,1822.0,1902.0,Lilly Martin Spencer,"Spencer, Lilly Martin"
+ARTIC-3281,1834.0,1923.0,Fidelia Bridges,"Bridges, Fidelia"
+ARTIC-40597,1791.0,1824.0,Jean Louis André Théodore Géricault,"Géricault, Jean Louis André Théodore"
+ARTIC-41875,1568.0,1625.0,"Jan Brueghel, the elder","Brueghel, Jan, the elder"
+ARTIC-35571,1840.0,1884.0,Hans Makart,"Makart, Hans"
+ARTIC-42360,1770.0,1837.0,baron François Pascal Simon Gérard,"Gérard, François Pascal Simon, baron"
+ARTIC-17526,1610.0,1696.0,Louise Moillon,"Moillon, Louise"
+ARTIC-35098,1716.0,1800.0,Ito Jakuchu,Ito Jakuchu
+ARTIC-33605,1620.0,1683.0,Nicolaes Berchem,"Berchem, Nicolaes"
+ARTIC-35059,1780.0,1867.0,Jean Auguste Dominique Ingres,"Ingres, Jean Auguste Dominique"
+ARTIC-41853,1729.0,1765.0,Jean Baptiste Henri Deshays,"Deshays, Jean Baptiste Henri"
+ARTIC-34777,1824.0,1910.0,Seymour Joseph Guy,"Guy, Seymour Joseph"
+ARTIC-15279,1686.0,1760.0,Li Shan,Li Shan
+ARTIC-57815,1776.0,1860.0,Joshua Shaw,"Shaw, Joshua"
+ARTIC-40583,1732.0,1806.0,Jean Honoré Fragonard,"Fragonard, Jean Honoré"
+ARTIC-13429,1248.0,1315.0,Gao Kekong,Gao Kekong
+ARTIC-22940,1406.0,1481.0,Sano di Pietro,Sano di Pietro
+ARTIC-10213,1846.0,1930.0,Walter Greaves,"Greaves, Walter"
+ARTIC-40774,1667.0,1745.0,"Jonathan Richardson, the elder","Richardson, Jonathan, the elder"
+ARTIC-41352,1621.0,1649.0,Isaac van Ostade,"Ostade, Isaac van"
+ARTIC-1573,1603.0,1649.0,Paolo Antonio Barbieri,"Barbieri, Paolo Antonio"
+ARTIC-34007,1801.0,1848.0,Thomas Cole,"Cole, Thomas"
+ARTIC-34593,1727.0,1788.0,Thomas Gainsborough,"Gainsborough, Thomas"
+ARTIC-63672,1630.0,1693.0,Maria van Oosterwijck,"Oosterwijck, Maria van"
+ARTIC-33753,1827.0,1906.0,Jules Breton,"Breton, Jules"
+ARTIC-28273,1502.0,1575.0,Wen Boren,Wen Boren
+ARTIC-56950,1803.0,1848.0,Martinus Rørbye,"Rørbye, Martinus"
+ARTIC-20726,1625.0,1672.0,Karel van der Pluym,"Pluym, Karel van der"
+ARTIC-36879,1823.0,1864.0,Tamechika Reizei,Tamechika Reizei
+ARTIC-40702,1689.0,1760.0,Philippe Mercier,"Mercier, Philippe"
+ARTIC-4309,1539.0,1625.0,Chen Jiayan,Chen Jiayan
+ARTIC-52371,1551.0,1640.0,Jacopo da Empoli,"Empoli, Jacopo da"
+ARTIC-15508,1845.0,1916.0,Luigi Loir,"Loir, Luigi"
+ARTIC-56367,1015.0,1100.0,Guo Xi,Guo Xi
+ARTIC-1540,1758.0,1832.0,Jean Baptiste François Désoria,"Désoria, Jean Baptiste François"
+ARTIC-37236,1684.0,1721.0,Jean Antoine Watteau,"Watteau, Jean Antoine"
+ARTIC-27657,1868.0,1940.0,Édouard Jean Vuillard,"Vuillard, Édouard Jean"
+ARTIC-35769,1851.0,1929.0,Francesco Paolo Michetti,"Michetti, Francesco Paolo"
+ARTIC-58779,1845.0,1920.0,Pál Szinyei Merse,"Szinyei Merse, Pál"
+ARTIC-30723,1699.0,1779.0,Jean Baptiste Siméon Chardin,"Chardin, Jean Baptiste Siméon"
+ARTIC-40664,1617.0,1655.0,Eustache Le Sueur,"Le Sueur, Eustache"
+ARTIC-36763,1341.0,1410.0,Spinello Aretino,Spinello Aretino
+ARTIC-27934,1300.0,1385.0,Wang Meng,Wang Meng
+ARTIC-36457,1828.0,1882.0,Dante Gabriel Rossetti,"Rossetti, Dante Gabriel"
+ARTIC-21156,1602.0,1648.0,Antonio Puga,"Puga, Antonio"
+ARTIC-17482,1683.0,1753.0,Miyagawa Chôshun,Miyagawa Chôshun
+ARTIC-114478,1828.0,1890.0,William A. Mitchell,"Mitchell, William A."
+ARTIC-17676,1826.0,1901.0,Domenico Morelli,"Morelli, Domenico"
+ARTIC-42415,1642.0,1679.0,"Jean François Millet, I","Millet, Jean François, I"
+ARTIC-60977,,,Yuan Jiang,Yuan Jiang
+ARTIC-35835,1763.0,1804.0,George Morland,"Morland, George"
+ARTIC-21838,1816.0,1879.0,William Rimmer,"Rimmer, William"
+ARTIC-23079,1477.0,1549.0,Martin Schaffner,"Schaffner, Martin"
+ARTIC-5355,1533.0,1578.0,Cornelis Cort,"Cort, Cornelis"
+ARTIC-44859,1829.0,1911.0,Constant Mayer,"Mayer, Constant"
+ARTIC-44956,1811.0,1902.0,Paul Flandrin,"Flandrin, Paul"
+ARTIC-99069,1743.0,,Wang Xu,Wang Xu
+ARTIC-19897,1724.0,1767.0,Franz Xavier Karl Palko,"Palko, Franz Xavier Karl"
+ARTIC-25212,1803.0,1855.0,Robert Matthew Sully,"Sully, Robert Matthew"
+ARTIC-29742,1567.0,1600.0,Unknown Venetian,Unknown Venetian
+ARTIC-33710,1444.0,1510.0,Sandro Botticelli,"Botticelli, Sandro"
+ARTIC-41514,1748.0,1832.0,Samuel De Wilde,"De Wilde, Samuel"
+ARTIC-36071,1634.0,1682.0,Jacob Ochtervelt,"Ochtervelt, Jacob"
+ARTIC-5383,1560.0,1627.0,Juan Sánchez Cotán,"Sánchez Cotán, Juan"
+ARTIC-41942,1569.0,1622.0,"Frans Pourbus, the Younger","Pourbus, Frans, the Younger"
+ARTIC-43090,1841.0,1919.0,Edward Lamson Henry,"Henry, Edward Lamson"
+ARTIC-33574,1753.0,1839.0,Sir William Beechey,"Beechey, William, Sir"
+ARTIC-55837,1842.0,1923.0,Jean Jules Antoine Lecomte du Noüy,"Lecomte du Noüy, Jean Jules Antoine"
+ARTIC-40931,1554.0,1626.0,Paul Bril,"Bril, Paul"
+ARTIC-110895,,,Kaigetsudo Doshu,Kaigetsudo Doshu
+ARTIC-42368,1762.0,1834.0,Jean Baptiste Joseph Wicar,"Wicar, Jean Baptiste Joseph"
+ARTIC-18903,1609.0,1670.0,Jan Mijtens,"Mijtens, Jan"
+ARTIC-19687,1848.0,1896.0,Marcel Ordinaire,"Ordinaire, Marcel"
+ARTIC-37519,1815.0,1892.0,Charles Louis-Lucien Muller,"Muller, Charles Louis-Lucien"
+ARTIC-17840,1476.0,1559.0,Kano Motonobu,Kano Motonobu
+ARTIC-41747,1578.0,1610.0,Adam Elsheimer,"Elsheimer, Adam"
+ARTIC-46337,1477.0,1576.0,Imitator of Titian,"Titian, imitator of"
+ARTIC-46302,,,Kano Yukenobu,Kano Yukenobu
+ARTIC-25722,1849.0,1921.0,Abbott Handerson Thayer,"Thayer, Abbott Handerson"
+ARTIC-35975,1838.0,1915.0,David Dalhoff Neal,"Neal, David Dalhoff"
+ARTIC-40871,1703.0,1739.0,Pierre Charles Trémolières,"Trémolières, Pierre Charles"
+ARTIC-37454,1430.0,1495.0,Carlo Crivelli,"Crivelli, Carlo"
+ARTIC-36670,,,Katsukawa Shunchô,Katsukawa Shunchô
+ARTIC-25418,1723.0,1776.0,Ike Taiga,Ike Taiga
+ARTIC-30511,,,Edouard Béliard,"Béliard, Edouard"
+ARTIC-17300,1662.0,1747.0,Willem van Mieris,"Mieris, Willem van"
+ARTIC-30593,,,Joseph Blackburn,"Blackburn, Joseph"

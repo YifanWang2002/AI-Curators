@@ -23,15 +23,15 @@ if __name__ == "__main__":
     count = {"success": 0, "fail": 0}
     failed_uuids = []
 
-    df = pd.read_csv("data/paintings.csv")
-    for url, image_id in zip(df["url"], df["image_id"]):
-        image_save_path = os.path.join(destination_folder, f"{image_id}.jpg")
+    df = pd.read_csv("data/artworks.csv")
+    for url, artwork_id in zip(df["full_image_url"], df["artwork_id"]):
+        image_save_path = os.path.join(destination_folder, f"{artwork_id}.jpg")
         if download_image(url, image_save_path):
             time.sleep(0.1)
             count["success"] += 1
         else:
             print(url)
-            failed_uuids.append(image_id)
+            failed_uuids.append(artwork_id)
             count["fail"] += 1
 
     df = df[~df["image_id"].isin(failed_uuids)]

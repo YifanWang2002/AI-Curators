@@ -1,0 +1,787 @@
+artist_id,preferred_display_name,forward_display_name,birth_year,death_year,nationality
+NGA-1503,"Maes, Nicolaes",Nicolaes Maes,1634.0,1693.0,Dutch
+NGA-8343,Franco-Flemish 15th Century,Franco-Flemish 15th Century,1400.0,1499.0,Franco-Flemish
+NGA-1371,"Hanneman, Adriaen",Adriaen Hanneman,1603.0,1671.0,Dutch
+NGA-1712,"Memling, Hans",Hans Memling,1445.0,1494.0,Netherlandish
+NGA-1729,"Mor, Antonis",Antonis Mor,1519.0,1576.0,Netherlandish
+NGA-13,Anonymous Artist,Anonymous Artist,,,Unknown
+NGA-1971,"Weyden, Rogier van der",Rogier van der Weyden,1399.0,1464.0,Netherlandish
+NGA-1951,"Vermeer, Johannes",Johannes Vermeer,1632.0,1675.0,Dutch
+NGA-1400,"Holbein the Younger, Hans",Hans Holbein the Younger,1497.0,1543.0,German
+NGA-1927,"Tiepolo, Giovanni Battista",Giovanni Battista Tiepolo,1696.0,1770.0,Italian
+NGA-1369,"Hals, Frans",Frans Hals,1582.0,1666.0,Dutch
+NGA-1822,Rembrandt van Rijn,Rembrandt van Rijn,1606.0,1669.0,Dutch
+NGA-8351,Dutch 17th Century,Dutch 17th Century,1600.0,1699.0,Dutch
+NGA-1950,"Velázquez, Diego",Diego Velázquez,1599.0,1660.0,Spanish
+NGA-1356,El Greco,El Greco,1541.0,1614.0,Greek
+NGA-49421,Greek 16th Century,Greek 16th Century,,,
+NGA-1835,"Romney, George",George Romney,1734.0,1802.0,British
+NGA-1363,"Guardi, Francesco",Francesco Guardi,1712.0,1793.0,Italian
+NGA-1172,"Cossa, Francesco del",Francesco del Cossa,1436.0,1477.0,Italian
+NGA-1237,"Dossi, Dosso",Dosso Dossi,1492.0,1542.0,Italian
+NGA-103,"Anselmi, Michelangelo",Michelangelo Anselmi,1491.0,1556.0,Italian
+NGA-1345,Girolamo da Carpi,Girolamo da Carpi,1501.0,1556.0,Italian
+NGA-1028,"Bronzino, Agnolo",Agnolo Bronzino,1503.0,1572.0,Italian
+NGA-1936,"Trumbull, John",John Trumbull,1756.0,1843.0,American
+NGA-1162,"Copley, John Singleton",John Singleton Copley,1738.0,1815.0,American
+NGA-2818,American 18th Century,American 18th Century,1700.0,1799.0,American
+NGA-1981,"Wollaston, John",John Wollaston,1742.0,1775.0,American
+NGA-1158,"Constable, John",John Constable,1776.0,1837.0,British
+NGA-6684,"Paul, Joseph",Joseph Paul,1804.0,1887.0,British
+NGA-1202,"Cuyp, Aelbert",Aelbert Cuyp,1620.0,1691.0,Dutch
+NGA-1211,"David, Gerard",Gerard David,1460.0,1523.0,Netherlandish
+NGA-49424,Netherlandish 15th/16th Century,Netherlandish 15th/16th Century,,,
+NGA-1329,"Gainsborough, Thomas",Thomas Gainsborough,1727.0,1788.0,British
+NGA-1405,"Hoppner, John",John Hoppner,1758.0,1810.0,British
+NGA-1489,"Lippi, Filippo, Fra",Fra Filippo Lippi,1406.0,1469.0,Italian
+NGA-1779,Pesellino,Pesellino,1422.0,1457.0,Italian
+NGA-6629,"Gardner, Daniel",Daniel Gardner,1750.0,1805.0,British
+NGA-5637,"Drost, Willem",Willem Drost,1630.0,1710.0,Dutch
+NGA-1825,"Reynolds, Joshua, Sir",Sir Joshua Reynolds,1723.0,1792.0,British
+NGA-1932,Titian,Titian,1490.0,1576.0,Italian
+NGA-49427,"Pace, Gian Paolo",Gian Paolo Pace,1528.0,1560.0,Italian
+NGA-1259,"Dyck, Anthony van, Sir",Sir Anthony van Dyck,1599.0,1641.0,Flemish
+NGA-975,"Boilly, Louis-Léopold",Louis-Léopold Boilly,1761.0,1845.0,French
+NGA-1973,"Whistler, Beatrice Godwin",Beatrice Godwin Whistler,1857.0,1896.0,British
+NGA-1242,"Drouais, François-Hubert",François-Hubert Drouais,1727.0,1775.0,French
+NGA-1358,"Greuze, Jean-Baptiste",Jean-Baptiste Greuze,1725.0,1805.0,French
+NGA-1967,"Watteau, Antoine",Antoine Watteau,1684.0,1721.0,French
+NGA-1478,"Le Nain, Louis",Louis Le Nain,1600.0,1648.0,French
+NGA-1914,"Sully, Thomas",Thomas Sully,1783.0,1872.0,American
+NGA-1087,Cariani,Cariani,1485.0,1547.0,Italian
+NGA-1851,"Ryder, Albert Pinkham",Albert Pinkham Ryder,1847.0,1917.0,American
+NGA-1256,"Dürer, Albrecht",Albrecht Dürer,1471.0,1528.0,German
+NGA-1182,"Crespi, Giuseppe Maria",Giuseppe Maria Crespi,1665.0,1747.0,Italian
+NGA-1499,"Luks, George",George Luks,1866.0,1933.0,American
+NGA-1747,"Neagle, John",John Neagle,1796.0,1865.0,American
+NGA-1372,"Harding, Chester",Chester Harding,1792.0,1866.0,American
+NGA-1150,"Coe, Elias V.",Elias V. Coe,1794.0,1843.0,American
+NGA-1934,"Toole, John",John Toole,1815.0,1860.0,American
+NGA-6595,"Hilling, John",John Hilling,1822.0,1894.0,British
+NGA-2831,French 18th Century,French 18th Century,1700.0,1799.0,French
+NGA-1942,American 19th Century,American 19th Century,1800.0,1899.0,American
+NGA-1212,"David, Jacques-Louis",Jacques-Louis David,1748.0,1825.0,French
+NGA-1959,"Vouet, Simon",Simon Vouet,1590.0,1649.0,French
+NGA-2829,French 16th Century,French 16th Century,1500.0,1599.0,French
+NGA-1370,"Hamen y León, Juan van der",Juan van der Hamen y León,1596.0,1631.0,Spanish
+NGA-1949,"Vassallo, Anton Maria",Anton Maria Vassallo,1620.0,1672.0,Italian
+NGA-1413,"Inness, George",George Inness,1825.0,1894.0,American
+NGA-1353,"Goya, Francisco",Francisco Goya,1746.0,1828.0,Spanish
+NGA-1219,"Degas, Edgar",Edgar Degas,1834.0,1917.0,French
+NGA-1390,"Henner, Jean-Jacques",Jean-Jacques Henner,1829.0,1905.0,French
+NGA-1334,"Gericault, Théodore",Théodore Gericault,1791.0,1824.0,French
+NGA-1720,"Millet, Jean-François",Jean-François Millet,1814.0,1875.0,French
+NGA-1722,"Modigliani, Amedeo",Amedeo Modigliani,1884.0,1920.0,Italian
+NGA-1733,"Morisot, Berthe",Berthe Morisot,1841.0,1895.0,French
+NGA-1090,"Carlsen, Emil",Emil Carlsen,1853.0,1932.0,American
+NGA-6347,Unknown 19th Century,Unknown 19th Century,1800.0,1899.0,Unknown
+NGA-1115,"Cézanne, Paul",Paul Cézanne,1839.0,1906.0,French
+NGA-1169,"Corot, Jean-Baptiste-Camille",Jean-Baptiste-Camille Corot,1796.0,1875.0,French
+NGA-1349,"Gogh, Vincent van",Vincent van Gogh,1853.0,1890.0,Dutch
+NGA-1361,"Gros, Antoine-Jean",Antoine-Jean Gros,1771.0,1835.0,French
+NGA-1365,"Guillaumin, Jean-Baptiste-Armand",Jean-Baptiste-Armand Guillaumin,1841.0,1927.0,French
+NGA-1726,"Monet, Claude",Claude Monet,1840.0,1926.0,French
+NGA-1817,"Ranger, Henry Ward",Henry Ward Ranger,1858.0,1916.0,American
+NGA-1820,"Redon, Odilon",Odilon Redon,1840.0,1916.0,French
+NGA-1922,"Tarbell, Edmund Charles",Edmund Charles Tarbell,1862.0,1938.0,American
+NGA-1429,Juan de Flandes,Juan de Flandes,1476.0,1519.0,Hispano-Flemish
+NGA-6818,"Cossiers, Jan",Jan Cossiers,1600.0,1671.0,Flemish
+NGA-8352,Flemish 17th century,Flemish 17th century,1600.0,1699.0,Flemish
+NGA-1002,"Boudin, Eugène",Eugène Boudin,1824.0,1898.0,French
+NGA-1481,"Lépine, Stanislas",Stanislas Lépine,1835.0,1892.0,French
+NGA-1506,"Manet, Edouard",Edouard Manet,1832.0,1883.0,French
+NGA-1791,"Pissarro, Camille",Camille Pissarro,1830.0,1903.0,French
+NGA-1935,"Toulouse-Lautrec, Henri de",Henri de Toulouse-Lautrec,1864.0,1901.0,French
+NGA-1960,"Vuillard, Edouard",Edouard Vuillard,1868.0,1940.0,French
+NGA-2832,French 19th Century,French 19th Century,1800.0,1899.0,French
+NGA-1911,"Stuart, Gilbert",Gilbert Stuart,1755.0,1828.0,American
+NGA-8370,Tyrolean 16th Century,Tyrolean 16th Century,1500.0,1599.0,German
+NGA-1330,"Gauguin, Paul",Paul Gauguin,1848.0,1903.0,French
+NGA-1823,"Renoir, Auguste",Auguste Renoir,1841.0,1919.0,French
+NGA-1877,"Sisley, Alfred",Alfred Sisley,1839.0,1899.0,French
+NGA-1260,"Eakins, Thomas",Thomas Eakins,1844.0,1916.0,American
+NGA-1401,"Homer, Winslow",Winslow Homer,1836.0,1910.0,American
+NGA-1858,"Sargent, John Singer",John Singer Sargent,1856.0,1925.0,American
+NGA-8329,Italian 17th Century,Italian 17th Century,1600.0,1699.0,Italian
+NGA-23884,"Troy, Jean François de",Jean François de Troy,1679.0,1752.0,French
+NGA-1315,"Forain, Jean-Louis",Jean-Louis Forain,1852.0,1931.0,French
+NGA-1870,"Seurat, Georges",Georges Seurat,1859.0,1891.0,French
+NGA-6707,"Bierstadt, Albert",Albert Bierstadt,1830.0,1902.0,American
+NGA-39651,"Mayer, Frank Blackwell",Frank Blackwell Mayer,1827.0,1899.0,American
+NGA-38653,"DeCamp, Joseph Rodefer",Joseph Rodefer DeCamp,1858.0,1923.0,American
+NGA-1741,"Mount, William Sidney",William Sidney Mount,1807.0,1868.0,American
+NGA-42652,"Hardenstein, Dirk",Dirk Hardenstein,1620.0,1681.0,Dutch
+NGA-36016,"Stanzione, Massimo",Massimo Stanzione,1586.0,1656.0,Italian
+NGA-1811,"Raeburn, Henry, Sir",Sir Henry Raeburn,1756.0,1823.0,Scottish
+NGA-1029,"Brown, Mather",Mather Brown,1761.0,1831.0,American
+NGA-1258,"Duveneck, Frank",Frank Duveneck,1848.0,1919.0,American
+NGA-6632,"Knapton, George",George Knapton,1698.0,1778.0,British
+NGA-6647,"Breda, Carl Fredrik von",Carl Fredrik von Breda,1759.0,1818.0,Swedish
+NGA-5529,"Sully, Thomas Wilcocks",Thomas Wilcocks Sully,1811.0,1847.0,American
+NGA-1948,"Vanderlyn, John",John Vanderlyn,1775.0,1852.0,American
+NGA-1963,"Waldo, Samuel Lovett",Samuel Lovett Waldo,1783.0,1861.0,American
+NGA-1735,"Morland, George",George Morland,1763.0,1804.0,British
+NGA-1266,"Elliott, Charles Loring",Charles Loring Elliott,1812.0,1868.0,American
+NGA-1417,"Jarvis, John Wesley",John Wesley Jarvis,1780.0,1840.0,American
+NGA-1803,"Pratt, Matthew",Matthew Pratt,1734.0,1805.0,American
+NGA-53,"Alexander, Francis",Francis Alexander,1800.0,1880.0,American
+NGA-1792,"Polk, Charles Peale",Charles Peale Polk,1767.0,1822.0,American
+NGA-1254,"Durand, Asher Brown",Asher Brown Durand,1796.0,1886.0,American
+NGA-1265,"Eichholtz, Jacob",Jacob Eichholtz,1776.0,1842.0,American
+NGA-1408,"Huntington, Daniel",Daniel Huntington,1816.0,1906.0,American
+NGA-1925,"Theus, Jeremiah",Jeremiah Theus,1716.0,1774.0,American
+NGA-1775,"Peale, Rembrandt",Rembrandt Peale,1778.0,1860.0,American
+NGA-1958,"Volk, Douglas",Douglas Volk,1856.0,1935.0,American
+NGA-2825,British 18th Century,British 18th Century,1700.0,1799.0,British
+NGA-6890,European 18th Century,European 18th Century,1700.0,1799.0,European
+NGA-5554,Unknown 18th Century,Unknown 18th Century,1700.0,1799.0,Unknown
+NGA-1422,"Johnson, David",David Johnson,1827.0,1908.0,American
+NGA-1423,"Johnson, Eastman",Eastman Johnson,1824.0,1906.0,American
+NGA-6690,"Schuyler Limner, The",The Schuyler Limner,1697.0,1785.0,American
+NGA-6691,"Partridge, Nehemiah",Nehemiah Partridge,1683.0,1737.0,American
+NGA-1326,"Fuller, George",George Fuller,1822.0,1884.0,American
+NGA-1114,"Cazin, Jean-Charles",Jean-Charles Cazin,1841.0,1901.0,French
+NGA-8333,Italian 18th Century,Italian 18th Century,1700.0,1799.0,Italian
+NGA-128,"Audubon, John Woodhouse",John Woodhouse Audubon,1812.0,1862.0,American
+NGA-6628,"Mercier, Philip",Philip Mercier,1689.0,1760.0,French
+NGA-1420,"Jennys, William",William Jennys,1727.0,1853.0,American
+NGA-750,"Beardsley Limner, The",The Beardsley Limner,1725.0,1845.0,American
+NGA-1781,"Phillips, Ammi",Ammi Phillips,1788.0,1865.0,American
+NGA-5516,"Denison Limner, The",The Denison Limner,1710.0,1850.0,American
+NGA-6889,"Steward, Joseph",Joseph Steward,1753.0,1822.0,American
+NGA-6720,"Conant Limner, The",The Conant Limner,1733.0,1873.0,American
+NGA-1879,"Skynner, Thomas",Thomas Skynner,1772.0,1900.0,American
+NGA-5521,"Dunlap, William",William Dunlap,1766.0,1839.0,American
+NGA-1452,"Lambdin, James Reid",James Reid Lambdin,1807.0,1889.0,American
+NGA-6895,"Wertmüller, Adolph-Ulrich",Adolph-Ulrich Wertmüller,1751.0,1811.0,Swedish
+NGA-1898,"Stanley, Abram Ross",Abram Ross Stanley,1816.0,1875.0,American
+NGA-1834,"Robinson, J.C.",J.C. Robinson,1768.0,1908.0,American
+NGA-1299,"Field, Erastus Salisbury",Erastus Salisbury Field,1805.0,1900.0,American
+NGA-6633,"Millar, James",James Millar,1740.0,1805.0,British
+NGA-1378,"Hashagen, A.",A. Hashagen,1767.0,1907.0,American
+NGA-1134,Chipman,Chipman,1770.0,1910.0,American
+NGA-654,"Bauman, Leila T.",Leila T. Bauman,1770.0,1910.0,American
+NGA-5520,"Greenleaf, Benjamin",Benjamin Greenleaf,1769.0,1821.0,American
+NGA-8299,Venetian 15th Century,Venetian 15th Century,1400.0,1499.0,Italian
+NGA-8293,Italian 15th Century,Italian 15th Century,1400.0,1499.0,Italian
+NGA-27579,Bicci di Lorenzo,Bicci di Lorenzo,1373.0,1452.0,Italian
+NGA-8367,Portuguese 15th Century,Portuguese 15th Century,1400.0,1499.0,Portuguese
+NGA-1209,"Daumier, Honoré",Honoré Daumier,1808.0,1879.0,French
+NGA-2308,British 20th Century,British 20th Century,1900.0,1999.0,British
+NGA-2819,American 20th Century,American 20th Century,1900.0,1999.0,American
+NGA-2826,British 19th Century,British 19th Century,1800.0,1899.0,British
+NGA-1905,"Stevens, Alfred",Alfred Stevens,1823.0,1906.0,Belgian
+NGA-1174,"Courbet, Gustave",Gustave Courbet,1819.0,1877.0,French
+NGA-1234,"Doornik, Frans van",Frans van Doornik,1635.0,1774.0,Flemish
+NGA-1379,"Hassam, Childe",Childe Hassam,1859.0,1935.0,American
+NGA-1783,"Picasso, Pablo",Pablo Picasso,1881.0,1973.0,Spanish
+NGA-2716,"Rosa, Salvator",Salvator Rosa,1615.0,1673.0,Italian
+NGA-1261,"Earl, Ralph",Ralph Earl,1751.0,1801.0,American
+NGA-1873,"Sheffield, Isaac",Isaac Sheffield,1807.0,1845.0,American
+NGA-1113,"Catlin, George",George Catlin,1796.0,1872.0,American
+NGA-1289,"Feke, Robert",Robert Feke,1707.0,1751.0,American
+NGA-1642,"Marshall, Benjamin",Benjamin Marshall,1768.0,1835.0,British
+NGA-1295,"Ferrill, Martin Edgar",Martin Edgar Ferrill,1836.0,1897.0,American
+NGA-1976,"Wilgus, William John",William John Wilgus,1819.0,1853.0,American
+NGA-1889,"Soulages, Pierre",Pierre Soulages,1919.0,2022.0,French
+NGA-1945,"Vail, Eugène",Eugène Vail,1857.0,1934.0,American
+NGA-2830,French 17th Century,French 17th Century,1600.0,1699.0,French
+NGA-1106,"Casilear, John William",John William Casilear,1811.0,1893.0,American
+NGA-1118,"Chambers, Thomas",Thomas Chambers,1808.0,1866.0,American
+NGA-1425,"Johnson, Joshua",Joshua Johnson,1763.0,1843.0,American
+NGA-5518,"Hamblin, Sturtevant J.",Sturtevant J. Hamblin,1776.0,1897.0,American
+NGA-348,"Davies, T.",T. Davies,1747.0,1887.0,American
+NGA-1255,"Durand, John",John Durand,1702.0,1825.0,American
+NGA-1869,"Senior, C.F.",C.F. Senior,1801.0,1941.0,American
+NGA-1396,"Hicks, Edward",Edward Hicks,1780.0,1849.0,American
+NGA-1121,"Chandler, Joseph Goodhue",Joseph Goodhue Chandler,1813.0,1884.0,American
+NGA-978,"Bonington, Richard Parkes",Richard Parkes Bonington,1802.0,1828.0,British
+NGA-3930,"Diebenkorn, Richard",Richard Diebenkorn,1922.0,1993.0,American
+NGA-1721,"Miró, Joan",Joan Miró,1893.0,1983.0,Spanish
+NGA-2311,"O'Keeffe, Georgia",Georgia O'Keeffe,1887.0,1986.0,American
+NGA-4711,"Lichtenstein, Roy",Roy Lichtenstein,1923.0,1997.0,American
+NGA-6708,"Robinson, Theodore",Theodore Robinson,1852.0,1896.0,American
+NGA-3185,"Thiebaud, Wayne",Wayne Thiebaud,1920.0,2021.0,American
+NGA-4273,"Guston, Philip",Philip Guston,1913.0,1980.0,American
+NGA-6717,"Mangold, Robert",Robert Mangold,1937.0,,American
+NGA-1436,"Kirchner, Ernst Ludwig",Ernst Ludwig Kirchner,1880.0,1938.0,German
+NGA-13921,"Downes, Rackstraw",Rackstraw Downes,1939.0,,American
+NGA-1221,"Delacroix, Eugène",Eugène Delacroix,1798.0,1863.0,French
+NGA-20504,"Nickson, Graham",Graham Nickson,1946.0,,British
+NGA-6903,"Steir, Pat",Pat Steir,1938.0,,American
+NGA-6397,"Durrie, George Henry",George Henry Durrie,1820.0,1863.0,American
+NGA-1780,"Peto, John Frederick",John Frederick Peto,1854.0,1907.0,American
+NGA-9661,"Preti, Mattia",Mattia Preti,1613.0,1699.0,Italian
+NGA-2675,"Pechstein, Max",Max Pechstein,1881.0,1955.0,German
+NGA-25290,"Giaquinto, Corrado",Corrado Giaquinto,1703.0,1766.0,Italian
+NGA-13920,"Decker, Joseph",Joseph Decker,1853.0,1924.0,American
+NGA-1827,"Ricci, Sebastiano",Sebastiano Ricci,1659.0,1734.0,Italian
+NGA-34297,"Lewis, Norman",Norman Lewis,1909.0,1979.0,American
+NGA-2560,"Hantaï, Simon",Simon Hantaï,1922.0,2008.0,French
+NGA-41919,"Berkowitz, Leon",Leon Berkowitz,1911.0,1987.0,American
+NGA-26322,"Heilmann, Mary",Mary Heilmann,1940.0,,American
+NGA-1711,"Melchers, Gari",Gari Melchers,1860.0,1932.0,American
+NGA-38965,"Jones, Lois Mailou",Lois Mailou Jones,1905.0,1998.0,American
+NGA-46222,"Motley, Archibald John Jr.",Archibald John Motley Jr.,1891.0,1981.0,American
+NGA-34779,"Milhazes, Beatriz",Beatriz Milhazes,1960.0,,Brazilian
+NGA-1431,"Kandinsky, Wassily",Wassily Kandinsky,1866.0,1944.0,Russian
+NGA-1404,"Hopper, Edward",Edward Hopper,1882.0,1967.0,American
+NGA-1728,"Monticelli, Adolphe",Adolphe Monticelli,1824.0,1886.0,French
+NGA-8311,Florentine 16th Century,Florentine 16th Century,1500.0,1599.0,Italian
+NGA-1708,"Giovanni, Matteo di",Matteo di Giovanni,1430.0,1497.0,Italian
+NGA-954,Benvenuto di Giovanni,Benvenuto di Giovanni,1436.0,1517.0,Italian
+NGA-1750,Neroccio de' Landi,Neroccio de' Landi,1447.0,1500.0,Italian
+NGA-1092,"Carpaccio, Vittore",Vittore Carpaccio,1465.0,1526.0,Italian
+NGA-1507,"Mantegna, Andrea",Andrea Mantegna,1431.0,1506.0,Italian
+NGA-1136,"Christus, Petrus",Petrus Christus,1424.0,1475.0,Netherlandish
+NGA-1339,"Giambono, Michele",Michele Giambono,1382.0,1480.0,Italian
+NGA-5765,Polidoro Lanzani,Polidoro Lanzani,1515.0,1565.0,Italian
+NGA-1497,"Luini, Bernardino",Bernardino Luini,1480.0,1532.0,Italian
+NGA-1952,Veronese,Veronese,1528.0,1588.0,Italian
+NGA-1878,"Sittow, Michel",Michel Sittow,1469.0,1525.0,Netherlandish
+NGA-1717,"Metsu, Gabriel",Gabriel Metsu,1629.0,1667.0,Dutch
+NGA-1398,"Hobbema, Meindert",Meindert Hobbema,1638.0,1709.0,Dutch
+NGA-1863,"Schäufelein, Hans Leonard",Hans Leonard Schäufelein,1480.0,1540.0,German
+NGA-49422,Spanish 18th Century,Spanish 18th Century,,,
+NGA-1127,"Chardin, Jean Siméon",Jean Siméon Chardin,1699.0,1779.0,French
+NGA-1472,"Lawrence, Thomas, Sir",Sir Thomas Lawrence,1769.0,1830.0,British
+NGA-5636,"Dupont, Gainsborough",Gainsborough Dupont,1754.0,1797.0,British
+NGA-1230,Domenico Veneziano,Domenico Veneziano,1410.0,1461.0,Italian
+NGA-1861,"Savage, Edward",Edward Savage,1761.0,1817.0,American
+NGA-1341,Giorgione,Giorgione,1477.0,1510.0,Italian
+NGA-26980,Giovanni d'Alemagna,Giovanni d'Alemagna,1400.0,1450.0,German
+NGA-1766,"Panini, Giovanni Paolo",Giovanni Paolo Panini,1691.0,1765.0,Italian
+NGA-1052,"Bugiardini, Giuliano",Giuliano Bugiardini,1475.0,1554.0,Italian
+NGA-1495,"Lotto, Lorenzo",Lorenzo Lotto,1480.0,1557.0,Italian
+NGA-91,Andrea di Bartolo,Andrea di Bartolo,1369.0,1428.0,Italian
+NGA-1857,Sano di Pietro,Sano di Pietro,1405.0,1481.0,Italian
+NGA-1490,"Longhi, Pietro",Pietro Longhi,1702.0,1785.0,Italian
+NGA-1170,Correggio,Correggio,1489.0,1534.0,Italian
+NGA-1298,"Fetti, Domenico",Domenico Fetti,1589.0,1623.0,Italian
+NGA-49273,"Caletti, Giuseppe",Giuseppe Caletti,1620.0,1660.0,Italian
+NGA-1338,"Ghislandi, Giuseppe",Giuseppe Ghislandi,1655.0,1743.0,Italian
+NGA-1841,"Rotari, Pietro",Pietro Rotari,1707.0,1762.0,Italian
+NGA-1736,"Moroni, Giovanni Battista",Giovanni Battista Moroni,1525.0,1578.0,Italian
+NGA-8300,Ferrarese 15th Century,Ferrarese 15th Century,1400.0,1499.0,Italian
+NGA-1956,"Vivarini, Bartolomeo",Bartolomeo Vivarini,1430.0,1499.0,Italian
+NGA-559,"Bassano, Jacopo",Jacopo Bassano,1510.0,1592.0,Italian
+NGA-510,"Basaiti, Marco",Marco Basaiti,1476.0,1530.0,Italian
+NGA-1340,Giannicola di Paolo,Giannicola di Paolo,1460.0,1544.0,Italian
+NGA-15456,Pensionante del Saraceni,Pensionante del Saraceni,1540.0,1670.0,French (?)
+NGA-413,"Barocci, Federico",Federico Barocci,1535.0,1612.0,Italian
+NGA-1331,Gentile da Fabriano,Gentile da Fabriano,1370.0,1427.0,Italian
+NGA-1929,"Tintoretto, Jacopo",Jacopo Tintoretto,1518.0,1594.0,Italian
+NGA-8310,Italian 16th Century,Italian 16th Century,1500.0,1599.0,Italian
+NGA-1921,Tanzio da Varallo,Tanzio da Varallo,1575.0,1633.0,Italian
+NGA-1875,Simone Martini,Simone Martini,1315.0,1344.0,Italian
+NGA-1833,"Roberti, Ercole de'",Ercole de' Roberti,1455.0,1496.0,Italian
+NGA-1732,Moretto da Brescia,Moretto da Brescia,1498.0,1554.0,Italian
+NGA-6681,"Tintoretto, Domenico",Domenico Tintoretto,1560.0,1635.0,Italian
+NGA-1989,"Zoppo, Marco",Marco Zoppo,1433.0,1478.0,Italian
+NGA-1860,Sassetta,Sassetta,1390.0,1450.0,Italian
+NGA-49423,Italian 15th/16th Century,Italian 15th/16th Century,,,
+NGA-99,"Angelico, Fra",Fra Angelico,1395.0,1455.0,Italian
+NGA-936,"Bellini, Giovanni",Giovanni Bellini,1430.0,1516.0,Italian
+NGA-1778,"Perugino, Pietro",Pietro Perugino,1450.0,1523.0,Italian
+NGA-10791,Master of the Osservanza,Master of the Osservanza,1365.0,1485.0,Italian
+NGA-1696,"Larciani (Master of the Kress Landscapes), Giovanni",Giovanni Larciani (Master of the Kress Landscapes),1484.0,1527.0,Italian
+NGA-1954,"Vivarini, Alvise",Alvise Vivarini,1442.0,1505.0,Italian
+NGA-8294,North Italian 15th Century,North Italian 15th Century,1400.0,1499.0,Italian
+NGA-1970,"West, Benjamin",Benjamin West,1738.0,1820.0,American
+NGA-1983,"Wright, Joseph",Joseph Wright,1734.0,1797.0,British
+NGA-1268,"Erri, Agnolo degli",Agnolo degli Erri,1417.0,1497.0,Italian
+NGA-1397,"Highmore, Joseph",Joseph Highmore,1692.0,1780.0,British
+NGA-1428,"Jouett, Matthew Harris",Matthew Harris Jouett,1788.0,1827.0,American
+NGA-2838,German 19th Century,German 19th Century,1800.0,1899.0,German
+NGA-1774,"Peale, Charles Willson",Charles Willson Peale,1741.0,1827.0,American
+NGA-1810,"Quidor, John",John Quidor,1801.0,1881.0,American
+NGA-1337,"Ghirlandaio, Ridolfo",Ridolfo Ghirlandaio,1483.0,1561.0,Italian
+NGA-984,"Bordone, Paris",Paris Bordone,1500.0,1571.0,Italian
+NGA-939,"Bellotto, Bernardo",Bernardo Bellotto,1722.0,1780.0,Italian
+NGA-3671,"Campagnola, Giulio",Giulio Campagnola,1482.0,1514.0,Italian
+NGA-1403,"Hooch, Pieter de",Pieter de Hooch,1629.0,1684.0,Dutch
+NGA-1501,"Liss, Johann",Johann Liss,1597.0,1631.0,German
+NGA-1760,"Ostade, Adriaen van",Adriaen van Ostade,1610.0,1685.0,Dutch
+NGA-1797,"Potter, Paulus",Paulus Potter,1625.0,1654.0,Dutch
+NGA-1808,"Puvis de Chavannes, Pierre",Pierre Puvis de Chavannes,1824.0,1898.0,French
+NGA-1850,"Ruisdael, Jacob van",Jacob van Ruisdael,1628.0,1682.0,Dutch
+NGA-1974,"Whistler, James McNeill",James McNeill Whistler,1834.0,1903.0,American
+NGA-8312,Venetian 16th Century,Venetian 16th Century,1500.0,1599.0,Italian
+NGA-8342,Anonymous Flemish 15th Century,Anonymous Flemish 15th Century,1400.0,1499.0,Flemish
+NGA-972,"Blakelock, Ralph Albert",Ralph Albert Blakelock,1847.0,1919.0,American
+NGA-1129,"Chase, William Merritt",William Merritt Chase,1849.0,1916.0,American
+NGA-5530,"Verrocchio, Andrea del",Andrea del Verrocchio,1435.0,1488.0,Italian
+NGA-1505,"Magnasco, Alessandro",Alessandro Magnasco,1667.0,1749.0,Italian
+NGA-800,"Beccafumi, Domenico",Domenico Beccafumi,1485.0,1551.0,Italian
+NGA-2099,Baldassare d'Este,Baldassare d'Este,1432.0,1506.0,Italian
+NGA-996,"Boucher, François",François Boucher,1703.0,1770.0,French
+NGA-8346,Netherlandish 16th Century,Netherlandish 16th Century,1500.0,1599.0,Netherlandish
+NGA-1430,"Kalf, Willem",Willem Kalf,1619.0,1693.0,Dutch
+NGA-2795,"Vos, Maarten de",Maarten de Vos,1532.0,1603.0,Netherlandish
+NGA-1993,"Zurbarán, Francisco de",Francisco de Zurbarán,1598.0,1664.0,Spanish
+NGA-7377,"Clark, Robert E",Robert Clark,1910.0,1990.0,American
+NGA-37167,"Krans, Olof",Olof Krans,1838.0,1916.0,American
+NGA-7831,"McCombs, Orrie",Orrie McCombs,1855.0,1995.0,American
+NGA-940,"Bellows, George",George Bellows,1882.0,1925.0,American
+NGA-1080,Canaletto,Canaletto,1697.0,1768.0,Italian
+NGA-1491,"Van Loo, Charles Amédée Philippe",Charles Amédée Philippe Van Loo,1719.0,1795.0,French
+NGA-31041,"Joli, Antonio",Antonio Joli,1700.0,1777.0,Italian
+NGA-1928,"Tinelli, Tiberio",Tiberio Tinelli,1586.0,1638.0,Italian
+NGA-1316,"Fragonard, Jean Honoré",Jean Honoré Fragonard,1732.0,1806.0,French
+NGA-1953,"Vigée Le Brun, Élisabeth Louise",Élisabeth Louise Vigée Le Brun,1755.0,1842.0,French
+NGA-1145,"Lorrain, Claude",Claude Lorrain,1604.0,1682.0,French
+NGA-1746,"Nattier, Jean-Marc",Jean-Marc Nattier,1685.0,1766.0,French
+NGA-1798,"Poussin, Nicolas",Nicolas Poussin,1594.0,1665.0,French
+NGA-1771,"Pater, Jean-Baptiste Joseph",Jean-Baptiste Joseph Pater,1695.0,1736.0,French
+NGA-2632,"Longhi, Alessandro",Alessandro Longhi,1733.0,1813.0,Italian
+NGA-11192,"Bellevois, Jacob Adriaensz",Jacob Adriaensz Bellevois,1620.0,1676.0,Dutch
+NGA-1179,"Cranach the Elder, Lucas",Lucas Cranach the Elder,1472.0,1553.0,German
+NGA-1443,"Kremer, Nicolaus",Nicolaus Kremer,1500.0,1553.0,German
+NGA-1909,"Strigel, Bernhard",Bernhard Strigel,1460.0,1528.0,German
+NGA-1412,"Inman, Henry",Henry Inman,1801.0,1846.0,American
+NGA-80,"Ames, Ezra",Ezra Ames,1768.0,1836.0,American
+NGA-968,"Blackburn, Joseph",Joseph Blackburn,1697.0,1812.0,British
+NGA-1424,"Johnston, John",John Johnston,1753.0,1818.0,American
+NGA-1410,"Ingham, Charles Cromwell",Charles Cromwell Ingham,1796.0,1863.0,American
+NGA-6648,"Verelst, Maria",Maria Verelst,1680.0,1744.0,Dutch
+NGA-1788,"Pine, Robert Edge",Robert Edge Pine,1730.0,1788.0,American
+NGA-1892,"Spencer, Frederick R.",Frederick R. Spencer,1806.0,1875.0,American
+NGA-6631,"Gheeraerts, the Younger, Marcus","Marcus Gheeraerts, the Younger",1561.0,1636.0,Flemish
+NGA-1476,"Legros, Alphonse",Alphonse Legros,1837.0,1911.0,French
+NGA-1391,"Henri, Robert",Robert Henri,1865.0,1929.0,American
+NGA-1744,"Murillo, Bartolomé Esteban",Bartolomé Esteban Murillo,1617.0,1682.0,Spanish
+NGA-1207,"Daubigny, Charles-François",Charles-François Daubigny,1817.0,1878.0,French
+NGA-1227,"Diaz de la Peña, Narcisse",Narcisse Diaz de la Peña,1807.0,1876.0,French
+NGA-1253,"Dupré, Jules",Jules Dupré,1811.0,1889.0,French
+NGA-1374,"Harpignies, Henri-Joseph",Henri-Joseph Harpignies,1819.0,1916.0,French
+NGA-1846,"Rousseau, Théodore",Théodore Rousseau,1812.0,1867.0,French
+NGA-1144,"Clark, Alvan",Alvan Clark,1804.0,1887.0,American
+NGA-1915,"Sustermans, Justus",Justus Sustermans,1597.0,1681.0,Flemish
+NGA-122,"Audubon, John James",John James Audubon,1785.0,1851.0,American
+NGA-1939,"Turner, Joseph Mallord William",Joseph Mallord William Turner,1775.0,1851.0,British
+NGA-1355,"Gozzoli, Benozzo",Benozzo Gozzoli,1421.0,1497.0,Italian
+NGA-989,"Botticelli, Sandro",Sandro Botticelli,1446.0,1510.0,Italian
+NGA-1411,"Ingres, Jean-Auguste-Dominique",Jean-Auguste-Dominique Ingres,1780.0,1867.0,French
+NGA-1184,"Crivelli, Carlo",Carlo Crivelli,1430.0,1495.0,Italian
+NGA-36846,"Sustris, Lambert",Lambert Sustris,1515.0,1600.0,Dutch
+NGA-1702,Master of Saint Giles,Master of Saint Giles,1420.0,1560.0,Franco-Flemish
+NGA-1031,"Bruegel the Elder, Pieter",Pieter Bruegel the Elder,1525.0,1569.0,Netherlandish
+NGA-1454,"Lancret, Nicolas",Nicolas Lancret,1690.0,1743.0,French
+NGA-8314,Emilian 16th Century,Emilian 16th Century,1500.0,1599.0,Italian
+NGA-985,Bergognone,Bergognone,1453.0,1523.0,Italian
+NGA-131,Bacchiacca,Bacchiacca,1494.0,1557.0,Italian
+NGA-1787,Piero della Francesca,Piero della Francesca,1416.0,1492.0,Italian
+NGA-1832,"Robert, Hubert",Hubert Robert,1733.0,1808.0,French
+NGA-1856,"Salviati, Francesco",Francesco Salviati,1510.0,1563.0,Italian
+NGA-1004,"Bourdon, Sébastien",Sébastien Bourdon,1616.0,1671.0,French
+NGA-1119,"Champaigne, Philippe de",Philippe de Champaigne,1602.0,1674.0,French
+NGA-1352,"Gossaert, Jan",Jan Gossaert,1478.0,1532.0,Netherlandish
+NGA-1698,Master of the Catholic Kings,Master of the Catholic Kings,1420.0,1545.0,Spanish
+NGA-1758,"Orley, Bernard van",Bernard van Orley,1488.0,1541.0,Netherlandish
+NGA-1096,"Carracci, Annibale",Annibale Carracci,1560.0,1609.0,Italian
+NGA-1098,"Carracci, Lodovico",Lodovico Carracci,1555.0,1619.0,Italian
+NGA-6896,"Angeli, Giuseppe",Giuseppe Angeli,1712.0,1798.0,Italian
+NGA-8369,Tyrolean 15th Century,Tyrolean 15th Century,1400.0,1499.0,German
+NGA-1818,Raphael,Raphael,1483.0,1520.0,Italian
+NGA-1862,"Savoldo, Giovanni Girolamo",Giovanni Girolamo Savoldo,1480.0,1548.0,Italian
+NGA-1886,Sodoma,Sodoma,1477.0,1549.0,Italian
+NGA-8323,North Italian 16th Century,North Italian 16th Century,1500.0,1599.0,Italian
+NGA-1695,Master of Heiligenkreuz,Master of Heiligenkreuz,1375.0,1430.0,Austrian
+NGA-2835,German 16th Century,German 16th Century,1500.0,1599.0,German
+NGA-5776,"Mielich, Hans",Hans Mielich,1516.0,1573.0,German
+NGA-38614,Master of the Washington Coronation,Master of the Washington Coronation,1300.0,1333.0,Italian
+NGA-1759,"Orpen, William, Sir",Sir William Orpen,1878.0,1931.0,Irish
+NGA-1912,"Stubbs, George",George Stubbs,1724.0,1806.0,British
+NGA-365,"Bard, James",James Bard,1815.0,1897.0,American
+NGA-1434,"Kensett, John Frederick",John Frederick Kensett,1816.0,1872.0,American
+NGA-8347,Antwerp 16th Century,Antwerp 16th Century,1500.0,1599.0,Netherlandish
+NGA-1035,"Bruyn the Elder, Bartholomaeus",Bartholomaeus Bruyn the Elder,1493.0,1555.0,German
+NGA-61,"Allen, Luther",Luther Allen,1780.0,1821.0,American
+NGA-980,"Bonnell, William",William Bonnell,1804.0,1865.0,American
+NGA-1055,"Bundy, Horace",Horace Bundy,1814.0,1883.0,American
+NGA-1262,"Earl, Ralph Eleaser Whiteside",Ralph Eleaser Whiteside Earl,1788.0,1838.0,American
+NGA-1770,"Park, Linton",Linton Park,1826.0,1906.0,American
+NGA-1366,"H., J.",J. H.,1742.0,1882.0,American
+NGA-6393,"Hendrickson, Daniel",Daniel Hendrickson,1723.0,1788.0,American
+NGA-1801,"Powers, Asahel",Asahel Powers,1813.0,1843.0,American
+NGA-6867,Prior-Hamblin School,Prior-Hamblin School,1770.0,1910.0,American
+NGA-1806,"Prior, William Matthew",William Matthew Prior,1806.0,1873.0,American
+NGA-1407,"Humphreys, Charles S.",Charles S. Humphreys,1818.0,1880.0,American
+NGA-4745,"Van Loo, Louis Michel",Louis Michel Van Loo,1707.0,1771.0,French
+NGA-22,"Abbott, Lemuel Francis",Lemuel Francis Abbott,1755.0,1802.0,British
+NGA-1432,"Kauffmann, Angelica",Angelica Kauffmann,1741.0,1807.0,Swiss
+NGA-1980,"Winterhalter, Franz Xaver",Franz Xaver Winterhalter,1805.0,1873.0,German
+NGA-1969,"Weir, Julian Alden",Julian Alden Weir,1852.0,1919.0,American
+NGA-1902,"Steinlen, Théophile Alexandre",Théophile Alexandre Steinlen,1859.0,1923.0,Swiss
+NGA-6615,"Lucas Villamil, Eugenio",Eugenio Lucas Villamil,1858.0,1918.0,Spanish
+NGA-31039,"Van Loo, called César Van Loo, Jules César Denis","Jules César Denis Van Loo, called César Van Loo",1743.0,1821.0,French
+NGA-1852,"Sachs, Lambert",Lambert Sachs,1818.0,1903.0,American
+NGA-6897,Redpath,Redpath,1770.0,1910.0,American
+NGA-1965,"Waters, Susan C.",Susan C. Waters,1823.0,1900.0,American
+NGA-1427,"Jordan, Samuel",Samuel Jordan,1803.0,1836.0,American
+NGA-1451,"Lamb, A.A.",A.A. Lamb,1784.0,1924.0,American
+NGA-1399,"Hofmann, Charles C.",Charles C. Hofmann,1820.0,1882.0,American
+NGA-34556,"Peckham, Robert",Robert Peckham,1785.0,1877.0,American
+NGA-1206,"Dandré-Bardon, Michel-François",Michel-François Dandré-Bardon,1700.0,1783.0,French
+NGA-1036,"Budington, Jonathan",Jonathan Budington,1779.0,1823.0,American
+NGA-1502,MacKay,MacKay,1711.0,1851.0,American
+NGA-1836,"Ropes, George",George Ropes,1788.0,1819.0,American
+NGA-6689,"Duyckinck, Gerardus",Gerardus Duyckinck,1695.0,1746.0,American
+NGA-5517,"Gansevoort Limner, The",The Gansevoort Limner,1665.0,1790.0,American
+NGA-5847,"Vanderlyn, Pieter",Pieter Vanderlyn,1687.0,1778.0,American
+NGA-1991,"Zorn, Anders",Anders Zorn,1860.0,1920.0,Swedish
+NGA-27534,"Huet, Christophe",Christophe Huet,1700.0,1759.0,French
+NGA-1859,"Sarto, Andrea del",Andrea del Sarto,1486.0,1530.0,Italian
+NGA-133,"Badger, Joseph",Joseph Badger,1708.0,1765.0,American
+NGA-1946,"Valdés Leal, Juan de",Juan de Valdés Leal,1622.0,1690.0,Spanish
+NGA-37351,"Caliari, Benedetto",Benedetto Caliari,1538.0,1598.0,Italian
+NGA-49428,"Caliari, Gabriele",Gabriele Caliari,1568.0,1631.0,Italian
+NGA-1866,Sebastiano del Piombo,Sebastiano del Piombo,1485.0,1547.0,Italian
+NGA-2707,"Ricci, Marco",Marco Ricci,1676.0,1729.0,Italian
+NGA-1699,Master of the Saint Bartholomew Altar,Master of the Saint Bartholomew Altar,1430.0,1535.0,German
+NGA-607,"Bastien-Lepage, Jules",Jules Bastien-Lepage,1848.0,1884.0,French
+NGA-1021,"Bradley, John",John Bradley,1767.0,1891.0,American
+NGA-1477,"Lely, Peter, Sir",Sir Peter Lely,1618.0,1680.0,English
+NGA-1275,"Fantin-Latour, Henri",Henri Fantin-Latour,1836.0,1904.0,French
+NGA-1199,"Cuitt the Younger, George",George Cuitt the Younger,1779.0,1854.0,British
+NGA-1213,"Davies, Arthur B.",Arthur B. Davies,1862.0,1928.0,American
+NGA-1323,"Frieseke, Frederick Carl",Frederick Carl Frieseke,1874.0,1939.0,American
+NGA-1837,Rosso Fiorentino,Rosso Fiorentino,1494.0,1540.0,Italian
+NGA-1906,"Stock, Joseph Whiting",Joseph Whiting Stock,1815.0,1855.0,American
+NGA-6682,"Hopkins, Milton W.",Milton W. Hopkins,1789.0,1844.0,American
+NGA-6893,"Vecchia, Pietro della",Pietro della Vecchia,1602.0,1676.0,Italian
+NGA-5526,"Campin, Robert",Robert Campin,1375.0,1444.0,Netherlandish
+NGA-983,"Borch the Younger, Gerard ter",Gerard ter Borch the Younger,1617.0,1681.0,Dutch
+NGA-1847,"Rubens, Peter Paul, Sir",Sir Peter Paul Rubens,1577.0,1640.0,Flemish
+NGA-1357,"Greenwood, John",John Greenwood,1727.0,1792.0,American
+NGA-900,"Beechey, William, Sir",Sir William Beechey,1753.0,1839.0,British
+NGA-1173,"Cotes, Francis",Francis Cotes,1726.0,1770.0,British
+NGA-1718,"Miereveld, Michiel van",Michiel van Miereveld,1567.0,1641.0,Dutch
+NGA-121,"Aspertini, Amico",Amico Aspertini,1474.0,1552.0,Italian
+NGA-1204,"Daddi, Bernardo",Bernardo Daddi,1320.0,1348.0,Italian
+NGA-1183,"Creti, Donato",Donato Creti,1671.0,1749.0,Italian
+NGA-1139,Cima da Conegliano,Cima da Conegliano,1459.0,1517.0,Italian
+NGA-5584,"Master of the Prado ""Adoration of the Magi""","Master of the Prado ""Adoration of the Magi""",1395.0,1535.0,Netherlandish
+NGA-1362,"Grünewald, Matthias",Matthias Grünewald,1475.0,1528.0,German
+NGA-1364,Guercino,Guercino,1591.0,1666.0,Italian
+NGA-1458,"Largillierre, Nicolas de",Nicolas de Largillierre,1656.0,1746.0,French
+NGA-1484,Lucas van Leyden,Lucas van Leyden,1489.0,1533.0,Netherlandish
+NGA-1853,"Saenredam, Pieter Jansz",Pieter Jansz Saenredam,1597.0,1665.0,Dutch
+NGA-2563,"Heemskerck, Maerten van",Maerten van Heemskerck,1498.0,1574.0,Netherlandish
+NGA-1888,"Solario, Andrea",Andrea Solario,1475.0,1524.0,Italian
+NGA-1910,"Strozzi, Bernardo",Bernardo Strozzi,1581.0,1644.0,Italian
+NGA-1782,"Piazzetta, Giovanni Battista",Giovanni Battista Piazzetta,1683.0,1754.0,Italian
+NGA-1226,"Diana, Benedetto",Benedetto Diana,1460.0,1525.0,Italian
+NGA-1794,Pontormo,Pontormo,1494.0,1557.0,Italian
+NGA-5767,"Sons, Giovanni",Giovanni Sons,1553.0,1614.0,Flemish
+NGA-1772,"Patinir, Joachim",Joachim Patinir,1485.0,1524.0,Netherlandish
+NGA-1807,"Prud'hon, Pierre Paul",Pierre Paul Prud'hon,1758.0,1823.0,French
+NGA-4642,"Le Lorrain, Louis-Joseph",Louis-Joseph Le Lorrain,1715.0,1759.0,French
+NGA-1094,"Carpenter, Francis Bicknell",Francis Bicknell Carpenter,1830.0,1900.0,American
+NGA-1146,"Cleve, Joos van",Joos van Cleve,1485.0,1541.0,Netherlandish
+NGA-49426,Spanish 18th/19th Century,Spanish 18th/19th Century,,,
+NGA-1191,"Cropsey, Jasper Francis",Jasper Francis Cropsey,1823.0,1900.0,American
+NGA-1240,"Doughty, Thomas",Thomas Doughty,1791.0,1856.0,American
+NGA-1107,"Cassatt, Mary",Mary Cassatt,1844.0,1926.0,American
+NGA-1210,"David, Charles",Charles David,1797.0,1869.0,French
+NGA-702,"Bazille, Frédéric",Frédéric Bazille,1841.0,1870.0,French
+NGA-1216,"Dearth, Henry Golden",Henry Golden Dearth,1864.0,1918.0,American
+NGA-1508,"Marcoussis, Louis Casimir Ladislas",Louis Casimir Ladislas Marcoussis,1883.0,1941.0,French
+NGA-1768,"Paradise, John Wesley",John Wesley Paradise,1809.0,1862.0,American
+NGA-1844,"Rouget, Georges",Georges Rouget,1784.0,1869.0,French
+NGA-1224,"Devis, Arthur",Arthur Devis,1712.0,1787.0,British
+NGA-5523,"Guardi, Gian Antonio",Gian Antonio Guardi,1699.0,1761.0,Italian
+NGA-1940,"Twachtman, John Henry",John Henry Twachtman,1853.0,1902.0,American
+NGA-1122,"Chandler, Winthrop",Winthrop Chandler,1747.0,1790.0,American
+NGA-1381,"Heade, Martin Johnson",Martin Johnson Heade,1819.0,1904.0,American
+NGA-1984,"Wyant, Alexander Helwig",Alexander Helwig Wyant,1836.0,1892.0,American
+NGA-1138,"Church, Frederic Edwin",Frederic Edwin Church,1826.0,1900.0,American
+NGA-1446,"La Farge, John",John La Farge,1835.0,1910.0,American
+NGA-1433,"Kemmelmeyer, Frederick",Frederick Kemmelmeyer,1736.0,1848.0,American
+NGA-850,"Beckett, Francis A.",Francis A. Beckett,1833.0,1913.0,American
+NGA-1511,"Mark, George Washington",George Washington Mark,1795.0,1879.0,American
+NGA-6535,"Müller, Fritz",Fritz Müller,1814.0,1894.0,American
+NGA-1023,"Bradshaw, J.W.",J.W. Bradshaw,1820.0,1935.0,American
+NGA-6533,"Huge, Jurgan Frederick",Jurgan Frederick Huge,1809.0,1878.0,American
+NGA-959,"Béraud, Jean",Jean Béraud,1849.0,1936.0,French
+NGA-1731,"Moret, Henri",Henri Moret,1856.0,1913.0,French
+NGA-5597,"Boeckhorst, Jan",Jan Boeckhorst,1604.0,1668.0,Flemish
+NGA-1714,"Merle, Hugues",Hugues Merle,1823.0,1881.0,French
+NGA-1292,"Ferneley, John",John Ferneley,1782.0,1860.0,British
+NGA-1269,"Eversen, Adrianus",Adrianus Eversen,1818.0,1897.0,Dutch
+NGA-1382,"Healy, George Peter Alexander",George Peter Alexander Healy,1813.0,1894.0,American
+NGA-1347,"Glackens, William",William Glackens,1870.0,1938.0,American
+NGA-1937,"Tucker, Allen",Allen Tucker,1866.0,1939.0,American
+NGA-1426,"Jordaens, Jacob",Jacob Jordaens,1593.0,1678.0,Flemish
+NGA-1690,"Massys, Quentin",Quentin Massys,1466.0,1530.0,Netherlandish
+NGA-1923,"Teniers the Younger, David",David Teniers the Younger,1610.0,1690.0,Flemish
+NGA-1815,"Raleigh, Charles S.",Charles S. Raleigh,1831.0,1925.0,American
+NGA-1882,"Smith, Dana",Dana Smith,1805.0,1901.0,American
+NGA-1845,"Rousseau, Henri",Henri Rousseau,1844.0,1910.0,French
+NGA-1944,"Wtewael, Joachim Anthonisz",Joachim Anthonisz Wtewael,1566.0,1638.0,Dutch
+NGA-1082,"Cantarini, Simone",Simone Cantarini,1612.0,1648.0,Italian
+NGA-1908,"Street, Robert",Robert Street,1796.0,1865.0,American
+NGA-1328,"Gaertner, Eduard",Eduard Gaertner,1801.0,1877.0,German
+NGA-1461,"La Tour, Georges de",Georges de La Tour,1593.0,1652.0,French
+NGA-1441,"Kouwenbergh, Philip van",Philip van Kouwenbergh,1671.0,1729.0,Dutch
+NGA-974,"Böcklin, Arnold",Arnold Böcklin,1827.0,1901.0,Swiss
+NGA-1692,Master of Frankfurt,Master of Frankfurt,1460.0,1540.0,Netherlandish
+NGA-1409,"Huysum, Jan van",Jan van Huysum,1682.0,1749.0,Dutch
+NGA-1887,"Soest, Gerard",Gerard Soest,1601.0,1681.0,Dutch
+NGA-1263,"Edmonds, Francis William",Francis William Edmonds,1806.0,1863.0,American
+NGA-1354,"Goyen, Jan van",Jan van Goyen,1596.0,1656.0,Dutch
+NGA-1415,"Isenbrant, Adriaen",Adriaen Isenbrant,1490.0,1551.0,Netherlandish
+NGA-1931,"Tissot, James Jacques Joseph",James Jacques Joseph Tissot,1836.0,1902.0,French
+NGA-1225,"Dewing, Thomas Wilmer",Thomas Wilmer Dewing,1851.0,1938.0,American
+NGA-6594,"Smith, Royall Brewster",Royall Brewster Smith,1801.0,1855.0,American
+NGA-1809,"Pynacker, Adam",Adam Pynacker,1620.0,1673.0,Dutch
+NGA-5522,"Grimmer, Abel",Abel Grimmer,1570.0,1619.0,Flemish
+NGA-1456,"Lane, Fitz Henry",Fitz Henry Lane,1804.0,1865.0,American
+NGA-5595,"Pollard Limner, The",The Pollard Limner,1650.0,1750.0,American
+NGA-1816,"Randall, A.M.",A.M. Randall,1697.0,1837.0,American
+NGA-977,"Bond, Charles V.",Charles V. Bond,1825.0,1866.0,American
+NGA-1074,"Call, H.",H. Call,1796.0,1936.0,American
+NGA-5594,"Mayhew, Frederick W.",Frederick W. Mayhew,1785.0,1854.0,American
+NGA-6596,"Granger, Charles Henry",Charles Henry Granger,1812.0,1893.0,American
+NGA-5519,"Sherman Limner, The",The Sherman Limner,1710.0,1845.0,American
+NGA-6534,"Rowley, Reuben",Reuben Rowley,1756.0,1885.0,American
+NGA-1962,Wagguno,Wagguno,1778.0,1918.0,American
+NGA-1907,"Stouter, D.G.",D.G. Stouter,1774.0,1914.0,American
+NGA-1773,"Faris, Joseph Anderson",Joseph Anderson Faris,1833.0,1909.0,American
+NGA-1737,"Morse, Samuel F. B.",Samuel F. B. Morse,1791.0,1872.0,American
+NGA-1855,"Salmon, Robert",Robert Salmon,1775.0,1845.0,American
+NGA-1198,"Cross, Henri Edmond",Henri Edmond Cross,1856.0,1910.0,French
+NGA-3842,"Crome, John",John Crome,1768.0,1821.0,British
+NGA-2513,"Fuseli, Henry",Henry Fuseli,1741.0,1825.0,Swiss
+NGA-4363,"Hogarth, William",William Hogarth,1697.0,1764.0,British
+NGA-3392,"Wheatley, Francis",Francis Wheatley,1747.0,1801.0,British
+NGA-1979,"Wilson, Richard",Richard Wilson,1713.0,1782.0,British
+NGA-1988,"Zoffany, Johann",Johann Zoffany,1733.0,1810.0,British
+NGA-2428,"Cesari, Giuseppe",Giuseppe Cesari,1568.0,1640.0,Italian
+NGA-5899,Jacopino del Conte,Jacopino del Conte,1510.0,1598.0,Italian
+NGA-5932,"Heda, Gerret Willemsz",Gerret Willemsz Heda,1620.0,1661.0,Dutch
+NGA-2451,"Molijn, Pieter",Pieter Molijn,1595.0,1661.0,Dutch
+NGA-2656,"McEvoy, Ambrose",Ambrose McEvoy,1878.0,1927.0,British
+NGA-4988,"Mignard I, Pierre",Pierre Mignard I,1612.0,1695.0,French
+NGA-1012,"Bouts, Dirck",Dirck Bouts,1415.0,1475.0,Netherlandish
+NGA-6345,"Riley, John",John Riley,1646.0,1691.0,English
+NGA-3284,"Vernet, Horace",Horace Vernet,1789.0,1863.0,French
+NGA-1377,"Haseltine, William Stanley",William Stanley Haseltine,1835.0,1900.0,American
+NGA-6626,"Mignon, Abraham",Abraham Mignon,1640.0,1679.0,German
+NGA-1155,"Cole, Thomas",Thomas Cole,1801.0,1848.0,American
+NGA-6676,"Peale, James",James Peale,1749.0,1831.0,American
+NGA-1947,"Vallotton, Félix",Félix Vallotton,1865.0,1925.0,Swiss
+NGA-2377,"Berchem, Nicolaes Pietersz",Nicolaes Pietersz Berchem,1620.0,1683.0,Dutch
+NGA-5504,"Bellini, Jacopo",Jacopo Bellini,1390.0,1471.0,Italian
+NGA-5343,"Ribera, Jusepe de",Jusepe de Ribera,1591.0,1652.0,Spanish
+NGA-2671,"Palma il Giovane, Jacopo",Jacopo Palma il Giovane,1548.0,1628.0,Italian
+NGA-2529,"Giordano, Luca",Luca Giordano,1634.0,1705.0,Italian
+NGA-1761,"Ostade, Isack van",Isack van Ostade,1621.0,1649.0,Dutch
+NGA-3323,"Vollon, Antoine",Antoine Vollon,1833.0,1900.0,French
+NGA-5995,"Eeckhout, Gerbrand van den",Gerbrand van den Eeckhout,1621.0,1674.0,Dutch
+NGA-9718,"Constant, Jean Joseph Benjamin",Jean Joseph Benjamin Constant,1845.0,1902.0,French
+NGA-9893,"Ast, Balthasar van der",Balthasar van der Ast,1593.0,1657.0,Dutch
+NGA-9895,"Thielen, Jan Philips van",Jan Philips van Thielen,1618.0,1667.0,Flemish
+NGA-3626,"Brueghel the Elder, Jan",Jan Brueghel the Elder,1568.0,1625.0,Flemish
+NGA-24833,"Vallée, Louis",Louis Vallée,1573.0,1653.0,Dutch
+NGA-1373,"Harnett, William Michael",William Michael Harnett,1848.0,1892.0,American
+NGA-2670,"Oudry, Jean-Baptiste",Jean-Baptiste Oudry,1686.0,1755.0,French
+NGA-5993,"Brouwer, Adriaen",Adriaen Brouwer,1605.0,1638.0,Flemish
+NGA-15089,"Beert the Elder, Osias",Osias Beert the Elder,1580.0,1624.0,Flemish
+NGA-1448,"La Fresnaye, Roger de",Roger de La Fresnaye,1885.0,1925.0,French
+NGA-5992,"Bray, Jan de",Jan de Bray,1627.0,1688.0,Dutch
+NGA-21409,"Turpin de Crissé, Lancelot-Théodore",Lancelot-Théodore Turpin de Crissé,1782.0,1859.0,French
+NGA-26156,Master of the Starck Triptych,Master of the Starck Triptych,1415.0,1540.0,German
+NGA-6020,"Verspronck, Johannes Cornelisz",Johannes Cornelisz Verspronck,1606.0,1662.0,Dutch
+NGA-2394,"Borssom, Anthonie van",Anthonie van Borssom,1629.0,1677.0,Dutch
+NGA-31038,"Champaigne, Jean Baptiste de",Jean Baptiste de Champaigne,1631.0,1681.0,French
+NGA-22811,"Haberle, John",John Haberle,1856.0,1933.0,American
+NGA-1239,"Dou, Gerrit",Gerrit Dou,1613.0,1675.0,Dutch
+NGA-19114,Valentin de Boulogne,Valentin de Boulogne,1591.0,1632.0,French
+NGA-2527,"Gifford, Sanford Robinson",Sanford Robinson Gifford,1823.0,1880.0,American
+NGA-23190,Carolus-Duran,Carolus-Duran,1837.0,1917.0,French
+NGA-23443,"Maris, Jacob",Jacob Maris,1837.0,1899.0,Dutch
+NGA-23551,"Peale, Raphaelle",Raphaelle Peale,1774.0,1825.0,American
+NGA-5612,"Dahl, Johan Christian",Johan Christian Dahl,1788.0,1857.0,Norwegian
+NGA-23810,"Levy, E.",E. Levy,1850.0,1900.0,French
+NGA-23611,"Shannon, James Jebusa",James Jebusa Shannon,1862.0,1923.0,British
+NGA-24053,"Meléndez, Luis",Luis Meléndez,1715.0,1780.0,Spanish
+NGA-3941,Domenichino,Domenichino,1581.0,1641.0,Italian
+NGA-24399,"Cavallino, Bernardo",Bernardo Cavallino,1616.0,1656.0,Italian
+NGA-17827,"Sérusier, Paul",Paul Sérusier,1863.0,1927.0,French
+NGA-3584,"Both, Jan",Jan Both,1615.0,1652.0,Dutch
+NGA-3428,"Wouwerman, Philips",Philips Wouwerman,1619.0,1668.0,Dutch
+NGA-12433,Garofalo,Garofalo,1481.0,1559.0,Italian
+NGA-25213,"Molenaer, Jan Miense",Jan Miense Molenaer,1605.0,1668.0,Dutch
+NGA-10261,"King, Charles Bird",Charles Bird King,1785.0,1862.0,American
+NGA-26051,Master of the Death of Saint Nicholas of Münster,Master of the Death of Saint Nicholas of Münster,1410.0,1520.0,German
+NGA-4808,"Marc, Franz",Franz Marc,1880.0,1916.0,German
+NGA-2715,"Rohlfs, Christian",Christian Rohlfs,1849.0,1938.0,German
+NGA-2696,"Procaccini, Giulio Cesare",Giulio Cesare Procaccini,1574.0,1625.0,Italian
+NGA-26319,"Jonson van Ceulen, Cornelis",Cornelis Jonson van Ceulen,1593.0,1661.0,English
+NGA-6319,"Pierson, Christoffel",Christoffel Pierson,1631.0,1714.0,Dutch
+NGA-13623,"Eckersberg, Christoffer Wilhelm",Christoffer Wilhelm Eckersberg,1783.0,1853.0,Danish
+NGA-2380,"Bingham, George Caleb",George Caleb Bingham,1811.0,1879.0,American
+NGA-27094,"McEntee, Jervis",Jervis McEntee,1828.0,1891.0,American
+NGA-27228,"Ward, Charles Caleb",Charles Caleb Ward,1831.0,1896.0,Canadian
+NGA-2710,"Richards, William Trost",William Trost Richards,1833.0,1905.0,American
+NGA-27447,"Lambdin, George Cochran",George Cochran Lambdin,1830.0,1896.0,American
+NGA-27868,"Tilborgh the Younger, Gillis van",Gillis van Tilborgh the Younger,1625.0,1678.0,Flemish
+NGA-27902,"Weenix, Jan",Jan Weenix,1642.0,1719.0,Dutch
+NGA-6816,"Batoni, Pompeo",Pompeo Batoni,1708.0,1787.0,Italian
+NGA-27834,"Reuter, Willem",Willem Reuter,1642.0,1681.0,Flemish
+NGA-14348,"Whittredge, Worthington",Worthington Whittredge,1820.0,1910.0,American
+NGA-6885,"Friedrich, Caspar David",Caspar David Friedrich,1774.0,1840.0,German
+NGA-16054,"Witte, Emanuel de",Emanuel de Witte,1616.0,1692.0,Dutch
+NGA-28423,"Bertin, Jean-Victor",Jean-Victor Bertin,1767.0,1842.0,French
+NGA-4394,"Huet, Paul",Paul Huet,1803.0,1869.0,French
+NGA-28431,"Lanoüe, Félix-Hippolyte",Félix-Hippolyte Lanoüe,1812.0,1872.0,French
+NGA-13651,"Sarazin de Belmont, Louise-Joséphine",Louise-Joséphine Sarazin de Belmont,1790.0,1870.0,French
+NGA-28425,"Fleury, Léon-François-Antoine",Léon-François-Antoine Fleury,1804.0,1858.0,French
+NGA-5241,"Poelenburch, Cornelis van",Cornelis van Poelenburch,1594.0,1667.0,Dutch
+NGA-5998,"Mieris, Frans van",Frans van Mieris,1635.0,1681.0,Dutch
+NGA-2627,"Lievens, Jan",Jan Lievens,1607.0,1674.0,Dutch
+NGA-2384,"Bloemaert, Abraham",Abraham Bloemaert,1566.0,1651.0,Dutch
+NGA-29805,"Brush, George de Forest",George de Forest Brush,1854.0,1941.0,American
+NGA-27366,"Steenwijk the Younger, Hendrick van",Hendrick van Steenwijk the Younger,1580.0,1649.0,Flemish
+NGA-25654,"Deakin, Edwin",Edwin Deakin,1838.0,1923.0,British
+NGA-1395,"Heyden, Jan van der",Jan van der Heyden,1637.0,1712.0,Dutch
+NGA-2583,"Jongkind, Johan Barthold",Johan Barthold Jongkind,1819.0,1891.0,Dutch
+NGA-30578,"Gervex, Henri",Henri Gervex,1852.0,1929.0,French
+NGA-28980,"Spencer, Lilly Martin",Lilly Martin Spencer,1822.0,1902.0,American
+NGA-12406,"Waldmüller, Ferdinand Georg",Ferdinand Georg Waldmüller,1793.0,1865.0,Austrian
+NGA-31010,"Guigou, Paul",Paul Guigou,1834.0,1871.0,French
+NGA-31056,"Ward of Hull, John",John Ward of Hull,1798.0,1849.0,British
+NGA-35555,"Codazzi, Niccolò",Niccolò Codazzi,1642.0,1693.0,Italian
+NGA-23274,"Mura, Francesco de",Francesco de Mura,1696.0,1782.0,Italian
+NGA-32752,"Verwer, Abraham de",Abraham de Verwer,1585.0,1650.0,Dutch
+NGA-32800,"Sødring, Frederik",Frederik Sødring,1809.0,1862.0,Danish
+NGA-27091,"Bricher, Alfred Thompson",Alfred Thompson Bricher,1837.0,1908.0,American
+NGA-1485,"Leyster, Judith",Judith Leyster,1609.0,1660.0,Dutch
+NGA-9714,"Brugghen, Hendrick ter",Hendrick ter Brugghen,1588.0,1629.0,Dutch
+NGA-1730,"Moran, Thomas",Thomas Moran,1837.0,1926.0,American
+NGA-2754,"Soutman, Pieter Claesz",Pieter Claesz Soutman,1580.0,1657.0,Dutch
+NGA-12431,"Sweerts, Michael",Michael Sweerts,1618.0,1664.0,Flemish
+NGA-36322,"Desportes, Alexandre-François",Alexandre-François Desportes,1661.0,1743.0,French
+NGA-3269,"Vasari, Giorgio",Giorgio Vasari,1511.0,1574.0,Italian
+NGA-5865,"Asselijn, Jan",Jan Asselijn,1610.0,1652.0,Dutch
+NGA-30232,"Vrel, Jacobus",Jacobus Vrel,1620.0,1680.0,Dutch
+NGA-6811,"Gérôme, Jean-Léon",Jean-Léon Gérôme,1824.0,1904.0,French
+NGA-35386,"Porter, Charles Ethan",Charles Ethan Porter,1847.0,1923.0,American
+NGA-5990,"Princeteau, Rene Pierre Charles",Rene Pierre Charles Princeteau,1843.0,1914.0,French
+NGA-38652,"Brooke, Richard Norris",Richard Norris Brooke,1847.0,1920.0,American
+NGA-33238,"Brown, John George",John George Brown,1831.0,1913.0,American
+NGA-33868,"Paxton, William McGregor",William McGregor Paxton,1869.0,1941.0,American
+NGA-38659,"Ranney, William Tylee",William Tylee Ranney,1813.0,1857.0,American
+NGA-26696,"Roesen, Severin",Severin Roesen,1816.0,1872.0,American
+NGA-15094,"Woodville, Richard Caton",Richard Caton Woodville,1825.0,1855.0,American
+NGA-1359,"Gris, Juan",Juan Gris,1887.0,1927.0,Spanish
+NGA-38663,"Stanley, John Mix",John Mix Stanley,1814.0,1872.0,American
+NGA-5270,"Prendergast, Maurice",Maurice Prendergast,1858.0,1924.0,American
+NGA-38664,"Eastman, Seth",Seth Eastman,1808.0,1875.0,American
+NGA-41819,"Weber, Paul",Paul Weber,1823.0,1916.0,American
+NGA-21675,"Maurer, Alfred H.",Alfred H. Maurer,1868.0,1932.0,American
+NGA-39043,"Regnault, Henri",Henri Regnault,1843.0,1871.0,French
+NGA-41394,"Ulrich, Charles Frederic",Charles Frederic Ulrich,1858.0,1908.0,American
+NGA-40276,"MacLeod, William",William MacLeod,1811.0,1892.0,American
+NGA-38660,"Thayer, Abbott Handerson",Abbott Handerson Thayer,1849.0,1921.0,American
+NGA-26968,"Schamberg, Morton Livingston",Morton Livingston Schamberg,1881.0,1918.0,American
+NGA-27093,"Fisher, Alvan",Alvan Fisher,1792.0,1863.0,American
+NGA-41901,"Bonham, Horace",Horace Bonham,1835.0,1892.0,American
+NGA-41927,"Norslup, David",David Norslup,1850.0,1880.0,American
+NGA-41929,"Dagnan-Bouveret, Pascal-Adolphe-Jean",Pascal-Adolphe-Jean Dagnan-Bouveret,1852.0,1929.0,French
+NGA-2345,"Allston, Washington",Washington Allston,1779.0,1843.0,American
+NGA-41842,"Francis, John F.",John F. Francis,1808.0,1886.0,American
+NGA-3697,"Carrière, Eugène",Eugène Carrière,1849.0,1906.0,French
+NGA-12798,"Renesse, Constantijn van",Constantijn van Renesse,1626.0,1680.0,Dutch
+NGA-23922,"Fortuny Marsal, Mariano",Mariano Fortuny Marsal,1838.0,1874.0,Spanish
+NGA-6407,"Cranch, Christopher Pearse",Christopher Pearse Cranch,1813.0,1892.0,American
+NGA-6677,"Neer, Aert van der",Aert van der Neer,1603.0,1677.0,Dutch
+NGA-5978,"Landseer, Edwin, Sir",Sir Edwin Landseer,1802.0,1873.0,British
+NGA-1901,"Steen, Jan",Jan Steen,1625.0,1679.0,Dutch
+NGA-22843,"Duncanson, Robert Seldon",Robert Seldon Duncanson,1821.0,1872.0,American
+NGA-22244,"Lawson, Ernest",Ernest Lawson,1873.0,1939.0,American
+NGA-2415,"Mengs, Anton Raphael",Anton Raphael Mengs,1728.0,1779.0,German
+NGA-42643,"McCallion, Peter",Peter McCallion,1890.0,1900.0,American
+NGA-42649,"Peale, Harriet Cany",Harriet Cany Peale,1800.0,1869.0,American
+NGA-2790,"Velde, Willem van de, the Younger",Willem van de Velde the Younger,1633.0,1707.0,Dutch
+NGA-47173,"Hoecke, Jan van den",Jan van den Hoecke,1611.0,1651.0,Flemish
+NGA-38998,"Wright, Joseph",Joseph Wright,1756.0,1793.0,American
+NGA-39001,"Dubreuil, Victor",Victor Dubreuil,1842.0,1910.0,American
+NGA-2453,"Cox, Kenyon",Kenyon Cox,1856.0,1919.0,American
+NGA-11055,"Birch, Thomas",Thomas Birch,1779.0,1859.0,American
+NGA-1716,"Metcalf, Willard Leroy",Willard Leroy Metcalf,1858.0,1925.0,American
+NGA-39006,"Vonnoh, Robert William",Robert William Vonnoh,1858.0,1933.0,American
+NGA-42162,"Breton, Jules",Jules Breton,1827.0,1906.0,French
+NGA-25867,"Eaton, Charles Warren",Charles Warren Eaton,1857.0,1937.0,American
+NGA-2473,"Mazzucchelli, called Morazzone, Pier Francesco","Pier Francesco Mazzucchelli, called Morazzone",1573.0,1626.0,Italian
+NGA-47312,"Dupuis, Pierre",Pierre Dupuis,1610.0,1682.0,French
+NGA-3301,"Vignon, Claude",Claude Vignon,1593.0,1670.0,French
+NGA-13284,"Bonnat, Léon",Léon Bonnat,1833.0,1922.0,French
+NGA-28284,"Babcock, William Perkins",William Perkins Babcock,1826.0,1899.0,American
+NGA-39057,"Brown, William Mason",William Mason Brown,1828.0,1898.0,American
+NGA-49081,"Dunning, Robert Spear",Robert Spear Dunning,1829.0,1905.0,American
+NGA-49082,"Forster, George",George Forster,1817.0,1896.0,American
+NGA-25860,"Hall, George Henry",George Henry Hall,1825.0,1913.0,American
+NGA-49085,"Hays, Barton Stone",Barton Stone Hays,1826.0,1914.0,American
+NGA-39626,"Lacroix, Paul",Paul Lacroix,1827.0,1869.0,American
+NGA-49094,"Skeele, Hannah Brown",Hannah Brown Skeele,1829.0,1901.0,American
+NGA-25692,"Way, Andrew John Henry",Andrew John Henry Way,1826.0,1888.0,American
+NGA-49095,"Wenzler, Sarah Wilhelmina",Sarah Wilhelmina Wenzler,1861.0,1872.0,American
+NGA-29975,"Bridges, Fidelia",Fidelia Bridges,1834.0,1923.0,American
+NGA-49403,"Victors, Jan",Jan Victors,1619.0,1676.0,Dutch
+NGA-42306,"Inman, John O'Brien",John O'Brien Inman,1828.0,1896.0,American
+NGA-49080,"Batcheller, Frederick Stone",Frederick Stone Batcheller,1837.0,1889.0,American
+NGA-2494,"Everdingen, Allart van",Allart van Everdingen,1621.0,1675.0,Dutch
+NGA-17831,"Rysselberghe, Théo van",Théo van Rysselberghe,1862.0,1926.0,Belgian
+NGA-4204,"Girodet de Roussy-Trioson, Anne-Louis",Anne-Louis Girodet de Roussy-Trioson,1767.0,1824.0,French
+NGA-28132,"Ter Borch, Gesina",Gesina ter Borch,1631.0,1690.0,Dutch
+NGA-986,"Bosch, Hieronymus",Hieronymus Bosch,1450.0,1516.0,Netherlandish
+NGA-6892,"Fabritius, Carel",Carel Fabritius,1622.0,1654.0,Dutch
+NGA-1786,Piero di Cosimo,Piero di Cosimo,1462.0,1522.0,Italian
+NGA-1689,Masolino da Panicale,Masolino da Panicale,1383.0,1435.0,Italian
+NGA-1342,Giotto,Giotto,1265.0,1337.0,Italian
+NGA-1059,Byzantine 13th Century,Byzantine 13th Century,1200.0,1299.0,Byzantine
+NGA-1703,Master of the Saint Lucy Legend,Master of the Saint Lucy Legend,1460.0,1510.0,Netherlandish
+NGA-1987,"Zeliff, Amzi Emmons",Amzi Emmons Zeliff,1831.0,1915.0,American
+NGA-1383,"Heem, Jan Davidsz de",Jan Davidsz de Heem,1606.0,1684.0,Dutch
+NGA-1332,"Gentileschi, Orazio",Orazio Gentileschi,1563.0,1639.0,Italian
+NGA-2608,"Lanfranco, Giovanni",Giovanni Lanfranco,1582.0,1647.0,Italian
+NGA-21689,"Bunker, Dennis Miller",Dennis Miller Bunker,1861.0,1890.0,American
+NGA-129,"Avercamp, Hendrick",Hendrick Avercamp,1585.0,1634.0,Dutch
+NGA-1479,Leonardo da Vinci,Leonardo da Vinci,1452.0,1519.0,Italian
+NGA-1919,"Tanner, Henry Ossawa",Henry Ossawa Tanner,1859.0,1937.0,American
+NGA-1437,"Klimt, Gustav",Gustav Klimt,1862.0,1918.0,Austrian
+NGA-27,"Aelst, Willem van",Willem van Aelst,1627.0,1683.0,Dutch
+NGA-6699,"Snyders, Frans",Frans Snyders,1579.0,1657.0,Flemish
+NGA-5987,"Caillebotte, Gustave",Gustave Caillebotte,1848.0,1894.0,French
+NGA-5957,"Backhuysen, Ludolf",Ludolf Backhuysen,1630.0,1708.0,Dutch
+NGA-5451,"Savery, Roelandt",Roelandt Savery,1576.0,1639.0,Dutch
+NGA-32,"Heda, Willem Claesz",Willem Claesz Heda,1594.0,1680.0,Dutch
+NGA-2534,"Goltzius, Hendrick",Hendrick Goltzius,1558.0,1617.0,Dutch
+NGA-6616,"Vlieger, Simon de",Simon de Vlieger,1600.0,1653.0,Dutch
+NGA-21663,"Macke, August",August Macke,1887.0,1914.0,German
+NGA-2792,"Vernet, Claude-Joseph",Claude-Joseph Vernet,1714.0,1789.0,French
+NGA-25759,"Walscapelle, Jacob van",Jacob van Walscapelle,1644.0,1727.0,Dutch
+NGA-23037,"Coorte, Adriaen",Adriaen Coorte,1683.0,1707.0,Dutch
+NGA-4829,"Martin, John",John Martin,1789.0,1854.0,British
+NGA-1418,"Jawlensky, Alexej von",Alexej von Jawlensky,1864.0,1941.0,Russian
+NGA-25817,"Schalcken, Godefridus",Godefridus Schalcken,1643.0,1706.0,Dutch
+NGA-18426,"Claesz, Pieter",Pieter Claesz,1596.0,1660.0,Dutch
+NGA-30296,"Gonzalès, Eva",Eva Gonzalès,1849.0,1883.0,French
+NGA-18427,"Ruysdael, Salomon van",Salomon van Ruysdael,1602.0,1670.0,Dutch
+NGA-33025,"Arcimboldo, Giuseppe",Giuseppe Arcimboldo,1526.0,1593.0,Italian
+NGA-34833,"Breen, Adam van",Adam van Breen,1585.0,1640.0,Dutch
+NGA-3456,"Nooms, called Zeeman, Reinier","Reinier Nooms, called Zeeman",1623.0,1664.0,Dutch
+NGA-30224,"Vroom, Hendrick Cornelisz",Hendrick Cornelisz Vroom,1566.0,1640.0,Dutch
+NGA-36778,"Mesdag, Hendrik Willem",Hendrik Willem Mesdag,1831.0,1915.0,Dutch
+NGA-4378,"Honthorst, Gerrit van",Gerrit van Honthorst,1592.0,1656.0,Dutch
+NGA-5999,"Netscher, Caspar",Caspar Netscher,1639.0,1684.0,Dutch
+NGA-2337,"Abbey, Edwin Austin",Edwin Austin Abbey,1852.0,1911.0,American
+NGA-30118,"Ochtervelt, Jacob",Jacob Ochtervelt,1634.0,1682.0,Dutch
+NGA-36657,"Bannister, Edward Mitchell",Edward Mitchell Bannister,1828.0,1901.0,American
+NGA-5428,"Saftleven, Herman",Herman Saftleven,1609.0,1685.0,Dutch
+NGA-5484,"Kessel the Elder, Jan van",Jan van Kessel the Elder,1626.0,1679.0,Flemish
+NGA-49701,"Lehmann, Henri",Henri Lehmann,1814.0,1882.0,French
+NGA-50368,"Velde III, Jan Jansz van de",Jan Jansz van de Velde III,1620.0,1662.0,Dutch
+NGA-38724,"Hals, Dirck",Dirck Hals,1591.0,1656.0,Dutch
