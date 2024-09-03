@@ -2,6 +2,7 @@
 .sudo_as_admin_successful
 .lesshst
 .gitconfig
+.DS_Store
 
 # Streamlit
 Streamlit/.streamlit/secrets.toml
