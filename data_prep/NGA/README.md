@@ -5,6 +5,6 @@ I have already put the raw data in the "data" folder, which were downloaded from
 ## Commands to Process Data
 
 ```shell
-python get_painting_csv.py
+python get_artworks_artists.py
 python get_images.py
 ```

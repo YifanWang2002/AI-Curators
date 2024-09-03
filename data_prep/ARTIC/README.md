@@ -5,7 +5,6 @@ Visit [ARTIC's Github](https://github.com/art-institute-of-chicago/api-data?tab=
 ## Commands to Process Data
 
 ```shell
-python get_artworks.py
-python get_artists.py
-# python get_images.py
+python get_artworks_artists.py
+python get_images.py
 ```
