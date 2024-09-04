@@ -31,7 +31,7 @@ def safe_literal_eval(x, col):
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("../Embedding/data/paintings_v2.csv")
+    df = pd.read_csv(os.path.join(DATA_DIR, "paintings_v2.csv"))
     lit_columns = [
         "style_tags",
         "theme_tags",
