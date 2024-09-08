@@ -1,0 +1,861 @@
+artist_id,display_name,birth_year,death_year,nationality
+TCMA-2409,"John Singleton Copley (American, 1738–1815)",1738,1815,American
+TCMA-3071,"William Merritt Chase (American, 1849–1916)",1849,1916,American
+TCMA-3005,"George Bellows (American, 1882–1925)",1882,1925,American
+TCMA-4037,"Thomas Eakins (American, 1844–1916)",1844,1916,American
+TCMA-3267,"Albert Pinkham Ryder (American, 1847–1917)",1847,1917,American
+TCMA-2697,"Frederic Edwin Church (American, 1826–1900)",1826,1900,American
+TCMA-1776,"Paul Gauguin (French, 1848–1903)",1848,1903,French
+TCMA-889,"Charles Sheeler (American, 1883–1965)",1883,1965,American
+TCMA-1804,"Henri Rousseau (French, 1844–1910)",1844,1910,French
+TCMA-1779,"Vincent van Gogh (Dutch, 1853–1890)",1853,1890,Dutch
+TCMA-2659,"Thomas Cole (American, 1801–1848)",1801,1848,American
+TCMA-1844,"Claude Monet (French, 1840–1926)",1840,1926,French
+TCMA-2633,"Pieter de Hooch (Dutch, 1629–1684)",1629,1684,Dutch
+TCMA-1759,"Edgar Degas (French, 1834–1917)",1834,1917,French
+TCMA-1643,"Jacques-Louis David (French, 1748–1825)",1748,1825,French
+TCMA-2553,"Benjamin West (American, 1738–1820)",1738,1820,American
+TCMA-2541,"Joshua Reynolds (British, 1723–1792)",1723,1792,British
+TCMA-2209,"Lorenzo Lotto (Italian, 1480–1556)",1480,1556,Italian
+TCMA-2694,"John James Audubon (American, 1785–1851)",1785,1851,American
+TCMA-2291,"Andrea del Sarto (Italian, 1486–1530)",1486,1530,Italian
+TCMA-2647,"Lucas Cranach (German, 1472–1553)",1472,1553,German
+TCMA-1946,"Nicolas Poussin (French, 1594–1665)",1594,1665,French
+TCMA-1251,"Peter Paul Rubens (Flemish, 1577–1640)",1577,1640,Flemish
+TCMA-2673,"Willem Kalf (Dutch, 1619–1693)",1619,1693,Dutch
+TCMA-1600,"Gustave Courbet (French, 1819–1877)",1819,1877,French
+TCMA-2523,"Charles Willson Peale (American, 1741–1827)",1741,1827,American
+TCMA-2443,"Anthony van Dyck (Flemish, 1599–1641)",1599,1641,Flemish
+TCMA-2065,"Caravaggio (Italian, 1571–1610)",1571,1610,Italian
+TCMA-1638,"Honoré Daumier (French, 1808–1879)",1808,1879,French
+TCMA-1280,"Joseph Mallord William Turner (British, 1775–1851)",1775,1851,British
+TCMA-2493,"George Inness (American, 1825–1894)",1825,1894,American
+TCMA-2520,"Rembrandt van Rijn (Dutch, 1606–1669)",1606,1669,Dutch
+TCMA-2876,"William Sidney Mount (American, 1807–1868)",1807,1868,American
+TCMA-1536,"John Constable (British, 1776–1837)",1776,1837,British
+TCMA-61584,"Petrus Christus (Netherlandish, c. 1410–1475/76)",1410,1476,Netherlandish
+TCMA-2676,"Jacob van Ruisdael (Dutch, 1628/29–1682)",1628,1682,Dutch
+TCMA-5148,"Francisco de Zurbarán (Spanish, 1598–1664)",1598,1664,Spanish
+TCMA-2535,"Albert Bouts (Netherlandish, 1451–55–1549)",1451,1549,Netherlandish
+TCMA-2775,"Arnold Böcklin (Swiss, 1827–1901)",1827,1901,Swiss
+TCMA-2605,"Robert S. Duncanson (American, 1821–1872)",1821,1872,American
+TCMA-1836,"Camille Pissarro (French, 1830–1903)",1830,1903,French
+TCMA-2249,"Giovanni Paolo Panini (Italian, 1691–1765)",1691,1765,Italian
+TCMA-2879,"Friedrich Amerling (Austrian, 1803–1887)",1803,1887,Austrian
+TCMA-1910,"Georges de La Tour (French, 1593–1652)",1593,1652,French
+TCMA-1588,"Jean Baptiste Camille Corot (French, 1796–1875)",1796,1875,French
+TCMA-2832,"Emanuel de Witte (Dutch, c. 1617–1692)",1617,1692,Dutch
+TCMA-2614,"Frans Hals (Dutch, c. 1581–1666)",1581,1666,Dutch
+TCMA-1978,"Anne Vallayer-Coster (French, 1744–1818)",1744,1818,French
+TCMA-1833,"Edouard Vuillard (French, 1868–1940)",1868,1940,French
+TCMA-3155,"Ernst Ludwig Kirchner (German, 1880–1938)",1880,1938,German
+TCMA-3011,"Albert Bierstadt (American, 1830–1902)",1830,1902,American
+TCMA-2556,"Gilbert Stuart (American, 1755–1828)",1755,1828,American
+TCMA-3143,"Winslow Homer (American, 1836–1910)",1836,1910,American
+TCMA-1949,"Jean-Baptiste Oudry (French, 1686–1755)",1686,1755,French
+TCMA-2175,"Orazio Gentileschi (Italian, 1563–1639)",1563,1639,Italian
+TCMA-59748,"Angelos Akotantos (Cretan, died 1450)",None,1450,Cretan
+TCMA-2706,"Washington Allston (American, 1779–1843)",1779,1843,American
+TCMA-2403,"Jusepe de Ribera (Spanish, 1591–1652)",1591,1652,Spanish
+TCMA-1765,"Pierre-Auguste Renoir (French, 1841–1919)",1841,1919,French
+TCMA-1882,"Laurent de La Hyre (French, 1606–1656)",1606,1656,French
+TCMA-2285,"Salvator Rosa (Italian, 1615–1673)",1615,1673,Italian
+TCMA-2984,"Hans Memling (Netherlandish, 1494)",None,1494,Netherlandish
+TCMA-2391,"El Greco (Spanish, 1541–1614)",1541,1614,Spanish
+TCMA-2819,"Hans Holbein the Younger (German, active England and Switzerland, 1497/98–1543)",1497,1543,German
+TCMA-62091,"Johann Georg Platzer (Austrian, 1704–1761)",1704,1761,Austrian
+TCMA-1685,"Jean-Auguste-Dominique Ingres (French, 1780–1867)",1780,1867,French
+TCMA-2968,"John Linnell (British, 1792–1882)",1792,1882,British
+TCMA-1571,"William Adolphe Bouguereau (French, 1825–1905)",1825,1905,French
+TCMA-2197,"Filippo Lippi (Italian, c. 1406–1469)",1406,1469,Italian
+TCMA-14219,"Rockwell Kent (American, 1882–1971)",1882,1971,American
+TCMA-2344,"Giovanni Francesco Toscani (Italian, c. 1380–1430)",1380,1430,Italian
+TCMA-2547,"Joseph Badger (American, 1708–1765)",1708,1765,American
+TCMA-4062,"George Luks (American, 1866–1933)",1866,1933,American
+TCMA-2371,"Juan de Flandes (Netherlandish, c. 1460–1519)",1460,1519,Netherlandish
+TCMA-2590,"Gerard ter Borch (Dutch, 1617–1681)",1617,1681,Dutch
+TCMA-1907,"Noël Nicolas Coypel (French, 1690–1734)",1690,1734,French
+TCMA-282522,"Battista di Biagio Sanguigni (Italian, active 1393–1451)",None,None,Italian
+TCMA-25419,"Joseph Wright of Derby (British, 1734–1797)",1734,1797,British
+TCMA-1748,"Odilon Redon (French, 1840–1916)",1840,1916,French
+TCMA-2858,"Maerten van Heemskerck (Dutch, 1498–1574)",1498,1574,Dutch
+TCMA-1935,"Jean-Marc Nattier (French, 1685–1766)",1685,1766,French
+TCMA-2715,"Robert Campin (Netherlandish, 1375/79–1444)",1375,1444,Netherlandish
+TCMA-2688,"Jan Steen (Dutch, 1626–1679)",1626,1679,Dutch
+TCMA-2550,"Robert Feke (American, c. 1707–c. 1752)",1707,1752,American
+TCMA-1793,"Jean Lecomte du Nouÿ (French, 1842–1923)",1842,1923,French
+TCMA-2258,"Sano di Pietro (Italian, 1406–1481)",1406,1481,Italian
+TCMA-2362,"Paolo Veronese (Italian, 1528–1588)",1528,1588,Italian
+TCMA-6256,"Yan Hui (Chinese, active 1270–1310)",1245,1315,Chinese
+TCMA-44231,"Charles Meynier (French, 1768–1832)",1768,1832,French
+TCMA-5145,"Diego Velázquez (Spanish, 1599–1660)",1599,1660,Spanish
+TCMA-2747,"Gerrit van Honthorst (Dutch, 1590–1656)",1590,1656,Dutch
+TCMA-1813,"Giovanni Segantini (Italian, 1858–1899)",1858,1899,Italian
+TCMA-1682,"Louis Hersent (French, 1777–1860)",1777,1860,French
+TCMA-2015,"Jacopo Bassano (Italian, c. 1510–1592)",1510,1592,Italian
+TCMA-2515,"Thomas Lawrence (British, 1769–1830)",1769,1830,British
+TCMA-2653,"Ambrosius Bosschaert (Dutch, 1573–1621)",1573,1621,Dutch
+TCMA-1891,"Philippe de Champaigne (French, 1602–1674)",1602,1674,French
+TCMA-29198,"Fachang Muqi (Chinese, 1220–1280)",1220,1280,Chinese
+TCMA-1649,"Pierre Puvis de Chavannes (French, 1824–1898)",1824,1898,French
+TCMA-1876,"Jacques André Joseph Aved (French, 1702–1766)",1702,1766,French
+TCMA-2504,"Aelbert Cuyp (Dutch, 1620–1691)",1620,1691,Dutch
+TCMA-2200,"Filippino Lippi (Italian, 1457–1504)",1457,1504,Italian
+TCMA-22965,"Maurice Denis (French, 1870–1943)",1870,1943,French
+TCMA-2656,"Abraham van Beyeren (Dutch, 1620/21–1690)",1620,1690,Dutch
+TCMA-1965,"Jean François de Troy (French, 1679–1752)",1679,1752,French
+TCMA-543978,"Johann Zoffany (German, 1733–1810)",1733,1810,German
+TCMA-1859,"Albert Besnard (French, 1849–1934)",1849,1934,French
+TCMA-1879,"Jean de Beaumetz (French, c. 1335–1396)",1335,1396,French
+TCMA-1754,"Paul Cezanne (French, 1839–1906)",1839,1906,French
+TCMA-22888,"Xie Shichen (Chinese, 1487–after 1567)",1487,1572,Chinese
+TCMA-1313,"Thomas Gainsborough (British, 1727–1788)",1727,1788,British
+TCMA-2424,"Thomas Sully (American, 1783–1872)",1783,1872,American
+TCMA-1873,"Claude Lorrain (French, 1604–1682)",1604,1682,French
+TCMA-1973,"Valentin de Boulogne (French, 1591–1632)",1591,1632,French
+TCMA-1751,"Jean-Charles Cazin (French, 1841–1901)",1841,1901,French
+TCMA-2510,"Meindert Hobbema (Dutch, 1638–1709)",1638,1709,Dutch
+TCMA-1796,"Edouard Manet (French, 1832–1883)",1832,1883,French
+TCMA-1952,"Hyacinthe Rigaud (French, 1659–1743)",1659,1743,French
+TCMA-1626,"Charles François Daubigny (French, 1817–1878)",1817,1878,French
+TCMA-6226,"Su Hanchen (Chinese, active c. 1101–1125)",None,None,Chinese
+TCMA-3204,"Piet Mondrian (Dutch, 1872–1944)",1872,1944,Dutch
+TCMA-1661,"Ernest Meissonier (French, 1815–1891)",1815,1891,French
+TCMA-6326,"Wang Hui (Chinese, 1632–1717)",1632,1717,Chinese
+TCMA-2816,"Sanford Robinson Gifford (American, 1823–1880)",1823,1880,American
+TCMA-1824,"James Tissot (French, 1836–1902)",1836,1902,French
+TCMA-2813,"Martin Johnson Heade (American, 1819–1904)",1819,1904,American
+TCMA-1991,"Jean Bernard Restout (French, 1732–1797)",1732,1797,French
+TCMA-46950,"Pedro Berruguete (Castilian, c. 1445/1450-1503)",None,1503,Castilian
+TCMA-6359,"Kim Si (Korean, 1524–1593)",1524,1593,Korean
+TCMA-2810,"Ferdinand Georg Waldmüller (Austrian, 1793–1865)",1793,1865,Austrian
+TCMA-1816,"Georges Seurat (French, 1859–1891)",1859,1891,French
+TCMA-2082,"Annibale Carracci (Italian, c. 1560–1609)",1560,1609,Italian
+TCMA-3053,"Emil Carlsen (American, 1848–1932)",1848,1932,American
+TCMA-2732,"David Johnson (American, 1827–1908)",1827,1908,American
+TCMA-2662,"Asher Brown Durand (American, 1796–1886)",1796,1886,American
+TCMA-1658,"Eugène Delacroix (French, 1798–1863)",1798,1863,French
+TCMA-48707,"Rogier van der Weyden (Flemish, c. 1399–1464)",1399,1464,Flemish
+TCMA-2844,"Frederic Leighton (British, 1830–1896)",1830,1896,British
+TCMA-2957,"Johann Liss (German, c. 1597–1631)",1597,1631,German
+TCMA-2841,"Jeptha Homer Wade (American, 1811–1890)",1811,1890,American
+TCMA-2729,"John Frederick Kensett (American, 1816–1872)",1816,1872,American
+TCMA-2501,"Peter Lely (British, 1618–1680)",1618,1680,British
+TCMA-10505,"Henry Church (American, 1836–1908)",1836,1908,American
+TCMA-2507,"Gainsborough Dupont (British, 1754–1797)",1754,1797,British
+TCMA-1865,"Berthe Morisot (French, 1841–1895)",1841,1895,French
+TCMA-1483,"William Holman Hunt (British, 1827–1910)",1827,1910,British
+TCMA-42162,"Fulchran Jean Harriet (French, 1778–1805)",1778,1805,French
+TCMA-1999,"Joseph-Marie Vien (French, 1716–1809)",1716,1809,French
+TCMA-2741,"Stefan Lochner (German, 1400-c. 1452)",1400,1452,German
+TCMA-2068,"Olivuccio di Ciccarello (Italian, Marche, 1360/65–1439)",1360,1439,Italian
+TCMA-2181,"Giovanni di Paolo (Italian, c. 1403–1482)",1403,1482,Italian
+TCMA-6215,"Mi Youren (Chinese, 1072–1151)",1072,1151,Chinese
+TCMA-44735,"Carlo Maratti (Italian, 1625–1713)",1625,1713,Italian
+TCMA-2184,"Francesco Granacci (Italian, 1469–1543)",1469,1543,Italian
+TCMA-60227,"Elisabeth Louise Vigée-LeBrun (French, 1755–1842)",1755,1842,French
+TCMA-1927,"Jean-Baptiste Pater (French, 1695–1736)",1695,1736,French
+TCMA-2400,"Bartolomé Esteban Murillo (Spanish, 1617–1682)",1617,1682,Spanish
+TCMA-2085,"Caterino Veneziano (Italian, active 1362–82)",None,None,Italian
+TCMA-4391,"Max Bohm (American, 1868–1923)",1868,1923,American
+TCMA-1896,"Jean-Siméon Chardin (French, 1699–1779)",1699,1779,French
+TCMA-1257,"William Blake (British, 1757–1827)",1757,1827,British
+TCMA-37755,"Ge Shuying (Chinese, active 1300s)",None,None,Chinese
+TCMA-1862,"Henri Fantin-Latour (French, 1836–1904)",1836,1904,French
+TCMA-295457,"Yi Taek-gyun (Korean, 1808-after 1883)",1808,1883,Korean
+TCMA-2780,"Frederick Sandys (British, 1829–1904)",1829,1904,British
+TCMA-22778,"Zhang Wo (Chinese, active c.1336–after 1364)",None,1369,Chinese
+TCMA-2043,"Neri de Bicci (Italian, 1419–1491)",1419,1491,Italian
+TCMA-62778,"Fra Angelico (Italian, 1400–1455)",1400,1455,Italian
+TCMA-2032,"Berlinghiero (Italian, before 1242)",None,1242,Italian
+TCMA-2050,"Andrea da Firenze (Italian, 1379)",None,1379,Italian
+TCMA-17277,"Du Jin (Chinese, 1446-c. 1519)",1446,1524,Chinese
+TCMA-1694,"Jean-Léon Gérôme (French, 1824–1904)",1824,1904,French
+TCMA-320781,"Louis Hayet (French, 1864–1940)",1864,1940,French
+TCMA-2215,"Alessandro Magnasco (Italian, 1667–1749)",1667,1749,Italian
+TCMA-2307,"Jacopo del Sellaio (Italian, c. 1441–1493)",1441,1493,Italian
+TCMA-22133,"Dong Qichang (Chinese, 1555–1636)",1555,1636,Chinese
+TCMA-2365,"Tanzio da Varallo (Italian, c. 1575/80–1635)",1575,1635,Italian
+TCMA-6306,"Bada Shanren (Chinese, 1626–1705)",1626,1705,Chinese
+TCMA-46405,"Laurent Girardin (French, 1478)",None,1478,French
+TCMA-1706,"Antoine-Jean Gros (French, 1771–1835)",1771,1835,French
+TCMA-1955,"Hubert Robert (French, 1733–1808)",1733,1808,French
+TCMA-2644,"Hans Baldung (German, 1484/85–1545)",1484,1545,German
+TCMA-58611,"Raymond Jonson (American, 1891–1982)",1891,1982,American
+TCMA-45777,"Frans Pourbus (Flemish, 1569–1622)",1569,1622,Flemish
+TCMA-27841,"Giuseppe Castiglione (Italian, 1688–1766)",1688,1766,Italian
+TCMA-11199,"Chen Ruyan (Chinese, c. 1331–1371)",1326,1371,Chinese
+TCMA-35871,"Yi Sumun (Korean, b. c. 1404)",1400,None,Korean
+TCMA-1788,"Johan Barthold Jongkind (Dutch, 1819–1891)",1819,1891,Dutch
+TCMA-515373,"Master of the Krainburg Altar (Austrian, active c. 1485–1510)",1470,1570,Austrian
+TCMA-3101,"William Michael Harnett (American, 1848–1892)",1848,1892,American
+TCMA-30162,"Zhou Wenju (Chinese, active 942–961)",None,None,Chinese
+TCMA-288357,"Muhammad Ali (Persian, active 1590–1620)",None,1620,Persian
+TCMA-2301,"Giovanni Girolamo Savoldo (Italian, c. 1480–after.1548)",1480,1548,Italian
+TCMA-1921,"François Hubert Drouais (French, 1727–1775)",1727,1775,French
+TCMA-2329,"Giovanni Battista Tiepolo (Italian, 1696–1770)",1696,1770,Italian
+TCMA-2040,"Agnolo Bronzino (Italian, 1503–1572)",1503,1572,Italian
+TCMA-6279,"Zhou Chen (Chinese, c. 1450–c. 1536)",1445,1541,Chinese
+TCMA-3237,"John F. Peto (American, 1854–1907)",1854,1907,American
+TCMA-6218,"Ma Lin (Chinese, c. 1185–after 1260)",1180,1260,Chinese
+TCMA-13387,"Hippolyte Jean Flandrin (French, 1809–1864)",1809,1864,French
+TCMA-1885,"Nicolas Lancret (French, 1690–1743)",1690,1743,French
+TCMA-2091,"Giovanni Battista Cima da Conegliano (Italian, c. 1459–1518)",1459,1518,Italian
+TCMA-9013,"Ren Renfa (Chinese, 1254–1328)",1254,1328,Chinese
+TCMA-2324,"Bernardo Strozzi (Italian, 1581?-1644)",1581,1644,Italian
+TCMA-2460,"Jan Anthonisz. van Ravesteyn (Dutch, c. 1570–1657)",1570,1657,Dutch
+TCMA-2636,"Dieric Bouts (Netherlandish, 1415–1475)",1415,1475,Netherlandish
+TCMA-6490,"John George Brown (American, 1831–1913)",1831,1913,American
+TCMA-23570,"Hua Yan (Chinese, 1682–c. 1765)",1682,1756,Chinese
+TCMA-6346,"Fang Shishu (Chinese, 1693–1751)",1693,1751,Chinese
+TCMA-2268,"Giovanni Battista Pittoni (Italian, 1687–1767)",1687,1767,Italian
+TCMA-1847,"Joseph Paelinck (Belgian, 1781–1839)",1781,1839,Belgian
+TCMA-2894,"Alvan Fisher (American, 1792–1863)",1792,1863,American
+TCMA-6210,"Chen Juzhong (Chinese, active c. 1201–1207)",None,None,Chinese
+TCMA-65625,"Johann König (German, 1586–1642)",1586,1642,German
+TCMA-63557,"Muhammad Rizavi Hindi (Indian, active mid-1700s)",None,1799,Indian
+TCMA-31348,"Katsushika Ōi (Japanese, c. 1800-after 1857)",None,None,Japanese
+TCMA-309365,"Yi Bul-hae (Korean, active 1500s)",None,None,Korean
+TCMA-22796,"Zhao Mengfu (Chinese, 1254–1322)",1254,1322,Chinese
+TCMA-1585,"Léon Cogniet (French, 1794–1880)",1794,1880,French
+TCMA-5952,"Sesson Shūkei (Japanese, c. 1492–c. 1577)",1492,1577,Japanese
+TCMA-33075,"Tawaraya Sōtatsu (Japanese, c. 1570-c. 1640)",1570,1640,Japanese
+TCMA-6050,"Tatebayashi Kagei (Japanese, active mid-1700s)",None,None,Japanese
+TCMA-2933,"Jacob Duck (Dutch, c. 1600–1667)",1600,1667,Dutch
+TCMA-315930,"Jacob van Hulsdonck (Flemish, 1582–1647)",1582,1647,Flemish
+TCMA-2885,"Abraham Bloemaert (Dutch, 1564–1651)",1564,1651,Dutch
+TCMA-31189,"Li Anzhong (Chinese, active first half of the 1100s)",None,None,Chinese
+TCMA-1557,"Rosa Bonheur (French, 1822–1899)",1822,1899,French
+TCMA-28953,"Henri-Edmond Cross (French, 1856–1910)",1856,1910,French
+TCMA-16928,"Aqil Khan (Indian, active mid-1700s)",None,None,Indian
+TCMA-6266,"Wu Bin (Chinese, active c. 1591–1626)",None,None,Chinese
+TCMA-6274,"Chen Hongshou (Chinese, 1598/99–1652)",1598,1652,Chinese
+TCMA-2451,"David Teniers (Flemish, 1610–1690)",1610,1690,Flemish
+TCMA-22770,"Juran (Chinese, active 960–985)",None,None,Chinese
+TCMA-5979,"Sōami (Japanese, d. 1525)",None,1525,Japanese
+TCMA-8972,"Félix Vallotton (Swiss French, 1865–1925)",1865,1925,Swiss French
+TCMA-2355,"Bartolomeo Veneto (Italian, 1531)",None,1531,Italian
+TCMA-3288,"Chaïm Soutine (Russian, 1893–1943)",1893,1943,Russian
+TCMA-2703,"Eastman Johnson (American, 1824–1906)",1824,1906,American
+TCMA-2475,"Richard Parkes Bonington (British, 1802–1828)",1802,1828,British
+TCMA-1902,"Nicolas de Largillière (French, 1656–1746)",1656,1746,French
+TCMA-6966,"Govardhan (Indian, active c.1596–1645)",None,None,Indian
+TCMA-23744,"Tao Cheng (Chinese, active c. 1471–after 1502)",None,None,Chinese
+TCMA-2611,"Henry Raeburn (Scottish, 1756–1823)",1756,1823,Scottish
+TCMA-31109,"Fitz Henry Lane (American, 1804–1865)",1804,1865,American
+TCMA-64402,"Shravana (Indian, active 1550s–c.1600)",None,None,Indian
+TCMA-63480,"Lal (Indian, active c. 1555–1600)",None,None,Indian
+TCMA-1568,"Eugène Boudin (French, 1824–1898)",1824,1898,French
+TCMA-4415,"Carl Gaertner (American, 1898–1952)",1898,1952,American
+TCMA-2386,"Francisco de Goya (Spanish, 1746–1828)",1746,1828,Spanish
+TCMA-11246,"Wang Yuan (Chinese, c. 1299-after 1366)",None,1371,Chinese
+TCMA-2053,"Sandro Botticelli (Italian, 1444/45–1510)",1444,1510,Italian
+TCMA-2145,"Amedeo Modigliani (Italian, 1884–1920)",1884,1920,Italian
+TCMA-2855,"Franz Ludwig Catel (German, 1778–1856)",1778,1856,German
+TCMA-16934,"Hashim (Indian, active 1598-c.1650)",None,None,Indian
+TCMA-1739,"Eugène Carrière (French, 1849–1906)",1849,1906,French
+TCMA-34467,"Zhao Yong (Chinese, c. 1289-c. 1362)",1289,1362,Chinese
+TCMA-2029,"Bernardo Bellotto (Italian, 1721–1780)",1721,1780,Italian
+TCMA-1819,"Alfred Sisley (French, 1840–1899)",1840,1899,French
+TCMA-63387,"Augustus Leopold Egg (British, 1816-c. 1863)",1816,1863,British
+TCMA-1697,"Anne-Louis Girodet de Roucy-Trioson (French, 1767–1824)",1767,1824,French
+TCMA-31445,"Wang Mian (Chinese, 1287–1359)",1287,1359,Chinese
+TCMA-3083,"Harold Gilman (British, 1876–1919)",1876,1919,British
+TCMA-2376,"Agustín Esteve y Marques (Spanish, 1753–c. 1820)",1753,1820,Spanish
+TCMA-40892,"Kano Mitsunobu (Japanese, 1565–1608)",1565,1608,Japanese
+TCMA-11254,"Zhao Zhong (Chinese, second half of the 1300s)",1345,1405,Chinese
+TCMA-57469,"Cornelis de Heem (Flemish, 1631–1695)",1631,1695,Flemish
+TCMA-1899,"Corneille de Lyon (Netherlandish, 1500/10–1574)",1500,1574,Netherlandish
+TCMA-23637,"Cui Zizhong (Chinese, 1574–1644)",1574,1644,Chinese
+TCMA-22786,"Qiu Ying (Chinese, 1494–1552)",1494,1552,Chinese
+TCMA-23290,"Wu Li (Chinese, 1632–1718)",1632,1718,Chinese
+TCMA-11217,"Xu Ben (Chinese, 1335–1380)",1335,1380,Chinese
+TCMA-23552,"Ding Yunpeng (Chinese, 1547-c. 1628)",1547,1628,Chinese
+TCMA-59472,"Jan Verkade (Dutch, 1868–1946)",1868,1946,Dutch
+TCMA-23284,"Cheng Zhengkui (Chinese, 1604–1676)",1604,1676,Chinese
+TCMA-6236,"Li Song (Chinese, active c. 1190-c. 1230)",None,None,Chinese
+TCMA-6362,"Basavana (Indian, active c. 1560–1600)",None,1600,Indian
+TCMA-344438,"Kaihō Yūshō (Japanese, 1533–1615)",1533,1615,Japanese
+TCMA-2796,"Frans Francken (Flemish, 1581–1642)",1581,1642,Flemish
+TCMA-2838,"Joachim Anthoniz Wtewael (Dutch, 1566–1638)",1566,1638,Dutch
+TCMA-63368,"Ford Madox Brown (British, 1821–1893)",1821,1893,British
+TCMA-2786,"John Martin (British, 1789–1854)",1789,1854,British
+TCMA-6289,"Dai Jin (Chinese, 1388–1462)",1388,1462,Chinese
+TCMA-22791,"Yin Hong (Chinese, c. 1430-c. 1500)",1425,1505,Chinese
+TCMA-2670,"Gillis van Coninxloo (Netherlandish, 1544–1607)",1544,1607,Netherlandish
+TCMA-2336,"Jacopo Tintoretto (Italian, 1518–1594)",1518,1594,Italian
+TCMA-2908,"Hendrik van Balen (Flemish, 1575–1632)",1575,1632,Flemish
+TCMA-665064,"Liu Tao (Chinese, late 1000s–early  1100s)",1066,1133,Chinese
+TCMA-2650,"Jan van Goyen (Dutch, 1596–1656)",1596,1656,Dutch
+TCMA-40169,"Vilhelm Hammershøi (Danish, 1864–1916)",1864,1916,Danish
+TCMA-26343,"Gustave Caillebotte (French, 1848–1894)",1848,1894,French
+TCMA-6169,"Watanabe Kazan (Japanese, 1793–1841)",1793,1841,Japanese
+TCMA-35432,"Kaihō Yūshō (Japanese, 1533–1615)",1533,1615,Japanese
+TCMA-304041,"Li You (Chinese, active c. 1145)",1100,1199,Chinese
+TCMA-315367,"Ustad Murad (Indian, active 1700s)",None,None,Indian
+TCMA-359247,"Johan Christian Clausen Dahl (Norwegian, 1788–1857)",1788,1857,Norwegian
+TCMA-2882,"Gerard de Lairesse (Flemish, 1641–1711)",1641,1711,Flemish
+TCMA-2526,"Gerard David (Netherlandish, 1450/60–1523)",1450,1523,Netherlandish
+TCMA-11285,"Ogata Kōrin (Japanese, 1658–1716)",1658,1716,Japanese
+TCMA-31469,"Zhao Guangfu (Chinese, c. 923–976)",917,981,Chinese
+TCMA-6261,"Jueji Yongzhong (Chinese, active around 1300)",None,None,Chinese
+TCMA-3324,"Julian Alden Weir (American, 1852–1919)",1852,1919,American
+TCMA-1827,"Suzanne Valadon (French, 1865–1938)",1865,1938,French
+TCMA-35484,"Sakai Hōitsu (Japanese, 1761–1828)",1761,1828,Japanese
+TCMA-39485,"Zhao Qi (Chinese, active early 1500s)",None,None,Chinese
+TCMA-31390,"Huang Shen (Chinese, 1687–after 1768)",1687,1772,Chinese
+TCMA-6178,"Matsumura Goshun (Japanese, 1752–1811)",1752,1811,Japanese
+TCMA-2103,"Carlo Crivelli (Italian, 1430/35–1495)",1430,1495,Italian
+TCMA-2194,"Giovanni Battista Langetti (Italian, 1635–1676)",1635,1676,Italian
+TCMA-2941,"Dirck Dircksz. Santvoort (Dutch, 1610/11–1680)",1610,1680,Dutch
+TCMA-2627,"Geertgen tot Sint Jans (Netherlandish, c. 1460-c. 1490)",1460,1490,Netherlandish
+TCMA-2829,"Jan Gossaert (Flemish, c. 1475/78–1532)",1475,1532,Flemish
+TCMA-53017,"Henri Le Sidaner (French, 1862–1939)",1862,1939,French
+TCMA-5994,"Kano Shōei (Japanese, 1519–1592)",1519,1592,Japanese
+TCMA-22799,"Tosa Mitsuyoshi (Japanese, 1539–1613)",1539,1613,Japanese
+TCMA-1612,"Horace Vernet (French, 1789–1863)",1789,1863,French
+TCMA-25607,"Max Beckmann (German, 1884–1950)",1884,1950,German
+TCMA-31207,"Yun Shouping (Chinese, 1633–1690)",1633,1690,Chinese
+TCMA-31387,"Fan Yi (Chinese, c. 1615–before 1688)",1610,1688,Chinese
+TCMA-63542,"Bichitr (Indian, active c. 1615–50)",None,None,Indian
+TCMA-2726,"Herri met de Bles (Flemish, 1510–1572)",1510,1572,Flemish
+TCMA-23259,"Shi Rui (Chinese, c. 1400-c. 1470)",1400,1475,Chinese
+TCMA-2088,"Bernardo Cavallino (Italian, 1616–1656)",1616,1656,Italian
+TCMA-1888,"François Boucher (French, 1703–1770)",1703,1770,French
+TCMA-2682,"Franz Anton Maulbertsch (Austrian, 1724–1796)",1724,1796,Austrian
+TCMA-370114,"Tommaso d’Antonio Manzuoli, called Maso da San Friano (Italian, 1531–1571)",1531,1571,Italian
+TCMA-2166,"Pier Francesco Foschi (Italian, 1502–1567)",1502,1567,Italian
+TCMA-6341,"Mei Qing (Chinese, 1623–1697)",1623,1697,Chinese
+TCMA-63462,"Abd al-Samad (Persian, c. 1510–1600)",1510,1600,Persian
+TCMA-2191,"Jacometto Veneziano (Italian, 1497)",None,1497,Italian
+TCMA-2002,"Jean-Honoré Fragonard (French, 1732–1806)",1732,1806,French
+TCMA-6317,"Shitao (Chinese, 1642–1707)",1642,1707,Chinese
+TCMA-11228,"Wen Boren (Chinese, 1502–1575)",1502,1575,Chinese
+TCMA-368701,"Yintuoluo (Chinese, c. 1285-c. 1355)",1280,1360,Chinese
+TCMA-38732,"Dirck van Baburen (Dutch, c. 1595–1624)",1595,1624,Dutch
+TCMA-37223,"Frédéric Bazille (French, 1841–1870)",1841,1870,French
+TCMA-2060,"Francesco Botticini (Italian, c. 1446–1497)",1446,1497,Italian
+TCMA-2206,"Lorenzo da Sanseverino (Italian, 1468–1500)",1468,1500,Italian
+TCMA-11212,"Wang Meng (Chinese, c. 1308–1385)",1308,1385,Chinese
+TCMA-31453,"Liu Shanshou (Chinese, active 1300s)",None,None,Chinese
+TCMA-23262,"Lan Ying (Chinese, 1585–after 1664)",1585,1669,Chinese
+TCMA-31221,"Kuncan (Chinese, 1612-c. 1673)",1612,1678,Chinese
+TCMA-23557,"Shen Zhou (Chinese, 1427–1509)",1427,1509,Chinese
+TCMA-6969,"Dharam Das (Indian, active c. 1580–1605)",None,None,Indian
+TCMA-6241,"Liu Songnian (Chinese, c. 1150-after 1225)",1150,1230,Chinese
+TCMA-7625,"Ike Taiga (Japanese, 1723–1776)",1723,1776,Japanese
+TCMA-315389,"Kan Tenju (Japanese, 1727–1795)",1727,1795,Japanese
+TCMA-6187,"Kawanabe Kyōsai (Japanese, 1831–1889)",1831,1889,Japanese
+TCMA-2965,"Franz Xaver Winterhalter (German, 1805–1873)",1805,1873,German
+TCMA-2852,"Adriaen Coorte (Dutch, 1660–1707)",1660,1707,Dutch
+TCMA-381102,"Nagasawa Rosetsu (Japanese, 1754–1799)",1754,1799,Japanese
+TCMA-31397,"Li Shan (Chinese, c. 1686–1762)",1686,1762,Chinese
+TCMA-51019,"Eugène Jansson (Swedish, 1862–1915)",1862,1915,Swedish
+TCMA-23580,"Zha Shibiao (Chinese, 1615–1698)",1615,1698,Chinese
+TCMA-31379,"Jiao Bingzhen (Chinese, active c. 1670–1726)",None,None,Chinese
+TCMA-6172,"Shibata Zeshin (Japanese, 1807–1891)",1807,1891,Japanese
+TCMA-31114,"Wen Zhengming (Chinese, 1470–1559)",1470,1559,Chinese
+TCMA-1782,"Paul Guigou (French, 1834–1871)",1834,1871,French
+TCMA-11236,"Ma Yuan (Chinese, c. 1150-after 1255)",1150,1255,Chinese
+TCMA-1736,"Léon Bonnat (French, 1833–1922)",1833,1922,French
+TCMA-2296,"Sassetta (Italian, 1392–1450)",1392,1450,Italian
+TCMA-22859,"Liu Jie (Chinese, c. 1447–1520s)",1442,None,Chinese
+TCMA-6071,"Yosa Buson (Japanese, 1716–1783)",1716,1783,Japanese
+TCMA-23421,"Fujimaro (Japanese, d. 1830)",None,1830,Japanese
+TCMA-2709,"Anton Raphael Mengs (German, 1728–1779)",1728,1779,German
+TCMA-2341,"Titian (Italian, c. 1488–1576)",1488,1576,Italian
+TCMA-2954,"Lawrence Alma-Tadema (British, 1836–1912)",1836,1912,British
+TCMA-35627,"Soga Shōhaku (Japanese, 1730–1781)",1730,1781,Japanese
+TCMA-47729,"François LePage (French, 1796–1871)",1796,1871,French
+TCMA-29716,"Pierre Guérin (French, 1774–1833)",1774,1833,French
+TCMA-2573,"Hans Mielich (German, 1516–1573)",1516,1573,German
+TCMA-6037,"Watanabe Shikō (Japanese, 1683–1755)",1683,1755,Japanese
+TCMA-31450,"Zhang Yuehu (Chinese, active 1200s)",None,None,Chinese
+TCMA-31474,"Liang Kai (Chinese, mid-1100s-early 1200s)",None,None,Chinese
+TCMA-33538,"Fan Qi (Chinese, 1616–after 1694)",1616,1694,Chinese
+TCMA-2949,"John Faed (Scottish, 1820–1902)",1820,1902,Scottish
+TCMA-1994,"Simon Vouet (French, 1590–1649)",1590,1649,French
+TCMA-6251,"Yao Tingmei (Chinese, active mid-1300s)",1300,1375,Chinese
+TCMA-2315,"Francesco Solimena (Italian, 1657–1747)",1657,1747,Italian
+TCMA-63465,"Dasavanta (Indian, d. 1584)",None,1584,Indian
+TCMA-38512,"Yu Zhiding (Chinese, 1647–c. 1716)",1647,1721,Chinese
+TCMA-34749,"Gion Seitoku (Japanese, active late 1700s–early 1800s)",None,None,Japanese
+TCMA-11294,"Sesshū Tōyō (Japanese, 1420–1506)",1420,1506,Japanese
+TCMA-1635,"Isidore Pils (French, 1813/15–1875)",1813,1875,French
+TCMA-31358,"Gao Fenghan (Chinese, 1683–1749)",1683,1749,Chinese
+TCMA-438723,"Purkhu (Indian, 1750–1860)",1750,1860,Indian
+TCMA-6026,"Fukae Roshū (Japanese, 1699–1757)",1699,1757,Japanese
+TCMA-2962,"Philipp Hackert (German, 1737–1807)",1737,1807,German
+TCMA-2279,"Guido Reni (Italian, 1575–1642)",1575,1642,Italian
+TCMA-1201,"Francesco Guardi (Italian, 1712–1793)",1712,1793,Italian
+TCMA-282172,"Ikkyū Sōjun (Japanese, 1394–1481)",1394,1481,Japanese
+TCMA-22954,"Song Xu (Chinese, 1525-c. 1606)",1525,1606,Chinese
+TCMA-2593,"Edward Hicks (American, 1780–1849)",1780,1849,American
+TCMA-2873,"Jacob Ochtervelt (Dutch, 1634–1682)",1634,1682,Dutch
+TCMA-286640,"Basawan​ (Indian, active mid-1500s)",1516,1636,Indian
+TCMA-23276,"Peng Xu (Chinese, active 1488–1521)",None,None,Chinese
+TCMA-31140,"Min Zhen (Chinese, 1730–after 1788)",1730,1788,Chinese
+TCMA-33134,"Xugu (Chinese, 1823–1896)",1823,1896,Chinese
+TCMA-1968,"Pierre Henri de Valenciennes (French, 1750–1819)",1750,1819,French
+TCMA-1646,"Pierre-Paul Prud'hon (French, 1758–1823)",1758,1823,French
+TCMA-1198,"Giovanni Battista Piazzetta (Italian, 1682–1754)",1682,1754,Italian
+TCMA-2255,"Giovanni Antonio Pellegrini (Italian, 1675–1741)",1675,1741,Italian
+TCMA-67134,"Yi Ha-eung (Korean, 1820–1898)",1820,1898,Korean
+TCMA-22854,"Tang Yin (Chinese, 1470–1523)",1470,1523,Chinese
+TCMA-35523,"Kusumi Morikage (Japanese, active c. 1620–1690)",None,None,Japanese
+TCMA-2276,"Mattia Preti (Italian, 1613–1699)",1613,1699,Italian
+TCMA-35576,"Tani Bunchō (Japanese, 1763–1841)",1763,1841,Japanese
+TCMA-1574,"Adolphe-Félix Cals (French, 1810–1880)",1810,1880,French
+TCMA-2224,"Master of San Lucchese (Italian, c. 1335–1380)",1335,1380,Italian
+TCMA-2018,"Pompeo Batoni (Italian, 1708–1787)",1708,1787,Italian
+TCMA-36734,"Guo Min (Chinese, mid-late 1200s)",None,None,Chinese
+TCMA-23295,"Wang Yuanqi (Chinese, 1642–1715)",1642,1715,Chinese
+TCMA-6246,"Luo Zhichuan (Chinese, active 1280s–1320s)",None,1330,Chinese
+TCMA-2178,"Luca Giordano (Italian, 1634–1705)",1634,1705,Italian
+TCMA-412307,"Ghulam 'Ali (Indian, active 1550s-1590s)",None,None,Indian
+TCMA-457342,"Joseph-Benoît Suvée (French, 1743–1807)",1743,1807,French
+TCMA-63529,"Balchand (Indian, active 1595–c. 1650)",None,None,Indian
+TCMA-1582,"Théodule Ribot (French, 1823–1891)",1823,1891,French
+TCMA-2446,"Herman van Swanevelt (Dutch, c. 1600–1655)",1600,1655,Dutch
+TCMA-2685,"Jan Wijnants (Dutch, 1635–1684)",1635,1684,Dutch
+TCMA-1591,"Philippe Rousseau (French, 1816–1887)",1816,1887,French
+TCMA-62805,"Leonardo da Vinci (Italian, 1452–1519)",1452,1519,Italian
+TCMA-5982,"Shūgetsu Tōkan (Japanese, 1440?-1529)",1440,1529,Japanese
+TCMA-23575,"Xiao Yuncong (Chinese, 1596–1673)",1596,1673,Chinese
+TCMA-342657,"Marco d'Oggiono (Italian, 1460-1524)",1460,1524,Italian
+TCMA-2079,"Giovanni Benedetto Castiglione (Italian, 1609–1664)",1609,1664,Italian
+TCMA-35530,"Kita Genki (Japanese, active c. 1664–98)",None,None,Japanese
+TCMA-1986,"Claude-Joseph Vernet (French, 1714–1789)",1714,1789,French
+TCMA-2023,"Leandro Bassano (Italian, 1557–1623)",1557,1623,Italian
+TCMA-3192,"Walter MacEwen (American, 1860–1943)",1860,1943,American
+TCMA-6487,"Jules Breton (French, 1827–1906)",1827,1906,French
+TCMA-66393,"Mir 'Ali Haravi (Persian, active in Herat, Afghanistan, died c. 1550)",None,None,Persian
+TCMA-35273,"Antoine-Claude Ponthus-Cinier (French, 1812–1885)",1812,1885,French
+TCMA-1551,"Jean Achille Benouville (French, 1815–1891)",1815,1891,French
+TCMA-34401,"Nakamura Hōchū (Japanese, d. 1819)",None,1819,Japanese
+TCMA-44388,"Banavari 1 (Indian, active 1550s-1590s)",None,None,Indian
+TCMA-63797,"Mir Sayyid Ali (Persian, active in India, 1555–1580)",1555,1580,Persian
+TCMA-63511,"Bishandas (Indian, active c. 1610–30)",None,None,Indian
+TCMA-2035,"Bicci di Lorenzo (Italian, 1373–1452)",1373,1452,Italian
+TCMA-2241,"Neroccio de' Landi (Italian, 1447–1500)",1447,1500,Italian
+TCMA-287803,"Chitarman II (Indian, c. 1680–с. 1750)",1680,1750,Indian
+TCMA-23287,"Luo Ping (Chinese, 1733–1799)",1733,1799,Chinese
+TCMA-63474,"Sanwalah (Indian, active c. 1580–1600)",None,None,Indian
+TCMA-61875,"Sahib Ram (Indian, active 1745–1803)",None,None,Indian
+TCMA-3002,"Otto H. Bacher (American, 1856–1909)",1856,1909,American
+TCMA-374819,"Chae Yongshin (Korean, 1848–1941)",1848,1941,Korean
+TCMA-31494,"Sheng Mou (Chinese, active c. 1310–1350)",None,1350,Chinese
+TCMA-2230,"Matteo di Giovanni (Italian, c. 1435–1495)",1435,1495,Italian
+TCMA-4433,"Henry Keller (American, 1869–1949)",1869,1949,American
+TCMA-6299,"Li Shizhuo (Chinese, c. 1690–1770)",1690,1770,Chinese
+TCMA-22824,"Lin Liang (Chinese, 1416–1480)",1416,1480,Chinese
+TCMA-1185,"Giovanni Domenico Tiepolo (Italian, 1727–1804)",1727,1804,Italian
+TCMA-35579,"Yamaguchi Sekkei (Japanese, 1644–1732)",1644,1732,Japanese
+TCMA-31374,"Dai Xi (Chinese, 1801–1860)",1801,1860,Chinese
+TCMA-1785,"Armand Guillaumin (French, 1841–1927)",1841,1927,French
+TCMA-61506,"Jai Ram (Indian, active 1710–40)",None,None,Indian
+TCMA-54394,"Unkoku Tōgan (Japanese, 1547–1618)",1547,1618,Japanese
+TCMA-20337,"Nagasawa Rosetsu (Japanese, 1754–1799)",1754,1799,Japanese
+TCMA-31417,"Qian Du (Chinese, 1763–1844)",1763,1844,Chinese
+TCMA-1667,"Jean-François Millet (French, 1814–1875)",1814,1875,French
+TCMA-6166,"Maruyama Ōkyo (Japanese, 1733–1795)",1733,1795,Japanese
+TCMA-22754,"Gakuō Zōkyū (Japanese, active about 1482–1514)",None,None,Japanese
+TCMA-63517,"Mushfiq (Indian, active early 1600s)",None,None,Indian
+TCMA-63551,"Fayzullah (Indian, active c. 1730–1765)",None,None,Indian
+TCMA-396907,"Gu Jianlong (Chinese, 1606–after 1689)",None,None,Chinese
+TCMA-2712,"John Quidor (American, 1801–1881)",1801,1881,American
+TCMA-1554,"Jean-Victor Bertin (French, 1767–1842)",1767,1842,French
+TCMA-2321,"Gherardo Starnina (Italian, c. 1360–before 1413)",1360,1413,Italian
+TCMA-23761,"Gong Xian (Chinese, 1599–1689)",1599,1689,Chinese
+TCMA-2238,"Giovanni Battista Moroni (Italian, 1525–1578)",1525,1578,Italian
+TCMA-3032,"George Hendrik Breitner (Dutch, 1857–1923)",1857,1923,Dutch
+TCMA-412311,"Banavari 2 (Indian, active 1550s-1590s)",None,None,Indian
+TCMA-2783,"Ary Scheffer (Dutch, 1795–1858)",1795,1858,Dutch
+TCMA-2599,"Jasper F. Cropsey (American, 1823–1900)",1823,1900,American
+TCMA-23739,"Xia Kui (Chinese, active c. 1405–1445)",None,None,Chinese
+TCMA-53846,"Alexandre Cabanel (French, 1823–1889)",1823,1889,French
+TCMA-289570,"Shafi (Indian, active about 1650)",None,None,Indian
+TCMA-63514,"Haidar Kashmiri (Indian, active late 1500s-early 1600s)",None,None,Indian
+TCMA-63520,"Miskin (Indian, active 1570s–c. 1604)",None,None,Indian
+TCMA-11877,"Song Tian (Chinese, active 1300s)",1300,1399,Chinese
+TCMA-2106,"Carlo Dolci (Italian, 1616–1687)",1616,1687,Italian
+TCMA-412302,"Tara 1 (Indian, active 1550s-1590s)",None,None,Indian
+TCMA-539368,"Jugarsi, son of Jiva (Indian, active mid-1700s)",None,None,Indian
+TCMA-63560,"Hunhar II (Indian, active mid-1700s)",None,None,Indian
+TCMA-36790,"Yishan Yining [Issan Ichinei] (Chinese, 1247–1317)",1247,1317,Chinese
+TCMA-284144,"Choe Seok-hwan (Korean, active first half of 19th century)",None,None,Korean
+TCMA-1562,"François Bonvin (French, 1817–1887)",1817,1887,French
+TCMA-2318,"Spinello Aretino (Italian, 1350/52–1410)",1350,1410,Italian
+TCMA-1727,"Edmond François Aman-Jean (French, 1858–1936)",1858,1936,French
+TCMA-299428,"Seifū Yohei III (Japanese, 1851–1914)",1851,1914,Japanese
+TCMA-535120,"Workshop or Circle of Wäldä Maryam (Ethiopia, active mid- to late 1600s-early 1700s)",None,None,Ethiopia
+TCMA-1565,"Pierre Jean Boquet (French, 1751–1817)",1751,1817,French
+TCMA-2394,"Juan van der Hamen y Léon (Spanish, 1596–1631)",1596,1631,Spanish
+TCMA-33476,"Hon'ami Kōetsu (Japanese, 1558–1637)",1558,1637,Japanese
+TCMA-2381,"Jaume Ferrer the Younger (Spanish, Catalonia died c. 1460/70)",None,1470,Spanish
+TCMA-2927,"Govaert Flinck (Dutch, 1615–1660)",1615,1660,Dutch
+TCMA-412309,"Iqbal (Indian, active 1550s-1590s)",None,None,Indian
+TCMA-31504,"Wu Zhen (Chinese, 1280–1354)",1280,1354,Chinese
+TCMA-34755,"Kaigetsudō Ando (Japanese, c. 1671–1743)",1671,1743,Japanese
+TCMA-11288,"Kitagawa Sōsetsu (Japanese, active 1639–50)",None,None,Japanese
+TCMA-1924,"Gaspard Dughet (French, 1615–1675)",1615,1675,French
+TCMA-54475,"Shri Gobinda Chandra Roy (Indian, active late 1800s)",None,None,Indian
+TCMA-342654,"Kim Jin-woo (Korean, 1883–1950)",1883,1950,Korean
+TCMA-35707,"Kiyohara Yukinobu (Japanese, 1643–1682)",1643,1682,Japanese
+TCMA-315332,"Chokha (Indian, active c. 1799–1824)",1770,1830,Indian
+TCMA-315074,"Ruknuddin (Indian, active c. 1666–97)",None,None,Indian
+TCMA-3107,"William Stanley Haseltine (American, 1835–1900)",1835,1900,American
+TCMA-406813,"Gujarati (Indian, active 1550s-1590s)",None,None,Indian
+TCMA-412305,"Tara 2 (Indian, active 1550s-1590s)",None,None,Indian
+TCMA-539181,"Anna Dorothea Therbusch (German, 1721/22–1782)",1721,1782,German
+TCMA-17269,"Tao Hong (Chinese, active c. 1610–1640)",None,None,Chinese
+TCMA-25582,"Dosso Dossi (Italian, c. 1490–after 1541)",1490,1541,Italian
+TCMA-3080,"Kenyon Cox (American, 1856–1919)",1856,1919,American
+TCMA-23279,"Gu Tianzhi (Chinese, active mid-1600s)",None,None,Chinese
+TCMA-2172,"Giovanni Battista Gaulli (Italian, 1639–1709)",1639,1709,Italian
+TCMA-26123,"Giulio Campi (Italian, c. 1500–1572)",1500,1572,Italian
+TCMA-2835,"Salomon van Ruysdael (Dutch, 1602–1670)",1602,1670,Dutch
+TCMA-1190,"Guercino (Italian, 1591–1666)",1591,1666,Italian
+TCMA-2924,"Peter Wtewael (Dutch, 1596–1660)",1596,1660,Dutch
+TCMA-1799,"Germain Ribot (French, 1845–1893)",1845,1893,French
+TCMA-1830,"Jehan-Georges Vibert (French, 1840–1902)",1840,1902,French
+TCMA-11282,"Yamamoto Baiitsu (Japanese, 1783–1856)",1783,1856,Japanese
+TCMA-2619,"Julius Caesar Ibbetson (British, 1759–1817)",1759,1817,British
+TCMA-2154,"Battista Dossi (Italian, c. 1490–1548)",1490,1548,Italian
+TCMA-1379,"Richard Wilson (British, 1714–1782)",1714,1782,British
+TCMA-2630,"Gerrit Dou (Dutch, 1613–1675)",1613,1675,Dutch
+TCMA-11249,"Li Sheng (Chinese, active c. 1324-after 1375)",None,None,Chinese
+TCMA-65535,"Sanju (Indian, active late 1700s-early 1800s)",None,None,Indian
+TCMA-11220,"Wang Fu (Chinese, 1362–1416)",1362,1416,Chinese
+TCMA-1983,"Pierre Rousseau (French, 1751–1829)",1751,1829,French
+TCMA-1343,"George Romney (British, 1734–1802)",1734,1802,British
+TCMA-22842,"Bian Wenjin (Chinese, about 1354–1428)",1354,1428,Chinese
+TCMA-3312,"John Henry Twachtman (American, 1853–1902)",1853,1902,American
+TCMA-1664,"Georges Michel (French, 1763–1843)",1763,1843,French
+TCMA-2979,"Hendrick ter Brugghen (Dutch, 1588–1629)",1588,1629,Dutch
+TCMA-65597,"Kubo Shunman (Japanese, 1757–1820)",1757,1820,Japanese
+TCMA-6007,"Kano Hideyori (Japanese, active mid- to late 1500s)",None,None,Japanese
+TCMA-4007,"Preston Dickinson (American, 1891–1930)",1891,1930,American
+TCMA-2930,"Abraham Hondius (Dutch, c. 1625–1695)",1625,1695,Dutch
+TCMA-6525,"William Hart (American, 1823–1894)",1823,1894,American
+TCMA-3116,"George Hitchcock (American, 1850–1913)",1850,1913,American
+TCMA-34771,"Uragami Gyokudō (Japanese, 1745–1820)",1745,1820,Japanese
+TCMA-1670,"Antoine Pierre Mongin (French, 1761–1827)",1761,1827,French
+TCMA-35743,"Takebe Sōchō (Japanese, 1760–1814)",1760,1814,Japanese
+TCMA-60577,"Hendrik Gerritsz. Pot (Dutch, c. 1585–1657)",1585,1657,Dutch
+TCMA-315331,"Ghasi (Indian, active c. 1820–36)",None,None,Indian
+TCMA-315336,"Kushala (Indian, active c. 1825)",None,None,Indian
+TCMA-314531,"Amar Das Bhatti (Indian, active 1800s)",None,None,Indian
+TCMA-57463,"Henri Jean Guillaume Martin (French, 1860–1943)",1860,1943,French
+TCMA-1603,"Octave Tassaert (French, 1800–1874)",1800,1874,French
+TCMA-543405,"Hong Fan (Chinese, active late 1700s–early 1800s)",None,None,Chinese
+TCMA-54744,"Qian Hui'an (Chinese, 1833–1911)",1833,1911,Chinese
+TCMA-4424,"Frederick Gottwald (American, 1860–1941)",1860,1941,American
+TCMA-2824,"Jacob Jordaens (Flemish, 1593–1678)",1593,1678,Flemish
+TCMA-2744,"Worthington Whittredge (American, 1820–1910)",1820,1910,American
+TCMA-2397,"Luis Meléndez (Spanish, 1716–1780)",1716,1780,Spanish
+TCMA-2481,"John Opie (British, 1761–1807)",1761,1807,British
+TCMA-4409,"William J. Edmondson (American, 1868–1966)",1868,1966,American
+TCMA-6181,"Miyagawa Chōshun (Japanese, 1683–1753)",1683,1753,Japanese
+TCMA-35911,"Teisai Hokuba (Japanese, 1771–1844)",1771,1844,Japanese
+TCMA-6184,"Tawaraya Sōri (Japanese, active late 1700s)",None,None,Japanese
+TCMA-31137,"Wang Shishen (Chinese, 1686–1759)",1686,1759,Chinese
+TCMA-35749,"Kano Sanraku (Japanese, 1559–1635)",1559,1635,Japanese
+TCMA-2472,"Samuel Lovett Waldo (American, 1783–1861)",1783,1861,American
+TCMA-2750,"Jan Siberechts (Flemish, 1627-c. 1703)",1627,1703,Flemish
+TCMA-22864,"Wang Guxiang (Chinese, 1501–1568)",1501,1568,Chinese
+TCMA-35692,"Kishi Ganku (Japanese, 1749/56–1838)",1749,1838,Japanese
+TCMA-1932,"Lié Louis Périn (French, 1753–1817)",1753,1817,French
+TCMA-2691,"Jan Baptist Weenix (Dutch, 1621–1660)",1621,1660,Dutch
+TCMA-3047,"George B. Butler (American, 1838–1907)",1838,1907,American
+TCMA-15141,"Sur Das Gujarati (Indian, active 16th century)",None,None,Indian
+TCMA-57041,"Wang Jianzhang (Chinese, active 1621–1662)",None,None,Chinese
+TCMA-1943,"Charles Poërson (French, 1609–1667)",1609,1667,French
+TCMA-2432,"Bartholomaeus Spranger (Flemish, 1546–1611)",1546,1611,Flemish
+TCMA-3074,"Lovis Corinth (German, 1858–1925)",1858,1925,German
+TCMA-2169,"Rossello di Jacopo Franchi (Italian, c.1376–1457)",1376,1457,Italian
+TCMA-2212,"Bernardino Luini (Italian, c. 1480-c. 1532)",1480,1532,Italian
+TCMA-45734,"Icilio Federico Joni (Italian, 1866–1946)",1866,1946,Italian
+TCMA-1545,"Théodore Caruelle d' Aligny (French, 1798–1871)",1798,1871,French
+TCMA-2807,"Christen Købke (Danish, 1810–1848)",1810,1848,Danish
+TCMA-3137,"Frank Duveneck (American, 1848–1919)",1848,1919,American
+TCMA-31440,"Wu Bing (Chinese, active 1190–1194)",None,None,Chinese
+TCMA-2971,"Simon de Vlieger (Dutch, 1601–1653)",1601,1653,Dutch
+TCMA-2738,"William Morris Hunt (American, 1824–1879)",1824,1879,American
+TCMA-57157,"Augustin de Saint-Aubin (French, 1736–1807)",1736,1807,French
+TCMA-11204,"Ni Zan (Chinese, 1301–1374)",1301,1374,Chinese
+TCMA-35680,"Kano Tan’yū (Japanese, 1602–1674)",1602,1674,Japanese
+TCMA-3149,"Gwen John (British, 1876–1939)",1876,1939,British
+TCMA-283702,"Motsurin Jōtō (Japanese, d. 1492)",None,1492,Japanese
+TCMA-35371,"Shunoku Sōen (Japanese, 1529–1611)",1529,1611,Japanese
+TCMA-65989,"Kaigetsudō Doshin (Japanese, active 1711–1736)",None,None,Japanese
+TCMA-34681,"Ippitsusai Bunchō (Japanese, active c. 1765–92)",None,None,Japanese
+TCMA-1577,"Antoine Chintreuil (French, 1814–1873)",1814,1873,French
+TCMA-35377,"Shikibu Terutada (Japanese, active mid-1500s)",None,1575,Japanese
+TCMA-2282,"Sebastiano Ricci (Italian, 1659–1734)",1659,1734,Italian
+TCMA-2801,"Esaias van de Velde (Dutch, 1587–1630)",1587,1630,Dutch
+TCMA-2791,"Simon Verelst (Dutch, 1644–1721)",1644,1721,Dutch
+TCMA-35477,"Chōbunsai Eishi (Japanese, 1756–1829)",1756,1829,Japanese
+TCMA-3182,"Homer Dodge Martin (American, 1836–1897)",1836,1897,American
+TCMA-1216,"Thomas Doughty (American, 1793–1856)",1793,1856,American
+TCMA-6294,"Qian Gu (Chinese, 1508–c. 1578)",1508,1578,Chinese
+TCMA-31371,"Fa Ruozhen (Chinese, 1613–1696)",1613,1696,Chinese
+TCMA-35934,"Tsukioka Sessai (Japanese, 1839)",None,1839,Japanese
+TCMA-36660,"Kannan (Japanese, active mid-1500s)",None,None,Japanese
+TCMA-50215,"Hakuen (Japanese, active 1850–1870)",None,None,Japanese
+TCMA-2347,"Francesco Trevisani (Italian, 1656–1746)",1656,1746,Italian
+TCMA-22773,"Huang Gongwang (Chinese, 1269–1354)",1269,1354,Chinese
+TCMA-6767,"Augustus Vincent Tack (American, 1870–1949)",1870,1949,American
+TCMA-2010,"Pietro Bardellino (Italian, 1728–1810)",1728,1810,Italian
+TCMA-3306,"Abbott Handerson Thayer (American, 1849–1921)",1849,1921,American
+TCMA-3315,"Elihu Vedder (American, 1836–1923)",1836,1923,American
+TCMA-31384,"Zhang Feng (Chinese, active c. 1632–1662)",None,None,Chinese
+TCMA-1718,"Jean-Alphonse Duplessy (French, 1817–after 1872)",1817,1872,French
+TCMA-35561,"Tanomura Chikuden (Japanese, 1777–1835)",1777,1835,Japanese
+TCMA-2074,"Girolamo da Carpi (Italian, c. 1501–1556)",1501,1556,Italian
+TCMA-1810,"Maxime Maufra (French, 1861–1918)",1861,1918,French
+TCMA-1652,"Alexandre-Gabriel Decamps (French, 1803–1860)",1803,1860,French
+TCMA-66897,"Kano Motonobu (Japanese, c. 1476–1559)",1476,1559,Japanese
+TCMA-3330,"James McNeill Whistler (American, 1834–1903)",1834,1903,American
+TCMA-1629,"Célestin François Nanteuil (French, 1813–1873)",1813,1873,French
+TCMA-1623,"Thomas Couture (French, 1815–1879)",1815,1879,French
+TCMA-2804,"Johann Heinrich Schönfeld (German, 1609–1684)",1609,1684,German
+TCMA-5174,"Juan de Valdés Leal (Spanish, 1622–1690)",1622,1690,Spanish
+TCMA-63526,"Fazl (Indian, active early 1600s)",None,None,Indian
+TCMA-30791,"Li Shida (Chinese, c. 1549–c. 1621)",1544,1626,Chinese
+TCMA-35414,"Yamada Dōan (Japanese, d. 1571)",None,1571,Japanese
+TCMA-34752,"Utagawa Toyokuni (Japanese, 1769–1825)",1769,1825,Japanese
+TCMA-2867,"Dirck van der Lisse (Dutch, 1669)",None,1669,Dutch
+TCMA-1606,"Paul Désiré Trouillebert (French, 1829–1900)",1829,1900,French
+TCMA-6633,"John Smibert (American, 1688–1751)",1688,1751,American
+TCMA-1597,"Victor Schnetz (French, 1787–1870)",1787,1870,French
+TCMA-35505,"Kitao Masayoshi (Japanese, 1761–1824)",1761,1824,Japanese
+TCMA-35395,"Jonan Etetsu (Japanese, 1444–1507)",1444,1507,Japanese
+TCMA-23369,"Ichijun (Japanese, active 1700s)",None,None,Japanese
+TCMA-36267,"Yang Yisun (Chinese, 1813–1881)",1813,1881,Chinese
+TCMA-62630,"Kō Sūkoku (Japanese, 1730–1804)",1730,1804,Japanese
+TCMA-282197,"Sesson Shūkei (Japanese, active 1504-c. 1589)",None,None,Japanese
+TCMA-66009,"Sheng Maoye (Chinese, active early 1600s)",None,None,Chinese
+TCMA-2094,"Francesco Conti (Italian, 1681–1760)",1681,1760,Italian
+TCMA-11300,"Kenkō Shōkei (Japanese, active 1478–1506)",None,None,Japanese
+TCMA-292983,"Yuan Yao (Chinese, active mid-1700s)",1700,1800,Chinese
+TCMA-23565,"Xiang Shengmo (Chinese, 1597–1658)",1597,1658,Chinese
+TCMA-23540,"Du Qiong (Chinese, 1396–1474)",1396,1474,Chinese
+TCMA-35874,"Sugai Baikan (Japanese, 1784–1844)",1784,1844,Japanese
+TCMA-35270,"Kitao Shigemasa (Japanese, 1739–1819)",1739,1819,Japanese
+TCMA-2849,"Melchior de Hondecoeter (Dutch, 1636–1695)",1636,1695,Dutch
+TCMA-313149,"Nur Muhammad (Indian, active c. 1580–1630)",None,None,Indian
+TCMA-35832,"Hirafuku Suian (Japanese, 1844–1890)",1844,1890,Japanese
+TCMA-301937,"Yoshimura Hōryū (Japanese, 1874–1950)",1874,1950,Japanese
+TCMA-31926,"Kamigaki Hōryū  (Japanese, dates unknown)",None,None,Japanese
+TCMA-63483,"Bilal Habshi (probably Ethiopian, active late 1500s)",None,None,probably Ethiopian
+TCMA-66909,"Narihide (Japanese, active 1500s)",None,None,Japanese
+TCMA-36654,"Kano Hidemasa (Japanese, active late 1500s)",None,None,Japanese
+TCMA-36651,"Yōgetsu (Japanese, active late 1400s to early 1500s)",None,None,Japanese
+TCMA-62183,"Giuseppe Baldrighi (Italian, 1723–1803)",1723,1803,Italian
+TCMA-35710,"Tani Bun'ichi (Japanese, 1787–1818)",1787,1818,Japanese
+TCMA-51524,"Nainsukh (Indian, 1710–1778)",1710,1778,Indian
+TCMA-3207,"Thomas Moran (American, 1837–1926)",1837,1926,American
+TCMA-4727,"Henry Picou (French, 1824–1895)",1824,1895,French
+TCMA-35740,"Sakai Basai (Japanese, dates unknown)",1828,None,Japanese
+TCMA-11949,"Gaetano Gandolfi (Italian, 1734–1802)",1734,1802,Italian
+TCMA-42832,"Georges-Daniel de Monfreid (French, 1856–1929)",1856,1929,French
+TCMA-64816,"Mirza Muhammad (probably Persian, active c. 1520s)",None,None,probably Persian
+TCMA-2263,"Pintoricchio (Italian, c. 1454–1513)",1454,1513,Italian
+TCMA-3333,"Alexander H. Wyant (American, 1836–1892)",1836,1892,American
+TCMA-2463,"William Dunlap (American, 1766–1839)",1766,1839,American
+TCMA-1594,"Théodore Rousseau (French, 1812–1867)",1812,1867,French
+TCMA-23722,"Li Liufang (Chinese, 1575–1629)",1575,1629,Chinese
+TCMA-2974,"William Beechey (British, 1753–1839)",1753,1839,British
+TCMA-3276,"Charles Hasslewood Shannon (British, 1863–1937)",1863,1937,British
+TCMA-2946,"Rudolf Lehmann (German, 1819–1905)",1819,1905,German
+TCMA-286971,"Abd al-Rahim, the Anbarin-Qalam (Indian, active c. 1590–1630)",None,None,Indian
+TCMA-66903,"Josui Sōen (Japanese, active c. 1489–1500)",None,None,Japanese
+TCMA-23265,"Liu Du (Chinese, active c. 1628-after 1653)",None,None,Chinese
+TCMA-11209,"Li Di (Chinese, c. 1100-c. 1192)",1100,1197,Chinese
+TCMA-286271,"Ren Yu (Chinese, 1853–1901)",1853,1901,Chinese
+TCMA-2665,"William Page (American, 1811–1885)",1811,1885,American
+TCMA-2760,"William Mason Brown (American, 1828–1898)",1828,1898,American
+TCMA-23424,"Nakayama Kōyō (Japanese, 1717–1780)",1717,1780,Japanese
+TCMA-296960,"Kyūseki Tomonobu (Japanese, 1653–1721)",1653,1721,Japanese
+TCMA-35755,"Suzuki Shōnen (Japanese, 1849–1918)",1849,1918,Japanese
+TCMA-34134,"Tsukioka Settei (Japanese, 1710–1786)",1710,1786,Japanese
+TCMA-60215,"Andrea Appiani (Italian, 1754–1817)",1754,1817,Italian
+TCMA-66885,"Shiken Saidō (Japanese, 1486–1581)",1486,1581,Japanese
+TCMA-54719,"Kano Naonobu (Japanese, 1607–1650)",1607,1650,Japanese
+TCMA-9405,"William Sommer (American, 1867–1949)",1867,1949,American
+TCMA-3294,"Eugene Edward Speicher (American, 1883–1962)",1883,1962,American
+TCMA-2903,"Heinrich Hansen (Danish, 1821–1890)",1821,1890,Danish
+TCMA-4477,"Louis Loeb (American, 1866–1909)",1866,1909,American
+TCMA-16976,"Jules Dupré (French, 1811–1889)",1811,1889,French
+TCMA-1673,"Adolphe Monticelli (French, 1824–1886)",1824,1886,French
+TCMA-61947,"Bartolomé Pérez (Spanish, 1634–1693)",1634,1693,Spanish
+TCMA-1730,"Jacques-Émile Blanche (French, 1861–1942)",1861,1942,French
+TCMA-23560,"Lu Zhi (Chinese, 1496–1576)",1496,1576,Chinese
+TCMA-1841,"René Ménard (French, 1862–1930)",1862,1930,French
+TCMA-31482,"Li Shixing (Chinese, 1283–1328)",1283,1328,Chinese
+TCMA-33543,"Wang Gai (Chinese, active c. 1677–1705)",None,1705,Chinese
+TCMA-2246,"Sodoma (Italian, 1477–1549)",1477,1549,Italian
+TCMA-4382,"George G. Adomeit (American, 1879–1967)",1879,1967,American
+TCMA-1700,"Victor de Grailly (French, 1804–1889)",1804,1889,French
+TCMA-11279,"Wang Jian (Chinese, 1598–1677)",1598,1677,Chinese
+TCMA-2109,"Pietro del Donzello (Italian, 1452–1509)",1452,1509,Italian
+TCMA-3014,"Ralph A. Blakelock (American, 1847–1919)",1847,1919,American
+TCMA-33741,"Chen Chun (Chinese, 1483–1544)",1483,1544,Chinese
+TCMA-37393,"Bian Shoumin (Chinese, 1684–1752)",1684,1752,Chinese
+TCMA-57430,"Jan Griffier (Dutch, 1648–1718)",1648,1718,Dutch
+TCMA-57926,"Bernard Gaillot (French, 1780–1847)",1780,1847,French
+TCMA-31127,"Zhai Dakun (Chinese, d. 1804)",None,1804,Chinese
+TCMA-37698,"Wu Rangzhi (Chinese, 1799–1870)",1799,1870,Chinese
+TCMA-26512,"Ralph Earl (American, 1751–1801)",1751,1801,American
+TCMA-38853,"Henri-Pierre Danloux (French, 1753–1809)",1753,1809,French
+TCMA-66918,"Reietsu (Japanese, active late 1500s to early 1600s)",None,None,Japanese
+TCMA-66375,"Toda Tadanaka (Japanese, 1761–1823)",1761,1823,Japanese
+TCMA-2469,"George Fuller (American, 1822–1884)",1822,1884,American
+TCMA-3249,"Henry Ward Ranger (American, 1858–1916)",1858,1916,American
+TCMA-1712,"Narcisse Diaz de la Peña (French, 1807–1876)",1807,1876,French
+TCMA-2454,"Matthew Harris Jouett (American, 1787/88–1827)",1787,1827,American
+TCMA-2368,"Antonio Guardi (Italian, 1699–1760)",1699,1760,Italian
+TCMA-1742,"Jean-François Raffaëlli (French, 1850–1924)",1850,1924,French
+TCMA-35181,"William Linton (British, 1791–1876)",1791,1876,British
+TCMA-2097,"Lorenzo di Credi (Italian, 1459–1537)",1459,1537,Italian
+TCMA-23254,"Lu Tianru (Chinese, first half of 1400s)",None,None,Chinese
+TCMA-6528,"James McDougal Hart (American, 1828–1901)",1828,1901,American
+TCMA-1524,"Walter Greaves (British, 1841–1930)",1841,1930,British
+TCMA-31186,"Gao Tao (Chinese, 1100s)",1100,1199,Chinese
+TCMA-1768,"Édouard Detaille (French, 1848–1912)",1848,1912,French
+TCMA-35429,"Gyokuen Bonpō (Japanese, 1348–after 1420)",1348,1420,Japanese
+TCMA-2700,"Adriaen van de Velde (Dutch, 1636–1672)",1636,1672,Dutch
+TCMA-1762,"Henri Regnault (French, 1843–1871)",1843,1871,French
+TCMA-3026,"William Bradford (American, 1823–1892)",1823,1892,American
+TCMA-11241,"Xia Sheng (Chinese, active 1200s)",None,None,Chinese
+TCMA-2427,"Jozef Israëls (Dutch, 1824–1911)",1824,1911,Dutch
+TCMA-4525,"Charles Shackleton (American, 1856–1920)",1856,1920,American
+TCMA-4542,"Abel George Warshawsky (American, 1883–1962)",1883,1962,American
+TCMA-9385,"Louise B. Maloney (American, 1887–1973)",1887,1973,American
+TCMA-6522,"Samuel Halpert (American, 1884–1930)",1884,1930,American
+TCMA-9344,"William Joseph Eastman (American, 1888–1950)",1888,1950,American
+TCMA-2757,"Nicolaes Berchem (Dutch, 1620–1683)",1620,1683,Dutch
+TCMA-35417,"Ishō Tokugan (Japanese, c. 1359–1437)",1359,1437,Japanese
+TCMA-1715,"Camille Flers (French, 1802–1868)",1802,1868,French
+TCMA-35245,"Hosokawa Rinkoku (Japanese, 1779–1843)",1779,1843,Japanese
+TCMA-6496,"John Gadsby Chapman (American, 1808–1889)",1808,1889,American
+TCMA-11269,"Xie Huan (Chinese, c. 1370-c.1450)",1365,1455,Chinese
+TCMA-2484,"John Wesley Jarvis (American, 1781–1840)",1781,1840,American
+TCMA-2914,"Wilhelm von Kobell (German, 1766–1853)",1766,1853,German
+TCMA-6190,"Iwasa Matabei (Japanese, 1578–1650)",1578,1650,Japanese
+TCMA-3128,"Henry Golden Dearth (American, 1864–1918)",1864,1918,American
+TCMA-6783,"Frank Wilcox (American, 1887–1964)",1887,1964,American
+TCMA-3110,"Childe Hassam (American, 1859–1935)",1859,1935,American
+TCMA-1703,"François Marius Granet (French, 1775–1849)",1775,1849,French
+TCMA-23328,"Katsushika Hokusai (Japanese, 1760–1849)",1760,1849,Japanese
+TCMA-6205,"Shiba Kōkan (Japanese, 1747–1818)",1747,1818,Japanese
+TCMA-11264,"Song Ke (Chinese, 1327–1387)",1327,1387,Chinese
+TCMA-3146,"Samuel Isham (American, 1855–1914)",1855,1914,American
+TCMA-2532,"Allen Smith (American, 1810–1891)",1810,1891,American
+TCMA-31534,"Xia Gui (Chinese, active c. 1209–c. 1243)",None,None,Chinese
+TCMA-31518,"Li Gonglin (Chinese, c. 1049–1106)",1049,1106,Chinese
+TCMA-1916,"Nicolas-Bernard Lépicié (French, 1735–1784)",1735,1784,French
+TCMA-390687,"Ōhara Donshū (Japanese, d. 1857)",None,1857,Japanese
+TCMA-2415,"John Neagle (American, 1796–1865)",1796,1865,American
+TCMA-2406,"George Peter Alexander Healy (American, 1813–1894)",1813,1894,American
+TCMA-31479,"Qian Xuan (Chinese, 1235–1307)",1235,1307,Chinese
+TCMA-23754,"Li Jian (Chinese, active second half of the 1700s)",None,None,Chinese
+TCMA-23547,"Hoashi Kyōu (Japanese, 1810–1884)",1810,1884,Japanese
+TCMA-34778,"Kano Chikanobu (Japanese, 1660–1728)",1660,1728,Japanese
+TCMA-35677,"Gion Nankai (Japanese, 1677–1751)",1677,1751,Japanese
+TCMA-35258,"Suzuki Nanrei (Japanese, 1775–1844)",1775,1844,Japanese
+TCMA-35671,"Murase Taiitsu (Japanese, 1803–1881)",1803,1881,Japanese
+TCMA-35232,"Tomioka Tessai (Japanese, 1836–1924)",1836,1924,Japanese
+TCMA-6565,"Jordanus Hoorn (Dutch, 1753–1833)",1753,1833,Dutch
+TCMA-2457,"Daniel Huntington (American, 1816–1906)",1816,1906,American
+TCMA-2721,"Alexander Joseph Daiwaille (Dutch, 1818–1888)",1818,1888,Dutch
+TCMA-1679,"Jean-Jacques Henner (French, 1829–1905)",1829,1905,French
+TCMA-1850,"Léopold Robert (Swiss, 1794–1835)",1794,1835,Swiss
+TCMA-50381,"Utagawa Hiroshige (Japanese, 1797–1858)",1797,1858,Japanese
+TCMA-11092,"Li Yong (Chinese, active 1200s)",None,None,Chinese
+TCMA-28847,"Jules Bastien-Lepage (French, 1848–1884)",1848,1884,French
+TCMA-63554,"Mir Kalan Khan (Indian, c. 1730–1775)",1730,1775,Indian
+TCMA-11274,"Wang Shimin (Chinese, 1592–1680)",1592,1680,Chinese
+TCMA-2544,"James Frothingham (American, 1786–1864)",1786,1864,American
+TCMA-1691,"Émile Jacque (French, 1848–1912)",1848,1912,French
+TCMA-11259,"Yan Ciping (Chinese, active 1164–1187)",None,None,Chinese
+TCMA-6516,"Walter Gay (American, 1856–1937)",1856,1937,American
+TCMA-31202,"Zhang Ruoai (Chinese, 1713–1746)",1713,1746,Chinese
+TCMA-31197,"Zou Zhe (Chinese, c. 1610-before 1688)",1605,1688,Chinese
+TCMA-7631,"Kichizan Minchō (Japanese, 1352–1431)",1352,1431,Japanese
+TCMA-35689,"Fujimoto Tesseki (Japanese, 1817–1863)",1817,1863,Japanese
+TCMA-3240,"William L. Picknell (American, 1854–1897)",1854,1897,American
+TCMA-35474,"Ikeda Eisen (Japanese, 1790–1848)",1790,1848,Japanese
+TCMA-22821,"Zhang Ning (Chinese, 1426-c. 1495)",1426,1500,Chinese
+TCMA-1115,"Kamisaka Sekka (Japanese, 1866–1942)",1866,1942,Japanese
+TCMA-63523,"Yusuf Ali (Indian, active early 1600s)",None,None,Indian
+TCMA-31353,"Zheng Xie (Chinese, 1693–1765)",1693,1765,Chinese
+TCMA-18294,"Félix Hilaire Buhot (French, 1847–1898)",1847,1898,French
+TCMA-22845,"Suzuki Fuyō (Japanese, 1749–1816)",1749,1816,Japanese
+TCMA-286585,"Khalilullah Butshikan (Persian, active in India 1596–c. 1620)",None,None,Persian
+TCMA-2478,"Károly Markó (Hungarian, 1791–1860)",1791,1860,Hungarian
+TCMA-1655,"Émile van Marcke (French, 1827–1890)",1827,1890,French
+TCMA-4522,"John Semon (American, 1852–1917)",1852,1917,American
+TCMA-1745,"François-Auguste Ravier (French, 1814–1895)",1814,1895,French
+TCMA-1676,"Henri Joseph Harpignies (French, 1819–1916)",1819,1916,French
+TCMA-3282,"Walter Sickert (British, 1860–1942)",1860,1942,British
+TCMA-2861,"Pieter Christoffel Wonder (Dutch, 1780–1852)",1780,1852,Dutch
+TCMA-2466,"Charles Loring Elliott (American, 1812–1868)",1812,1868,American
+TCMA-3252,"Caroline L. Ransom (American, 1838–1910)",1838,1910,American
+TCMA-4531,"R. Way Smith (American, 1840–1900)",1840,1900,American
+TCMA-6630,"George Andries Roth (Dutch, 1809–1887)",1809,1887,Dutch
+TCMA-30130,"Shang Rui (Chinese, 1634?-)",1634,None,Chinese
+TCMA-1548,"Adolphe Appian (French, 1818–1898)",1818,1898,French
+TCMA-1709,"Paul Delaroche (French, 1797–1856)",1797,1856,French
+TCMA-35917,"Kimura Kenkadō (Japanese, 1736–1802)",1736,1802,Japanese
+TCMA-33395,"Tsuda Bensaku (Japanese, active 1620s-40s)",None,None,Japanese
+TCMA-35733,"Nakajima Raishō (Japanese, 1796–1871)",1796,1871,Japanese
+TCMA-2897,"Archibald Willard (American, 1836–1918)",1836,1918,American
+TCMA-31426,"Zeng Yandong (Chinese, c. 1751–1827)",1751,1827,Chinese
+TCMA-38541,"Fang Congyi (Chinese, active c. 1340–1380)",None,None,Chinese
+TCMA-35943,"Hakuin Ekaku (Japanese, 1685–1768)",1685,1768,Japanese
+TCMA-31132,"Yu Yuan (Chinese, active 1700s)",None,None,Chinese
+TCMA-36260,"Zhang Xiong (Chinese, 1803–1886)",1803,1886,Chinese
+TCMA-34885,"Louis Marcoussis (French, 1883–1941)",1883,1941,French
+TCMA-4100,"William Trost Richards (American, 1833–1905)",1833,1905,American
+TCMA-6580,"Jervis McEntee (American, 1828–1891)",1828,1891,American
+TCMA-6774,"Arthur Fitzwilliam Tait (American, 1819–1905)",1819,1905,American
+TCMA-2412,"Chester Harding (American, 1792–1866)",1792,1866,American
+TCMA-31212,"Gu Chao (Chinese, active late 1700s)",None,None,Chinese
+TCMA-34613,"Tsubaki Chinzan (Japanese, 1801–1854)",1801,1854,Japanese
+TCMA-23322,"Hishikawa Moronobu (Japanese, c. 1618–1694)",1618,1694,Japanese
+TCMA-6175,"Kano Einō (Japanese, 1631–1697)",1631,1697,Japanese
+TCMA-4430,"Hugh Huntington Howard (American, 1860–1927)",1860,1927,American
+TCMA-3176,"Vladimir Egorovic Makovskij (Russian, 1846–1920)",1846,1920,Russian
+TCMA-32611,"Mori Sosen (Japanese, 1747–1821)",1747,1821,Japanese
+TCMA-1868,"Charles-Émile Jacque (French, 1813–1894)",1813,1894,French
+TCMA-20602,"Shokadō Shōjō (Japanese, 1584–1639)",1584,1639,Japanese
+TCMA-66894,"Judō (Japanese, active 16th century)",None,1599,Japanese
+TCMA-24853,"J. C. Arter (American, 1859–1923)",1859,1923,American
+TCMA-35861,"Yoshida Hiroshi (Japanese, 1876–1950)",1876,1950,Japanese
+TCMA-26462,"Mariano Fortuny (Spanish, 1838–1874)",1838,1874,Spanish
+TCMA-9793,"Hendrik Dirk Kruseman van Elten (American, 1829–1904)",1829,1904,American
+TCMA-6786,"John Harrison Witt (American, 1840–1901)",1840,1901,American
+TCMA-3255,"Frank K. M. Rehn (American, 1848–1914)",1848,1914,American
+TCMA-22706,"Yoshitsugu Haizan (Japanese, 1846–1915)",1846,1915,Japanese
+TCMA-30438,"Yang Borun (Chinese, 1837–1911)",1837,1911,Chinese
+TCMA-57445,"Marie-François Firmin-Girard (French, 1838–1921)",1838,1921,French
+TCMA-66891,"Hirowatari Setsuzan (Japanese, ?-1674)",None,1674,Japanese
+TCMA-32879,"Hanabusa Itchō (Japanese, 1652–1724)",1652,1724,Japanese
+TCMA-29217,"Adrien Dauzats (French, 1804–1868)",1804,1868,French
+TCMA-22145,"Martin Drölling (French, 1752–1817)",1752,1817,French
+TCMA-2112,"Victor Charreton (French, 1864–1936)",1864,1936,French
+TCMA-2891,"Ezra Ames (American, 1768–1836)",1768,1836,American
+TCMA-63381,"Johann Heinrich Neumann (German, 1801–1879)",1801,1879,German
+TCMA-2888,"Henry Inman (American, 1801–1846)",1801,1846,American
+TCMA-24838,"Shao Gao (Chinese, c. 1595-c. 1643)",1590,1648,Chinese
+TCMA-63384,"Adolphe Charles Edouard Steinheil (French, 1850–1908)",1850,1908,French
+TCMA-3270,"August Satra (American, 1877–1909)",1877,1909,American
+TCMA-2496,"Robert Loftin Newman (American, 1827–1912)",1827,1912,American
+TCMA-23727,"Fan Kuan (Chinese, active c. 990–c. 1030)",960,1035,Chinese
+TCMA-35471,"Konoe Nobutada (Japanese, 1565–1614)",1565,1614,Japanese
+TCMA-3336,"James Harvey Young (American, 1830–1918)",1830,1918,American
+TCMA-23311,"Ma Yu (Chinese, active 1706–1724)",None,None,Chinese
+TCMA-12953,"Roelant Savery (Flemish, 1576–1639)",1576,1639,Flemish
+TCMA-57448,"Rafel Govertsz. Camphuysen (Dutch, 1597/98–1657)",1597,1657,Dutch
