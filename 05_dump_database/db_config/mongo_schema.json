@@ -85,13 +85,13 @@
                                         "bsonType": "array",
                                         "items": {
                                             "bsonType": "object",
-                                            "required": ["text", "timestamp"],
+                                            "required": ["role", "content"],
                                             "properties": {
-                                                "text": {
+                                                "role": {
                                                     "bsonType": "string"
                                                 },
-                                                "timestamp": {
-                                                    "bsonType": "date"
+                                                "content": {
+                                                    "bsonType": "string"
                                                 }
                                             }
                                         }
