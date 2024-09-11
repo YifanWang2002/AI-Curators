@@ -5,7 +5,9 @@ class SameArtistChannel:
 
     def __init__(self, metadata):
         self.metadata = metadata
-        self.artist_artworks = metadata.groupby("artist_display").apply(
+        self.metadata["artist_display"] = self.metadata["artist_family_name"] + " " + self.metadata["artist_given_name"]
+        self.metadata["artist_display"] = self.metadata["artist_display"].fillna("Unknown")
+        self.artist_artworks = self.metadata.groupby("artist_display").apply(
             lambda x: list(x.index)
         )
 

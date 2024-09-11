@@ -15,7 +15,7 @@ from utils.debug import save_images
 
 DATA_DIR = "../data"
 IMAGE_DIR = "../images"
-OUTPUT_DIR = "output_0910"
+OUTPUT_DIR = "output_0911"
 
 random.seed(0)
 
@@ -140,7 +140,8 @@ class Recommender:
         if len(result) > 0:
             filename = f"Page {page_idx+1}"
             result.to_csv(os.path.join(OUTPUT_DIR, filename + ".csv"))
-            save_images(os.path.join(OUTPUT_DIR, filename + ".jpg"), result["image_id"], result['url'])
+            # save_images(os.path.join(OUTPUT_DIR, filename + ".jpg"), result["image_id"], result['url'])
+            save_images(os.path.join(OUTPUT_DIR, filename + ".jpg"), result["artwork_id"], result['compressed_url'])
 
         # for recs, artist in zip(artist_recs_list, artist_list):
         #     result = metadata.iloc[recs].copy()
@@ -194,9 +195,10 @@ if __name__ == "__main__":
             if len(result) > 0:
                 filename = "user_log"
                 result.to_csv(os.path.join(OUTPUT_DIR, filename + ".csv"))
-                save_images(
-                    os.path.join(OUTPUT_DIR, filename + ".jpg"), result["image_id"], result['url']
-                )
+                # save_images(
+                #     os.path.join(OUTPUT_DIR, filename + ".jpg"), result["image_id"], result['url']
+                # )
+                save_images(os.path.join(OUTPUT_DIR, filename + ".jpg"), result["artwork_id"], result['compressed_url'])
 
             recommender.update_data(user_log)
 
