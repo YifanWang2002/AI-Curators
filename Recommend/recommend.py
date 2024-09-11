@@ -15,7 +15,7 @@ from utils.debug import save_images
 
 DATA_DIR = "../data"
 IMAGE_DIR = "../images"
-OUTPUT_DIR = "output"
+OUTPUT_DIR = "output_0910"
 
 random.seed(0)
 
@@ -50,7 +50,7 @@ class Recommender:
 
         self.image_sim_channel = ImageSimChannel(
             index_path=os.path.join(DATA_DIR, f"artworks_dino.index"),
-            embedding_path=os.path.join(DATA_DIR, f"search_embeds_dino.npy"),
+            embedding_path=os.path.join(DATA_DIR, f"embeds_dino.npy"),
             page_rec_len=self.configs["page_rec_len"],
             shuffle_len=self.configs["shuffle_len"],
         )
@@ -140,7 +140,7 @@ class Recommender:
         if len(result) > 0:
             filename = f"Page {page_idx+1}"
             result.to_csv(os.path.join(OUTPUT_DIR, filename + ".csv"))
-            save_images(os.path.join(OUTPUT_DIR, filename + ".jpg"), result["image_id"])
+            save_images(os.path.join(OUTPUT_DIR, filename + ".jpg"), result["image_id"], result['url'])
 
         # for recs, artist in zip(artist_recs_list, artist_list):
         #     result = metadata.iloc[recs].copy()
@@ -195,7 +195,7 @@ if __name__ == "__main__":
                 filename = "user_log"
                 result.to_csv(os.path.join(OUTPUT_DIR, filename + ".csv"))
                 save_images(
-                    os.path.join(OUTPUT_DIR, filename + ".jpg"), result["image_id"]
+                    os.path.join(OUTPUT_DIR, filename + ".jpg"), result["image_id"], result['url']
                 )
 
             recommender.update_data(user_log)

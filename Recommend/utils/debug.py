@@ -1,15 +1,32 @@
 import os
+import requests
 from PIL import Image
 
-IMAGE_DIR = "../Embedding/images"
+IMAGE_DIR = "images"
 
 
-def save_images(filepath, image_ids, nrow=5):
+def save_images(filepath, image_ids, urls=None, nrow=5):
     # Load images
-    images = [
-        Image.open(os.path.join(IMAGE_DIR, f"{image_id}.jpg")) for image_id in image_ids
-    ]
-
+    images = []
+    for i, image_id in enumerate(image_ids):
+        image_path = os.path.join(IMAGE_DIR, f"{image_id}.jpg")
+        if not os.path.exists(image_path):
+            try:
+                response = requests.get(urls.iloc[i])
+                if response.status_code == 200:
+                    with open(image_path, "wb") as f:
+                        f.write(response.content)
+                else:
+                    print(f"Failed to download image {image_id}: Response code {response.status_code}")
+                    continue
+            except Exception as e:
+                print(f"Failed to download image {image_id}: {e}")
+                continue
+        image = Image.open(image_path)
+        images.append(image)
+    if len(images) == 0:
+        print("No images to save")
+        return
     # Calculate the size of the grid
     nrows = (len(images) + nrow - 1) // nrow
     max_widths = [0] * nrow
