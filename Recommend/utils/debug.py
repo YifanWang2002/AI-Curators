@@ -1,4 +1,5 @@
 import os
+import pandas as pd
 import requests
 from PIL import Image
 
@@ -8,6 +9,8 @@ IMAGE_DIR = "images"
 def save_images(filepath, image_ids, urls=None, nrow=5):
     # Load images
     images = []
+    if not os.path.exists(IMAGE_DIR):
+        os.makedirs(IMAGE_DIR)
     for i, image_id in enumerate(image_ids):
         image_path = os.path.join(IMAGE_DIR, f"{image_id}.jpg")
         if not os.path.exists(image_path):
@@ -54,3 +57,20 @@ def save_images(filepath, image_ids, urls=None, nrow=5):
 
     grid_image.save(filepath)
     print(f"Image saved as {filepath}")
+
+
+def read_user_log(page_idx):
+    object_id_offset = page_idx * 4
+    user_log = pd.DataFrame(
+        {
+            "object_id": [1258 + object_id_offset, 146 + object_id_offset, 150 + object_id_offset, 1155 + object_id_offset],
+            "timestamp": [
+                "2024-09-16 23:12:04.378821",
+                "2024-09-16 23:12:10.378821",
+                "2024-09-16 23:13:04.378821",
+                "2024-09-16 23:13:10.378821",
+            ],
+        }
+    )
+    user_log["timestamp"] = pd.to_datetime(user_log["timestamp"])
+    return user_log
