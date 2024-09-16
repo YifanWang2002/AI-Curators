@@ -1,6 +1,7 @@
 import os
 import faiss
 import random
+import itertools
 import numpy as np
 
 
@@ -17,15 +18,17 @@ class ImageSimChannel:
         self.image_list = []
         self.interacted_set = set()
 
-    def update_data(self, unique_log, num_image, interacted_set):
-        self.image_list = unique_log.head(num_image).index.values
-        self.interacted_set = interacted_set
+    def update_image_list(self, final_recs_list):
+        self.image_list.extend(final_recs_list)
+        self.image_list = self.image_list[-self.num_per_page:]
     
     def get_interacted_set(self, user_id, updated):
         # TODO: Load interacted set from the database
         if updated:
             with open(os.path.join(self.configs["interacted_dir"], f"interacted_{user_id}.txt"), "r", encoding="utf-8") as f:
                 self.interacted_set = set(f.read().splitlines())
+            new_interacted = self.interacted_set - set(self.image_list)
+            self.image_list.extend(list(new_interacted)) 
         return self.interacted_set
 
     def get_recs_list(self, object_ids, num_rec_per_image):
@@ -59,5 +62,6 @@ class ImageSimChannel:
         ]
 
         image_names = [f"Image: {x}" for x in self.image_list]
+        self.update_image_list(list(itertools.chain(*final_recs_list)))
         print(image_names)
         return final_recs_list, image_names, len(final_recs_list)
