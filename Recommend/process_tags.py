@@ -3,11 +3,12 @@ import ast
 import faiss
 import numpy as np
 import pandas as pd
-from sentence_transformers import SentenceTransformer
+import torch
+import open_clip
 
 pd.set_option("display.width", None)
 
-DATA_DIR = "../data"
+DATA_DIR = "../new_data"
 
 
 def create_faiss_index(embeddings, index_path):
@@ -31,30 +32,24 @@ def safe_literal_eval(x, col):
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("../Embedding/data/paintings_v2.csv")
-    lit_columns = [
+    df = pd.read_csv(os.path.join(DATA_DIR, "artwork_with_gpt.csv"))
+
+    tag_columns = [
         "style_tags",
         "theme_tags",
         "main_objects",
         "other_objects",
-        "movement",
+        "movements",
     ]
-    for col in lit_columns:
+    for col in tag_columns:
         df[col] = df[col].apply(lambda x: safe_literal_eval(x, col))
-    print(df.shape)
-    df.dropna(subset=lit_columns, inplace=True)
-    print(df.shape)
+
     df["object_tags"] = df.apply(
         lambda row: list(row["main_objects"].keys()) + row["other_objects"], axis=1
     )
 
-    # for col in ["style_tags", "theme_tags", "object_tags"]:
-    #     tag_series = df[col].explode().str.capitalize()
-    #     tag_series.value_counts().sort_values(ascending=False).to_csv(
-    #         f"data/{col}_value_counts.csv"
-    #     )
     tags = []
-    for col in ["style_tags", "theme_tags", "object_tags", "movement"]:
+    for col in ["style_tags", "theme_tags", "object_tags", "movements"]:
         tmp = df[col].explode().reset_index(name="tag")
         tmp["type"] = col
         tags.append(tmp)
@@ -63,97 +58,53 @@ if __name__ == "__main__":
 
     # filter out date-related tags
     tags = tags[~tags["tag"].str.contains(r"century|\d+", case=False)]
-    tags["tag"] = (
-        tags["tag"]
-        .str.lower()
-        .replace("_", " ")
-        .replace(
-            r" (application|use|influence|art|painting|men|women|man|woman)$",
-            "",
-            regex=True,
-        )
-        .replace(r"impressionist(ic)?", "impressionism", regex=True)
-        .replace(r"mannerist", "mannerism", regex=True)
-        # .replace(r"(color palette|palette|tones)$", "color", regex=True)
-        # .replace(r"portrait$", "portraiture", regex=True)
-        .str.title()
-    )
+    tags["tag"] = tags["tag"].str.lower().str.replace("_", " ").str.title()
 
-    print(tags)
+    # tag_count = tags["tag"].value_counts().sort_values(ascending=False)
+    # tag_count.to_csv(os.path.join(DATA_DIR, "tag_count.csv"))
 
-    blacklist = [
-        "Art",
-        "Texture",
-        "Textured",
-        "Light",
-        "Identity",
-        "Beauty",
-        "Brushwork",
-        "Color",
-        "Subject",
-    ]
-    tags = tags[~tags["tag"].isin(blacklist)]
-    tag_counts = tags["tag"].value_counts().sort_values(ascending=False)
-    unique_tags = tag_counts.index.values
+    unique_tags = tag_count.index.to_list()
 
-    print(len(unique_tags))
+    # # Get Tag Embeddings
 
-    index_path = os.path.join(DATA_DIR, f"tag_e5.index")
+    # model, _, _ = open_clip.create_model_and_transforms(
+    #     "ViT-SO400M-14-SigLIP-384", pretrained="webli"
+    # )
+    # tokenizer = open_clip.get_tokenizer("ViT-SO400M-14-SigLIP-384")
 
-    # model = SentenceTransformer("intfloat/e5-large-v2")
     # tag_embeddings = []
-    # batch_size = 4
-    # for start_index in range(0, len(unique_tags), batch_size):
-    #     batch_documents = unique_tags[start_index : start_index + batch_size]
-    #     batch_embeddings = model.encode(batch_documents, normalize_embeddings=True)
-    #     tag_embeddings.extend(batch_embeddings)
+    # batch_size = 8
+    # with torch.no_grad(), torch.cuda.amp.autocast():
+    #     for start_index in range(0, len(unique_tags), batch_size):
+    #         tags = tokenizer(unique_tags[start_index : start_index + batch_size])
+    #         tags_embedding = model.encode_text(tags).numpy()
+    #         tags_embedding /= np.linalg.norm(tags_embedding, axis=1, keepdims=True)
+    #         tag_embeddings.extend(tags_embedding)
 
     # tag_embeddings = np.stack(tag_embeddings)
-    # np.save(os.path.join(DATA_DIR, "tag_embeddings.npy"), tag_embeddings)
+    # np.save(os.path.join(DATA_DIR, "all_tag_embeddings.npy"), tag_embeddings)
 
-    tag_embeddings = np.load(os.path.join(DATA_DIR, "tag_embeddings.npy"))
-    index = create_faiss_index(tag_embeddings, index_path)
+    tag_embeddings = np.load(os.path.join(DATA_DIR, "all_tag_embeddings.npy"))
 
-    synonyms_list = []
-    scores_list = []
-    str_list = []
-    for tag_embed in tag_embeddings:
-        D, I = search(tag_embed, index, 20)
-        synonyms_list.append(unique_tags[I[0][1:]])
-        scores_list.append(D[0][1:])
-        str_list.append(
-            ", ".join(unique_tags[i] + ":" + str(d) for d, i in zip(D[0], I[0]))
-        )
-    print(len(synonyms_list))
+    # NOTE: unique_tags is already sorted in the descending order of frequency
+    # NOTE: tag_embeddings and unique_tags have corresponding orders
 
-    tag_counts_df = tag_counts.reset_index()
-    tag_counts_df["synonyms"] = str_list
-    tag_counts_df.to_csv(os.path.join(DATA_DIR, "synonyms.csv"), index=False)
-
-    visited = set()
+    # Outer loop: keyword a, from the least frequent keyword to the most frequent keyword;
+    # Inner loop: keyword b, from the most frequent keyword to the element just more frequent than a.
+    # If a is very similar to b, map a to b.
     tag_mapping = dict()
-
-    for tag, synonyms, scores in zip(unique_tags, synonyms_list, scores_list):
-        for curr_tag, curr_score in zip(synonyms, scores):
-            if (
-                curr_score > 0.95
-                and tag_counts.loc[curr_tag] < 8
-                and curr_tag not in visited
-                and curr_tag != tag
-                and curr_tag not in tag_mapping
-            ):
-                root_tag = tag
-                while root_tag in tag_mapping:
-                    root_tag = tag_mapping[root_tag]
-                tag_mapping[curr_tag] = root_tag
-        visited.add(tag)
+    for i in range(len(unique_tags) - 1, -1, -1):
+        for j in range(i):
+            if np.dot(tag_embeddings[i], tag_embeddings[j]) > 0.94:
+                tag_mapping[unique_tags[i]] = unique_tags[j]
+                print(unique_tags[i], unique_tags[j])
 
     pd.DataFrame({"Source": tag_mapping.keys(), "Target": tag_mapping.values()}).to_csv(
         os.path.join(DATA_DIR, "tag_mapping.csv"), index=False
     )
     tags["tag"] = tags["tag"].replace(tag_mapping)
-    tag_counts = tags["tag"].value_counts().sort_values(ascending=False)
-    tag_counts.to_csv(os.path.join(DATA_DIR, "tags_replaced_count.csv"))
+
+    # Get the type for each tag
 
     def get_type(x):
         s = set(x.values)
@@ -165,10 +116,8 @@ if __name__ == "__main__":
     tag_types = tags.groupby("tag")["type"].agg(get_type).reset_index()
 
     tags = tags[["index", "tag"]].drop_duplicates()
-
-    tag_counts = tags["tag"].value_counts().sort_values(ascending=False).reset_index()
-
-    tag_count_type = pd.merge(tag_counts, tag_types, on="tag")
+    tag_count = tags["tag"].value_counts().sort_values(ascending=False).reset_index()
+    tag_count_type = pd.merge(tag_count, tag_types, on="tag")
     tag_count_type = tag_count_type[
         (tag_count_type["type"] == "style_tags") & (tag_count_type["count"] >= 8)
         | (tag_count_type["type"] == "theme_tags") & (tag_count_type["count"] >= 8)
@@ -176,21 +125,18 @@ if __name__ == "__main__":
         | (tag_count_type["type"] == "movement") & (tag_count_type["count"] >= 8)
     ]
     tag_count_type.to_csv(os.path.join(DATA_DIR, "tag_count_type.csv"), index=False)
-    tags = tags[tags["tag"].isin(tag_count_type["tag"])]
-    tags.to_csv(os.path.join(DATA_DIR, "tags.csv"), index=False)
-    for col in [
-        "style_tags",
-        "theme_tags",
-        "object_tags",
-        "movement",
-    ]:
-        tag_counts = tag_count_type[tag_count_type["type"] == col].to_csv(
-            os.path.join(DATA_DIR, col + ".csv"), index=False
-        )
+
+    # Save the tag embeddings in the same order as the entries in tag_count_type.csv
+
+    tag_embeddings = np.stack(
+        [tag_embeddings[unique_tags.index(tag)] for tag in tag_count_type["tag"]]
+    )
+    np.save(os.path.join(DATA_DIR, "tag_embeddings.npy"), tag_embeddings)
+
+    # Save the tags together with original columns
 
     tags = tags.groupby("index")["tag"].agg(list)
-
     df = df.join(tags)
     df.rename(columns={"tag": "tags"}, inplace=True)
     df["tags"] = df["tags"].apply(lambda x: x if isinstance(x, list) else [])
-    df.to_csv(os.path.join(DATA_DIR, "tags_replaced.csv"))
+    df.to_csv(os.path.join(DATA_DIR, "artwork_with_tags.csv"))
