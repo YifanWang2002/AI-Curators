@@ -40,7 +40,7 @@ class ArtworkRecommender:
         self.recommended = deque(maxlen=configs["exclude_num_recommended"])
 
         self.image_sim_channel = ImageSimChannel(configs=configs)
-        self.user_profile_channel = UserProfileChannel(metadata=metadata)
+        self.user_profile_channel = UserProfileChannel(user_id=user_id, configs=configs)
         self.common_tags_channel = CommonTagsChannel(
             metadata=metadata,
             tag_count_all_path=os.path.join(configs["data_dir"], "tag_count_type.csv"),
@@ -61,14 +61,14 @@ class ArtworkRecommender:
             unique_log=unique_log,
             tag_log_len=self.configs["tag_log_len"],
             num_tag=self.configs["num_tag"],
-            interacted_set=set(unique_log.head(self.configs["num_interacted"]).index)
+            interacted_set=set(unique_log.head(self.configs["exclude_num_interacted"]).index)
         )
 
     def recommend(self, context_info):
         random_recs_list, random_names, len_random = self.random_rec_channel(
             user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended))
         image_recs_list, image_names, len_image = self.image_sim_channel(
-            user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list)
+            user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list[0])
         profile_recs_list, profile_names, len_profile = self.user_profile_channel(
             context_info=context_info, recommended_set=set(self.recommended))
         tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
@@ -83,12 +83,13 @@ class ArtworkRecommender:
             + [ 1 / len_random * self.num_consec] * len_random
             # weight for the random rec channel, which becomes larger when the user browsers recommendation pages consecutively without clicking anything
         )
-
         all_channel_recs = (
             image_recs_list + profile_recs_list + tag_recs_list + random_recs_list
         )
+        print(len(all_channel_recs))
         all_channel_names = image_names + profile_names + tag_names + random_names
         num_channels = len_image + len_profile + len_tag + len_random
+        print(num_channels)
         positions = [0] * num_channels
 
         recs = []
@@ -110,9 +111,9 @@ class ArtworkRecommender:
 
         rec_result = self.metadata.iloc[recs].copy()
         if len(rec_result) > 0:
-            filename = f"Page {str(context_info['page_idx'])+1}"
+            filename = f"Page {str(context_info['page_idx']+1)}"
             rec_result.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))
-            save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result["artwork_id"], rec_result['compressed_url'])
+            # save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result["artwork_id"], rec_result['compressed_url'])
 
 if __name__ == "__main__":
 
@@ -134,7 +135,7 @@ if __name__ == "__main__":
             if len(result) > 0:
                 filename = "user_log"
                 result.to_csv(os.path.join(configs["output_dir"], filename + ".csv"))
-                save_images(os.path.join(configs["output_dir"], filename + ".jpg"), result["artwork_id"], result['compressed_url'])
+                # save_images(os.path.join(configs["output_dir"], filename + ".jpg"), result["artwork_id"], result['compressed_url'])
 
             artwork_recommender.update_data(user_log)
 

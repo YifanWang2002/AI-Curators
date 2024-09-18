@@ -17,6 +17,25 @@ class CommonTagsChannel:
         self.tag_artworks = self.metadata_explode.groupby("tags").apply(
             lambda x: list(x.index)
         )
+        self.interacted_set = set()
+        self.tag_list = ["Nature", "Realism"]
+        self.init_tag_candidates()
+    
+    def init_tag_candidates(self):
+        self.candidates_list = []
+        tag_rate_dict = {"Nature": 0.9, "Realism": 0.5}
+        for tag in self.tag_list:
+            object_ids = self.tag_artworks.loc[tag]
+            obj_tag_scores = (
+                self.metadata.loc[object_ids]["tags"]
+                .apply(
+                    lambda tags: sum(
+                        tag_rate_dict[tag] for tag in tags if tag in tag_rate_dict
+                    )
+                )
+                .sort_values(ascending=False)
+            )
+            self.candidates_list.append(obj_tag_scores.index.tolist())
 
     def update_data(self, unique_log, tag_log_len, num_tag, interacted_set):
         id_tag_time = (
@@ -94,4 +113,4 @@ class CommonTagsChannel:
 
         tag_names = [f"Tag: {x}" for x in self.tag_list]
         print(tag_names)
-        return tag_recs_list, tag_names
+        return tag_recs_list, tag_names, len(tag_recs_list)

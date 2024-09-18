@@ -13,7 +13,7 @@ class RandomRecChannel:
         # TODO: Load interacted set from the database
         if updated:
             with open(os.path.join(self.configs["interacted_dir"], f"interacted_{user_id}.txt"), "r", encoding="utf-8") as f:
-                self.interacted_set = self.interacted_set | set(f.read().splitlines())
+                self.interacted_set = self.interacted_set | set([int(idx) for idx in f.read().splitlines()])
         return self.interacted_set
 
     def __call__(self, user_id, context_info, recommended_set):
@@ -23,4 +23,4 @@ class RandomRecChannel:
         seed = user_id + context_info["timestamp"]
         random_recs_list = candidates.sample(n=self.num_per_page, random_state=seed).index.tolist()
 
-        return random_recs_list, ["Random"] * len(random_recs_list), len(random_recs_list)
+        return [random_recs_list], ["Random"] * len(random_recs_list), 1

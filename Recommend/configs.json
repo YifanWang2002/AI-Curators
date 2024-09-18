@@ -27,6 +27,10 @@
         "value": 20,
         "description": "Number of unique log entries for calculating tag click rates"
     },
+    "interacted_dir": {
+        "value": "./interacted_logs",
+        "description": "Directory for interacted data"
+    },
     "data_dir": {
         "value": "../data",
         "description": "Directory containing data files"
@@ -35,8 +39,12 @@
         "value": "../images",
         "description": "Directory containing image files"
     },
+    "pre_survey_dir": {
+        "value": "./pre_survey",
+        "description": "Directory containing pre-survey data files"
+    },
     "output_dir": {
-        "value": "output_0911",
+        "value": "output_0918",
         "description": "Directory to save output files"
     },
     "image_emb_index_path": {
@@ -46,5 +54,17 @@
     "image_emb_path": {
         "value": "../data/embeds_dino.npy",
         "description": "image embedding file path"
+    },
+    "tag_emb_index_path": {
+        "value": "../new_data/tag_clip.index",
+        "description": "tag embedding file path"
+    },
+    "tag_emb_path": {
+        "value": "../new_data/tag_embeddings.npy",
+        "description": "tag embedding file path"
+    },
+    "tag_count_type_path": {
+        "value": "../new_data/tag_count_type.csv",
+        "description": "file path for tag_count_type.csv"
     }
 }

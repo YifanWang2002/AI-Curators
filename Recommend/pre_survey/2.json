@@ -1,0 +1,18 @@
+{
+    "artist": {
+        "artist_id": "artist001",
+        "value": "Claude Monet"
+    },
+    "genre": {
+        "genre_id": "genre001",
+        "value": "Impressionism"
+    },
+    "theme": {
+        "theme_id": "theme001",
+        "value": "Nature"
+    },
+    "style": {
+        "style_id": "style001",
+        "value": "Baroque"
+    }
+}
