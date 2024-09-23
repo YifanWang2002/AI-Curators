@@ -108,7 +108,7 @@ if __name__ == "__main__":
 
     def get_type(x):
         s = set(x.values)
-        for tag in ["movement", "style_tags"]:
+        for tag in ["movements", "style_tags"]:
             if tag in s:
                 return tag
         return x.mode()[0]
@@ -122,7 +122,7 @@ if __name__ == "__main__":
         (tag_count_type["type"] == "style_tags") & (tag_count_type["count"] >= 8)
         | (tag_count_type["type"] == "theme_tags") & (tag_count_type["count"] >= 8)
         | (tag_count_type["type"] == "object_tags") & (tag_count_type["count"] >= 8)
-        | (tag_count_type["type"] == "movement") & (tag_count_type["count"] >= 8)
+        | (tag_count_type["type"] == "movements") & (tag_count_type["count"] >= 8)
     ]
     tag_count_type.to_csv(os.path.join(DATA_DIR, "tag_count_type.csv"), index=False)
 

@@ -1,99 +1,99 @@
 tag,count,type
-Nature,4658,style_tags
-Realism,3942,style_tags
+Nature,4658,movements
+Realism,3942,movements
 Trees,3267,object_tags
-Traditional,2691,style_tags
+Traditional,2691,movements
 Detailed,2502,style_tags
 Harmony,2429,style_tags
-Landscape,2138,style_tags
+Landscape,2138,movements
 Tranquility,2076,style_tags
 Spirituality,1688,style_tags
-Baroque,1242,style_tags
+Baroque,1242,movements
 Clouds,1120,object_tags
-Minimalism,1112,style_tags
+Minimalism,1112,movements
 Woman,1072,object_tags
 Mountains,1070,object_tags
-Japanese,1003,style_tags
+Japanese,1003,movements
 Chiaroscuro,952,style_tags
-Portraiture,885,style_tags
+Portraiture,885,movements
 Introspection,881,theme_tags
-Ink Wash,838,style_tags
+Ink Wash,838,movements
 Vibrant,829,style_tags
-Naturalism,802,style_tags
+Naturalism,802,movements
 Sky,795,object_tags
 Elegance,795,style_tags
-Impressionism,771,style_tags
+Impressionism,771,movements
 Beauty,762,theme_tags
 Tradition,738,theme_tags
-Romanticism,724,style_tags
-Renaissance,702,style_tags
+Romanticism,724,movements
+Renaissance,702,movements
 River,699,object_tags
 Serenity,692,theme_tags
 Rocks,676,object_tags
 Man,676,object_tags
 Figures,647,object_tags
-Miniature,643,style_tags
+Miniature,643,movements
 Devotion,624,theme_tags
 Contemplation,613,style_tags
-Calligraphy,606,style_tags
+Calligraphy,606,movements
 Divinity,602,theme_tags
 Flowers,588,object_tags
-Portrait,582,style_tags
+Portrait,582,movements
 Horses,574,object_tags
 Monochrome,569,style_tags
-Enlightenment,512,theme_tags
-Chinese Painting,501,style_tags
+Enlightenment,512,movements
+Chinese Painting,501,movements
 Hills,501,object_tags
 Architecture,487,style_tags
-Indian Miniature,486,style_tags
+Indian Miniature,486,movements
 Foliage,476,object_tags
 Chinese,472,style_tags
 Status,460,theme_tags
-Rococo,442,style_tags
+Rococo,442,movements
 Wisdom,441,theme_tags
 Mythology,437,style_tags
-Neoclassicism,434,style_tags
+Neoclassicism,434,movements
 Culture,432,theme_tags
-Religious,428,style_tags
+Religious,428,movements
 Vibrant Colors,419,style_tags
 Divine,418,theme_tags
 Solitude,415,theme_tags
-Ink Painting,408,style_tags
-East Asian,407,style_tags
-Japanese Art,401,style_tags
+Ink Painting,408,movements
+East Asian,407,movements
+Japanese Art,401,movements
 Table,398,object_tags
-Chinese Landscape Painting,393,style_tags
+Chinese Landscape Painting,393,movements
 Simplicity,391,style_tags
-Nihonga,390,style_tags
+Nihonga,390,movements
 Dignity,389,theme_tags
 Ink,383,style_tags
-Classical,381,style_tags
+Classical,381,movements
 Nobility,381,theme_tags
-Northern Renaissance,377,style_tags
+Northern Renaissance,377,movements
 Dog,376,object_tags
 Birds,374,object_tags
 Power,370,theme_tags
 Dramatic,358,style_tags
-Buddhist Art,358,style_tags
+Buddhist Art,358,movements
 Identity,356,theme_tags
 Chair,351,object_tags
-Edo Period,350,style_tags
-Ukiyo-E,348,style_tags
+Edo Period,350,movements
+Ukiyo-E,348,movements
 Buildings,347,object_tags
 Community,344,theme_tags
 Intricate,340,style_tags
 Muted Colors,337,style_tags
 Elegant,337,style_tags
-Gothic,336,style_tags
-Manuscript,334,style_tags
+Gothic,336,movements
+Manuscript,334,movements
 Book,326,object_tags
 Water,319,object_tags
-Traditional Chinese,319,style_tags
+Traditional Chinese,319,movements
 Innocence,315,theme_tags
 Family,313,theme_tags
 Leisure,310,theme_tags
-Japanese Ink Painting,310,style_tags
-Mughal,308,style_tags
+Japanese Ink Painting,310,movements
+Mughal,308,movements
 Gold Leaf,304,style_tags
 Path,304,object_tags
 Naturalistic,299,style_tags
@@ -102,7 +102,7 @@ Expressive,295,style_tags
 Leaves,294,object_tags
 Faith,292,theme_tags
 Ornate,291,style_tags
-Dutch Golden Age,289,style_tags
+Dutch Golden Age,289,movements
 Rural Life,288,style_tags
 Boats,277,object_tags
 Reflection,276,style_tags
@@ -113,49 +113,49 @@ Attendants,263,object_tags
 Religion,261,theme_tags
 Transience,259,theme_tags
 Dynamic,259,style_tags
-Indian,257,style_tags
-Japanese Painting,251,style_tags
+Indian,257,movements
+Japanese Painting,251,movements
 Figure,251,style_tags
 Virgin Mary,247,object_tags
 Hat,247,object_tags
 Christ,244,object_tags
-Buddhism,239,style_tags
-Folk Art,239,style_tags
-Post-Impressionism,233,style_tags
+Buddhism,239,movements
+Folk Art,239,movements
+Post-Impressionism,233,movements
 Authority,233,theme_tags
 Angels,220,object_tags
 Bridge,218,object_tags
-Narrative,217,style_tags
+Narrative,217,movements
 Boat,216,object_tags
 History,216,theme_tags
 Jewelry,208,object_tags
-Decorative,206,style_tags
-Still Life,203,style_tags
+Decorative,206,movements
+Still Life,203,movements
 Drapery,202,style_tags
 Bamboo,201,object_tags
 Sacrifice,199,theme_tags
 Music,195,theme_tags
-American Realism,195,style_tags
+American Realism,195,movements
 Heritage,192,theme_tags
-East Asian Art,189,style_tags
+East Asian Art,189,movements
 Royalty,186,theme_tags
 Branches,186,object_tags
 Peace,185,theme_tags
 Love,183,theme_tags
 Protection,178,theme_tags
-Miniature Painting,177,style_tags
+Miniature Painting,177,movements
 Columns,177,object_tags
-Chinese Traditional Art,176,style_tags
+Chinese Traditional Art,176,movements
 Scroll,175,style_tags
 Intimacy,175,style_tags
 Femininity,174,theme_tags
-Chinese Landscape,172,style_tags
+Chinese Landscape,172,movements
 Pavilion,172,object_tags
 Minimalist,169,style_tags
-Hudson River School,166,style_tags
-Persian Miniature,166,style_tags
+Hudson River School,166,movements
+Persian Miniature,166,movements
 Resilience,165,theme_tags
-Pastoral,165,style_tags
+Pastoral,165,movements
 Atmospheric,163,style_tags
 Delicate Brushwork,163,style_tags
 Sea,162,style_tags
@@ -167,31 +167,32 @@ Balance,158,style_tags
 Window,157,object_tags
 Motherhood,156,theme_tags
 Meditation,156,style_tags
-Indian Art,155,style_tags
+Indian Art,155,movements
 Madonna,155,object_tags
 Curtain,154,object_tags
 Celebration,152,theme_tags
 Animals,151,object_tags
 Cultural Identity,151,theme_tags
-Tibetan Art,150,style_tags
-Medieval,150,style_tags
+Tibetan Art,150,movements
+Medieval,150,movements
 Conflict,150,theme_tags
 Halo,149,object_tags
-Historical,149,style_tags
+Historical,149,movements
 Soldiers,148,object_tags
-Sacred,148,style_tags
+Sacred,148,movements
 Gentleman,148,object_tags
 Compassion,147,theme_tags
 Vegetation,145,object_tags
 Krishna,145,object_tags
 Fan,144,object_tags
-Traditional Japanese,143,style_tags
+Traditional Japanese,143,movements
 Sword,143,object_tags
 Symmetrical,143,style_tags
-Sumi-E,143,style_tags
+Sumi-E,143,movements
 Childhood,143,theme_tags
-Symbolism,141,style_tags
+Symbolism,141,movements
 Reverence,141,theme_tags
+Edo Period Art,140,movements
 Waterfall,139,object_tags
 Grace,139,style_tags
 Christ Child,139,object_tags
@@ -211,32 +212,32 @@ Emotion,131,style_tags
 Colorful,131,style_tags
 House,131,object_tags
 Houses,130,object_tags
-Tibetan,129,style_tags
+Tibetan,129,movements
 Romance,129,style_tags
 Cross,128,object_tags
-Traditional Chinese Painting,128,style_tags
+Traditional Chinese Painting,128,movements
 Abundance,128,theme_tags
-Mughal Art,126,style_tags
+Mughal Art,126,movements
 Youth,126,theme_tags
 Loose Brushwork,126,style_tags
-Religious Art,125,style_tags
+Religious Art,125,movements
 Soft Brushstrokes,125,style_tags
 Daily Life,124,theme_tags
-Nanga,123,style_tags
+Nanga,123,movements
 Individuality,123,theme_tags
 Staff,122,object_tags
-Kano School,122,style_tags
+Kano School,122,movements
 Vivid,121,style_tags
 Heroism,121,theme_tags
 Moon,121,object_tags
 Ships,121,object_tags
-Symbolic,120,style_tags
-Barbizon School,118,style_tags
+Symbolic,120,movements
+Barbizon School,118,movements
 Journey,118,theme_tags
 Cows,118,object_tags
 Cultural Heritage,118,theme_tags
-Thangka,118,style_tags
-Traditional Asian Art,117,style_tags
+Thangka,118,movements
+Traditional Asian Art,117,movements
 Infant Jesus,117,object_tags
 Mary,117,object_tags
 Building,116,object_tags
@@ -246,9 +247,9 @@ Script,112,style_tags
 Purity,111,theme_tags
 Aristocracy,111,theme_tags
 Redemption,110,theme_tags
-Iconography,110,style_tags
+Iconography,110,movements
 Books,109,object_tags
-Jain Art,108,style_tags
+Jain Art,108,movements
 Fields,108,object_tags
 Jainism,107,theme_tags
 Robe,106,object_tags
@@ -258,36 +259,36 @@ Everyday Life,103,theme_tags
 Brushwork,103,style_tags
 Children,102,object_tags
 Girl,100,object_tags
-Japanese Traditional Art,100,style_tags
+Japanese Traditional Art,100,movements
 Cultural,99,style_tags
 Scholarship,98,theme_tags
-Asian,98,style_tags
+Asian,98,movements
 Angel,97,object_tags
 Gown,97,object_tags
 Wealth,97,theme_tags
 Pine Trees,97,object_tags
-Mannerism,96,style_tags
+Mannerism,96,movements
 Garments,96,object_tags
 Sailboats,96,object_tags
 Sublime,96,style_tags
 Storytelling,96,theme_tags
 Cherubs,96,object_tags
 Women,96,object_tags
-Ethnographic,95,style_tags
+Ethnographic,95,movements
 Young Man,94,object_tags
-Yamato-E,94,style_tags
+Yamato-E,94,movements
 Strength,94,theme_tags
-Ming Dynasty,94,style_tags
-Rajasthani,93,style_tags
-Literati,92,style_tags
+Ming Dynasty,94,movements
+Rajasthani,93,movements
+Literati,92,movements
 Sheep,91,object_tags
-Persian,91,style_tags
+Persian,91,movements
 Village,91,object_tags
 Musical Instruments,90,object_tags
 Companionship,90,theme_tags
 Waves,90,object_tags
-Literati Painting,89,style_tags
-Early Renaissance,89,style_tags
+Literati Painting,89,movements
+Early Renaissance,89,movements
 Boy,89,object_tags
 Society,88,theme_tags
 Harmonious,88,style_tags
@@ -299,8 +300,9 @@ Young Woman,87,object_tags
 Exploration,87,theme_tags
 Weapons,86,object_tags
 Time,84,theme_tags
-Mythological,84,style_tags
+Mythological,84,movements
 Textured,84,style_tags
+Ming Dynasty Art,83,movements
 Joseph,83,object_tags
 Fruits,83,object_tags
 Domesticity,83,theme_tags
@@ -310,41 +312,42 @@ Biblical,82,theme_tags
 Central Figure,82,object_tags
 Rich Colors,82,style_tags
 Knowledge,81,theme_tags
+American Romanticism,81,movements
 Background,81,object_tags
 Wildlife,80,style_tags
 Deer,80,object_tags
-Expressionism,80,style_tags
+Expressionism,80,movements
 Labor,79,theme_tags
 Survival,79,theme_tags
-Chinese Art,79,style_tags
+Chinese Art,79,movements
 Floral Motifs,79,style_tags
-Genre Painting,78,style_tags
+Genre Painting,78,movements
 Winter,78,style_tags
 Transformation,78,theme_tags
-Chinese Ink Painting,77,style_tags
+Chinese Ink Painting,77,movements
 Mortality,77,theme_tags
 Divine Intervention,77,theme_tags
 Statue,77,object_tags
 Social Interaction,76,theme_tags
-Pahari,76,style_tags
+Pahari,76,movements
 Attendant,76,object_tags
 Soft Brushwork,76,style_tags
-Rinpa,76,style_tags
+Rinpa,76,movements
 Lion,76,object_tags
 Geese,76,object_tags
-Ethnographic Art,76,style_tags
+Ethnographic Art,76,movements
 Holiness,75,theme_tags
-Maritime,75,style_tags
+Maritime,75,movements
 Martyrdom,75,theme_tags
 Feathers,74,object_tags
 Ethereal,74,style_tags
-Barbizon,74,style_tags
+Barbizon,74,movements
 Saints,74,object_tags
-Traditional East Asian,74,style_tags
+Traditional East Asian,74,movements
 Piety,73,theme_tags
 Light,72,style_tags
-Tonalism,72,style_tags
-High Renaissance,72,style_tags
+Tonalism,72,movements
+High Renaissance,72,movements
 Humility,72,theme_tags
 Coexistence,72,theme_tags
 Bushes,72,object_tags
@@ -357,18 +360,18 @@ Renewal,70,theme_tags
 Lotus,70,object_tags
 Ornamental,70,style_tags
 Ceremony,70,theme_tags
-Zen,70,style_tags
+Zen,70,movements
 Suffering,69,theme_tags
 Headdress,69,object_tags
 Unity,69,theme_tags
 Communication,68,theme_tags
-Venetian,68,style_tags
+Venetian,68,movements
 Musicians,68,object_tags
-Abstract,68,style_tags
+Abstract,68,movements
 Architectural Elements,67,object_tags
-American Folk Art,67,style_tags
+American Folk Art,67,movements
 Fish,67,object_tags
-Italian Renaissance,67,style_tags
+Italian Renaissance,67,movements
 Parrot,66,object_tags
 Cityscape,66,style_tags
 Flags,66,object_tags
@@ -382,19 +385,19 @@ Jug,64,object_tags
 Carpet,64,object_tags
 Clothing,64,object_tags
 Geometric,63,style_tags
-American Art,63,style_tags
+American Art,63,movements
 Good Vs Evil,63,theme_tags
-Indian Manuscript,63,style_tags
+Indian Manuscript,63,movements
 Autumn,63,theme_tags
-Byzantine,63,style_tags
+Byzantine,63,movements
 Saint John The Baptist,63,object_tags
-Persian Art,63,style_tags
+Persian Art,63,movements
 Mother,63,object_tags
 Buddha,62,object_tags
 Grapes,62,object_tags
 Lake,62,object_tags
 Line Drawing,61,style_tags
-Landscape Painting,61,style_tags
+Landscape Painting,61,movements
 Mystery,61,theme_tags
 Pond,61,object_tags
 Crowd,60,object_tags
@@ -410,20 +413,20 @@ Cloth,58,object_tags
 Dragon,58,object_tags
 Arches,58,object_tags
 Soft Colors,58,style_tags
-American,58,style_tags
-Traditional Art,58,style_tags
+American,58,movements
+Traditional Art,58,movements
 Kimono,57,object_tags
 Floral Patterns,57,style_tags
 Stylized,57,style_tags
 Struggle,57,theme_tags
-Craftsmanship,56,theme_tags
-Chinese Calligraphy,56,style_tags
+Craftsmanship,56,movements
+Chinese Calligraphy,56,movements
 Radha,56,object_tags
 Balanced Composition,56,style_tags
 Spectators,56,object_tags
 Greenery,55,object_tags
 Bed,55,object_tags
-Shan Shui,55,style_tags
+Shan Shui,55,movements
 Chairs,55,object_tags
 Bold Colors,55,style_tags
 Cultural Exchange,55,theme_tags
@@ -439,25 +442,25 @@ Luxury,54,theme_tags
 Horizon,54,object_tags
 Triumph,54,theme_tags
 Poetry,53,theme_tags
-Rajput Painting,53,style_tags
+Rajput Painting,53,movements
 Temple,53,object_tags
 Opulence,53,style_tags
 Nostalgia,53,theme_tags
 Snow,53,object_tags
 Shawl,53,object_tags
 Prosperity,53,theme_tags
-Daoism,53,theme_tags
+Daoism,53,movements
 Turban,53,object_tags
 Transcendence,53,theme_tags
 Dramatic Lighting,53,style_tags
-Mughal Painting,52,style_tags
-Edo,52,style_tags
+Mughal Painting,52,movements
+Edo,52,movements
 Cushions,52,object_tags
 Military,51,style_tags
 Ruins,51,style_tags
 Necklace,51,object_tags
 Guidance,51,theme_tags
-Orientalism,51,style_tags
+Orientalism,51,movements
 Morality,51,theme_tags
 Skull,51,object_tags
 Supernatural,50,style_tags
@@ -465,12 +468,12 @@ Italian,50,style_tags
 Sophistication,50,theme_tags
 Rural,50,style_tags
 Freedom,50,theme_tags
-Islamic Art,50,style_tags
-Zen Art,50,style_tags
+Islamic Art,50,movements
+Zen Art,50,movements
 Prince,50,object_tags
 Watercolor,49,style_tags
-Naive Art,49,style_tags
-Modernism,49,style_tags
+Naive Art,49,movements
+Modernism,49,movements
 Impermanence,49,theme_tags
 Tools,49,object_tags
 Cat,49,object_tags
@@ -479,7 +482,7 @@ Education,49,theme_tags
 Crown,48,object_tags
 Monk,48,object_tags
 Pastel Colors,48,style_tags
-Flemish,48,style_tags
+Flemish,48,movements
 Social Status,48,theme_tags
 Canoe,48,object_tags
 Linear,48,style_tags
@@ -497,13 +500,13 @@ Furniture,47,object_tags
 Hunting,47,theme_tags
 Spear,46,object_tags
 Patterns,46,object_tags
-American Portraiture,46,style_tags
+American Portraiture,46,movements
 Adoration,46,theme_tags
 Warriors,46,object_tags
 Ornaments,46,object_tags
 Intellectual,46,theme_tags
 Interaction,46,theme_tags
-Rajasthani Miniature,46,style_tags
+Rajasthani Miniature,46,movements
 Valor,45,theme_tags
 Nativity,45,theme_tags
 Butterfly,45,object_tags
@@ -514,19 +517,20 @@ Mysticism,45,style_tags
 Textiles,44,style_tags
 Legacy,44,theme_tags
 Judgment,44,theme_tags
-Academic Art,44,style_tags
+Pahari Painting,44,movements
+Academic Art,44,movements
 Loyalty,44,theme_tags
 Reeds,44,object_tags
 Humanity,44,theme_tags
 Umbrella,44,object_tags
 Justice,44,theme_tags
 Shoreline,44,object_tags
-Classicism,43,style_tags
+Classicism,43,movements
 Fountain,43,object_tags
 Shrubs,43,object_tags
 Camaraderie,43,theme_tags
 Rivers,43,object_tags
-Kalighat,43,style_tags
+Kalighat,43,movements
 Decorative Patterns,43,object_tags
 Courtly Life,43,theme_tags
 Musician,43,object_tags
@@ -534,29 +538,29 @@ Onlookers,43,object_tags
 Fabric,43,object_tags
 Intimate,43,style_tags
 King,42,object_tags
-Chinese Classical,42,style_tags
+Chinese Classical,42,movements
 Intricate Patterns,42,style_tags
 Honor,42,theme_tags
 Scrolls,42,object_tags
-Folk,42,style_tags
+Folk,42,movements
 Christianity,42,theme_tags
 Decorative Elements,42,object_tags
-Screen Painting,42,style_tags
+Screen Painting,42,movements
 Warrior,42,object_tags
 Adventure,42,theme_tags
 Altar,42,object_tags
 Performance,42,theme_tags
-Scroll Painting,41,style_tags
+Scroll Painting,41,movements
 Tempera,41,style_tags
 Vases,41,object_tags
 Ephemeral,41,theme_tags
 Betrayal,41,theme_tags
 Serpent,40,object_tags
-Pointillism,40,style_tags
+Pointillism,40,movements
 Chaos,40,theme_tags
 Rituals,40,theme_tags
 Archway,40,object_tags
-Kalighat Painting,40,style_tags
+Kalighat Painting,40,movements
 Tablecloth,40,object_tags
 Door,40,object_tags
 Salvation,39,theme_tags
@@ -568,7 +572,7 @@ Musical Instrument,39,object_tags
 Woodblock Print,39,style_tags
 Character,39,theme_tags
 Ribbons,39,object_tags
-Indigenous,39,style_tags
+Indigenous,39,movements
 Lace Collar,39,object_tags
 Smoke,39,object_tags
 Miracle,39,theme_tags
@@ -576,12 +580,12 @@ War,38,theme_tags
 Chrysanthemums,38,object_tags
 Timelessness,38,theme_tags
 Barrel,38,object_tags
-Shanshui,38,style_tags
+Shanshui,38,movements
 Shield,38,object_tags
 Geometric Patterns,38,style_tags
 Seated Figure,38,object_tags
 Letter,38,object_tags
-Academic,38,style_tags
+Academic,38,movements
 Playfulness,38,theme_tags
 Nobleman,37,object_tags
 Floral,37,style_tags
@@ -596,14 +600,15 @@ Lantern,36,object_tags
 Glass,36,object_tags
 Naive,36,style_tags
 Hats,36,object_tags
-Rajput,36,style_tags
-Ancient,36,style_tags
-Luminism,36,style_tags
+Rajput,36,movements
+Ancient,36,movements
+Luminism,36,movements
 Bodhisattvas,36,object_tags
 Knife,36,object_tags
 Huts,36,object_tags
+Song Dynasty Art,36,movements
 Hope,35,theme_tags
-Song Dynasty,35,style_tags
+Song Dynasty,35,movements
 Immortality,35,theme_tags
 Prestige,35,theme_tags
 Revelation,35,theme_tags
@@ -629,7 +634,7 @@ Natural Light,34,style_tags
 Dynamic Composition,34,style_tags
 Candle,34,object_tags
 Lamp,34,object_tags
-Manuscript Illumination,34,style_tags
+Manuscript Illumination,34,movements
 Maternal,33,theme_tags
 Servant,33,object_tags
 Intellectualism,33,theme_tags
@@ -642,26 +647,26 @@ Dance,33,theme_tags
 Eagle,33,object_tags
 Spring,33,theme_tags
 Warm Palette,33,style_tags
-Venetian Renaissance,33,style_tags
+Venetian Renaissance,33,movements
 Gloves,33,object_tags
 Ink Drawing,33,style_tags
 Flag,33,object_tags
 Balanced,33,style_tags
 Commerce,33,theme_tags
 Rock Formations,33,object_tags
-Illumination,33,style_tags
+Illumination,33,movements
 Manuscript Text,32,object_tags
 Baskets,32,object_tags
 Courtiers,32,object_tags
 Cupid,32,object_tags
 Terrace,32,object_tags
 Emotional,32,style_tags
-Mandala,32,style_tags
+Mandala,32,movements
 Villagers,32,object_tags
 Saint Catherine,32,object_tags
 Line Work,32,style_tags
 Cherub,31,object_tags
-Ragamala,31,style_tags
+Ragamala,31,movements
 Roses,31,object_tags
 Vulnerability,31,theme_tags
 Drama,31,style_tags
@@ -675,7 +680,7 @@ Structure,31,object_tags
 Bridges,31,object_tags
 Parasol,31,object_tags
 Pathways,31,object_tags
-International Gothic,30,style_tags
+International Gothic,30,movements
 Earrings,30,object_tags
 Serene,30,style_tags
 Japanese Culture,30,theme_tags
@@ -688,10 +693,10 @@ Expression,30,style_tags
 Structures,30,object_tags
 Collar,30,object_tags
 Folklore,30,style_tags
-Illustration,30,style_tags
+Illustration,30,movements
 Deity,29,object_tags
 Tragedy,29,theme_tags
-Chinese Literati,29,style_tags
+Chinese Literati,29,movements
 Respect,29,theme_tags
 Artist,29,object_tags
 Bonnet,29,object_tags
@@ -701,7 +706,7 @@ Detailed Brushwork,29,style_tags
 Hill,29,object_tags
 Expressive Brushwork,29,style_tags
 Men,29,object_tags
-Dutch Baroque,29,style_tags
+Dutch Baroque,29,movements
 Fashion,29,theme_tags
 Travelers,29,object_tags
 Peonies,29,object_tags
@@ -709,9 +714,9 @@ Curiosity,29,theme_tags
 Quill,29,object_tags
 Line Art,28,style_tags
 Self-Reflection,28,theme_tags
-Manuscript Art,28,style_tags
+Manuscript Art,28,movements
 Isolation,28,theme_tags
-Mughal Miniature,28,style_tags
+Mughal Miniature,28,movements
 Allegory,28,style_tags
 Temples,28,object_tags
 Decorative Borders,28,object_tags
@@ -721,30 +726,32 @@ Diplomacy,28,theme_tags
 Figurative,28,style_tags
 Couch,28,object_tags
 Imperial,28,style_tags
-Flemish Baroque,28,style_tags
+Flemish Baroque,28,movements
 Mythical Creatures,28,object_tags
+Ming Dynasty Painting,28,movements
 Longevity,28,theme_tags
-Japanese Screen Painting,28,style_tags
+Japanese Screen Painting,28,movements
 Plate,28,object_tags
 Warm Colors,28,style_tags
 Cattle,28,object_tags
 Shiva,28,object_tags
 Mythical,28,style_tags
-Early Netherlandish,28,style_tags
+Early Netherlandish,28,movements
 Brush,28,style_tags
 Papers,28,object_tags
+Chinese Literati Painting,28,movements
 Prophecy,28,theme_tags
 Female Figure,28,object_tags
-Qing Dynasty,27,style_tags
+Qing Dynasty,27,movements
 Elderly Woman,27,object_tags
 Divine Motherhood,27,theme_tags
-Abstract Expressionism,27,style_tags
+Abstract Expressionism,27,movements
 Cart,27,object_tags
 Rug,27,object_tags
 Riders,27,object_tags
 Stable,27,object_tags
 Standing Woman,27,object_tags
-Jain,27,style_tags
+Jain,27,movements
 Court Life,27,theme_tags
 Celestial,27,style_tags
 Monks,27,object_tags
@@ -755,7 +762,7 @@ Theater,27,theme_tags
 Guards,26,object_tags
 Bread,26,object_tags
 Apples,26,object_tags
-Heian Period,26,style_tags
+Heian Period,26,movements
 Bold Brushstrokes,26,style_tags
 Chain,26,object_tags
 Opulent,26,style_tags
@@ -764,14 +771,15 @@ Streams,26,object_tags
 Carriage,26,object_tags
 Apostles,26,object_tags
 Pagoda,26,object_tags
-Indian Traditional,26,style_tags
+Indian Traditional,26,movements
 Shepherd,26,object_tags
+Daoist Art,26,movements
 Ox,26,object_tags
-Landscape Art,26,style_tags
+Landscape Art,26,movements
 Valley,26,object_tags
 Ring,26,object_tags
 Ground,25,object_tags
-Illustrative,25,style_tags
+Illustrative,25,movements
 Veil,25,object_tags
 Venus,25,object_tags
 Soft Palette,25,style_tags
@@ -797,7 +805,7 @@ Tent,25,object_tags
 Bow,25,object_tags
 Bottle,25,object_tags
 Connection,25,theme_tags
-Colonial,25,style_tags
+Colonial,25,movements
 Artistry,25,theme_tags
 Afterlife,25,theme_tags
 Humor,24,style_tags
@@ -808,7 +816,7 @@ Cane,24,object_tags
 Decorative Border,24,object_tags
 Chandeliers,24,object_tags
 Wife,24,object_tags
-American Impressionism,24,style_tags
+American Impressionism,24,movements
 Stairs,24,object_tags
 Dove,24,object_tags
 Dwellings,24,object_tags
@@ -832,7 +840,7 @@ Competition,23,theme_tags
 Luminous,23,style_tags
 Canal,23,object_tags
 Crucifix,23,object_tags
-Netherlandish,23,style_tags
+Netherlandish,23,movements
 Plum Branch,23,object_tags
 Intricate Details,23,style_tags
 Cup,23,object_tags
@@ -841,8 +849,8 @@ Paintings,23,object_tags
 Classic,23,style_tags
 Demons,23,object_tags
 Vines,23,object_tags
-Humanism,23,style_tags
-Ashcan School,22,style_tags
+Humanism,23,movements
+Ashcan School,22,movements
 Cranes,22,object_tags
 Silk,22,style_tags
 Plum Blossoms,22,object_tags
@@ -852,7 +860,7 @@ Ceremonial Objects,22,object_tags
 Pot,22,object_tags
 Child Jesus,22,object_tags
 Farmhouse,22,object_tags
-Muromachi Period,22,style_tags
+Muromachi Period,22,movements
 Shadows,22,object_tags
 Industry,22,theme_tags
 Resurrection,22,theme_tags
@@ -861,7 +869,7 @@ Stems,22,object_tags
 Sheet Music,22,object_tags
 Shrine,22,object_tags
 Steps,22,object_tags
-Veduta,22,style_tags
+Veduta,22,movements
 Arch,22,object_tags
 Sunset,22,object_tags
 Dwelling,22,object_tags
@@ -873,8 +881,8 @@ Peaches,21,object_tags
 Wilderness,21,theme_tags
 Apple,21,object_tags
 Palette,21,object_tags
-Italian Gothic,21,style_tags
-Neo-Impressionism,21,style_tags
+Italian Gothic,21,movements
+Neo-Impressionism,21,movements
 Grandeur,21,theme_tags
 Formal,21,style_tags
 Blossoming Tree,21,object_tags
@@ -896,9 +904,9 @@ Princess,21,object_tags
 Procession,21,object_tags
 Healing,21,theme_tags
 Battle,21,style_tags
-Sketch,21,style_tags
-East Asian Painting,20,style_tags
-Victorian,20,style_tags
+Sketch,21,movements
+East Asian Painting,20,movements
+Victorian,20,movements
 Sainthood,20,theme_tags
 Crow,20,object_tags
 Majesty,20,theme_tags
@@ -930,19 +938,20 @@ Emperor,19,object_tags
 Armchair,19,object_tags
 Interconnectedness,19,theme_tags
 Standing Figure,19,object_tags
+American Colonial Art,19,movements
 Triptych,19,style_tags
 Lotus Pedestal,19,object_tags
 Audience,19,object_tags
-Religious Iconography,19,style_tags
+Religious Iconography,19,movements
 Mindfulness,19,theme_tags
 Affection,19,theme_tags
 Observation,19,theme_tags
 Hospitality,19,theme_tags
 Divine Protection,19,theme_tags
-Venetian School,19,style_tags
+Venetian School,19,movements
 Floral Border,19,object_tags
 Madonna And Child,19,style_tags
-Yuan Dynasty,19,style_tags
+Yuan Dynasty,19,movements
 Hare,19,object_tags
 Violin,19,object_tags
 Delicate Brushstrokes,19,style_tags
@@ -970,6 +979,7 @@ Lotus Throne,18,object_tags
 Industrialization,18,theme_tags
 Dutch,18,style_tags
 Headpiece,18,object_tags
+Chinese Traditional Painting,18,movements
 Borders,18,object_tags
 Willow Tree,18,object_tags
 Teaching,18,theme_tags
@@ -982,6 +992,7 @@ Balcony,18,object_tags
 Palm Tree,18,object_tags
 Orchids,18,object_tags
 Ephemerality,18,theme_tags
+American Colonial,18,movements
 Farmers,18,object_tags
 Easel,18,object_tags
 Sparrows,18,object_tags
@@ -1004,7 +1015,7 @@ Insects,17,object_tags
 Tray,17,object_tags
 Shakyamuni Buddha,17,object_tags
 Border,17,object_tags
-Indian Folk Art,17,style_tags
+Indian Folk Art,17,movements
 Texture,17,style_tags
 Frame,17,object_tags
 Durga,17,object_tags
@@ -1012,9 +1023,10 @@ Potted Plant,17,object_tags
 Small Birds,17,object_tags
 Donor,17,object_tags
 Cherry Blossoms,17,object_tags
-Marine Art,17,style_tags
+Marine Art,17,movements
 Swords,17,object_tags
 Shoes,17,object_tags
+Japanese Religious Art,17,movements
 Background Foliage,17,object_tags
 Idealism,17,style_tags
 Rider,17,object_tags
@@ -1029,10 +1041,10 @@ Doorway,17,object_tags
 Soft,16,style_tags
 Native American,16,style_tags
 Male Figure,16,object_tags
-Narrative Art,16,style_tags
+Narrative Art,16,movements
 Khujasta,16,object_tags
 Lyre,16,object_tags
-Documentary,16,style_tags
+Documentary,16,movements
 Dark Palette,16,style_tags
 Windows,16,object_tags
 Cottages,16,object_tags
@@ -1044,7 +1056,8 @@ Town,16,object_tags
 Demon,16,object_tags
 Crown Of Thorns,16,object_tags
 Cave,16,object_tags
-Eastern,16,style_tags
+Qing Dynasty Art,16,movements
+Eastern,16,movements
 Bull,16,object_tags
 Myth,16,theme_tags
 Age,16,theme_tags
@@ -1057,7 +1070,7 @@ Oil Painting,16,style_tags
 Dreamlike,16,style_tags
 Artistic Expression,16,theme_tags
 Relationships,16,theme_tags
-Sienese,16,style_tags
+Sienese,16,movements
 Background Patterns,16,object_tags
 Manuscript Page,16,object_tags
 Gold Accents,16,style_tags
@@ -1071,13 +1084,13 @@ Lineage,16,theme_tags
 Lilies,15,object_tags
 Mahavira,15,object_tags
 Headscarf,15,object_tags
-Naïve,15,style_tags
+Naïve,15,movements
 Globe,15,object_tags
 Human Condition,15,theme_tags
 Spiritual Journey,15,theme_tags
 Obedience,15,theme_tags
 Ornamental Borders,15,object_tags
-Rimpa,15,style_tags
+Rimpa,15,movements
 Chalice,15,object_tags
 Intrigue,15,theme_tags
 Courtyard,15,object_tags
@@ -1088,7 +1101,7 @@ Epic,15,theme_tags
 Red Seals,15,object_tags
 Ornate Garments,15,object_tags
 Dreams,15,theme_tags
-Trompe-L'Œil,15,style_tags
+Trompe-L'Œil,15,movements
 Confidence,15,theme_tags
 Plant,15,object_tags
 Sailing Vessels,15,object_tags
@@ -1096,18 +1109,18 @@ Haystacks,15,object_tags
 Devotees,15,object_tags
 Turtle,15,object_tags
 Red Cloth,15,object_tags
-Naïve Art,15,style_tags
+Naïve Art,15,movements
 Decay,15,theme_tags
 Barn,15,object_tags
-Traditional Chinese Art,15,style_tags
+Traditional Chinese Art,15,movements
 Jesus,15,object_tags
 Umbrellas,15,object_tags
 Allegorical,15,style_tags
-Classical Architecture,15,style_tags
+Classical Architecture,15,movements
 Helmet,15,object_tags
 Sorrow,15,theme_tags
 Hunter,15,object_tags
-Korean,15,style_tags
+Korean,15,movements
 Bold,15,style_tags
 Saint Paul,15,object_tags
 Ornamental Patterns,15,object_tags
@@ -1118,7 +1131,8 @@ Quiver,15,object_tags
 Vitality,15,theme_tags
 Learning,15,theme_tags
 Kneeling Figure,15,object_tags
-Cubism,15,style_tags
+Cubism,15,movements
+Traditional Indian Art,15,movements
 Rocky Terrain,15,object_tags
 Diversity,15,theme_tags
 Stars,15,object_tags
@@ -1130,22 +1144,24 @@ British,14,style_tags
 Horsemen,14,object_tags
 Bare Trees,14,object_tags
 Expressive Brushstrokes,14,style_tags
-Emakimono,14,style_tags
-Fresco,14,style_tags
+Emakimono,14,movements
+Fresco,14,movements
 Saint Mary Magdalen,14,object_tags
 Tower,14,object_tags
 Architectural Details,14,object_tags
+Zen Painting,14,movements
 Bottles,14,object_tags
 Symbolic Objects,14,object_tags
 Pillows,14,object_tags
 Carriages,14,object_tags
+Bunjinga,14,movements
 Gate,14,object_tags
 Stormy Sky,14,object_tags
 Happiness,14,theme_tags
 Sensuality,14,theme_tags
 Teapot,14,object_tags
 Officer,14,object_tags
-Sacred Art,14,style_tags
+Sacred Art,14,movements
 Worship,14,theme_tags
 Life,14,theme_tags
 Sacred Text,14,theme_tags
@@ -1187,7 +1203,7 @@ Christ On The Cross,13,object_tags
 Vine,13,object_tags
 Stool,13,object_tags
 Divine Grace,13,theme_tags
-Historical Painting,13,style_tags
+Historical Painting,13,movements
 Rifle,13,object_tags
 Cloud Motifs,13,object_tags
 Formality,13,theme_tags
@@ -1200,9 +1216,9 @@ Egrets,13,object_tags
 Fine Lines,13,style_tags
 Elongated Figures,13,style_tags
 Seated Figures,13,object_tags
-Indian Painting,13,style_tags
+Indian Painting,13,movements
 Seascape,13,style_tags
-Traditional Korean Art,13,style_tags
+Traditional Korean Art,13,movements
 Manjushri,13,object_tags
 Sage,13,object_tags
 Father,13,object_tags
@@ -1226,7 +1242,7 @@ Desire,13,theme_tags
 Mentorship,13,theme_tags
 Traditional Building,13,object_tags
 Rose,13,object_tags
-Western Art,13,style_tags
+Western Art,13,movements
 Plains,13,object_tags
 Peony,13,object_tags
 Panoramic,13,style_tags
@@ -1263,6 +1279,7 @@ Small Boats,12,object_tags
 Saint Anne,12,object_tags
 Mat,12,object_tags
 Fear,12,theme_tags
+Dutch Realism,12,movements
 Sanskrit,12,style_tags
 Costumes,12,object_tags
 Divine Justice,12,theme_tags
@@ -1276,23 +1293,23 @@ Dock,12,object_tags
 Atmospheric Perspective,12,style_tags
 Reclining Figure,12,object_tags
 Poet,12,object_tags
-Pre-Raphaelite,12,style_tags
-Rajasthani Art,12,style_tags
+Pre-Raphaelite,12,movements
+Rajasthani Art,12,movements
 Attendant Figures,12,object_tags
 Desk,12,object_tags
-Italo-Byzantine,12,style_tags
+Italo-Byzantine,12,movements
 Central Deity,12,object_tags
 Human Interaction,12,theme_tags
 Raja,12,object_tags
 Language,12,theme_tags
 Rosary,12,object_tags
-Islamic,12,style_tags
+Islamic,12,movements
 Chickens,12,object_tags
 Iconic,12,style_tags
-Indo-Persian,12,style_tags
+Indo-Persian,12,movements
 Union,12,theme_tags
 Architectural Structures,12,object_tags
-Zen Buddhism,12,theme_tags
+Zen Buddhism,12,movements
 Harbor,11,object_tags
 Escape,11,theme_tags
 Confrontation,11,theme_tags
@@ -1307,7 +1324,7 @@ Divine Birth,11,theme_tags
 Street,11,object_tags
 Ruff,11,object_tags
 Empathy,11,theme_tags
-Traditional Japanese Art,11,style_tags
+Traditional Japanese Art,11,movements
 Service,11,theme_tags
 Pears,11,object_tags
 Flowering Branch,11,object_tags
@@ -1318,14 +1335,14 @@ Pomegranate,11,object_tags
 Box,11,object_tags
 Parchment,11,object_tags
 Traditional Clothing,11,object_tags
-Sienese School,11,style_tags
+Sienese School,11,movements
 Atmosphere,11,style_tags
 Railing,11,object_tags
 Clock,11,object_tags
 Food,11,object_tags
 Beads,11,object_tags
 Genre,11,style_tags
-Asian Religious Art,11,style_tags
+Asian Religious Art,11,movements
 Berries,11,object_tags
 Green Leaves,11,object_tags
 Cherry Tree,11,object_tags
@@ -1348,7 +1365,7 @@ Literacy,11,theme_tags
 Fruit Basket,11,object_tags
 Contentment,11,theme_tags
 Vegetables,11,object_tags
-Manuscript Illustration,11,style_tags
+Manuscript Illustration,11,movements
 Dynamic Brushwork,11,style_tags
 Grayscale,11,style_tags
 Cups,11,object_tags
@@ -1376,12 +1393,13 @@ Backdrop,11,object_tags
 Sandals,11,object_tags
 Crosses,11,object_tags
 Life Cycle,11,theme_tags
-Japanese Classical,11,style_tags
+Japanese Classical,11,movements
 White Cloth,11,object_tags
 Celestial Figures,10,object_tags
 Red Flowers,10,object_tags
 Divine Figure,10,object_tags
-Early American,10,style_tags
+Gothic Art,10,movements
+Early American,10,movements
 Smooth Brushwork,10,style_tags
 Adam,10,object_tags
 Moody,10,style_tags
@@ -1391,26 +1409,26 @@ Groom,10,object_tags
 Draperies,10,object_tags
 Canvas,10,object_tags
 Mannerist,10,style_tags
-Urban Landscape,10,style_tags
+Urban Landscape,10,movements
 Decorations,10,object_tags
-American Modernism,10,style_tags
+American Modernism,10,movements
 Wall,10,object_tags
 Subdued Colors,10,style_tags
 Fabrics,10,object_tags
 Consort,10,object_tags
 Red Symbols,10,object_tags
-Miniature Art,10,style_tags
+Miniature Art,10,movements
 Floor Tiles,10,object_tags
 Scripture,10,style_tags
 Everyday Beauty,10,theme_tags
 Screen,10,style_tags
-Traditional Painting,10,style_tags
-Nabis,10,style_tags
+Traditional Painting,10,movements
+Nabis,10,movements
 Rowboat,10,object_tags
 Other Figures,10,object_tags
 Punishment,10,theme_tags
 Saint Sebastian,10,object_tags
-American Landscape,10,style_tags
+American Landscape,10,movements
 Walls,10,object_tags
 Village Life,10,theme_tags
 God The Father,10,object_tags
@@ -1444,14 +1462,14 @@ Flowering Plants,10,object_tags
 Hay,10,object_tags
 Priest,10,object_tags
 Brook,10,object_tags
-Eastern Art,10,style_tags
+Eastern Art,10,movements
 Scrollwork,10,object_tags
 Stick,10,object_tags
 Guitar,10,object_tags
 Fortune,10,theme_tags
 Cultural Tradition,10,theme_tags
 Ornate Border,10,style_tags
-Satire,10,style_tags
+Satire,10,movements
 Crucifixion Scene,10,object_tags
 Lifelike,10,style_tags
 Standing Man,10,object_tags
@@ -1483,13 +1501,14 @@ Pool,9,object_tags
 Family Members,9,object_tags
 Grapevines,9,object_tags
 Reclining Woman,9,object_tags
+Song Dynasty Painting,9,movements
 Monarchy,9,theme_tags
 Holy Family,9,object_tags
-Hindu Art,9,style_tags
+Hindu Art,9,movements
 Motion,9,theme_tags
 Focus,9,theme_tags
 Saint Joseph,9,object_tags
-Religious Symbolism,9,style_tags
+Religious Symbolism,9,movements
 Generosity,9,theme_tags
 Parvati,9,object_tags
 Floral Designs,9,object_tags
@@ -1497,19 +1516,22 @@ Moonlight,9,style_tags
 Industrial,9,style_tags
 Equestrian,9,style_tags
 Vigilance,9,theme_tags
+Botanical Art,9,movements
 Farewell,9,theme_tags
 Technology,9,theme_tags
 Red Border,9,object_tags
 Manuscript Folio,9,object_tags
-Vedutismo,9,style_tags
+Vedutismo,9,movements
 Carp,9,object_tags
 Aquatic Life,9,theme_tags
 Elongation,9,style_tags
 Ravana,9,object_tags
+Medieval Indian Art,9,movements
 Simplified Forms,9,style_tags
 Courtly,9,style_tags
 Devotional,9,style_tags
 Textural,9,style_tags
+Medieval Art,9,movements
 Hourglass,9,object_tags
 Guardianship,9,theme_tags
 Diana,9,object_tags
@@ -1526,16 +1548,16 @@ Vase Of Flowers,9,object_tags
 Companions,9,object_tags
 Roman Soldiers,9,object_tags
 Feathered Hat,9,object_tags
-Vanitas,9,style_tags
+Vanitas,9,movements
 Crucifixion,9,theme_tags
 Medal,9,object_tags
 Pigeons,9,object_tags
 Ornate Robes,9,object_tags
 Departure,9,theme_tags
-Surrealism,9,style_tags
+Surrealism,9,movements
 Boys,9,object_tags
 Coat Of Arms,9,object_tags
-British Portraiture,9,style_tags
+British Portraiture,9,movements
 Despair,9,theme_tags
 Camels,9,object_tags
 Amida Buddha,9,object_tags
@@ -1571,11 +1593,12 @@ Homage,8,theme_tags
 Stone Bench,8,object_tags
 Liberation,8,theme_tags
 Cypress Trees,8,object_tags
+East Asian Ink Painting,8,movements
 Paris,8,object_tags
 Regal,8,style_tags
 Jaipur,8,style_tags
 Conquest,8,theme_tags
-Tosa School,8,style_tags
+Tosa School,8,movements
 Disguise,8,theme_tags
 Dome,8,object_tags
 Monastic Life,8,theme_tags
@@ -1590,7 +1613,7 @@ Hen,8,object_tags
 Shelves,8,object_tags
 Seal Script,8,style_tags
 Mask,8,object_tags
-Chinese Ink Wash,8,style_tags
+Chinese Ink Wash,8,movements
 White Flowers,8,object_tags
 Palanquin,8,object_tags
 Forgiveness,8,theme_tags
@@ -1618,7 +1641,7 @@ Ruff Collar,8,object_tags
 Light Palette,8,style_tags
 Handscroll,8,style_tags
 Nepalese,8,style_tags
-Kanō School,8,style_tags
+Kanō School,8,movements
 Rainbow,8,object_tags
 Japanese Woodblock,8,style_tags
 Inscription,8,object_tags
@@ -1644,6 +1667,7 @@ Laurel Wreath,8,object_tags
 Separation,8,theme_tags
 Stone Ledge,8,object_tags
 Laundry,8,object_tags
+Ancient Art,8,movements
 Flowing Water,8,object_tags
 Growth,8,theme_tags
 Festival,8,theme_tags
@@ -1656,7 +1680,7 @@ Respectability,8,theme_tags
 Monastery,8,object_tags
 Golden,8,style_tags
 Control,8,theme_tags
-Traditional Korean,8,style_tags
+Traditional Korean,8,movements
 Disciple,8,object_tags
 Bee,8,object_tags
 Precise,8,style_tags
@@ -1697,4 +1721,5 @@ Buds,8,object_tags
 Expressionistic,8,style_tags
 Thatched Hut,8,object_tags
 Utensils,8,object_tags
+Himalayan Art,8,movements
 Ornate Clothing,8,object_tags
