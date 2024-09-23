@@ -60,7 +60,7 @@ if __name__ == "__main__":
     tags = tags[~tags["tag"].str.contains(r"century|\d+", case=False)]
     tags["tag"] = tags["tag"].str.lower().str.replace("_", " ").str.title()
 
-    # tag_count = tags["tag"].value_counts().sort_values(ascending=False)
+    tag_count = tags["tag"].value_counts().sort_values(ascending=False)
     # tag_count.to_csv(os.path.join(DATA_DIR, "tag_count.csv"))
 
     unique_tags = tag_count.index.to_list()
