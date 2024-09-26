@@ -5,7 +5,7 @@ from ArtSearch import ArtSearch
 
 # Define the schema using Pydantic
 class ArtInfo(BaseModel):
-    styles: list[str]
+    tags: list[str]
     artists: list[str]
 
 class OpenAIChatbot:
@@ -17,29 +17,27 @@ class OpenAIChatbot:
         self.model = model
 
     def extract_entities(self, user_input):
-        system_prompt = """You are an expert in art and artists. Your task is to identify art styles and artist names from user input and return them in a structured format: styles and artists.
+        system_prompt = """You are an expert in art and artists. Your task is to identify artwork tags (like style, genre, etc.) and artist names from user input and return them in a structured format: tags and artists.
 
-        If the user input is specific, return only the styles and artists explicitly mentioned. Do not infer or add any additional styles or artists that weren't directly stated or strongly implied.
-
-        If the user input is vague or open-ended (e.g., "I like old age artworks"), use your knowledge to infer potential styles that might fit the description. For example, "old age artworks" could refer to Renaissance, Baroque, Medieval, or Rococo styles.
+        Return only the tags and artists explicitly mentioned. Do not infer or add any additional tags or artists that weren't directly stated.
 
         When identifying artists, always return their full names if possible. For example, if the user mentions "Vincent", return "Vincent van Gogh".
 
-        Only return empty lists for both styles and artists if the input is extremely vague or unrelated to art.
+        Return empty lists for both tags and artists if no specific tags or artists are mentioned.
 
         Examples:
         1. Input: "I like colorful paintings"
-           Output: {"styles": ["Fauvism", "Pop Art", "Abstract Expressionism"], "artists": []}
+           Output: {"tags": ['colorful'], "artists": []}
         2. Input: "I love the works of Vincent"
-           Output: {"styles": [], "artists": ["Vincent van Gogh"]}
+           Output: {"tags": [], "artists": ["Vincent van Gogh"]}
         3. Input: "I'm a fan of Impressionism and Cubism"
-           Output: {"styles": ["Impressionism", "Cubism"], "artists": []}
+           Output: {"tags": ["Impressionism", "Cubism"], "artists": []}
         4. Input: "I like Monet's water lilies"
-           Output: {"styles": [], "artists": ["Claude Monet"]}
+           Output: {"tags": ["water lilies"], "artists": ["Claude Monet"]}
         5. Input: "I like old age artworks"
-           Output: {"styles": ["Renaissance", "Baroque", "Medieval", "Rococo"], "artists": []}
+           Output: {"tags": ["old age"], "artists": []}
         6. Input: "I enjoy modern art"
-           Output: {"styles": ["Abstract Expressionism", "Pop Art", "Minimalism", "Surrealism"], "artists": []}"""
+           Output: {"tags": ["modern art"], "artists": []}"""
 
         try:
             completion = self.client.beta.chat.completions.parse(
@@ -51,7 +49,7 @@ class OpenAIChatbot:
                 response_format=ArtInfo,  # Define the response format
             )
             art_info = completion.choices[0].message.parsed
-            return art_info.styles, art_info.artists
+            return art_info.tags, art_info.artists
         except Exception as e:
             print(f"Error in extracting entities: {e}")
             return [], []  # Return empty lists in case of an error
