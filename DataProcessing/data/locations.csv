@@ -1,0 +1,5 @@
+name,label,description,continent,continent_id,country,country_id,coordinates,thumbnail_image_url,location_id,error
+Paris,Paris,capital city of France,Europe,Q46,France,Q142,"{'latitude': 48.85666666666667, 'longitude': 2.352222222222222}",https://commons.wikimedia.org/wiki/Special:FilePath/Paris_-_Eiffelturm_und_Marsfeld2.jpg,Q90,
+London,London,capital and largest city of England and the United Kingdom,Europe,Q46,United Kingdom,Q145,"{'latitude': 51.507222222222, 'longitude': -0.1275}",https://commons.wikimedia.org/wiki/Special:FilePath/London_Tower_Bridge_22.jpg,Q84,
+Lancaster,,,,,,,,,,No page has been found
+New York City,New York City,most populous city in the United States,North America,Q49,United States of America,Q30,"{'latitude': 40.7, 'longitude': -74}",https://commons.wikimedia.org/wiki/Special:FilePath/NYC_Downtown_Manhattan_Skyline_seen_from_Paulus_Hook_2019-12-20_IMG_7347_FRD_%28cropped%29.jpg,Q60,

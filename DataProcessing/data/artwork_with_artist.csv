@@ -12,7 +12,7 @@ ARTIC-02735665-fe0f-b015-8d49-772552805973,India,
 ARTIC-0274aa9e-95d1-2a8e-12e3-2b09d7749b4f,"Gustave Caillebotte (French, 1848–1894)",Q295144
 ARTIC-0291ae9f-e025-39d5-69da-d28f5e3c14e1,"John Singleton Copley (American, 1738–1815)",Q316016
 ARTIC-02bc3896-bc28-57bd-c829-cc4de184c7a8,"In the style of John Constable (English, 1776–1837)",
-ARTIC-02f89de9-0b05-fb1c-fc15-bc48787debfb,"Jean-Baptiste-Joseph Pater  (French, 1695-1736)",Q731533
+ARTIC-02f89de9-0b05-fb1c-fc15-bc48787debfb,"Jean-Baptiste-Joseph Pater (after) (French, 1695-1736)",Q731533
 ARTIC-032c971b-43a2-c1af-a560-9433c2578504,"India (Rajasthan, Jaipur)",
 ARTIC-035361f5-488e-f93b-b1f6-40a436da01d5,"India (Rajasthan, Jaipur)",
 ARTIC-0356e981-edc5-56ad-1a64-9ebdae3c5aab,"Lucas Cranach the Elder (German, 1472–1553)",Q191748
@@ -50,22 +50,22 @@ ARTIC-074c1b1b-fe92-01ce-9e62-cc99369142dd,"John Singer Sargent (American, 1856�
 ARTIC-0752a72c-2810-3730-43bd-90e03bb8608f,"Artist unknown (Chinese, 18th century)",
 ARTIC-076e378b-cb96-74af-49f0-48d958d9d8ed,"Eugène Fromentin (French, 1820-1876)",Q353746
 ARTIC-0787ea3c-9c03-65a2-adeb-5f5343794324,"Robert William Vonnoh (American, 1858-1933)",Q1856567
-ARTIC-07adaae8-5ff2-07e6-072d-1cc69e23f3b8,"Attributed to Zhou Chen (Chinese, c.1450–c.1536)",
-ARTIC-07bb9605-1348-1b7a-fe6d-d42979fdcdc7,"Attributed to Kaiho Yusho (Japanese, 1533-1615)",
+ARTIC-07adaae8-5ff2-07e6-072d-1cc69e23f3b8," Zhou Chen (Chinese, c.1450–c.1536)",Q3575430
+ARTIC-07bb9605-1348-1b7a-fe6d-d42979fdcdc7," Kaiho Yusho (Japanese, 1533-1615)",Q3191951
 ARTIC-07bdc94a-7d44-fde8-c0e1-f19fefce359d,"Gustave Doré (French, 1832-1883)",Q6682
 ARTIC-07d8dd31-d44b-85aa-ab09-ca51ee86f631,"Claude Monet (French, 1840–1926)",Q296
 ARTIC-081be15c-8812-c174-eeb2-cf318a2e67cf,"Georges Seurat (French, 1859-1891)",Q34013
 ARTIC-082213ea-4f06-7465-e241-dbae5cb13511,Mongolia,
 ARTIC-084d1143-6073-96e5-433c-6a3bb83a1bbd,French,
 ARTIC-086f1a92-1a07-1805-3321-d238009fcda0,Dutch; Delft,
-ARTIC-0893821b-474d-c87c-b528-a059919089e7,"Workshop of Diego Velázquez (Spanish, 1599-1660)",
+ARTIC-0893821b-474d-c87c-b528-a059919089e7," Diego Velázquez (Spanish, 1599-1660)",Q297
 ARTIC-08b2ede5-bf33-602a-f1eb-2e7510c1b3cd,"François Boucher (French, 1703–1770)",Q180932
 ARTIC-08b38ff2-2659-2c0b-dba8-221e173f4fc3,"Thomas Doughty (American, 1793-1856)",Q284954
 ARTIC-08da4ff3-3bf6-9bbd-230c-492382034f3d,"Vasily Kandinsky (Born Moscow (formerly Russian Empire, now Russia), 1866; died Neuilly-sur-Seine, France, 1944)",Q61064
 ARTIC-08f4e45e-5b4b-993e-1d45-6f362c2ec43c,"Shibata Zeshin (Japanese, 1807-1891)",Q2386947
 ARTIC-0905c8a0-b2f1-b534-fa37-0f1aa016bec5,"Emanuel de Witte (Dutch, c. 1617–1691/92)",Q711203
-ARTIC-092be13d-bd52-6125-fe90-56ce21128ab9,"Attributed to Ansano Ciampanti (Italian, 1474–1532/1535)",
-ARTIC-0a991ed0-5816-1fbe-33d2-a12c384334ab,"Rubens, Peter Paul (Attributed to) (Flemish, 1577-1640)",Q5599
+ARTIC-092be13d-bd52-6125-fe90-56ce21128ab9," Ansano Ciampanti (Italian, 1474–1532/1535)",Q97571259
+ARTIC-0a991ed0-5816-1fbe-33d2-a12c384334ab,"Rubens, Peter Paul () (Flemish, 1577-1640)",Q5599
 ARTIC-0aaa4cff-d1d8-8241-d230-0cecc9956f39,"Vergós workshop (Spanish, documented 1439-1503)",
 ARTIC-0ace29f2-7bc1-714a-c364-12b57bcf8a93,"Jean-François Millet (French, 1814-1875)",Q148458
 ARTIC-0ae5da56-ca9a-4e0f-5e9d-455c02a4f7d3,Iran,
@@ -76,7 +76,7 @@ ARTIC-0b5406ad-d98e-5148-2668-92ecf87a6900,"Yu Zhiding (禹之鼎, 1647-1709?), 
 ARTIC-0b66bb30-3170-f7d1-543a-93e02ffe194f,"George Inness (American, 1825–1894)",Q704868
 ARTIC-0b7a4670-30f1-1232-b53c-bddf1ebf3e8a,"Alexandre Calame (Swiss, 1810–1864)",Q621994
 ARTIC-0ba00909-2927-68ce-5c4d-a7534d18c4f4,"Thomas Eakins (American, 1844–1916)",Q214905
-ARTIC-0baa38e0-9256-ac80-80ca-a4c392e25a33,"Attributed to Zhou Zhimian (Chinese, active c. 1580-1610)",
+ARTIC-0baa38e0-9256-ac80-80ca-a4c392e25a33," Zhou Zhimian (Chinese, active c. 1580-1610)",Q8071082
 ARTIC-0bdf821c-9259-c0a0-268c-9ba8e42a2a2b,"Xia Chang (Chinese, 1388-1470)",Q1064977
 ARTIC-0c43d8d7-c93b-cbea-b57c-22d2533ec007,Artist unknown (Chinese),
 ARTIC-0c840df0-6d98-46d2-9828-b23ddcd34081,Flemish,
@@ -96,7 +96,7 @@ ARTIC-0f1cc0e0-e42e-be16-3f71-2022da38cb93,"Claude Monet (French, 1840–1926)",
 ARTIC-0f1d3bfb-cbd3-80cb-dfb9-d157e77d1542,Italian or Spanish,
 ARTIC-0f2d999d-0173-2935-a6d0-0175bb97b2a9,"George Inness (American, 1825–1894)",Q704868
 ARTIC-0f393afe-c66f-43af-c235-087014be8cf4,"Ary Scheffer (Dutch, active France, 1795-1858)",Q436726
-ARTIC-0f3c0994-250c-55f0-5f6f-1b7824de84a2,"Attributed to Dong Qichang (Chinese, 1555-1636)",
+ARTIC-0f3c0994-250c-55f0-5f6f-1b7824de84a2," Dong Qichang (Chinese, 1555-1636)",Q537211
 ARTIC-0f9304d9-e93d-7169-e1ab-48d3cc664dde,"Anders Leonard Zorn (Swedish, 1860-1920)",Q206820
 ARTIC-0f951635-312c-0829-451b-553f461c5518,"Bartolomeo Manfredi (Italian, 1582-1622)",Q721166
 ARTIC-0fa92b0d-fc6d-529c-8afa-bba21f3e1fae,"Thomas Couture (French, 1815–1879)",Q326434
@@ -130,7 +130,7 @@ ARTIC-132b782d-54e6-70e1-18f9-211468c09099,"Camille Pissarro (French, 1830-1903)
 ARTIC-13a251ba-2c7a-2d0c-3f65-820c0e1f1a39,"Sebastiano del Piombo (Italian, c. 1485–1547)",Q285423
 ARTIC-13b26391-274d-32c3-f2d2-2493b7dd8fbe,"Style of Honoré Victorin Daumier (French, 1808–1879)",
 ARTIC-13c116df-e5a6-9e6c-0896-507529224415,"Samuel Colman (American, 1832-1920)",Q1751436
-ARTIC-13c3192f-2844-7eb9-4db5-3cd7ce4eb66a,"School of Tawaraya Sôtatsu (Japanese, active 18th century)",
+ARTIC-13c3192f-2844-7eb9-4db5-3cd7ce4eb66a," Tawaraya Sôtatsu (Japanese, active 18th century)",Q1281252
 ARTIC-13d31515-70ec-197f-59f6-b71dc6f60903,"Hans Thoma (German, 1839-1924)",Q678094
 ARTIC-13e89aac-382a-ae03-aa87-48ed1740c28d,"Francisco José de Goya y Lucientes (Spanish, 1746–1828)",Q5432
 ARTIC-14060224-d2c8-a442-d410-58043d6bc861,"Frederic Remington (American, 1861–1909)",Q560787
@@ -158,7 +158,7 @@ ARTIC-16facedd-c8c3-fbfc-a854-23c2d710a889,"Childe Hassam (American, 1859-1935)"
 ARTIC-173911e9-689c-234c-ec2b-e8c2c6c76586,Austrian or Bavarian,
 ARTIC-173ec65a-bc7e-067c-fed1-1677bf5f26a9,"Marsden Hartley (American, 1877–1943)",Q553259
 ARTIC-18092196-50ae-3ff1-9205-1b3110e966c3,"Thomas Cole (American, born England, 1801–1848)",Q334001
-ARTIC-180cdc30-fead-cf71-8f2c-b3fbb929f457,India (Attributed to Fazl),
+ARTIC-180cdc30-fead-cf71-8f2c-b3fbb929f457,India ( Fazl),Q29026669
 ARTIC-180dae61-d73b-4834-3492-6cb20582ef09,"Kano Motonobu (Japanese, 1476-1559)",Q1078015
 ARTIC-1865cfaa-51b3-8916-56eb-6b57cf95c772,"Frans Francken II (Flemish, 1581-1642)",Q1442507
 ARTIC-188eea59-6ece-6197-affb-11445318077b,"Ren Yi (Chinese, 1840-1895)",Q3028266
@@ -173,7 +173,7 @@ ARTIC-1914a6cb-8ec7-064e-4c99-de41637f889c,Artist unknown (Japanese),
 ARTIC-194674a2-f451-65f7-ba46-6aac4d894f0b,"Dante Gabriel Rossetti (English, 1828-1882)",Q186748
 ARTIC-19967481-f358-3d6d-781e-9aa9187d6007,"Eugène Carrière (French, 1849–1906)",Q461464
 ARTIC-199b5d9f-92ce-78b2-85f7-d731a786da51,"Jean Victor Bertin (French, 1775–1842)",Q331884
-ARTIC-19a1413d-52f9-519e-22e6-d9ed9c5b6dfb,"Attributed to Tang Yin 唐寅 (Chinese, 1470-1523)",
+ARTIC-19a1413d-52f9-519e-22e6-d9ed9c5b6dfb," Tang Yin 唐寅 (Chinese, 1470-1523)",Q2248916
 ARTIC-19b940dd-bb34-8ce7-601a-cb3fa1010f97,"Johann Koerbecke (German, about 1420-1490)",Q940505
 ARTIC-19cf5f83-6040-407e-992e-95a71374550f,"Master of Apollo and Daphne (Italian, active c. 1480-1510)",Q21890482
 ARTIC-19d1878d-943a-d47f-c32e-2ce56f917bc2,"Imitator of Titian (Tiziano Vecelli; Italian, c. 1485/90–1576)",
@@ -188,7 +188,7 @@ ARTIC-1b03fde4-b8ee-bf14-b084-caeb4e9f69d8,"India (Rajasthan, Mewar)",
 ARTIC-1b09b81c-d793-e6f9-7862-8770be502f7b,"Pierre Charles Trémolières (French, 1703-1739)",Q2093300
 ARTIC-1b2f28c5-4dcd-20fd-e400-40b3b6bc986b,"Ni Zan 倪瓚 (Chinese, 1301–1374)",Q731030
 ARTIC-1b5b2c7a-972a-0489-a352-afbd8b7b9151,Eastern Tibet,
-ARTIC-1b605198-afe5-1052-3c7b-0c08734238e1,"Attributed to Domenico Gargiulo (Micco Spadaro; Italian, 1609–1675)",
+ARTIC-1b605198-afe5-1052-3c7b-0c08734238e1," Domenico Gargiulo (Micco Spadaro; Italian, 1609–1675)",Q1170226
 ARTIC-1b6ea95a-7fdd-2fd5-d671-7a0eff5692a3,"Li Shizhuo (Chinese, 1690-1770)",
 ARTIC-1bb08195-44b0-030c-c610-9fb6bb45e9b0,Flemish,
 ARTIC-1bc44619-6b1d-5398-cf41-f4af38f6e17f,"Pierre Andrieu (French, 1821-1892)",Q15962367
@@ -221,12 +221,12 @@ ARTIC-202951d5-eb13-8fce-289e-e3582509b2f7,Iran,
 ARTIC-20dc42f2-3f2d-b68a-964b-6681ed507985,"Yao Kuang (Chinese, active 17th century)",Q65915372
 ARTIC-20e3a1c6-7842-5693-67c8-a0f2b4abc363,"Joseph Siffred Duplessis (French, 1725-1802)",Q2286906
 ARTIC-211e903f-a1a3-76d5-90b0-13a1717ee210,"Frederic Remington (American, 1861–1909)",Q560787
-ARTIC-2140dc2a-d145-2c14-35c9-233f3530dc75,"Attributed to Qiu Ying (Chinese, c.1495-1551)",
+ARTIC-2140dc2a-d145-2c14-35c9-233f3530dc75," Qiu Ying (Chinese, c.1495-1551)",Q769372
 ARTIC-21bd8c8d-eaee-3128-3357-658c1aa5b910,"Perugino (Pietro di Cristoforo Vannucci) (Italian, 1445/46-1523)",Q5827
 ARTIC-21de3ab9-5ef4-c0b1-9712-acaad0229562,Gao Yang （高陽） (Chinese (active early/mid-17th century),Q45474584
 ARTIC-2202b9d5-7eaf-d6ec-b8fd-3873c8c2933e,"Alessandro Magnasco (Italian, 1667-1749)",Q516941
 ARTIC-2238313e-4e81-a5be-0605-6f2d05e4401f,"Sesson Shukei (Japanese, 1504-about 1589)",Q3480606
-ARTIC-22609746-bd4b-c9b6-8293-dfd393f00c20,"Attributed to William A. Mitchell (American, 1828-1890)",
+ARTIC-22609746-bd4b-c9b6-8293-dfd393f00c20," William A. Mitchell (American, 1828-1890)",Q5989294
 ARTIC-2295d601-573b-72f8-9760-cfec0d116b48,"Apollonio di Giovanni (Italian, 1415/17-1465)",Q2858468
 ARTIC-22f0f6d6-9cbf-6ca9-f7f3-8da3a976e38d,"Sakai Oho (Japanese, 1808-1841)",Q11644287
 ARTIC-2304d661-2cb9-b550-bc41-9ff923177fc5,"Martín de Soria (Spanish, active 1449-87)",Q9029840
@@ -241,7 +241,7 @@ ARTIC-2479fd9c-a90e-2f5a-b418-6ed505ab2bb9,"József Rippl-Rónai (Hungarian, 186
 ARTIC-247e6198-73d4-1c31-f6d7-1ffc2c5e4622,"Thomas Hudson (British, 1701-1779)",Q1502003
 ARTIC-24acaa1b-70eb-5849-7c71-f3591792c471,China,
 ARTIC-24b73d22-be48-f9de-c1db-05e726c021f7,Korea,
-ARTIC-24c1565b-f22d-fb73-4a7f-f35bcb3dcc09,"Attributed to Raffaello Botticini (Italian, 1477–c.1520)",
+ARTIC-24c1565b-f22d-fb73-4a7f-f35bcb3dcc09," Raffaello Botticini (Italian, 1477–c.1520)",Q3417360
 ARTIC-24f5a9ff-fe25-e1be-65f5-d65f2d509ad4,"Charles François Daubigny (French, 1817–1878)",Q252357
 ARTIC-254c654f-354a-0f4f-28b5-8eb01a02e95c,"Piet Mondrian (Dutch, 1872-1944)",Q151803
 ARTIC-2563126c-ce54-2c5d-b41c-89eaebaf4ef7,"Sano di Pietro (Italian, 1405-1481)",Q1379714
@@ -265,7 +265,7 @@ ARTIC-26e28c6e-0006-e69d-0f7c-4889f3324724,"India (Delhi-Agra region, possibly M
 ARTIC-26ea6163-7d98-9bce-704c-2518a0723c2e,"Italian, Venice",
 ARTIC-26ec4ba5-0571-aded-9bbb-601973682b07,"Salvator Rosa (Italian, 1615-1673)",Q359421
 ARTIC-27440046-931e-8f6f-22f6-3ad8d3402631,Artist unknown (spurious attribution to Prince Yongrong) (Chinese),
-ARTIC-275c4f90-f010-853e-4cd2-0aa306472ee8,"Attributed to Philippe Mercier (French, 1689-1760)",
+ARTIC-275c4f90-f010-853e-4cd2-0aa306472ee8," Philippe Mercier (French, 1689-1760)",Q3380372
 ARTIC-2765aee9-3d78-ec6c-5c66-a1d9dc8173f6,"Claude Monet (French, 1840–1926)",Q296
 ARTIC-27666ca0-d8a7-e5a2-de53-12a274c9d562,"Xugu 虚谷 (Chinese, 1823-1896)",Q45600681
 ARTIC-27a32fa4-9517-3ba2-fe0c-3ffcf44df04f,"George Inness (American, 1825–1894)",Q704868
@@ -282,7 +282,7 @@ ARTIC-2862f52c-6e35-ac31-8ed0-bb67af3f1351,"Shibata Zeshin (Japanese, 1807-1891)
 ARTIC-287ea0c4-1976-46b6-d3e0-5f24db2d95ae,"Giovanni di Paolo (Italian, 1398–1482)",Q946420
 ARTIC-28a7765b-fc38-1a56-87dd-cbcdb647fcdb,"Thomas Doughty (American, 1793-1856)",Q284954
 ARTIC-28cdca78-e3f4-9d13-df34-92585f1e8938,"Giulio Cesare Procaccini (Italian, 1574-1625)",Q1119589
-ARTIC-29163982-8310-36bb-3530-2b5000ce7290,"Attributed to Paolo Antonio Barbieri (Italian, 1603–1649)",
+ARTIC-29163982-8310-36bb-3530-2b5000ce7290," Paolo Antonio Barbieri (Italian, 1603–1649)",Q3362594
 ARTIC-292c2b1e-90cb-3539-7527-819a7875218d,Italian,
 ARTIC-293ab61e-5536-c2d3-936a-4116f027260c,"Jean Baptiste Oudry (French, 1686-1755)",Q737137
 ARTIC-297d433a-dba2-d978-1d40-cb77fb6b6175,"Italian, Venice",
@@ -318,7 +318,7 @@ ARTIC-2cdaa4b6-c9d0-7230-952b-690b8e1cf4df,"Jean Baptiste Joseph Wicar (French, 
 ARTIC-2cefd76a-194d-1ea0-4242-2758ab68454f,China,
 ARTIC-2d484387-2509-5e8e-2c43-22f9981972eb,"Georges Seurat (French, 1859-1891)",Q34013
 ARTIC-2d717e79-f94a-83fd-0e18-3e1a82f85310,"Cosmo Alexander (American, born Scotland, 1724–1772)",Q5174242
-ARTIC-2d83fb4d-1851-ad82-46c6-1c737976e3fd,"Rembrandt van Rijn (Dutch, 1606-1669) (Workshop of Rembrandt van Rijn (Dutch, 1606-1669))",Q5598
+ARTIC-2d83fb4d-1851-ad82-46c6-1c737976e3fd,"Rembrandt van Rijn (Dutch, 1606-1669) ( Rembrandt van Rijn (Dutch, 1606-1669))",Q5598
 ARTIC-2d856b31-b583-c594-0116-c9bd193b4438,"Wen Boren 文伯仁 (Chinese, 1502-1575)",Q3567211
 ARTIC-2dcd9e08-6f4f-9c8a-30b0-54ed93d7c049,"Mihaly Munkácsy (Hungarian, 1844-1900)",Q551652
 ARTIC-2e166f7c-a959-d686-eeb0-a63a52a4d368,"Paul Cezanne (French, 1839–1906)",Q35548
@@ -326,7 +326,7 @@ ARTIC-2e511440-57e2-83e6-593c-9b71390d233b,"Martín de Soria (Spanish, active 14
 ARTIC-2e6d08c8-dac0-4f1c-3e56-de3539ceb905,"Gustave Courbet (French, 1819–1877)",Q34618
 ARTIC-2e6d6a89-61bd-5098-59d3-b41d14bf7973,"Paul Cezanne (French, 1839–1906)",Q35548
 ARTIC-2e7e28aa-a77b-c7f8-852b-708c1171f928,"Claude Lorrain (Claude Gellée; French, 1600-1682)",Q214074
-ARTIC-2ee1ea7b-4ad8-e8fd-6821-394bab14c395,"Attributed to Giuseppe Maria Crespi (Italian, 1665–1747)",
+ARTIC-2ee1ea7b-4ad8-e8fd-6821-394bab14c395," Giuseppe Maria Crespi (Italian, 1665–1747)",Q528620
 ARTIC-2eeb2c2e-a35a-2d54-f89b-f4e3ce880780,"William Adolphe Bouguereau (French, 1825–1905)",Q483992
 ARTIC-2f3348a0-5347-fed8-23ef-2ae06f4bdd28,"India (Rajasthan, Kota)",
 ARTIC-2f53bf34-bbb0-be8d-e944-fab648e6bd56,"Unknown Artist  (Japanese, Edo period (1615-1868))",
@@ -341,7 +341,7 @@ ARTIC-30d64b53-c01f-7853-2543-33914f265a50,British,
 ARTIC-30df0db9-ad8a-7671-87a9-4bdd1bee9563,"Hans Eworth (Netherlandish, active England 1545-73/74)",Q2468731
 ARTIC-30f72d2d-0771-981a-b5e7-5848513aeb42,"Eugène-Louis Boudin (French, 1824–1898)",Q212600
 ARTIC-314637b6-22f5-5c2d-5b33-cd6ef4218748,"Charles François Daubigny (French, 1817–1878)",Q252357
-ARTIC-315d1927-efc2-a249-a35d-7df1ed7afe1f,"Agnolo Bronzino (Italian, 1503-1572) (Workshop of Agnolo Bronzino (Italian, 1503-1572))",Q7803
+ARTIC-315d1927-efc2-a249-a35d-7df1ed7afe1f,"Agnolo Bronzino (Italian, 1503-1572) ( Agnolo Bronzino (Italian, 1503-1572))",Q7803
 ARTIC-318b7761-6765-7273-36c6-2ebc1fb41e22,"Jan Gossart (Netherlandish, c. 1478–1532)",Q346952
 ARTIC-319025af-5250-3de1-5436-d8ed3586b133,North Netherlandish,
 ARTIC-3192ae4d-ffca-fe91-af12-2ca681f43e13,"Martin Johnson Heade (American, 1819–1904)",Q3123472
@@ -405,7 +405,7 @@ ARTIC-3938ca9e-f376-7f58-7bde-0030c2a4e4f3,"William Rimmer (American, born Engla
 ARTIC-3952a506-2776-5613-1693-e5c96c4708f2,"Italian, Tuscany",
 ARTIC-399332e9-94a4-64ac-4ed2-040647b2ca80,"Ferdinand Georg Waldmüller (Austrian, 1793-1865)",Q186816
 ARTIC-39a6fc6e-acc4-304e-534f-2134a1b69244,"Follower of Canaletto (Antonio Canal; Italian, 1697–1768)",
-ARTIC-39be9eee-83ac-15eb-de79-f657bd10aecf,"Unknown Venetian (Italian, 16th Century (Attributed to Andrea Meldolla Schiavone (Italian, 1522-1564)",
+ARTIC-39be9eee-83ac-15eb-de79-f657bd10aecf,"Unknown Venetian (Italian, 16th Century ( Andrea Meldolla Schiavone (Italian, 1522-1564)",
 ARTIC-39fd7277-7714-ba0a-7218-7633f7a88923,"Frederic Remington (American, 1861–1909)",Q560787
 ARTIC-3a019062-00ff-4efa-d433-5b93257fc31a,"Katsushika Hokusai 葛飾 北斎 (Japanese, 1760-1849)",Q5586
 ARTIC-3a32bf1b-5094-f06b-1ea1-a54cd847a5d5,"Jean Charles Cazin (French, 1841–1901)",Q2778951
@@ -419,7 +419,7 @@ ARTIC-3b06a501-7b91-07b2-80f1-a683cbfeaad9,"Paul Bril (Flemish, 1553/54–1626)"
 ARTIC-3b07d318-3be1-4e9a-e4ae-05700abcbc5b,"Agostino Brunias (Italian, active in England and the West Indies, 1758–96)",Q4693621
 ARTIC-3b090ebe-5635-1008-3529-3e61fc680e2a,"Ernest Christian Frederick Petzholdt (Danish, 1805-1838)",Q3432084
 ARTIC-3b097a0b-d945-9122-f50d-f567ff8684e5,"Benjamin Marshall (English, 1767-1835)",Q15123417
-ARTIC-3b2866b5-2b4d-871f-3a61-33178831b0ec,"Attributed to Nicolaes Maes (Dutch, 1634-1693)",
+ARTIC-3b2866b5-2b4d-871f-3a61-33178831b0ec," Nicolaes Maes (Dutch, 1634-1693)",Q505150
 ARTIC-3b8084b4-5fb4-700a-bc0a-16e6fa4698b8,"Hubert Robert (French, 1733-1808)",Q548205
 ARTIC-3b901b0a-b8a8-7299-1851-c25116dfa116,"Stanislas Lépine (French, 1835-1892)",Q1373489
 ARTIC-3bae5e81-c63d-6118-2322-02fd447fbf5b,"Imitator of Narcisse Virgile Diaz de la Peña (French, 1807-1876)",
@@ -440,7 +440,7 @@ ARTIC-3dbc5164-36fe-36b0-0213-2198ee309f82,"Marsden Hartley (American, 1877–19
 ARTIC-3dea7add-50e5-fe2c-8f05-2fb433a9e4ef,"Follower of Frans Hals (Dutch, 1582/83–1666)",
 ARTIC-3e005f8a-d37f-871b-15bb-89756f1ed2e9,"Pierre-Auguste Renoir (French, 1841-1919)",Q39931
 ARTIC-3e782ce2-72ab-1dd2-fb2b-02ace263050d,Iran,
-ARTIC-3e82db48-5f93-ada3-7ab2-f97328ccc1bd,"Workshop of Hieronymus Bosch (Netherlandish, c. 1450–1516 )",
+ARTIC-3e82db48-5f93-ada3-7ab2-f97328ccc1bd," Hieronymus Bosch (Netherlandish, c. 1450–1516 )",Q130531
 ARTIC-3e87750e-8ca6-2a9d-fc43-16dcd3b5557b,Artist unknown,
 ARTIC-3edec075-6e0b-0ccc-0036-5328de3e064c,"Robert Henri (American, 1865-1929)",Q724860
 ARTIC-3ef09d92-f10b-f01f-515d-c69a0a3a3e92,"Charles Emile Callande de Champmartin (French, 1797–1883)",Q725327
@@ -463,12 +463,12 @@ ARTIC-40fdb1d6-93fe-2916-78fb-f56a1ac261f1,"Fra Bartolommeo (Baccio della Porta;
 ARTIC-41458ec7-da2d-773d-159c-9ae9afb53516,"Victor Pierre Huguet (French, 1835-1902)",Q3557373
 ARTIC-415e801c-14d5-a3a6-1119-29fbce0afc0b,"India (Rajasthan, Jaipur)",
 ARTIC-41728a11-a073-6efa-387c-a40384477ad2,"Pierre-Auguste Renoir (French, 1841-1919)",Q39931
-ARTIC-4188f4df-ca48-3e3a-ecdf-aa79771093c4,"Joos van Cleve (Netherlandish, Active by 1507-1540/41) (Workshop of Joos van Cleve (Netherlandish, Active by 1507-1540/41))",Q153472
+ARTIC-4188f4df-ca48-3e3a-ecdf-aa79771093c4,"Joos van Cleve (Netherlandish, Active by 1507-1540/41) ( Joos van Cleve (Netherlandish, Active by 1507-1540/41))",Q153472
 ARTIC-41966cec-34ad-7600-ee8e-40c86081334e,"Bartholomäus Bruyn the Younger (German, 1524/30-1607/10)",
 ARTIC-41d8c49b-20e2-af18-d7e3-b092e26bac38,"Wang Guxiang (Chinese, 1501-1568)",Q3566068
 ARTIC-42307ee8-3dc8-3549-4c82-b1387e2f2372,"Cheng Jiasui (Chinese, 1565–1643)",Q1022213
 ARTIC-4237947a-8908-0a35-9f20-bc803f549f36,"India (Rajasthan, Jaipur)",
-ARTIC-424365f4-5c5a-e993-f5a9-34b4f732c1d8,"Jean Baptiste Joseph Pater  (French, 1695-1736)",Q731533
+ARTIC-424365f4-5c5a-e993-f5a9-34b4f732c1d8,"Jean Baptiste Joseph Pater (after) (French, 1695-1736)",Q731533
 ARTIC-42855e11-dd90-3f7f-8038-91cbd1a95166,India (Haryana),
 ARTIC-42924282-d483-cd95-e676-52aee4bc4164,"Jasper Francis Cropsey (American, 1823-1900)",Q1451318
 ARTIC-43165650-0212-8897-0605-dc3fdda88c13,"James McNeill Whistler (American, 1834–1903)",Q203643
@@ -487,7 +487,7 @@ ARTIC-439d68fb-062c-8079-0ab9-2fc9d2690275,"Samuel van Hoogstraten (Dutch, 1627-
 ARTIC-43e90563-6f62-0e3e-0fda-859553118058,"India (Rajasthan, Bundi)",
 ARTIC-43fcfad0-8256-4923-9f9c-03ca90417907,"Paul Signac (French, 1863-1935)",Q151573
 ARTIC-4425984b-e241-6413-1404-cdac0fb06518,"George Inness (American, 1825–1894)",Q704868
-ARTIC-4435bdc5-5779-a10b-d5b6-300b87803ff4,"Attributed to Zhu Da 朱耷 (Chinese, 1626-c.1705)",
+ARTIC-4435bdc5-5779-a10b-d5b6-300b87803ff4," Zhu Da 朱耷 (Chinese, 1626-c.1705)",
 ARTIC-4442fcd5-66cd-e41e-2b32-75068f72b66b,"Hu Gongshou 胡公壽 (Chinese, 1823-1886)",Q28044052
 ARTIC-4444c9bb-d6c2-0820-ec61-d04a4ae70793,"Michele Tosini, called Michele di Ridolfo  (Italian, 1503-1577)",
 ARTIC-44746c0d-c208-a71f-60c5-505bfb943301,Southern Tibet,
@@ -532,7 +532,7 @@ ARTIC-498e45a7-5721-25dd-e26c-09b3e5b8010b,"John Ritto Penniman (American, c. 17
 ARTIC-49e860ae-5d35-3ee1-1b14-79d1dc9268d9,"Hendrik Martensz. Sorgh (Dutch, c.1611-1670)",Q1237823
 ARTIC-49f45b42-b565-199f-6ef5-f09dea142205,"Julius Gari Melchers (American, 1860-1932)",Q1387035
 ARTIC-4a04138f-43d8-cd9f-5ac4-478cd8828210,"Adriaen van der Spelt (Dutch, 1630-1673) (Frans van Mieris (Dutch, 1635-1681))",Q2057258
-ARTIC-4a17bb4f-36a8-e032-506f-77f8a214877b,"Workshop of Jacob Cornelisz. van Oostsanen (Master of the Berlin Sketchbook?; Netherlandish, c. 1470/75–by 1533)",
+ARTIC-4a17bb4f-36a8-e032-506f-77f8a214877b," Jacob Cornelisz. van Oostsanen (Master of the Berlin Sketchbook?; Netherlandish, c. 1470/75–by 1533)",Q1029143
 ARTIC-4aae65a7-e5db-54be-82d5-43cc6b347dbd,"Follower of Rembrandt van Rijn (Dutch, 1606–1669)",
 ARTIC-4ab20567-ffb7-e5e5-1904-666467e8a4b7,"India (West Bengal, Murshidabad or Avadh/Uttar Pradesh, Lucknow)",
 ARTIC-4ac46654-f276-369f-f2fe-dadb30838b30,"Jan van Scorel (Netherlandish, 1495-1562)",Q282708
@@ -542,13 +542,13 @@ ARTIC-4b0bff90-1cb5-0b51-272b-0a0726f36537,"John Theodore Heins, Sr. (British, 1
 ARTIC-4b9e255e-4a22-334d-1a57-fee2d84cd426,"Follower of the Master of Saint Veronica (German, active Cologne c. 1395-c. 1420)",
 ARTIC-4bbc7ea5-02a1-08fb-badb-fd08aa9bc52f,"India (Rajasthan, Jaipur)",
 ARTIC-4bf04476-37cc-9d94-b631-52854109d178,India (Gujarat),
-ARTIC-4bf91735-17c3-2065-1686-20d6adcc3e6f,"Attributed to Veronica Stern (Italian, 1717-1801) )",
+ARTIC-4bf91735-17c3-2065-1686-20d6adcc3e6f," Veronica Stern (Italian, 1717-1801) )",Q21462485
 ARTIC-4c364c64-2108-4e19-5fc5-1ab26ba924a7,"Claude Monet (French, 1840–1926)",Q296
 ARTIC-4c5abec2-d94f-9afa-b689-de4dc93791f2,"William Bradford (American, 1823-1892)",Q8005829
 ARTIC-4c673558-2a11-d484-fd72-026e7618bcfd,"Antonio Vivarini (Italian, about 1415-1476/84)",Q935534
 ARTIC-4c862fdf-89d6-7c37-ccd2-3c5ee85e5161,"Francescuccio Ghissi (Italian, active 1359-1395)",Q3081147
 ARTIC-4cb3e735-e0b4-7c8d-5cef-78230983d1be,"India (Rajasthan, Kota)",
-ARTIC-4cdc7a89-3bd3-704c-1c16-c35576a8615a,"Attributed to Charles Lawrence (American, active 1813-1837)",
+ARTIC-4cdc7a89-3bd3-704c-1c16-c35576a8615a," Charles Lawrence (American, active 1813-1837)",Q97014472
 ARTIC-4cf54b0c-c643-20c7-b0a4-68bc4b7626d9,"Nicolaes Pietersz. Berchem (Dutch, 1621/22-1683)",Q711737
 ARTIC-4d03ba14-a01a-d003-404a-cf3f9fb40ede,"Édouard Manet (French, 1832–1883)",Q40599
 ARTIC-4d1b3ad0-14db-0d21-ad9f-17abb8bdfbb5,"Claude Monet (French, 1840–1926)",Q296
@@ -590,12 +590,12 @@ ARTIC-527417cf-28b5-45f0-8afe-20af0dcc1418,"Paul Cezanne (French, 1839–1906)",
 ARTIC-527a2995-17c8-c239-5f02-2d49c76f5170,"Artist unknown (Chinese, 19th century)",
 ARTIC-52ac8996-3460-cf71-cb42-5c4d0aa29b74,"Paul Cezanne (French, 1839–1906)",Q35548
 ARTIC-52bb7c82-66b0-3834-e6ac-4b3f93dd55f2,"India (Rajasthan, Jaipur)",
-ARTIC-530499eb-65a4-e816-d8ff-7b7cf40af0e3,"Attributed to Oguri Sotan (Japanese, about 1413-1481)",
+ARTIC-530499eb-65a4-e816-d8ff-7b7cf40af0e3," Oguri Sotan (Japanese, about 1413-1481)",Q3517929
 ARTIC-5322fe79-0310-e5bc-b20e-d4003cfc264f,Tibet,
 ARTIC-5337e361-0aa1-5306-c748-c2e6ade6e351,"Artist unknown (Spurious signature of Lu Zhi (Chinese, 1496-1576))",
 ARTIC-5340e33f-be52-9a68-14a8-0620cfc73c27,Tibet,
-ARTIC-5372920d-7536-64ec-bf48-264e084635f8,"Attributed to Pieter Dubordieu  (Dutch, 1609/10-after 1678)",
-ARTIC-53957710-4a92-1028-4cbd-f38faaac5861,"Attributed to Jean François Millet I, called Francisque Millet  (French, 1642-1679)",
+ARTIC-5372920d-7536-64ec-bf48-264e084635f8," Pieter Dubordieu  (Dutch, 1609/10-after 1678)",Q1288897
+ARTIC-53957710-4a92-1028-4cbd-f38faaac5861," Jean François Millet I, called Francisque Millet  (French, 1642-1679)",Q3751077
 ARTIC-53eb3c01-e31d-1688-e3c1-a90c1dbf09d4,Nepal,
 ARTIC-5403c6fd-fb8b-c22c-abaa-9c30eb3710f4,Spanish (Seville?),
 ARTIC-5406335d-aa81-8562-e9e7-98e95032786d,Unknown artist (Japanese),
@@ -632,21 +632,21 @@ ARTIC-57279626-f248-4b4d-7ce1-37105c3bc186,"Constant Mayer (American, born Franc
 ARTIC-57e7455f-9c4f-7b6d-ffac-6d2269258265,"William Powell Frith (British, 1819-1909)",Q955750
 ARTIC-585675bb-6b89-3c49-eb28-4bc4b2bbe500,"Akseli Gallen-Kallela (Finnish, 1865-1931)",Q170068
 ARTIC-5888c23a-635f-396a-117b-2223032c0201,"James McNeill Whistler (American, 1834–1903)",Q203643
-ARTIC-58b4fe70-dd72-d4cc-df94-74f96d213d2b,"Attributed to Sesshu (Japanese, 1420-1506)",
+ARTIC-58b4fe70-dd72-d4cc-df94-74f96d213d2b," Sesshu (Japanese, 1420-1506)",Q48514
 ARTIC-58d58cdf-ed3d-c641-1910-504ae64b8ce8,"Sesson Shukei (Japanese, c. 1490-after 1577)",Q3480606
 ARTIC-58f58363-f567-0e49-7956-d49400721b1c,"Peter Paul Rubens (Flemish, 1577-1640)",Q5599
 ARTIC-591b86ab-c0a9-77f7-c4bf-a330498b9c02,"Shen Zhou 沈周 (Chinese, 1427-1509)",Q558863
 ARTIC-59221fa2-45f9-5674-4fbd-9da3eb648d68,"John Singer Sargent (American, 1856–1925)",Q155626
 ARTIC-59511df1-03d0-aea4-369a-959669ccfe51,"Merry Joseph Blondel (French, 1781–1853)",Q245624
 ARTIC-5965fe15-d8fa-3f39-031d-bb4a231560e0,"Ricardo Canals y Llambí (Spanish, 1876–1931)",Q4892625
-ARTIC-599e0546-ed58-0224-a623-39a8e3b51ef8,"Attributed to Jan Brueghel the Elder (Flemish, 1568–1625)",
+ARTIC-599e0546-ed58-0224-a623-39a8e3b51ef8," Jan Brueghel the Elder (Flemish, 1568–1625)",Q209050
 ARTIC-59beade7-47ae-af77-ff3b-5d990ff31fea,"India (Rajasthan, Jaipur)",
 ARTIC-59bf5216-383d-c2d4-912a-f8cfcbdaa55a,"Ralph Earl (American, 1751-1801)",Q1350959
 ARTIC-59ce4cb2-beae-5492-0d83-345cbc0745c2,"Johann Michael Rottmayr (Austrian, 1654-1730)",Q674772
 ARTIC-59f7fff6-d050-d160-fcdf-3c8d0e6aca01,"Jacopino del Conte (Italian, 1510–1598)",Q2538308
 ARTIC-5a047a1c-d36e-e88d-05e7-845d3936159b,"Sir Joshua Reynolds (English, 1723-1792)",Q194402
 ARTIC-5a1b1b10-f3e0-78e5-55db-d107bfcce82c,"Sébastien Bourdon (French, 1616–1671)",Q553795
-ARTIC-5a47a0b8-d21b-b5ae-c8f2-3b99476e6e75,"Attributed to Reinier Zeeman (Reinier Nooms) (Dutch, c. 1623-c. 1668)",
+ARTIC-5a47a0b8-d21b-b5ae-c8f2-3b99476e6e75," Reinier Zeeman (Reinier Nooms) (Dutch, c. 1623-c. 1668)",Q1936604
 ARTIC-5a487230-6002-45a7-08c4-b2198a2a2c60,"Claude Monet (French, 1840–1926)",Q296
 ARTIC-5a67db8d-0902-2d04-adc8-f67bf99a3529,"Kishi Ganku  (Japanese, 1749-1838)",Q555061
 ARTIC-5a7c5a7a-39f2-a172-9d98-2544c49d39f6,"Felice Ficherelli (Italian, 1605-1669)",Q433360
@@ -683,7 +683,7 @@ ARTIC-5ec4aa8b-bbc6-4417-8c77-aca4f24ceb58,"Claude Marie Dubufe (French, 1790-18
 ARTIC-5edb357d-2e8f-8673-d9e8-4b1150af3895,"Berthe Morisot (French, 1841-1895)",Q105320
 ARTIC-5ee19981-a8f5-1306-3ec5-eb79c14ac1a6,"Peter Paul Rubens (Flemish, 1577-1640)",Q5599
 ARTIC-5efa3af7-3e68-29c9-f63b-f4ca41951e22,Flemish,
-ARTIC-5f07e1e0-cc29-29b3-a746-994589acea56,"Workshop of Apollonio di Giovanni (Italian, 1415/17-1465) (Marco del Buono Giamberti (Italian, 1403-1489))",
+ARTIC-5f07e1e0-cc29-29b3-a746-994589acea56," Apollonio di Giovanni (Italian, 1415/17-1465) (Marco del Buono Giamberti (Italian, 1403-1489))",Q2858468
 ARTIC-5f12c6bb-509b-c04c-60ab-78d6ab081f9f,"Franz Ludwig Catel (German, 1778–1856)",Q879031
 ARTIC-5f1fda6c-f116-c251-1cee-c6bad53d8d18,"Josse de Momper the Younger (Flemish, 1564-1635)",Q560548
 ARTIC-5f2eb807-4027-bf11-e71b-166f7a7f799f,"India (Rajasthan, Jaipur)",
@@ -695,7 +695,7 @@ ARTIC-5f9e4780-c8c7-122d-a260-aa0d94854016,Korea,
 ARTIC-5fa784d4-f5d4-cc88-2f8c-0d7bad4945c4,"Francisco de Zurbarán (Spanish, 1598–1664)",Q209615
 ARTIC-5ff756af-75f0-b1e7-60b9-a93440972bd2,Nepal,
 ARTIC-6006b9e7-567a-4fb8-34e2-a120886690fe,"Henry Fuseli (Swiss, active in England, 1741-1825)",Q122382
-ARTIC-6010f431-9cce-39c8-e53b-ebaf9906ccdb,Attributed to Alessandro Longhi,
+ARTIC-6010f431-9cce-39c8-e53b-ebaf9906ccdb, Alessandro Longhi,Q1855242
 ARTIC-604fe021-6008-f666-bce8-456b2fdc9bd4,"Paul Gauguin (French, 1848–1903)",Q37693
 ARTIC-60699af7-9aab-5e2b-7309-1266286b0810,"Alessandro Longhi (Italian, 1733-1813)",Q1855242
 ARTIC-6076ae8b-08bb-134a-1bd2-1cca81b1cbd1,"Johann Heinrich Wilhelm Tischbein (German, 1751-1829)",Q213973
@@ -711,7 +711,7 @@ ARTIC-61c3e72f-b453-1ada-62a5-9539afbe0641,"Francisco José de Goya y Lucientes 
 ARTIC-61d45e6c-3a89-4c1d-e1a1-7b19af9ba558,"Tsukioka Yoshitoshi (Japanese, 1839-1892)",Q467337
 ARTIC-6209e096-0046-65bf-cf52-832f392c20c9,India,
 ARTIC-622998f1-73f9-4c96-08cf-60bda7c9ce4b,"Francisco José de Goya y Lucientes (Spanish, 1746–1828)",Q5432
-ARTIC-6246e043-2b40-bf6b-ab7d-f2a4109e25d8,"Attributed to Nicolaes Maes (Dutch, 1634-1693)",
+ARTIC-6246e043-2b40-bf6b-ab7d-f2a4109e25d8," Nicolaes Maes (Dutch, 1634-1693)",Q505150
 ARTIC-6277b0e3-cdc9-2d1c-b129-118594e0fcdb,Artist Unknown (Japanese),
 ARTIC-629e6e88-5776-8ba5-e49f-fda92cdbac93,"South German, possibly Ulm",
 ARTIC-62cf0eda-cbeb-6f30-3e74-7e6dcbedf3da,India (Gujarat),
@@ -737,7 +737,7 @@ ARTIC-6575c354-8a4f-60d3-ad6f-06fa8d7f9ded,"Gustave Courbet (French, 1819–1877
 ARTIC-65db9e21-83c3-1cc6-7240-1e1996d87f52,"Henri de Toulouse-Lautrec (French, 1864-1901)",Q82445
 ARTIC-660278f5-2186-0999-3846-fd88a2071ce0,"Bernardino Butinone (Italian, c. 1450-before 1510)",Q2622155
 ARTIC-666a3ad1-e489-1d4d-7dd9-6a0eae1cb593,"Marcellin Gilbert Desboutin (French, 1823–1902)",Q1596281
-ARTIC-66c1797f-b87e-8736-cdf6-c490bd34863b,"Workshop of Dieric Bouts (Netherlandish, c. 1410–1475)",
+ARTIC-66c1797f-b87e-8736-cdf6-c490bd34863b," Dieric Bouts (Netherlandish, c. 1410–1475)",Q313561
 ARTIC-66f95ea3-a11a-1cf4-6599-d0a49bb25744,"Claude Monet (French, 1840–1926)",Q296
 ARTIC-6725ded2-030e-59cb-7575-82374f76baca,"Yao Shou (Chinese, 1423-1495)",Q45446257
 ARTIC-6744270e-1f05-e07c-18a9-ea06f180a8fb,"Lilla Cabot Perry (American, 1848–1933)",Q431705
@@ -747,7 +747,7 @@ ARTIC-67b46720-1589-0d13-3597-f03c7b618094,"Joseph Wright of Derby (British, 173
 ARTIC-67c7274f-612f-3180-0a12-e2c7ed5a7dd4,"India (Rajasthan, Mewar, Udaipur, attributed to the “Stipple Master” (active c. 1692-c. 1715))",
 ARTIC-681c9b51-6682-3f8c-dac8-ad250ed82240,"Jean-François Millet (French, 1814-1875)",Q148458
 ARTIC-6829aab0-8d0e-9438-aebf-a1a379572951,"Franz Marc (German, 1880-1916)",Q44054
-ARTIC-68415b1d-baec-303a-1c09-4c6b7ccb575c,"Attributed to Ezra Ames (American, 1768-1836 (Copy after Ralph Earl (American, 1751-1801)",
+ARTIC-68415b1d-baec-303a-1c09-4c6b7ccb575c," Ezra Ames (American, 1768-1836 (Copy after Ralph Earl (American, 1751-1801)",Q5423324
 ARTIC-68452725-eba5-06e3-46d2-50c678a5d672,"Diego Velázquez (Spanish, 1599–1660)",Q297
 ARTIC-6847bea2-8d1a-cc2e-c9ae-da6be0ae8192,Nepal,
 ARTIC-68b74f5d-dfc8-6f40-f819-06eab21cc26d,"Félix Ziem (French, 1821-1911)",Q466224
@@ -800,7 +800,7 @@ ARTIC-70742343-a189-c649-b8a7-da201269cea1,"George Inness (American, 1825–1894
 ARTIC-707eaea7-b325-b93d-37c1-b79b1876384b,"Anton Raffael Mengs (German, 1728-1779)",Q76718
 ARTIC-7085f5ee-b5da-bd9f-e8f9-b692be466ea0,"Jean Baptiste Siméon Chardin (French, 1699–1779)",Q207447
 ARTIC-7093bdd2-13e0-855c-f3c9-eb7ad1d102f9,"Will Hicock Low (American, 1853-1932)",Q8002863
-ARTIC-709f4ad8-d170-c3ca-0b43-51fa6fdeffaa,"Attributed to Giuseppe Angeli (Italian, c. 1709-1798)",
+ARTIC-709f4ad8-d170-c3ca-0b43-51fa6fdeffaa," Giuseppe Angeli (Italian, c. 1709-1798)",Q378182
 ARTIC-70d29ea7-d9c9-947c-dc2f-a79f11844ae1,North Netherlandish,
 ARTIC-70d375a0-25bd-7fe1-c586-0e8919aaf395,"Charles François Daubigny (French, 1817–1878)",Q252357
 ARTIC-70ebfef5-7a98-2834-1be7-cc95e038fe82,"Michele Marieschi (Italian, 1710-1743)",Q2501578
@@ -814,8 +814,8 @@ ARTIC-72a76270-d6f4-e744-d47b-307873a8e8ff,"William Merritt Chase (American, 184
 ARTIC-730ab90f-45c3-ca32-77d0-a43858cdbbab,"Frans Hals (Dutch, 1582/83–1666)",Q167654
 ARTIC-7321b007-adde-0acb-9d5b-0f57c8f3fcf1,"Francesco Guardi (Italian, 1712-1793)",Q318769
 ARTIC-7325a7b0-a9f4-6c24-2505-1ee84daa27da,"Francisco José de Goya y Lucientes (Spanish, 1746–1828)",Q5432
-ARTIC-7354024b-0aa0-9e6c-c3c8-ec40c318a4bb,"Attributed to Francisco Bayeu y Subías (Spanish, 1734-1795) )",
-ARTIC-738fc402-53e4-83ad-f84d-556798754a51,"School of Johann Liss (German, c. 1597-1631)",
+ARTIC-7354024b-0aa0-9e6c-c3c8-ec40c318a4bb," Francisco Bayeu y Subías (Spanish, 1734-1795) (after Corrado Giaquinto (Italian, 1693/99-1765))",Q2571452
+ARTIC-738fc402-53e4-83ad-f84d-556798754a51," Johann Liss (German, c. 1597-1631)",Q700279
 ARTIC-73a61bab-fcf6-7145-3e29-8edd95212db1,"Marsden Hartley (American, 1877–1943)",Q553259
 ARTIC-73a93ee5-b169-73f4-4db9-6e738eca7fce,"Domenico Fetti (Italian, about 1591/2-1623)",Q551695
 ARTIC-73e55d5b-8076-f5d9-1dd6-309d29b1fdea,English,
@@ -824,35 +824,35 @@ ARTIC-74688577-011f-6b8f-bab7-ac459cb9c889,"George Inness (American, 1825–1894
 ARTIC-746e5978-311c-68dc-9f75-0fe34394391d,India,
 ARTIC-747149cf-b1eb-4877-52cb-49ba2341a72b,"Adriaen van Ostade (Dutch, 1610–1685)",Q352438
 ARTIC-749250e6-883e-d22b-4cf4-621e22b5178d,"Stefano Pozzi (Italian, c. 1699-1768)",Q3497986
-ARTIC-749a476d-3d32-f10b-01e4-a6b9ee167923,"School of William Matthew Prior (American, 1806-1873)",
+ARTIC-749a476d-3d32-f10b-01e4-a6b9ee167923," William Matthew Prior (American, 1806-1873)",Q8015236
 ARTIC-74a81d71-1b21-2041-19a9-c646df5b667e,Artist unknown (Chinese),
 ARTIC-74e4bd6b-8831-1965-d4de-95f899755a00,"Leng Mei (Chinese, 1669-1742)",Q6522422
 ARTIC-74f81dc6-4671-fdb8-0913-b93f1862bd83,Dutch,
-ARTIC-75886aaa-002a-2047-a05c-baf73f0ac093,"El Greco (Doménikos Theotokópoulos; Greek, active in Spain, 1541-1614) (Workshop of El Greco (Doménikos Theotokópoulos; Greek, active in Spain, 1541-1614))",Q301
-ARTIC-75986fc1-2e22-156a-9914-23119865ad1b,"Jean Baptiste Joseph Pater  (French, 1695-1736)",Q731533
+ARTIC-75886aaa-002a-2047-a05c-baf73f0ac093,"El Greco (Doménikos Theotokópoulos; Greek, active in Spain, 1541-1614) ( El Greco (Doménikos Theotokópoulos; Greek, active in Spain, 1541-1614))",Q301
+ARTIC-75986fc1-2e22-156a-9914-23119865ad1b,"Jean Baptiste Joseph Pater (after) (French, 1695-1736)",Q731533
 ARTIC-75d767b8-38ca-42af-ef70-f5960a7e86e7,"Homer Dodge Martin (American, 1836-1897)",Q3139663
 ARTIC-76017100-be7f-4c3c-2622-064f1472c889,"Andrea Vaccaro (Italian, 1598/1604-1670)",Q2707224
-ARTIC-76079de3-5802-1213-d9eb-10da0fe68316,"Attributed to Sotan (Japanese, 1413-1481)",
+ARTIC-76079de3-5802-1213-d9eb-10da0fe68316," Sotan (Japanese, 1413-1481)",Q3517929
 ARTIC-7616bc53-7a4b-a7bb-0dac-131cf91aff80,"Constant Troyon (French, 1810-1865)",Q219403
 ARTIC-7649eda7-1cc3-2b84-257e-670c0953b26b,"Carducius Plantagenet Ream (American, 1838–1917)",Q20892627
-ARTIC-7739a403-99b6-d151-c892-e93a0b17e4ef,"Attributed to Dai Jin (Chinese, c.1388-1462)",
+ARTIC-7739a403-99b6-d151-c892-e93a0b17e4ef," Dai Jin (Chinese, c.1388-1462)",Q741512
 ARTIC-774c1cdd-74f5-dadf-8e84-143410cc7119,"María Josefa Sánchez (Spanish, active 1639-1649)",Q126949261
-ARTIC-778f759c-d7fd-8895-60b0-85ccfd88c982,"Attributed to Dong Qichang (Chinese, 1555–1636)",
+ARTIC-778f759c-d7fd-8895-60b0-85ccfd88c982," Dong Qichang (Chinese, 1555–1636)",Q537211
 ARTIC-77951d0c-d781-eac6-f4ff-f13cc5cfc0cf,"Jean Hey, known as The Master of Moulins (French, active c. 1475- c. 1505)",
-ARTIC-77afdb88-dd75-5dab-c58b-ef6ac91bee7a,"Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533) (or Workshop of Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533))",Q1029143
+ARTIC-77afdb88-dd75-5dab-c58b-ef6ac91bee7a,"Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533) (or  Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533))",Q1029143
 ARTIC-77ccddcb-16e8-be2c-8891-4e3df68f4558,China,
 ARTIC-77da3827-005a-2149-c590-34d31fdfa83c,"William Bonnell (American, 1804-1865)",Q20899718
 ARTIC-77f1c8e3-16c6-1147-f4aa-4cfc8bd3eb8b,"Jacques-Louis David (French, 1748–1825)",Q83155
 ARTIC-7803e1de-cf41-a23e-4025-0e6fd5d41729,"Bernardino Nocchi (Italian, 1741-1812)",Q2898905
 ARTIC-78208a3e-39e9-f723-8e7c-6e9c7ff0ab95,Southern Tibet,
-ARTIC-7858447e-b366-d831-6174-903925be68e4,Iran (Attributed to Sadiqi Beg (1533-1610)),
+ARTIC-7858447e-b366-d831-6174-903925be68e4,Iran ( Sadiqi Beg (1533-1610)),Q4404551
 ARTIC-78c80988-6524-cec7-c661-a4c0a706d06f,"Berthe Morisot (French, 1841-1895)",Q105320
 ARTIC-78d9bb83-436f-18d4-d525-264ea6957a60,"Artist unknown (American, 17th–18th century)",
 ARTIC-7904b9d2-675f-7aeb-88c3-e29cd519b7be,"Jacopo Chimenti, called Jacopo da Empoli (Italian, 1551-1640)",Q2625832
 ARTIC-7912f9dc-972e-d4e1-4d4b-825d19446cf7,"Yamaguchi Sekkei (Japanese, 1644-1732)",Q11467532
 ARTIC-791abe16-d00a-577b-fbae-5a6a1e4f70ac,Korea,
 ARTIC-7951054b-f49a-6824-10ab-a3a301f39115,"Alvan Fisher (American, 1792-1863)",Q3063754
-ARTIC-7967bcfe-1634-19ad-ff6c-48a10cae9a8e,"Li Shan (Attributed to) (Chinese, 1686-after 1760)",Q6539055
+ARTIC-7967bcfe-1634-19ad-ff6c-48a10cae9a8e,"Li Shan () (Chinese, 1686-after 1760)",Q6539055
 ARTIC-79a40120-87bf-ff0f-4a97-fdda3a26743c,"Matteo di Giovanni (Italian, c. 1430-1495)",Q1373474
 ARTIC-79a4253e-b5fc-a055-e8ed-a742a1647576,"Kaigetsudo Doshu (Japanese, active c. 1711-16)",Q11495296
 ARTIC-79b94ddd-e208-1993-01ab-98f75174fe88,"John Singer Sargent (American, 1856–1925)",Q155626
@@ -880,11 +880,11 @@ ARTIC-7d18184d-d2e2-3e7a-b263-20dd10cf1c62,"India, Delhi",
 ARTIC-7d2efddb-6797-f7c7-81f4-1a61fb835275,India,
 ARTIC-7d533ed4-ff54-fa2c-64f4-2b16bfbb5880,"Claude Monet (French, 1840–1926)",Q296
 ARTIC-7d5dcd32-b556-6d64-c90e-d195717f633f,"Artist unknown (17th century), spurious signature of Qiu Ying 仇英 (c. 1500-1552) (Chinese)",
-ARTIC-7db6cf67-3cd0-40dc-112b-4494eca99d73,"Workshop of Rogier van der Weyden (Netherlandish, c. 1399-1464)",
+ARTIC-7db6cf67-3cd0-40dc-112b-4494eca99d73," Rogier van der Weyden (Netherlandish, c. 1399-1464)",Q68631
 ARTIC-7dd956f2-4d5e-66d9-e37c-d6359ff385c2,"Jacob Eichholtz (American, 1776-1842)",Q6118567
 ARTIC-7e242ca2-5c5f-bb08-ccff-7e8ef645deaf,"Fernand Lungren (American, 1857-1932)",Q16029345
 ARTIC-7e649536-b186-c3f5-3e6d-0d22d5d798ef,"Amedeo Modigliani (Italian, 1884-1920)",Q120993
-ARTIC-7e8cd885-32c2-2721-0440-71064338a36e,"Attributed to Pei Zhi 培志 (Chinese, 17th century)",
+ARTIC-7e8cd885-32c2-2721-0440-71064338a36e," Pei Zhi 培志 (Chinese, 17th century)",
 ARTIC-7ee5e05c-9dfa-ef87-2dd9-2696da7dbc74,"Jacopo Bassano (Jacopo da Ponte; Italian, c. 1510-1592)",Q346502
 ARTIC-7eeb9d38-a1f4-47b4-b335-654fdd20b1bb,"Chen Chun 陳淳 (Chinese, 1483-1544)",Q558251
 ARTIC-7f13cc17-67d7-fdec-329a-dc7d431213f5,"Gawen Hamilton (British, 1697-1737)",Q5528439
@@ -908,7 +908,7 @@ ARTIC-8296a638-d1c7-44df-5519-d582ae80c457,"Sesson Shukei (Japanese, 1504-about 
 ARTIC-82a87cf0-6082-a7f7-c2cf-0fc9283ed966,"William Sidney Mount (American, 1807–1868)",Q45431
 ARTIC-82a9964f-a872-fb7c-9771-07ef3299ed7f,"Artist unknown (Chinese, c. 14th century)",
 ARTIC-82b1ac6e-de4e-7e80-6bd8-e1f1bb0cb889,Northern Italian (Verona?),
-ARTIC-82ebb537-935c-eb38-1183-71290c889b0b,"Attributed to Veronica Stern (Italian, 1717-1801) )",
+ARTIC-82ebb537-935c-eb38-1183-71290c889b0b," Veronica Stern (Italian, 1717-1801) )",Q21462485
 ARTIC-83092988-7180-21d1-b8a3-cf39ddf39a68,"Hubert Robert (French, 1733-1808)",Q548205
 ARTIC-831534f4-dd88-4100-41b3-0016f19e4d7a,"India (Delhi-Agra region, possibly Mathura)",
 ARTIC-83375479-f7a9-bac3-44a8-e705ab6e423c,"Rembrandt van Rijn (Dutch, 1606–1669)",Q5598
@@ -926,7 +926,7 @@ ARTIC-85d05bad-1205-6de5-e75c-ec9113a626ab,"Henri Fantin-Latour (French, 1836–
 ARTIC-85d86039-4f89-aee7-feb7-b60a0ff3790a,"François Le Moyne (French, 1688-1737)",Q732468
 ARTIC-8641479e-c93e-f1a8-9925-19be061706da,"Joseph Mallord William Turner (English, 1775-1851)",Q159758
 ARTIC-867b4435-fc3c-9e3d-ca53-0c4ee875c1ad,"Samuel Lovett Waldo (American, 1783-1861 (William Jewett (American, 1792-1874)",Q390073
-ARTIC-8680468a-04e4-89ea-62c8-515b32ea2840,"Attributed to Ren Yi (Chinese, 1840-1895)",
+ARTIC-8680468a-04e4-89ea-62c8-515b32ea2840," Ren Yi (Chinese, 1840-1895)",Q3028266
 ARTIC-86fbb77f-5ca0-5737-f597-26f50ef2b62f,China,
 ARTIC-87433360-2578-5b1b-c0b7-67921dc226fa,"Jan Steen (Dutch, 1626–1679)",Q205863
 ARTIC-87491409-87e0-d3cc-8daf-778c8c0c722c,Artist unknown (Japanese),
@@ -972,7 +972,7 @@ ARTIC-8cbd9834-7846-148c-ed09-f82cd0af048a,China,
 ARTIC-8cdc812d-5db0-63a1-8579-eb64fc6884ca,"John Singer Sargent (American, 1856–1925)",Q155626
 ARTIC-8ce5043b-dd57-bee3-517b-f5941f40bc71,Circle of Adriaen Isenbrant,
 ARTIC-8ce83a09-9b09-0d08-ef30-93b6ba6439a2,"Jonas Welch Holman (American, 1805-1873)",Q21809831
-ARTIC-8cfd6282-35bb-e468-d034-b927ed611194,"Attributed to Ike Taiga (Japanese, 1723-1776)",
+ARTIC-8cfd6282-35bb-e468-d034-b927ed611194," Ike Taiga (Japanese, 1723-1776)",Q2661041
 ARTIC-8d119fd0-2f57-f20e-a3f5-a573904001e9,"Jean-Auguste-Dominique Ingres (French, 1780-1867)",Q23380
 ARTIC-8d5dd010-ea25-ba49-a8f0-94f6ca18842b,China,
 ARTIC-8dc91f5d-52ba-9438-dc91-154bee2a6a09,"Ren Yi (Chinese, 1840–1895)",Q3028266
@@ -989,7 +989,7 @@ ARTIC-8f06717c-9ede-f22b-d13b-327a50c22f9c,"Pierre-Auguste Renoir (French, 1841-
 ARTIC-8f22ca73-94f1-a426-6656-8ab825657c25,"Follower of Simon Vouet (French, 1590-1649)",
 ARTIC-8f385b97-9e44-4b7b-a7ce-acd9bee0a732,"Eugène Carrière (French, 1849–1906)",Q461464
 ARTIC-8f60ebd1-f959-01a6-78b8-58aa1fadcf4b,"Jozef Israëls (Dutch, 1824-1911)",Q528460
-ARTIC-8f899167-2faf-bd0d-cf9c-9ca2fcb07a4b,"Attributed to Anthony van Dyck (Flemish, 1599–1641)",
+ARTIC-8f899167-2faf-bd0d-cf9c-9ca2fcb07a4b," Anthony van Dyck (Flemish, 1599–1641)",Q150679
 ARTIC-8fe022ba-e358-5cda-aa70-d96edd0b4f20,"Edgar Degas (French, 1834–1917)",Q46373
 ARTIC-8fed3156-2cd7-34b8-c953-ea5c238bbf15,"India (West Bengal, Murshidabad)",
 ARTIC-901da649-8816-41da-07e2-6140dd52d67a,"David Bates (English, 1840-1921)",Q5231197
@@ -1015,11 +1015,11 @@ ARTIC-932f72b9-800d-dbb4-9f5c-3071be1476b1,French (Picardy),
 ARTIC-934a0d50-eaf2-3d79-1258-76eed95a6f17,China,
 ARTIC-9379f724-e69d-8bf6-7900-e8f3ab0e767e,"Thomas Birch (American, born England, 1779-1851)",Q175370
 ARTIC-93d95655-0b4e-b5b4-36b5-5fe8f84d5549,"Jules-Robert Auguste (French, 1789-1850)",Q1470243
-ARTIC-93da9f5a-2655-34f1-ea30-e1c77d89772a,"Attributed to Chen Jiru (Chinese, 1558-1639)",
+ARTIC-93da9f5a-2655-34f1-ea30-e1c77d89772a," Chen Jiru (Chinese, 1558-1639)",Q1005462
 ARTIC-94085102-926e-6b77-8672-101ac4418eb7,"Thomas Sully (American, 1783-1872)",Q786545
 ARTIC-94105fa4-8d1c-cbbd-bd02-80d77e8f0a84,"Elihu Vedder (American, 1836–1923)",Q389726
 ARTIC-9420990e-602d-5b82-d82c-538c25bc7e53,"Peter Paul Rubens, follower of (Flemish, 1577-1640)",
-ARTIC-942257ef-6f95-3c91-d62f-a17841912b26,"School of William Matthew Prior (American, 1806-1873)",
+ARTIC-942257ef-6f95-3c91-d62f-a17841912b26," William Matthew Prior (American, 1806-1873)",Q8015236
 ARTIC-94245750-c169-eb03-673e-cd03f718f885,"Henri Fantin-Latour (French, 1836–1904)",Q310715
 ARTIC-944214ae-3994-9db1-591b-1b0e77f07ff9,German (Bavarian),
 ARTIC-946926a9-f488-bd8f-90dc-e144325de1e4,"Lu Hui (Chinese, 1851-1920)",Q45706235
@@ -1036,11 +1036,11 @@ ARTIC-95707142-7ff9-4214-1cf8-ba305dfb1b3f,Nepal,
 ARTIC-957b0506-85bc-6159-36f1-9347090c5906,"John Jackson (British, 1778-1831)",Q5390252
 ARTIC-95ad6bb3-00e0-cb37-fae0-915f5ebacf84,"Léon Joseph Florentin Bonnat (French, 1833–1923)",Q170259
 ARTIC-95be2572-b53d-8e7b-abc9-10eb48d4fa5d,"Claude Monet (French, 1840–1926)",Q296
-ARTIC-95c09a2d-2c02-deb8-0e5b-0f7ef13faa5e,"Workshop of Apollonio di Giovanni (Italian, 1415/17-1465) (Marco del Buono Giamberti (Italian, 1403-1489))",
+ARTIC-95c09a2d-2c02-deb8-0e5b-0f7ef13faa5e," Apollonio di Giovanni (Italian, 1415/17-1465) (Marco del Buono Giamberti (Italian, 1403-1489))",Q2858468
 ARTIC-95e33ca7-2bbb-2954-ea06-8edcfa458541,"John Wollaston (American, born England, c. 1710-c. 1775)",Q3182782
-ARTIC-9605607b-9955-c562-04f8-2e7064a519e1,"Attributed to Li Gonglin (Chinese, 1049–1106)",
+ARTIC-9605607b-9955-c562-04f8-2e7064a519e1," Li Gonglin (Chinese, 1049–1106)",Q716389
 ARTIC-962a8235-d68d-cf8d-b2af-7d6d8a13c223,"Sheldon Peck (American, 1797-1868)",Q16065702
-ARTIC-963399d1-1ad6-e4ef-fa4b-1107fb0d1622,"Attributed to John Trumbull (American, 1756-1843)",
+ARTIC-963399d1-1ad6-e4ef-fa4b-1107fb0d1622," John Trumbull (American, 1756-1843)",Q369263
 ARTIC-96458291-2c6c-76ba-4be9-dca201687edf,"Jan Both (Dutch, c. 1618–1652)",Q981631
 ARTIC-9694ca0c-c4c4-e48d-566f-4d248990cff4,"Vasily Kandinsky (Born Moscow (formerly Russian Empire, now Russia), 1866; died Neuilly-sur-Seine, France, 1944)",Q61064
 ARTIC-96c6856f-c731-3378-577f-ea21875b4d35,"Xugu (Chinese, 1824-1896)",Q3082969
@@ -1053,7 +1053,7 @@ ARTIC-975ff738-5334-e791-1efc-bd41109dab3a,Iran (Shiraz),
 ARTIC-976bc367-269d-17ff-0151-16b9c973aae4,"Elihu Vedder (American, 1836-1923)",Q389726
 ARTIC-97908967-4d35-cde9-6d90-7e90d3fa1dd6,Spanish,
 ARTIC-97958731-7377-844e-0a17-1c9c3214800f,"Style of Hubert Robert (French, 1733–1808)",
-ARTIC-97b98ceb-d869-ccfb-84f4-993cfbd98089,"Attributed to Qian Xuan (Chinese, 1235-1305)",
+ARTIC-97b98ceb-d869-ccfb-84f4-993cfbd98089," Qian Xuan (Chinese, 1235-1305)",Q951585
 ARTIC-97ca059c-6d86-4128-e216-6dbdcf4e8f3a,"Follower of Rembrandt van Rijn (Dutch, 1606–1669)",
 ARTIC-97d81945-a05e-2a05-a78d-73678bbd2d55,Artist unknown (Japanese),
 ARTIC-97ddac6e-56af-1078-81f0-11c0d6313432,"Netherlandish, Bruges",
@@ -1068,14 +1068,14 @@ ARTIC-98d3c331-a4ef-f4a5-53a4-b9632a0b727c,"Pierre-Auguste Renoir (French, 1841-
 ARTIC-98d8c11a-21be-6ece-ad42-c34aaa4f8005,"Caspar Netscher (Dutch, 1639–1684)",Q217715
 ARTIC-98de0aaf-e074-2536-5e15-44a03bf2c855,"Chai Zhenyi 柴貞儀 and Chai Jingyi 柴靜儀 (Chinese, 17th century)",
 ARTIC-9964135a-b3df-8af6-5af9-9e6eac7a041d,"Paul Gauguin (French, 1848–1903)",Q37693
-ARTIC-997c1a08-c922-ddd6-2b51-58ac4ddf7ec3,"Workshop of Adriaen Isenbrant (Netherlandish, active from 1510, died before July 21, 1551)",
+ARTIC-997c1a08-c922-ddd6-2b51-58ac4ddf7ec3," Adriaen Isenbrant (Netherlandish, active from 1510, died before July 21, 1551)",Q367858
 ARTIC-998550bc-1f55-c835-dc2f-50cafa9f9e71,"Sir Thomas Lawrence  (English, 1769-1830)",Q312096
 ARTIC-998674f9-207f-6b56-8ece-79a6a5039a2a,"Hannah Brown Skeele (American, 1829-1901)",Q21809604
 ARTIC-99adb7e5-88b6-c17c-850b-fcf3da4f1f40,"Pieter Codde (Dutch, 1599-1678)",Q655049
 ARTIC-99c39143-a45c-5fa1-ddd3-0dae633fbb87,"Jean Léon Gérôme (French, 1824-1904)",Q212499
 ARTIC-99e276fd-f076-f396-b5c1-b22c3ce62b45,"Thomas Cole (American, born England, 1801–1848)",Q334001
 ARTIC-9a1d9875-d6ef-51d4-9116-872b56fce5fb,India (Rajasthan),
-ARTIC-9a29cc5d-3779-c9ab-2aa2-0df7b6c3f391,"Attributed to Alessandro Allori (Italian, 1535–1607)",
+ARTIC-9a29cc5d-3779-c9ab-2aa2-0df7b6c3f391," Alessandro Allori (Italian, 1535–1607)",Q333369
 ARTIC-9a36b049-8e62-7913-96e5-847470bd8798,"Henri Regnault (French, 1843-1871)",Q553571
 ARTIC-9a93001d-887a-f34d-ecc2-83240e2ad54c,"Sir Henry Raeburn (Scottish, 1756-1823)",Q561916
 ARTIC-9ae944b3-dea5-2db5-f090-c266a7d20ea7,"Giovanni di Paolo (Italian, 1398–1482)",Q946420
@@ -1087,7 +1087,7 @@ ARTIC-9bf0e287-22b6-871f-e617-be62497dbfc3,"India (Rajasthan, Bundi)",
 ARTIC-9c1e2826-e79b-4b4d-73f9-2ba8c8b00180,"Jean Baptiste Edouard Detaille (French, 1848-1912)",Q724148
 ARTIC-9c2c809d-7637-84b0-747c-0520fa16e901,"David Teniers the Younger (Flemish, 1610-1690) )",Q335022
 ARTIC-9c2e39ad-fc3f-356e-cd98-db0038cfe8da,"George Inness (American, 1825–1894)",Q704868
-ARTIC-9c9e75ff-f131-2fdc-d29c-0584c80e0ca4,"Attributed to Francesco Botticini (Italian, 1446–1497)",
+ARTIC-9c9e75ff-f131-2fdc-d29c-0584c80e0ca4," Francesco Botticini (Italian, 1446–1497)",Q983275
 ARTIC-9ca3bd55-b205-ef2f-a743-4e906fca3fb2,"Perugino (Pietro di Cristoforo Vannucci) (Italian, 1445/46-1523)",Q5827
 ARTIC-9ca3be44-a673-2ad9-f0d8-a8e28ee8d397,"Jean-Baptiste-François Desoria (French, 1758–1832)",Q3164093
 ARTIC-9cabe627-598a-e86f-5f10-456e5e4997bf,"Girolamo da Santacroce (Italian, fl. 1503, d. 1556)",Q13518302
@@ -1098,7 +1098,7 @@ ARTIC-9cf496f1-23ba-fd19-c537-159b80c2a63c,British,
 ARTIC-9d2f074a-744d-3960-ed1b-0612af893cff,"Aert de Gelder (Dutch, 1645–1727)",Q19034
 ARTIC-9d839cee-c9a0-636e-b5e9-89a0cd71d239,"Katsukawa Shunshō 勝川 春章 (Japanese, 1726-1792)",Q1358636
 ARTIC-9e00e226-9264-cda0-2893-685e0ca5b285,"Vasily Kandinsky (Born Moscow (formerly Russian Empire, now Russia), 1866; died Neuilly-sur-Seine, France, 1944)",Q61064
-ARTIC-9e0a66f0-2404-7c56-b45b-dabccabe011d,"Attributed to Baron  François Pascal Simon Gérard (French, 1770-1837)",
+ARTIC-9e0a66f0-2404-7c56-b45b-dabccabe011d," Baron  François Pascal Simon Gérard (French, 1770-1837)",Q163543
 ARTIC-9e4bfbcc-176f-3dac-4529-f67c9a98065c,"Juan de Zurbarán (Spanish, 1620–1649)",Q4446444
 ARTIC-9e72fb46-920e-86a7-bc49-9a525eac4e1c,"James McNeill Whistler (American, 1834–1903)",Q203643
 ARTIC-9e77cfbc-8fa2-54da-8e23-4c1cc6c66e1f,"India (Rajasthan, Jaipur)",
@@ -1114,12 +1114,12 @@ ARTIC-a05ed5e5-eb97-451a-9bc0-50108ab9dbe3,"Johan Barthold Jongkind (Dutch, 1819
 ARTIC-a061fcd4-88da-53f4-726f-72e3d71757a3,"Follower of Anthony van Dyck (Flemish, 1599–1641)",
 ARTIC-a11fa240-7a31-33fc-b209-30e8a455d0d0,"George Inness (American, 1825–1894)",Q704868
 ARTIC-a161daf3-6766-63ed-3de6-0fc4f6d196fe,"Willem van Mieris (Dutch, 1662-1747)",Q1348950
-ARTIC-a1775398-4fc3-0e36-d0dd-dd0587ef4918,"Workshop of Veronese (Paolo Caliari; Italian, 1528–1588)",
+ARTIC-a1775398-4fc3-0e36-d0dd-dd0587ef4918," Veronese (Paolo Caliari; Italian, 1528–1588)",Q9440
 ARTIC-a19aa3c2-56aa-cfd2-d92a-dabb5ba5b488,"Jacques Blanchard (French, 1600–1638)",Q385845
 ARTIC-a1dc6109-6e0c-7801-ebe8-8c95fec2c4e4,"Édouard Vuillard (French, 1868-1940)",Q239394
 ARTIC-a1e30e2f-0f7f-2ab8-2489-7a8b2402120d,British,
 ARTIC-a2214c05-3fb2-2faf-cf70-d43fcfede342,"George Frederick Watts (English, 1817-1904)",Q183245
-ARTIC-a2450337-afed-2797-17e7-2e1f2158235c,"Workshop of Diego Velázquez (Spanish, 1599-1660)",
+ARTIC-a2450337-afed-2797-17e7-2e1f2158235c," Diego Velázquez (Spanish, 1599-1660)",Q297
 ARTIC-a2ddbd89-d864-8877-37bc-cd3dce12c37c,"Camille Pissarro (French, 1830-1903)",Q134741
 ARTIC-a2e9aad2-dd14-ae12-6c44-6811229b3619,"John Rathbone and George Morland (British, c. 1750-1807 and 1763-1804)",
 ARTIC-a2f4085a-6715-212a-c5fa-aa88a4692df0,"John F. Francis (American, 1808-1886)",Q6232278
@@ -1154,7 +1154,7 @@ ARTIC-a7af09dc-5743-062e-4802-b6435e67eaa5,"Pierre-Auguste Renoir (French, 1841-
 ARTIC-a7c4bde9-8f14-9b1b-cf66-980554105159,"Miyagawa Chôshun (Japanese, 1683-1753)",Q3317298
 ARTIC-a7e14fce-b22c-a81e-ffb5-0809a239ccaa,"India (Rajasthan, Bundi)",
 ARTIC-a7fb57e1-d5d2-8569-7314-9dc35c573640,"Dirck van der Lisse, attributed to (Dutch, active 1639-1669 ",
-ARTIC-a8254c8b-3475-9ab3-5b43-2ed225d9d32b,"Attributed to Qiu Ying 仇英 (Chinese, 1494-1552)",
+ARTIC-a8254c8b-3475-9ab3-5b43-2ed225d9d32b," Qiu Ying 仇英 (Chinese, 1494-1552)",Q769372
 ARTIC-a8383044-2d0b-e592-efde-0b72bfe6e460,Cretan,
 ARTIC-a840adca-56f5-7759-97ea-19595a286b82,"Zhang Yin 張崟 (Chinese, 1761-1829)",Q8070396
 ARTIC-a8646837-9f22-0141-5716-fee38e53cc91,"Tosa Mitsuoki (Japanese, 1617-1691)",Q3180225
@@ -1183,7 +1183,7 @@ ARTIC-ab49fdd2-5acc-981e-f11e-c631bbd5487f,"Johann Michael Rottmayr (Austrian, 1
 ARTIC-ab54b417-6dc1-e12b-67f7-0b6a6421d336,"Unknown artist (French, 19th century)",
 ARTIC-abcc78e3-6f0c-6e08-5028-b72ad77ff8e7,"Artist unknown (Spurious signature of Wang Ning 王凝 (Chinese, 11th century))",
 ARTIC-ac23f590-c2b3-0560-5058-ae4cc59b890d,"Francesco Albani (Italian, 1578-1660)",Q358147
-ARTIC-ac4b9afb-628b-16d5-93a8-8f58e940083f,"Attributed to Zeng Jing （Chinese, 1568-1650 )",
+ARTIC-ac4b9afb-628b-16d5-93a8-8f58e940083f," Zeng Jing （Chinese, 1568-1650 )",
 ARTIC-ac624b7a-ed36-9b5a-4257-2fb464b5023f,"Cesare Agostino Detti (Italian, 1847-1914)",Q21462284
 ARTIC-acad549c-db73-4b1f-8cbd-2f5b99e000ab,"Jean-Baptiste-Camille Corot (French, 1796–1875)",Q148475
 ARTIC-acee11b2-3bd1-af56-9d9c-9bbbf9aff2e9,"India (Rajasthan, Jaipur)",
@@ -1192,7 +1192,7 @@ ARTIC-ad3280c6-611a-c136-29b8-8f303a02f416,"Narcisse Virgile Diaz de la Peña (F
 ARTIC-ad3f403a-62e5-3d91-3a8c-ecc5f4fc99e5,Spanish,
 ARTIC-ad7deb75-7dce-05dd-3b42-bddea6f51ba6,"Follower of Jean Baptiste Greuze (French, 1725-1805)",
 ARTIC-adc650d5-4de1-6a0b-f2b1-53f0cd941cf6,"Marsden Hartley (American, 1877–1943)",Q553259
-ARTIC-add1be75-4581-568d-0751-ae2fbb61ebf3,"Attributed to Pieter Boel (Flemish, 1622-1674)",
+ARTIC-add1be75-4581-568d-0751-ae2fbb61ebf3," Pieter Boel (Flemish, 1622-1674)",Q2241666
 ARTIC-addf957f-c7db-68eb-0c78-9d8d8aa0e981,"Francesco Paolo Michetti (Italian, 1851-1929)",Q3081044
 ARTIC-ade9c4c4-93e9-3635-5604-841d571aa8b8,"Artist unknown (American, 18th century)",
 ARTIC-adff0f8c-8ad6-ccb6-4a6b-a24a1c6ba319,"Frederic Remington (American, 1861–1909)",Q560787
@@ -1297,7 +1297,7 @@ ARTIC-bef5336f-5a59-352c-c376-3d0dc4446184,"Kawamata Tsunemasa,  (Japanese, acti
 ARTIC-befbea43-31d3-3093-c53f-399c047c50c9,"Frederick R. Spencer (American, 1806–1875)",Q20859506
 ARTIC-bf68fe6b-dec1-f53c-8da8-814c8ac79e99,"Xugu (Chinese, 1823-1896)",Q15898902
 ARTIC-bfc9b17a-cc18-7bd3-4d78-e925bb1a8b27,"Berthe Morisot (French, 1841-1895)",Q105320
-ARTIC-bff0be75-0833-2ee1-993a-5934993e08fb,"Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533) (or Workshop of Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533))",Q1029143
+ARTIC-bff0be75-0833-2ee1-993a-5934993e08fb,"Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533) (or  Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533))",Q1029143
 ARTIC-c01c7f64-0098-a2d5-56c2-3eb0b28f68ae,"Luca Giordano (Italian, 1632-1705)",Q332494
 ARTIC-c06a60ae-f4a5-451c-b6e9-7054fe824813,"John Russell (British, 1745-1806)",Q1030465
 ARTIC-c09e1324-a54a-ce55-96a0-dc66034bf570,"Bartolomé Estéban Murillo (Spanish, 1617-1682)",Q192062
@@ -1333,7 +1333,7 @@ ARTIC-c5333dc5-c2a8-489a-70fc-2371ec6c68be,"Francesco de Mura (Italian, 1696-178
 ARTIC-c54a8b04-9034-37cf-6dbc-13a4f6f17706,"Mariano Fortuny y Marsal (Spanish, 1838-1874)",Q380052
 ARTIC-c567feca-02a6-466f-f3bf-5ecd08fe27a2,"Dong Bangda 董邦達 (Chinese, 1699-1769)",Q16075853
 ARTIC-c5e50da8-6bff-ea02-ed3c-c154b356cceb,"Johann Michael Rottmayr (Austrian, 1654-1730)",Q674772
-ARTIC-c5fad810-883a-7322-edef-c096899023cb,"Attributed to Jean-François Millet (French, 1814-1875)",
+ARTIC-c5fad810-883a-7322-edef-c096899023cb," Jean-François Millet (French, 1814-1875)",Q148458
 ARTIC-c612af6e-f630-487e-5b85-3a15381065fc,"Cornelis Saftleven (Dutch, 1607–1681)",Q130039
 ARTIC-c65c4d31-4c8e-0135-1271-433a10c8350a,"Walter Greaves (English, 1841-1930)",Q15440363
 ARTIC-c66cff23-22a1-e440-b390-ef4e68facd6a,"Emile van Marcke de Lummen (French, 1827–1890)",Q742379
@@ -1367,7 +1367,7 @@ ARTIC-c95d58bf-fe9e-e5bb-2c71-ab8bad984759,"Follower of Frans Hals (Dutch, 1582/
 ARTIC-c9a4cd5f-62a5-bc3f-9184-90ac102ded58,Tibet,
 ARTIC-c9fc58cb-18a5-5009-1a6b-90e5a7483798,"Jean Bellegambe (French, c. 1470–1535/36)",Q932136
 ARTIC-ca2932b4-6c0c-5482-2ae5-8b74926d7b73,"Edgar Degas (French, 1834–1917)",Q46373
-ARTIC-ca6d2ad1-d0da-68f3-b37a-a31b389102ea,"Attributed to Chen Chun (Chinese, 1483-1544)",
+ARTIC-ca6d2ad1-d0da-68f3-b37a-a31b389102ea," Chen Chun (Chinese, 1483-1544)",Q558251
 ARTIC-ca8ba7cf-670b-8db8-3ceb-9bbdb595b096,"Giovanni Antonio Guardi (Italian, 1699-1760)",Q590969
 ARTIC-cac0fbf7-8928-3f56-0f8f-39c35d123625,"Katsukawa Shunchô (Japanese, 1726-1792)",Q2799156
 ARTIC-caf4fa39-e2e8-344a-542c-2d9a03ec9d4b,"Pierre-Auguste Renoir (French, 1841-1919)",Q39931
@@ -1395,7 +1395,7 @@ ARTIC-ceb22c02-9d33-a79d-6935-48cba2fb4aad,"Etienne Prosper Berne-Bellecour (Fre
 ARTIC-cec52f00-87a3-1e81-a663-520004ab7259,"Laurent de La Hyre (French, 1606-1656)",Q59894
 ARTIC-cef08eac-d4dc-b09c-b6d6-7f10517687a4,"Giovanni Domenico Tiepolo (Italian, 1727-1804)",Q435316
 ARTIC-cf23d0a5-a2b4-06dc-72cd-b436e12cbec0,Southern Tibet,
-ARTIC-cf9fbcbd-3b50-ec79-e80a-9c60c9def6d7,"Attributed to Giovanni Antonio Fasolo (Italian, 1530-1572)",
+ARTIC-cf9fbcbd-3b50-ec79-e80a-9c60c9def6d7," Giovanni Antonio Fasolo (Italian, 1530-1572)",Q3766446
 ARTIC-cfb93975-cf1f-ccf9-9169-f318ff3d5584,"Lu Zhi 陸治 (Chinese, 1496-1576)",Q2585778
 ARTIC-cfc37aba-dbd8-90c8-8b9d-abce8aa4502c,India,
 ARTIC-d02836fe-46c3-fa95-794e-f6414ef38c01,Artist unknown (Japanese),
@@ -1415,7 +1415,7 @@ ARTIC-d36bfff3-6670-e3c8-c087-df4b51683b71,"Pieter Verhaert (Belgian, 1852-1908)
 ARTIC-d3898014-9a2d-7fb9-1eac-e76a8d25acdb,"Utagawa Hiroshige 歌川 広重 (Japanese, 1797-1858)",Q200798
 ARTIC-d39b1026-7d8d-6e6a-738e-8a136b1a0033,"Claude Monet (French, 1840–1926)",Q296
 ARTIC-d3cf298a-1868-3274-1b50-a484ce1462c9,"Alexandre Desgoffe (French, 1805–1882)",Q2833597
-ARTIC-d4167bca-367c-481b-a5df-2f5aa51e7280,"Workshop of Cornelis Engebrechtsz. (Netherlandish, 1460/65-1527)",
+ARTIC-d4167bca-367c-481b-a5df-2f5aa51e7280," Cornelis Engebrechtsz. (Netherlandish, 1460/65-1527)",Q964357
 ARTIC-d424c734-f5c1-5f89-3bb8-d83e4e0287e3,"Odilon Redon (French, 1840-1916)",Q154349
 ARTIC-d445a00c-33f4-f652-f775-25cf9eed8957,Iran,
 ARTIC-d4574667-943d-6e28-ec30-fe9c91eeeca1,"Eugène Delacroix (French, 1798–1863)",Q33477
@@ -1436,8 +1436,8 @@ ARTIC-d63b9402-c42b-cce3-aa63-6d213ad621cd,"Correggio (Antonio Allegri; Italian,
 ARTIC-d65ca75a-3024-0a99-9ad6-8cbb7ba21817,"After Jean Baptiste Greuze (French, 1725-1805)",
 ARTIC-d67f1cfe-c16f-0b19-1acb-4d915f158991,"Jan Lievens, attributed to (Dutch, 1607-1674)",
 ARTIC-d6a5b0b6-b990-433e-47cb-449471178353,Southern Tibet,
-ARTIC-d6b0923d-18cf-b9e3-4d94-09aef122b9ba,"Workshop of Titian (Tiziano Vecelli; Italian, 1477-1576)",
-ARTIC-d6f23c25-7075-ac62-6a35-84ca0b06ce6e,"Attributed to Alfred Dedreux (French, 1810–1860)",
+ARTIC-d6b0923d-18cf-b9e3-4d94-09aef122b9ba," Titian (Tiziano Vecelli; Italian, 1477-1576)",Q47551
+ARTIC-d6f23c25-7075-ac62-6a35-84ca0b06ce6e," Alfred Dedreux (French, 1810–1860)",Q355550
 ARTIC-d706c6bf-968d-8fe1-200d-21963291e8fc,British,
 ARTIC-d72d11d2-bbb4-430e-7be7-6aa8465b80c7,"Hishikawa Morohira (Japanese, 17th century ( ((Pupil of Hishikawa Moronobu, (?) -1694))",Q11620186
 ARTIC-d739e4da-1d03-feff-c375-a9f32be67825,Artist unknown (Japanese),
@@ -1445,13 +1445,13 @@ ARTIC-d763c113-194b-62a5-3e39-e2b479c5df47,"Thomas Gainsborough (British, 1727-1
 ARTIC-d790fdf8-7b1f-c24a-ce2b-ca0f3d5ed2f3,"Hans Makart (Austrian, 1840-1884)",Q511444
 ARTIC-d7df2633-3b40-f570-c906-211503a37cde,"Edvard Munch (Norwegian, 1863-1944)",Q41406
 ARTIC-d812e25d-5d00-cb04-f973-c5eaf671d540,"Horace Pippin (American, 1888–1946)",Q325076
-ARTIC-d87c4fc3-f14f-f509-bb8e-89d3803ae9fb,"Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533) (Workshop of Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533))",Q1029143
+ARTIC-d87c4fc3-f14f-f509-bb8e-89d3803ae9fb,"Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533) ( Jacob Cornelisz. van Oostsanen (Netherlandish, c. 1470/75-by 1533))",Q1029143
 ARTIC-d87fb077-01b8-3238-0a71-3a9c96dd6cec,"Martin Archer Shee (Irish, 1769-1850)",Q3850027
 ARTIC-d8c733d2-5132-d0e6-c7ba-2f9f35f1a191,"Andrea del Sarto (Italian, 1486-1530)",Q5571
 ARTIC-d906f17c-de41-07b3-c1d6-f26139f711a0,"William Keith (American, born Scotland, 1839-1911)",Q3688068
 ARTIC-d9624683-20a2-5073-1406-8ff451f2068a,Nepal (Kathmandu Valley),
 ARTIC-d9670476-7d0b-b6d7-2266-ed6f02ab0dc2,"Rushan (Chinese, active mid-late 19th century)",Q21996017
-ARTIC-d96874ca-5efb-9af9-78ef-20099eb5ec61,"Attributed to Jiao Bingzhen (Chinese, late 17th–early 18th century)",
+ARTIC-d96874ca-5efb-9af9-78ef-20099eb5ec61," Jiao Bingzhen (Chinese, late 17th–early 18th century)",Q2341628
 ARTIC-d9b07617-7953-5ef1-6a0f-1f593baf06a1,"Marsden Hartley (American, 1877–1943)",Q553259
 ARTIC-d9bde524-38b2-4262-3338-e4d06a50746d,"Frans Snyders (Flemish, 1579-1657)",Q29231
 ARTIC-d9cf4060-4c56-5e66-3f18-fde22e19b924,"Adolphe Schreyer (German, 1828-1899)",Q364184
@@ -1492,7 +1492,7 @@ ARTIC-df2196d5-6d12-1cbe-18f2-47ee362fc7a2,"Italian, probably Venice",
 ARTIC-df50a0cd-94b9-7a7f-f982-3b29786bc9f5,"India (Rajasthan, Jaipur)",
 ARTIC-df657b18-66b7-ec03-65e0-c9f7a0e934a2,"India (Rajasthan, Jaipur)",
 ARTIC-e01a4f76-d089-8e22-8431-3488db37a293,"James McNeill Whistler (American, 1834–1903)",Q203643
-ARTIC-e0314dfb-14fb-cd68-4a81-34d5a3fd9af9,"Wang Yuanqi (Attributed to) (Chinese, 1642-1715)",Q65811104
+ARTIC-e0314dfb-14fb-cd68-4a81-34d5a3fd9af9,"Wang Yuanqi () (Chinese, 1642-1715)",Q716338
 ARTIC-e0a65a38-f083-5408-051f-86d72878105e,"Perugino (Pietro di Cristoforo Vannucci) (Italian, 1445/46-1523)",Q5827
 ARTIC-e0d8a305-15b0-bdcd-1e83-06d8594a2f7e,"Jules Dupré (French, 1811–1889)",Q959212
 ARTIC-e0f46736-df2f-6908-da04-41a82268d002,"Niccolò di Pietro Gerini (Italian, fl. 1368-1415)",Q1077403
@@ -1505,7 +1505,7 @@ ARTIC-e1826a0c-e20a-0e5e-a9e3-abf4fe123884,"Edwin Henry Landseer (British, 1802-
 ARTIC-e1b0118e-b051-80b8-edf4-9d136e666c81,Nepal,
 ARTIC-e1e16ea4-4f55-e222-7f36-561eab6c68bd,"Henry Fuseli (Swiss, active in England, 1741-1825)",Q122382
 ARTIC-e1e58d46-02e9-092f-b9ef-56ad14668056,"Marmaduke Cradock (English, c. 1660-1717)",Q6772041
-ARTIC-e1e8e197-93e7-bd6a-5870-36200c27445e,"Attributed to Adolphe-Joseph-Thomas Monticelli (French, 1824-1886)",
+ARTIC-e1e8e197-93e7-bd6a-5870-36200c27445e," Adolphe-Joseph-Thomas Monticelli (French, 1824-1886)",Q1152965
 ARTIC-e1f6ef79-7216-4f19-ac78-a307a2fb4f32,"Thomas Hicks (American, 1823-1890)",Q317666
 ARTIC-e204d686-0e19-c10c-cf72-1000aae5be4a,"Constant Troyon (French, 1810-1865)",Q219403
 ARTIC-e2329a9b-c990-1d9f-8332-fef0970d3a61,"Ferdinand Bol (Dutch, 1616–1680)",Q374039
@@ -1515,7 +1515,7 @@ ARTIC-e2abbc82-a7d8-8a5d-ce69-5e3587d06dc7,Southern Tibet,
 ARTIC-e30b27db-b263-abb6-0005-ff238f8fd530,"Charles Cottet (French, 1863-1925)",Q1574250
 ARTIC-e35161fb-cd78-b757-8000-15ba3ebb0fc3,"George Hitchcock (American, 1850-1913)",Q3720237
 ARTIC-e3b91cbd-674a-5da7-1a01-42a2e9a3cadf,"Charles Robert Leslie (American, born England, 1794-1859)",Q325633
-ARTIC-e3c6d59b-4f1b-aee9-5ae4-a8f4a735eded,"Attributed to Ugolino di Nerio  (Italian, active 1317-1339/49)",
+ARTIC-e3c6d59b-4f1b-aee9-5ae4-a8f4a735eded," Ugolino di Nerio  (Italian, active 1317-1339/49)",Q1357686
 ARTIC-e420a236-8068-a82f-04b2-36fe3d2c7a3d,"Emil Carlsen (American, born Denmark, 1853-1932)",Q5371205
 ARTIC-e458fc80-cb2e-f5c0-3c81-8c24b0bdc15b,"Amedeo Modigliani (Italian, 1884-1920)",Q120993
 ARTIC-e49ad195-1f62-2fd4-f4df-61f0f0f4951f,"William Michael Harnett (American, born Ireland, 1848-1892)",Q935186
@@ -1531,16 +1531,16 @@ ARTIC-e5d45eb2-7c2a-90bd-e115-77b35a877b5f,Artist unknown (Japanese),
 ARTIC-e5ee149b-36ed-49c1-cad0-04ae6535090d,"Marsden Hartley (American, 1877–1943)",Q553259
 ARTIC-e60b4742-3658-3651-051a-fd9bd90ff45c,Chinese,
 ARTIC-e61f82b8-a69d-491c-8256-fa2a39514226,"Tosa Mitsusuke  (Japanese, 1675-1710)",Q3719358
-ARTIC-e67c909b-6571-ced5-bec3-6c2d3dc291a8,"School of Johann Liss (German, c. 1597-1631)",
+ARTIC-e67c909b-6571-ced5-bec3-6c2d3dc291a8," Johann Liss (German, c. 1597-1631)",Q700279
 ARTIC-e6a3f16b-321a-2d47-bfea-fbc1c6f584c0,"Francesco Solimena,  attributed to (Italian, 1657-1747)",
 ARTIC-e6dd6199-c245-d1b4-a997-ce89eafb48ca,"John Singer Sargent (American, 1856–1925)",Q155626
 ARTIC-e72305c9-1a1c-8a36-7450-582619366338,"George Hitchcock (American, 1850-1913)",Q3720237
 ARTIC-e728fa6d-c643-2b68-133d-74770ded12ef,"Jean Léon Gérôme (French, 1824–1904)",Q212499
 ARTIC-e7928f74-f52e-e7d5-77ab-8b3d93b8b727,"Jean-François Millet (French, 1814-1875)",Q148458
-ARTIC-e7a25fe9-3a09-d474-a6c7-a4e1d22820fa,"Attributed to Zhu Yunming (Chinese, 1461-1527)",
+ARTIC-e7a25fe9-3a09-d474-a6c7-a4e1d22820fa," Zhu Yunming (Chinese, 1461-1527)",Q45558503
 ARTIC-e7d7ca13-6630-b5ba-69cc-48c126f14d5d,"Joos de Momper the Younger, attributed to (Flemish, 1564-1635)",
 ARTIC-e7e1c69c-3197-ade1-69a2-91fa6b061c7f,"Utagawa Toyohiro (Japanese, 1773-1828)",Q2625013
-ARTIC-e7f402e6-aa32-c8a6-9bf2-2aef90f5631f,"Attributed to Dong Qichang (Chinese, 1555-1636)",
+ARTIC-e7f402e6-aa32-c8a6-9bf2-2aef90f5631f," Dong Qichang (Chinese, 1555-1636)",Q537211
 ARTIC-e7f7d1fb-9b18-45b4-1279-204a150279f5,"Abbott Handerson Thayer (American, 1849–1921)",Q306759
 ARTIC-e80440be-74b7-5c58-3306-a19eb756dd58,North Netherlandish,
 ARTIC-e82101c9-9058-cb50-b4bd-ef2ea443bfaf,"Giuseppe Cades (Italian, 1750–1799)",Q326017
@@ -1574,7 +1574,7 @@ ARTIC-eba4ff21-3b90-801b-0f0a-1bd913b49049,"Francesco Solimena (Italian, 1657-17
 ARTIC-ec14e825-ed02-c8a5-c25d-c04cbbc6a471,"Anne-Louis Girodet de Roussy-Trioson (French, 1767-1824)",Q433434
 ARTIC-ec1f6262-09c2-8f7e-baa9-9c0b267337ff,"Claude Monet (French, 1840–1926)",Q296
 ARTIC-ec272cba-5f5c-dcc1-00e3-00dfdb042a52,"After Jacobo Bassano (Italian, c. 1510-1592)",
-ARTIC-ec276c8a-607c-10a1-3538-007549884a95,Attributed to Mir 'Ali Heravi (Persian 1465-about 1550) (India and Iran),
+ARTIC-ec276c8a-607c-10a1-3538-007549884a95, Mir 'Ali Heravi (Persian 1465-about 1550) (India and Iran),Q5959839
 ARTIC-ec4367a5-52b8-79a5-7e7d-dbaff46d4f4e,"Eva Gonzalès (French, 1849-1883)",Q464300
 ARTIC-ec57d7e6-1205-ce06-f21c-76d77b457aba,"Chen Jiayan 陳嘉言 (Chinese, 1539-after 1625)",Q45553282
 ARTIC-ec5cf1a8-9790-f7c9-fd1a-d42078e4aead,"Xia Kui 夏葵 (Chinese, 15th century)",Q45466595
@@ -1657,18 +1657,18 @@ ARTIC-f7433947-21bb-5b7f-c02f-e6f15c72bcd0,"Bartolomé Bermejo (Bartolomé de C�
 ARTIC-f78addab-4d3a-f87c-4c83-7eae824c7504,Artist Unknown (Chinese),
 ARTIC-f79bf4b5-f500-dcac-765e-7ff017880641,Iran,
 ARTIC-f7b2db45-f393-653c-07ef-84319b0cdb92,"Winslow Homer (American, 1836–1910)",Q344838
-ARTIC-f7c3cd41-4a92-cb27-d9d5-5107f29a7633,"Attributed to Chen Guan (Chinese, 1563-1639)",
+ARTIC-f7c3cd41-4a92-cb27-d9d5-5107f29a7633," Chen Guan (Chinese, 1563-1639)",Q21810148
 ARTIC-f7df7bd5-ddfd-46b2-640d-d37d5c246f33,China,
 ARTIC-f7ef1f0f-c5c9-6794-9283-2e7ebcde95cd,"John Singer Sargent (American, 1856–1925)",Q155626
 ARTIC-f80705b7-da44-81b0-ee12-6a6b1f52da08,"Antonio Molleno (American, active 1815-1845)",Q21809598
 ARTIC-f82389ca-7093-eb05-41a1-18a7ec594e15,China,
 ARTIC-f83244ce-5aef-fa2b-184c-b44c6747dc49,"Edouard Béliard (French, active 1873-77)",Q1287527
 ARTIC-f837e639-5a6c-3043-3c2c-a4d5ece3bf1d,"George Inness (American, 1825–1894)",Q704868
-ARTIC-f859ece0-7815-bb17-ed4b-0af285f69e78,"Workshop of Apollonio di Giovanni (Italian, 1415/17-1465) (Marco del Buono Giamberti (Italian, 1403-1489))",
+ARTIC-f859ece0-7815-bb17-ed4b-0af285f69e78," Apollonio di Giovanni (Italian, 1415/17-1465) (Marco del Buono Giamberti (Italian, 1403-1489))",Q2858468
 ARTIC-f8a1f3b3-4506-d336-aceb-5aec6c4a2e3d,"Hendrick ter Brugghen (Dutch, 1588-1629)",Q437233
 ARTIC-f8fd76e9-c396-5678-36ed-6a348c904d27,"Gustave Caillebotte (French, 1848–1894)",Q295144
 ARTIC-f900542a-7802-26cb-f93a-0ac000bed024,"Lan Ying (Chinese, 1585-c. 1664)",Q3138790
-ARTIC-f9017423-3a2d-2f9c-b114-951678d4929b,"Attributed to Augustus Cordus (German, c. 1520–1584 or later)",
+ARTIC-f9017423-3a2d-2f9c-b114-951678d4929b," Augustus Cordus (German, c. 1520–1584 or later)",Q770240
 ARTIC-f9aacbc6-191c-3725-85bf-198612a51d25,"James McNeill Whistler (American, 1834–1903)",Q203643
 ARTIC-f9b8e473-ad03-6b0a-16c9-cc7163189bfa,Nepal,
 ARTIC-fa81bfb9-5a07-5e3c-33b4-4efde68981c8,"Arnold Böcklin (Swiss, 1827–1901)",Q123071
@@ -1697,14 +1697,14 @@ ARTIC-fdc1a755-ff86-487d-f16b-f03c40a30bee,"Amedeo Modigliani (Italian, 1884-192
 ARTIC-fdd9f9dc-6893-c608-7589-02f4f0ab5fbd,"Style of Honoré Victorin Daumier (French, 1808–1879)",
 ARTIC-fdf7c790-890a-fdf9-00df-5f47697eee0a,"Agustin Esteve y Marqués (Spanish, 1753-c.1820)",
 ARTIC-fe17bc32-9512-fc0c-4c84-d812c8ea144c,German (Cologne?),
-ARTIC-fe455a66-c3c0-7cd0-32e2-b8fd146bb110,"Attributed to Jules Achille Noël  (French, 1815-1881)",
+ARTIC-fe455a66-c3c0-7cd0-32e2-b8fd146bb110," Jules Achille Noël  (French, 1815-1881)",Q617906
 ARTIC-fe633bf9-a401-490e-49c0-0ba6af6ece8c,"Paul-Jean Flandrin (French, 1811-1902)",Q3371528
 ARTIC-fe8d0de5-ecd1-83e5-a3a9-a18dea8216ea,"Fra Angelico (Guido di Pietro; Italian, c. 1395/1400–1455)",Q5664
-ARTIC-fe9b9d07-5f4e-c9ea-95a7-816f2b85d20e,"Workshop of Joos van Cleve (Netherlandish, active by 1507–1540/41)",
+ARTIC-fe9b9d07-5f4e-c9ea-95a7-816f2b85d20e," Joos van Cleve (Netherlandish, active by 1507–1540/41)",Q153472
 ARTIC-feae78df-5472-ea0e-b105-9865e9d149e8,"Joseph Highmore (British, 1692-1780)",Q1707243
 ARTIC-feb15134-e3c7-ede3-2df5-99b4167f8352,"Hua Yan (Chinese, 1682-c. 1765)",Q1042125
 ARTIC-fed50acc-d411-5ff6-2be0-e8cabf8f3eb3,"Artist unknown (American, 19th century)",
-ARTIC-ff3b5c8a-5b14-5c35-8775-3d021e92a381,"Attributed to John Constable (English, 1776–1837)",
+ARTIC-ff3b5c8a-5b14-5c35-8775-3d021e92a381," John Constable (English, 1776–1837)",Q159297
 ARTIC-ff5add6a-e017-7b11-ffb1-5c3d412c7379,China,
 ARTIC-ff5e49d3-448f-2aba-4461-6e36c1dc7dfa,"William Merritt Chase (American, 1849-1916)",Q265820
 ARTIC-ff77b16c-b8d7-00fe-abc5-d8290f7b26eb,"Sir Thomas Lawrence (English, 1769-1830)",Q312096
@@ -3584,7 +3584,7 @@ NGA-c5f5cfa6-6150-435a-bf5d-a0a7a55c52f7,"Nicolaes Maes (Dutch, 1634-1693)",Q505
 NGA-c64878f5-8f1c-40df-a85f-f3f4ffcefa63,"American 19th Century (American, 1800-1899)",
 NGA-c648bb1a-4a20-43c1-8fa9-794c325a787a,"Frédéric Bazille (French, 1841-1870)",Q207298
 NGA-c6518c61-98bb-4759-9042-b4bc2ec343ef,"Henri Rousseau (French, 1844-1910)",Q156386
-NGA-c652744b-50c3-4753-8a96-e33c62981b30,"German 19th Century (German, 1800-1899)",Q122766482
+NGA-c652744b-50c3-4753-8a96-e33c62981b30,"German 19th Century (German, 1800-1899)",Q105080623
 NGA-c66840d0-00b2-47d1-a4de-d157ad5712c2,"Gerrit van Honthorst (Dutch, 1592-1656)",Q314548
 NGA-c6780a7f-2720-433c-9562-552c996c6d04,"Claude Monet (French, 1840-1926)",Q296
 NGA-c682d2ee-1837-4e88-b5b2-99d2d7b75b40,"Gerard ter Borch the Younger (Dutch, 1617-1681)",Q346808
@@ -4146,7 +4146,7 @@ MET-540ce457-6ab6-49d1-993b-793f04f15dc7,"Unidentified artist (Unknown, -)",
 MET-45f0c87f-07f6-4a01-85cf-9864414de8d7,"Shen Quan (Chinese, 1682-1762)",Q45541498
 MET-a5d35993-88b3-4411-bd24-7907be905340,"Shen Quan (Chinese, 1682-1762)",Q45541498
 MET-489fd059-5a1c-472d-9e95-2cef59add844,"Chen Zi (Chinese, 1634-1711)",Q5090998
-MET-96cb3830-8753-4321-bbec-d8189e31bccf,"Zhang Bi (Chinese, 1425-1487)",Q45470826
+MET-96cb3830-8753-4321-bbec-d8189e31bccf,"Zhang Bi (Chinese, 1425-1487)",Q45471516
 MET-f9d53c4e-9ce4-4d47-9991-e4a1a4bfc4dc,"Wang Jian (Chinese, 1609-1677)",Q706855
 MET-83b85dfb-ea90-4f79-a972-28ec60b3f97a,"Gong Xian (Chinese, 1619-1689)",Q45508008
 MET-e16cb783-4bd1-415b-807b-17445ac7dcb2,"Gong Xian (Chinese, 1619-1689)",Q45508008
@@ -7735,7 +7735,7 @@ MET-90837235-3e0c-459d-975d-ce1cf9ff344d,"El Greco (Domenikos Theotokopoulos) (G
 MET-3a043a90-0f44-44ea-8d50-497d163d6d5a,"El Greco (Domenikos Theotokopoulos) (Greek, 1540-1614)",Q301
 MET-f52a5d19-9361-4a88-8123-70ee4b0c7bbd,"El Greco (Domenikos Theotokopoulos) (Greek, 1540-1614)",Q301
 MET-ee55da0d-962d-436d-a371-6b6e2fd74053,"El Greco (Domenikos Theotokopoulos) (Greek, 1540-1614)",Q301
-MET-6f9501d6-9679-438a-80d9-5ec993c032a1,"Greek Painter (Greek, -)",Q94579064
+MET-6f9501d6-9679-438a-80d9-5ec993c032a1,"Greek Painter (Greek, -)",Q82537735
 MET-d475b2ae-f9aa-4bbd-a672-a16b0597ba64,"Jean-Baptiste Greuze (French, 1725-1805)",Q347139
 MET-86341c66-2806-4949-82ca-8dbb6eff9d82,"Jean-Baptiste Greuze (French, 1725-1805)",Q347139
 MET-487eb53f-928f-49db-b3d4-30a625c7d0f3,"Jean-Baptiste Greuze (French, 1725-1805)",Q347139
@@ -8029,9 +8029,9 @@ MET-042eda65-f74f-4f30-a917-465941380775,"Bartolo di Fredi (Italian, 1353-1410)"
 MET-94c2fec0-f005-45ac-b524-5bde1d003da4,"Taddeo di Bartolo (Italian, 1362-1422)",Q740231
 MET-b20dea2f-8f70-45be-900b-5b3bc10db5ae,"Taddeo di Bartolo (Italian, 1362-1422)",Q740231
 MET-f41b2358-76c4-4d3c-96af-ed0b14f4b025,"Taddeo di Bartolo (Italian, 1362-1422)",Q740231
-MET-7d692d29-765d-49a8-9804-cf51fa4f1942,"Workshop of  Niccolò di Buonaccorso (Italian, 1372-1388)",
+MET-7d692d29-765d-49a8-9804-cf51fa4f1942,"  Niccolò di Buonaccorso (Italian, 1372-1388)",Q3875919
 MET-e58a6380-62d5-4c59-a619-cc78db4c8cc9,"Niccolò di Buonaccorso (Italian, 1372-1388)",Q3875919
-MET-7cd454c1-c8c4-4e71-9bb9-1edc46687f72,"Workshop of  Paolo di Giovanni Fei (Italian, 1369-1411)",
+MET-7cd454c1-c8c4-4e71-9bb9-1edc46687f72,"  Paolo di Giovanni Fei (Italian, 1369-1411)",Q1361116
 MET-dabaf815-9086-4ed5-baeb-e5a346970083,"Paolo di Giovanni Fei (Italian, 1369-1411)",Q1361116
 MET-a07bba76-7d04-4c43-87cc-617511ae0191,"Goodhart Ducciesque Master (Italian, 1310-1330)",Q18562176
 MET-9bf13656-0765-4fbf-8e15-4060c3ca0fad,"Sassetta (Stefano di Giovanni) (Italian, 1400-1450)",Q362016
@@ -8065,7 +8065,7 @@ MET-429b2463-b2a2-4ed4-b30c-770f2057fb3b,"Icilio Federico Ioni (Italian, 1866-19
 MET-c08ff193-712a-43fd-ae9a-4ca1d26f0104,"Bernardo Daddi (Italian, 1290-1348)",Q366562
 MET-e126082f-a198-4f48-89b3-6f17cfb2efd1,"Bernardo Daddi (Italian, 1290-1348)",Q366562
 MET-afb5a328-79e7-40c4-a8c9-12d2456a3a8c,"Maestro Daddesco (Italian, 1320-1340)",Q21978973
-MET-7bf73084-0920-4120-8af0-428db2397ccc,"Workshop of Botticelli (Italian, 1444-1510)",
+MET-7bf73084-0920-4120-8af0-428db2397ccc," Botticelli (Italian, 1444-1510)",Q5669
 MET-4679915e-f835-4449-80f6-300da843c6bc,"Master of the Orcagnesque Misericordia (Italian, 1350-1399)",
 MET-58066362-c6a6-4414-a297-af8c18011a71,"Spinello Aretino (Spinello di Luca Spinelli) (Italian, 1345-1410)",Q287934
 MET-dc03d6bd-c051-4384-a67f-896586354a60,"Spinello Aretino (Spinello di Luca Spinelli) (Italian, 1345-1410)",Q287934
@@ -8075,8 +8075,8 @@ MET-5c01bd6e-03d0-4701-9d94-7330028a6938,"Lorenzo Monaco (Piero di Giovanni) (It
 MET-d5a7b174-13e2-4020-a2c1-a03ef77a1c56,"Lorenzo Monaco (Piero di Giovanni) (Italian, 1370-1425)",Q155376
 MET-763dc577-7d59-410b-9789-cd0ff540186b,"Bicci di Lorenzo (Italian, 1373-1452)",Q856749
 MET-70d2945d-8598-456e-bda3-e03cec14a75c,"Matteo di Pacino (Italian, 1359-1394)",Q16663775
-MET-b783698d-c77d-4ef5-b0fe-d0b6bed1730e,"Workshop of Fra Filippo Lippi (Italian, 1406-1469)",
-MET-100a0b32-fc46-4e53-a54d-7d6a63625041,"Workshop of Fra Filippo Lippi (Italian, 1406-1469)",
+MET-b783698d-c77d-4ef5-b0fe-d0b6bed1730e," Fra Filippo Lippi (Italian, 1406-1469)",Q205148
+MET-100a0b32-fc46-4e53-a54d-7d6a63625041," Fra Filippo Lippi (Italian, 1406-1469)",Q205148
 MET-1033282d-53de-43ac-b121-3d4c5ba89ece,"Neri di Bicci (Italian, 1419-1491)",Q1452198
 MET-914f9c5a-51a9-486f-8f09-f060f60d0818,"Neri di Bicci (Italian, 1419-1491)",Q1452198
 MET-e9d821fd-3af6-4aa3-82ed-23e743507146,"Cosimo Rosselli (Italian, 1440-1507)",Q29447
@@ -8136,7 +8136,7 @@ MET-cfce3f8f-07b9-42bb-b933-c8f443dbabe7,"Simon Marmion (French, 1425-1489)",Q67
 MET-0873df94-d71f-4866-b36a-5e7394b27c09,"Netherlandish or French (Netherlandish / French, 1475-1480)",Q21850207
 MET-5a4dfa96-a514-4af0-bbec-f882a146cbee,"Jean Hey (called Master of Moulins) (Netherlandish, 1475-1499)",Q1268739
 MET-b7682bdd-d7bc-40bb-8892-ed6db735907a,"Master of Saint Giles (Netherlandish/French, 1475-1550)",Q1854159
-MET-a1313f20-14f8-4a44-b62f-00c2bea1180d,"Attributed to Corneille de Lyon (Netherlandish, 1533-1575)",
+MET-a1313f20-14f8-4a44-b62f-00c2bea1180d," Corneille de Lyon (Netherlandish, 1533-1575)",Q720941
 MET-dff4cfe9-cf65-4807-809e-42ae0d5701a8,"Master of the Munich Bavarian Panels (German, -)",Q22713648
 MET-827cf6d6-027d-42c0-8c65-d0824ff0b998,"German (German, -)",
 MET-78551dd1-2cf7-481f-9dea-d042890f0fb8,"Lucas Cranach the Elder (German, 1472-1553)",Q191748

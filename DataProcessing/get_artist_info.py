@@ -9,7 +9,7 @@ from pprint import pprint
 def format_display_name(row):
     return (
         f'{row["display_name"]} '
-        + f'({"" if pd.isna(row["nationality"]) else row["nationality"]}, '
+        + f'({"" if pd.isna(row["country_of_citizenship"]) else row["country_of_citizenship"]}, '
         + f'{"" if pd.isna(row["birth_year"]) else int(row["birth_year"])}-'
         + f'{"" if pd.isna(row["death_year"]) else int(row["death_year"])})'
     )
@@ -98,15 +98,15 @@ def is_human(claims):
 def get_birth_death_dates(claims):
     def format_date(wikidata_date, precision):
         if not wikidata_date or not precision:
-            return np.nan
+            return np.nan, np.nan
         year = wikidata_date[1:5]
         if precision >= 9:  # Year precision
-            return year
+            return year, year
         elif precision == 8:  # Decade precision
-            return f"{year[:3]}0s"
+            return year, f"{year[:3]}0s"
         elif precision == 7:  # Century precision
-            return f"{(int(year) - 1) // 100 + 1}th century"
-        return np.nan
+            return year, f"{(int(year) - 1) // 100 + 1}th century"
+        return np.nan, np.nan
 
     def extract_date_info(claim_key):
         claim = (
@@ -117,33 +117,33 @@ def get_birth_death_dates(claims):
         )
         return claim.get("time"), claim.get("precision")
 
-    birth_date_dt, birth_date_precision = extract_date_info("P569")
-    death_date_dt, death_date_precision = extract_date_info("P570")
+    birth_date_year, birth_date_precision = extract_date_info("P569")
+    death_date_year, death_date_precision = extract_date_info("P570")
 
     return (
-        birth_date_dt,
-        death_date_dt,
-        format_date(birth_date_dt, birth_date_precision),
-        format_date(death_date_dt, death_date_precision),
+        format_date(birth_date_year, birth_date_precision),
+        format_date(death_date_year, death_date_precision),
     )
 
 
-# Function to get the nationality from Wikidata claims
-def get_nationality(claims):
-    nationality_id = (
+# Function to get the country_of_citizenship from Wikidata claims
+def get_country_of_citizenship(claims):
+    country_id = (
         claims.get("P27", [{}])[0]
         .get("mainsnak", {})
         .get("datavalue", {})
         .get("value", {})
         .get("id", None)
     )
-    if nationality_id is not None:
-        nationality_data = requests.get(
-            f"https://www.wikidata.org/wiki/Special:EntityData/{nationality_id}.json"
+    if country_id is not None:
+        country_of_citizenship_data = requests.get(
+            f"https://www.wikidata.org/wiki/Special:EntityData/{country_id}.json"
         ).json()
         return (
-            nationality_id,
-            nationality_data["entities"][nationality_id]["labels"]["en"]["value"],
+            country_id,
+            country_of_citizenship_data["entities"][country_id]["labels"]["en"][
+                "value"
+            ],
         )
     return None, None
 
@@ -176,10 +176,10 @@ def fetch_wiki_info(display_name):
             # "family_name": None,
             "birth_date": None,
             "death_date": None,
-            "birth_date_dt": None,
-            "death_date_dt": None,
-            "nationality_id": None,
-            "nationality": None,
+            "birth_date_year": None,
+            "death_date_year": None,
+            "country_id": None,
+            "country_of_citizenship": None,
             "image_url": None,
             "wikipedia_title": None,
             "biography": None,
@@ -199,12 +199,12 @@ def fetch_wiki_info(display_name):
                     "artist_id": artist_id,
                     # "given_name": get_given_and_family_names(claims)[0],
                     # "family_name": get_given_and_family_names(claims)[1],
-                    "birth_date_dt": get_birth_death_dates(claims)[0],
-                    "death_date_dt": get_birth_death_dates(claims)[1],
-                    "birth_date": get_birth_death_dates(claims)[2],
-                    "death_date": get_birth_death_dates(claims)[3],
-                    "nationality_id": get_nationality(claims)[0],
-                    "nationality": get_nationality(claims)[1],
+                    "birth_date_year": get_birth_death_dates(claims)[0][0],
+                    "death_date_year": get_birth_death_dates(claims)[1][0],
+                    "birth_date": get_birth_death_dates(claims)[0][1],
+                    "death_date": get_birth_death_dates(claims)[1][1],
+                    "country_id": get_country_of_citizenship(claims)[0],
+                    "country_of_citizenship": get_country_of_citizenship(claims)[1],
                     "image_url": get_image_url(claims),
                 }
             )
@@ -258,9 +258,11 @@ if __name__ == "__main__":
     print(df.shape)
 
     df["display_name"] = df["display_name"].str.replace(
-        r", date(s)? unknown|\(After.*?\)", "", case=False, regex=True
+        r", date(s)? unknown|\(After.*?\)|Attributed to|School of|Workshop of",
+        "",
+        regex=True,
     )
-    # NGA and MET artist names originally did not include nationality or years
+    # NGA and MET artist names originally did not include country_of_citizenship or years
     df.loc[df["source"].isin(["NGA", "MET"]), "display_name"] = df[
         df["source"].isin(["NGA", "MET"])
     ].apply(format_display_name, axis=1)
@@ -278,11 +280,14 @@ if __name__ == "__main__":
     print(df_artists.shape)
     all_display_names = df_artists["display_name"]
 
-    df_artists = df_artists[
-        ~df_artists["display_name"].str.contains(
-            "unknown|unidentified", case=False, na=False
-        )
-    ]
+    is_unknown = df_artists["display_name"].str.contains(
+        "unknown|unidentified|^(after|imitator|follower|studio|style|in the style|circle)",
+        case=False,
+        na=False,
+    )
+    df_artists_unknown = df_artists[is_unknown][["display_name"]]
+    df_artists_unknown.to_csv("data/artists_unknown.csv", index=False)
+    df_artists = df_artists[~is_unknown]
     print(df_artists.shape)
 
     df_wiki = parallel_fetch_wiki_info(df_artists["display_name"].tolist())
@@ -294,7 +299,9 @@ if __name__ == "__main__":
     df_artists = df_artists[~df_artists["artist_id"].isna()]
     # It's okay if some threads of fetching wiki info get errors. All unprocessed artists are recorded here.
     df_artists_unprocessed = all_display_names[
-        ~all_display_names.isin(df_artists["display_name"])
+        ~all_display_names.isin(
+            pd.concat([df_artists["display_name"], df_artists_unknown["display_name"]])
+        )
     ]
     df_artists_unprocessed.to_csv("data/artists_unprocessed.csv", index=False)
 
@@ -318,4 +325,4 @@ if __name__ == "__main__":
 
     # pprint(artist_info)
     # TODO: artists with no page – gpt / regular expression
-    # TODO: nationality – merge with location, and get continent, country, coordinates, and flag
+    # TODO: country_of_citizenship – merge with location, and get continent, country, coordinates, and flag
