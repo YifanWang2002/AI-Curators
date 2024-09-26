@@ -42,13 +42,15 @@ class ArtSearch:
         items = self.artist_names if search_type == 'name' else self.tags
         D, I = index.search(query_embedding.reshape(1, -1), k)
         
-        # Convert cosine similarities to probability-like scores
-        scores = (D[0] + 1) / 2  # Map from [-1, 1] to [0, 1]
+        # # convert cosine similarities to probability-like scores
+        # scores = (D[0] + 1) / 2  # Map from [-1, 1] to [0, 1]
         
-        # Normalize scores so they sum to 1
-        scores = scores / np.sum(scores)
+        # # normalize scores so they sum to 1
+        # scores = scores / np.sum(scores)
+
+        scores = D[0]
         
-        # Create a list of tuples (item, score)
+        # create a list of tuples (item, score)
         results = [(items[i], float(score)) for i, score in zip(I[0], scores)]
         
         return results
