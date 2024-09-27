@@ -1,24 +1,40 @@
 {
-    "title": "Expressions of Grief: Artworks Reflecting Sorrow and Loss Through Time",
-    "description": "This exhibition, 'Expressions of Grief,' invites viewers to explore the profound themes of sorrow, loss, and mourning as depicted in various artworks spanning different periods and styles. Each piece captures the emotional weight of grief, whether through the tender portrayal of a mother and child, the somber reflections of saints, or the dramatic narratives of historical and mythological figures. Artists such as Constant Mayer and Frederic, Lord Leighton, alongside lesser-known masters, provide a rich tapestry of visual storytelling that resonates with the universal human experience of loss. The exhibition aims to foster a deeper understanding of how art can articulate complex emotions and serve as a means of processing grief. Visitors will encounter a diverse array of techniques and interpretations, from the delicate brushwork of the Renaissance to the poignant imagery of the 19th century. Join us in this contemplative journey through art that speaks to the heart and soul, reminding us of the beauty and pain intertwined in the human condition.",
+    "title": "Echoes of Solitude: Artworks Reflecting Loneliness and Mourning",
+    "description": "Welcome to 'Echoes of Solitude,' an evocative exhibition that delves into the profound themes of loneliness and mourning as expressed through various artistic styles and periods. This collection features works that poignantly capture the essence of sorrow, loss, and the human condition. From Constant Mayer's 'Love's Melancholy' to Octave Tassaert's 'Destitute Dead Mother holding her sleeping Child in Winter,' each piece invites viewers to reflect on the emotional weight of solitude. The exhibition also includes the haunting 'Mater Dolorosa' by Georges-Daniel de Monfreid, which embodies the sorrow of the Virgin Mary, and the poignant 'Hagar in the Wilderness' by Camille Corot, illustrating despair and isolation. The artworks span centuries and cultures, showcasing how artists have grappled with themes of grief and loneliness. This exhibition connects deeply with the desire to explore the darker facets of human experience, offering a space for contemplation and empathy. We invite you to immerse yourself in these powerful narratives and discover the beauty that can emerge from sorrow.",
+    "display_order": [
+        "Mater Dolorosa (Sorrowing Virgin) | Workshop of Dieric Bouts (Netherlandish",
+        "Fragment from Christ Carrying the Cross: Mourning Virgin | Jean Hey",
+        "The Virgin and Saint John the Evangelist | Workshop of Jacob Cornelisz. van Oostsanen (Master of the Berlin Sketchbook?; Netherlandish",
+        "Mater Dolorosa (The Virgin Mary Mourning) | Georges-Daniel de Monfreid (French",
+        "Love's Melancholy | Constant Mayer (American",
+        "Lachrymae | Frederic",
+        "Destitute Dead Mother holding her sleeping Child in Winter | Octave Tassaert (French",
+        "Hagar in the Wilderness | Camille Corot",
+        "Farhad Kills Himself After Hearing the False News of Shirin\u2019s Death | Amar Das Bhatti (Indian",
+        "Eaton Family Memorial | Samuel Jordan"
+    ],
+    "Original_order": [
+        "Love's Melancholy",
+        "Lachrymae",
+        "Destitute Dead Mother holding her sleeping Child in Winter",
+        "Mater Dolorosa (Sorrowing Virgin)",
+        "The Virgin and Saint John the Evangelist",
+        "Mater Dolorosa (The Virgin Mary Mourning)",
+        "Fragment from Christ Carrying the Cross: Mourning Virgin",
+        "Farhad Kills Himself After Hearing the False News of Shirin\u2019s Death",
+        "Eaton Family Memorial",
+        "Hagar in the Wilderness"
+    ],
     "art_pieces": [
-        "ARTIC-57279626-f248-4b4d-7ce1-37105c3bc186",
-        "TCMA-a9717500-420c-46a2-8fbd-e0102beb9f4e",
         "ARTIC-66c1797f-b87e-8736-cdf6-c490bd34863b",
-        "MET-044571cf-aa2c-429d-9516-a33b6d521031",
+        "ARTIC-5b05140d-7b91-ef9c-68fc-9ee13db64b21",
         "ARTIC-4a17bb4f-36a8-e032-506f-77f8a214877b",
         "TCMA-89efcaf4-22ad-4dbf-ba50-c95af834855d",
-        "NGA-f4d9f325-69ea-4d61-972e-53c5ee0e2fa4",
+        "ARTIC-57279626-f248-4b4d-7ce1-37105c3bc186",
+        "MET-044571cf-aa2c-429d-9516-a33b6d521031",
+        "TCMA-a9717500-420c-46a2-8fbd-e0102beb9f4e",
         "MET-6f3f4c36-db4e-4644-a77b-84594bb842f6",
-        "MET-45ecd680-b7d1-4a2f-a16d-cd91fe97b3db",
-        "NGA-05d4d89e-55ca-4a9e-9e0b-fad84db8ce05",
-        "MET-eb17f736-7f48-4153-a981-1c3c7df8a097",
-        "MET-4913c8cb-46f3-4338-a346-589171c26d1e",
-        "TCMA-00f880a2-b66c-4bda-9194-0c7e919c5eae",
-        "ARTIC-5b05140d-7b91-ef9c-68fc-9ee13db64b21",
-        "MET-42e81f1e-8b96-47af-b591-be8298d94823",
-        "MET-7dd93db8-e453-41a4-becf-29cec18d0986",
         "TCMA-72946f2e-3643-4715-9f5c-40e5f2af4813",
-        "ARTIC-8e391b9f-7a08-424f-6fc0-0861fca9c3c7"
+        "NGA-05d4d89e-55ca-4a9e-9e0b-fad84db8ce05"
     ]
 }

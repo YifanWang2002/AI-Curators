@@ -1,13 +1,46 @@
 {
-    "title": "The Struggles of Society: Artworks Depicting Beggars and Their Stories",
-    "description": "This exhibition explores the poignant theme of beggars and their representation in art, showcasing works from various artists who have captured the essence of social struggles and human resilience. Through a diverse range of styles and periods, the artworks highlight the plight of the marginalized and the often-overlooked narratives of those living on the fringes of society. From Honor\u00e9 Daumier's powerful depictions of the downtrodden to the evocative imagery of Mariano Fortuny, each piece invites viewers to reflect on the socio-economic conditions that lead to such realities. The exhibition also features works by Jean-Louis Forain and George Bellows, providing a comprehensive look at how different artists interpret the theme of begging and poverty. By bringing together these significant works, we aim to foster a deeper understanding of the human condition and encourage empathy towards those who are often invisible in our daily lives.",
+    "title": "Echoes of Solitude: Art Reflecting Inner Turmoil and Isolation",
+    "description": "Welcome to 'Echoes of Solitude,' an evocative exhibition that delves into the profound themes of loneliness and depression as expressed through various artistic lenses. This collection features works from renowned artists such as Honor\u00e9 Daumier and Jean-Louis Forain, who poignantly capture the human condition in their depictions of isolation and despair. Each artwork serves as a mirror reflecting the emotional struggles faced by individuals, inviting viewers to engage with the narratives of solitude that resonate deeply within us all. From the somber tones of 'The Third-Class Carriage' to the haunting imagery of 'Christ's Descent into Hell,' this exhibition explores the multifaceted nature of human experience. The juxtaposition of different styles and periods, including the poignant realism of Daumier and the expressive brushwork of Whistler, allows for a rich dialogue about the impact of loneliness on the psyche. As you navigate through the exhibition, consider how these artists articulate feelings of alienation and the search for connection in a world that often feels isolating. We invite you to reflect on your own experiences of solitude as you engage with these powerful works of art.",
+    "display_order": [
+        "The Third-Class Carriage",
+        "The Drinkers",
+        "Wandering Saltimbanques",
+        "The Veteran",
+        "The Stockade",
+        "The Petitioner",
+        "Th\u00e9odore G\u00e9ricault on His Deathbed",
+        "Study for \\Arrangement in Grey and Black",
+        "Saint Jerome Penitent [left panel]",
+        "Christ's Descent into Hell",
+        "Basin Street",
+        "The Print Collector"
+    ],
+    "Original_order": [
+        "The Petitioner",
+        "The Veteran",
+        "The Stockade",
+        "The Print Collector",
+        "The Third-Class Carriage",
+        "Basin Street",
+        "Wandering Saltimbanques",
+        "Saint Jerome Penitent [left panel]",
+        "The Drinkers",
+        "Study for \"Arrangement in Grey and Black, No. 2: Portrait of Thomas Carlyle\"",
+        "Christ's Descent into Hell",
+        "Th\u00e9odore G\u00e9ricault on His Deathbed"
+    ],
     "art_pieces": [
-        "NGA-c5d9e136-1be0-4df3-a04c-3ac046271bd2",
-        "NGA-2fc52267-c172-46c0-9498-e88e695bb354",
         "MET-27177727-ee14-4e2e-ba40-6351b1d8be43",
-        "TCMA-6959ffb3-65bd-4533-b19a-f1106e2f4fc5",
+        "MET-79d89760-c014-4287-86d7-e1587ee96f45",
+        "NGA-2fc52267-c172-46c0-9498-e88e695bb354",
+        "TCMA-38b9b00e-8e8a-4858-84ce-05af6b50d574",
         "NGA-db757780-eec9-429f-b475-2cef2a48414f",
-        "MET-bee1ea43-7ce3-483d-a0c8-32748314231f",
-        "NGA-feccdd3b-84b2-4267-abd2-c04ef16dd5e7"
+        "NGA-01110a68-b5b4-40e9-bf0c-ddce3157bf1d",
+        "ARTIC-3ef09d92-f10b-f01f-515d-c69a0a3a3e92",
+        "ARTIC-b7637e1b-47d7-123c-fe43-46981a93550e",
+        "NGA-eea01b49-e215-488c-83f9-916964067d45",
+        "MET-4913c8cb-46f3-4338-a346-589171c26d1e",
+        "MET-921af1c8-76a3-4802-8a46-9a0a02d6647b",
+        "ARTIC-f1dce916-58a3-db57-d5cd-be0994dc98c7"
     ]
 }

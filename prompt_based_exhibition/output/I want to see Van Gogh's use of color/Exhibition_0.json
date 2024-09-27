@@ -1,18 +1,46 @@
 {
-    "title": "The Intimate World of Vincent van Gogh: A Journey Through His Art",
-    "description": "This exhibition invites you to explore the intimate and personal world of Vincent van Gogh, one of the most influential figures in Western art. Through a carefully curated selection of his works, we delve into the themes of family, domesticity, and the everyday life that inspired him. Each piece reflects van Gogh's unique perspective and emotional depth, showcasing his masterful use of color and brushwork. From tender portraits of loved ones to serene depictions of his surroundings, the artworks reveal the artist's profound connection to his subjects. Visitors will encounter iconic pieces such as 'The Bedroom' and 'Madame Roulin and Her Baby,' alongside lesser-known works that highlight his versatility and innovation. This exhibition not only celebrates van Gogh's artistic genius but also offers a glimpse into the personal experiences that shaped his vision. Join us in appreciating the beauty and complexity of van Gogh's art, as we journey through the moments that defined his life and legacy.",
+    "title": "The Vibrant Palette of Vincent: A Journey Through Color",
+    "description": "This exhibition, 'The Vibrant Palette of Vincent: A Journey Through Color,' invites viewers to explore the extraordinary use of color in the works of Vincent van Gogh. Renowned for his bold and emotive color choices, Van Gogh's paintings convey deep feelings and narratives that resonate with the viewer. Each artwork in this collection showcases his innovative techniques and the emotional weight that color can carry. From the serene blues and yellows of 'The Bedroom' to the lively hues in 'Terrace and Observation Deck at the Moulin de Blute-Fin, Montmartre,' this exhibition highlights how Van Gogh's color palette transformed ordinary scenes into extraordinary expressions of life. The selected pieces, including 'Self-Portrait' and 'Madame Roulin Rocking the Cradle,' not only reflect his mastery of color but also provide insight into his personal experiences and relationships. As you journey through this exhibition, you will gain a deeper appreciation for Van Gogh's artistic vision and the profound impact of color in his work, making it a must-see for art lovers and those curious about the emotional language of color.",
+    "display_order": [
+        "The Bedroom",
+        "Terrace and Observation Deck at the Moulin de Blute-Fin",
+        "Self-Portrait",
+        "Self-Portrait with a Straw Hat (obverse: The Potato Peeler)",
+        "Portrait of Vincent van Gogh",
+        "Madame Roulin Rocking the Cradle (La berceuse)",
+        "La Berceuse (Woman Rocking a Cradle; Augustine-Alix Pellicot Roulin",
+        "La Mousm\u00e9",
+        "Madame Roulin and Her Baby",
+        "Peasant Woman Cooking by a Fireplace",
+        "First Steps",
+        "Shoes"
+    ],
+    "Original_order": [
+        "The Bedroom",
+        "Portrait of Vincent van Gogh",
+        "Self-Portrait",
+        "Madame Roulin Rocking the Cradle (La berceuse)",
+        "La Berceuse (Woman Rocking a Cradle; Augustine-Alix Pellicot Roulin, 1851\u20131930)",
+        "La Mousm\u00e9",
+        "Shoes",
+        "Self-Portrait with a Straw Hat (obverse: The Potato Peeler)",
+        "First Steps, after Millet",
+        "Madame Roulin and Her Baby",
+        "Peasant Woman Cooking by a Fireplace",
+        "Terrace and Observation Deck at the Moulin de Blute-Fin, Montmartre"
+    ],
     "art_pieces": [
         "ARTIC-25c31d8d-21a4-9ea1-1d73-6a2eca4dda7e",
-        "MET-feb335e3-de39-48ce-b43d-73446287dce1",
-        "TCMA-86f2b551-638f-4076-bb5f-20ded13f2f5b",
-        "MET-1496f0ba-0980-423b-a258-7b92e8a51b13",
-        "NGA-c78b52c9-ca48-4e92-8a82-0efec04599f2",
-        "MET-66d995af-38b7-4d57-8f36-57bda6d24b6c",
-        "NGA-6d6753b3-c1ef-494c-9dc3-244e8982c867",
-        "MET-7d8e745a-9293-4080-9f37-451220aa131b",
-        "MET-78bd067a-f4a2-4a0c-8e08-3acfab624b22",
         "ARTIC-6cb22407-be79-bf0a-1a63-fdf2b99e035b",
-        "MET-07f58447-1056-42d5-acff-72660e86213b",
-        "ARTIC-9325e3ea-2d5d-120f-5bfb-faa0f8266ca6"
+        "NGA-54ee6643-e0f9-4b92-a1d2-441e5108724d",
+        "MET-7d1bde17-d4bd-42a2-ba7b-4eb72fae7bdc",
+        "NGA-1034a430-14b9-494d-8b69-c135e592892f",
+        "ARTIC-9325e3ea-2d5d-120f-5bfb-faa0f8266ca6",
+        "MET-7d8e745a-9293-4080-9f37-451220aa131b",
+        "NGA-a2e6da57-3cd1-4235-b20e-95dcaefed6c8",
+        "MET-feb335e3-de39-48ce-b43d-73446287dce1",
+        "MET-a5a74502-c95f-436a-9956-58f591418c07",
+        "MET-1496f0ba-0980-423b-a258-7b92e8a51b13",
+        "MET-66d995af-38b7-4d57-8f36-57bda6d24b6c"
     ]
 }

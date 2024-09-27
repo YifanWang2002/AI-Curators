@@ -6,6 +6,12 @@ import numpy as np
 from time import time
 import os
 from sklearn.cluster import AgglomerativeClustering
+from fuzzywuzzy import process
+
+# Function to see if x is a match of target
+def get_matches(target, x, threshold = 90):
+    ratio = process.extractOne(target, x)
+    return ratio[1] >= threshold
 
 class ExhibitionCurator:
     def __init__(self, api_key, metadata, embedding_model = SentenceTransformer('all-MiniLM-L6-v2')):
@@ -25,12 +31,14 @@ class ExhibitionCurator:
         print('**** Getting embeddings of descriptions...')
         # self.description_embeddings = self.embedding_model.encode(self.descriptions)
         checkpoint = time()
-        if not os.path.isfile('./data/description_embeddings.npy'):
+        if not os.path.isfile(r'D:\Metaverse_Museum\AI-Curators\data\description_embeddings.pt'):
+            print('Embeddings not found. Generating...')
             self.description_embeddings = self.embedding_model.encode(self.descriptions)
             self.description_embeddings = torch.tensor(self.description_embeddings).to('cpu')
-            torch.save(self.description_embeddings, ('./data/description_embeddings.pt'))
+            torch.save(self.description_embeddings, (r'D:\Metaverse_Museum\AI-Curators\data\description_embeddings.pt'))
         else:
-            self.description_embeddings = torch.load('./data/description_embeddings.pt')
+            print("Loading embeddings from file...")
+            self.description_embeddings = torch.load(r'D:\Metaverse_Museum\AI-Curators\data\description_embeddings.pt')
         print(f'**** Getting embeddings of descriptions done. Time taken: {time() - checkpoint} seconds')
 
     def get_description(self, row):
@@ -48,24 +56,28 @@ class ExhibitionCurator:
         )  # , affinity='cosine', linkage='average', distance_threshold=0.4)
         clustering_model.fit(top_k_description_embeddings)
         cluster_assignment = clustering_model.labels_
-        recommendation_df['cluster_label'] = cluster_assignment
+        recommendation_df.loc[:,'cluster_label'] = cluster_assignment
         recommendation_df = recommendation_df[['artwork_id','title', 'display_name', 'cluster_label']]
         exhibitions = []
         # clusters = []
         grouped_ids = []
+        original_orders = []
+        clusters = []
         for cluster_id in recommendation_df['cluster_label'].unique():
             cluster = recommendation_df[recommendation_df['cluster_label'] == cluster_id]
             exhibition = ""
             for index, row in cluster.iterrows():
-                exhibition += str(row['artwork_id']) + " | " + str(row['title']) + " | " + str(row['display_name']) + "; "
+                exhibition += str(row['title']) + " | " + str(row['display_name']) + "; "
             exhibitions.append(exhibition[:-2])
             grouped_ids.append(cluster['artwork_id'].values)
+            original_orders.append(cluster['title'].values)
+            clusters.append(cluster.copy())
             # clusters.append(cluster)
-        return exhibitions, grouped_ids
+        return exhibitions, grouped_ids, original_orders, clusters
     
-    def curate(self, recommendations):
+    def curate(self, recommendations, query):
         responses = []
-        exhibitions, grouped_ids = self.get_exhibitions(recommendations)
+        exhibitions, grouped_ids, original_orders, clusters = self.get_exhibitions(recommendations)
         for exhibition in exhibitions:
             response = self.client.chat.completions.create(
             model="gpt-4o-mini",
@@ -75,7 +87,7 @@ class ExhibitionCurator:
                 "content": [
                     {
                     "type": "text",
-                    "text": "You are a professional art exhibition curator.  You can give an accurate, straightforward, and informative description for an exhibition of artworks for the general public to understand. An exhibition can be themed based on artists, genre, style, period, color, or any other factors that are shared by the artworks in the exhibition.\nYou will be given a list of artwork ID, artwork titles and the corresponding artists. Provide a Python readable JSON string to describe the artwork with the following keys and values:\ntitle: <string, in 15 words> An elegant name for the exhibition of artworks,\ndescription: <string, in 200 words> a paragraph that introduces the themed exhibition to viewers,\nartworks_ids_in_order: <list of strings, ordered> rearrange the order of the input list of artworks ID such that the new order is better for viewers to learn the exhibition."
+                    "text": "You are a professional art exhibition curator. You can give an accurate, straightforward, and informative description for an exhibition of artworks for the general public to understand. An exhibition can be themed based on artists, genre, style, period, color, or any other factors that are shared by the artworks in the exhibition.\nYou will be given a sentence S, and the list of artworks searched based on the sentence S (which is a list of artworks and the corresponding artists). This list of artworks should together serve as one exhibition, and you will provide more details about the exhibition. Provide a Python readable JSON string to describe the artwork with the following keys and values:\ntitle: <string, in 15 words> An elegant name for the exhibition of artworks,\ndescription: <string, in 200 words> a paragraph that introduces the themed exhibition to viewers,\ndisplay_order: <list of strings> exact same list of artwork titles provided (you should not modify the titles in any way), but reordered in a way that the new order is better for viewers to learn the exhibition. Note: You should ignore the sentence S when providing the title for exhibition (that means the exhibition title should not be simply copying keywords from the sentence S). However, your exhibition description should spend some sentences to explain how the exhibition connects with the sentence S."
                     }
                 ]
                 },
@@ -84,22 +96,23 @@ class ExhibitionCurator:
                 "content": [
                     {
                     "type": "text",
-                    "text": f"list of (artwork ID | artwork title | artist): {exhibition}"
+                    "text": f"Sentence S: {query}; list of (artwork title | artist): {exhibition}"
                     }
                 ]
                 }  
             ],
             temperature=0,
-            max_tokens=1024,
+            max_tokens=2048,
             top_p=1,
             frequency_penalty=0,
             presence_penalty=0
             )
-            responses.append(response)
+            responses.append(response.choices[0].message.content)
         
         exhibition_info = []
         for index, response in enumerate(responses):
-            result = response.choices[0].message.content.split("\n")
+            temp_df = clusters[index]
+            result = response.split("\n")
             exhibition_temp = {}
             get_artworks = False
             artworks = []
@@ -109,19 +122,37 @@ class ExhibitionCurator:
                         exhibition_temp['title'] = line.split('": ')[1].replace('"', '')[:-1]
                     elif "description" in line:
                         exhibition_temp['description'] = line.split('": ')[1].replace('"', '')[:-1]
-                    elif "artworks_ids_in_order" in line:
+                    elif "display_order" in line or "description" in exhibition_temp:
                         get_artworks = True
                 else:
                     if "]" in line and '[' not in line:
-                        exhibition_temp['art_pieces'] = artworks
+                        exhibition_temp['display_order'] = artworks
                         break
                     else:
                         artwork_id = line.split(", ")[0]
                         artwork_id = artwork_id.replace('"', '').replace(",", "").lstrip()
                         artworks.append(artwork_id)
-            if 'art_pieces' not in exhibition_temp:
-                exhibition_temp['art_pieces'] = grouped_ids[index]
+            if 'display_order' not in exhibition_temp:
+                exhibition_temp['display_order'] = original_orders[index]
 
-                print('Error! Incomplete')
+                print('Error!!!! Display order not found')
+            exhibition_temp['Original_order'] = list(original_orders[index])
+            ordered_ids = []
+            for title in exhibition_temp['display_order']:
+                # for i in reversed(range(len(title))):
+                #     if i < len(title) - 1:
+                #         print('Matching issue: try partial match')
+                #     matched_id = temp_df[temp_df['title'].str.contains(r'{}'.format(title[:i]))]['artwork_id'].values
+                #     if len(matched_id) > 0:
+                #         matched_id = matched_id[0]
+                #         break
+                matched_id = temp_df[temp_df['title'] == title]['artwork_id'].values
+                if len(matched_id) == 0:
+                    # use fuzzy matching, with threshold of 90, and get the best match
+                    matched_title = process.extractOne(title, temp_df['title'].values)[0]
+                    matched_id = temp_df[temp_df['title'] == matched_title]['artwork_id'].values
+
+                ordered_ids.append(matched_id[0])
+            exhibition_temp['art_pieces'] = list(ordered_ids)
             exhibition_info.append(exhibition_temp)
         return exhibition_info

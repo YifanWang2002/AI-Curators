@@ -1,21 +1,43 @@
 {
-    "title": "Exploring Melancholy: Artworks of Sorrow and Reflection",
-    "description": "This exhibition delves into the profound theme of melancholy as expressed through various artistic styles and periods. Each artwork selected for this collection captures the essence of sorrow, introspection, and the human condition. From the poignant imagery of 'Ode on Melancholy' by Will Hicock Low to the haunting 'The Disillusioned Medea' by Paulus Bor, viewers are invited to explore the emotional depth and complexity of these works. The exhibition features a diverse range of artists, including Jan Steen, Augustus Leopold Egg, and Max Beckmann, each contributing their unique perspective on themes of loss, longing, and reflection. The artworks span different eras and styles, showcasing how the theme of melancholy transcends time and culture. Visitors will find themselves immersed in a contemplative journey, encouraging them to reflect on their own experiences of sorrow and the beauty that can emerge from it. Join us in this exploration of the darker yet profoundly beautiful aspects of art that resonate with the human experience.",
+    "title": "Exploring the Depths of Human Emotion: Loneliness and Melancholy",
+    "description": "This exhibition delves into the profound themes of loneliness and depression as expressed through various artistic styles and periods. Each artwork selected for this exhibition captures the essence of human emotion, portraying the struggles and complexities of the human experience. From the poignant 'Ode on Melancholy' by Will Hicock Low to the haunting 'Melancholia' by Domenico Fetti, viewers are invited to reflect on the feelings of isolation and despair that resonate through these pieces. The exhibition also features works like 'The Disillusioned Medea' by Paulus Bor and 'Perseus's Last Duty' by Max Beckmann, which further explore the darker aspects of human existence. By examining these artworks, visitors will gain insight into how artists have historically interpreted and represented feelings of loneliness and depression, making connections to contemporary issues of mental health. This thematic journey through art encourages a deeper understanding of the emotional landscapes that define our lives.",
+    "display_order": [
+        "Melancholia",
+        "Ode on Melancholy",
+        "The Disillusioned Medea",
+        "Perseus's Last Duty",
+        "A Glimpse into Hell",
+        "The Lovesick Maiden",
+        "The Beggars",
+        "Beggars by a Door",
+        "Study for \\Come Rest in this Bosom my own Stricken Dear\\",
+        "Allegory of Avarice",
+        "At the Railway Station"
+    ],
+    "Original_order": [
+        "Ode on Melancholy",
+        "The Beggars",
+        "The Lovesick Maiden",
+        "Beggars by a Door",
+        "Study for \"Come Rest in this Bosom my own Stricken Dear\"",
+        "A Glimpse into Hell, or Fear",
+        "Allegory of Avarice",
+        "Perseus's Last Duty",
+        "The Disillusioned Medea",
+        "Melancholia",
+        "At the Railway Station"
+    ],
     "art_pieces": [
-        "ARTIC-1f209f36-e526-096c-4fcb-c27c454440ca",
-        "MET-36f5eb6a-6a63-4af6-81a2-4e019a2ddba7",
         "ARTIC-73a93ee5-b169-73f4-4db9-6e738eca7fce",
+        "ARTIC-1f209f36-e526-096c-4fcb-c27c454440ca",
         "MET-665b634e-98f5-4d5f-ae48-a63f25d79b94",
         "TCMA-523158fc-ac33-409b-ba80-d5b06556783b",
         "ARTIC-3d6addef-e6cb-a9ca-31b0-522bf6613522",
-        "MET-4158582e-6236-4698-a73e-65e13c7e18fe",
-        "MET-1a7f7df0-7cd6-4197-b8de-954089607867",
-        "TCMA-0c24cd07-baaa-4b52-a6d3-71c48e0fad51",
-        "ARTIC-6fb6c48d-5877-1077-0f9d-6a17cee3c4f8",
-        "NGA-5ceefccf-358b-4da6-94c2-5f2312a44ca2",
         "MET-dbd08635-7415-43a0-96bc-e293e727917c",
-        "ARTIC-2ba51712-835e-c17c-5f48-240bc76561a0",
-        "ARTIC-3ef09d92-f10b-f01f-515d-c69a0a3a3e92",
-        "ALLEGORY-26b1d3b7-14f1-4460-a406-75ed5961c462"
+        "NGA-c5d9e136-1be0-4df3-a04c-3ac046271bd2",
+        "TCMA-6959ffb3-65bd-4533-b19a-f1106e2f4fc5",
+        "TCMA-0c24cd07-baaa-4b52-a6d3-71c48e0fad51",
+        "MET-26b1d3b7-14f1-4460-a406-75ed5961c462",
+        "ARTIC-2ba51712-835e-c17c-5f48-240bc76561a0"
     ]
 }
