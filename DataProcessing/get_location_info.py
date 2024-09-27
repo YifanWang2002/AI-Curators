@@ -5,7 +5,7 @@ import pandas as pd
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
-# Function to search Wikipedia for an artist
+# Function to search Wikipedia for an artist or location
 def search_wikipedia(location_name):
     search_url = f"https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={location_name}&format=json"
     response = requests.get(search_url)
@@ -72,23 +72,26 @@ def get_entity_info(entity_id):
 # Function to get continent from Wikidata claims
 def get_continent(claims):
     # P30 is the property for "continent"
-    continent_ids = claims.get("P30", [])
-    if not continent_ids:
+    continents = claims.get("P30", [])
+    if not continents:
         return np.nan, np.nan
 
-    # Pick the first continent (if multiple, select the most relevant)
-    continent_id = (
-        continent_ids[0]
-        .get("mainsnak", {})
-        .get("datavalue", {})
-        .get("value", {})
-        .get("id", np.nan)
-    )
-    if not pd.isna(continent_id):
-        continent_label, _ = get_entity_info(continent_id)  # Get only the label
-        return continent_label, continent_id
+    continent_labels = []
+    continent_ids = []
 
-    return np.nan, np.nan
+    for continent in continents:
+        continent_id = (
+            continent.get("mainsnak", {})
+            .get("datavalue", {})
+            .get("value", {})
+            .get("id", np.nan)
+        )
+        if not pd.isna(continent_id):
+            continent_label, _ = get_entity_info(continent_id)  # Get only the label
+            continent_labels.append(continent_label)
+            continent_ids.append(continent_id)
+
+    return (np.nan, np.nan) if not continent_ids else (continent_labels, continent_ids)
 
 
 # Function to get country from Wikidata claims, considering the latest by start date
@@ -164,6 +167,26 @@ def get_coordinates(claims):
     return {"latitude": np.nan, "longitude": np.nan}
 
 
+# Function to get the Wikipedia description of a location
+def get_wikipedia_description(page_title):
+    """
+    Get the description or extract of a Wikipedia page.
+
+    Args:
+        page_title (str): The title of the Wikipedia page.
+
+    Returns:
+        str: The extract or description of the Wikipedia page.
+    """
+    wikipedia_api_url = f"https://en.wikipedia.org/w/api.php?action=query&prop=extracts&titles={page_title}&exintro=true&explaintext=true&exsentences=5&format=json"
+    response = requests.get(wikipedia_api_url).json()
+    pages = response.get("query", {}).get("pages", {})
+    page_data = next(
+        iter(pages.values())
+    )  # Get the first page in the "pages" dictionary
+    return page_data.get("extract", "")
+
+
 # Main function to fetch location data
 def fetch_wiki_info(location_name):
     search_results = search_wikipedia(location_name)
@@ -189,6 +212,9 @@ def fetch_wiki_info(location_name):
             # Get label and description
             label, description = get_entity_info(location_id)
 
+            # Get Wikipedia description
+            wikipedia_description = get_wikipedia_description(title)
+
             res = {
                 "name": title,
                 "label": label,
@@ -199,12 +225,13 @@ def fetch_wiki_info(location_name):
                 "country_id": country_id,
                 "coordinates": coordinates,
                 "thumbnail_image_url": thumbnail_image_url,
+                "wikipedia_description": wikipedia_description,
                 "location_id": location_id,  # Record the entity ID of the location
             }
 
             return res
 
-    return {"name": location_name, "error": "No page has been found"}
+    return {"name": location_name}
 
 
 # Function to fetch data in parallel using multithreading
@@ -224,6 +251,6 @@ def parallel_fetch_wiki_info(display_names):
 
 
 # Example usage with multiple location names
-location_names = ["London", "Paris", "New York", "Lancaster"]
+location_names = ["London", "Paris", "New York", "Lancaster", "Byzantine Empire"]
 location_info_df = parallel_fetch_wiki_info(location_names)
 location_info_df.to_csv("data/locations.csv", index=False)
