@@ -64,7 +64,7 @@ class Prompt_exhibition_generator:
             "ViT-SO400M-14-SigLIP-384", pretrained="webli"
         )
         self.clip_tokenizer = open_clip.get_tokenizer("ViT-SO400M-14-SigLIP-384")
-        self.parser = prompt_parser.OpenAIChatbot(model="gpt-4o-mini", api_key='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')
+        self.parser = prompt_parser.OpenAIChatbot(model="gpt-4o-mini", api_key='your key')
     
     def get_tag_embeddings(self, row):
         embeddings = []
@@ -222,7 +222,7 @@ class Prompt_exhibition_generator:
     def generate_exhibition(self, prompt, search_mode='phrase'):
         begin = time()
         # results = self.search(prompt)
-        # curator = ExhibitionCurator(api_key="sk-proj-tKerDbMKo81VQLdiGM1fT3BlbkFJuUOpUNnT9EVIv8vZtorg", metadata=self.metadata)
+        # curator = ExhibitionCurator(api_key="your key", metadata=self.metadata)
         # exhibitions = curator.curate(results)
         # return exhibitions
         if not os.path.exists(OUTPUT_DIR+'\\'+prompt):
@@ -238,7 +238,7 @@ class Prompt_exhibition_generator:
             print("Successfully filtered the results based on tags and artists")
         result = filtered_result.iloc[:60]
         curate_begin = time()
-        curator = ExhibitionCurator(api_key="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", metadata=self.metadata)
+        curator = ExhibitionCurator(api_key="your key", metadata=self.metadata)
         exhibitions = curator.curate(result, query=prompt)
         print(f"***Total time taken to curate the exhibitions: {time() - curate_begin} seconds")
         for i, exhibition in enumerate(exhibitions):
@@ -307,7 +307,7 @@ if __name__ == "__main__":
         #         os.path.join(OUTPUT_DIR, filename + ".jpg"),
         #         results["image_id"].head(25),
         #     )
-        curator = ExhibitionCurator(api_key="sk-proj-tKerDbMKo81VQLdiGM1fT3BlbkFJuUOpUNnT9EVIv8vZtorg", metadata=agent.metadata)
+        curator = ExhibitionCurator(api_key="your key", metadata=agent.metadata)
         exhibitions = curator.curate(result)
         for i, exhibition in enumerate(exhibitions):
             with open(os.path.join(OUTPUT_DIR+'\\'+prompt, f'Exhibition_{i}' + ".json"), 'w') as f:
