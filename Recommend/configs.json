@@ -44,7 +44,7 @@
         "description": "Directory containing pre-survey data files"
     },
     "output_dir": {
-        "value": "output_0918",
+        "value": "output_0925",
         "description": "Directory to save output files"
     },
     "image_emb_index_path": {

@@ -8,7 +8,8 @@ from PIL import Image
 from datetime import datetime
 from collections import deque
 
-from channels.image_sim import ImageSimChannel
+from channels.exhibition_sim import ExhibitionSimChannel
+from channels.description_sim import DescriptionSimChannel
 from channels.common_tags_wenqing import CommonTagsChannel
 from channels.common_tags import CommonTagsChannel as CommonTagsChannelBackup
 from channels.user_profile import UserProfileChannel
@@ -33,15 +34,16 @@ def load_configs(config_path):
     return config_dict
 
 
-class ArtworkRecommender:
+class ExhibitionRecommender:
     def __init__(self, user_id, metadata, configs):
         self.user_id = user_id
         self.metadata = metadata
         self.configs = configs
         self.recommended = deque(maxlen=configs["exclude_num_recommended"])
 
-        self.image_sim_channel = ImageSimChannel(configs=configs)
-        self.user_profile_channel = UserProfileChannel(user_id=user_id, configs=configs)
+        self.exhibition_sim_channel = ExhibitionSimChannel(metadata=metadata, configs=configs)
+        self.description_sim_channel = DescriptionSimChannel(metadata=metadata, configs=configs)
+        self.user_profile_channel = UserProfileChannel(metadata=metadata, user_id=user_id, configs=configs)
         self.common_tags_channel = CommonTagsChannel(metadata=metadata, configs=configs)
         self.common_tags_channel_backup = CommonTagsChannelBackup(metadata=metadata, tag_count_all_path=configs["tag_count_type_path"])
         self.random_rec_channel = RandomRecChannel(configs=configs, metadata=metadata)
@@ -66,7 +68,9 @@ class ArtworkRecommender:
     def recommend(self, context_info):
         random_recs_list, random_names, len_random = self.random_rec_channel(
             user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended))
-        image_recs_list, image_names, len_image = self.image_sim_channel(
+        exhibit_recs_list, exhibit_names, len_exhibit = self.exhibition_sim_channel(
+            user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list[0])
+        desc_recs_list, desc_names, len_desc = self.description_sim_channel(
             user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list[0])
         profile_recs_list, profile_names, len_profile = self.user_profile_channel(
             context_info=context_info, recommended_set=set(self.recommended))
@@ -79,12 +83,12 @@ class ArtworkRecommender:
         if not context_info["behavior_updated"]:
             self.num_consec += 1
 
-        weights = np.array([1 / len_image, 1 / len_profile, 1 / len_tag, 1 / len_random * self.num_consec])
+        weights = np.array([1 / len_exhibit, 1 / len_desc, 1 / len_profile, 1 / len_tag, 1 / len_random * self.num_consec])
         weights = 1 / (1 + np.exp(-weights))
         print(weights)
-        all_channel_recs = (image_recs_list + profile_recs_list + tag_recs_list + random_recs_list)
-        all_channel_names = (image_names + profile_names + tag_names + random_names)
-        num_channels = 4
+        all_channel_recs = (exhibit_recs_list + desc_recs_list + profile_recs_list + tag_recs_list + random_recs_list)
+        all_channel_names = (exhibit_names + desc_names + profile_names + tag_names + random_names)
+        num_channels = 5
         positions = [0] * num_channels
 
         recs = []
@@ -120,11 +124,11 @@ if __name__ == "__main__":
     print(configs)
 
     metadata = get_metadata(configs["data_dir"])
-    user_id = 2
-    artwork_recommender = ArtworkRecommender(user_id=user_id, metadata=metadata, configs=configs)
+    user_id = 3
+    exhibition_recommender = ExhibitionRecommender(user_id=user_id, metadata=metadata, configs=configs)
 
     # ==== Run the following code for each new recommendation page ===== #
-    for page_idx, is_updated in enumerate([False, True, False, True, False, False]):
+    for page_idx, is_updated in enumerate([False, True, False]):
         context_info = {"timestamp": int(datetime.now().timestamp()), "behavior_updated": is_updated, "page_idx": page_idx}
         if is_updated:
             user_log = read_user_log(page_idx)
@@ -135,7 +139,7 @@ if __name__ == "__main__":
                 result.to_csv(os.path.join(configs["output_dir"], filename + ".csv"))
                 save_images(os.path.join(configs["output_dir"], filename + ".jpg"), result["artwork_id"], result['compressed_url'])
 
-            artwork_recommender.update_data(user_log)
+            exhibition_recommender.update_data(user_log)
 
         print(f"Page {page_idx+1}")
-        artwork_recommender.recommend(context_info=context_info)
+        exhibition_recommender.recommend(context_info=context_info)

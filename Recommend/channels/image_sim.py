@@ -22,10 +22,10 @@ class ImageSimChannel:
         if os.path.exists(self.configs["image_emb_index_path"]):
             return faiss.read_index(self.configs["image_emb_index_path"])
         else:
-            tag_index = faiss.IndexFlatL2(self.image_embedding.shape[1])
-            tag_index.add(self.image_embedding)
-            faiss.write_index(tag_index, self.configs["image_emb_index_path"])
-            return tag_index
+            image_index = faiss.IndexFlatL2(self.image_embedding.shape[1])
+            image_index.add(self.image_embedding)
+            faiss.write_index(image_index, self.configs["image_emb_index_path"])
+            return image_index
 
     def update_image_list(self, final_recs_list):
         self.image_list.extend(final_recs_list)

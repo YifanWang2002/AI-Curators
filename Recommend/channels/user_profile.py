@@ -8,7 +8,8 @@ import pandas as pd
 
 class UserProfileChannel:
 
-    def __init__(self, user_id, configs):
+    def __init__(self, metadata, user_id, configs):
+        self.meta_data = metadata
         self.user_id = user_id
         self.configs = configs
         self.num_per_page = self.configs["num_per_page"]
@@ -83,6 +84,7 @@ class UserProfileChannel:
             ]
         tag_channel_names = [[f"Profile Tag: {x}"] * len(filtered_recs_list[i]) for i, x in enumerate(recs_tags_type)]
         tag_channel_names = list(itertools.chain(*tag_channel_names))
+        # TODO: tagId to imageId or exhibitionId
         final_recs_list = [x[0] for x in sorted(list(itertools.chain(*filtered_recs_list)), key=lambda x: x[1])]
         return final_recs_list, tag_channel_names, len(final_recs_list)
     
