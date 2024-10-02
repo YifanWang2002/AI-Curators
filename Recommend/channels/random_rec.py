@@ -23,4 +23,4 @@ class RandomRecChannel:
         seed = user_id + context_info["timestamp"]
         random_recs_list = candidates.sample(n=self.num_per_page, random_state=seed).index.tolist()
 
-        return [random_recs_list], ["Random"] * len(random_recs_list), 1
+        return [random_recs_list], [["Random"] * len(random_recs_list)], len(random_recs_list)

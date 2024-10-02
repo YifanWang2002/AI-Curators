@@ -43,7 +43,10 @@ class ImageSimChannel:
     def get_recs_list(self, object_ids, num_rec_per_image):
         image_embedding = self.image_embedding[object_ids]
         D, I = self.index.search(image_embedding, num_rec_per_image)
-        return I[:, 1:].tolist()
+        recs_list = []
+        for i in range(len(I)):
+            recs_list.append([(I[i, j], D[i, j]) for j in range(len(I[i])) if j != 0])
+        return recs_list
 
     def __call__(self, user_id, context_info, recommended_set, default_list):
         exclude_set = self.get_interacted_set(user_id, context_info["behavior_updated"]) | recommended_set
@@ -52,25 +55,23 @@ class ImageSimChannel:
 
         if len(self.image_list) == 0:
             self.image_list = default_list
-
+        
+        len_image = len(self.image_list)
         recs_list = self.get_recs_list(self.image_list, num_rec)
         filtered_recs_list = [
-            [x for x in recs if x not in exclude_set] for recs in recs_list
+            [x for x in recs if x[0] not in exclude_set] for recs in recs_list
         ]
         while any(len(recs) < self.num_per_page for recs in filtered_recs_list):
             num_rec += self.num_per_page
             recs_list = self.get_recs_list(self.image_list, num_rec)
             filtered_recs_list = [
-                [x for x in recs if x not in exclude_set] for recs in recs_list
+                [x for x in recs if x[0] not in exclude_set] for recs in recs_list
             ]
 
-        final_recs_list = [
-            random.sample(recs[: self.shuffle_len], self.shuffle_len)
-            + recs[self.shuffle_len : self.num_per_page]
-            for recs in filtered_recs_list
-        ]
-
-        image_names = [f"Image: {x}" for x in self.image_list]
-        self.update_image_list(list(itertools.chain(*final_recs_list)))
-        print(image_names)
-        return final_recs_list, image_names, len(final_recs_list)
+        final_recs_list = [[(sim_image[0], sim_image[1], self.image_list[i]) for sim_image in filtered_recs_list[i]] for i in range(len_image)]
+        sorted_final_recs_list = sorted(list(itertools.chain(*final_recs_list)), key=lambda x: x[1])
+        image_names = [f"Image: {x[2]}" for x in sorted_final_recs_list]
+        final_recs_list = [x[0] for x in sorted_final_recs_list]
+ 
+        self.update_image_list(final_recs_list)
+        return [final_recs_list], [image_names], len(final_recs_list)

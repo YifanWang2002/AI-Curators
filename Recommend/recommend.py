@@ -9,7 +9,8 @@ from datetime import datetime
 from collections import deque
 
 from channels.image_sim import ImageSimChannel
-from channels.common_tags import CommonTagsChannel
+from channels.common_tags_wenqing import CommonTagsChannel
+from channels.common_tags import CommonTagsChannel as CommonTagsChannelBackup
 from channels.user_profile import UserProfileChannel
 from channels.random_rec import RandomRecChannel
 from utils.debug import save_images, read_user_log
@@ -41,10 +42,8 @@ class ArtworkRecommender:
 
         self.image_sim_channel = ImageSimChannel(configs=configs)
         self.user_profile_channel = UserProfileChannel(user_id=user_id, configs=configs)
-        self.common_tags_channel = CommonTagsChannel(
-            metadata=metadata,
-            tag_count_all_path=os.path.join(configs["data_dir"], "tag_count_type.csv"),
-        )
+        self.common_tags_channel = CommonTagsChannel(metadata=metadata, configs=configs)
+        self.common_tags_channel_backup = CommonTagsChannelBackup(metadata=metadata, tag_count_all_path=configs["tag_count_type_path"])
         self.random_rec_channel = RandomRecChannel(configs=configs, metadata=metadata)
 
         # Number of consecutive times of recommendation
@@ -72,24 +71,20 @@ class ArtworkRecommender:
         profile_recs_list, profile_names, len_profile = self.user_profile_channel(
             context_info=context_info, recommended_set=set(self.recommended))
         tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
-
+        # hotfix:
+        backup = False
+        if len_tag == 0:
+            tag_recs_list, tag_names, len_tag = self.common_tags_channel_backup(set(self.recommended))
+            backup = True
         if not context_info["behavior_updated"]:
             self.num_consec += 1
 
-        weights = (
-            [1 / len_image] * len_image
-            + [1 / len_profile] * len_profile
-            + [1 / len_tag] * len_tag
-            + [ 1 / len_random * self.num_consec] * len_random
-            # weight for the random rec channel, which becomes larger when the user browsers recommendation pages consecutively without clicking anything
-        )
-        all_channel_recs = (
-            image_recs_list + profile_recs_list + tag_recs_list + random_recs_list
-        )
-        print(len(all_channel_recs))
-        all_channel_names = image_names + profile_names + tag_names + random_names
-        num_channels = len_image + len_profile + len_tag + len_random
-        print(num_channels)
+        weights = np.array([1 / len_image, 1 / len_profile, 1 / len_tag, 1 / len_random * self.num_consec])
+        weights = 1 / (1 + np.exp(-weights))
+        print(weights)
+        all_channel_recs = (image_recs_list + profile_recs_list + tag_recs_list + random_recs_list)
+        all_channel_names = (image_names + profile_names + tag_names + random_names)
+        num_channels = 4
         positions = [0] * num_channels
 
         recs = []
@@ -102,7 +97,7 @@ class ArtworkRecommender:
                 # TODO: Add logic to remove artworks that have been recommended before to allow duplicates
                 if x not in self.recommended:
                     recs.append(x)
-                    rec_channels.append(all_channel_names[channel_idx])
+                    rec_channels.append(all_channel_names[channel_idx][positions[channel_idx]])
                     self.recommended.append(x)
                     positions[channel_idx] += 1
 
@@ -113,7 +108,10 @@ class ArtworkRecommender:
         if len(rec_result) > 0:
             filename = f"Page {str(context_info['page_idx']+1)}"
             rec_result.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))
-            # save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result["artwork_id"], rec_result['compressed_url'])
+            try:
+                save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result["artwork_id"], rec_result['compressed_url'])
+            except Exception as e:
+                print(e)
 
 if __name__ == "__main__":
 
@@ -133,9 +131,9 @@ if __name__ == "__main__":
 
             result = metadata.iloc[user_log["object_id"].values].copy()
             if len(result) > 0:
-                filename = "user_log"
+                filename = f"user_log_{page_idx}"
                 result.to_csv(os.path.join(configs["output_dir"], filename + ".csv"))
-                # save_images(os.path.join(configs["output_dir"], filename + ".jpg"), result["artwork_id"], result['compressed_url'])
+                save_images(os.path.join(configs["output_dir"], filename + ".jpg"), result["artwork_id"], result['compressed_url'])
 
             artwork_recommender.update_data(user_log)
 

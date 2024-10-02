@@ -1,5 +1,4 @@
-import os
-import random
+import itertools
 import numpy as np
 import pandas as pd
 
@@ -98,19 +97,10 @@ class CommonTagsChannel:
 
     def __call__(self, recommended_set):
         exclude_set = self.interacted_set | recommended_set
-
-        # if self.num_consec <= self.num_tag and self.num_consec < len(self.related_tags):
-        #     new_tag = self.related_tags[self.num_consec - 1]
-        #     self.tag_list.append(new_tag)
-        #     object_ids = self.tag_artworks.loc[new_tag]
-        #     random.shuffle(object_ids)
-        #     self.candidates_list.append(object_ids)
-
         tag_recs_list = [
             [x for x in object_ids if x not in exclude_set]
             for object_ids in self.candidates_list
         ]
 
-        tag_names = [f"Tag: {x}" for x in self.tag_list]
-        print(tag_names)
-        return tag_recs_list, tag_names, len(tag_recs_list)
+        tag_names = [[f"Tag: {x}"] * len(tag_recs_list[i]) for i, x in enumerate(self.tag_list)]
+        return [list(itertools.chain(*tag_recs_list))], [list(itertools.chain(*tag_names))], len(tag_recs_list)

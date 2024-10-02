@@ -1,7 +1,7 @@
 import os
 import json
 import faiss
-import random
+import itertools
 import numpy as np
 import pandas as pd
 
@@ -51,37 +51,40 @@ class UserProfileChannel:
     def get_recs_list_by_tags(self, num_per_tag_type):
         recs_list_by_tags = []
         tags_no = []
+        recs_tags_type = []
         for tag_type in self.pre_survey_tags_type:
             tag_name = self.pre_survey[tag_type]["value"]
             if tag_name not in self.tag_mapping:
                 continue
             else:
+                recs_tags_type.append(tag_type)
                 tag_no = self.tag_mapping[tag_name]["tag_no"]
                 tags_no.append(tag_no)
-        print(tags_no)
         if len(tags_no) == 0:
             return recs_list_by_tags
         tag_embeddings = self.tag_embedding[tags_no]
-        print(tag_embeddings.shape)
         D, I = self.tag_index.search(tag_embeddings, num_per_tag_type)
-        print(D.shape, I.shape)
-        return I[:, :].tolist()
+        recs_list = []
+        for i in range(len(I)):
+            recs_list.append([(I[i, j], D[i, j]) for j in range(len(I[i])) if j != 0])
+        return recs_list, recs_tags_type
     
     def personalized_tags_recs(self, exclude_set):
         num_per_tag_type = self.num_per_page
-        recs_list = self.get_recs_list_by_tags(num_per_tag_type)
+        recs_list, recs_tags_type = self.get_recs_list_by_tags(num_per_tag_type)
         filtered_recs_list = [
-            [x for x in recs if x not in exclude_set] for recs in recs_list
+            [x for x in recs if x[0] not in exclude_set] for recs in recs_list
         ]
         while sum(len(recs) < self.num_per_page for recs in filtered_recs_list) == len(self.pre_survey_tags_type):
             num_per_tag_type += self.num_per_page
-            recs_list = self.get_recs_list_by_tags(num_per_tag_type)
+            recs_list, recs_tags_type = self.get_recs_list_by_tags(num_per_tag_type)
             filtered_recs_list = [
-                [x for x in recs if x not in exclude_set] for recs in recs_list
+                [x for x in recs if x[0] not in exclude_set] for recs in recs_list
             ]
-        tag_channel_names = [f"Profile Tag: {x}" for x in self.pre_survey_tags_type]
-        print(tag_channel_names)
-        return filtered_recs_list, tag_channel_names, len(filtered_recs_list)
+        tag_channel_names = [[f"Profile Tag: {x}"] * len(filtered_recs_list[i]) for i, x in enumerate(recs_tags_type)]
+        tag_channel_names = list(itertools.chain(*tag_channel_names))
+        final_recs_list = [x[0] for x in sorted(list(itertools.chain(*filtered_recs_list)), key=lambda x: x[1])]
+        return final_recs_list, tag_channel_names, len(final_recs_list)
     
     def personalized_queries_recs(self, exclude_set):
         return [], [], 0
@@ -91,4 +94,4 @@ class UserProfileChannel:
         
         tags_recs_list, tags_recs_names, len_tags = self.personalized_tags_recs(exclude_set)
         queries_recs_list, queries_recs_names, len_queries = self.personalized_queries_recs(exclude_set)
-        return tags_recs_list + queries_recs_list, tags_recs_names + queries_recs_names, len_tags + len_queries
+        return [tags_recs_list], [tags_recs_names], len_tags
