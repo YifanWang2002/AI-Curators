@@ -1,23 +1,19 @@
 {
     "num_per_page": { 
-        "value": 40,
+        "value": 5,
         "description": "Number of recommendations per page"
     },
     "exclude_num_interacted": {
-        "value": 50,
+        "value": 2,
         "description": "Number of unique recently interacted artworks to be excluded from recommendations"
     },
     "exclude_num_recommended": {
-        "value": 200,
+        "value": 50,
         "description": "Number of recently recommended artworks to be excluded from recommendations"
     },
     "num_image": {
         "value": 8,
         "description": "Number of unique artworks to create recommendations for (number of sub-channels in image-based recommendation)"
-    },
-    "shuffle_len": {
-        "value": 20,
-        "description": "Length of recommendations to shuffle in image-based recommendation"
     },
     "num_tag": {
         "value": 8,
@@ -55,6 +51,14 @@
         "value": "../data/embeds_dino.npy",
         "description": "image embedding file path"
     },
+    "exhibition_emb_index_path": {
+        "value": "../data/exhibition_dino.index",
+        "description": "exhibition embedding index file path"
+    },
+    "exhibition_emb_path": {
+        "value": "../data/exhibition_embeddings.npy",
+        "description": "exhibition embedding file path"
+    },
     "tag_emb_index_path": {
         "value": "../new_data/tag_clip.index",
         "description": "tag embedding file path"
@@ -68,7 +72,15 @@
         "description": "file path for tag_count_type.csv"
     },
     "tag_to_object_mapping_path": {
-        "value": "../data/tags2artworks_mapping.json",
-        "description": "file path for tag to object mapping, key: tag, value: list of artwork ids"
+        "value": "../data/tags2exhibitions_mapping.json",
+        "description": "file path for tag to object mapping, key: tag, value: list of exhibition ids"
+    },
+    "desc_emb_index_path": {
+        "value": "../data/exhibition_descriptions_bert.index",
+        "description": "description embedding file path"
+    },
+    "desc_emb_path": {
+        "value": "../data/exhibition_descriptions.npy",
+        "description": "description embedding file path"
     }
 }

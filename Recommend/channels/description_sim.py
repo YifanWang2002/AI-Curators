@@ -14,7 +14,6 @@ class DescriptionSimChannel:
         self.num_per_page = self.configs["num_per_page"]
         self.desc_embedding = np.load(self.configs["desc_emb_path"])
         self.desc_index = self.get_desc_index()
-        self.desc_mapping = self.get_desc_mapping()
         self.interacted_set = set()
         self.exhibit_list = []
 
@@ -26,13 +25,6 @@ class DescriptionSimChannel:
             desc_index.add(self.desc_embedding)
             faiss.write_index(desc_index, self.configs["desc_emb_index_path"])
             return desc_index
-        
-    def get_desc_mapping(self):
-        desc_mapping = {}
-        desc_count_type = pd.read_csv(self.configs["desc_count_type_path"])
-        for i, row in desc_count_type.iterrows():
-            desc_mapping[row["desc"]] = {"desc_no": i, "count": row["count"], "type": row["type"]}
-        return desc_mapping
 
     def get_interacted_set(self, user_id, updated):
         # TODO: Load interacted set from the database
@@ -69,7 +61,7 @@ class DescriptionSimChannel:
 
         final_recs_list = [[(sim_image[0], sim_image[1], self.exhibit_list[i]) for sim_image in filtered_recs_list[i]] for i in range(len_exhibit)]
         sorted_final_recs_list = sorted(list(itertools.chain(*final_recs_list)), key=lambda x: x[1])
-        exhibit_recs_names = [f"Exhibition: {x[2]}" for x in sorted_final_recs_list]
+        exhibit_recs_names = [f"Description: {x[2]}" for x in sorted_final_recs_list]
         final_recs_list = [x[0] for x in sorted_final_recs_list]
         return final_recs_list, exhibit_recs_names, len_exhibit
     

@@ -8,7 +8,7 @@ from PIL import Image
 from datetime import datetime
 from collections import deque
 
-from Recommend.channels.image_sim import ImageSimChannel
+from channels.image_sim import ImageSimChannel
 from channels.common_tags_wenqing import CommonTagsChannel
 from channels.common_tags import CommonTagsChannel as CommonTagsChannelBackup
 from channels.user_profile import UserProfileChannel
@@ -105,6 +105,8 @@ class ArtworkRecommender:
         print(rec_channels)
 
         rec_result = self.metadata.iloc[recs].copy()
+        if not os.path.exists(self.configs["output_dir"]):
+            os.makedirs(self.configs["output_dir"])
         if len(rec_result) > 0:
             filename = f"Page {str(context_info['page_idx']+1)}"
             rec_result.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))

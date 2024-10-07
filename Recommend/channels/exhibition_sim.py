@@ -9,12 +9,11 @@ class ExhibitionSimChannel:
 
     def __init__(self, metadata, configs):
         self.metadata = metadata
-        self.artwork_exhibition_mapping = pd.read_csv(configs["artwork_exhibition_mapping_path"])
+        # self.artwork_exhibition_mapping = pd.read_csv(configs["artwork_exhibition_mapping_path"])
         self.configs = configs
         self.image_embedding = np.load(self.configs["image_emb_path"])
         self.exhibition_embedding = np.load(self.configs["exhibition_emb_path"])
         self.num_per_page = self.configs["num_per_page"]
-        self.shuffle_len = self.configs["shuffle_len"]
 
         self.image_index = self.get_image_index()
         self.exhibition_index = self.get_exhibition_index()
@@ -43,7 +42,7 @@ class ExhibitionSimChannel:
     def get_images_from_exhibitions(self, exhibition_list):
         images = set()
         for exhibition in exhibition_list:
-            images.update(self.metadata[self.metadata["exhibition_id"] == exhibition]["artwork_id"].tolist())
+            images.update(self.metadata[self.metadata["exhibition_id"] == exhibition]["art_pieces"].tolist())
         return list(images)
 
     def update_image_list(self, final_recs_list):
@@ -95,7 +94,7 @@ class ExhibitionSimChannel:
 
         final_recs_list = [[(sim_exhibit[0], sim_exhibit[1], self.exhibition_list[i]) for sim_exhibit in filtered_recs_list[i]] for i in range(len_exhibition)]
         sorted_final_recs_list = sorted(list(itertools.chain(*final_recs_list)), key=lambda x: x[1])
-        exhibit_names = [f"Exhibit: {x[2]}" for x in sorted_final_recs_list]
+        exhibit_names = [f"Exhibition: {x[2]}" for x in sorted_final_recs_list]
         final_recs_list = [x[0] for x in sorted_final_recs_list]
 
         if len(final_recs_list) < self.num_per_page:

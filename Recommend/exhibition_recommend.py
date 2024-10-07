@@ -20,8 +20,7 @@ random.seed(0)
 
 
 def get_metadata(data_dir):
-    metadata = pd.read_csv(os.path.join(data_dir, "tags_replaced.csv"), index_col=0)
-    metadata["tags"] = metadata["tags"].apply(ast.literal_eval)
+    metadata = pd.read_csv(os.path.join(data_dir, "exhibition_data.csv"))
     return metadata
 
 
@@ -44,8 +43,8 @@ class ExhibitionRecommender:
         self.exhibition_sim_channel = ExhibitionSimChannel(metadata=metadata, configs=configs)
         self.description_sim_channel = DescriptionSimChannel(metadata=metadata, configs=configs)
         self.user_profile_channel = UserProfileChannel(metadata=metadata, user_id=user_id, configs=configs)
-        self.common_tags_channel = CommonTagsChannel(metadata=metadata, configs=configs)
-        self.common_tags_channel_backup = CommonTagsChannelBackup(metadata=metadata, tag_count_all_path=configs["tag_count_type_path"])
+        # self.common_tags_channel = CommonTagsChannel(metadata=metadata, configs=configs)
+        # self.common_tags_channel_backup = CommonTagsChannelBackup(metadata=metadata, tag_count_all_path=configs["tag_count_type_path"])
         self.random_rec_channel = RandomRecChannel(configs=configs, metadata=metadata)
 
         # Number of consecutive times of recommendation
@@ -74,21 +73,22 @@ class ExhibitionRecommender:
             user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list[0])
         profile_recs_list, profile_names, len_profile = self.user_profile_channel(
             context_info=context_info, recommended_set=set(self.recommended))
-        tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
-        # hotfix:
-        backup = False
-        if len_tag == 0:
-            tag_recs_list, tag_names, len_tag = self.common_tags_channel_backup(set(self.recommended))
-            backup = True
+        # tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
+        # # hotfix:
+        # backup = False
+        # if len_tag == 0:
+        #     tag_recs_list, tag_names, len_tag = self.common_tags_channel_backup(set(self.recommended))
+        #     backup = True
+        tag_recs_list, tag_names, len_tag = [], [], 0
         if not context_info["behavior_updated"]:
             self.num_consec += 1
 
-        weights = np.array([1 / len_exhibit, 1 / len_desc, 1 / len_profile, 1 / len_tag, 1 / len_random * self.num_consec])
+        weights = np.array([1 / len_exhibit, 1 / len_desc, 1 / len_profile, 1 / len_random * self.num_consec])
         weights = 1 / (1 + np.exp(-weights))
         print(weights)
-        all_channel_recs = (exhibit_recs_list + desc_recs_list + profile_recs_list + tag_recs_list + random_recs_list)
-        all_channel_names = (exhibit_names + desc_names + profile_names + tag_names + random_names)
-        num_channels = 5
+        all_channel_recs = (exhibit_recs_list + desc_recs_list + profile_recs_list + random_recs_list)
+        all_channel_names = (exhibit_names + desc_names + profile_names + random_names)
+        num_channels = 4
         positions = [0] * num_channels
 
         recs = []
@@ -98,7 +98,6 @@ class ExhibitionRecommender:
 
             if positions[channel_idx] < len(all_channel_recs[channel_idx]):
                 x = all_channel_recs[channel_idx][positions[channel_idx]]
-                # TODO: Add logic to remove artworks that have been recommended before to allow duplicates
                 if x not in self.recommended:
                     recs.append(x)
                     rec_channels.append(all_channel_names[channel_idx][positions[channel_idx]])
@@ -109,6 +108,8 @@ class ExhibitionRecommender:
         print(rec_channels)
 
         rec_result = self.metadata.iloc[recs].copy()
+        if not os.path.exists(self.configs["output_dir"]):
+            os.makedirs(self.configs["output_dir"])
         if len(rec_result) > 0:
             filename = f"Page {str(context_info['page_idx']+1)}"
             rec_result.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))
@@ -120,15 +121,15 @@ class ExhibitionRecommender:
 if __name__ == "__main__":
 
     cur_path = os.path.dirname(os.path.abspath(__file__))
-    configs = load_configs(os.path.join(cur_path, "configs.json"))
+    configs = load_configs(os.path.join(cur_path, "configs_exhibition.json"))
     print(configs)
 
     metadata = get_metadata(configs["data_dir"])
-    user_id = 3
+    user_id = 2
     exhibition_recommender = ExhibitionRecommender(user_id=user_id, metadata=metadata, configs=configs)
 
     # ==== Run the following code for each new recommendation page ===== #
-    for page_idx, is_updated in enumerate([False, True, False]):
+    for page_idx, is_updated in enumerate([False, False, False]):
         context_info = {"timestamp": int(datetime.now().timestamp()), "behavior_updated": is_updated, "page_idx": page_idx}
         if is_updated:
             user_log = read_user_log(page_idx)
