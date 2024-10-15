@@ -42,6 +42,7 @@ class ExhibitionSimChannel:
     def get_images_from_exhibitions(self, exhibition_list):
         images = set()
         for exhibition in exhibition_list:
+            # TODO: API call to get the list of art pieces in the exhibition based on exhibition id
             images.update(self.metadata[self.metadata["exhibition_id"] == exhibition]["art_pieces"].tolist())
         return list(images)
 

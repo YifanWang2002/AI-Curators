@@ -16,6 +16,7 @@ class UserProfileChannel:
         self.tag_embedding = np.load(self.configs["tag_emb_path"])
         self.tag_index = self.get_tag_index()
         self.tag_name2id_mapping, self.tag_id2name_mapping = self.get_tag_mapping()
+        # TODO: API call to get the mapping_tag_artwork or mapping_tag_exhibition table
         self.tag_to_object_mapping = json.load(open(self.configs["tag_to_object_mapping_path"], "r", encoding="utf-8"))
         self.pre_survey, self.pre_survey_tags_type = self.get_pre_survey(self.user_id, self.configs["pre_survey_dir"])
         self.interacted_set = set()
@@ -32,6 +33,7 @@ class UserProfileChannel:
     def get_tag_mapping(self):
         tag_name2id_mapping = {}
         tag_id2name_mapping = {}
+        # TODO: API call to get the dim_tag table
         tag_count_type = pd.read_csv(self.configs["tag_count_type_path"])
         for i, row in tag_count_type.iterrows():
             tag_name2id_mapping[row["tag"]] = {"tag_no": i, "count": row["count"], "type": row["type"]}
@@ -39,14 +41,14 @@ class UserProfileChannel:
         return tag_name2id_mapping, tag_id2name_mapping
 
     def get_interacted_set(self, user_id, updated):
-        # TODO: Load interacted set from the database
+        # TODO: API call to get data from fact_clickstream table based on user_id
         if updated:
             with open(os.path.join(self.configs["interacted_dir"], f"interacted_{user_id}.txt"), "r", encoding="utf-8") as f:
                 self.interacted_set = set([int(idx) for idx in f.read().splitlines()])
         return self.interacted_set
 
     def get_pre_survey(self, user_id, survey_dir):
-        # TODO: Load pre-survey data from the database
+        # TODO: API call to get tag_preference from dim_user_recommendation_profile table based on user_id
         with open(os.path.join(survey_dir, f"{user_id}.json"), "r", encoding="utf-8") as reader:
             pre_survey = json.load(reader)
         pre_survey_tags_type = sorted(pre_survey.keys())
