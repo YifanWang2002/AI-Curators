@@ -4,6 +4,7 @@ import faiss
 import itertools
 import numpy as np
 import pandas as pd
+from api.data import get_clicked_exhibitions_by_user
 
 
 class DescriptionSimChannel:
@@ -29,8 +30,10 @@ class DescriptionSimChannel:
     def get_interacted_set(self, user_id, updated):
         # TODO: Load interacted set from the database
         if updated:
-            with open(os.path.join(self.configs["interacted_dir"], f"interacted_{user_id}.txt"), "r", encoding="utf-8") as f:
-                self.interacted_set = set([int(idx) for idx in f.read().splitlines()])
+            records = get_clicked_exhibitions_by_user(user_id)
+            if records and records["status"] == "success":
+                # TODO: Analyze the ratio of interaction and decide how to update the interacted set
+                self.interacted_set = self.interacted_set | set([idx for idx in records["data"]["exhibition_id"]])
         return self.interacted_set
     
     def get_recs_list_by_descs(self, exhibit_ids, num_per_desc_type):

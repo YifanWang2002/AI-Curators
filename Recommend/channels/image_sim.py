@@ -1,8 +1,8 @@
 import os
 import faiss
-import random
 import itertools
 import numpy as np
+from api.data import get_clicked_artworks_by_user
 
 
 class ImageSimChannel:
@@ -32,10 +32,11 @@ class ImageSimChannel:
         self.image_list = self.image_list[-self.num_per_page:]
     
     def get_interacted_set(self, user_id, updated):
-        # TODO: Load interacted set from the database
         if updated:
-            with open(os.path.join(self.configs["interacted_dir"], f"interacted_{user_id}.txt"), "r", encoding="utf-8") as f:
-                self.interacted_set = set([int(idx) for idx in f.read().splitlines()])
+            records = get_clicked_artworks_by_user(user_id)
+            if records and records["status"] == "success":
+                # TODO: Analyze the ratio of interaction and decide how to update the interacted set
+                self.interacted_set = set([idx for idx in records["data"]["artwork_id"]])
             new_interacted = self.interacted_set - set(self.image_list)
             self.image_list.extend(list(new_interacted)) 
         return self.interacted_set

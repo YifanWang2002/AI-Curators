@@ -4,7 +4,6 @@ import json
 import random
 import pandas as pd
 import numpy as np
-from PIL import Image
 from datetime import datetime
 from collections import deque
 
@@ -63,23 +62,38 @@ class ArtworkRecommender:
             interacted_set=set(unique_log.head(self.configs["exclude_num_interacted"]).index)
         )
 
-    def recommend(self, context_info):
-        random_recs_list, random_names, len_random = self.random_rec_channel(
-            user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended))
-        image_recs_list, image_names, len_image = self.image_sim_channel(
-            user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list[0])
-        profile_recs_list, profile_names, len_profile = self.user_profile_channel(
-            context_info=context_info, recommended_set=set(self.recommended))
-        tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
-        # hotfix:
-        backup = False
-        if len_tag == 0:
-            tag_recs_list, tag_names, len_tag = self.common_tags_channel_backup(set(self.recommended))
-            backup = True
+    def recommend(self, context_info, debug=0):
+        if debug == 0 or debug == 1:
+            random_recs_list, random_names, len_random = self.random_rec_channel(
+                user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended))
+        else:
+            random_recs_list, random_names, len_random = [[]], [[]], 0
+        if debug == 0 or debug == 2:
+            image_recs_list, image_names, len_image = self.image_sim_channel(
+                user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list[0])
+        else:
+            image_recs_list, image_names, len_image = [[]], [[]], 0
+        if debug == 0 or debug == 3:
+            profile_recs_list, profile_names, len_profile = self.user_profile_channel(
+                context_info=context_info, recommended_set=set(self.recommended))
+        else:
+            profile_recs_list, profile_names, len_profile = [[]], [[]], 0
+        if debug == 0 or debug == 4:
+            tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
+            # hotfix:
+            backup = False
+            if len_tag == 0:
+                tag_recs_list, tag_names, len_tag = self.common_tags_channel_backup(set(self.recommended))
+                backup = True
+        else:
+            tag_recs_list, tag_names, len_tag = [[]], [[]], 0
         if not context_info["behavior_updated"]:
             self.num_consec += 1
 
-        weights = np.array([1 / len_image, 1 / len_profile, 1 / len_tag, 1 / len_random * self.num_consec])
+        weights = np.array([(1 / len_image) if len_image > 0 else 0,
+                            (1 / len_profile) if len_profile > 0 else 0, 
+                            (1 / len_tag) if len_tag > 0 else 0, 
+                            (1 / len_random * self.num_consec) if len_random > 0 else 0])
         weights = 1 / (1 + np.exp(-weights))
         print(weights)
         all_channel_recs = (image_recs_list + profile_recs_list + tag_recs_list + random_recs_list)
@@ -140,4 +154,6 @@ if __name__ == "__main__":
             artwork_recommender.update_data(user_log)
 
         print(f"Page {page_idx+1}")
-        artwork_recommender.recommend(context_info=context_info)
+        artwork_recommender.recommend(context_info=context_info, debug=1)
+        if page_idx == 0:
+            break

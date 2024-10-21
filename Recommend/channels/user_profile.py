@@ -4,6 +4,7 @@ import faiss
 import itertools
 import numpy as np
 import pandas as pd
+from api.data import get_clicked_artworks_by_user, get_clicked_exhibitions_by_user
 
 
 class UserProfileChannel:
@@ -40,11 +41,20 @@ class UserProfileChannel:
             tag_id2name_mapping[i] = row["tag"]
         return tag_name2id_mapping, tag_id2name_mapping
 
-    def get_interacted_set(self, user_id, updated):
+    def get_interacted_set(self, user_id, updated, object_type="artwork"):
         # TODO: API call to get data from fact_clickstream table based on user_id
         if updated:
-            with open(os.path.join(self.configs["interacted_dir"], f"interacted_{user_id}.txt"), "r", encoding="utf-8") as f:
-                self.interacted_set = set([int(idx) for idx in f.read().splitlines()])
+            if object_type == "artwork":
+                records = get_clicked_artworks_by_user(user_id)
+                id_key = "artwork_id"
+            elif object_type == "exhibition":
+                records = get_clicked_exhibitions_by_user(user_id)
+                id_key = "exhibition_id"
+            else:
+                raise ValueError(f"Invalid object type: {object_type}")
+            if records and records["status"] == "success":
+                # TODO: Analyze the ratio of interaction and decide how to update the interacted set
+                self.interacted_set = self.interacted_set | set([idx for idx in records["data"][id_key]])
         return self.interacted_set
 
     def get_pre_survey(self, user_id, survey_dir):

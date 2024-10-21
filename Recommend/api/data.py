@@ -55,6 +55,18 @@ def get_all_tags():
     url = f"{DATABASE_URL}/data/tags"
     return get_data(url)
 
+def get_clickstream_records_by_user(user_id):
+    url = f"{DATABASE_URL}/data/clickstreams/user/{user_id}"
+    return get_data(url)
+
+def get_clicked_artworks_by_user(user_id):
+    url = f"{DATABASE_URL}/data/clickstreams/click/artworks/{user_id}"
+    return get_data(url)
+
+def get_clicked_exhibitions_by_user(user_id):
+    url = f"{DATABASE_URL}/data/clickstreams/click/exhibitions/{user_id}"
+    return get_data(url)
+
 def get_tag_preferences_by_user(user_id):
     url = f"{DATABASE_URL}/data/user_recommendation/{user_id}/tag_preference"
     return get_data(url)
@@ -90,5 +102,6 @@ if __name__ == "__main__":
     
     input1 = sys.argv[1]
     input2 = sys.argv[2] if len(sys.argv) > 2 else False
-    result = get_artist_by_name(input1, fuzzy=input2)
+    # result = get_artist_by_name(input1, fuzzy=input2)
+    result = get_clicked_artworks_by_user(input1)
     print(result)

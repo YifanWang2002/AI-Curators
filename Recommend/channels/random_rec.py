@@ -1,4 +1,5 @@
 import os
+from api.data import get_clicked_artworks_by_user, get_clicked_exhibitions_by_user
 
 
 class RandomRecChannel:
@@ -9,11 +10,19 @@ class RandomRecChannel:
         self.num_per_page = self.configs["num_per_page"]
         self.interacted_set = set()
 
-    def get_interacted_set(self, user_id, updated):
-        # TODO: Load interacted set from the database
+    def get_interacted_set(self, user_id, updated, object_type="artwork"):
         if updated:
-            with open(os.path.join(self.configs["interacted_dir"], f"interacted_{user_id}.txt"), "r", encoding="utf-8") as f:
-                self.interacted_set = self.interacted_set | set([int(idx) for idx in f.read().splitlines()])
+            if object_type == "artwork":
+                records = get_clicked_artworks_by_user(user_id)
+                id_key = "artwork_id"
+            elif object_type == "exhibition":
+                records = get_clicked_exhibitions_by_user(user_id)
+                id_key = "exhibition_id"
+            else:
+                raise ValueError(f"Invalid object type: {object_type}")
+            if records and records["status"] == "success":
+                # TODO: Analyze the ratio of interaction and decide how to update the interacted set
+                self.interacted_set = self.interacted_set | set([idx for idx in records["data"][id_key]])
         return self.interacted_set
 
     def __call__(self, user_id, context_info, recommended_set):
