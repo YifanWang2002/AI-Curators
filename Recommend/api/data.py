@@ -2,124 +2,93 @@ import requests
 import sys
 
 DATABASE_URL = "http://localhost:8000/api/"
+
+def get_data(url):
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        return response.json()
+    except requests.RequestException as e:
+        return {'status': 'error', 'message': str(e)}
     
 def get_artwork_by_id(artwork_id):
     url = f"{DATABASE_URL}/data/artwork/{artwork_id}"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
-    
-def get_artworks_by_tag(tag_id):
-    url = f"{DATABASE_URL}/data/mapping_tag_artwork/{tag_id}"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
+    return get_data(url)
 
-def get_tags_by_artwork(artwork_id):
+def get_exhibition_by_id(exhibition_id):
+    url = f"{DATABASE_URL}/data/exhibition/{exhibition_id}"
+    return get_data(url)
+    
+def get_art_pieces_in_exhibition(exhibition_id):
+    url = f"{DATABASE_URL}/data/exhibition/art_pieces/{exhibition_id}"
+    return get_data(url)
+    
+def get_artworks_by_tag_to_artwork_mapping(tag_id):
+    url = f"{DATABASE_URL}/data/mapping_tag_artwork/{tag_id}"
+    return get_data(url)
+
+def get_tags_by_artwork_to_tag_mapping(artwork_id):
     url = f"{DATABASE_URL}/data/mapping_artwork_tag/{artwork_id}"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
+    return get_data(url)
+    
+def get_exhibitions_by_tag_to_exhibition_mapping(tag_id):
+    url = f"{DATABASE_URL}/data/mapping_tag_exhibition/{tag_id}"
+    return get_data(url)
+
+def get_tags_by_exhibition_to_tag_mapping(exhibition_id):
+    url = f"{DATABASE_URL}/data/mapping_exhibition_tag/{exhibition_id}"
+    return get_data(url)
 
 def get_tag_by_id(tag_id):
     url = f"{DATABASE_URL}/data/tag/{tag_id}"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
+    return get_data(url)
 
-def get_tag_by_type(tag_type):
+def get_tags_by_type(tag_type):
     url = f"{DATABASE_URL}/data/tag_type/{tag_type}"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
+    return get_data(url)
 
 def get_tag_count_by_type(tag_type):
     url = f"{DATABASE_URL}/data/tag_type/count/{tag_type}"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
+    return get_data(url)
 
 def get_all_tags():
     url = f"{DATABASE_URL}/data/tags"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
+    return get_data(url)
+
+def get_tag_preferences_by_user(user_id):
+    url = f"{DATABASE_URL}/data/user_recommendation/{user_id}/tag_preference"
+    return get_data(url)
 
 def get_tag_score_by_id(tag_id):
     url = f"{DATABASE_URL}/data/tag_score/{tag_id}"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
+    return get_data(url)
 
 def get_artwork_score_by_id(artwork_id):
     url = f"{DATABASE_URL}/data/artwork_score/{artwork_id}"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
+    return get_data(url)
     
 def get_artist_by_id(artist_id):
     url = f"{DATABASE_URL}/data/artist/{artist_id}"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
+    return get_data(url)
 
 def get_artist_by_name(artist_name, fuzzy=False):
     if fuzzy:
         url = f"{DATABASE_URL}/data/artist/name_fuzzy/{artist_name}"
     else:
         url = f"{DATABASE_URL}/data/artist/name/{artist_name}"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
+    return get_data(url)
 
 def get_location_by_name(location):
     url = f"{DATABASE_URL}/data/location/{location}"
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        return response.json()
-    except requests.RequestException as e:
-        return {'status': 'error', 'message': str(e)}
+    return get_data(url)
     
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python fetch_artist.py [artist_id]")
+        print("Usage: python data.py [input1] [input2](optional)")
         sys.exit(1)
     
-    artist_id = sys.argv[1]
-    result = get_artist_by_id(artist_id)
+    input1 = sys.argv[1]
+    input2 = sys.argv[2] if len(sys.argv) > 2 else False
+    result = get_artist_by_name(input1, fuzzy=input2)
     print(result)
