@@ -12,11 +12,12 @@ from channels.common_tags_wenqing import CommonTagsChannel
 from channels.common_tags import CommonTagsChannel as CommonTagsChannelBackup
 from channels.user_profile import UserProfileChannel
 from channels.random_rec import RandomRecChannel
+from api.data import get_all_artworks_ids, get_artworks_by_ids
 from utils.debug import save_images, read_user_log
 
 random.seed(0)
 
-
+# TODO: TO BE REMOVED
 def get_metadata(data_dir):
     metadata = pd.read_csv(os.path.join(data_dir, "tags_replaced.csv"), index_col=0)
     metadata["tags"] = metadata["tags"].apply(ast.literal_eval)
@@ -35,6 +36,10 @@ def load_configs(config_path):
 class ArtworkRecommender:
     def __init__(self, user_id, metadata, configs):
         self.user_id = user_id
+        data = get_all_artworks_ids()
+        if not data or data["status"] != "success":
+            raise ValueError("Failed to get all artworks with error: ", data["message"])
+        self.artworks_ids = data["data"]
         self.metadata = metadata
         self.configs = configs
         self.recommended = deque(maxlen=configs["exclude_num_recommended"])
@@ -43,7 +48,7 @@ class ArtworkRecommender:
         self.user_profile_channel = UserProfileChannel(metadata=metadata, user_id=user_id, configs=configs)
         self.common_tags_channel = CommonTagsChannel(metadata=metadata, configs=configs)
         self.common_tags_channel_backup = CommonTagsChannelBackup(metadata=metadata, tag_count_all_path=configs["tag_count_type_path"])
-        self.random_rec_channel = RandomRecChannel(configs=configs, metadata=metadata)
+        self.random_rec_channel = RandomRecChannel(configs=configs, metadata=self.artworks_ids)
 
         # Number of consecutive times of recommendation
         self.num_consec = 0
@@ -118,16 +123,17 @@ class ArtworkRecommender:
         print(recs)
         print(rec_channels)
 
-        rec_result = self.metadata.iloc[recs].copy()
+        rec_result = get_artworks_by_ids(recs)
         if not os.path.exists(self.configs["output_dir"]):
             os.makedirs(self.configs["output_dir"])
-        if len(rec_result) > 0:
+        if rec_result["status"] == "success" and len(rec_result["data"]) > 0:
             filename = f"Page {str(context_info['page_idx']+1)}"
-            rec_result.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))
-            try:
-                save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result["artwork_id"], rec_result['compressed_url'])
-            except Exception as e:
-                print(e)
+            rec_result_df = pd.DataFrame(rec_result["data"])
+            rec_result_df.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))
+            # try:
+            #     save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result["artwork_id"], rec_result['compressed_url'])
+            # except Exception as e:
+            #     print(e)
 
 if __name__ == "__main__":
 
@@ -137,6 +143,8 @@ if __name__ == "__main__":
 
     metadata = get_metadata(configs["data_dir"])
     user_id = 2
+    # TODO: Get user_id from the front-end/back-end requests
+    # TODO: Delete metadata as an argument and load it inside the class
     artwork_recommender = ArtworkRecommender(user_id=user_id, metadata=metadata, configs=configs)
 
     # ==== Run the following code for each new recommendation page ===== #
@@ -154,6 +162,6 @@ if __name__ == "__main__":
             artwork_recommender.update_data(user_log)
 
         print(f"Page {page_idx+1}")
-        artwork_recommender.recommend(context_info=context_info, debug=1)
-        if page_idx == 0:
+        artwork_recommender.recommend(context_info=context_info, debug=3)
+        if page_idx == 1:
             break

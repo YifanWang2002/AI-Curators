@@ -10,7 +10,6 @@ class ExhibitionSimChannel:
 
     def __init__(self, metadata, configs):
         self.metadata = metadata
-        # self.artwork_exhibition_mapping = pd.read_csv(configs["artwork_exhibition_mapping_path"])
         self.configs = configs
         self.image_embedding = np.load(self.configs["image_emb_path"])
         self.exhibition_embedding = np.load(self.configs["exhibition_emb_path"])
@@ -58,7 +57,7 @@ class ExhibitionSimChannel:
             records = get_clicked_exhibitions_by_user(user_id)
             if records and records["status"] == "success":
                 # TODO: Analyze the ratio of interaction and decide how to update the interacted set
-                self.interacted_set = set([idx for idx in records["data"]["artwork_id"]])
+                self.interacted_set = set([idx["exhibition_id"] for idx in records["data"]])
             new_interacted = self.interacted_set - set(self.exhibition_list)
             self.exhibition_list.extend(list(new_interacted)) 
         return self.interacted_set

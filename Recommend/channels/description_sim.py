@@ -33,7 +33,7 @@ class DescriptionSimChannel:
             records = get_clicked_exhibitions_by_user(user_id)
             if records and records["status"] == "success":
                 # TODO: Analyze the ratio of interaction and decide how to update the interacted set
-                self.interacted_set = self.interacted_set | set([idx for idx in records["data"]["exhibition_id"]])
+                self.interacted_set = self.interacted_set | set([idx["exhibition_id"] for idx in records["data"]])
         return self.interacted_set
     
     def get_recs_list_by_descs(self, exhibit_ids, num_per_desc_type):

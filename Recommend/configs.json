@@ -1,4 +1,5 @@
 {
+    "object_type": "artwork",
     "num_per_page": { 
         "value": 40,
         "description": "Number of recommendations per page"

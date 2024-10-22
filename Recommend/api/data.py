@@ -1,7 +1,7 @@
 import requests
 import sys
 
-DATABASE_URL = "http://localhost:8000/api/"
+DATABASE_URL = "http://localhost:8000/api"
 
 def get_data(url):
     try:
@@ -15,6 +15,19 @@ def get_artwork_by_id(artwork_id):
     url = f"{DATABASE_URL}/data/artwork/{artwork_id}"
     return get_data(url)
 
+def get_artworks_by_ids(artwork_ids):
+    artworks_ids_str = ",".join(artwork_ids)
+    url = f"{DATABASE_URL}/data/artworks/{artworks_ids_str}"
+    return get_data(url)
+
+def get_all_artworks():
+    url = f"{DATABASE_URL}/data/artworks"
+    return get_data(url)
+
+def get_all_artworks_ids():
+    url = f"{DATABASE_URL}/data/artworks/ids"
+    return get_data(url)
+
 def get_exhibition_by_id(exhibition_id):
     url = f"{DATABASE_URL}/data/exhibition/{exhibition_id}"
     return get_data(url)
@@ -22,20 +35,28 @@ def get_exhibition_by_id(exhibition_id):
 def get_art_pieces_in_exhibition(exhibition_id):
     url = f"{DATABASE_URL}/data/exhibition/art_pieces/{exhibition_id}"
     return get_data(url)
+
+def get_all_exhibitions():
+    url = f"{DATABASE_URL}/data/exhibitions"
+    return get_data(url)
+
+def get_all_exhibitions_ids():
+    url = f"{DATABASE_URL}/data/exhibitions/ids"
+    return get_data(url)
     
-def get_artworks_by_tag_to_artwork_mapping(tag_id):
+def get_artworks_by_tag_id(tag_id):
     url = f"{DATABASE_URL}/data/mapping_tag_artwork/{tag_id}"
     return get_data(url)
 
-def get_tags_by_artwork_to_tag_mapping(artwork_id):
+def get_tags_by_artwork_id(artwork_id):
     url = f"{DATABASE_URL}/data/mapping_artwork_tag/{artwork_id}"
     return get_data(url)
     
-def get_exhibitions_by_tag_to_exhibition_mapping(tag_id):
+def get_exhibitions_by_tag_id(tag_id):
     url = f"{DATABASE_URL}/data/mapping_tag_exhibition/{tag_id}"
     return get_data(url)
 
-def get_tags_by_exhibition_to_tag_mapping(exhibition_id):
+def get_tags_by_exhibition_id(exhibition_id):
     url = f"{DATABASE_URL}/data/mapping_exhibition_tag/{exhibition_id}"
     return get_data(url)
 

@@ -36,7 +36,7 @@ class ImageSimChannel:
             records = get_clicked_artworks_by_user(user_id)
             if records and records["status"] == "success":
                 # TODO: Analyze the ratio of interaction and decide how to update the interacted set
-                self.interacted_set = set([idx for idx in records["data"]["artwork_id"]])
+                self.interacted_set = set([idx["artwork_id"] for idx in records["data"]])
             new_interacted = self.interacted_set - set(self.image_list)
             self.image_list.extend(list(new_interacted)) 
         return self.interacted_set
