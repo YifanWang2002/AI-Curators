@@ -44,67 +44,80 @@ def get_artwork_by_tags(search_results: pd.DataFrame, artwork_df: pd.DataFrame, 
     return filter_df
 
 
-if __name__ == "__main__":
-    # calculate the time taken for the entire process
-    start_time = time()
+def generate_exhibitions(prompt: str, module_dir: str = None) -> list[dict]:
+    """
+    Generate exhibitions based on a user prompt
+    
+    Args:
+        prompt: User input prompt describing desired artwork
+        module_dir: Directory containing the module data (optional)
+    
+    Returns:
+        List of exhibition dictionaries
+    """
+    # Use current directory if module_dir not provided
+    if module_dir is None:
+        module_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Initialize art search
     art_search = ArtSearch(data_dir=os.path.join(module_dir, 'data'))
-    # search for tag
-    prompt = "I like vincent's sad artwork"
-    # parse the prompt
+    
+    # Parse the prompt
     entity_parser = EntityParser()
     tags, artists = entity_parser.extract_entities(prompt)
+    
+    # Search for tags and artists
+    tag_results = pd.DataFrame()
+    name_results = pd.DataFrame()
     if tags:
-        tag_results = art_search.search(tags, search_type='tag', k=20)
-        tag_results = pd.DataFrame(tag_results)
-        tag_results.columns = ['tag_name', 'similarity']
+        tag_results = pd.DataFrame(art_search.search(tags, search_type='tag', k=20),
+                                 columns=['tag_name', 'similarity'])
     if artists:
-        name_results = art_search.search(artists, search_type='name', k=1)
-        name_results = pd.DataFrame(name_results)
-        name_results.columns = ['artist_name', 'similarity']
-    if not tags and not artists:
-        print("No tags or artists found in the prompt")
-
-    # Filter artwork details based on artist and tag search results
+        name_results = pd.DataFrame(art_search.search(artists, search_type='name', k=1),
+                                  columns=['artist_name', 'similarity'])
+    
+    # Filter artwork details
     artwork_details = pd.read_csv(os.path.join(module_dir, 'data', 'dimension_tables', 'dim_artwork.csv'))
     artwork_details = artwork_details.rename(columns={'Unnamed: 0': 'index'})
-    new_artwork = None
-    # and name_results df is not empty
+    
+    # Get filtered artwork based on search results
     if artists and not name_results.empty:
-        new_artwork = get_artwork_by_artist(artwork_details, name_results) # 41 rows x 38 
-        print(f'artist_artwork.shape: {new_artwork.shape}')
+        new_artwork = get_artwork_by_artist(artwork_details, name_results)
         if tags and not tag_results.empty:
-            temp_artwork = get_artwork_by_tags(tag_results, new_artwork, module_dir) # [30 rows x 41 columns]
-            print(f'artist_tag_artwork.shape: {temp_artwork.shape}')
+            temp_artwork = get_artwork_by_tags(tag_results, new_artwork, module_dir)
             if temp_artwork.shape[0] >= 20:
                 new_artwork = temp_artwork
     elif tags and not tag_results.empty:
-        new_artwork = get_artwork_by_tags(tag_results, artwork_details, module_dir)  # [2073 rows x 40 columns]
-        print(f'tag_artwork.shape: {new_artwork.shape}')
+        new_artwork = get_artwork_by_tags(tag_results, artwork_details, module_dir)
     else:
-        # get 50 random artworks
         new_artwork = artwork_details.sample(n=50)
-
-    print(f'final new_artwork.shape: {new_artwork.shape}')
+    
+    # Limit to 50 artworks
     new_artwork = new_artwork.iloc[:50]
-
+    
+    # Generate exhibitions
     curator = ExhibitionCurator(metadata=artwork_details)
-    use_author = True if artists else False
-    # exhibitions, grouped_ids, original_orders, clusters = curator.get_exhibitions(new_artwork, use_author)
-    # print(grouped_ids)
+    use_author = bool(artists)
     exhibitions = curator.curate(new_artwork, prompt, use_author)
+    
+    return exhibitions
 
+if __name__ == "__main__":
+    start_time = time()
+    
+    # Generate exhibitions
+    prompt = "I like vincent's sad artwork"
+    exhibitions = generate_exhibitions(prompt)
+    
     print(f'Total time taken: {time() - start_time} seconds')
     
-    # re-create output directory 
-    output_dir = os.path.join(module_dir, 'output', prompt)
-    # remove existing directory
+    # Save exhibitions to json files
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output', prompt)
     if os.path.exists(output_dir):
         import shutil
         shutil.rmtree(output_dir)
     os.makedirs(output_dir)
-
-    # Now save the exhibitions
+    
     for i, exhibition in enumerate(exhibitions):
         with open(os.path.join(output_dir, f'Exhibition_{i}.json'), 'w') as f:
             json.dump(exhibition, f, indent=4)
-

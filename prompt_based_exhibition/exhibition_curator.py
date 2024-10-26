@@ -14,8 +14,7 @@ dotenv.load_dotenv()
 class ExhibitionResponse(BaseModel):
     title: str
     description: str
-    display_order: List[str]
-    
+
 class ExhibitionCurator:
     def __init__(self, metadata, embedding_model=SentenceTransformer('all-MiniLM-L6-v2')):
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -85,15 +84,10 @@ class ExhibitionCurator:
         You are given a user query and a list of artworks and their artists.
         Your task is to provide:
         1. an exhibition title (15 words max): Create an elegant name that captures the exhibition's essence
-        2. a reordered display order: Rearrange the artworks to create a meaningful journey through the exhibition
-            - organize them to build a compelling narrative
-            - keep artwork titles exactly as provided
-        3. a description (200 words): Craft an engaging introduction that:
+        2. a description (200 words max): Craft an engaging introduction that:
             - introduces the exhibition's theme and significance
             - weaves together the artworks' thematic connections
             - mentions key pieces naturally without chronological references
-            - avoids phrases like "begins with," "followed by," "from ... to ..." or any chronological references
-                - instead, you can say "you are going to explore ... artworks" or "you are going to see ... artworks"
             - explains how the collection responds to the user's query
             
         Write in a warm, inviting tone that focuses on themes and connections rather than sequence.
@@ -118,30 +112,14 @@ class ExhibitionCurator:
                 response = completion.choices[0].message.parsed
                 temp_df = clusters[index]
                 
-                # Get ordered IDs from display_order
-                display_ordered_ids = []
-                for title in response.display_order:
-                    matched_id = temp_df[temp_df['title'] == title]['artwork_id'].values
-                    if len(matched_id) > 0:
-                        display_ordered_ids.append(matched_id[0])
-                
-                # Verify if all artworks are accounted for
-                original_ids = grouped_ids[index]
-                if set(display_ordered_ids) == set(original_ids):
-                    final_art_pieces = display_ordered_ids
-                else:
-                    print(f"Warning: Display order mismatch for exhibition {index}. Using original order.")
-                    print(f"Display order: {display_ordered_ids}")
-                    print(f"Original order: {original_ids}")
-                    final_art_pieces = original_ids
-
+                # Simplified exhibition creation
                 exhibition_temp = {
                     'exhibition_id': index,
                     'title': response.title,
                     'description': response.description,
-                    'art_pieces': list(final_art_pieces),  # Already strings from grouped_ids
+                    'art_pieces': list(grouped_ids[index]),  # Use original order directly
                     'curator_id': index,
-                    'pieces_count': len(final_art_pieces)
+                    'pieces_count': len(grouped_ids[index])
                 }
                 
                 responses.append(exhibition_temp)
@@ -152,7 +130,6 @@ class ExhibitionCurator:
                     'exhibition_id': index,
                     'title': 'Untitled Exhibition',
                     'description': 'Exhibition details unavailable',
-                    'display_order': list(original_orders[index]),
                     'art_pieces': list(grouped_ids[index]),
                     'curator_id': index,
                     'pieces_count': len(grouped_ids[index]),
