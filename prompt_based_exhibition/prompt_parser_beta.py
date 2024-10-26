@@ -1,14 +1,14 @@
 import openai
 from pydantic import BaseModel
 import os
-from ArtSearch import ArtSearch
+
 
 # Define the schema using Pydantic
 class ArtInfo(BaseModel):
     tags: list[str]
     artists: list[str]
 
-class OpenAIChatbot:
+class EntityParser:
     def __init__(self, model='gpt-4o-mini', api_key=None):
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         if not self.api_key:
@@ -46,84 +46,22 @@ class OpenAIChatbot:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_input},
                 ],
-                response_format=ArtInfo,  # Define the response format
+                response_format=ArtInfo,
             )
             art_info = completion.choices[0].message.parsed
             return art_info.tags, art_info.artists
         except Exception as e:
             print(f"Error in extracting entities: {e}")
-            return [], []  # Return empty lists in case of an error
+            return [], []
 
-class UserProfile:
-    def __init__(self, user_id):
-        self.user_id = user_id
-        self.tags = set()      # duplicate entries
-        self.artists = set()
-
-    def update_profile(self, new_tags, new_artists):
-        self.tags.update(new_tags)
-        self.artists.update(new_artists)
-
-    def get_profile(self):
-        return {
-            "tags": list(self.tags),
-            "artists": list(self.artists)
-        }
-
-
-def chat_interface(user_profile, bot, art_search):
-    print("Welcome to the art recommendation system! Tell me about your preferences.")
-    
-    while True:
-        user_input = input("You: ")
-        
-        if user_input.lower() in ['exit', 'quit', 'bye']:
-            print("Thank you for using the art recommendation system. Goodbye!")
-            break
-
-        if user_input.lower() == 'clean':
-            user_profile = UserProfile(user_id="justin")
-            print("Profile reset. Let's start again!")
-            continue
-        
-        tags, artists = bot.extract_entities(user_input)
-        
-        user_profile.update_profile(tags, artists)
-        
-        print("Updated Profile:")
-        print("Tags:", user_profile.get_profile()['tags'])
-        print("Artists:", user_profile.get_profile()['artists'])
-        
-        # Perform search based on updated profile
-        if user_profile.get_profile()['artists']:
-            print("\nRecommended artists based on your preferences:")
-            for artist in user_profile.get_profile()['artists']:
-                results = art_search.search(artist, search_type='name')
-                print(f"Similar to {artist}:")
-                for i, (result, score) in enumerate(results[:5], 1):
-                    print(f"  {i}. {result} (Score: {score:.4f})")
-
-        if user_profile.get_profile()['tags']:
-            print("\nRecommended tags based on your preferences:")
-            for tag in user_profile.get_profile()['tags']:
-                results = art_search.search(tag, search_type='tag')
-                print(f"Similar to {tag}:")
-                for i, (result, score) in enumerate(results[:5], 1):
-                    print(f"  {i}. {result} (Score: {score:.4f})")
-
-        
 if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
-
     api_key = os.getenv("OPENAI_API_KEY")
-    bot = OpenAIChatbot(model="gpt-4o-mini", api_key=api_key)
-    art_search = ArtSearch()
-    user_profile = UserProfile(user_id="justin")
-    chat_interface(user_profile, bot, art_search)
-
-    # test cases
-    # "I love the works of vincent van gogh, especially his Renaissance and Realism paintings."
-    # The dramatic style of the Baroque period, especially Caravaggio's religious scenes, really resonates with me.
-    # I'm a big fan of the Impressionist movement, particularly Claude Monet's landscapes.
-    # I really appreciate the bold colors and forms in the works of Jackson Pollock and other Abstract Expressionists.
-    # Gothic art and architecture, with its intricate details and soaring structures, are truly mesmerizing to me.
+    bot = EntityParser(model="gpt-4o-mini", api_key=api_key)
+    
+    # Example usage
+    # user_input = "I love the works of vincent van gogh, especially his Renaissance and Realism paintings."
+    user_input = "I like colorful artwork"
+    tags, artists = bot.extract_entities(user_input)
+    print("Tags:", tags)
+    print("Artists:", artists)

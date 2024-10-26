@@ -1,10 +1,48 @@
-fastapi
-uvicorn[standard]
+# ML & Data Science 
+# CPU only: transformers + torch
+# other ways m1/m2: conda install pytorch::pytorch torchvision torchaudio -c pytorch
+transformers[torch]
+faiss-cpu
+sentence-transformers
+numpy
+scipy
+pandas
+openai
+python-Levenshtein
 
+# Streamlit
 streamlit
 st_clickable_images
 streamlit_cropper
-pandas
-torch
-transformers
-faiss-cpu
+
+# Utils
+python-dotenv
+uuid
+python-dateutil
+requests
+Werkzeug
+apscheduler
+cryptography==41.0.1
+WTForms==2.3.3
+fuzzywuzzy
+
+# Optional
+# openai-whisper
+
+# in Flask app not used for now
+# Web Frameworks
+# fastapi
+# uvicorn[standard]
+# Flask
+# Flask-Admin
+# Flask-Migrate
+# Flask-PyMongo
+# Flask-SQLAlchemy
+# flask_swagger_ui
+
+# # Database
+# pymongo
+# mongoengine
+# pymysql
+# psycopg2-binary
+# SQLAlchemy

@@ -1,0 +1,31 @@
+{
+    "title": "Vibrant Echoes: The Colorful World of Vincent van Gogh",
+    "description": "This exhibition celebrates the vivid and expressive use of color in the works of Vincent van Gogh, one of the most influential figures in Western art. Featuring a selection of his still life paintings, the exhibition invites viewers to explore the emotional depth and dynamic energy that color brings to his compositions. From the rich yellows of 'Sunflowers' to the delicate hues in 'Bouquet of Flowers in a Vase,' each piece showcases van Gogh's unique ability to convey mood and atmosphere through color. The exhibition also highlights his fascination with everyday objects, as seen in 'Grapes, Lemons, Pears, and Apples' and 'Still Life of Oranges and Lemons with Blue Gloves.' These works not only reflect his artistic genius but also his deep appreciation for nature's beauty. By immersing ourselves in van Gogh's colorful world, we gain insight into his creative process and the emotional resonance of his art, making this exhibition a must-see for both art enthusiasts and casual visitors alike.",
+    "display_order": [
+        "Sunflowers",
+        "Roses",
+        "Bouquet of Flowers in a Vase",
+        "Grapes",
+        "Still Life of Oranges and Lemons with Blue Gloves",
+        "Oleanders",
+        "Roses"
+    ],
+    "Original_order": [
+        "Grapes, Lemons, Pears, and Apples",
+        "Still Life of Oranges and Lemons with Blue Gloves",
+        "Roses",
+        "Sunflowers",
+        "Bouquet of Flowers in a Vase",
+        "Oleanders",
+        "Roses"
+    ],
+    "art_pieces": [
+        "MET-6f3c7b01-628b-45f7-be36-f62a48808030",
+        "NGA-bef8c58d-15ae-4649-b2ff-ae0ead24714e",
+        "MET-f2535d0d-ab0c-4bd3-802b-34cd807f5045",
+        "ARTIC-f11bd233-6cc3-4221-59eb-f7363be4119e",
+        "NGA-b74be188-7a6a-4fc8-866e-55c4e11937c9",
+        "MET-44a66536-6852-4ced-a9e3-257fa9e24a81",
+        "NGA-bef8c58d-15ae-4649-b2ff-ae0ead24714e"
+    ]
+}
