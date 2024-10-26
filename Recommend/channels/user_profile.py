@@ -9,8 +9,7 @@ from api.data import get_clicked_artworks_by_user, get_clicked_exhibitions_by_us
 
 class UserProfileChannel:
 
-    def __init__(self, metadata, user_id, configs):
-        self.meta_data = metadata
+    def __init__(self, user_id, configs):
         self.user_id = user_id
         self.configs = configs
         self.num_per_page = self.configs["num_per_page"]
@@ -51,7 +50,7 @@ class UserProfileChannel:
                 records = get_clicked_exhibitions_by_user(user_id)
                 id_key = "exhibition_id"
             else:
-                raise ValueError(f"Invalid object type: {self.configs["object_type"]}")
+                raise ValueError(f"Invalid object type: {self.configs['object_type']}")
             if records and records["status"] == "success":
                 # TODO: Analyze the ratio of interaction and decide how to update the interacted set
                 self.interacted_set = self.interacted_set | set([idx[id_key] for idx in records["data"]])
@@ -92,7 +91,7 @@ class UserProfileChannel:
                 elif self.configs["object_type"] == "exhibition":
                     data = get_exhibitions_by_tag_id(x[0])
                 else:
-                    raise ValueError(f"Invalid object type: {self.configs["object_type"]}")
+                    raise ValueError(f"Invalid object type: {self.configs['object_type']}")
                 if data and data["status"] == "success":
                     object_recs.update(data["data"])
             recs_object_list.append(object_recs)

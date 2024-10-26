@@ -3,18 +3,22 @@ import random
 
 class SameArtistChannel:
 
-    def __init__(self, metadata):
-        self.metadata = metadata
+    def __init__(self):
         self.metadata["artist_display"] = self.metadata["artist_family_name"] + " " + self.metadata["artist_given_name"]
         self.metadata["artist_display"] = self.metadata["artist_display"].fillna("Unknown")
         self.artist_artworks = self.metadata.groupby("artist_display").apply(
             lambda x: list(x.index)
         )
+        #    # Example: artist_artworks might look like this:
+        # {'Leonardo da Vinci': [101],
+        #  'Claude Monet': [102, 103]}
 
     def update_data(self, unique_log, num_artist, interacted_set):
         self.artist_list = (
             unique_log.head(num_artist).join(self.metadata)["artist_display"].values
         )
+         # Example: If `num_artist` is 2, `artist_list` might look like:
+        # ['Claude Monet', 'Leonardo da Vinci']
 
         self.candidates_list = []
         for artist in self.artist_list:
@@ -33,4 +37,4 @@ class SameArtistChannel:
 
         artist_names = [f"Artist: {x}" for x in self.artist_list]
         print(artist_names)
-        return artist_recs_list, artist_names
+        return artist_recs_list, artist_names, len(artist_recs_list)

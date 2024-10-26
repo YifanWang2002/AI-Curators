@@ -8,20 +8,14 @@ from datetime import datetime
 from collections import deque
 
 from channels.image_sim import ImageSimChannel
-from channels.common_tags_wenqing import CommonTagsChannel
-from channels.common_tags import CommonTagsChannel as CommonTagsChannelBackup
+from channels.common_tags_artwork import CommonTagsChannel
 from channels.user_profile import UserProfileChannel
 from channels.random_rec import RandomRecChannel
-from api.data import get_all_artworks_ids, get_artworks_by_ids
+from api.data import get_all_artworks_ids, get_artworks_by_ids, get_clicked_artworks_by_user
 from utils.debug import save_images, read_user_log
 
 random.seed(0)
 
-# TODO: TO BE REMOVED
-def get_metadata(data_dir):
-    metadata = pd.read_csv(os.path.join(data_dir, "tags_replaced.csv"), index_col=0)
-    metadata["tags"] = metadata["tags"].apply(ast.literal_eval)
-    return metadata
 
 
 def load_configs(config_path):
@@ -32,22 +26,34 @@ def load_configs(config_path):
             config_dict[key] = value["value"]
     return config_dict
 
+def fetch_api_data(api_func, error_msg):
+    """Handle API calls and return data."""
+    try:
+        response = api_func()
+        if response["status"] != "success":
+            raise ValueError(error_msg)
+        return response["data"]
+    except Exception as e:
+        raise RuntimeError(f"{error_msg}: {e}")
+
+def get_clicked_artworks_for_user(user_id):
+    return fetch_api_data(lambda: get_clicked_artworks_by_user(user_id), 
+                                    f"Failed to fetch artworks for tag_id {user_id}")
+
 
 class ArtworkRecommender:
-    def __init__(self, user_id, metadata, configs):
+    def __init__(self, user_id, configs):
         self.user_id = user_id
         data = get_all_artworks_ids()
         if not data or data["status"] != "success":
             raise ValueError("Failed to get all artworks with error: ", data["message"])
         self.artworks_ids = data["data"]
-        self.metadata = metadata
         self.configs = configs
         self.recommended = deque(maxlen=configs["exclude_num_recommended"])
 
         self.image_sim_channel = ImageSimChannel(configs=configs)
-        self.user_profile_channel = UserProfileChannel(metadata=metadata, user_id=user_id, configs=configs)
-        self.common_tags_channel = CommonTagsChannel(metadata=metadata, configs=configs)
-        self.common_tags_channel_backup = CommonTagsChannelBackup(metadata=metadata, tag_count_all_path=configs["tag_count_type_path"])
+        self.user_profile_channel = UserProfileChannel(user_id=user_id, configs=configs)
+        self.common_tags_channel = CommonTagsChannel(configs=configs)
         self.random_rec_channel = RandomRecChannel(configs=configs, metadata=self.artworks_ids)
 
         # Number of consecutive times of recommendation
@@ -55,8 +61,8 @@ class ArtworkRecommender:
 
     def update_data(self, user_log):
         # TODO: save the history of recommendations based on current timestamp
-        latest_timestamps = user_log.groupby("object_id")["timestamp"].max().to_frame()
-        unique_log = latest_timestamps.sort_values("timestamp", ascending=False)
+        latest_timestamps = user_log.groupby("artwork_id")["event_time"].max().to_frame()
+        unique_log = latest_timestamps.sort_values("event_time", ascending=False)
         with open(os.path.join(self.configs["interacted_dir"], f"interacted_{self.user_id}.txt"), "w", encoding="utf-8") as f:
             f.write("\n".join(unique_log.head(self.configs["exclude_num_interacted"]).index.astype(str).tolist()))
         
@@ -85,11 +91,6 @@ class ArtworkRecommender:
             profile_recs_list, profile_names, len_profile = [[]], [[]], 0
         if debug == 0 or debug == 4:
             tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
-            # hotfix:
-            backup = False
-            if len_tag == 0:
-                tag_recs_list, tag_names, len_tag = self.common_tags_channel_backup(set(self.recommended))
-                backup = True
         else:
             tag_recs_list, tag_names, len_tag = [[]], [[]], 0
         if not context_info["behavior_updated"]:
@@ -141,20 +142,22 @@ if __name__ == "__main__":
     configs = load_configs(os.path.join(cur_path, "configs.json"))
     print(configs)
 
-    metadata = get_metadata(configs["data_dir"])
     user_id = 2
     # TODO: Get user_id from the front-end/back-end requests
     # TODO: Delete metadata as an argument and load it inside the class
-    artwork_recommender = ArtworkRecommender(user_id=user_id, metadata=metadata, configs=configs)
+    artwork_recommender = ArtworkRecommender(user_id=user_id, configs=configs)
 
     # ==== Run the following code for each new recommendation page ===== #
     for page_idx, is_updated in enumerate([False, True, False, True, False, False]):
         context_info = {"timestamp": int(datetime.now().timestamp()), "behavior_updated": is_updated, "page_idx": page_idx}
         if is_updated:
-            user_log = read_user_log(page_idx)
 
-            result = metadata.iloc[user_log["object_id"].values].copy()
-            if len(result) > 0:
+            user_artworks = get_clicked_artworks_for_user(page_idx)
+            user_log = pd.DataFrame(user_artworks)[["artwork_id", "event_time"]]
+            result = get_artworks_by_ids(user_log["artwork_id"].tolist())
+
+            if result["status"] == "success" and len(result["data"]) > 0:
+                result = pd.DataFrame(result["data"])
                 filename = f"user_log_{page_idx}"
                 result.to_csv(os.path.join(configs["output_dir"], filename + ".csv"))
                 save_images(os.path.join(configs["output_dir"], filename + ".jpg"), result["artwork_id"], result['compressed_url'])
@@ -162,6 +165,6 @@ if __name__ == "__main__":
             artwork_recommender.update_data(user_log)
 
         print(f"Page {page_idx+1}")
-        artwork_recommender.recommend(context_info=context_info, debug=3)
+        artwork_recommender.recommend(context_info=context_info, debug=4)
         if page_idx == 1:
             break
