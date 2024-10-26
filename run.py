@@ -49,12 +49,12 @@ if __name__ == "__main__":
     start_time = time()
     art_search = ArtSearch(data_dir=os.path.join(module_dir, 'data'))
     # search for tag
-    prompt = "I like vincent's colorful artwork"
+    prompt = "I like vincent's sad artwork"
     # parse the prompt
     entity_parser = EntityParser()
     tags, artists = entity_parser.extract_entities(prompt)
     if tags:
-        tag_results = art_search.search(tags, search_type='tag', k=10)
+        tag_results = art_search.search(tags, search_type='tag', k=20)
         tag_results = pd.DataFrame(tag_results)
         tag_results.columns = ['tag_name', 'similarity']
     if artists:
@@ -68,20 +68,29 @@ if __name__ == "__main__":
     artwork_details = pd.read_csv(os.path.join(module_dir, 'data', 'dimension_tables', 'dim_artwork.csv'))
     artwork_details = artwork_details.rename(columns={'Unnamed: 0': 'index'})
     new_artwork = None
-    if artists:
+    # and name_results df is not empty
+    if artists and not name_results.empty:
         new_artwork = get_artwork_by_artist(artwork_details, name_results) # 41 rows x 38 
-    if artists and tags:
-        new_artwork = get_artwork_by_tags(tag_results, new_artwork, module_dir) # [30 rows x 41 columns]
-    # if tags:
-    #     new_artwork = get_artwork_by_tags(tag_results, artwork_details, module_dir)  # [2073 rows x 40 columns]
-    if not artists and not tags: # edge case
+        print(f'artist_artwork.shape: {new_artwork.shape}')
+        if tags and not tag_results.empty:
+            temp_artwork = get_artwork_by_tags(tag_results, new_artwork, module_dir) # [30 rows x 41 columns]
+            print(f'artist_tag_artwork.shape: {temp_artwork.shape}')
+            if temp_artwork.shape[0] >= 20:
+                new_artwork = temp_artwork
+    elif tags and not tag_results.empty:
+        new_artwork = get_artwork_by_tags(tag_results, artwork_details, module_dir)  # [2073 rows x 40 columns]
+        print(f'tag_artwork.shape: {new_artwork.shape}')
+    else:
         # get 50 random artworks
         new_artwork = artwork_details.sample(n=50)
 
+    print(f'final new_artwork.shape: {new_artwork.shape}')
     new_artwork = new_artwork.iloc[:50]
 
     curator = ExhibitionCurator(metadata=artwork_details)
     use_author = True if artists else False
+    # exhibitions, grouped_ids, original_orders, clusters = curator.get_exhibitions(new_artwork, use_author)
+    # print(grouped_ids)
     exhibitions = curator.curate(new_artwork, prompt, use_author)
 
     print(f'Total time taken: {time() - start_time} seconds')

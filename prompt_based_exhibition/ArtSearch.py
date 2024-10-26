@@ -69,9 +69,9 @@ class ArtSearch:
 
 if __name__ == "__main__":
     art_search = ArtSearch() 
-    prompt = "I like colorful artwork"
+    prompt = "sad"
     # results = art_search.search(prompt, search_type='tag')
-    results = art_search.search(prompt, search_type='name')
+    results = art_search.search(prompt, search_type='tag', k=20)
     print(results)
     # print(f"Similar to {tag}:")
     # for i, (result, score) in enumerate(results[:5], 1):

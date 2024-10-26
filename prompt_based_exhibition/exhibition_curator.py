@@ -5,10 +5,17 @@ import numpy as np
 from time import time
 import os
 from sklearn.cluster import AgglomerativeClustering
+from pydantic import BaseModel
+from typing import List
 
 import dotenv
 dotenv.load_dotenv()
 
+class ExhibitionResponse(BaseModel):
+    title: str
+    description: str
+    display_order: List[str]
+    
 class ExhibitionCurator:
     def __init__(self, metadata, embedding_model=SentenceTransformer('all-MiniLM-L6-v2')):
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -70,72 +77,86 @@ class ExhibitionCurator:
     def curate(self, recommendations: pd.DataFrame, query: str, use_author=False) -> list[dict]:
         responses = []
         exhibitions, grouped_ids, original_orders, clusters = self.get_exhibitions(recommendations, use_author)
-        for exhibition in exhibitions:
-            response = self.client.chat.completions.create(
-                model="gpt-4o-mini",
-                messages=[
-                    {
-                        "role": "system",
-                        "content": [
-                            {
-                                "type": "text",
-                                "text": (
-                                    "You are a professional art exhibition curator. You can give an accurate, straightforward, and informative description for an exhibition of artworks for the general public to understand. An exhibition can be themed based on artists, genre, style, period, color, or any other factors that are shared by the artworks in the exhibition.\nYou will be given a sentence S, and the list of artworks searched based on the sentence S (which is a list of artworks and the corresponding artists). This list of artworks should together serve as one exhibition, and you will provide more details about the exhibition. Provide a Python readable JSON string to describe the artwork with the following keys and values:\ntitle: <string, in 15 words> An elegant name for the exhibition of artworks,\ndescription: <string, in 200 words> a paragraph that introduces the themed exhibition to viewers,\ndisplay_order: <list of strings> exact same list of artwork titles provided (you should not modify the titles in any way), but reordered in a way that the new order is better for viewers to learn the exhibition. Note: You should ignore the sentence S when providing the title for exhibition (that means the exhibition title should not be simply copying keywords from the sentence S). However, your exhibition description should spend some sentences to explain how the exhibition connects with the sentence S."
-                                )
-                            }
-                        ]
-                    },
-                    {
-                        "role": "user",
-                        "content": [
-                            {
-                                "type": "text",
-                                "text": f"Sentence S: {query}; list of (artwork title | artist): {exhibition}"
-                            }
-                        ]
-                    }
-                ],
-                temperature=0,
-                max_tokens=2048,
-                top_p=1,
-                frequency_penalty=0,
-                presence_penalty=0
-            )
-            responses.append(response.choices[0].message.content)
         
-        exhibition_info = []
-        for index, response in enumerate(responses):
-            temp_df = clusters[index]
-            result = response.split("\n")
-            exhibition_temp = {}
-            get_artworks = False
-            artworks = []
-            for line in result:
-                if not get_artworks:
-                    if "title" in line and 'titles' not in line:
-                        exhibition_temp['title'] = line.split('": ')[1].replace('"', '')[:-1]
-                    elif "description" in line:
-                        exhibition_temp['description'] = line.split('": ')[1].replace('"', '')[:-1]
-                    elif "display_order" in line or "description" in exhibition_temp:
-                        get_artworks = True
+        system_prompt = """You are a professional art exhibition curator. 
+        You give accurate, straightforward, and informative descriptions for art exhibitions that help the general public understand and connect with the artworks.
+        You curate exhibitions based on artists, genre, style, period, color, or any shared characteristics among the artworks.
+        
+        You are given a user query and a list of artworks and their artists.
+        Your task is to provide:
+        1. an exhibition title (15 words max): Create an elegant name that captures the exhibition's essence
+        2. a reordered display order: Rearrange the artworks to create a meaningful journey through the exhibition
+            - organize them to build a compelling narrative
+            - keep artwork titles exactly as provided
+        3. a description (200 words): Craft an engaging introduction that:
+            - introduces the exhibition's theme and significance
+            - weaves together the artworks' thematic connections
+            - mentions key pieces naturally without chronological references
+            - avoids phrases like "begins with," "followed by," "from ... to ..." or any chronological references
+                - instead, you can say "you are going to explore ... artworks" or "you are going to see ... artworks"
+            - explains how the collection responds to the user's query
+            
+        Write in a warm, inviting tone that focuses on themes and connections rather than sequence.
+        """.strip()
+
+        for index, exhibition in enumerate(exhibitions):  # Add index to the loop
+            try:
+                completion = self.client.beta.chat.completions.parse(
+                    model="gpt-4o-mini", 
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": system_prompt
+                        },
+                        {
+                            "role": "user",
+                            "content": f"Sentence S: {query}; list of (artwork title | artist): {exhibition}"
+                        }
+                    ],
+                    response_format=ExhibitionResponse
+                )
+                response = completion.choices[0].message.parsed
+                temp_df = clusters[index]
+                
+                # Get ordered IDs from display_order
+                display_ordered_ids = []
+                for title in response.display_order:
+                    matched_id = temp_df[temp_df['title'] == title]['artwork_id'].values
+                    if len(matched_id) > 0:
+                        display_ordered_ids.append(matched_id[0])
+                
+                # Verify if all artworks are accounted for
+                original_ids = grouped_ids[index]
+                if set(display_ordered_ids) == set(original_ids):
+                    final_art_pieces = display_ordered_ids
                 else:
-                    if "]" in line and '[' not in line:
-                        exhibition_temp['display_order'] = artworks
-                        break
-                    else:
-                        artwork_id = line.split(", ")[0].replace('"', '').replace(",", "").lstrip()
-                        artworks.append(artwork_id)
-            if 'display_order' not in exhibition_temp:
-                exhibition_temp['display_order'] = original_orders[index]
-                print('Error!!!! Display order not found')
-            exhibition_temp['Original_order'] = list(original_orders[index])
-            ordered_ids = []
-            for title in exhibition_temp['display_order']:
-                matched_id = temp_df[temp_df['title'] == title]['artwork_id'].values
-                if len(matched_id) == 0:
-                    matched_title = process.extractOne(title, temp_df['title'].values)[0]
-                    matched_id = temp_df[temp_df['title'] == matched_title]['artwork_id'].values
-                ordered_ids.append(matched_id[0])
-            exhibition_temp['art_pieces'] = list(ordered_ids)
-            exhibition_info.append(exhibition_temp)
-        return exhibition_info
+                    print(f"Warning: Display order mismatch for exhibition {index}. Using original order.")
+                    print(f"Display order: {display_ordered_ids}")
+                    print(f"Original order: {original_ids}")
+                    final_art_pieces = original_ids
+
+                exhibition_temp = {
+                    'exhibition_id': index,
+                    'title': response.title,
+                    'description': response.description,
+                    'art_pieces': list(final_art_pieces),  # Already strings from grouped_ids
+                    'curator_id': index,
+                    'pieces_count': len(final_art_pieces)
+                }
+                
+                responses.append(exhibition_temp)
+            except Exception as e:
+                print(f"Error processing exhibition: {e}")
+                # Fallback to original order if parsing fails
+                exhibition_temp = {
+                    'exhibition_id': index,
+                    'title': 'Untitled Exhibition',
+                    'description': 'Exhibition details unavailable',
+                    'display_order': list(original_orders[index]),
+                    'art_pieces': list(grouped_ids[index]),
+                    'curator_id': index,
+                    'pieces_count': len(grouped_ids[index]),
+                }
+                responses.append(exhibition_temp)
+        
+        return responses

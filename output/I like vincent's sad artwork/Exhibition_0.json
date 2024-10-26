@@ -1,0 +1,22 @@
+{
+    "exhibition_id": 0,
+    "title": "Melancholic Masterpieces: The Depths of Vincent van Gogh's Emotion",
+    "description": "This exhibition invites you to explore the powerful emotional landscapes of Vincent van Gogh. Highlighting the complex interplay between joy and sorrow, the artworks selected reflect themes of domesticity, labor, and human connection amid life's trials. \"A Peasant Woman Digging in Front of Her Cottage\" captures the essence of labor's dignity intertwined with the quiet solitude of rural life, while \"The Bedroom\" reveals an intimate glimpse into the artist's personal sanctuary, rich with vulnerable undertones of longing and isolation. \"Madame Roulin Rocking the Cradle (La berceuse)\" further delves into relationships and nurturing, depicting tender moments with profound emotional layers. You will also see vibrant yet poignant scenes such as \"Fishing in Spring, the Pont de Clichy (Asni\u00e8res)\" and \"Terrace and Observation Deck at the Moulin de Blute-Fin, Montmartre,\" which reflect the beauty and melancholy of fleeting moments. The inclusion of \"First Steps, after Millet\" and \"Peasant Woman Cooking by a Fireplace\" emphasizes the theme of nurturing and survival through challenging times. These artworks, together, showcase the depth of van Gogh's emotional expression and his ability to convey the complexities of the human experience.",
+    "art_pieces": [
+        "ARTIC-9325e3ea-2d5d-120f-5bfb-faa0f8266ca6",
+        "ARTIC-1d3a275d-45dd-6026-b6ed-d7d8df417a3d",
+        "ARTIC-25c31d8d-21a4-9ea1-1d73-6a2eca4dda7e",
+        "ARTIC-5512cee9-6d00-d01b-b0be-ac7843cc8f76",
+        "ARTIC-6cb22407-be79-bf0a-1a63-fdf2b99e035b",
+        "MET-a5a74502-c95f-436a-9956-58f591418c07",
+        "MET-1496f0ba-0980-423b-a258-7b92e8a51b13",
+        "MET-66d995af-38b7-4d57-8f36-57bda6d24b6c",
+        "MET-7d8e745a-9293-4080-9f37-451220aa131b",
+        "NGA-c78b52c9-ca48-4e92-8a82-0efec04599f2",
+        "MET-feb335e3-de39-48ce-b43d-73446287dce1",
+        "ARTIC-d0ff5b36-bb38-b156-6042-5c8545352c2f",
+        "NGA-51c369a2-cc20-43f6-8262-25877c4377eb"
+    ],
+    "curator_id": 0,
+    "pieces_count": 13
+}
