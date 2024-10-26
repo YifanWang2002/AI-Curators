@@ -19,6 +19,12 @@ def post_data(url, payload):
         return response.json()
     except requests.RequestException as e:
         return {'status': 'error', 'message': str(e)}
+    
+def get_artworks_by_ids(artwork_ids):
+    """POST request to get artworks for multiple artwork IDs."""
+    url = f"{DATABASE_URL}/data/artworks"
+    payload = {"artwork_ids": artwork_ids}  # Send artwork IDs as JSON
+    return post_data(url, payload)
 
 def get_tags_by_artwork_ids(artwork_ids):
     """POST request to get tags for multiple artwork IDs."""
@@ -111,6 +117,10 @@ def get_tag_count_by_type(tag_type):
 
 def get_all_tags():
     url = f"{DATABASE_URL}/data/tags"
+    return get_data(url)
+
+def get_all_artworks():
+    url = f"{DATABASE_URL}/data/artworks"
     return get_data(url)
 
 def get_clickstream_records_by_user(user_id):
