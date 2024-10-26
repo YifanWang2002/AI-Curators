@@ -20,6 +20,10 @@ class CommonTagsChannel:
         })[["tag_id", "tag_name", "tag_count_all", "type"]]
         tag_df.set_index("tag_id", inplace=True)
         tag_df["type_count_all"] = tag_df["type"].map(tag_df.groupby("type")["tag_count_all"].sum())
+        print("tag_df is:\n", tag_df)
+        print("Index of tag_df (tag_id):", tag_df.index)
+        print("Type of tag_id index values:", type(tag_df.index[0]))
+
         return tag_df
 
     def fetch_api_data(self, api_func, error_msg):
@@ -84,11 +88,12 @@ class CommonTagsChannel:
             unique_log = unique_log.reset_index()
         recent_artworks = unique_log.head(tag_log_len)["artwork_id"].tolist()
         artwork_tags_data = self.get_tags_for_artwork_ids(recent_artworks)
-        id_tag_time = []
-        for artwork_id, tags in artwork_tags_data.items():
-            event_time = unique_log.loc[unique_log["artwork_id"] == artwork_id, "event_time"].values[0]
-            for tag in tags:
-                id_tag_time.append((artwork_id, tag, event_time))
+        id_tag_time = [
+        (artwork_id, tag, unique_log.loc[unique_log["artwork_id"] == artwork_id, "event_time"].values[0])
+        for artwork_id, tags in artwork_tags_data.items()
+        for tag in tags
+        ]
+
         id_tag_time_df = pd.DataFrame(id_tag_time, columns=["artwork_id", "tags", "event_time"])
         id_tag_time_df["tags"] = id_tag_time_df["tags"].astype(str)  # Ensure 'tags' is string type
         id_tag_time_df = id_tag_time_df.sort_values(by="event_time", ascending=False)
@@ -101,7 +106,6 @@ class CommonTagsChannel:
         # Get tag click rates from API
         tag_rate_dict = self.get_tags_for_click_rates(tag_ids)
         tag_rate_df = pd.DataFrame(tag_rate_dict, index=["tag_click_rate"]).T
-        tag_rate_df.index = tag_rate_df.index.astype(str)  # Convert index to string
         # print("tag_rate_dict is", tag_rate_dict)
         # Store tag and type data with rates
         tag_time_count = (
@@ -116,7 +120,6 @@ class CommonTagsChannel:
         )
         # print("tag_sorted is", tag_sorted)
         # Get type click rates from API
-        id_tag_time_df["tags"] = id_tag_time_df["tags"].astype(str)
         self.tag_count_all.index = self.tag_count_all.index.astype(str)  # Ensure index is string
 
         # Fetch type click rates from API
@@ -124,21 +127,16 @@ class CommonTagsChannel:
         # print("type_rate_dict is", type_rate_dict)
 
         type_rate_df = pd.DataFrame.from_dict(type_rate_dict, orient='index', columns=['type_click_rate'])
-        type_rate_df.index = type_rate_df.index.astype(str)  # Ensure the index is string
         type_time_count = (
-            id_tag_time_df.join(self.tag_count_all[['type']], on='tags')
-            .groupby('type')
-            .agg(
-                event_time=("event_time", "max"),  # Most recent event_time for each type
-                type_count=("tags", "size")      # Count the number of tags per type
-            )
-            .join( 
-                self.tag_count_all.groupby('type').agg(type_count_all=("tag_count_all", "sum")),
-                on='type'
-            )
-            .join(  
-                type_rate_df, on='type'
-            )
+        id_tag_time_df.join(self.tag_count_all[['type']], on='tags')
+        .groupby('type')
+        .agg(
+            event_time=("event_time", "max"),
+            type_count=("tags", "size")
+        )
+        .merge(self.tag_count_all.groupby('type').agg(type_count_all=("tag_count_all", "sum")), 
+               on='type', how='left')
+        .merge(type_rate_df, left_index=True, right_index=True, how='left')
         )
 
         # print("type_time_count:")
