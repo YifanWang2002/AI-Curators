@@ -119,7 +119,7 @@ class ArtworkRecommender:
                     recs.append(x)
                     rec_channels.append(all_channel_names[channel_idx][positions[channel_idx]])
                     self.recommended.append(x)
-                    positions[channel_idx] += 1
+                positions[channel_idx] += 1
 
         print(recs)
         print(rec_channels)
