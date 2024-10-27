@@ -11,6 +11,8 @@ from channels.image_sim import ImageSimChannel
 from channels.common_tags_artwork import CommonTagsChannel
 from channels.user_profile import UserProfileChannel
 from channels.random_rec import RandomRecChannel
+from channels.same_artist import SameArtistChannel
+
 from api.data import get_all_artworks_ids, get_artworks_by_ids, get_clicked_artworks_by_user
 from utils.debug import save_images, read_user_log
 
@@ -55,6 +57,7 @@ class ArtworkRecommender:
         self.user_profile_channel = UserProfileChannel(user_id=user_id, configs=configs)
         self.common_tags_channel = CommonTagsChannel(configs=configs)
         self.random_rec_channel = RandomRecChannel(configs=configs, metadata=self.artworks_ids)
+        self.same_artist_channel = SameArtistChannel(configs=configs)
 
         # Number of consecutive times of recommendation
         self.num_consec = 0
@@ -70,6 +73,11 @@ class ArtworkRecommender:
             unique_log=unique_log,
             tag_log_len=self.configs["tag_log_len"],
             num_tag=self.configs["num_tag"],
+            interacted_set=set(unique_log.head(self.configs["exclude_num_interacted"]).index)
+        )
+        self.same_artist_channel.update_data(
+            unique_log=unique_log,
+            num_artist=4, #TODO should make it in self.config
             interacted_set=set(unique_log.head(self.configs["exclude_num_interacted"]).index)
         )
 
@@ -93,18 +101,24 @@ class ArtworkRecommender:
             tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
         else:
             tag_recs_list, tag_names, len_tag = [[]], [[]], 0
+        if debug == 0 or debug == 5:
+            artist_recs_list, artist_names, len_artist = self.same_artist_channel(set(self.recommended))
+        else:
+            artist_recs_list, artist_names, len_artist = [[]], [[]], 0
         if not context_info["behavior_updated"]:
             self.num_consec += 1
 
         weights = np.array([(1 / len_image) if len_image > 0 else 0,
                             (1 / len_profile) if len_profile > 0 else 0, 
                             (1 / len_tag) if len_tag > 0 else 0, 
-                            (1 / len_random * self.num_consec) if len_random > 0 else 0])
+                            (1 / len_random * self.num_consec) if len_random > 0 else 0,
+                            (1 / len_artist) if len_artist > 0 else 0
+                            ])
         weights = 1 / (1 + np.exp(-weights))
         print(weights)
-        all_channel_recs = (image_recs_list + profile_recs_list + tag_recs_list + random_recs_list)
-        all_channel_names = (image_names + profile_names + tag_names + random_names)
-        num_channels = 4
+        all_channel_recs = (image_recs_list + profile_recs_list + tag_recs_list + random_recs_list + artist_recs_list)
+        all_channel_names = (image_names + profile_names + tag_names + random_names + artist_names)
+        num_channels = 5
         positions = [0] * num_channels
 
         recs = []
