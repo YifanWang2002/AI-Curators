@@ -6,14 +6,17 @@ A tool for curating art exhibitions using AI-powered search.
 - Python 3.10
 - MongoDB
 - Required Python packages (install via `pip install -r requirements.txt`):
-- docker
+- run docker
 
 2. Ensure MongoDB is running and accessible
 
-### Run
-```
-python run.py
-```
+### How to use
+
+- change the DATABASE_URL in data.py to your MongoDB connection string
+- Modify the prompt in run.py
+- i.e.prompt = "I like vincent's sad artwork"
+- python run.py
+
 
 ### File Structure
 
