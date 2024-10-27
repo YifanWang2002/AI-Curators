@@ -20,10 +20,6 @@ class CommonTagsChannel:
         })[["tag_id", "tag_name", "tag_count_all", "type"]]
         tag_df.set_index("tag_id", inplace=True)
         tag_df["type_count_all"] = tag_df["type"].map(tag_df.groupby("type")["tag_count_all"].sum())
-        print("tag_df is:\n", tag_df)
-        print("Index of tag_df (tag_id):", tag_df.index)
-        print("Type of tag_id index values:", type(tag_df.index[0]))
-
         return tag_df
 
     def fetch_api_data(self, api_func, error_msg):
@@ -248,8 +244,6 @@ class CommonTagsChannel:
         selected_artworks = [artwork for artwork, tag, type_key, weight in final_artwork_selection]
         selected_tags = [tag for artwork, tag, type_key, weight in final_artwork_selection]
         selected_types = [type_key for artwork, tag, type_key, weight in final_artwork_selection]
-        print("selected_artworks is,", selected_artworks)
-        print("len selected artwork is", len(selected_artworks))
         # print(selected_tags)
         # print(selected_types)
         # Check for duplicates in selected_artworks
