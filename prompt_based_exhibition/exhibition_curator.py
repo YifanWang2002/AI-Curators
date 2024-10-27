@@ -22,7 +22,6 @@ class ExhibitionCurator:
         self.embedding_model = embedding_model
         self.descriptions = self.metadata.apply(self.get_description, axis=1)
         # print('**** Getting embeddings of descriptions ****')
-        checkpoint = time()
         embeddings_path = os.path.join(os.getcwd(), 'data', 'index_files', 'description_embeddings.npy')
         if not os.path.isfile(embeddings_path):
             print('Embeddings not found. Generating...')
@@ -36,7 +35,6 @@ class ExhibitionCurator:
                 raise ValueError(f"Loaded embeddings shape ({len(loaded_embeddings)}) doesn't match metadata length ({len(self.metadata)})")
             self.metadata['embedding'] = loaded_embeddings.tolist()
             self.description_embeddings = loaded_embeddings
-        # print(f'**** Getting embeddings of descriptions done. Time taken: {time() - checkpoint} seconds ****')
 
     def get_description(self, row):
         all_description = f"{row['intro']}\n{row['overview']}\n{row['style']}\n{row['theme']}"
