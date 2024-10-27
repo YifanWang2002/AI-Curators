@@ -12,11 +12,34 @@ A tool for curating art exhibitions using AI-powered search.
 1. Run Docker
 2. Ensure MongoDB is running and accessible
 
-## How to Use
+## Architecture
+```
+[Data API Container (port 8000)]
+         ↑
+         | HTTP calls
+         ↓
+[This Exhibition API Container (port 5000)]
+```
+## setup env
+1. create `.env` file
+2. add your OpenAI API key as `OPENAI_API_KEY`
+
+## How to Use (non-API)
 1. Change the `DATABASE_URL` in `data.py` to your MongoDB connection string
 2. Modify the prompt in `run.py`
    - Example: `prompt = "I like Vincent's sad artwork"`
 3. Run the application: `python run.py`
+
+## Call the API (flask)
+1. `python api.py`
+2. Send a POST request using:     
+```bash
+curl -X POST \
+  http://localhost:5001/api/generate_exhibition \
+  -H "Content-Type: application/json" \
+  -d '{"prompt": "modern art with flowers"}'
+```
+3. Change the prompt as you like
 
 ## Project Structure
 ```
@@ -29,12 +52,41 @@ data/
 │   ├── name_index.index      # FAISS index for artwork name search
 │   ├── tag_index.index       # FAISS index for tag-based search
 │   └── description_embeddings.npy  # Pre-computed artwork description embeddings
-└── prompt_based_exhibition/      # Core exhibition generation logic
-      ├── ArtSearch.py
-      ├── exhibition_curator.py
-      └── prompt_parser_beta.py
-data.py                      # Database interaction layer
-run.py                      # Application entry point
+├── prompt_based_exhibition/      # Core exhibition generation logic
+│   ├── ArtSearch.py
+│   ├── exhibition_curator.py
+│   └── prompt_parser_beta.py
+├── api.py                  # New API layer for the application
+├── Dockerfile              # Docker configuration file
+├── docker-compose.yml      # Docker Compose configuration file
+├──  data.py                      # Database interaction layer
+├── run.py                      # Application entry point
+├── api.py                  # API layer for the application
+├── Dockerfile              # Docker configuration file
+├── docker-compose.yml      # Docker Compose configuration file
+└── requirements.txt
+```
+
+## build docker and run (use `docker-compose` or `docker compose`)
+1. `docker compose up --build` (build and run)
+      - 1.1 run API-data container from backend-python repo
+      - 1.2 run API-exhibition container from this repo
+2. `docker compose up -d` (detached mode)
+3. `docker compose down` (stop and remove containers)
+4. load data to MongoDB using curl in [dump-the-files](https://github.com/Metaverse-Museum/Back-End-Python?tab=readme-ov-file#dump-the-files)
+5. check data api
+      - `curl http://localhost:8000/api/data/artworks  # Works - data API`
+6. check exhibition api
+      - ```bash
+        curl -X POST http://localhost:5000/api/generate_exhibition \
+             -H "Content-Type: application/json" \
+             -d '{"prompt": "I like vincent'\''s sad artwork"}'
+        ```
+
+## rebuild docker if you change the Dockerfile
+```bash
+docker compose down
+docker compose up -d --build
 ```
 
 #### prompt_based_exhibition/

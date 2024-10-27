@@ -10,10 +10,9 @@ pandas
 openai
 python-Levenshtein
 
-# Streamlit
-streamlit
-st_clickable_images
-streamlit_cropper
+# flask
+flask
+flask-cors
 
 # Utils
 python-dotenv

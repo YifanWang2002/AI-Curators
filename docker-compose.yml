@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "5000:8000"
+    environment:
+      - DATABASE_URL=http://host.docker.internal:8000/api/data
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    env_file:
+      - .env
+    volumes:
+      - ./data/index_files:/app/data/index_files
+    
+
+networks:
+  default:
+    name: exhibition_network

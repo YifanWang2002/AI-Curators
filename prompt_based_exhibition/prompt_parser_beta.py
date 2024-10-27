@@ -2,6 +2,8 @@ import openai
 from pydantic import BaseModel
 import os
 
+import dotenv
+dotenv.load_dotenv()
 
 # Define the schema using Pydantic
 class ArtInfo(BaseModel):
