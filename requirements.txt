@@ -13,6 +13,8 @@ python-Levenshtein
 # flask
 flask
 flask-cors
+redis
+rq
 
 # Utils
 python-dotenv

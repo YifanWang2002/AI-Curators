@@ -1,6 +1,44 @@
 version: '3.8'
 
 services:
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - exhibition_network
+    
+  redis-commander:  # Redis 管理界面，可选
+    image: rediscommander/redis-commander:latest
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - "8081:8081"
+    networks:
+      - exhibition_network
+    depends_on:
+      - redis
+
+  rq-worker:
+    build: .
+    command: rq worker exhibition
+    environment:
+      - DATABASE_URL=http://host.docker.internal:8000/api/data
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_DB=0
+    env_file:
+      - .env
+    volumes:
+      - ./data/index_files:/app/data/index_files
+    depends_on:
+      - redis
+    networks:
+      - exhibition_network
+
   api:
     build: .
     ports:
@@ -8,12 +46,22 @@ services:
     environment:
       - DATABASE_URL=http://host.docker.internal:8000/api/data
       - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_DB=0
     env_file:
       - .env
     volumes:
       - ./data/index_files:/app/data/index_files
-    
+    depends_on:
+      - redis
+      - rq-worker
+    networks:
+      - exhibition_network
+
+volumes:
+  redis_data:
 
 networks:
-  default:
+  exhibition_network:
     name: exhibition_network

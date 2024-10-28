@@ -1,4 +1,4 @@
-# Use Python 3.10 as base image
+# Dockerfile
 FROM python:3.10-slim
 
 # Set working directory
@@ -23,5 +23,9 @@ RUN mkdir -p data/index_files
 # Expose the port the app runs on
 EXPOSE 8000
 
+# Add wait-for-it script to wait for Redis
+COPY wait-for-it.sh /wait-for-it.sh
+RUN chmod +x /wait-for-it.sh
+
 # Command to run the application
-CMD ["python", "api.py"]
+CMD ["/wait-for-it.sh", "redis:6379", "--", "python", "api.py"]
