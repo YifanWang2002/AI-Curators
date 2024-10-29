@@ -45,7 +45,7 @@ class ArtworkRecommender:
         self.recommended = deque(maxlen=configs["exclude_num_recommended"])
 
         self.image_sim_channel = ImageSimChannel(configs=configs)
-        self.user_profile_channel = UserProfileChannel(metadata=metadata, user_id=user_id, configs=configs)
+        self.user_profile_channel = UserProfileChannel(user_id=user_id, configs=configs)
         self.common_tags_channel = CommonTagsChannel(metadata=metadata, configs=configs)
         self.common_tags_channel_backup = CommonTagsChannelBackup(metadata=metadata, tag_count_all_path=configs["tag_count_type_path"])
         self.random_rec_channel = RandomRecChannel(configs=configs, metadata=self.artworks_ids)
@@ -68,21 +68,15 @@ class ArtworkRecommender:
         )
 
     def recommend(self, context_info, debug=0):
-        if debug == 0 or debug == 1:
-            random_recs_list, random_names, len_random = self.random_rec_channel(
-                user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended))
-        else:
-            random_recs_list, random_names, len_random = [[]], [[]], 0
+        random_recs_list, random_names, len_random = self.random_rec_channel(
+            user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended))
         if debug == 0 or debug == 2:
             image_recs_list, image_names, len_image = self.image_sim_channel(
                 user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list[0])
         else:
             image_recs_list, image_names, len_image = [[]], [[]], 0
-        if debug == 0 or debug == 3:
-            profile_recs_list, profile_names, len_profile = self.user_profile_channel(
-                context_info=context_info, recommended_set=set(self.recommended))
-        else:
-            profile_recs_list, profile_names, len_profile = [[]], [[]], 0
+        profile_recs_list, profile_names, len_profile = self.user_profile_channel(
+            context_info=context_info, recommended_set=set(self.recommended))
         if debug == 0 or debug == 4:
             tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
             # hotfix:
@@ -162,6 +156,6 @@ if __name__ == "__main__":
             artwork_recommender.update_data(user_log)
 
         print(f"Page {page_idx+1}")
-        artwork_recommender.recommend(context_info=context_info, debug=3)
+        artwork_recommender.recommend(context_info=context_info, debug=2)
         if page_idx == 1:
             break

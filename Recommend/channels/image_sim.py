@@ -2,7 +2,7 @@ import os
 import faiss
 import itertools
 import numpy as np
-from api.data import get_clicked_artworks_by_user
+from api.data import get_clicked_artworks_by_user, get_artworks_id_mapping
 
 
 class ImageSimChannel:
@@ -11,12 +11,21 @@ class ImageSimChannel:
         # Embeddings of all images
         self.configs = configs
         self.image_embedding = np.load(self.configs["image_emb_path"])
+        self.artwork_to_embedding, self.embedding_to_artwork = self.get_artwork_id_mapping()
         self.num_per_page = self.configs["num_per_page"]
         self.shuffle_len = self.configs["shuffle_len"]
 
         self.index = self.get_image_index()
         self.image_list = []
         self.interacted_set = set()
+
+    def get_artwork_id_mapping(self):
+        records = get_artworks_id_mapping()
+        if records and records["status"] == "success":
+            artwork_to_embedding = records["data"]
+            embedding_to_artwork = {int(v): k for k, v in artwork_to_embedding.items()}
+            return artwork_to_embedding, embedding_to_artwork
+        return {}, {}
     
     def get_image_index(self):
         if os.path.exists(self.configs["image_emb_index_path"]):
@@ -41,12 +50,12 @@ class ImageSimChannel:
             self.image_list.extend(list(new_interacted)) 
         return self.interacted_set
 
-    def get_recs_list(self, object_ids, num_rec_per_image):
-        image_embedding = self.image_embedding[object_ids]
+    def get_recs_list(self, image_ids, num_rec_per_image):
+        image_embedding = self.image_embedding[[self.artwork_to_embedding[image_id] for image_id in image_ids]]
         D, I = self.index.search(image_embedding, num_rec_per_image)
         recs_list = []
         for i in range(len(I)):
-            recs_list.append([(I[i, j], D[i, j]) for j in range(len(I[i])) if j != 0])
+            recs_list.append([(self.embedding_to_artwork[I[i, j]], D[i, j]) for j in range(len(I[i])) if j != 0])
         return recs_list
 
     def __call__(self, user_id, context_info, recommended_set, default_list):

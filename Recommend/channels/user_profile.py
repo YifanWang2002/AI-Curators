@@ -9,8 +9,7 @@ from api.data import get_clicked_artworks_by_user, get_clicked_exhibitions_by_us
 
 class UserProfileChannel:
 
-    def __init__(self, metadata, user_id, configs):
-        self.meta_data = metadata
+    def __init__(self, user_id, configs):
         self.user_id = user_id
         self.configs = configs
         self.num_per_page = self.configs["num_per_page"]

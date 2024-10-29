@@ -20,8 +20,8 @@ def get_artworks_by_ids(artwork_ids):
     url = f"{DATABASE_URL}/data/artworks/{artworks_ids_str}"
     return get_data(url)
 
-def get_all_artworks():
-    url = f"{DATABASE_URL}/data/artworks"
+def get_artworks_id_mapping():
+    url = f"{DATABASE_URL}/data/artworks/id_mapping"
     return get_data(url)
 
 def get_all_artworks_ids():
