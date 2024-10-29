@@ -15,6 +15,7 @@ from channels.common_tags import CommonTagsChannel as CommonTagsChannelBackup
 from channels.user_profile import UserProfileChannel
 from channels.random_rec import RandomRecChannel
 from utils.debug import save_images, read_user_log
+from api.data import get_all_exhibitions_ids
 
 random.seed(0)
 
@@ -36,16 +37,20 @@ def load_configs(config_path):
 class ExhibitionRecommender:
     def __init__(self, user_id, metadata, configs):
         self.user_id = user_id
+        data = get_all_exhibitions_ids()
+        if not data or data["status"] != "success":
+            raise ValueError("Failed to get all artworks with error: ", data["message"])
+        self.exhibition_ids = data["data"]
         self.metadata = metadata
         self.configs = configs
         self.recommended = deque(maxlen=configs["exclude_num_recommended"])
 
         self.exhibition_sim_channel = ExhibitionSimChannel(metadata=metadata, configs=configs)
-        self.description_sim_channel = DescriptionSimChannel(metadata=metadata, configs=configs)
-        self.user_profile_channel = UserProfileChannel(metadata=metadata, user_id=user_id, configs=configs)
+        self.description_sim_channel = DescriptionSimChannel(configs=configs)
+        self.user_profile_channel = UserProfileChannel(user_id=user_id, configs=configs)
         # self.common_tags_channel = CommonTagsChannel(metadata=metadata, configs=configs)
         # self.common_tags_channel_backup = CommonTagsChannelBackup(metadata=metadata, tag_count_all_path=configs["tag_count_type_path"])
-        self.random_rec_channel = RandomRecChannel(configs=configs, metadata=metadata)
+        self.random_rec_channel = RandomRecChannel(configs=configs, metadata=self.exhibition_ids)
 
         # Number of consecutive times of recommendation
         self.num_consec = 0
@@ -102,7 +107,7 @@ class ExhibitionRecommender:
                     recs.append(x)
                     rec_channels.append(all_channel_names[channel_idx][positions[channel_idx]])
                     self.recommended.append(x)
-                    positions[channel_idx] += 1
+                positions[channel_idx] += 1
 
         print(recs)
         print(rec_channels)

@@ -32,6 +32,6 @@ class RandomRecChannel:
 
         seed = user_id + context_info["timestamp"]
         random.seed(seed)
-        random_recs_list = random.sample(candidates, k=self.num_per_page)
+        random_recs_list = random.sample(candidates, k=min(self.num_per_page, len(candidates)))
 
         return [random_recs_list], [["Random"] * len(random_recs_list)], len(random_recs_list)
