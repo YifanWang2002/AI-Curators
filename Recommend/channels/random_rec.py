@@ -20,7 +20,7 @@ class RandomRecChannel:
                 id_key = "exhibition_id"
             else:
                 records = None
-                raise ValueError(f"Invalid object type: {self.configs["object_type"]}")
+                raise ValueError(f"Invalid object type: {self.configs['object_type']}")
             if records and records["status"] == "success":
                 # TODO: Analyze the ratio of interaction and decide how to update the interacted set
                 self.interacted_set = self.interacted_set | set([idx[id_key] for idx in records["data"]])

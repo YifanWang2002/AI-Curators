@@ -10,7 +10,7 @@ from collections import deque
 
 from channels.exhibition_sim import ExhibitionSimChannel
 from channels.description_sim import DescriptionSimChannel
-from channels.common_tags_wenqing import CommonTagsChannel
+from channels.common_tags_exhibition import CommonTagsChannel
 from channels.common_tags import CommonTagsChannel as CommonTagsChannelBackup
 from channels.user_profile import UserProfileChannel
 from channels.random_rec import RandomRecChannel

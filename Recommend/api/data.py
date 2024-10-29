@@ -10,7 +10,50 @@ def get_data(url):
         return response.json()
     except requests.RequestException as e:
         return {'status': 'error', 'message': str(e)}
+
+def post_data(url, payload):
+    """Send a POST request with a JSON payload."""
+    try:
+        response = requests.post(url, json=payload)
+        response.raise_for_status()
+        return response.json()
+    except requests.RequestException as e:
+        return {'status': 'error', 'message': str(e)}
     
+def get_artworks_by_ids(artwork_ids):
+    """POST request to get artworks for multiple artwork IDs."""
+    url = f"{DATABASE_URL}/data/artworks"
+    payload = {"artwork_ids": artwork_ids}  # Send artwork IDs as JSON
+    return post_data(url, payload)
+
+def get_tags_by_artwork_ids(artwork_ids):
+    """POST request to get tags for multiple artwork IDs."""
+    url = f"{DATABASE_URL}/data/mapping_artwork_tag"
+    payload = {"artwork_ids": artwork_ids}  # Send artwork IDs as JSON
+    return post_data(url, payload)
+
+def get_tags_by_exhibition_ids(exhibition_ids):
+    """POST request to get tags for multiple artwork IDs."""
+    url = f"{DATABASE_URL}/data/mapping_exhibition_tags"
+    payload = {"exhibition_ids": exhibition_ids}  # Send artwork IDs as JSON
+    return post_data(url, payload)
+
+def get_tags_click_rates(tag_ids):
+    """POST request to get tags for multiple artwork IDs."""
+    url = f"{DATABASE_URL}/data/tag_click_rate"
+    payload = {"tag_ids": tag_ids}   # Send artwork IDs as JSON
+    return post_data(url, payload)
+
+def get_type_click_rates(tag_ids):
+    """POST request to get tags for multiple artwork IDs."""
+    url = f"{DATABASE_URL}/data/type_click_rate"
+    payload = {"tag_ids": tag_ids}   # Send artwork IDs as JSON
+    return post_data(url, payload)
+
+def get_clicked_artworks_by_user(user_id):
+    url = f"{DATABASE_URL}/data/clickstreams/click/artworks/{user_id}"
+    return get_data(url)
+
 def get_artwork_by_id(artwork_id):
     url = f"{DATABASE_URL}/data/artwork/{artwork_id}"
     return get_data(url)
@@ -74,6 +117,10 @@ def get_tag_count_by_type(tag_type):
 
 def get_all_tags():
     url = f"{DATABASE_URL}/data/tags"
+    return get_data(url)
+
+def get_all_artworks():
+    url = f"{DATABASE_URL}/data/artworks"
     return get_data(url)
 
 def get_clickstream_records_by_user(user_id):
