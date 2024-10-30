@@ -53,27 +53,27 @@
         "description": "Directory to save output files"
     },
     "image_emb_index_path": {
-        "value": "../data/artworks_dino.index",
+        "value": "/app/data/artworks_dino.index",
         "description": "image embedding index file path"
     },
     "image_emb_path": {
-        "value": "../data/embeds_dino.npy",
+        "value": "/app/data/embeds_dino.npy",
         "description": "image embedding file path"
     },
     "tag_emb_index_path": {
-        "value": "../new_data/tag_clip.index",
+        "value": "/app/new_data/tag_clip.index",
         "description": "tag embedding file path"
     },
     "tag_emb_path": {
-        "value": "../new_data/tag_embeddings.npy",
+        "value": "/app/new_data/tag_embeddings.npy",
         "description": "tag embedding file path"
     },
     "tag_count_type_path": {
-        "value": "../new_data/tag_count_type.csv",
+        "value": "/app/new_data/tag_count_type.csv",
         "description": "file path for tag_count_type.csv"
     },
     "tag_to_object_mapping_path": {
-        "value": "../data/tags2artworks_mapping.json",
+        "value": "/app/data/tags2artworks_mapping.json",
         "description": "file path for tag to object mapping, key: tag, value: list of artwork ids"
     }
 }
