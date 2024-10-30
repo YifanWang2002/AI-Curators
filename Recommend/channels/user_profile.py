@@ -16,8 +16,6 @@ class UserProfileChannel:
         self.tag_embedding = np.load(self.configs["tag_emb_path"])
         self.tag_index = self.get_tag_index()
         self.tag_name2id_mapping = self.get_tag_mapping()
-        # TODO: API call to get the mapping_tag_artwork or mapping_tag_exhibition table
-        self.tag_to_object_mapping = json.load(open(self.configs["tag_to_object_mapping_path"], "r", encoding="utf-8"))
         self.pre_survey, self.pre_survey_tags_type = self.get_pre_survey(self.user_id, self.configs["pre_survey_dir"])
         self.interacted_set = set()
 
@@ -32,7 +30,6 @@ class UserProfileChannel:
         
     def get_tag_mapping(self):
         tag_name2id_mapping = {}
-        # TODO: API call to get the dim_tag table
         data = get_all_tags()
         if not data or data["status"] != "success":
             return tag_name2id_mapping
@@ -41,7 +38,6 @@ class UserProfileChannel:
         return tag_name2id_mapping
 
     def get_interacted_set(self, user_id, updated):
-        # TODO: API call to get data from fact_clickstream table based on user_id
         if updated:
             if self.configs["object_type"] == "artwork":
                 records = get_clicked_artworks_by_user(user_id)

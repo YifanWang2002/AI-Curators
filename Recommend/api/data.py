@@ -58,11 +58,6 @@ def get_artwork_by_id(artwork_id):
     url = f"{DATABASE_URL}/data/artwork/{artwork_id}"
     return get_data(url)
 
-def get_artworks_by_ids(artwork_ids):
-    artworks_ids_str = ",".join(artwork_ids)
-    url = f"{DATABASE_URL}/data/artworks/{artworks_ids_str}"
-    return get_data(url)
-
 def get_artworks_id_mapping():
     url = f"{DATABASE_URL}/data/artworks/id_mapping"
     return get_data(url)
@@ -71,9 +66,23 @@ def get_all_artworks_ids():
     url = f"{DATABASE_URL}/data/artworks/ids"
     return get_data(url)
 
+def get_artworks_by_artist_id(artist_id):
+    url = f"{DATABASE_URL}/data/artworks/artist/{artist_id}"
+    return get_data(url)
+
+def get_artworks_by_same_artist(artwork_id):
+    url = f"{DATABASE_URL}/data/artworks/same_artist/{artwork_id}"
+    return get_data(url)
+
 def get_exhibition_by_id(exhibition_id):
     url = f"{DATABASE_URL}/data/exhibition/{exhibition_id}"
     return get_data(url)
+
+def get_exhibitions_by_ids(exhibition_ids):
+    """POST request to get exhibitions from a list of exhibition IDs."""
+    url = f"{DATABASE_URL}/data/exhibitions"
+    payload = {"exhibition_ids": exhibition_ids}
+    return post_data(url, payload)
     
 def get_art_pieces_in_exhibition(exhibition_id):
     url = f"{DATABASE_URL}/data/exhibition/art_pieces/{exhibition_id}"

@@ -28,6 +28,10 @@
         "value": 20,
         "description": "Number of unique log entries for calculating tag click rates"
     },
+    "default_artist_num": {
+        "value": 3885,
+        "description": "Number of artists to recommend by default"
+    },
     "interacted_dir": {
         "value": "./interacted_logs",
         "description": "Directory for interacted data"

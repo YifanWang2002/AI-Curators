@@ -60,7 +60,6 @@ class CommonTagsChannel:
         self.candidates_list = []
         tag_rate_dict = {1: 0.9, 2: 0.5} # 1 for "Nature" 2 for "Realism"
         for tag in self.tag_list:
-            print(f"Fetching artworks for tag: {tag}")
             # Use the tag ID from your loaded tag data (self.tag_count_all)
             if tag not in self.tag_count_all.index:
                 print(f"Warning: Tag '{tag}' not found in tag data.")
@@ -77,8 +76,6 @@ class CommonTagsChannel:
             self.candidates_list.append(art_tag_scores.index.tolist())
         self.init_list = self.candidates_list[0][0:50]
 
-
-
     def update_data(self, unique_log, tag_log_len, num_tag, interacted_set):
         if unique_log.index.name == "artwork_id":
             unique_log = unique_log.reset_index()
@@ -94,33 +91,25 @@ class CommonTagsChannel:
         id_tag_time_df["tags"] = id_tag_time_df["tags"].astype(str)  # Ensure 'tags' is string type
         id_tag_time_df = id_tag_time_df.sort_values(by="event_time", ascending=False)
         id_tag_time_df = id_tag_time_df.set_index("artwork_id")  # Set artwork_id as index
-        # print("API-based id_tag_time:")
-        # print(id_tag_time_df)
-        # print("self.tag_count_all", self.tag_count_all)
         tag_ids = id_tag_time_df["tags"].unique().tolist()
-        # print("tag_ids is", tag_ids)
         # Get tag click rates from API
         tag_rate_dict = self.get_tags_for_click_rates(tag_ids)
         tag_rate_df = pd.DataFrame(tag_rate_dict, index=["tag_click_rate"]).T
-        # print("tag_rate_dict is", tag_rate_dict)
         # Store tag and type data with rates
         tag_time_count = (
         id_tag_time_df.groupby("tags")
         .agg(event_time=("event_time", "max"), tag_count=("event_time", "size"))
         .join(tag_rate_df, on="tags", how="left")  # Ensure correct join
         )
-        # print("tag_time_count  is", tag_time_count)
-         # Sort by click rates and event_time, both in descending order
+        # Sort by click rates and event_time, both in descending order
         tag_sorted = tag_time_count.sort_values(
             by=["tag_click_rate", "event_time"], ascending=[False, False]
         )
-        # print("tag_sorted is", tag_sorted)
         # Get type click rates from API
         self.tag_count_all.index = self.tag_count_all.index.astype(str)  # Ensure index is string
 
         # Fetch type click rates from API
         type_rate_dict = self.get_types_for_click_rates(tag_ids)
-        # print("type_rate_dict is", type_rate_dict)
 
         type_rate_df = pd.DataFrame.from_dict(type_rate_dict, orient='index', columns=['type_click_rate'])
         type_time_count = (
@@ -135,14 +124,11 @@ class CommonTagsChannel:
         .merge(type_rate_df, left_index=True, right_index=True, how='left')
         )
 
-        # print("type_time_count:")
-        # print(type_time_count)
         # Sort by 'type_click_rate' and 'event_time'
         type_sorted = type_time_count.sort_values(
             by=["type_click_rate", "event_time"], ascending=[False, False]
         )
-        # print("type_sorted:")
-        # print(type_sorted)
+
         # Update the class variables
         self.tag_list = tag_sorted.index.tolist()
         self.tag_rate_dict = tag_sorted["tag_click_rate"].to_dict()
@@ -155,7 +141,7 @@ class CommonTagsChannel:
             ]
             top_tags = tags_of_type.head(num_tag)
             results[tag_type] = top_tags["tag_click_rate"].to_dict()
-        # print("results are,", results)
+
         self.all_list = defaultdict(list)
         for tag_type in self.type_list:
             self.candidates_list = []
@@ -244,7 +230,5 @@ class CommonTagsChannel:
         selected_artworks = [artwork for artwork, tag, type_key, weight in final_artwork_selection]
         selected_tags = [tag for artwork, tag, type_key, weight in final_artwork_selection]
         selected_types = [type_key for artwork, tag, type_key, weight in final_artwork_selection]
-        # print(selected_tags)
-        # print(selected_types)
         # Check for duplicates in selected_artworks
         return [selected_artworks], [selected_tags], len(selected_artworks)

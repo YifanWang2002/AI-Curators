@@ -183,3 +183,7 @@ cython_debug/
 # Search
 */dependency-reduced-pom.xml
 */index
+
+# Recommend
+./Recommend/images/*
+./Recommend/output_*/*

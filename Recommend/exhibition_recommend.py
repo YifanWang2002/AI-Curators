@@ -10,20 +10,12 @@ from collections import deque
 
 from channels.exhibition_sim import ExhibitionSimChannel
 from channels.description_sim import DescriptionSimChannel
-from channels.common_tags_exhibition import CommonTagsChannel
-from channels.common_tags import CommonTagsChannel as CommonTagsChannelBackup
 from channels.user_profile import UserProfileChannel
 from channels.random_rec import RandomRecChannel
 from utils.debug import save_images, read_user_log
-from api.data import get_all_exhibitions_ids
+from api.data import get_all_exhibitions_ids, get_exhibitions_by_ids
 
 random.seed(0)
-
-
-def get_metadata(data_dir):
-    metadata = pd.read_csv(os.path.join(data_dir, "exhibition_data.csv"))
-    return metadata
-
 
 def load_configs(config_path):
     with open(config_path, "r", encoding="utf-8") as f:
@@ -35,21 +27,18 @@ def load_configs(config_path):
 
 
 class ExhibitionRecommender:
-    def __init__(self, user_id, metadata, configs):
+    def __init__(self, user_id, configs):
         self.user_id = user_id
         data = get_all_exhibitions_ids()
         if not data or data["status"] != "success":
             raise ValueError("Failed to get all artworks with error: ", data["message"])
         self.exhibition_ids = data["data"]
-        self.metadata = metadata
         self.configs = configs
         self.recommended = deque(maxlen=configs["exclude_num_recommended"])
 
-        self.exhibition_sim_channel = ExhibitionSimChannel(metadata=metadata, configs=configs)
+        self.exhibition_sim_channel = ExhibitionSimChannel(configs=configs)
         self.description_sim_channel = DescriptionSimChannel(configs=configs)
         self.user_profile_channel = UserProfileChannel(user_id=user_id, configs=configs)
-        # self.common_tags_channel = CommonTagsChannel(metadata=metadata, configs=configs)
-        # self.common_tags_channel_backup = CommonTagsChannelBackup(metadata=metadata, tag_count_all_path=configs["tag_count_type_path"])
         self.random_rec_channel = RandomRecChannel(configs=configs, metadata=self.exhibition_ids)
 
         # Number of consecutive times of recommendation
@@ -78,17 +67,14 @@ class ExhibitionRecommender:
             user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list[0])
         profile_recs_list, profile_names, len_profile = self.user_profile_channel(
             context_info=context_info, recommended_set=set(self.recommended))
-        # tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
-        # # hotfix:
-        # backup = False
-        # if len_tag == 0:
-        #     tag_recs_list, tag_names, len_tag = self.common_tags_channel_backup(set(self.recommended))
-        #     backup = True
         tag_recs_list, tag_names, len_tag = [], [], 0
         if not context_info["behavior_updated"]:
             self.num_consec += 1
 
-        weights = np.array([1 / len_exhibit, 1 / len_desc, 1 / len_profile, 1 / len_random * self.num_consec])
+        weights = np.array([(1 / len_exhibit) if len_exhibit > 0 else 0,
+                            (1 / len_desc) if len_desc > 0 else 0,
+                            (1 / len_profile) if len_profile > 0 else 0, 
+                            (1 / len_random * self.num_consec) if len_random > 0 else 0])
         weights = 1 / (1 + np.exp(-weights))
         print(weights)
         all_channel_recs = (exhibit_recs_list + desc_recs_list + profile_recs_list + random_recs_list)
@@ -112,16 +98,13 @@ class ExhibitionRecommender:
         print(recs)
         print(rec_channels)
 
-        rec_result = self.metadata.iloc[recs].copy()
         if not os.path.exists(self.configs["output_dir"]):
             os.makedirs(self.configs["output_dir"])
-        if len(rec_result) > 0:
+        rec_result = get_exhibitions_by_ids(recs)
+        if rec_result["status"] == "success" and len(rec_result["data"]) > 0:
             filename = f"Page {str(context_info['page_idx']+1)}"
-            rec_result.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))
-            try:
-                save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result["artwork_id"], rec_result['compressed_url'])
-            except Exception as e:
-                print(e)
+            rec_result_df = pd.DataFrame(rec_result["data"])
+            rec_result_df.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))
 
 if __name__ == "__main__":
 
@@ -129,9 +112,8 @@ if __name__ == "__main__":
     configs = load_configs(os.path.join(cur_path, "configs_exhibition.json"))
     print(configs)
 
-    metadata = get_metadata(configs["data_dir"])
     user_id = 2
-    exhibition_recommender = ExhibitionRecommender(user_id=user_id, metadata=metadata, configs=configs)
+    exhibition_recommender = ExhibitionRecommender(user_id=user_id, configs=configs)
 
     # ==== Run the following code for each new recommendation page ===== #
     for page_idx, is_updated in enumerate([False, False, False]):

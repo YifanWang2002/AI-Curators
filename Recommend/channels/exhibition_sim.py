@@ -9,8 +9,7 @@ from api.data import get_clicked_exhibitions_by_user, get_artworks_id_mapping, g
 
 class ExhibitionSimChannel:
 
-    def __init__(self, metadata, configs):
-        self.metadata = metadata
+    def __init__(self, configs):
         self.configs = configs
         self.image_embedding = np.load(self.configs["image_emb_path"])
         self.artwork_to_embedding, self.embedding_to_artwork = self.get_artwork_id_mapping()

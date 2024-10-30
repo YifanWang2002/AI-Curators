@@ -19,7 +19,6 @@ from utils.debug import save_images, read_user_log
 random.seed(0)
 
 
-
 def load_configs(config_path):
     with open(config_path, "r", encoding="utf-8") as f:
         config_dict = json.load(f)
@@ -75,30 +74,16 @@ class ArtworkRecommender:
             num_tag=self.configs["num_tag"],
             interacted_set=set(unique_log.head(self.configs["exclude_num_interacted"]).index)
         )
-        self.same_artist_channel.update_data(
-            unique_log=unique_log,
-            num_artist=4, #TODO should make it in self.config
-            interacted_set=set(unique_log.head(self.configs["exclude_num_interacted"]).index)
-        )
 
-    def recommend(self, context_info, debug=0):
+    def recommend(self, context_info):
         random_recs_list, random_names, len_random = self.random_rec_channel(
             user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended))
-        if debug == 0 or debug == 2:
-            image_recs_list, image_names, len_image = self.image_sim_channel(
-                user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list[0])
-        else:
-            image_recs_list, image_names, len_image = [[]], [[]], 0
+        image_recs_list, image_names, len_image = self.image_sim_channel(
+            user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list[0])
         profile_recs_list, profile_names, len_profile = self.user_profile_channel(
             context_info=context_info, recommended_set=set(self.recommended))
-        if debug == 0 or debug == 4:
-            tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
-        else:
-            tag_recs_list, tag_names, len_tag = [[]], [[]], 0
-        if debug == 0 or debug == 5:
-            artist_recs_list, artist_names, len_artist = self.same_artist_channel(set(self.recommended))
-        else:
-            artist_recs_list, artist_names, len_artist = [[]], [[]], 0
+        tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
+        artist_recs_list, artist_names, len_artist = self.same_artist_channel(set(self.recommended))
         if not context_info["behavior_updated"]:
             self.num_consec += 1
 
@@ -132,17 +117,17 @@ class ArtworkRecommender:
         print(recs)
         print(rec_channels)
 
-        rec_result = get_artworks_by_ids(recs)
         if not os.path.exists(self.configs["output_dir"]):
             os.makedirs(self.configs["output_dir"])
+        rec_result = get_artworks_by_ids(recs)
         if rec_result["status"] == "success" and len(rec_result["data"]) > 0:
             filename = f"Page {str(context_info['page_idx']+1)}"
             rec_result_df = pd.DataFrame(rec_result["data"])
             rec_result_df.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))
-            # try:
-            #     save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result["artwork_id"], rec_result['compressed_url'])
-            # except Exception as e:
-            #     print(e)
+            try:
+                save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result_df["artwork_id"], rec_result_df['compressed_url'])
+            except Exception as e:
+                print(e)
 
 if __name__ == "__main__":
 
@@ -173,6 +158,4 @@ if __name__ == "__main__":
             artwork_recommender.update_data(user_log)
 
         print(f"Page {page_idx+1}")
-        artwork_recommender.recommend(context_info=context_info, debug=2)
-        if page_idx == 1:
-            break
+        artwork_recommender.recommend(context_info=context_info)
