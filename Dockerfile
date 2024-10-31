@@ -8,6 +8,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     build-essential \
     python3-dev \
+    netcat-openbsd \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first for better caching
@@ -21,11 +22,11 @@ COPY . .
 RUN mkdir -p data/index_files
 
 # Expose the port the app runs on
-EXPOSE 8000
+EXPOSE 5001
 
 # Add wait-for-it script to wait for Redis
 COPY wait-for-it.sh /wait-for-it.sh
 RUN chmod +x /wait-for-it.sh
 
 # Command to run the application
-CMD ["/wait-for-it.sh", "redis:6379", "--", "python", "api.py"]
+CMD ["/wait-for-it.sh", "redis", "--", "python", "api.py"]

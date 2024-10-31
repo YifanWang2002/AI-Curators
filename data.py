@@ -1,6 +1,7 @@
-import requests
-import pandas as pd
 import os
+
+import pandas as pd
+import requests
 
 DATABASE_URL = os.getenv('DATABASE_URL', 'http://localhost:8000/api/data')
 
@@ -69,7 +70,7 @@ def get_artwork_details():
     if response.get('status') == 'success':
         df = convert_to_dataframe(response.get('data', []))
         # Ensure all required columns are present
-        required_columns = ['artwork_id', 'artist_given_name', 'artist_family_name']
+        required_columns = ['artwork_id', 'artist_given_name', 'artist_family_name', 'compressed_url']
         for col in required_columns:
             if col not in df.columns:
                 print(f"Warning: Missing required column {col}")

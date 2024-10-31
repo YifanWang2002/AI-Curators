@@ -1,3 +1,4 @@
+#!/bin/bash
 set -e
 
 host="$1"

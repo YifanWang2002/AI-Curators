@@ -188,3 +188,4 @@ cython_debug/
 # Search
 */dependency-reduced-pom.xml
 */index
+data/mongo/*

@@ -1,15 +1,17 @@
+import json
+import logging
+import os
+import uuid
+from datetime import datetime
+from functools import wraps
+
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from redis import Redis
 from rq import Queue
-import uuid
-import json
-from datetime import datetime
-from functools import wraps
-from config import Config
+
 from app import process_exhibition
-import os
-import logging
+from config import Config
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
@@ -64,7 +66,6 @@ def create_exhibition():
     queue.enqueue(
         process_exhibition,
         prompt,
-        redis_conn,
         task_id,
         job_timeout='30m'
     )

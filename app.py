@@ -1,23 +1,31 @@
-from flask import Flask, jsonify
-from redis import Redis
-from rq import Queue
-import pandas as pd
-from datetime import datetime
 import json
 import logging
-from prompt_based_exhibition.ArtSearch import ArtSearch
-from prompt_based_exhibition.prompt_parser_beta import EntityParser
-from prompt_based_exhibition.exhibition_curator import ExhibitionCurator
-from config import Config
 import os
+from datetime import datetime
+
+import pandas as pd
+from redis import Redis
+
 import data
+from config import Config
+from prompt_based_exhibition.ArtSearch import ArtSearch
+from prompt_based_exhibition.exhibition_curator import ExhibitionCurator
+from prompt_based_exhibition.prompt_parser_beta import EntityParser
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-def process_exhibition(prompt: str, redis_conn, task_id: str) -> None:
+def process_exhibition(prompt: str, task_id: str) -> None:
     """Worker function for processing exhibition generation"""
     try:
+        # Create a Redis connection inside the worker function
+        redis_conn = Redis(
+            host=Config.REDIS_HOST,
+            port=Config.REDIS_PORT,
+            db=Config.REDIS_DB,
+            password=Config.REDIS_PASSWORD,
+            decode_responses=True
+        )
         
         art_search = ArtSearch(data_dir=os.path.join(Config.MODULE_DIR, 'data'))
         entity_parser = EntityParser()
@@ -47,31 +55,38 @@ def process_exhibition(prompt: str, redis_conn, task_id: str) -> None:
             )
 
         # 获取artwork详情并处理
-        artwork_details = art_search.get_artwork_details()
+        artwork_details = data.get_artwork_details()
         if artwork_details.empty:
             raise Exception("Unable to retrieve artwork details from database")
 
-        # 使用你原有的过滤逻辑
+        # 过滤artworks
         filtered_artwork = filter_artworks(artwork_details, tag_results, name_results, artists)
         
         # 更新状态：展示初始图片集
         update_status(redis_conn, task_id, 'images_selected', {
             'artwork_ids': filtered_artwork['artwork_id'].tolist(),
-            'image_urls': filtered_artwork['image_url'].tolist()  # 假设存在image_url列
+            'image_urls': filtered_artwork['compressed_url'].tolist()
         })
         
         # 生成展览
         curator = ExhibitionCurator(metadata=artwork_details)
         use_author = bool(artists)
         exhibitions = curator.curate(filtered_artwork, prompt, use_author)
-        
+        print(exhibitions)
         # 更新状态：完成
         update_status(redis_conn, task_id, 'completed', {
-            'exhibitions': exhibitions[:3]  # 只返回前三个展览
+            'exhibitions': exhibitions[:3]  # 返回前三个展览
         })
         
     except Exception as e:
         logger.error(f"Error processing exhibition: {str(e)}")
+        redis_conn = Redis(
+            host=Config.REDIS_HOST,
+            port=Config.REDIS_PORT,
+            db=Config.REDIS_DB,
+            password=Config.REDIS_PASSWORD,
+            decode_responses=True
+        )
         update_status(redis_conn, task_id, 'error', {'error': str(e)})
         raise
 
@@ -120,7 +135,7 @@ def prepare_metadata(df: pd.DataFrame) -> pd.DataFrame:
     
     required_columns = [
         'index', 'artwork_id', 'artist_given_name', 'artist_family_name',
-        'artwork_name', 'artwork_date', 'artwork_type', 'artwork_material'
+        'artwork_name', 'artwork_date', 'artwork_type', 'artwork_material', 'compressed_url'
     ]
     
     for col in required_columns:

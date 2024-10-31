@@ -1,14 +1,15 @@
-import pandas as pd
-from openai import OpenAI
-from sentence_transformers import SentenceTransformer
-import numpy as np
-from time import time
 import os
-from sklearn.cluster import AgglomerativeClustering
-from pydantic import BaseModel
+from time import time
 from typing import List
 
 import dotenv
+import numpy as np
+import pandas as pd
+from openai import OpenAI
+from pydantic import BaseModel
+from sentence_transformers import SentenceTransformer
+from sklearn.cluster import AgglomerativeClustering
+
 dotenv.load_dotenv()
 
 class ExhibitionResponse(BaseModel):
@@ -119,7 +120,7 @@ class ExhibitionCurator:
                     'curator_id': index,
                     'pieces_count': len(grouped_ids[index])
                 }
-                
+                print(f"Exhibition {index} created")
                 responses.append(exhibition_temp)
             except Exception as e:
                 print(f"Error processing exhibition: {e}")
