@@ -145,8 +145,12 @@ def get_clicked_exhibitions_by_user(user_id):
     return get_data(url)
 
 def get_tag_preferences_by_user(user_id):
-    url = f"{DATABASE_URL}/data/user_recommendation/{user_id}/tag_preference"
-    return get_data(url)
+    url = f"{DATABASE_URL}/data/user_profile/tag_preference/{user_id}"
+    result = get_data(url)
+    if result and result["status"] == "success":
+        return result["data"]
+    else:
+        return []
 
 def get_tag_score_by_id(tag_id):
     url = f"{DATABASE_URL}/data/tag_score/{tag_id}"
@@ -170,7 +174,7 @@ def get_artist_by_name(artist_name, fuzzy=False):
 def get_location_by_name(location):
     url = f"{DATABASE_URL}/data/location/{location}"
     return get_data(url)
-    
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

@@ -124,10 +124,10 @@ class ArtworkRecommender:
             filename = f"Page {str(context_info['page_idx']+1)}"
             rec_result_df = pd.DataFrame(rec_result["data"])
             rec_result_df.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))
-            try:
-                save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result_df["artwork_id"], rec_result_df['compressed_url'])
-            except Exception as e:
-                print(e)
+            # try:
+            #     save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result_df["artwork_id"], rec_result_df['compressed_url'])
+            # except Exception as e:
+            #     print(e)
 
 if __name__ == "__main__":
 
