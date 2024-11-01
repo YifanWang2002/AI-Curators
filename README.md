@@ -69,8 +69,15 @@ data/
 
 ## build docker and run (use `docker-compose` or `docker compose`)
 1. `docker compose up --build` (build and run)
-      - 1.1 run API-data container from backend-python repo
-      - 1.2 run API-exhibition container from this repo
+      - Start API-data first (in data repo)
+      - `cd api-data/docker`
+      - `docker compose up -d`
+            - image: `mongo-latest`: 27017:27017
+            - image: `docker-flask-app`: 8000:5000
+      - Then start API-exhibition (in this repo)
+      - `cd AI-Curators/`
+      - `docker compose up -d`
+            - image: `ai-curators-api`: 5000:5000
 2. `docker compose up -d` (detached mode)
 3. `docker compose down` (stop and remove containers)
 4. load data to MongoDB using curl in [dump-the-files](https://github.com/Metaverse-Museum/Back-End-Python?tab=readme-ov-file#dump-the-files)
@@ -86,7 +93,8 @@ data/
 ## rebuild docker if you change the Dockerfile
 ```bash
 docker compose down
-docker compose up -d --build
+docker compose build
+docker compose up -d
 ```
 
 #### prompt_based_exhibition/

@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 import os
 
-DATABASE_URL = os.getenv('DATABASE_URL', 'http://localhost:8000/api/data')
+DATABASE_URL = os.getenv('DATABASE_URL', 'http://localhost:5000/api/data') # docker or local
 
 
 def get_data(url):

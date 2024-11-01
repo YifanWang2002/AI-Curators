@@ -129,7 +129,7 @@ if __name__ == "__main__":
     start_time = time()
     
     # Generate exhibitions
-    prompt = "I like vincent's sad artwork"
+    prompt = "I like countryside artwork"
     exhibitions = generate_exhibitions(prompt)
     
     print(f'Total time taken: {time() - start_time} seconds')

@@ -4,9 +4,9 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 from time import time
 import os
-from sklearn.cluster import AgglomerativeClustering
 from pydantic import BaseModel
 from typing import List
+from k_means_constrained import KMeansConstrained
 
 import dotenv
 dotenv.load_dotenv()
@@ -47,10 +47,20 @@ class ExhibitionCurator:
         merged_df = recommendation_df.merge(self.metadata[['artwork_id', 'embedding']], on='artwork_id', how='left')
         # Get embeddings from metadata using indices
         top_k_description_embeddings = np.stack(merged_df['embedding'].values)
-        if use_author:
-            clustering_model = AgglomerativeClustering(n_clusters=3)
-        else:
-            clustering_model = AgglomerativeClustering(n_clusters=None, distance_threshold=1.3)
+        
+        # Calculate cluster sizes based on total number of items
+        total_items = len(top_k_description_embeddings)
+        min_size = total_items // 3
+        max_size = min_size + 1
+        
+        # Initialize KMeansConstrained with size constraints
+        clustering_model = KMeansConstrained(
+            n_clusters=3,
+            size_min=min_size,
+            size_max=max_size,
+            random_state=42
+        )
+        
         clustering_model.fit(top_k_description_embeddings)
         
         # Use loc to set values

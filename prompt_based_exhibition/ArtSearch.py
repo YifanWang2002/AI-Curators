@@ -4,7 +4,6 @@ import pandas as pd
 import faiss
 from sentence_transformers import SentenceTransformer
 import torch
-import pickle
 
 class ArtSearch:
     def __init__(self, data_dir="../data", use_precomputed=True):
