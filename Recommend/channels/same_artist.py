@@ -1,6 +1,6 @@
 import random
 import pandas as pd
-from api.data import get_artworks_by_artist_id, get_artworks_by_same_artist, get_clicked_artworks_by_user
+from Recommend.api.data import get_artworks_by_artist_id, get_artworks_by_same_artist, get_clicked_artworks_by_user
 
 class SameArtistChannel:
     def __init__(self, configs):

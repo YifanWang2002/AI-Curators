@@ -4,7 +4,7 @@ import faiss
 import itertools
 import numpy as np
 import pandas as pd
-from api.data import get_clicked_exhibitions_by_user
+from Recommend.api.data import get_clicked_exhibitions_by_user
 
 
 class DescriptionSimChannel:

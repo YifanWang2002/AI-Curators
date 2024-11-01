@@ -1,5 +1,7 @@
 fastapi
 uvicorn[standard]
+Flask
+
 
 streamlit
 st_clickable_images

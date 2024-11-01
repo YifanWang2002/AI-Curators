@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from collections import defaultdict
-from api.data import get_clicked_artworks_by_user, get_all_tags, get_artworks_by_tag_id, get_tags_by_artwork_ids, get_clicked_artworks_by_user, get_tags_click_rates, get_type_click_rates
+from Recommend.api.data import get_clicked_artworks_by_user, get_all_tags, get_artworks_by_tag_id, get_tags_by_artwork_ids, get_clicked_artworks_by_user, get_tags_click_rates, get_type_click_rates
 
 class CommonTagsChannel:
     def __init__(self, configs):

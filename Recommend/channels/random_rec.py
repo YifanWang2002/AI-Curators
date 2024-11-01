@@ -1,5 +1,5 @@
 import random
-from api.data import get_clicked_artworks_by_user, get_clicked_exhibitions_by_user
+from Recommend.api.data import get_clicked_artworks_by_user, get_clicked_exhibitions_by_user
 
 
 class RandomRecChannel:

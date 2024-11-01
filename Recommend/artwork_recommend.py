@@ -7,14 +7,14 @@ import numpy as np
 from datetime import datetime
 from collections import deque
 
-from channels.image_sim import ImageSimChannel
-from channels.common_tags_artwork import CommonTagsChannel
-from channels.user_profile import UserProfileChannel
-from channels.random_rec import RandomRecChannel
-from channels.same_artist import SameArtistChannel
+from Recommend.channels.image_sim import ImageSimChannel
+from Recommend.channels.common_tags_artwork import CommonTagsChannel
+from Recommend.channels.user_profile import UserProfileChannel
+from Recommend.channels.random_rec import RandomRecChannel
+from Recommend.channels.same_artist import SameArtistChannel
 
-from api.data import get_all_artworks_ids, get_artworks_by_ids, get_clicked_artworks_by_user
-from utils.debug import save_images, read_user_log
+from Recommend.api.data import get_all_artworks_ids, get_artworks_by_ids, get_clicked_artworks_by_user
+from Recommend.utils.debug import save_images, read_user_log
 
 random.seed(0)
 
@@ -128,6 +128,10 @@ class ArtworkRecommender:
                 save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result_df["artwork_id"], rec_result_df['compressed_url'])
             except Exception as e:
                 print(e)
+        return {
+        "recommendations": recs,
+        "channels": rec_channels
+        }
 
 if __name__ == "__main__":
 

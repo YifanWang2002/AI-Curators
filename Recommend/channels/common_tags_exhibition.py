@@ -3,7 +3,7 @@ import random
 import numpy as np
 import pandas as pd
 from collections import defaultdict
-from api.data import get_clicked_exhibitions_by_user, get_exhibitions_by_tag_id, get_all_tags, get_tags_by_exhibition_ids, get_tags_click_rates, get_type_click_rates
+from Recommend.api.data import get_clicked_exhibitions_by_user, get_exhibitions_by_tag_id, get_all_tags, get_tags_by_exhibition_ids, get_tags_click_rates, get_type_click_rates
 
 class CommonTagsChannel:
     def __init__(self, configs):

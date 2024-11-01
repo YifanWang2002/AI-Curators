@@ -33,19 +33,15 @@
         "description": "Number of artists to recommend by default"
     },
     "interacted_dir": {
-        "value": "./interacted_logs",
+        "value": "/app/Recommend/interacted_logs",
         "description": "Directory for interacted data"
     },
     "data_dir": {
-        "value": "../data",
+        "value": "/app/data",
         "description": "Directory containing data files"
     },
-    "image_dir": {
-        "value": "../images",
-        "description": "Directory containing image files"
-    },
     "pre_survey_dir": {
-        "value": "./pre_survey",
+        "value": "/app/Recommend/pre_survey",
         "description": "Directory containing pre-survey data files"
     },
     "output_dir": {

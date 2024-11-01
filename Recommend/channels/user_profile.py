@@ -4,7 +4,7 @@ import faiss
 import itertools
 import numpy as np
 import pandas as pd
-from api.data import get_clicked_artworks_by_user, get_clicked_exhibitions_by_user, get_all_tags, get_artworks_by_tag_id, get_exhibitions_by_tag_id
+from Recommend.api.data import get_clicked_artworks_by_user, get_clicked_exhibitions_by_user, get_all_tags, get_artworks_by_tag_id, get_exhibitions_by_tag_id
 
 
 class UserProfileChannel:

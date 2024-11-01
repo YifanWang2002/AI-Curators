@@ -8,12 +8,12 @@ from PIL import Image
 from datetime import datetime
 from collections import deque
 
-from channels.exhibition_sim import ExhibitionSimChannel
-from channels.description_sim import DescriptionSimChannel
-from channels.user_profile import UserProfileChannel
-from channels.random_rec import RandomRecChannel
-from utils.debug import save_images, read_user_log
-from api.data import get_all_exhibitions_ids, get_exhibitions_by_ids
+from Recommend.channels.exhibition_sim import ExhibitionSimChannel
+from Recommend.channels.description_sim import DescriptionSimChannel
+from Recommend.channels.user_profile import UserProfileChannel
+from Recommend.channels.random_rec import RandomRecChannel
+from Recommend.utils.debug import save_images, read_user_log
+from Recommend.api.data import get_all_exhibitions_ids, get_exhibitions_by_ids
 
 random.seed(0)
 
@@ -105,7 +105,10 @@ class ExhibitionRecommender:
             filename = f"Page {str(context_info['page_idx']+1)}"
             rec_result_df = pd.DataFrame(rec_result["data"])
             rec_result_df.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))
-
+        return {
+        "recommendations": recs,
+        "channels": rec_channels
+        }
 if __name__ == "__main__":
 
     cur_path = os.path.dirname(os.path.abspath(__file__))
