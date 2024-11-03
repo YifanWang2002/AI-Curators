@@ -4,11 +4,12 @@
 transformers[torch]
 faiss-cpu
 sentence-transformers
-numpy
+numpy==1.23.5
 scipy
 pandas
 openai
 python-Levenshtein
+k-means-constrained # for constrained clustering
 
 # flask
 flask
@@ -26,24 +27,4 @@ apscheduler
 cryptography==41.0.1
 WTForms==2.3.3
 fuzzywuzzy
-
-# Optional
-# openai-whisper
-
-# in Flask app not used for now
-# Web Frameworks
-# fastapi
-# uvicorn[standard]
-# Flask
-# Flask-Admin
-# Flask-Migrate
-# Flask-PyMongo
-# Flask-SQLAlchemy
-# flask_swagger_ui
-
-# # Database
-# pymongo
-# mongoengine
-# pymysql
-# psycopg2-binary
-# SQLAlchemy
+requests

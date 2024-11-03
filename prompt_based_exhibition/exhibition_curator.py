@@ -5,10 +5,10 @@ from typing import List
 import dotenv
 import numpy as np
 import pandas as pd
+from k_means_constrained import KMeansConstrained
 from openai import OpenAI
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
-from sklearn.cluster import AgglomerativeClustering
 
 dotenv.load_dotenv()
 
@@ -48,10 +48,20 @@ class ExhibitionCurator:
         merged_df = recommendation_df.merge(self.metadata[['artwork_id', 'embedding']], on='artwork_id', how='left')
         # Get embeddings from metadata using indices
         top_k_description_embeddings = np.stack(merged_df['embedding'].values)
-        if use_author:
-            clustering_model = AgglomerativeClustering(n_clusters=3)
-        else:
-            clustering_model = AgglomerativeClustering(n_clusters=None, distance_threshold=1.3)
+        
+        # Calculate cluster sizes based on total number of items
+        total_items = len(top_k_description_embeddings)
+        min_size = total_items // 3
+        max_size = min_size + 1
+        
+        # Initialize KMeansConstrained with size constraints
+        clustering_model = KMeansConstrained(
+            n_clusters=3,
+            size_min=min_size,
+            size_max=max_size,
+            random_state=42
+        )
+        
         clustering_model.fit(top_k_description_embeddings)
         
         # Use loc to set values
@@ -120,7 +130,7 @@ class ExhibitionCurator:
                     'curator_id': index,
                     'pieces_count': len(grouped_ids[index])
                 }
-                print(f"Exhibition {index} created")
+                
                 responses.append(exhibition_temp)
             except Exception as e:
                 print(f"Error processing exhibition: {e}")
