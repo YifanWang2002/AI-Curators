@@ -9,8 +9,6 @@ COPY Recommend/ /app/Recommend/
 
 COPY data /app/data
 
-COPY new_data /app/new_data
-
 COPY app.py /app/
 
 EXPOSE 5000

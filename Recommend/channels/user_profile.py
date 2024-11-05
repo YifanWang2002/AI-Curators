@@ -1,9 +1,7 @@
 import os
-import json
 import faiss
-import itertools
+import logging
 import numpy as np
-import pandas as pd
 from Recommend.api.data import get_clicked_artworks_by_user, get_artworks_by_tag_id
 from Recommend.api.data import get_clicked_exhibitions_by_user, get_exhibitions_by_tag_id
 from Recommend.api.data import get_tag_preferences_by_user, get_all_tags
@@ -63,6 +61,7 @@ class UserProfileChannel:
         recs_tag_list = []
         for i in range(len(I)):
             recs_tag_list.append([(I[i, j], D[i, j]) for j in range(len(I[i])) if j != 0])
+        logging.info("Finding similar tags for user profile")
         recs_object_list = []
         for i, recs in enumerate(recs_tag_list):
             object_recs = set()
@@ -75,16 +74,19 @@ class UserProfileChannel:
                     raise ValueError(f"Invalid object type: {self.configs['object_type']}")
                 if data and data["status"] == "success":
                     object_recs.update(data["data"])
+            logging.info("Found %d recommendations for tag %d", len(object_recs), i)
             recs_object_list.append(object_recs)
         return recs_object_list
     
     def personalized_tags_recs(self, exclude_set):
+        logging.info("Getting personalized recommendations based on user profile tags")
         num_per_tag_type = self.num_per_page
         recs_list = self.get_recs_list_by_tags(num_per_tag_type)
         filtered_recs_list = [
             list(recs.difference(exclude_set)) for recs in recs_list
         ]
         iteration = 0
+        logging.info("Filtering out interacted artworks in iteration %d", iteration)
         while sum(len(recs) < self.num_per_page for recs in filtered_recs_list) == len(self.tag_prefernece_ids) and iteration < 5:
             num_per_tag_type += self.num_per_page
             recs_list = self.get_recs_list_by_tags(num_per_tag_type)
@@ -92,9 +94,11 @@ class UserProfileChannel:
                 list(recs.difference(exclude_set)) for recs in recs_list
             ]
             iteration += 1
+            logging.info("Filtering out interacted artworks in iteration %d", iteration)
         recs_hash = {}
         for i, x in enumerate(self.tag_prefernece_ids):
             recs_hash.update({k: f"Profile Tag: {x}" for k in filtered_recs_list[i]})
+        logging.info("Final results in user profile are generated")
         return list(recs_hash.keys()), list(recs_hash.values()), len(recs_hash)
     
     def personalized_queries_recs(self, exclude_set):

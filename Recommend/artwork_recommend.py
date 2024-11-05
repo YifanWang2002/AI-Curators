@@ -1,5 +1,5 @@
 import os
-import ast
+import logging
 import json
 import random
 import pandas as pd
@@ -15,8 +15,6 @@ from Recommend.channels.same_artist import SameArtistChannel
 
 from Recommend.api.data import get_all_artworks_ids, get_artworks_by_ids, get_clicked_artworks_by_user
 from Recommend.utils.debug import save_images, read_user_log
-
-random.seed(0)
 
 
 def load_configs(config_path):
@@ -78,15 +76,20 @@ class ArtworkRecommender:
     def recommend(self, context_info):
         random_recs_list, random_names, len_random = self.random_rec_channel(
             user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended))
+        logging.info(f"Random recommendations: {len_random}")
         image_recs_list, image_names, len_image = self.image_sim_channel(
             user_id=self.user_id, context_info=context_info, recommended_set=set(self.recommended), default_list=random_recs_list[0])
+        logging.info(f"Image simularity recommendations: {len_image}")
         profile_recs_list, profile_names, len_profile = self.user_profile_channel(
             context_info=context_info, recommended_set=set(self.recommended))
+        logging.info(f"User profile recommendations: {len_profile}")
         tag_recs_list, tag_names, len_tag = self.common_tags_channel(set(self.recommended))
+        logging.info(f"Common tags recommendations: {len_tag}")
         artist_recs_list, artist_names, len_artist = self.same_artist_channel(set(self.recommended))
+        logging.info(f"Same artist recommendations: {len_artist}")
         if not context_info["behavior_updated"]:
             self.num_consec += 1
-
+        
         weights = np.array([(1 / len_image) if len_image > 0 else 0,
                             (1 / len_profile) if len_profile > 0 else 0, 
                             (1 / len_tag) if len_tag > 0 else 0, 
@@ -124,10 +127,6 @@ class ArtworkRecommender:
             filename = f"Page {str(context_info['page_idx']+1)}"
             rec_result_df = pd.DataFrame(rec_result["data"])
             rec_result_df.to_csv(os.path.join(self.configs["output_dir"], filename + ".csv"))
-            try:
-                save_images(os.path.join(self.configs["output_dir"], filename + ".jpg"), rec_result_df["artwork_id"], rec_result_df['compressed_url'])
-            except Exception as e:
-                print(e)
         
         return {"recommendations": recs, "channels": rec_channels}
 
@@ -155,7 +154,6 @@ if __name__ == "__main__":
                 result = pd.DataFrame(result["data"])
                 filename = f"user_log_{page_idx}"
                 result.to_csv(os.path.join(configs["output_dir"], filename + ".csv"))
-                save_images(os.path.join(configs["output_dir"], filename + ".jpg"), result["artwork_id"], result['compressed_url'])
 
             artwork_recommender.update_data(user_log)
 

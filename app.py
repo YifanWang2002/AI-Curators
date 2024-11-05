@@ -19,19 +19,19 @@ def load_configs(config_path):
             config_dict[key] = value["value"]
     return config_dict
 
-user_id = 2
-artwork_configs = load_configs("Recommend/configs.json")
-artwork_recommender = ArtworkRecommender(user_id=user_id, configs=artwork_configs)
-
 @app.route('/recommend/artwork', methods=['GET'])
 def recommend_artwork():
     try:
+        user_id = int(request.args.get("user_id", 0))
+        if user_id == 0:
+            return jsonify({"status": "error", "message": f"{user_id} is not set"}), 404
+        artwork_configs = load_configs("Recommend/configs.json")
+        artwork_recommender = ArtworkRecommender(user_id=user_id, configs=artwork_configs)
         behavior_updated = request.args.get("behavior_updated", "false").lower() == "true"
         page_idx = int(request.args.get("page_idx", 0))
-        timestamp = int(request.args.get("timestamp", datetime.now().timestamp()))
 
         context_info = {
-            "timestamp": timestamp,
+            "timestamp": int(datetime.now().timestamp()),
             "behavior_updated": behavior_updated,
             "page_idx": page_idx
         }
@@ -50,13 +50,11 @@ def recommend_artwork():
                 output_dir = artwork_configs["output_dir"]
                 if not os.path.exists(output_dir):
                     os.makedirs(output_dir)
-                result_df.to_csv(os.path.join(output_dir, filename + ".csv"), index=False)
-                save_images(os.path.join(output_dir, filename + ".jpg"), result_df["artwork_id"], result_df['compressed_url'])
+                result_df.to_csv(os.path.join(output_dir, filename + ".csv"), index=False)            
             
             artwork_recommender.update_data(user_log)
 
         recommendations = artwork_recommender.recommend(context_info)
-        
         return jsonify({"status": "success", "data": recommendations}), 200
     except Exception as e:
         logging.error("Error generating recommendations: %s", str(e))

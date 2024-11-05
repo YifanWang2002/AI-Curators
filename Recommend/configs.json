@@ -1,7 +1,7 @@
 {
     "object_type": "artwork",
     "num_per_page": { 
-        "value": 40,
+        "value": 20,
         "description": "Number of recommendations per page"
     },
     "exclude_num_interacted": {
@@ -11,10 +11,6 @@
     "exclude_num_recommended": {
         "value": 200,
         "description": "Number of recently recommended artworks to be excluded from recommendations"
-    },
-    "num_image": {
-        "value": 8,
-        "description": "Number of unique artworks to create recommendations for (number of sub-channels in image-based recommendation)"
     },
     "shuffle_len": {
         "value": 20,
@@ -32,20 +28,8 @@
         "value": 3885,
         "description": "Number of artists to recommend by default"
     },
-    "interacted_dir": {
-        "value": "/app/Recommend/interacted_logs",
-        "description": "Directory for interacted data"
-    },
-    "data_dir": {
-        "value": "/app/data",
-        "description": "Directory containing data files"
-    },
-    "pre_survey_dir": {
-        "value": "/app/Recommend/pre_survey",
-        "description": "Directory containing pre-survey data files"
-    },
     "output_dir": {
-        "value": "output_1006",
+        "value": "/app/Recommend/output",
         "description": "Directory to save output files"
     },
     "image_emb_index_path": {
@@ -57,19 +41,11 @@
         "description": "image embedding file path"
     },
     "tag_emb_index_path": {
-        "value": "/app/new_data/tag_clip.index",
+        "value": "/app/data/tag_clip.index",
         "description": "tag embedding file path"
     },
     "tag_emb_path": {
-        "value": "/app/new_data/tag_embeddings.npy",
+        "value": "/app/data/tag_embeddings.npy",
         "description": "tag embedding file path"
-    },
-    "tag_count_type_path": {
-        "value": "/app/new_data/tag_count_type.csv",
-        "description": "file path for tag_count_type.csv"
-    },
-    "tag_to_object_mapping_path": {
-        "value": "/app/data/tags2artworks_mapping.json",
-        "description": "file path for tag to object mapping, key: tag, value: list of artwork ids"
     }
 }

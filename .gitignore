@@ -185,5 +185,5 @@ cython_debug/
 */index
 
 # Recommend
-./Recommend/images/*
-./Recommend/output_*/*
+Recommend/images/*
+Recommend/output/*
