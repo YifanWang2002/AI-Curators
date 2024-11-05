@@ -4,7 +4,7 @@ import random
 import itertools
 import numpy as np
 import pandas as pd
-from api.data import get_clicked_exhibitions_by_user, get_artworks_id_mapping, get_art_pieces_in_exhibition
+from Recommend.api.data import get_clicked_exhibitions_by_user, get_artworks_id_mapping, get_art_pieces_in_exhibition
 
 
 class ExhibitionSimChannel:

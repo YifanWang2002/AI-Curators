@@ -1,7 +1,7 @@
 import requests
 import sys
 
-DATABASE_URL = "http://localhost:8000/api"
+DATABASE_URL = "http://host.docker.internal:8000/api"
 
 def get_data(url):
     try:

@@ -25,11 +25,11 @@
         "description": "Number of unique log entries for calculating tag click rates"
     },
     "interacted_dir": {
-        "value": "./interacted_logs",
+        "value": "/app/Recommend/interacted_logs",
         "description": "Directory for interacted data"
     },
     "data_dir": {
-        "value": "../data",
+        "value": "/app/data",
         "description": "Directory containing data files"
     },
     "image_dir": {
@@ -37,7 +37,7 @@
         "description": "Directory containing image files"
     },
     "pre_survey_dir": {
-        "value": "./pre_survey",
+        "value": "/app/Recommend/pre_survey",
         "description": "Directory containing pre-survey data files"
     },
     "output_dir": {
@@ -45,43 +45,43 @@
         "description": "Directory to save output files"
     },
     "image_emb_index_path": {
-        "value": "../data/artworks_dino.index",
+        "value": "/app/data/artworks_dino.index",
         "description": "image embedding index file path"
     },
     "image_emb_path": {
-        "value": "../data/embeds_dino.npy",
+        "value": "/app/data/embeds_dino.npy",
         "description": "image embedding file path"
     },
     "exhibition_emb_index_path": {
-        "value": "../data/exhibition_dino.index",
+        "value": "/app/data/exhibition_dino.index",
         "description": "exhibition embedding index file path"
     },
     "exhibition_emb_path": {
-        "value": "../data/exhibition_embeddings.npy",
+        "value": "/app/data/exhibition_embeddings.npy",
         "description": "exhibition embedding file path"
     },
     "tag_emb_index_path": {
-        "value": "../new_data/tag_clip.index",
+        "value": "/app/new_data/tag_clip.index",
         "description": "tag embedding file path"
     },
     "tag_emb_path": {
-        "value": "../new_data/tag_embeddings.npy",
+        "value": "/app/new_data/tag_embeddings.npy",
         "description": "tag embedding file path"
     },
     "tag_count_type_path": {
-        "value": "../new_data/tag_count_type.csv",
+        "value": "/app/new_data/tag_count_type.csv",
         "description": "file path for tag_count_type.csv"
     },
     "tag_to_object_mapping_path": {
-        "value": "../data/tags2exhibitions_mapping.json",
+        "value": "/app/data/tags2exhibitions_mapping.json",
         "description": "file path for tag to object mapping, key: tag, value: list of exhibition ids"
     },
     "desc_emb_index_path": {
-        "value": "../data/exhibition_descriptions_bert.index",
+        "value": "/app/data/exhibition_descriptions_bert.index",
         "description": "description embedding file path"
     },
     "desc_emb_path": {
-        "value": "../data/exhibition_descriptions.npy",
+        "value": "/app/data/exhibition_descriptions.npy",
         "description": "description embedding file path"
     }
 }

@@ -2,7 +2,7 @@ import os
 import faiss
 import itertools
 import numpy as np
-from api.data import get_clicked_artworks_by_user, get_artworks_id_mapping
+from Recommend.api.data import get_clicked_artworks_by_user, get_artworks_id_mapping
 
 
 class ImageSimChannel:
