@@ -5,6 +5,7 @@ from datetime import datetime
 
 import pandas as pd
 from redis import Redis
+from mongoengine import Document, StringField, IntField, ListField, connect, disconnect
 
 import data
 from config import Config
@@ -15,7 +16,32 @@ from prompt_based_exhibition.prompt_parser_beta import EntityParser
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-def process_exhibition(prompt: str, task_id: str) -> None:
+class Exhibition(Document):
+    exhibition_id = IntField(primary_key=True, required=True, index=True)
+    title = StringField(required=True)
+    description = StringField()
+    pieces_count = IntField()
+    art_pieces = ListField(IntField())  # List of artwork IDs
+    curator_id = IntField()
+
+    meta = {'collection': 'dim_exhibition'}
+
+def setup_mongodb():
+    """Setup MongoDB connection"""
+    try:
+        # Disconnect any existing connections
+        disconnect()
+        # Connect to MongoDB
+        connect(
+            db=Config.MONGODB_DB,
+            host=Config.MONGODB_HOST
+        )
+        logger.info("Successfully connected to MongoDB")
+    except Exception as e:
+        logger.error(f"Failed to connect to MongoDB: {str(e)}")
+        raise
+
+def process_exhibition(prompt: str, task_id: str, curator_id: int) -> None:
     """Worker function for processing exhibition generation"""
     try:
         # Create a Redis connection inside the worker function
@@ -68,15 +94,26 @@ def process_exhibition(prompt: str, task_id: str) -> None:
             'image_urls': filtered_artwork['compressed_url'].tolist()
         })
         
+        # Get next available exhibition IDs before generating exhibitions
+        last_exhibition = Exhibition.objects.order_by('-exhibition_id').first()
+        next_id = (last_exhibition.exhibition_id + 1) if last_exhibition else 1
+        
         # 生成展览
-        curator = ExhibitionCurator(metadata=artwork_details)
+        curator = ExhibitionCurator(
+            metadata=artwork_details, 
+            start_id=next_id,
+            curator_id=curator_id  # Add curator_id parameter
+        )
         use_author = bool(artists)
         exhibitions = curator.curate(filtered_artwork, prompt, use_author)
         print(exhibitions)
+        
         # 更新状态：完成
         update_status(redis_conn, task_id, 'completed', {
             'exhibitions': exhibitions[:3]  # 返回前三个展览
         })
+
+        store_exhibitions(exhibitions)
         
     except Exception as e:
         logger.error(f"Error processing exhibition: {str(e)}")
@@ -171,3 +208,30 @@ def get_artwork_by_tags(search_results: pd.DataFrame, artwork_df: pd.DataFrame) 
         return artwork_df
     
     return artwork_df[artwork_df['artwork_id'].isin(artwork_ids)]
+
+
+def store_exhibitions(exhibitions: list) -> None:
+    """Store exhibitions in MongoDB"""
+    try:
+        # Ensure MongoDB connection is established
+        setup_mongodb()
+        
+        stored_exhibitions = []
+        for exhibition in exhibitions:
+            # Create new Exhibition document using the pre-assigned ID
+            new_exhibition = Exhibition(
+                exhibition_id=exhibition['exhibition_id'],  # Use the pre-assigned ID
+                title=exhibition['title'],
+                description=exhibition['description'],
+                pieces_count=exhibition['pieces_count'],
+                art_pieces=exhibition['art_pieces'],
+                curator_id=exhibition['curator_id']
+            )
+            new_exhibition.save()
+            stored_exhibitions.append(new_exhibition)
+
+        logger.info(f"Successfully stored {len(stored_exhibitions)} exhibitions")
+        return stored_exhibitions
+    except Exception as e:
+        logger.error(f"Error storing exhibitions: {str(e)}")
+        raise

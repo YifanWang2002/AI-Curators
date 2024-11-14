@@ -17,10 +17,12 @@ class ExhibitionResponse(BaseModel):
     description: str
 
 class ExhibitionCurator:
-    def __init__(self, metadata, embedding_model=SentenceTransformer('all-MiniLM-L6-v2')):
+    def __init__(self, metadata, embedding_model=SentenceTransformer('all-MiniLM-L6-v2'), start_id=None, curator_id=0):
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         self.metadata = metadata
         self.embedding_model = embedding_model
+        self.start_id = start_id
+        self.curator_id = curator_id
         self.descriptions = self.metadata.apply(self.get_description, axis=1)
         # print('**** Getting embeddings of descriptions ****')
         embeddings_path = os.path.join(os.getcwd(), 'data', 'index_files', 'description_embeddings.npy')
@@ -102,7 +104,7 @@ class ExhibitionCurator:
         Write in a warm, inviting tone that focuses on themes and connections rather than sequence.
         """.strip()
 
-        for index, exhibition in enumerate(exhibitions):  # Add index to the loop
+        for index, exhibition in enumerate(exhibitions):
             try:
                 completion = self.client.beta.chat.completions.parse(
                     model="gpt-4o-mini", 
@@ -123,24 +125,24 @@ class ExhibitionCurator:
                 
                 # Simplified exhibition creation
                 exhibition_temp = {
-                    'exhibition_id': index,
+                    'exhibition_id': self.start_id + index,
                     'title': response.title,
                     'description': response.description,
-                    'art_pieces': list(grouped_ids[index]),  # Use original order directly
-                    'curator_id': index,
+                    'art_pieces': list(grouped_ids[index]),
+                    'curator_id': self.curator_id,
                     'pieces_count': len(grouped_ids[index])
                 }
                 
                 responses.append(exhibition_temp)
             except Exception as e:
                 print(f"Error processing exhibition: {e}")
-                # Fallback to original order if parsing fails
+                # Fallback with real exhibition ID
                 exhibition_temp = {
-                    'exhibition_id': index,
+                    'exhibition_id': self.start_id + index,
                     'title': 'Untitled Exhibition',
                     'description': 'Exhibition details unavailable',
                     'art_pieces': list(grouped_ids[index]),
-                    'curator_id': index,
+                    'curator_id': self.curator_id,
                     'pieces_count': len(grouped_ids[index]),
                 }
                 responses.append(exhibition_temp)

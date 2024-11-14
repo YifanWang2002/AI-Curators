@@ -9,6 +9,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 from redis import Redis
 from rq import Queue
+from utils.auth_utils import require_auth
 
 from app import process_exhibition
 from config import Config
@@ -41,14 +42,16 @@ def handle_errors(f):
     return wrapper
 
 @app.route('/api/exhibition/create', methods=['POST'])
+@require_auth
 @handle_errors
-def create_exhibition():
+def create_exhibition(token_data, user_id):
     """Initialize exhibition generation process"""
     request_data = request.get_json()
     if not request_data or 'prompt' not in request_data:
         return jsonify({'error': 'No prompt provided'}), 400
     
     prompt = request_data['prompt']
+    curator_id = user_id
     task_id = str(uuid.uuid4())
     
     # 存储初始状态
@@ -58,7 +61,8 @@ def create_exhibition():
         json.dumps({
             'status': 'processing',
             'created_at': str(datetime.now()),
-            'prompt': prompt
+            'prompt': prompt,
+            'curator_id': curator_id
         })
     )
     
@@ -67,6 +71,7 @@ def create_exhibition():
         process_exhibition,
         prompt,
         task_id,
+        curator_id,  # Pass curator_id to process_exhibition
         job_timeout='30m'
     )
     
