@@ -1,0 +1,23 @@
+{
+    "exhibition_id": 2,
+    "title": "Van Gogh's Vivid Countryside: Capturing Nature's Spirit",
+    "description": "Experience the vibrant embrace of the countryside through the extraordinary lens of Vincent van Gogh. This exhibition invites you to explore a curated collection of his artworks that deeply connect with the essence of nature, illuminating his profound relationship with the landscapes and lives surrounding him. Each piece resonates with the passionate brushstrokes and emotional depth that define Van Gogh's legacy. Notable works such as 'Wheat Field with Cypresses' and 'Farmhouse in Provence' showcase his awe for rural settings, while 'Women Picking Olives' highlights the connection between labor and landscape. His still lifes, like 'Bouquet of Flowers in a Vase' and 'Still Life of Oranges and Lemons with Blue Gloves,' reveal an intimate dialogue with nature\u2019s beauty. In pieces such as 'Oleanders' and 'The Large Plane Trees,' Van Gogh captures the dynamic interplay of light and texture, inviting viewers into a world bursting with life and color. This exhibition not only celebrates his iconic countryside themes but also resonates with the emotional truths found in our connection to the natural world, making it a heartfelt journey through Van Gogh\u2019s artistic spirit.",
+    "art_pieces": [
+        "MET-44a66536-6852-4ced-a9e3-257fa9e24a81",
+        "MET-66d995af-38b7-4d57-8f36-57bda6d24b6c",
+        "MET-7d8e745a-9293-4080-9f37-451220aa131b",
+        "MET-8838f6c8-cb9b-477c-aa16-b09124747e25",
+        "MET-bc3589af-73e9-486d-8ea2-439ac370b502",
+        "MET-f2535d0d-ab0c-4bd3-802b-34cd807f5045",
+        "NGA-1034a430-14b9-494d-8b69-c135e592892f",
+        "NGA-212836fc-eb1f-4775-922a-9f62925a82cd",
+        "NGA-51c369a2-cc20-43f6-8262-25877c4377eb",
+        "NGA-54ee6643-e0f9-4b92-a1d2-441e5108724d",
+        "NGA-6d6753b3-c1ef-494c-9dc3-244e8982c867",
+        "NGA-b74be188-7a6a-4fc8-866e-55c4e11937c9",
+        "NGA-bef8c58d-15ae-4649-b2ff-ae0ead24714e",
+        "TCMA-26ef6d35-7817-4695-a62d-c3e50b805f5a"
+    ],
+    "curator_id": 2,
+    "pieces_count": 14
+}

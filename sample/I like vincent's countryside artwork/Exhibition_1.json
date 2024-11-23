@@ -1,0 +1,23 @@
+{
+    "exhibition_id": 1,
+    "title": "Nature's Palette: Van Gogh's Enchantment with the Countryside",
+    "description": "Explore the profound connection between Vincent van Gogh and the beauty of nature in this captivating exhibition, \"Nature's Palette: Van Gogh's Enchantment with the Countryside.\" Celebrated for his bold colors and passionate brushwork, Van Gogh\u2019s countryside artwork celebrates the vibrant landscapes that inspired him. \n\nVisitors will find themselves immersed in enchanting scenes, from the rustic tranquility of \"Green Wheat Fields, Auvers\" to the lively hues captured in \"Sunflowers,\" evoking feelings of warmth and vitality. The delicate blossoms in \"Roses\" and the dynamic compositions of \"Fishing in Spring, the Pont de Clichy (Asni\u00e8res)\" showcase Van Gogh's unwavering fascination with nature's fleeting moments. \n\nIn contrast to his countryside scenes, works like \"Self-Portrait\" and \"Madame Roulin Rocking the Cradle (La berceuse)\" reveal the artist's deep emotional connection to his subjects and surroundings. This exhibition harmonizes Van Gogh\u2019s rural inspirations with his intimate portrayals of individuals. Join us to celebrate the synergy between his vibrant expressions of the countryside and the poignant personal reflections woven throughout, inviting every viewer to experience the enchanting world that shaped Van Gogh's artistic legacy.",
+    "art_pieces": [
+        "ARTIC-25c31d8d-21a4-9ea1-1d73-6a2eca4dda7e",
+        "ARTIC-26d3cea8-44c0-bfbd-a91a-19a007517152",
+        "ARTIC-5512cee9-6d00-d01b-b0be-ac7843cc8f76",
+        "ARTIC-6cb22407-be79-bf0a-1a63-fdf2b99e035b",
+        "ARTIC-9325e3ea-2d5d-120f-5bfb-faa0f8266ca6",
+        "ARTIC-9ea77636-76e9-9031-6b92-ff34512d7cbc",
+        "ARTIC-d0ff5b36-bb38-b156-6042-5c8545352c2f",
+        "ARTIC-f11bd233-6cc3-4221-59eb-f7363be4119e",
+        "MET-233adf8e-4fa3-46ac-a5b7-fa5e2c56dbee",
+        "MET-6f3c7b01-628b-45f7-be36-f62a48808030",
+        "MET-78bd067a-f4a2-4a0c-8e08-3acfab624b22",
+        "NGA-a2e6da57-3cd1-4235-b20e-95dcaefed6c8",
+        "NGA-b479275a-4f8a-4702-83c2-9dcc4cbe60ce",
+        "NGA-c78b52c9-ca48-4e92-8a82-0efec04599f2"
+    ],
+    "curator_id": 1,
+    "pieces_count": 14
+}
