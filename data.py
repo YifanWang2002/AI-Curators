@@ -67,13 +67,36 @@ def convert_to_dataframe(data_list):
         return pd.DataFrame()
     return pd.DataFrame(data_list)
 
+def get_artist_by_id(artist_id):
+    """Fetch artist details by artist ID"""
+    return get_data(f"{DATABASE_URL}/artist/{artist_id}")
+
 def get_artwork_details():
     """Get complete artwork details as DataFrame"""
     response = get_all_artworks()
     if response.get('status') == 'success':
         df = convert_to_dataframe(response.get('data', []))
+        
+        # Fetch artist details for each artwork
+        artist_details = []
+        for artist_id in df['artist_id'].unique():
+            artist_response = get_artist_by_id(artist_id)
+            if artist_response.get('status') == 'success':
+                artist_details.append(artist_response['data'])
+        
+        # Create artist lookup DataFrame
+        artist_df = pd.DataFrame(artist_details)
+        
+        # Merge artwork data with artist data
+        if not artist_df.empty:
+            df = df.merge(
+                artist_df[['artist_id', 'display_name']],
+                on='artist_id',
+                how='left'
+            )
+        
         # Ensure all required columns are present
-        required_columns = ['artwork_id', 'artist_given_name', 'artist_family_name', 'compressed_url']
+        required_columns = ['artwork_id', 'artist_id', 'display_name', 'compressed_url']
         for col in required_columns:
             if col not in df.columns:
                 print(f"Warning: Missing required column {col}")
