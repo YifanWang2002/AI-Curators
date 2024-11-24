@@ -1,0 +1,26 @@
+{
+    "exhibition_id": 0,
+    "title": "Pastoral Echoes: Celebrating the Beauty of Country Life",
+    "description": "Welcome to \"Pastoral Echoes: Celebrating the Beauty of Country Life,\" an exhibition that invites you to explore the idyllic serenity of rural landscapes through a curated selection of artworks. This collection highlights the deep connection between humanity and the countryside, showcasing how artists have captured pastoral scenes that resonate with our shared appreciation for nature.\n\nAmong the cherished pieces on display is Rosa Bonheur's \"The Farm at the Entrance of the Wood,\" which evokes a sense of tranquility as it immerses viewers in serene country life. Jean-Fran\u00e7ois Millet\u2019s evocative works, such as \"Peasants Bringing Home a Calf Born in the Fields\" and \"The Sheepshearers,\" celebrate the rich agricultural traditions and the timeless bond between farmers and their land. \n\nThe charm of American landscapes is illustrated in pieces like \"Bucks County Farm Outside Doylestown, Pennsylvania\" and George Inness's \"Harvest, Montclair, New Jersey,\" which evoke the unique essence of rural America. These artworks collectively offer a window into the pastoral life that inspires a sense of nostalgia and appreciation for the simplicity and beauty of the countryside.",
+    "art_pieces": [
+        "TCMA-56efcdbc-3cf0-421b-adec-874b2752bc24",
+        "ARTIC-7b0ea6ca-9424-050e-7e0e-3b67d2289480",
+        "NGA-a0e57e06-45d6-4e92-826d-e15ddd0ee968",
+        "ARTIC-bd921daa-25ba-3a48-5b30-ad03d8a8bacb",
+        "ARTIC-6aaa3537-abbf-f49e-877f-4d8e8e4d50c2",
+        "TCMA-8630d27c-88d9-43ea-a49d-988c21f24df6",
+        "NGA-f7b63edb-7c72-4afa-832d-1fe89820da2e",
+        "ARTIC-955e0371-98cc-e4ff-a232-84bf42511ee2",
+        "NGA-d2472011-e463-44c9-bc5c-dff80fc71082",
+        "NGA-b4765b03-ab0e-4b6c-ac4e-c300220cb690",
+        "TCMA-c195e760-c9c5-4be2-ac25-0f2f5201b5b6",
+        "MET-bd854dc9-9aa6-4dd8-bcf6-78cc23c4e4df",
+        "MET-c88c24b9-b1c4-4c75-95b6-3aee0640e0a1",
+        "NGA-230d8d65-5bec-485e-8db6-95ce06ad2812",
+        "TCMA-b3146634-c7bd-4a5d-9eda-4c8fe84f7ac3",
+        "ARTIC-2dcd9e08-6f4f-9c8a-30b0-54ed93d7c049",
+        "ARTIC-c2bf35ea-3878-ffd1-18c3-311f13db873a"
+    ],
+    "curator_id": 0,
+    "pieces_count": 17
+}

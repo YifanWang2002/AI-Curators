@@ -1,0 +1,26 @@
+{
+    "exhibition_id": 1,
+    "title": "Nature's Embrace: Beauties of the Countryside in Art",
+    "description": "\"Nature's Embrace\" invites you into a serene journey through the pastoral splendor captured by renowned artists from various eras. This exhibition celebrates the countryside's enchanting landscapes, where nature and human life harmoniously intertwine. Experience the gentle allure of Charles Fran\u00e7ois Daubigny\u2019s \"Village in Brittany,\" which portrays rustic charm and tranquility, complemented by Th\u00e9odore Rousseau's evocative \"Cottages Near Larchant,\" illustrating the intimate connection to rural life. Watanabe Shik\u014d's \"Eight Views of the Xiao and Xiang Rivers\" adds an ethereal beauty with its reflective water vistas.\n\nThe collection further unfolds with Paul C\u00e9zanne\u2019s striking depiction of the \"Riaux Valley near L'Estaque,\" showcasing his innovative brushwork, while Jean Baptiste Camille Corot\u2019s \"Willows and Farmhouse at Sainte-Catherine-l\u00e8s-Arras\" draws attention to the gentle coexistence of nature and dwellings. From Li Jie\u2019s serene depiction of a fisherman's haven to the dreamy landscapes of Jules Dupr\u00e9\u2019s \"Marshland,\" each artwork envelops the viewer in the countryside's lush tranquility. This exhibition captures the essence of rural beauty, inviting you to reflect on the lasting bonds that nature inspires within all of us.",
+    "art_pieces": [
+        "ARTIC-43642ffb-2bd7-3f70-d6e6-3c0bee12d83c",
+        "TCMA-e3bed4d9-e72d-44cf-b158-679bdcb0de93",
+        "TCMA-282a20fc-1049-4ed5-80c3-9eb7e36bd0ad",
+        "NGA-9c0e94a1-09ed-47fd-ad50-8a364d45f3e1",
+        "NGA-96a750e5-76bb-4773-892e-d73d79d671a8",
+        "MET-c1cf1954-d97a-4531-bb38-ecc3c2bffa4b",
+        "ARTIC-40c528cd-7871-a283-af68-4f2d0a250b3c",
+        "TCMA-7bc51b41-3cdb-4a18-87e3-a6413f3d838d",
+        "TCMA-371812e4-e7d3-451c-b853-f2f5fc144cec",
+        "NGA-6912dd89-909b-4327-b118-201a29b3abc0",
+        "TCMA-bdf23ce5-59be-44a0-aff8-270d3130a18c",
+        "TCMA-52809d09-cc9c-4dad-8fbb-bfca30b9670e",
+        "MET-5ce4e0f9-d7b0-4ba8-821b-6f11fb6c9c02",
+        "MET-0cacd285-ca27-4f72-80cc-5bbb39bf109d",
+        "NGA-17b39e53-84e8-4979-a49d-1a11d6ce96b3",
+        "NGA-ecc8f6d8-a0ac-4118-aaab-a378e8830b65",
+        "ARTIC-ac624b7a-ed36-9b5a-4257-2fb464b5023f"
+    ],
+    "curator_id": 1,
+    "pieces_count": 17
+}

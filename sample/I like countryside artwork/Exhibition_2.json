@@ -1,0 +1,25 @@
+{
+    "exhibition_id": 2,
+    "title": "Pastoral Dreams: A Journey Through Countryside Art",
+    "description": "\"Pastoral Dreams: A Journey Through Countryside Art\" invites visitors to immerse themselves in the serene beauty of rural life as depicted by a diverse range of masterful artists. This exhibition captures the essence of countryside imagery, drawing on the tranquil landscapes and intimate scenes that evoke a sense of nostalgia and simplicity. Key pieces such as David Teniers the Younger\u2019s \"Landscape with Thatched Cottages\" showcase idyllic homes set against lush greenery, inviting viewers to feel the warmth of rural tranquility. Meanwhile, Claude Monet\u2019s \"Stacks of Wheat (End of Day, Autumn)\" encapsulates the vibrant hues of nature, reflecting the profound connection between art and agriculture. Join us as we explore artworks like Gustave Courbet's \"Young Ladies of the Village\" and William Bouguereau\u2019s \"Breton Brother and Sister,\" which celebrate the beauty of figures rooted in pastoral settings. This collection, enriched by pieces from various styles and periods, creates a tapestry of tones and forms that resonate with the joys and challenges of country life, appealing to both art enthusiasts and those who cherish the tranquility found in nature's embrace.",
+    "art_pieces": [
+        "MET-617d8497-6d44-4582-9075-5866b3d413ab",
+        "NGA-a6a9b39d-661b-4420-9c1e-00adf4d9e8e8",
+        "ARTIC-2a0cc79d-9f16-29fe-3ff8-98a56e54345f",
+        "NGA-7c8d0489-241c-4645-8f95-6dd764d43626",
+        "MET-1100f178-a3d9-45e4-8818-ffb7bdaa504a",
+        "MET-eedabe84-85e2-40de-88f3-6e29245a87c3",
+        "MET-f8fdfcbb-40a4-4b24-b3d3-a4ab1e1423c2",
+        "NGA-5e7297e6-b449-40cf-b6f6-3b5e468074f3",
+        "NGA-1b7fec5d-9502-42a2-9939-0457b49b8be7",
+        "NGA-9bb91f84-8284-4a9f-a0bb-71cb599ce764",
+        "NGA-108500f8-2ddd-4214-81ae-3bc6acadbff6",
+        "ARTIC-4c364c64-2108-4e19-5fc5-1ab26ba924a7",
+        "ARTIC-451ba11b-1cfc-da58-d7f7-ec7f8734ae83",
+        "MET-2933c4ee-42c1-4679-8175-e9c56b53b704",
+        "MET-a9ed1a30-123f-446c-9c75-c1c76e06e2fe",
+        "MET-69669816-c9c1-4477-a2c3-0f84b1f2e247"
+    ],
+    "curator_id": 2,
+    "pieces_count": 16
+}

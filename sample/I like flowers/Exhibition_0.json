@@ -1,0 +1,26 @@
+{
+    "exhibition_id": 0,
+    "title": "Blooms and Beauty: The Art of Nature's Embrace",
+    "description": "In this enchanting exhibition, we explore the vivid intersection of nature and artistic expression through the lens of floral inspiration. Each artwork invites viewers to appreciate the delicate beauty of flowers and their significance in human experience. From George Hitchcock\u2019s serene 'The Blessed Mother' to the vibrant 'Birds and Flowers' by an unidentified artist, each piece embodies the intimate relationship between humans and the flourishing environment that surrounds them. Jacob de Wit\u2019s 'Flora and Zephyr' and Paul Gauguin\u2019s 'Three Tahitian Women' evoke lush gardens and vibrant landscapes, highlighting the ability of flowers to symbolize femininity and life. Meanwhile, Pierre Puvis de Chavannes\u2019 'Inter artes et naturam' beautifully encapsulates the harmony between art and nature, inviting contemplation. The juxtaposition of the poignant 'Gamepiece with a Dead Heron' by Jan Weenix also serves as a reminder of the cycle of life, adding depth to our understanding of the natural world. This collection not only reflects the diverse aesthetics inspired by flora but also fosters a deeper connection to the themes of beauty, fragility, and the sacred bond between humanity and nature.",
+    "art_pieces": [
+        "TCMA-31585a20-577d-4250-8c89-748dfc2aa1be",
+        "MET-5390aa34-94ae-4c70-9988-e3fff0ad3ca4",
+        "MET-c5611255-8101-4597-bba1-d43a307590e6",
+        "MET-6903595f-debd-44eb-98ae-6091dd9ca34a",
+        "TCMA-8ad8d3e6-1fb0-49f0-8e7e-431a99f0d925",
+        "MET-f62702ac-2149-4ead-a7b3-b56ed52df341",
+        "MET-02e9cb83-c6b4-4441-aa6e-80dbb286def1",
+        "MET-30710733-9b38-4e0a-ab55-d8e731010d96",
+        "MET-dfdf6329-5a60-4b87-982c-d4997ae337b0",
+        "MET-cd814cd3-6210-4d22-aab4-6e467bd9aef7",
+        "MET-d02b8961-020b-424e-a083-044ebffc5bbd",
+        "MET-15748e44-deba-4685-a1b9-146cb1a64ef9",
+        "MET-20ec47af-9b26-4da1-8501-8ee94d436ce9",
+        "MET-3e2f2c71-e649-41b9-af08-8c69f08b581c",
+        "MET-0d50fa51-3279-4398-bff4-c01c50d0d5f7",
+        "MET-f79fdd12-a333-4a44-a8a0-2c29f601cdac",
+        "MET-1d30c0ca-0d30-4857-b2dc-d4d7821eaa95"
+    ],
+    "curator_id": 0,
+    "pieces_count": 17
+}

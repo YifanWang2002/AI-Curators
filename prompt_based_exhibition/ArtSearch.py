@@ -39,10 +39,7 @@ class ArtSearch:
     
     def load_precomputed_data(self):
         index_dir = os.path.join(self.data_dir, 'index_files')
-        
-        # Load the data first to get the arrays in correct order
-        self.load_data()
-        
+    
         # Load FAISS indexes
         self.name_index = faiss.read_index(os.path.join(index_dir, 'name_index.index'))
         self.tag_index = faiss.read_index(os.path.join(index_dir, 'tag_index.index'))
@@ -57,14 +54,50 @@ class ArtSearch:
         faiss.write_index(self.tag_index, os.path.join(index_dir, 'tag_index.index'))
 
     def search(self, query, search_type='name', k=10):
-        query_embedding = self.model.encode(f"query: {query}", normalize_embeddings=True)
-        index = self.name_index if search_type == 'name' else self.tag_index
-        items = self.artist_names if search_type == 'name' else self.tags
-        D, I = index.search(query_embedding.reshape(1, -1), k)
-        scores = D[0]
-        # creates a list of tuples (item, score)
-        results = [(items[i], float(score)) for i, score in zip(I[0], scores)]
-        return results
+        """Perform similarity search using FAISS indexes"""
+        try:
+            # Generate query embedding
+            query_embedding = self.model.encode(f"query: {query}", normalize_embeddings=True)
+            
+            # Select appropriate index
+            if search_type == 'name':
+                if self.name_index is None:
+                    print("Warning: Name index not loaded")
+                    return []
+                index = self.name_index
+                # Load names from MongoDB for results
+                import data
+                artwork_details = data.get_artwork_details()
+                if not artwork_details.empty:
+                    items = artwork_details['display_name'].dropna().unique()
+                else:
+                    print("Warning: Could not load artist names from database")
+                    return []
+            else:  # tag search
+                if self.tag_index is None:
+                    print("Warning: Tag index not loaded")
+                    return []
+                index = self.tag_index
+                # Load tags from MongoDB for results
+                import data
+                tag_mapping = data.get_tag_mapping()
+                if not tag_mapping.empty:
+                    items = tag_mapping['tag_name'].unique()
+                else:
+                    print("Warning: Could not load tags from database")
+                    return []
+
+            # Perform search
+            D, I = index.search(query_embedding.reshape(1, -1), min(k, len(items)))
+            
+            # Create results
+            results = [(items[i], float(score)) for i, score in zip(I[0], D[0])]
+            print(f"Found {len(results)} results for query '{query}'")
+            return results
+        
+        except Exception as e:
+            print(f"Error during search: {str(e)}")
+            return []
 
 if __name__ == "__main__":
     art_search = ArtSearch() 

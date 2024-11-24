@@ -1,0 +1,25 @@
+{
+    "exhibition_id": 1,
+    "title": "Blooming Beauty: A Celebration of Flowers in Art",
+    "description": "Join us for \"Blooming Beauty: A Celebration of Flowers in Art,\" an enchanting exhibition that explores the theme of floral representation across diverse cultures and artistic traditions. This selection showcases a rich tapestry of floral artworks that highlight the universal appeal of flowers in conveying beauty, transience, and nature's bounty. \n\nAmong the notable pieces, Kitagawa S\u014dsetsu's \"Summer Flowers\" exemplifies the delicate brushwork of the Edo period, capturing the essence of seasonal blooms. Equally captivating is Suzuki Kiitsu\u2019s \u201cFlowers of Autumn and Winter,\u201d which juxtaposes vibrant colors with autumnal themes, inviting viewers to reflect on the cycle of life. Odilon Redon\u2019s \"Vase of Flowers (Pink Background)\" brings a dreamlike quality to the exhibition, while Nicolaes van Veerendael\u2019s \"A Bouquet of Flowers in a Crystal Vase\" showcases mastery in still life composition. \n\nAs visitors wander through the exhibition, they will experience the emotional and symbolic resonance flowers hold, transcending time and geography\u2014reminding us of the beauty that surrounds us and the artistry that captures it.",
+    "art_pieces": [
+        "MET-429cecda-37e7-4d4e-b649-743095444e85",
+        "MET-d37b1497-a40a-40ce-bf47-c230f0655e8d",
+        "TCMA-c1243069-1314-4af3-9d26-a53f2600969f",
+        "ARTIC-2a2991a6-f4e7-3f4e-8be5-47cf21fabab1",
+        "MET-cde2c3e7-4abd-4d60-9f2d-84f4d9d5f5cf",
+        "MET-17eef2f0-34b0-4005-85e4-0a4183461b83",
+        "TCMA-3b8fd281-d5ce-4217-8729-b1c9e44b2d2f",
+        "ARTIC-3ad78710-cc0e-4ece-6ab7-97d7542c3dc8",
+        "MET-d56e71cb-2daa-4b50-8c15-1a7643cf8a09",
+        "TCMA-2be866dd-6d38-4f81-baec-a445c1d87ac9",
+        "MET-067926b1-e559-4b20-861e-4f6d5fc680e5",
+        "MET-302e72ec-069d-4367-a474-8c34eef93ccb",
+        "MET-f9b1940a-3c0c-42c6-adb6-1e7693a2ba0e",
+        "MET-a1b7b221-ce7e-438c-b81e-f59cf4a1c044",
+        "MET-d8cf82f6-83e1-4a1d-9a5d-e6cb33f9318f",
+        "MET-bc83504f-6098-4202-a8aa-e77fefb2dc99"
+    ],
+    "curator_id": 1,
+    "pieces_count": 16
+}

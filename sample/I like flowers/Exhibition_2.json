@@ -1,0 +1,26 @@
+{
+    "exhibition_id": 2,
+    "title": "In Bloom: Representations of Women and Nature in Art",
+    "description": "\"In Bloom\" invites visitors to explore the intricate relationship between femininity and nature as depicted through a diverse selection of artistic styles. This exhibition features portraits of remarkable women, capturing their essence alongside the beauty of flowers and nature's bounty. Highlighted works include Anders Zorn's delicate portrayal of Mrs. Walter Rathbone Bacon, where the interplay of light envelops her amidst floral motifs. Meanwhile, Franz Xaver Winterhalter's striking portrayal of the Empress Eug\u00e9nie showcases the grace and elegance of nobility, complemented by the vibrancy of floral patterns that frame her figure. Renowned artists like Vincent van Gogh and Sir Joshua Reynolds contribute to this theme through depictions of women, where the presence of nature serves not only as a backdrop but as a symbol of nurturing and life. The collection is rich in color and emotion, culminating in a dialogue between the feminine spirit and the natural world. Each artwork resonates with a sense of vitality, reflecting our universal admiration for both women and the blossoms that symbolize growth and beauty in life.\"",
+    "art_pieces": [
+        "MET-0387b3d3-933d-44fa-b95e-cace1db2d689",
+        "MET-c5fbbfb1-62a4-43f6-acf5-d5ed8682affd",
+        "MET-c07dd583-54e7-49d8-82bc-0e3f8589ecda",
+        "MET-01d61089-70d5-45b8-a359-92d3563a61eb",
+        "MET-7d8e745a-9293-4080-9f37-451220aa131b",
+        "MET-45a5d8a5-5c1e-49c5-9033-7fe59f142910",
+        "MET-3ab202d4-759a-41f7-8c86-6f0f174c0095",
+        "MET-83de8cbe-1b03-48d4-969f-6573fc379f14",
+        "MET-bc28e886-2961-4fc3-9b05-61fe02150ca7",
+        "MET-dd43a574-6975-4342-8821-f932f9d3fc1a",
+        "MET-4514fb3a-e090-4981-92ce-da15e838f6f7",
+        "MET-06346204-08e6-46c0-998f-c3da20eaac4e",
+        "MET-172f9154-eea4-48e5-a997-ab389d1c35b2",
+        "MET-31b87d2d-95bc-4e86-a7f4-ad85aab6892c",
+        "MET-6816cd77-04f6-46b2-acc0-a57279687b43",
+        "MET-a64e1e8e-d17c-4b16-bf05-45842eddf437",
+        "MET-5d445457-d2a2-4afa-a4cc-bd26c7306077"
+    ],
+    "curator_id": 2,
+    "pieces_count": 17
+}
