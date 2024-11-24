@@ -21,13 +21,6 @@ services:
     depends_on:
       - redis
 
-  mongo-container:
-    image: mongo:latest
-    container_name: mongo-container
-    ports:
-      - "27017:27017"
-    networks:
-      - exhibition_network
 
   rq-worker:
     build: .
