@@ -1,0 +1,26 @@
+{
+    "exhibition_id": 0,
+    "title": "Aging Gracefully: Portraits of Humanity in the Twilight of Life",
+    "description": "This exhibition invites visitors to explore the profound and often poignant portrayal of old age across centuries, celebrating the intricate narratives embedded within each artwork. From Rembrandt's striking studies of weathered visages to the contemplative gaze of Paul C\u00e9zanne's \u2018The Gardener Vallier,\u2019 the selected works delve into the layered complexities of aging, highlighting both vulnerability and dignity. Each painting serves as a testament to the artist's delicate engagement with the passage of time, inviting discussions on themes of mortality, memory, and the essence of human experience. \n\nThe exhibition emphasizes the ability of these portraits to capture the rich tapestry of life, blending formal elements like texture, light, and composition with deeper conceptual explorations of identity and legacy. Unexpected dialogues arise between diverse styles\u2014be it Louis Le Nain\u2019s robust figures or the lyrical brushwork of Alphonse Legros\u2014creating an immersive sensory journey. This thematic resonance across eras urges us to reflect on the universal acceptance of aging. Encountering these artworks together heightens our appreciation for the resilience and beauty inherent in each aged face, inviting a deeper connection to our shared humanity.",
+    "art_pieces": [
+        "TCMA-c9b5a692-d0af-4790-9f0b-d7f54b103b6a",
+        "MET-82534ecf-19f6-4765-b5a0-f64ab105467c",
+        "NGA-9b390c82-01dd-4538-94fb-9091e489e17f",
+        "NGA-1050c145-2892-4679-be3f-43be5553a005",
+        "NGA-d277c2a7-190e-475a-bae9-f1cbd0b1218d",
+        "MET-7bf7891d-eb95-443f-928c-91310c7b4fa0",
+        "NGA-879bd223-950c-4019-a61d-8715432ab11f",
+        "NGA-8ab5b791-375d-4d74-86bd-a6e55ea36f07",
+        "NGA-c5ad51e9-e75b-4c88-905d-66917ad1498e",
+        "MET-da988083-4aff-4249-9cdc-0c24765e86bc",
+        "ARTIC-1bb08195-44b0-030c-c610-9fb6bb45e9b0",
+        "TCMA-fde95e8a-771c-488a-a88f-cd4e1cee678a",
+        "TCMA-f2727a36-33cf-44be-8a90-6686a7edf96e",
+        "NGA-4829a4e8-22ad-4afc-8980-87cc82cb6cb9",
+        "ARTIC-83375479-f7a9-bac3-44a8-e705ab6e423c",
+        "MET-901b9e86-27b8-4f0c-b0f5-ed1c937afa8f",
+        "MET-5a4e2c3e-7ea0-414b-a727-d0f9fcab350e"
+    ],
+    "curator_id": 0,
+    "pieces_count": 17
+}

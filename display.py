@@ -288,7 +288,7 @@ def main():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     
     # Define paths
-    exhibition_file = os.path.join(current_dir, 'output', 'I like flowers', 'Exhibition_2.json')
+    exhibition_file = os.path.join(current_dir, 'output', 'I like old age artworks', 'Exhibition_2.json')
     artwork_data_file = os.path.join(current_dir, 'data', 'dimension_tables', 'dim_artwork.csv')
     
     app = ArtworkGallery(root, exhibition_file, artwork_data_file)

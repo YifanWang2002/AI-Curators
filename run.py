@@ -104,10 +104,9 @@ def generate_exhibitions(prompt: str, module_dir: str = None) -> list[dict]:
     tag_results = pd.DataFrame()
     name_results = pd.DataFrame()
     if tags:
-        tag_results = pd.DataFrame(art_search.search(tags, search_type='tag', k=5),
+        tag_results = pd.DataFrame(art_search.search(tags, search_type='tag', k=25),
                                  columns=['tag_name', 'similarity'])
-        print(tag_results)
-        raise Exception("Stop here")
+        print(f"Similarity results for tags: {tag_results[:5]}")
     if artists:
         name_results = pd.DataFrame(art_search.search(artists, search_type='name', k=1),
                                   columns=['artist_name', 'similarity'])
@@ -162,7 +161,8 @@ def generate_exhibitions(prompt: str, module_dir: str = None) -> list[dict]:
 
 if __name__ == "__main__":
     start_time = time()
-    prompt = "I like flowers"
+    prompt = "I like old age artworks"
+    # prompt = "I like countryside artwork"
     exhibitions = generate_exhibitions(prompt)
     print(f'Total time taken: {time() - start_time} seconds')
     

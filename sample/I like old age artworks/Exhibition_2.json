@@ -1,0 +1,25 @@
+{
+    "exhibition_id": 2,
+    "title": "Echoes of Aging: Artistry in Human Experience Across Time",
+    "description": "This exhibition invites visitors to explore the nuanced representation of aging through a carefully curated selection of artworks that capture the tenderness and complexity of old age. Each piece, from Nicolaes Maes\u2019s intimate portrayal of an old woman dozing over a book to Jean Fran\u00e7ois Raffa\u00eblli's relaxed Afternoon Tea scene, reveals the rich spectrum of human experience\u2014reflecting wisdom, vulnerability, and the rhythms of life. The juxtaposition of styles, such as Quentin Massys\u2019s gripping Ill-Matched Lovers against the serene calm of a Peasant Family at a Well, sparks an unexpected dialogue about wisdom and connection across generations.\n\nWithin this framework, we consider the broader cultural and historical contexts that shape our understanding of aging, particularly in the realm of emotional and familial relationships. The narrative transcends temporal boundaries, situating the viewer within a rich tapestry of shared human experiences. \n\nBy engaging with these diverse works, visitors are invited not only to reflect on the beauty of aging but also to confront contemporary perceptions of the elderly. This exhibition ultimately celebrates the enduring spirit of humanity, fostering connections across time through the lens of art.",
+    "art_pieces": [
+        "TCMA-feb6ad2e-820f-4d42-bd65-9207f65d39db",
+        "ARTIC-6e960a8e-4189-f7b7-4785-716474c36179",
+        "TCMA-b806dbe4-a678-40fb-bfe5-27990c16395a",
+        "NGA-c5f5cfa6-6150-435a-bf5d-a0a7a55c52f7",
+        "ARTIC-3222a207-26a0-59c1-ba7c-c1ba4eaee588",
+        "ARTIC-8b728f79-4937-4a98-5552-a3419cd6358f",
+        "ARTIC-a680713b-f1f9-1fd0-5b77-81d42415db5d",
+        "NGA-5ceefccf-358b-4da6-94c2-5f2312a44ca2",
+        "NGA-b7eac90c-768a-4d70-806f-5215154ed23f",
+        "NGA-b5fa4110-a05c-40cc-b75e-f21c59b4602c",
+        "ARTIC-b5944ae0-5c91-20dd-79af-33a523393c33",
+        "TCMA-3409d860-3b3f-4f01-8957-d297dbd8030f",
+        "NGA-798e9728-9270-4e95-8427-935c6b2553f2",
+        "TCMA-ef9f6b82-2ff4-4ebd-9f8c-fe436e2acc0d",
+        "NGA-45a4dd03-e781-4f96-8a29-2efb9f075acd",
+        "ARTIC-59511df1-03d0-aea4-369a-959669ccfe51"
+    ],
+    "curator_id": 2,
+    "pieces_count": 16
+}

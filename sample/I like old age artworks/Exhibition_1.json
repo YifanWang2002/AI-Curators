@@ -1,0 +1,26 @@
+{
+    "exhibition_id": 1,
+    "title": "Visages of Wisdom: Reflections on Age in Portraiture Across Time and Culture",
+    "description": "This exhibition invites visitors to explore the intricate portrayal of aging through a diverse array of portraits that celebrate the grace, wisdom, and individuality of older subjects. The selected works span centuries and styles, from the meticulous detail of Hans Memling to the expressive brushstrokes of Edgar Degas and Robert Henri. Each artwork serves as a testament to the lived experiences captured in the faces and figures of the elderly, offering a rich tapestry of cultural perspectives on aging. By emphasizing the emotive qualities of color and composition, the exhibition highlights how artists convey deep personal narratives and societal reflections through their subjects. As we examine different techniques and stylistic choices, we uncover unexpected dialogues between the past and present\u2014questioning notions of beauty, fragility, and resilience in old age. The works of Archibald John Motley Jr. and William Holman Hunt juxtapose traditional representations with modern interpretations, compelling visitors to reflect on their own understandings of aging. This multifaceted exploration not only celebrates the vitality of older individuals but also encourages an appreciation for the profound stories etched into their features.",
+    "art_pieces": [
+        "MET-f2a88382-a60d-4d31-a9ca-c597f1d3ae96",
+        "ARTIC-6ea9b674-8204-02b0-66a4-55da1a037b81",
+        "MET-c05d9302-d94c-45dd-9a94-1c8b09199d70",
+        "MET-a19cfa3f-bfc3-40df-968f-99eb7e592557",
+        "NGA-54fa40e9-4d71-4a32-9e75-77977152009c",
+        "TCMA-682983b9-4033-473d-a9d0-912b6290d720",
+        "NGA-c9b39027-5b86-43d4-ac30-980475329d7e",
+        "TCMA-6db750d9-7c54-42ea-8169-ba627fe4b862",
+        "NGA-8ffb9df7-30e0-4c2e-af87-cc43c63242e6",
+        "ARTIC-880cf164-a140-49b0-6e6b-3456388e2782",
+        "TCMA-672656b7-c81c-44c0-883c-3b958e406c84",
+        "NGA-e5bebfb8-72ff-41ef-b3f5-e47a0eb51578",
+        "NGA-de5e64f1-9e54-4927-8127-0da63e849f06",
+        "MET-66006e37-baea-49c9-bc1c-5304c1e8edad",
+        "MET-20a4e370-b666-4bef-aa7d-e79b7e330c9a",
+        "MET-470c8e03-1a6a-4393-8843-47bf7a078f54",
+        "TCMA-fe9746ad-956a-4b5b-b8a8-7f4d83c4e2dd"
+    ],
+    "curator_id": 1,
+    "pieces_count": 17
+}
