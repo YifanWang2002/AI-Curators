@@ -44,6 +44,9 @@ def setup_mongodb():
 def process_exhibition(prompt: str, task_id: str, curator_id: int) -> None:
     """Worker function for processing exhibition generation"""
     try:
+        # Setup MongoDB connection first
+        setup_mongodb()
+        
         # Create a Redis connection inside the worker function
         redis_conn = Redis(
             host=Config.REDIS_HOST,

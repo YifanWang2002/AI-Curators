@@ -21,6 +21,14 @@ services:
     depends_on:
       - redis
 
+  mongo-container:
+    image: mongo:latest
+    container_name: mongo-container
+    ports:
+      - "27017:27017"
+    networks:
+      - exhibition_network
+
   rq-worker:
     build: .
     command: rq worker exhibition
@@ -30,12 +38,15 @@ services:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - REDIS_DB=0
+      - MONGODB_HOST=mongo-container
+      - MONGODB_DB=exhibition_db
     env_file:
       - .env
     volumes:
       - ./data/index_files:/app/data/index_files
     depends_on:
       - redis
+      - mongo-container
     networks:
       - exhibition_network
 
@@ -49,6 +60,8 @@ services:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - REDIS_DB=0
+      - MONGODB_HOST=mongo-container
+      - MONGODB_DB=exhibition_db
     env_file:
       - .env
     volumes:
@@ -56,6 +69,7 @@ services:
     depends_on:
       - redis
       - rq-worker
+      - mongo-container
     networks:
       - exhibition_network
 

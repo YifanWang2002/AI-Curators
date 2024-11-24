@@ -10,3 +10,5 @@ class Config:
     REDIS_EXPIRE_TIME = int(os.getenv('REDIS_EXPIRE_TIME', 3600))
     RQ_QUEUE_NAME = os.getenv('RQ_QUEUE_NAME', 'exhibition')
     MODULE_DIR = os.path.dirname(os.path.abspath(__file__))
+    MONGODB_HOST = os.getenv('MONGODB_HOST', 'localhost')
+    MONGODB_DB = os.getenv('MONGODB_DB', 'exhibition_db')
