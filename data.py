@@ -28,12 +28,15 @@ def get_all_artworks():
         # Then fetch artworks in batches
         all_artworks = []
         batch_size = 100
+        url = f"{DATABASE_URL}/artworks"
+        
         for i in range(0, len(artwork_ids), batch_size):
             batch_ids = artwork_ids[i:i + batch_size]
-            batch_ids_str = ','.join(str(id) for id in batch_ids)
-            batch_response = get_data(f"{DATABASE_URL}/artworks/{batch_ids_str}")
-            if batch_response.get('status') == 'success':
-                all_artworks.extend(batch_response['data'])
+            payload = {"artwork_ids": batch_ids}
+            response = requests.post(url, json=payload)
+            
+            if response.status_code == 200 and response.json().get('status') == 'success':
+                all_artworks.extend(response.json().get('data', []))
             else:
                 print(f"Warning: Failed to fetch batch {i//batch_size + 1}")
         
