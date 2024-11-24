@@ -91,7 +91,7 @@ def process_exhibition(prompt: str, task_id: str, curator_id: int) -> None:
         # 更新状态：展示初始图片集
         update_status(redis_conn, task_id, 'images_selected', {
             'artwork_ids': filtered_artwork['artwork_id'].tolist(),
-            'image_urls': filtered_artwork['compressed_url'].tolist()
+            'image_urls': filtered_artwork['small_image_url'].tolist()
         })
         
         # Get next available exhibition IDs before generating exhibitions
@@ -172,7 +172,7 @@ def prepare_metadata(df: pd.DataFrame) -> pd.DataFrame:
     
     required_columns = [
         'index', 'artwork_id', 'artist_given_name', 'artist_family_name',
-        'artwork_name', 'artwork_date', 'artwork_type', 'artwork_material', 'compressed_url'
+        'artwork_name', 'artwork_date', 'artwork_type', 'artwork_material', 'small_image_url'
     ]
     
     for col in required_columns:
