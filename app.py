@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 
 # Exhibition model
 class Exhibition(Document):
-    exhibition_id = IntField(primary_key=True, required=True, index=True)
+    exhibition_id = IntField(required=True, unique=True)
     title = StringField(required=True)
     description = StringField()
     pieces_count = IntField()
@@ -35,12 +35,11 @@ class Exhibition(Document):
     meta = {
         'collection': 'dim_exhibition',
         'indexes': [
-            {'fields': ['exhibition_id'], 'unique': True}
+            {'fields': ['exhibition_id'], 'unique': True, 'sparse': True}
         ],
-        'id_field': 'exhibition_id',  # This tells MongoEngine to use exhibition_id as the primary key
         'allow_inheritance': False
     }
-    
+
 def setup_mongodb_with_retry(max_retries=3, retry_delay=5):
     """Setup MongoDB connection with retry logic"""
     logger.info(f"Attempting to connect to MongoDB at {Config.MONGODB_HOST}")
