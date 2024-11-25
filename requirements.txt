@@ -28,3 +28,5 @@ cryptography==41.0.1
 WTForms==2.3.3
 fuzzywuzzy
 requests
+pyjwt
+mongoengine
