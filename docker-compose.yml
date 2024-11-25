@@ -27,13 +27,13 @@ services:
     build: .
     command: rq worker exhibition
     environment:
-      - DATABASE_URL=http://host.docker.internal:8000/api/data
-      # - DATABASE_URL=http://172.18.0.1:8000/api/data # Used for Linux deployment
+      # - DATABASE_URL=http://host.docker.internal:8000/api/data
+      - DATABASE_URL=http://172.18.0.1:8000/api/data # Used for Linux deployment
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - REDIS_DB=0
-      - MONGODB_HOST=mongodb://mongo-container:27017
+      - MONGODB_HOST=mongodb://172.18.0.1:27017/
       - MONGODB_DB=SeeM
     env_file:
       - .env
@@ -47,16 +47,16 @@ services:
   api:
     build: .
     ports:
-      - "5000:8000"
-      # - "5001:5001" # Used for Linux deployment
+      # - "5000:8000"
+      - "5001:5001" # Used for Linux deployment
     environment:
-      - DATABASE_URL=http://host.docker.internal:8000/api/data
-      # - DATABASE_URL=http://172.18.0.1:8000/api/data # Used for Linux deployment
+      # - DATABASE_URL=http://host.docker.internal:8000/api/data
+      - DATABASE_URL=http://172.18.0.1:8000/api/data # Used for Linux deployment
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - REDIS_DB=0
-      - MONGODB_HOST=mongodb://mongo-container:27017
+      - MONGODB_HOST=mongodb://172.18.0.1:27017/
       - MONGODB_DB=SeeM
     env_file:
       - .env
