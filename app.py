@@ -1,13 +1,14 @@
 import json
 import logging
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 from pymongo.errors import ServerSelectionTimeoutError
+from mongoengine.errors import NotUniqueError, DoesNotExist
 
 import pandas as pd
 from redis import Redis
-from mongoengine import Document, StringField, IntField, ListField, connect, disconnect
+from mongoengine import Document, StringField, IntField, ListField, connect, disconnect, DateTimeField
 
 import data
 from config import Config
@@ -281,6 +282,60 @@ def get_artwork_by_tags(search_results: pd.DataFrame, artwork_df: pd.DataFrame) 
     
     return artwork_df[artwork_df['artwork_id'].isin(artwork_ids)]
 
+def update_reserved_exhibition(exhibition_data: dict) -> None:
+    """Update a reserved exhibition with final data"""
+    try:
+        logger.info(f"Updating reserved exhibition {exhibition_data['exhibition_id']}")
+        
+        # Find and update atomically
+        exhibition = Exhibition.objects(
+            exhibition_id=exhibition_data['exhibition_id'],
+            title="Reserved"  # Only update if it's still reserved
+        ).modify(
+            new=True,  # Return the updated document
+            upsert=False,  # Don't create if doesn't exist
+            set__title=exhibition_data['title'],
+            set__description=exhibition_data['description'],
+            set__pieces_count=exhibition_data['pieces_count'],
+            set__art_pieces=exhibition_data['art_pieces'],
+            set__curator_id=exhibition_data['curator_id']
+        )
+        
+        if not exhibition:
+            logger.error(f"Failed to update exhibition {exhibition_data['exhibition_id']} - not found or already updated")
+            raise Exception("Exhibition not found or already updated")
+        
+        logger.info(f"Successfully updated exhibition {exhibition_data['exhibition_id']}")
+        return exhibition
+        
+    except Exception as e:
+        logger.error(f"Error updating exhibition {exhibition_data['exhibition_id']}: {str(e)}")
+        raise
+
+# def cleanup_stale_reservations(max_age_minutes: int = 30) -> None:
+#     """Clean up stale reserved exhibitions"""
+#     try:
+#         # Add timestamp field to Exhibition model if not exists
+#         if not hasattr(Exhibition, 'reserved_at'):
+#             Exhibition.reserved_at = DateTimeField()
+        
+#         cutoff_time = datetime.utcnow() - timedelta(minutes=max_age_minutes)
+        
+#         # Find and delete stale reservations
+#         stale_exhibitions = Exhibition.objects(
+#             title="Reserved",
+#             reserved_at__lt=cutoff_time
+#         )
+        
+#         count = stale_exhibitions.count()
+#         if count > 0:
+#             logger.info(f"Found {count} stale reservations to clean up")
+#             stale_exhibitions.delete()
+#             logger.info("Cleanup completed")
+        
+#     except Exception as e:
+#         logger.error(f"Error cleaning up stale reservations: {str(e)}")
+#         raise
 
 def store_exhibitions(exhibitions: list) -> None:
     """Store exhibitions in MongoDB"""
@@ -290,59 +345,20 @@ def store_exhibitions(exhibitions: list) -> None:
         setup_mongodb_with_retry()
         
         stored_exhibitions = []
-        for idx, exhibition in enumerate(exhibitions, 1):
-            logger.info(f"Storing exhibition {idx}/{len(exhibitions)} with ID: {exhibition['exhibition_id']}")
-            # Create new Exhibition document using the pre-assigned ID
-            new_exhibition = Exhibition(
-                exhibition_id=exhibition['exhibition_id'],  # Use the pre-assigned ID
-                title=exhibition['title'],
-                description=exhibition['description'],
-                pieces_count=exhibition['pieces_count'],
-                art_pieces=exhibition['art_pieces'],
-                curator_id=exhibition['curator_id']
-            )
-            
-            # Log the document before save
-            logger.info("Document before save:")
-            logger.info(f"exhibition_id: {new_exhibition.exhibition_id}")
-            logger.info(f"Full document: {new_exhibition.to_json()}")
-            
-            # Try to save and verify
+        for exhibition in exhibitions:
             try:
-                new_exhibition.save()
+                # Try to update existing reserved exhibition
+                updated_exhibition = update_reserved_exhibition(exhibition)
+                stored_exhibitions.append(updated_exhibition)
                 
-                # Verify the save with explicit field check
-                saved_exhibition = Exhibition.objects(exhibition_id=exhibition['exhibition_id']).first()
-                if saved_exhibition:
-                    logger.info("Saved document verification:")
-                    logger.info(f"exhibition_id: {saved_exhibition.exhibition_id}")
-                    logger.info(f"Full saved document: {saved_exhibition.to_json()}")
-                else:
-                    raise Exception(f"Exhibition {exhibition['exhibition_id']} not found after save")
-                
-                stored_exhibitions.append(new_exhibition)
-                logger.info(f"Successfully stored exhibition {exhibition['exhibition_id']}")
-            except Exception as save_error:
-                logger.error(f"Error saving exhibition {exhibition['exhibition_id']}: {str(save_error)}")
+            except Exception as e:
+                logger.error(f"Failed to update exhibition {exhibition['exhibition_id']}: {str(e)}")
                 raise
-            
-            logger.info(f"{'='*50}\n")
-
-        # Final verification
-        logger.info(f"\nFinal verification of all stored exhibitions:")
-        for exhibition_id in [ex['exhibition_id'] for ex in exhibitions]:
-            verified = Exhibition.objects(exhibition_id=exhibition_id).first()
-            logger.info(f"Exhibition {exhibition_id}: {'Found' if verified else 'Not found'} in database")
         
-        logger.info(f"\nSuccessfully stored and verified all {len(stored_exhibitions)} exhibitions")
         return stored_exhibitions
+        
     except Exception as e:
-        logger.error(f"Error storing exhibitions: {str(e)}")
-        logger.error(f"Error details: {str(e.__class__.__name__)}: {str(e)}")
-        # Try to get current state of database
-        try:
-            current_count = Exhibition.objects.count()
-            logger.error(f"Current exhibition count in database: {current_count}")
-        except Exception as count_error:
-            logger.error(f"Could not get current exhibition count: {str(count_error)}")
+        logger.error(f"Error in store_exhibitions: {str(e)}")
+        # Clean up any stale reservations
+        # cleanup_stale_reservations()
         raise
