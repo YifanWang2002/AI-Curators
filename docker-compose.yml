@@ -11,16 +11,16 @@ services:
       - exhibition_network
     
 
-  redis-commander:  # Redis 管理界面，可选
-    image: rediscommander/redis-commander:latest
-    environment:
-      - REDIS_HOSTS=local:redis:6379
-    ports:
-      - "8081:8081"
-    networks:
-      - exhibition_network
-    depends_on:
-      - redis
+  # redis-commander:  # Redis 管理界面，可选
+  #   image: rediscommander/redis-commander:latest
+  #   environment:
+  #     - REDIS_HOSTS=local:redis:6379
+  #   ports:
+  #     - "8081:8081"
+  #   networks:
+  #     - exhibition_network
+  #   depends_on:
+  #     - redis
 
 
   rq-worker:
@@ -33,8 +33,8 @@ services:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - REDIS_DB=0
-      - MONGODB_HOST=mongo-container
-      - MONGODB_DB=exhibition_db
+      - MONGODB_HOST=mongodb://mongo-container:27017
+      - MONGODB_DB=SeeM
     env_file:
       - .env
     volumes:
@@ -56,8 +56,8 @@ services:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - REDIS_DB=0
-      - MONGODB_HOST=mongo-container
-      - MONGODB_DB=exhibition_db
+      - MONGODB_HOST=mongodb://mongo-container:27017
+      - MONGODB_DB=SeeM
     env_file:
       - .env
     volumes:

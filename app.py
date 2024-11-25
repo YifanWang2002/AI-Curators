@@ -2,6 +2,8 @@ import json
 import logging
 import os
 from datetime import datetime
+import time
+from pymongo.errors import ServerSelectionTimeoutError
 
 import pandas as pd
 from redis import Redis
@@ -13,7 +15,12 @@ from prompt_based_exhibition.ArtSearch import ArtSearch
 from prompt_based_exhibition.exhibition_curator import ExhibitionCurator
 from prompt_based_exhibition.prompt_parser_beta import EntityParser
 
-logging.basicConfig(level=logging.INFO)
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 logger = logging.getLogger(__name__)
 
 # Exhibition model
@@ -26,27 +33,49 @@ class Exhibition(Document):
     curator_id = StringField()
 
     meta = {'collection': 'dim_exhibition'}
-def setup_mongodb():
-    """Setup MongoDB connection"""
-    try:
-        # Disconnect any existing connections
-        disconnect()
-        # Connect to MongoDB
-        connect(
-            db=Config.MONGODB_DB,
-            host=Config.MONGODB_HOST
-        )
-        logger.info("Successfully connected to MongoDB")
-    except Exception as e:
-        logger.error(f"Failed to connect to MongoDB: {str(e)}")
-        raise
+def setup_mongodb_with_retry(max_retries=3, retry_delay=5):
+    """Setup MongoDB connection with retry logic"""
+    logger.info(f"Attempting to connect to MongoDB at {Config.MONGODB_HOST}")
+    attempt = 0
+    while attempt < max_retries:
+        try:
+            disconnect()  # Disconnect any existing connections
+            logger.info(f"Attempt {attempt + 1}/{max_retries} to connect to MongoDB")
+            
+            # Connect with similar settings to your Java code
+            connect(
+                db=Config.MONGODB_DB,
+                host=Config.MONGODB_HOST,
+                connectTimeoutMS=3000,
+                socketTimeoutMS=3000,
+                serverSelectionTimeoutMS=5000,
+                retryWrites=True,
+                w='majority'
+            )
+            
+            # Test the connection
+            count = Exhibition.objects.count()
+            logger.info(f"Successfully connected to MongoDB. Found {count} exhibitions in database.")
+            return True
+            
+        except (ServerSelectionTimeoutError, Exception) as e:
+            attempt += 1
+            logger.error(f"MongoDB connection attempt {attempt} failed: {str(e)}")
+            if attempt == max_retries:
+                logger.error(f"Failed to connect to MongoDB after {max_retries} attempts: {str(e)}")
+                raise
+            logger.warning(f"Retrying in {retry_delay} seconds...")
+            time.sleep(retry_delay)
+    return False
 
 def get_next_exhibition_ids(count: int = 3) -> int:
     """Get next available exhibition IDs atomically"""
     try:
+        logger.info("Attempting to get next exhibition IDs")
         # Find the highest exhibition_id
         last_exhibition = Exhibition.objects.order_by('-exhibition_id').first()
         start_id = (last_exhibition.exhibition_id + 1) if last_exhibition else 1
+        logger.info(f"Next exhibition ID will start from: {start_id}")
         
         # Reserve the next 'count' IDs by creating placeholder documents
         reserved_ids = []
@@ -61,6 +90,7 @@ def get_next_exhibition_ids(count: int = 3) -> int:
             ).save()
             reserved_ids.append(start_id + i)
         
+        logger.info(f"Successfully reserved exhibition IDs: {reserved_ids}")
         return start_id
     except Exception as e:
         logger.error(f"Error reserving exhibition IDs: {str(e)}")
@@ -68,10 +98,14 @@ def get_next_exhibition_ids(count: int = 3) -> int:
 
 def process_exhibition(prompt: str, task_id: str, curator_id: int) -> None:
     """Worker function for processing exhibition generation"""
+    logger.info(f"Starting exhibition processing for task {task_id}")
     try:
-        # Setup MongoDB connection first
-        setup_mongodb()
+        # Setup MongoDB connection first with retry
+        logger.info("Initializing MongoDB connection")
+        if not setup_mongodb_with_retry():
+            raise Exception("Failed to connect to MongoDB")
         
+        logger.info("Setting up Redis connection")
         # Create a Redis connection inside the worker function
         redis_conn = Redis(
             host=Config.REDIS_HOST,
@@ -140,10 +174,14 @@ def process_exhibition(prompt: str, task_id: str, curator_id: int) -> None:
             'exhibitions': exhibitions[:3]  # 返回前三个展览
         })
 
+        logger.info(f"Generated {len(exhibitions)} exhibitions")
+        logger.info("Storing exhibitions in database")
         store_exhibitions(exhibitions)
+        logger.info("Exhibition processing completed successfully")
         
     except Exception as e:
         logger.error(f"Error processing exhibition: {str(e)}")
+        logger.error(f"Error details: {str(e.__class__.__name__)}: {str(e)}")
         redis_conn = Redis(
             host=Config.REDIS_HOST,
             port=Config.REDIS_PORT,
@@ -240,11 +278,13 @@ def get_artwork_by_tags(search_results: pd.DataFrame, artwork_df: pd.DataFrame) 
 def store_exhibitions(exhibitions: list) -> None:
     """Store exhibitions in MongoDB"""
     try:
+        logger.info(f"Attempting to store {len(exhibitions)} exhibitions")
         # Ensure MongoDB connection is established
-        setup_mongodb()
+        setup_mongodb_with_retry()
         
         stored_exhibitions = []
-        for exhibition in exhibitions:
+        for idx, exhibition in enumerate(exhibitions, 1):
+            logger.info(f"Storing exhibition {idx}/{len(exhibitions)} with ID: {exhibition['exhibition_id']}")
             # Create new Exhibition document using the pre-assigned ID
             new_exhibition = Exhibition(
                 exhibition_id=exhibition['exhibition_id'],  # Use the pre-assigned ID
@@ -256,9 +296,11 @@ def store_exhibitions(exhibitions: list) -> None:
             )
             new_exhibition.save()
             stored_exhibitions.append(new_exhibition)
+            logger.info(f"Successfully stored exhibition {exhibition['exhibition_id']}")
 
-        logger.info(f"Successfully stored {len(stored_exhibitions)} exhibitions")
+        logger.info(f"Successfully stored all {len(stored_exhibitions)} exhibitions")
         return stored_exhibitions
     except Exception as e:
         logger.error(f"Error storing exhibitions: {str(e)}")
+        logger.error(f"Error details: {str(e.__class__.__name__)}: {str(e)}")
         raise
