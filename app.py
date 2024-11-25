@@ -32,7 +32,15 @@ class Exhibition(Document):
     art_pieces = ListField(StringField())  # List of artwork IDs
     curator_id = StringField()
 
-    meta = {'collection': 'dim_exhibition'}
+    meta = {
+        'collection': 'dim_exhibition',
+        'indexes': [
+            {'fields': ['exhibition_id'], 'unique': True}
+        ],
+        'id_field': 'exhibition_id',  # This tells MongoEngine to use exhibition_id as the primary key
+        'allow_inheritance': False
+    }
+    
 def setup_mongodb_with_retry(max_retries=3, retry_delay=5):
     """Setup MongoDB connection with retry logic"""
     logger.info(f"Attempting to connect to MongoDB at {Config.MONGODB_HOST}")
@@ -295,24 +303,26 @@ def store_exhibitions(exhibitions: list) -> None:
                 curator_id=exhibition['curator_id']
             )
             
-            # Verify the document before saving
-            logger.info("Verifying document before save:")
-            logger.info(f"Document to save: {new_exhibition.to_json()}")
+            # Log the document before save
+            logger.info("Document before save:")
+            logger.info(f"exhibition_id: {new_exhibition.exhibition_id}")
+            logger.info(f"Full document: {new_exhibition.to_json()}")
             
             # Try to save and verify
             try:
                 new_exhibition.save()
-                # Verify the save by retrieving the document
+                
+                # Verify the save with explicit field check
                 saved_exhibition = Exhibition.objects(exhibition_id=exhibition['exhibition_id']).first()
                 if saved_exhibition:
-                    logger.info(f"Successfully verified exhibition {exhibition['exhibition_id']} in database")
-                    logger.info(f"Saved data: {saved_exhibition.to_json()}")
+                    logger.info("Saved document verification:")
+                    logger.info(f"exhibition_id: {saved_exhibition.exhibition_id}")
+                    logger.info(f"Full saved document: {saved_exhibition.to_json()}")
                 else:
-                    logger.error(f"Failed to verify exhibition {exhibition['exhibition_id']} - not found in database after save")
-                    raise Exception("Exhibition not found after save")
+                    raise Exception(f"Exhibition {exhibition['exhibition_id']} not found after save")
                 
                 stored_exhibitions.append(new_exhibition)
-                logger.info(f"Successfully stored and verified exhibition {exhibition['exhibition_id']}")
+                logger.info(f"Successfully stored exhibition {exhibition['exhibition_id']}")
             except Exception as save_error:
                 logger.error(f"Error saving exhibition {exhibition['exhibition_id']}: {str(save_error)}")
                 raise
