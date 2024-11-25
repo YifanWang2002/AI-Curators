@@ -128,8 +128,8 @@ class ExhibitionCurator:
                     'exhibition_id': self.start_id + index,
                     'title': response.title,
                     'description': response.description,
-                    'art_pieces': list(grouped_ids[index]),
-                    'curator_id': self.curator_id,
+                    'art_pieces': [str(artwork_id) for artwork_id in grouped_ids[index]],
+                    'curator_id': str(self.curator_id),
                     'pieces_count': len(grouped_ids[index])
                 }
                 

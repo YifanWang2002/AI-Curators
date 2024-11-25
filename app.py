@@ -16,16 +16,16 @@ from prompt_based_exhibition.prompt_parser_beta import EntityParser
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# Exhibition model
 class Exhibition(Document):
     exhibition_id = IntField(primary_key=True, required=True, index=True)
     title = StringField(required=True)
     description = StringField()
     pieces_count = IntField()
-    art_pieces = ListField(IntField())  # List of artwork IDs
-    curator_id = IntField()
+    art_pieces = ListField(StringField())  # List of artwork IDs
+    curator_id = StringField()
 
     meta = {'collection': 'dim_exhibition'}
-
 def setup_mongodb():
     """Setup MongoDB connection"""
     try:
@@ -39,6 +39,31 @@ def setup_mongodb():
         logger.info("Successfully connected to MongoDB")
     except Exception as e:
         logger.error(f"Failed to connect to MongoDB: {str(e)}")
+        raise
+
+def get_next_exhibition_ids(count: int = 3) -> int:
+    """Get next available exhibition IDs atomically"""
+    try:
+        # Find the highest exhibition_id
+        last_exhibition = Exhibition.objects.order_by('-exhibition_id').first()
+        start_id = (last_exhibition.exhibition_id + 1) if last_exhibition else 1
+        
+        # Reserve the next 'count' IDs by creating placeholder documents
+        reserved_ids = []
+        for i in range(count):
+            exhibition = Exhibition(
+                exhibition_id=start_id + i,
+                title="Reserved",
+                description="Reserved",
+                pieces_count=0,
+                art_pieces=[],
+                curator_id=""
+            ).save()
+            reserved_ids.append(start_id + i)
+        
+        return start_id
+    except Exception as e:
+        logger.error(f"Error reserving exhibition IDs: {str(e)}")
         raise
 
 def process_exhibition(prompt: str, task_id: str, curator_id: int) -> None:
@@ -94,12 +119,11 @@ def process_exhibition(prompt: str, task_id: str, curator_id: int) -> None:
         # 更新状态：展示初始图片集
         update_status(redis_conn, task_id, 'images_selected', {
             'artwork_ids': filtered_artwork['artwork_id'].tolist(),
-            'image_urls': filtered_artwork['small_image_url'].tolist()
+            'image_urls': filtered_artwork['compressed_image_url'].tolist()
         })
         
-        # Get next available exhibition IDs before generating exhibitions
-        last_exhibition = Exhibition.objects.order_by('-exhibition_id').first()
-        next_id = (last_exhibition.exhibition_id + 1) if last_exhibition else 1
+        # Get next available exhibition IDs atomically
+        next_id = get_next_exhibition_ids(3)  # Reserve 3 IDs for the exhibitions
         
         # 生成展览
         curator = ExhibitionCurator(

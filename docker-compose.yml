@@ -10,6 +10,7 @@ services:
     networks:
       - exhibition_network
     
+
   redis-commander:  # Redis 管理界面，可选
     image: rediscommander/redis-commander:latest
     environment:
@@ -27,6 +28,7 @@ services:
     command: rq worker exhibition
     environment:
       - DATABASE_URL=http://host.docker.internal:8000/api/data
+      # - DATABASE_URL=http://172.18.0.1:8000/api/data # Used for Linux deployment
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - REDIS_HOST=redis
       - REDIS_PORT=6379
@@ -39,7 +41,6 @@ services:
       - ./data/index_files:/app/data/index_files
     depends_on:
       - redis
-      - mongo-container
     networks:
       - exhibition_network
 
@@ -47,8 +48,10 @@ services:
     build: .
     ports:
       - "5000:8000"
+      # - "5001:5001" # Used for Linux deployment
     environment:
       - DATABASE_URL=http://host.docker.internal:8000/api/data
+      # - DATABASE_URL=http://172.18.0.1:8000/api/data # Used for Linux deployment
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - REDIS_HOST=redis
       - REDIS_PORT=6379
@@ -62,7 +65,6 @@ services:
     depends_on:
       - redis
       - rq-worker
-      - mongo-container
     networks:
       - exhibition_network
 
@@ -71,4 +73,4 @@ volumes:
 
 networks:
   exhibition_network:
-    name: exhibition_network
+    external: true
