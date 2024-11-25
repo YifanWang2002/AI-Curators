@@ -294,13 +294,46 @@ def store_exhibitions(exhibitions: list) -> None:
                 art_pieces=exhibition['art_pieces'],
                 curator_id=exhibition['curator_id']
             )
-            new_exhibition.save()
-            stored_exhibitions.append(new_exhibition)
-            logger.info(f"Successfully stored exhibition {exhibition['exhibition_id']}")
+            
+            # Verify the document before saving
+            logger.info("Verifying document before save:")
+            logger.info(f"Document to save: {new_exhibition.to_json()}")
+            
+            # Try to save and verify
+            try:
+                new_exhibition.save()
+                # Verify the save by retrieving the document
+                saved_exhibition = Exhibition.objects(exhibition_id=exhibition['exhibition_id']).first()
+                if saved_exhibition:
+                    logger.info(f"Successfully verified exhibition {exhibition['exhibition_id']} in database")
+                    logger.info(f"Saved data: {saved_exhibition.to_json()}")
+                else:
+                    logger.error(f"Failed to verify exhibition {exhibition['exhibition_id']} - not found in database after save")
+                    raise Exception("Exhibition not found after save")
+                
+                stored_exhibitions.append(new_exhibition)
+                logger.info(f"Successfully stored and verified exhibition {exhibition['exhibition_id']}")
+            except Exception as save_error:
+                logger.error(f"Error saving exhibition {exhibition['exhibition_id']}: {str(save_error)}")
+                raise
+            
+            logger.info(f"{'='*50}\n")
 
-        logger.info(f"Successfully stored all {len(stored_exhibitions)} exhibitions")
+        # Final verification
+        logger.info(f"\nFinal verification of all stored exhibitions:")
+        for exhibition_id in [ex['exhibition_id'] for ex in exhibitions]:
+            verified = Exhibition.objects(exhibition_id=exhibition_id).first()
+            logger.info(f"Exhibition {exhibition_id}: {'Found' if verified else 'Not found'} in database")
+        
+        logger.info(f"\nSuccessfully stored and verified all {len(stored_exhibitions)} exhibitions")
         return stored_exhibitions
     except Exception as e:
         logger.error(f"Error storing exhibitions: {str(e)}")
         logger.error(f"Error details: {str(e.__class__.__name__)}: {str(e)}")
+        # Try to get current state of database
+        try:
+            current_count = Exhibition.objects.count()
+            logger.error(f"Current exhibition count in database: {current_count}")
+        except Exception as count_error:
+            logger.error(f"Could not get current exhibition count: {str(count_error)}")
         raise
