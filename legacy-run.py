@@ -101,6 +101,23 @@ def generate_exhibitions(prompt: str, module_dir: str = None) -> list[dict]:
     
     # Get filtered artwork based on search results
     if artists and not name_results.empty:
+        
+        artist_given_names = []
+        artist_family_names = []
+        for artist_id in artwork_details['artist_id']:
+            # check if artist_id is NaN
+            if pd.isnull(artist_id):
+                artist_given_names.append('')
+                artist_family_names.append('')
+                continue
+            artist_data = data.get_artist_by_id(int(artist_id))['data']
+            family_name = artist_data['family_name']
+            given_name = artist_data['given_name']
+            artist_given_names.append(given_name)
+            artist_family_names.append(family_name)
+        artwork_details['artist_given_name'] = artist_given_names
+        artwork_details['artist_family_name'] = artist_family_names
+
         new_artwork = get_artwork_by_artist(artwork_details, name_results)
         if tags and not tag_results.empty:
             temp_artwork = get_artwork_by_tags(tag_results, new_artwork)
@@ -127,20 +144,30 @@ def generate_exhibitions(prompt: str, module_dir: str = None) -> list[dict]:
 
 if __name__ == "__main__":
     start_time = time()
+    prev_time = time()
     
     # Generate exhibitions
-    prompt = "I like vincent's sad artwork"
-    exhibitions = generate_exhibitions(prompt)
-    
+    # prompts = ["I want to see Vincent van Gogh's use of color and brushstrokes"]
+    prompts = ['I want to see loneliness and depression', 
+               'I want to see happiness and joy',
+               'I want to see nature and animals',
+               'Artworks of water and mountain',
+               'I want to see flowers',]
+    for prompt in prompts:
+        exhibitions = generate_exhibitions(prompt)
+        
+        print(f'Time taken: {time() - prev_time} seconds')
+        prev_time = time()
+        
+        # Save exhibitions to json files
+        output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output_new2', prompt)
+
+        if os.path.exists(output_dir):
+            import shutil
+            shutil.rmtree(output_dir)
+        os.makedirs(output_dir)
+        
+        for i, exhibition in enumerate(exhibitions):
+            with open(os.path.join(output_dir, f'Exhibition_{i}.json'), 'w') as f:
+                json.dump(exhibition, f, indent=4)
     print(f'Total time taken: {time() - start_time} seconds')
-    
-    # Save exhibitions to json files
-    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output', prompt)
-    if os.path.exists(output_dir):
-        import shutil
-        shutil.rmtree(output_dir)
-    os.makedirs(output_dir)
-    
-    for i, exhibition in enumerate(exhibitions):
-        with open(os.path.join(output_dir, f'Exhibition_{i}.json'), 'w') as f:
-            json.dump(exhibition, f, indent=4)
