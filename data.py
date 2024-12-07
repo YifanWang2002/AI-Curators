@@ -3,7 +3,8 @@ import pandas as pd
 import os
 import time
 
-DATABASE_URL = os.getenv('DATABASE_URL', 'http://localhost:8000/api/data')
+mango_db_string = "mangodb://localhost:27017"
+DATABASE_URL = os.getenv(mango_db_string, 'http://localhost:8000/api/data')
 
 def get_data(url, max_retries=3):
     """Generic function to fetch data from API endpoint with retries"""
@@ -19,6 +20,23 @@ def get_data(url, max_retries=3):
                 return {'status': 'error', 'message': str(e)}
             print(f"Attempt {attempt + 1} failed, retrying...")
             time.sleep(1)
+
+def get_all_artists():
+    artists = {}
+    artist_id = 0
+    while True:
+        ids_response = get_data(f"{DATABASE_URL}/artist/{artist_id}")
+        if ids_response.get('status') != 'success':
+            break
+        artist_family_name = ids_response['data']['family_name']
+        artist_given_name = ids_response['data']['given_name']
+        temp_dict = {
+            'family_name': artist_family_name,
+            'given_name': artist_given_name,
+        }
+        artists[artist_id] = temp_dict
+        artist_id += 1
+    return artists
 
 def get_all_artworks():
     """Fetch all artworks from MongoDB"""
@@ -75,6 +93,25 @@ def get_artwork_details():
                 df[new_col] = ''
             else:
                 df[new_col] = df[old_col]
+
+        artists_dict = get_all_artists()
+        
+        df['artist_id'] = df['artist_id'].fillna(-1)
+        df['artist_id'] = df['artist_id'].astype(int)
+        for i in range(len(df)):
+            artist_id = df.loc[i, 'artist_id']
+            if artist_id == -1 or artist_id not in artists_dict:
+                continue
+            artist_given_name = artists_dict[artist_id]['given_name']
+            artist_family_name = artists_dict[artist_id]['family_name']
+            if artist_family_name is None or artist_given_name is None:
+                continue
+            df.loc[i, 'artist_given_name'] = artist_given_name
+            df.loc[i, 'artist_family_name'] = artist_family_name
+
+        df['display_name'] = df['artist_given_name'] + ' ' + df['artist_family_name']
+        # remove front and end spaces
+        df['display_name'] = df['display_name'].str.strip()
         
         return df
     else:

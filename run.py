@@ -7,6 +7,8 @@ import json
 from time import time
 import data
 
+# artists_dict = data.get_all_artists()
+
 def get_artwork_by_artist(artwork_details: pd.DataFrame, artist_results: pd.DataFrame) -> pd.DataFrame:
     """
     Filter artwork details based on artist search results and store name similarity
@@ -90,14 +92,48 @@ def get_artwork_by_tags(search_results: pd.DataFrame, artwork_df: pd.DataFrame) 
     
     return filtered_artwork
 
-def generate_exhibitions(prompt: str, module_dir: str = None) -> list[dict]:
+def generate_exhibitions(prompt: str, art_search, module_dir: str = None) -> list[dict]:
     """
     Generate exhibitions based on a user prompt using MongoDB data
     """
-    if module_dir is None:
-        module_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    artwork_details = data.get_artwork_details()
+    if artwork_details.empty:
+        print("Error: Unable to retrieve artwork details from database")
+        return []
+    
+    print(f"Retrieved {len(artwork_details)} artworks from database")
+    
+    # Get filtered artwork based on search results
+    # artwork_details['artist_id'] = artwork_details['artist_id'].fillna(-1)
+    # artwork_details['artist_id'] = artwork_details['artist_id'].astype(int)
+    # for i in range(len(artwork_details)):
+    #     artist_id = artwork_details.loc[i, 'artist_id']
+    #     if artist_id == -1 or artist_id not in artists_dict:
+    #         artwork_details.loc[i, 'display_name'] = 'unknown artist'
+    #         artwork_details.loc[i, 'artist_given_name'] = ''
+    #         artwork_details.loc[i, 'artist_family_name'] = ''
+    #         continue
+    #     artist_given_name = artists_dict[artist_id]['given_name']
+    #     artist_family_name = artists_dict[artist_id]['family_name']
+    #     if artist_family_name is None and artist_given_name is None:
+    #         artwork_details.loc[i, 'display_name'] = 'unknown artist'
+    #         artwork_details.loc[i, 'artist_given_name'] = ''
+    #         artwork_details.loc[i, 'artist_family_name'] = ''
+    #         continue
+    #     elif artist_family_name is None:
+    #         artist_family_name = ''
+    #     elif artist_given_name is None:
+    #         artist_given_name = ''
+    #     artist_name = artist_given_name + " " + artist_family_name
+    #     artwork_details.loc[i, 'display_name'] = artist_name
+    #     artwork_details.loc[i, 'artist_given_name'] = artist_given_name
+    #     artwork_details.loc[i, 'artist_family_name'] = artist_family_name
 
-    art_search = ArtSearch(data_dir=os.path.join(module_dir, 'data'))
+    # if module_dir is None:
+    #     module_dir = os.path.dirname(os.path.abspath(__file__))
+    # art_search = ArtSearch(data_dir=os.path.join(module_dir, 'data'), use_precomputed=True)
+
     entity_parser = EntityParser()
     tags, artists = entity_parser.extract_entities(prompt)
     
@@ -106,23 +142,17 @@ def generate_exhibitions(prompt: str, module_dir: str = None) -> list[dict]:
     if tags:
         tag_results = pd.DataFrame(art_search.search(tags, search_type='tag', k=25),
                                  columns=['tag_name', 'similarity'])
-        print(f"Similarity results for tags: {tag_results[:5]}")
+        # print(f"Tags: {tag_results}")
+        # print(f"Similarity results for tags: {tag_results[:5]}")
     if artists:
         name_results = pd.DataFrame(art_search.search(artists, search_type='name', k=1),
                                   columns=['artist_name', 'similarity'])
-    
-    artwork_details = data.get_artwork_details()
-    if artwork_details.empty:
-        print("Error: Unable to retrieve artwork details from database")
-        return []
+        # print(f"Artists: {name_results}")
     
     # Add index column to artwork_details
     artwork_details = artwork_details.reset_index(drop=True)
     artwork_details['index'] = artwork_details.index
     
-    print(f"Retrieved {len(artwork_details)} artworks from database")
-    
-    # Get filtered artwork based on search results
     if artists and not name_results.empty:
         new_artwork = get_artwork_by_artist(artwork_details, name_results)
         if tags and not tag_results.empty:
@@ -161,17 +191,29 @@ def generate_exhibitions(prompt: str, module_dir: str = None) -> list[dict]:
 
 if __name__ == "__main__":
     start_time = time()
-    prompt = "I like old age artworks"
+
+    # prompt = "I like old age artworks"
     # prompt = "I like countryside artwork"
-    exhibitions = generate_exhibitions(prompt)
-    print(f'Total time taken: {time() - start_time} seconds')
-    
-    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output', prompt)
-    if os.path.exists(output_dir):
-        import shutil
-        shutil.rmtree(output_dir)
-    os.makedirs(output_dir)
-    
-    for i, exhibition in enumerate(exhibitions):
-        with open(os.path.join(output_dir, f'Exhibition_{i}.json'), 'w') as f:
-            json.dump(exhibition, f, indent=4)
+    prompts = ["I want to see happiness and joy",]
+    module_dir = os.path.dirname(os.path.abspath(__file__))
+    art_search = ArtSearch(data_dir=os.path.join(module_dir, 'data'), use_precomputed=True)
+    # prompts = ["I want to see van Gogh's use of color and brushstrokes",
+    #            "I want to see artworks by Monet",
+    #            'I want to see loneliness and depression', 
+    #            'I want to see happiness and joy',
+    #            'I want to see nature and animals',
+    #            'Artworks of water and mountain',
+    #            'I want to see flowers',]
+    for prompt in prompts:
+        exhibitions = generate_exhibitions(prompt, art_search)
+        print(f'Total time taken: {time() - start_time} seconds')
+        
+        output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output', prompt)
+        if os.path.exists(output_dir):
+            import shutil
+            shutil.rmtree(output_dir)
+        os.makedirs(output_dir)
+        
+        for i, exhibition in enumerate(exhibitions):
+            with open(os.path.join(output_dir, f'Exhibition_{i}.json'), 'w') as f:
+                json.dump(exhibition, f, indent=4)

@@ -40,7 +40,7 @@ class ExhibitionCurator:
         all_description = f"{row['intro']}\n{row['overview']}\n{row['style']}\n{row['theme']}"
         return all_description
 
-    def get_exhibitions(self, recommendations, use_author=False):
+    def get_exhibitions(self, recommendations, use_author=False, user_preference='12-16'):
         indices = recommendations['index']
         recommendation_df = recommendations.copy()
         # Left join with metadata to get embeddings
@@ -50,21 +50,42 @@ class ExhibitionCurator:
         
         # Calculate cluster sizes based on total number of items
         total_items = len(top_k_description_embeddings)
-        min_size = total_items // 3
-        max_size = min_size + 1
+        min_size = int(user_preference.split('-')[0])
+        max_size = int(user_preference.split('-')[1])
+
+        if total_items <= max_size:
+            n_clusters = 1
+        elif total_items > max_size and total_items <= 2*max_size:
+            n_clusters = 2
+        else:
+            n_clusters = 3
         
-        # Initialize KMeansConstrained with size constraints
-        clustering_model = KMeansConstrained(
-            n_clusters=3,
-            size_min=min_size,
-            size_max=max_size,
-            random_state=42
-        )
-        
-        clustering_model.fit(top_k_description_embeddings)
+        if n_clusters == 1:
+            labels = 0
+        elif n_clusters == 2:
+            # Initialize KMeansConstrained with size constraints
+            clustering_model = KMeansConstrained(
+                n_clusters=2,
+                size_min=min_size,
+                random_state=42
+            )
+            
+            clustering_model.fit(top_k_description_embeddings)
+            labels = clustering_model.labels_
+        else:
+            # Initialize KMeansConstrained with size constraints
+            clustering_model = KMeansConstrained(
+                n_clusters=n_clusters,
+                size_min=min_size,
+                # size_max=max_size,
+                random_state=42
+            )
+            
+            clustering_model.fit(top_k_description_embeddings)
+            labels = clustering_model.labels_
         
         # Use loc to set values
-        recommendation_df.loc[:, 'cluster_label'] = clustering_model.labels_
+        recommendation_df.loc[:, 'cluster_label'] = labels
         recommendation_df = recommendation_df[['artwork_id', 'title', 'display_name', 'cluster_label']]
         
         exhibitions = []
@@ -81,11 +102,16 @@ class ExhibitionCurator:
             
         return exhibitions, grouped_ids, original_orders, clusters
 
-    def curate(self, recommendations: pd.DataFrame, query: str, use_author=False) -> list[dict]:
+    def curate(self, recommendations: pd.DataFrame, query: str, use_author=False, user_level = 'medium') -> list[dict]:
+        user_levels = {
+            'low': 'Easy to understand as the audiences are not familiar with the art world',
+            'medium': 'Scholarly yet approachable as the audiences only have moderate knowledge of art',
+            'high': 'Professional and accurate as the audiences are very familiar with the art world'
+        }
         responses = []
         exhibitions, grouped_ids, original_orders, clusters = self.get_exhibitions(recommendations, use_author)
         
-        system_prompt = """You are a distinguished museum curator with expertise in fine art and exhibition design. Your curatorial approach emphasizes creating meaningful connections between artworks while making art accessible to diverse audiences.
+        system_prompt = f"""You are a distinguished museum curator with expertise in fine art and exhibition design. Your curatorial approach emphasizes creating meaningful connections between artworks while making art accessible to diverse audiences.
 
         Given a visitor's interest (expressed through their query) and a selection of artworks, your task is to:
 
@@ -94,7 +120,7 @@ class ExhibitionCurator:
         - Avoid generic descriptors; use specific, meaningful language
         - Consider cultural and historical resonance
         
-        2. Write a curatorial introduction (200 words maximum) that:
+        2. Write a curatorial description of the exhibition (100 words maximum) that:
         - Establishes the exhibition's intellectual and aesthetic framework
         - Illuminates thematic connections across the selected works
         - Contextualizes the exhibition within broader artistic or cultural movements
@@ -112,7 +138,7 @@ class ExhibitionCurator:
         - Create an engaging narrative that invites deeper exploration
         
         Your writing should be:
-        - Scholarly yet approachable
+        - {user_levels[user_level]}
         - Rich in insight without being verbose
         - Confident in artistic interpretation
         - Free of jargon while maintaining intellectual depth
@@ -123,6 +149,11 @@ class ExhibitionCurator:
         - Chronological cataloguing
         - Generic art historical phrases
         - Technical terminology without context
+
+        An example exhibition from the Met Museum:
+        Title: "Look Again: European Paintings 1300–1800"
+        Description: "The reopened galleries dedicated to European Paintings from 1300 to 1800 highlight fresh narratives and dialogues among more than 700 works of art from the Museum’s world-famous holdings. The newly reconfigured galleries—which include recently acquired paintings and prestigious loans, as well as select sculptures and decorative art—will showcase the interconnectedness of cultures, materials, and moments across The Met collection.
+        The chronologically arranged galleries will feature longstanding strengths of the collection—such as masterpieces by Jan van Eyck, Caravaggio, and Poussin; the most extensive collection of 17th-century Dutch art in the western hemisphere; and the finest holdings of El Greco and Goya outside Spain—while also giving renewed attention to women artists, exploring Europe’s complex relationships with New Spain and the Viceroyalty of Peru, and looking more deeply into histories of class, gender, race, and religion."
         """.strip()
 
         for index, exhibition in enumerate(exhibitions):  # Add index to the loop
@@ -139,6 +170,7 @@ class ExhibitionCurator:
                             "content": f"Sentence S: {query}; list of (artwork title | artist): {exhibition}"
                         }
                     ],
+                    # temperature=0.5,
                     response_format=ExhibitionResponse
                 )
                 response = completion.choices[0].message.parsed

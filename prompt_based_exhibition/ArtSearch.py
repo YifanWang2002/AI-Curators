@@ -4,10 +4,12 @@ import pandas as pd
 import faiss
 from sentence_transformers import SentenceTransformer
 import torch
+import data
 
 class ArtSearch:
     def __init__(self, data_dir="../data", use_precomputed=True):
         self.data_dir = data_dir
+        self.artwork_details = data.get_artwork_details()
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
         # Load E5 model
@@ -21,8 +23,12 @@ class ArtSearch:
             self.save_precomputed_data()
 
     def load_data(self):
-        df_names = pd.read_csv(os.path.join(self.data_dir, 'dimension_tables', 'dim_artwork.csv'))
-        self.artist_names = (df_names['artist_given_name'] + ' ' + df_names['artist_family_name']).dropna().unique()
+        # df_names = pd.read_csv(os.path.join(self.data_dir, 'dimension_tables', 'dim_artwork.csv'))
+        df_names = self.artwork_details
+        # self.artist_names = (df_names['artist_given_name'] + ' ' + df_names['artist_family_name']).dropna().unique()
+        self.artist_names = df_names['display_name'].dropna().unique()
+        # remove names with all spaces
+        # self.artist_names = [name for name in self.artist_names if name.strip() != '']
 
         df_tags = pd.read_csv(os.path.join(self.data_dir, 'dimension_tables', 'dim_tag.csv'))
         self.tags = df_tags['tag_name'].dropna().unique()
@@ -66,8 +72,10 @@ class ArtSearch:
                     return []
                 index = self.name_index
                 # Load names from MongoDB for results
-                import data
-                artwork_details = data.get_artwork_details()
+                if self.artwork_details is None:
+                    artwork_details = data.get_artwork_details()
+                else:
+                    artwork_details = self.artwork_details
                 if not artwork_details.empty:
                     items = artwork_details['display_name'].dropna().unique()
                 else:
