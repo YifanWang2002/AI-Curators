@@ -60,72 +60,33 @@ def verify_token(token: str) -> Tuple[dict, str]:
     Returns:
         Tuple[dict, str]: A tuple containing (decoded_token, user_id)
     """
-    logger.info("Entering verify_token function")
-    logger.info(f"Received token: {token[:10]}...")
-
-    # Try decoding without verification first to inspect claims
-    try:
-        unverified_claims = jwt.decode(token, options={"verify_signature": False})
-        # logger.info(f"Token claims: iss={unverified_claims.get('iss')}, exp={unverified_claims.get('exp')}, iat={unverified_claims.get('iat')}")
-    except Exception as e:
-        logger.error(f"Could not decode token claims: {str(e)}")
-
-    # Try production key first
-    try:
-        decoded_token = jwt.decode(
-            token, 
-            key=CLERK_PEM_PUBLIC_KEY_PROD, 
-            algorithms=['RS256'],
-            options={
-                "verify_iat": True,  # Changed to True to verify issued at time
-                "verify_exp": True,  # Explicitly verify expiration
-                "verify_iss": True,  # Verify issuer
-            }
-        )
-        # logger.info("Token verified successfully with production key")
-        
-        user_id, is_valid = extract_user_id(decoded_token)
-        if not is_valid:
-            return None, None
+    # Attempt decoding with both keys while skipping expiration check
+    for key, key_type in [(CLERK_PEM_PUBLIC_KEY_PROD, 'production'), 
+                         (CLERK_PEM_PUBLIC_KEY_DEV, 'development')]:
+        try:
+            decoded_token = jwt.decode(
+                token, 
+                key=key, 
+                algorithms=['RS256'],
+                options={
+                    "verify_exp": False,  # Skip expiration check
+                    "verify_iat": True,   # Keep issued-at validation
+                    "verify_iss": True,   # Keep issuer validation
+                    "verify_signature": True  # Still verify signature
+                }
+            )
             
-        # logger.info(f"Extracted user ID: {user_id}")
-        return decoded_token, user_id
-        
-    except jwt.exceptions.ExpiredSignatureError as e:
-        logger.warning(f"Production key - Token expired: {str(e)}")
-    except jwt.exceptions.InvalidSignatureError as e:
-        logger.info(f"Production key - Invalid signature: {str(e)}")
-    except jwt.exceptions.PyJWTError as e:
-        logger.info(f"Production key - Other verification error: {str(e)}")
-        
-    # Try development key as fallback
-    try:
-        decoded_token = jwt.decode(
-            token, 
-            key=CLERK_PEM_PUBLIC_KEY_DEV, 
-            algorithms=['RS256'],
-            options={
-                "verify_iat": True,
-                "verify_exp": True,
-                "verify_iss": True,
-            }
-        )
-        # logger.info("Token verified successfully with development key")
-        
-        user_id, is_valid = extract_user_id(decoded_token)
-        if not is_valid:
-            return None, None
-            
-        # logger.info(f"Extracted user ID: {user_id}")
-        return decoded_token, user_id
-        
-    except jwt.exceptions.ExpiredSignatureError as e:
-        logger.error(f"Development key - Token expired: {str(e)}")
-    except jwt.exceptions.InvalidSignatureError as e:
-        logger.error(f"Development key - Invalid signature: {str(e)}")
-    except jwt.exceptions.PyJWTError as e:
-        logger.error(f"Development key - Other verification error: {str(e)}")
+            user_id, is_valid = extract_user_id(decoded_token)
+            if is_valid:
+                logger.info(f"Valid token via {key_type} key")
+                return decoded_token, user_id
+                
+        except jwt.exceptions.InvalidSignatureError:
+            logger.info(f"Invalid signature with {key_type} key")
+        except jwt.exceptions.PyJWTError as e:
+            logger.info(f"{key_type} key error: {str(e)}")
     
+    logger.error("Token verification failed with all keys")
     return None, None
 
 def require_auth(f):
